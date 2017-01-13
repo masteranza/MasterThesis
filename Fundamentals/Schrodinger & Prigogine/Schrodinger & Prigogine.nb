@@ -1,0 +1,569 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     22907,        561]
+NotebookOptionsPosition[     20334,        465]
+NotebookOutlinePosition[     21069,        490]
+CellTagsIndexPosition[     21026,        487]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Schr\[ODoubleDot]dinger & Prigogine", "Title",
+ ShowCellBracket->True,
+ CellOpen->True,
+ CellChangeTimes->{{3.687334918590898*^9, 3.687334923790887*^9}, {
+  3.687535136834053*^9, 3.687535147358129*^9}},
+ CellID->219513966],
+
+Cell[CellGroupData[{
+
+Cell["Summary of Schr\[ODoubleDot]dinger\[CloseCurlyQuote]s contributions", \
+"Section",
+ ShowCellBracket->True,
+ CellOpen->True,
+ CellChangeTimes->{{3.6873349286729727`*^9, 3.687334931655704*^9}, {
+   3.687530588742461*^9, 3.68753060829486*^9}, 3.687535932635253*^9},
+ CellID->12325631],
+
+Cell["\<\
+By writing his book \[OpenCurlyDoubleQuote]What is life?\
+\[CloseCurlyDoubleQuote] (1944) Schr\[ODoubleDot]dinger inspired generations \
+of physicists to answer the alluring (though not easy) question of the role \
+of physics in biological processes. In any event it probably wouldn\
+\[CloseCurlyQuote]t be an exaggeration to say that Schr\[ODoubleDot]dinger \
+himself (as he admits), was inspired by the work of German-American \
+physicists Max Delbr\[UDoubleDot]ck; who helped launch the molecular biology \
+research program in the late 1930s and explained (in main part) the mechanism \
+of heredity and mutation.\
+\>", "Text",
+ ShowCellBracket->True,
+ CellOpen->True,
+ CellChangeTimes->CompressedData["
+1:eJxTTMoPSmViYGAQBmIQ7bL/cBNH5WvHc2u+tYDol5ePLgbR02wvrgHRLRsC
+pWKBdCVrmRyIttlyoy4NSCcs2t0ConOi5kwE0VVVX2aB6BvLxTeB6C/ff50B
+0c953a+B6H/5ik9BdM2qZ/9BtFmVHks6kNZmu80NoncXWPOBaD7dSGEQrdd7
+QRREr491kQbRDlvN1UF0R4yHEYjuSg4C0+l/9W1BdMJ6HTsQfWXm2SIQ7X1z
+SyOIvpWp/C8DZH69Fpjm8PRyywLSPgGvwXSM6/bZILotYieYvhInthBEqxyR
+Xgeiec5M/gOi4469B9MAbRSaJw==
+  "],
+ CellID->810099106],
+
+Cell["\<\
+Regardless, Schr\[ODoubleDot]dinger makes some very essential observations on \
+the nature of living organisms which I shall describe here shortly.\
+\>", "Text",
+ ShowCellBracket->True,
+ CellOpen->True,
+ CellChangeTimes->{{3.687535986550552*^9, 3.687535997506297*^9}},
+ CellID->1167303303],
+
+Cell["\<\
+First, their operation (living organisms) as a macroscopic system resembles \
+approximately, a purely mechanical system rather than a thermodynamical \
+system. Even though their size is far from what is considered a thermodynamic \
+limit, they tend stay unaffected (in special environments) by random \
+molecular motion known as heat and; at the same time, evade the decay towards \
+equilibrium for an unusually long time. This is essentially the definition of \
+a living system.\
+\>", "Text",
+ ShowCellBracket->True,
+ CellOpen->True,
+ CellChangeTimes->{{3.687529490940667*^9, 3.687529881979515*^9}, {
+   3.6875299529448233`*^9, 3.687530084704609*^9}, {3.687530163189157*^9, 
+   3.68753024208564*^9}, {3.6875303099736443`*^9, 3.687530394341114*^9}, {
+   3.687530476134448*^9, 3.687530528264512*^9}, {3.687530832606036*^9, 
+   3.687530986105603*^9}, {3.6875310552210407`*^9, 3.687531056801928*^9}, {
+   3.68753252783029*^9, 3.6875325310316763`*^9}, {3.687532748287929*^9, 
+   3.687532795079949*^9}, {3.68753291301672*^9, 3.687533003603554*^9}, {
+   3.687533049318281*^9, 3.687533065201523*^9}, {3.687533129793531*^9, 
+   3.6875332784029217`*^9}, {3.687533339943087*^9, 3.6875334018762903`*^9}, {
+   3.687533829342499*^9, 3.687533844668285*^9}, 3.687533976394668*^9, {
+   3.6875340790454283`*^9, 3.687534107444275*^9}, {3.687534291625186*^9, 
+   3.6875344461567917`*^9}, {3.68753448266381*^9, 3.687534496957509*^9}, {
+   3.687534745109289*^9, 3.68753476930643*^9}, {3.6875348063489037`*^9, 
+   3.687535058644216*^9}, 3.6875351298684797`*^9, {3.687535528420052*^9, 
+   3.6875356158714123`*^9}, {3.687536012420534*^9, 3.687536059551628*^9}},
+ CellID->353718380],
+
+Cell["\<\
+Secondly, he notices that the way an organism accomplishes the above is \
+through the exchange of energy and matter with it's environment, that leaves \
+it's own internal state in low entropy. He withdraws from considerations of \
+free energy, although he acknowledges that the exact physical understanding \
+should be accomplished through it rather than through entropy. Worth \
+mentioning is his hypothesis of \"life intensity\" the term which ought to \
+parallel with the rate at which the system produces entropy.\
+\>", "Text",
+ ShowCellBracket->True,
+ CellOpen->True,
+ CellChangeTimes->{{3.687529490940667*^9, 3.687529881979515*^9}, {
+   3.6875299529448233`*^9, 3.687530084704609*^9}, {3.687530163189157*^9, 
+   3.68753024208564*^9}, {3.6875303099736443`*^9, 3.687530394341114*^9}, {
+   3.687530476134448*^9, 3.687530528264512*^9}, {3.687530832606036*^9, 
+   3.687530986105603*^9}, {3.6875310552210407`*^9, 3.687531056801928*^9}, {
+   3.68753252783029*^9, 3.6875325310316763`*^9}, {3.687532748287929*^9, 
+   3.687532795079949*^9}, {3.68753291301672*^9, 3.687533003603554*^9}, {
+   3.687533049318281*^9, 3.687533065201523*^9}, {3.687533129793531*^9, 
+   3.6875332784029217`*^9}, {3.687533339943087*^9, 3.6875334018762903`*^9}, {
+   3.687533829342499*^9, 3.687533844668285*^9}, 3.687533976394668*^9, {
+   3.6875340790454283`*^9, 3.687534107444275*^9}, {3.687534291625186*^9, 
+   3.6875344461567917`*^9}, {3.68753448266381*^9, 3.687534496957509*^9}, {
+   3.687534745109289*^9, 3.68753476930643*^9}, {3.6875348063489037`*^9, 
+   3.687535058644216*^9}, 3.6875351298684797`*^9, {3.687535528420052*^9, 
+   3.687535618603067*^9}, {3.68753609983151*^9, 3.687536131637762*^9}, 
+   3.687536628527417*^9},
+ CellID->1214111720],
+
+Cell["\<\
+Thirdly, each cell depends on very small group of atoms, the genetic code, \
+which determine it's evolution, something unprecedented, beyond the \
+description of ordinary statistical physics. Perhaps, a partial explanation \
+for this dynamical behavior (rather than statistical) can be traced to \
+rigidity and tightness of chemical bonds. However the very vital point Schr\
+\[ODoubleDot]dinger tries to make is the hypothesis, that there must exist a \
+yet unknown, new law of physics that would explain fully how order can be \
+produced out of order. The formulation of this law is to my knowledge; still \
+in development.\
+\>", "Text",
+ ShowCellBracket->True,
+ CellOpen->True,
+ CellChangeTimes->{{3.687529490940667*^9, 3.687529881979515*^9}, {
+   3.6875299529448233`*^9, 3.687530084704609*^9}, {3.687530163189157*^9, 
+   3.68753024208564*^9}, {3.6875303099736443`*^9, 3.687530394341114*^9}, {
+   3.687530476134448*^9, 3.687530528264512*^9}, {3.687530832606036*^9, 
+   3.687530986105603*^9}, {3.6875310552210407`*^9, 3.687531056801928*^9}, {
+   3.68753252783029*^9, 3.6875325310316763`*^9}, {3.687532748287929*^9, 
+   3.687532795079949*^9}, {3.68753291301672*^9, 3.687533003603554*^9}, {
+   3.687533049318281*^9, 3.687533065201523*^9}, {3.687533129793531*^9, 
+   3.6875332784029217`*^9}, {3.687533339943087*^9, 3.6875334018762903`*^9}, {
+   3.687533829342499*^9, 3.687533844668285*^9}, 3.687533976394668*^9, {
+   3.6875340790454283`*^9, 3.687534107444275*^9}, {3.687534291625186*^9, 
+   3.6875344461567917`*^9}, {3.68753448266381*^9, 3.687534496957509*^9}, {
+   3.687534745109289*^9, 3.68753476930643*^9}, {3.6875348063489037`*^9, 
+   3.687535058644216*^9}, 3.6875351298684797`*^9, {3.687535528420052*^9, 
+   3.6875357464030647`*^9}, {3.687536148821451*^9, 3.687536188904934*^9}, {
+   3.6875366369426823`*^9, 3.687536640984174*^9}},
+ CellID->1951868587],
+
+Cell["\<\
+Lastly, even though Schr\[ODoubleDot]dinger introduces some quantum mechanics \
+principles, like the uniqueness of Heitler-London bond in order to defend the \
+theory laid down by Delbr\[UDoubleDot]ck, he assures that quantum \
+indeterminacy should play only marginal role in the future laws of dynamics \
+of living systems.\
+\>", "Text",
+ ShowCellBracket->True,
+ CellOpen->True,
+ CellChangeTimes->{{3.687535059952901*^9, 3.687535065436749*^9}, 
+   3.6875351298983803`*^9, {3.6875358031068583`*^9, 3.687535829913199*^9}, {
+   3.687536237973688*^9, 3.6875362725519*^9}},
+ CellID->717710451]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Summary of Prigogine contributions", "Section",
+ ShowCellBracket->True,
+ CellOpen->True,
+ CellChangeTimes->{{3.687965548695044*^9, 3.687965559877461*^9}},
+ CellID->1427396854],
+
+Cell["\<\
+The term \[OpenCurlyDoubleQuote]dissipative \
+structures\[CloseCurlyDoubleQuote] was first used by Ilya Prigogine \
+(http://bactra.org/notebooks/dissipative-structures.html) and although \
+Prigogine ideas were not really correct ones it might be worth to recall some \
+of them.\
+\>", "Text",
+ ShowCellBracket->True,
+ CellOpen->True,
+ CellChangeTimes->{{3.6894817041223497`*^9, 3.689481743435677*^9}, {
+  3.689508000271262*^9, 3.6895080154762897`*^9}, {3.689509399381175*^9, 
+  3.689509432123893*^9}, {3.689660129343397*^9, 3.689660153629046*^9}, {
+  3.6896601963022203`*^9, 3.689660225699114*^9}, {3.689660340260139*^9, 
+  3.689660349277863*^9}},
+ CellID->264900243],
+
+Cell[CellGroupData[{
+
+Cell["Nobel Lecture (8 December 1977)", "Subsection",
+ ShowCellBracket->True,
+ CellOpen->True,
+ CellChangeTimes->{{3.6879655713258257`*^9, 3.687965574463735*^9}, {
+  3.6896682451877337`*^9, 3.689668262751911*^9}},
+ CellID->846573447],
+
+Cell["\<\
+Prigogine nobel prize lecture \[OpenCurlyDoubleQuote]Time, structure and \
+fluctuations\[CloseCurlyDoubleQuote] begins with the critique of Helmholtz \
+free energy and the assertion that living system posses a different type of \
+functional order which can be traced to their non\[Dash]equilibrium state. \
+This statement is consistent with the today\[CloseCurlyQuote]s predominant \
+view.\
+\>", "Text",
+ ShowCellBracket->True,
+ CellOpen->True,
+ CellChangeTimes->{{3.6895094405668783`*^9, 3.6895094479842653`*^9}, {
+   3.689509924764661*^9, 3.689510051490498*^9}, {3.689510657605932*^9, 
+   3.689510660524432*^9}, {3.6895244389218616`*^9, 3.689524493682784*^9}, {
+   3.6895245523961563`*^9, 3.689524554710699*^9}, {3.689525937136599*^9, 
+   3.689525941778358*^9}, 3.689668320777794*^9},
+ CellID->569469647],
+
+Cell["\<\
+\[OpenCurlyDoubleQuote]However thermodynamic potentials exist only for \
+exceptional situations\[CloseCurlyDoubleQuote] - is that true?\
+\>", "Question",
+ CellChangeTimes->{{3.689525883870739*^9, 3.689525904438141*^9}, {
+  3.689668361909172*^9, 3.689668366543705*^9}},
+ CellID->879855813],
+
+Cell["\<\
+One of his often cited contributions is connected with a term for entropy for \
+open systems, an extension of Clausius entropy for isolated systems:\
+\>", "Text",
+ CellChangeTimes->{{3.689668439535553*^9, 3.689668445207815*^9}, {
+   3.689670770635294*^9, 3.6896707907909*^9}, {3.689670869557268*^9, 
+   3.6896708799839687`*^9}, {3.689671042044614*^9, 3.689671044189073*^9}, {
+   3.6896710981497297`*^9, 3.689671116511194*^9}, {3.689671177623056*^9, 
+   3.68967119200974*^9}, {3.68967127964508*^9, 3.689671280151143*^9}, 
+   3.689672097523157*^9},
+ CellID->305092716],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[DifferentialD]", "S"}], "=", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[DifferentialD]", "i"], "S"}], "+", 
+    RowBox[{
+     SubscriptBox["\[DifferentialD]", "e"], "S"}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.6896712548258867`*^9, 3.689671272162434*^9}},
+ CellID->649616193],
+
+Cell[TextData[{
+ "Where ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[DifferentialD]", "i"], "S"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is connected with entropy produced within the system and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["\[DifferentialD]", "e"], "S"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is the entropy transferred across the boundaries of the system. The second \
+law states that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[DifferentialD]", "i"], "S"}], "\[GreaterEqual]", "0"}], 
+   TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", so if a system is to stay in law entropy state it\[CloseCurlyQuote]s \
+production must be compensated by an inflow of negative entropy."
+}], "Text",
+ CellChangeTimes->{{3.689671276025165*^9, 3.689671451998253*^9}, {
+  3.689671906808622*^9, 3.689671987504388*^9}},
+ CellID->900849395],
+
+Cell["\<\
+He then develops an explicit expression for entropy production, assuming that \
+even outside equilibrium (but near) entropy depends only on the same \
+variables as at equilibrium (\[OpenCurlyDoubleQuote]local\
+\[CloseCurlyDoubleQuote] equilibrium)\
+\>", "Text",
+ CellChangeTimes->{{3.689672108836014*^9, 3.689672240571854*^9}, {
+  3.689672299343657*^9, 3.689672299939433*^9}, {3.689672432790677*^9, 
+  3.689672434745858*^9}, {3.689675976537016*^9, 3.689675977348439*^9}},
+ CellID->927123374],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"P", "=", 
+   RowBox[{
+    FractionBox[
+     RowBox[{
+      SubscriptBox["\[DifferentialD]", "i"], "S"}], 
+     RowBox[{"\[DifferentialD]", "t"}]], "=", 
+    RowBox[{
+     RowBox[{
+      UnderscriptBox["\[Sum]", "\[Rho]"], 
+      RowBox[{
+       SubscriptBox["J", "\[Rho]"], 
+       SubscriptBox["X", "\[Rho]"]}]}], "\[GreaterEqual]", "0"}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.689672243736864*^9, 3.6896722634970083`*^9}},
+ CellID->119867467],
+
+Cell[TextData[{
+ "where ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["J", "\[Rho]"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " are the rates of the various irreversible processes involved (chemical \
+reactions, heat flow, diffusion\[Ellipsis]) and ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["X", "\[Rho]"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " are the corresponding, generalized forces (affinities, gradients of \
+temperature, of chemical potentials\[Ellipsis]). The flows are described \
+using different empirical laws (Fourier\[CloseCurlyQuote]s law, Fick\
+\[CloseCurlyQuote]s law, etc.) "
+}], "Text",
+ CellChangeTimes->{{3.689672302497674*^9, 3.689672400002678*^9}, 
+   3.6896755699280157`*^9, 3.689675601588271*^9, {3.6896758223911324`*^9, 
+   3.689675876988649*^9}},
+ CellID->1003787114],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   SubscriptBox["J", "\[Rho]"], "=", 
+   RowBox[{
+    UnderscriptBox["\[Sum]", "\[Rho]"], 
+    RowBox[{
+     SubscriptBox["L", 
+      SuperscriptBox["\[Rho]\[Rho]", "\[Prime]"]], 
+     SubscriptBox["X", 
+      SuperscriptBox["\[Rho]", "\[Prime]"]]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.6896757978816223`*^9, 3.6896758159484873`*^9}},
+ CellID->1744192756],
+
+Cell[TextData[{
+ "Onsager relations ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["L", 
+     SuperscriptBox["\[Rho]\[Rho]", "\[Prime]"]], "=", 
+    SubscriptBox["L", 
+     RowBox[{
+      SuperscriptBox["\[Rho]", "\[Prime]"], "\[Rho]"}]]}], TraditionalForm]],
+  FormatType->"TraditionalForm"]
+}], "Comment",
+ CellChangeTimes->{{3.689675995283499*^9, 3.689676010431588*^9}},
+ CellID->1321451661],
+
+Cell[TextData[{
+ "Prigogine rightly criticized the efforts to extend the principle of ",
+ StyleBox["minimum entropy production (which is valid only very near \
+equilibrium) to non-equilibrium regimes, showing that ",
+  FontWeight->"Bold"],
+ ". What exactly is this principle is well explained by Prigogine; when a \
+system is constricted by a boundary condition and perturbed, the entropy \
+production will increase, but then the system settles down to the state of \
+\[OpenCurlyDoubleQuote]least dissipation\[CloseCurlyDoubleQuote].\nAn example \
+of a process such process, namely Rayleigh\[Dash]B\[EAcute]nard convection is \
+given, which he perceives as a prime example of occurrence of \
+\[OpenCurlyDoubleQuote]dissipative structures\[CloseCurlyDoubleQuote] which \
+fail to be described by Boltzmann laws. In Prigogine view the fluctuations \
+are the trigger for the instabilities instabilities, which in turn give rise \
+to spacetime structure. Here instabilities carry the sense of bifurcations of \
+equations of motion."
+}], "Text",
+ CellChangeTimes->{{3.68967602062834*^9, 3.689676068678803*^9}, {
+   3.6896763455944977`*^9, 3.689676370949438*^9}, {3.689676450712203*^9, 
+   3.689676563184635*^9}, {3.6896766130687637`*^9, 3.6896767484351587`*^9}, {
+   3.689680415953002*^9, 3.689680447534645*^9}, {3.68968048493295*^9, 
+   3.689680573621765*^9}, {3.689680614087455*^9, 3.6896806698779087`*^9}, {
+   3.689681236388925*^9, 3.689681261794589*^9}, {3.689681437303203*^9, 
+   3.689681446986074*^9}, {3.6896814974733973`*^9, 3.6896815377105*^9}, {
+   3.689681590136313*^9, 3.68968159963877*^9}, {3.68968165601446*^9, 
+   3.6896817344953737`*^9}, {3.689681803944902*^9, 3.689681824630486*^9}, {
+   3.68968280470485*^9, 3.6896828221985197`*^9}, {3.689688464690406*^9, 
+   3.6896886735203114`*^9}, 3.689688709624446*^9},
+ CellID->1027039882],
+
+Cell["\<\
+I need to learn more about Nicolis work on dynamics of chemical reactions\
+\>", "Comment",
+ CellChangeTimes->{{3.689691119349943*^9, 3.689691127437306*^9}, {
+  3.689691359494536*^9, 3.689691366424843*^9}},
+ CellID->135793209],
+
+Cell["\<\
+Furthermore Prigogine develops an uncommon perspective on the microscopic \
+equations of motion, which in his opinion should not be invariant under time \
+inversion.
+A proposed way to achieve this is through a non\[Dash]unitary transformation \
+which yield a type Lyapounov function, analogue to Bolzmann H-function. The \
+goal was to obtain a microscopic representation of entropy. It\
+\[CloseCurlyQuote]s known in literature as Misra-Prigogine-Courbage theory of \
+irreversibility.\
+\>", "Text",
+ CellChangeTimes->{{3.6896937728999233`*^9, 3.689693845246644*^9}, {
+  3.6896942618644133`*^9, 3.6896942717802134`*^9}, {3.6896947382937803`*^9, 
+  3.689694892979401*^9}, {3.6896949231935053`*^9, 3.6896949744604588`*^9}, {
+  3.689695031286812*^9, 3.689695171034288*^9}, {3.689695246871071*^9, 
+  3.689695287470489*^9}, {3.689695798821261*^9, 3.689695819903564*^9}, {
+  3.68975075149893*^9, 3.689750754252389*^9}},
+ CellID->1184380858],
+
+Cell["\<\
+Prigogine view on reversibility are probably best summarized by the quotes \
+\[OpenCurlyDoubleQuote]I have always found it difficult to accept this \
+conclusion [macroscopic irreversibility emerging from initial conditions]  \
+especially because of the constructive role of irreversible processes. Can \
+dissipative structures be the result of mistakes?\[CloseCurlyDoubleQuote]\
+\>", "Text",
+ CellChangeTimes->{{3.689750759723268*^9, 3.6897509296225567`*^9}, {
+  3.690011143847599*^9, 3.690011146308901*^9}},
+ CellID->1687184739],
+
+Cell["\<\
+At the present moment I can\[CloseCurlyQuote]t comment much on this, but some \
+extensive critique can be found \[OpenCurlyDoubleQuote]Science of Chaos or \
+Chaos in Science\[CloseCurlyDoubleQuote] by Bricmont\
+\>", "Comment",
+ CellChangeTimes->{{3.6896956039967527`*^9, 3.689695650927148*^9}, {
+  3.689967217635257*^9, 3.6899672195353613`*^9}},
+ CellID->985730213],
+
+Cell["\<\
+The best account (or the most understandable) of Prigogine views are perhaps \
+his own words in \[OpenCurlyDoubleQuote]Laws of Chaos\[CloseCurlyDoubleQuote] \
+- \[OpenCurlyDoubleQuote]The essential condition is that the microscopic \
+description of the universe be made in terms of unstable dynamical systems. \
+This is a radical change in point of view. From the point of view of \
+classical physics, stable systems were the rule and unstable systems the \
+exceptions. We are now reversing that perspective.\[CloseCurlyDoubleQuote]
+First it\[CloseCurlyQuote]s not true that stable systems are the rule in \
+classical physics, one can easily devise classical examples of unstable \
+systems following purely classical mechanics, the reason why they are not \
+being analyzed is that analytic methods fail to solve them. Prigogine seems \
+to require more complexity to explain complexity, which is in my opinion not \
+needed.\
+\>", "Text",
+ CellChangeTimes->{{3.690010631310526*^9, 3.690010664604138*^9}, {
+  3.690010902150058*^9, 3.690011079485551*^9}, {3.690011121587446*^9, 
+  3.690011270117132*^9}},
+ CellID->206897526]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1436, 855},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
+PrivateNotebookOptions->{"NoteStyle"->"IndexedNote"},
+CreateCellID->True,
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[StyleDefinitions -> "Science.nb"], CellID -> 661163383]}, 
+  Visible -> False, FrontEndVersion -> 
+  "11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September 21, 2016)", 
+  StyleDefinitions -> "PrivateStylesheetFormatting.nb"]
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 228, 5, 73, "Title",
+ CellOpen->True,
+ CellID->219513966],
+Cell[CellGroupData[{
+Cell[833, 31, 287, 6, 64, "Section",
+ CellOpen->True,
+ CellID->12325631],
+Cell[1123, 39, 1077, 21, 87, "Text",
+ CellOpen->True,
+ CellID->810099106],
+Cell[2203, 62, 299, 7, 37, "Text",
+ CellOpen->True,
+ CellID->1167303303],
+Cell[2505, 71, 1667, 26, 86, "Text",
+ CellOpen->True,
+ CellID->353718380],
+Cell[4175, 99, 1729, 27, 85, "Text",
+ CellOpen->True,
+ CellID->1214111720],
+Cell[5907, 128, 1865, 29, 110, "Text",
+ CellOpen->True,
+ CellID->1951868587],
+Cell[7775, 159, 599, 12, 61, "Text",
+ CellOpen->True,
+ CellID->717710451]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8411, 176, 181, 4, 64, "Section",
+ CellOpen->True,
+ CellID->1427396854],
+Cell[8595, 182, 676, 14, 61, "Text",
+ CellOpen->True,
+ CellID->264900243],
+Cell[CellGroupData[{
+Cell[9296, 200, 233, 5, 39, "Subsection",
+ CellOpen->True,
+ CellID->846573447],
+Cell[9532, 207, 816, 15, 61, "Text",
+ CellOpen->True,
+ CellID->569469647],
+Cell[10351, 224, 298, 6, 22, "Question",
+ CellID->879855813],
+Cell[10652, 232, 576, 10, 37, "Text",
+ CellID->305092716],
+Cell[11231, 244, 358, 11, 32, "EquationNumbered",
+ CellID->649616193],
+Cell[11592, 257, 943, 27, 63, "Text",
+ CellID->900849395],
+Cell[12538, 286, 501, 9, 37, "Text",
+ CellID->927123374],
+Cell[13042, 297, 509, 16, 64, "EquationNumbered",
+ CellID->119867467],
+Cell[13554, 315, 827, 20, 67, "Text",
+ CellID->1003787114],
+Cell[14384, 337, 422, 13, 57, "EquationNumbered",
+ CellID->1744192756],
+Cell[14809, 352, 405, 13, 30, "Comment",
+ CellID->1321451661],
+Cell[15217, 367, 1841, 28, 158, "Text",
+ CellID->1027039882],
+Cell[17061, 397, 235, 5, 22, "Comment",
+ CellID->135793209],
+Cell[17299, 404, 942, 16, 85, "Text",
+ CellID->1184380858],
+Cell[18244, 422, 539, 9, 61, "Text",
+ CellID->1687184739],
+Cell[18786, 433, 375, 7, 22, "Comment",
+ CellID->985730213],
+Cell[19164, 442, 1130, 18, 134, "Text",
+ CellID->206897526]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

@@ -1,0 +1,204 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5491,        196]
+NotebookOptionsPosition[      4657,        161]
+NotebookOutlinePosition[      5014,        177]
+CellTagsIndexPosition[      4971,        174]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Microscopic Reversability", "Title",
+ CellChangeTimes->{{3.693293337594236*^9, 3.693293340344294*^9}, {
+  3.693293503823867*^9, 3.693293511558819*^9}, {3.693295069479866*^9, 
+  3.6932950748311663`*^9}},
+ CellID->375284743],
+
+Cell[CellGroupData[{
+
+Cell["Discrete time Markov chains", "Section",
+ CellChangeTimes->{{3.6932952581952953`*^9, 3.6932952634468107`*^9}},
+ CellID->1489406653],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox["E", TraditionalForm]]],
+ " designates the vector of energy states, ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["E", "x"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " the energy for state ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->"TraditionalForm"]
+}], "Text",
+ CellChangeTimes->{{3.693295359377819*^9, 3.69329536951484*^9}, {
+  3.693295404970196*^9, 3.6932954268588333`*^9}},
+ CellID->1970360540],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   SubscriptBox["\[Pi]", "x"], "=", 
+   RowBox[{
+    RowBox[{"\[Rho]", "(", 
+     RowBox[{
+      RowBox[{"x", "\[VerticalSeparator]", "\[Beta]"}], ",", "E"}], ")"}], 
+    "=", 
+    RowBox[{
+     FractionBox[
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"-", "\[Beta]"}], "\[VeryThinSpace]", 
+        SubscriptBox["E", "x"]}]], 
+      RowBox[{
+       UnderscriptBox["\[Sum]", "x"], 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{"-", "\[Beta]"}], "\[VeryThinSpace]", 
+         SubscriptBox["E", "x"]}]]}]], "=", 
+     RowBox[{"exp", "(", 
+      RowBox[{
+       RowBox[{"\[Beta]", "\[VeryThinSpace]", "F"}], "-", 
+       RowBox[{"\[Beta]", "\[VeryThinSpace]", 
+        SubscriptBox["E", "x"]}]}], ")"}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.693295266091125*^9, 3.693295348974169*^9}},
+ CellID->1540085828],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox[
+     OverscriptBox["M", "^"], "ji"], 
+    SubscriptBox["\[Pi]", "i"]}], "=", 
+   RowBox[{
+    SubscriptBox["M", "ij"], 
+    SubscriptBox["\[Pi]", "j"]}]}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.6932954649413757`*^9, 3.693295483337467*^9}, {
+  3.6932955214873238`*^9, 3.693295543689481*^9}},
+ CellID->110239261],
+
+Cell[TextData[{
+ "This can be solved for ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["M", "^"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " using a simple trick"
+}], "Text",
+ CellChangeTimes->{{3.693295574158787*^9, 3.693295603659288*^9}},
+ CellID->1512710022],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   OverscriptBox["M", "^"], "=", 
+   RowBox[{
+    RowBox[{"diag", "(", "\[Pi]", ")"}], 
+    RowBox[{"M", "\[Transpose]"}], 
+    SuperscriptBox[
+     RowBox[{"diag", "(", "\[Pi]", ")"}], 
+     RowBox[{"-", "1"}]]}]}], TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.6932956182610407`*^9, 3.693295634427335*^9}},
+ CellID->999809404],
+
+Cell["Which works because:", "Text",
+ CellChangeTimes->{{3.693295607829064*^9, 3.693295613296748*^9}},
+ CellID->1041468735],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox[
+     OverscriptBox["M", "^"], "ji"], 
+    SubscriptBox["\[Pi]", "i"]}], "=", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Delta]", "jk"], 
+     SubscriptBox[
+      RowBox[{
+       SubscriptBox["\[Pi]", "k"], "(", 
+       RowBox[{"M", "\[Transpose]"}], ")"}], "kl"], 
+     SubscriptBox[
+      RowBox[{"(", 
+       FractionBox["1", "\[Pi]"], ")"}], "l"], 
+     SubscriptBox["\[Delta]", "li"], 
+     SubscriptBox["\[Pi]", "i"]}], "=", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox[
+       RowBox[{
+        SubscriptBox["\[Pi]", "j"], "(", 
+        RowBox[{"M", "\[Transpose]"}], ")"}], "ji"], 
+      FractionBox["1", 
+       SubscriptBox["\[Pi]", "i"]], 
+      SubscriptBox["\[Pi]", "i"]}], "=", 
+     RowBox[{
+      SubscriptBox["M", "ij"], 
+      SubscriptBox["\[Pi]", "j"]}]}]}]}], TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.693295583562126*^9, 3.6932955891523857`*^9}, {
+  3.693295637016138*^9, 3.6932956414632607`*^9}, {3.693296047201576*^9, 
+  3.693296101664741*^9}},
+ CellID->2034128991]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 755},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
+StyleDefinitions->"Science.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 228, 4, 73, "Title",
+ CellID->375284743],
+Cell[CellGroupData[{
+Cell[833, 30, 137, 2, 63, "Section",
+ CellID->1489406653],
+Cell[973, 34, 475, 15, 38, "Text",
+ CellID->1970360540],
+Cell[1451, 51, 929, 28, 61, "EquationNumbered",
+ CellID->1540085828],
+Cell[2383, 81, 398, 12, 39, "EquationNumbered",
+ CellID->110239261],
+Cell[2784, 95, 274, 9, 42, "Text",
+ CellID->1512710022],
+Cell[3061, 106, 370, 11, 37, "Equation",
+ CellID->999809404],
+Cell[3434, 119, 123, 2, 36, "Text",
+ CellID->1041468735],
+Cell[3560, 123, 1069, 34, 55, "Equation",
+ CellID->2034128991]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
