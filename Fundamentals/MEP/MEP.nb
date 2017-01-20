@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      2194,         87]
-NotebookOptionsPosition[      1578,         58]
-NotebookOutlinePosition[      1935,         74]
-CellTagsIndexPosition[      1892,         71]
+NotebookDataLength[     12716,        440]
+NotebookOptionsPosition[      9935,        331]
+NotebookOutlinePosition[     10292,        347]
+CellTagsIndexPosition[     10249,        344]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -26,8 +26,9 @@ Cell["Maximum Entropy Production Principle", "Title",
 
 Cell[CellGroupData[{
 
-Cell["Interpretation", "Section",
- CellChangeTimes->{{3.6938919109357033`*^9, 3.6938919164574823`*^9}},
+Cell["Interpretations", "Section",
+ CellChangeTimes->{{3.6938919109357033`*^9, 3.6938919164574823`*^9}, 
+   3.693902493410942*^9},
  CellID->1268266661],
 
 Cell["\<\
@@ -40,18 +41,290 @@ Cell[CellGroupData[{
 
 Cell["\<\
 MEP principle is a natural law that provides a description of real world \
-system.\
+system. (Frequentist intepretation)\
 \>", "Item1Numbered",
  CellChangeTimes->{{3.693891937796126*^9, 3.69389195587138*^9}, 
-   3.693891994117393*^9},
+   3.693891994117393*^9, {3.6938999115835342`*^9, 3.693899928117593*^9}},
  CellID->521881969],
 
 Cell["\<\
 MEP principle is an inference procedure that can robustly increase our \
-information about certain systems.\
+information about probabilistic states of certain systems. (Bayesian \
+inference)\
 \>", "Item1Numbered",
- CellChangeTimes->{{3.693891937796126*^9, 3.693891992343417*^9}},
+ CellChangeTimes->{{3.693891937796126*^9, 3.693891992343417*^9}, {
+  3.693899932314389*^9, 3.693899940092016*^9}, {3.693904142162925*^9, 
+  3.693904153444317*^9}},
  CellID->133802023]
+}, Open  ]],
+
+Cell["\<\
+Systems that have states that are further from thermodynamic equilibrium will \
+require more information in order to model accurately; 
+which is equivalent to specifying more boundary conditions for the MEP \
+principle procedure.\
+\>", "Comment",
+ CellChangeTimes->{{3.6939000157653933`*^9, 3.6939000970404987`*^9}},
+ CellID->1778837106]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Basics", "Section",
+ CellChangeTimes->{{3.693903101803772*^9, 3.69390310553384*^9}},
+ CellID->1635683871],
+
+Cell[TextData[{
+ "The rate of change of entropy ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[DifferentialD]", "S"}], "/", 
+    RowBox[{"\[DifferentialD]", "t"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " for these systems can be formulated as"
+}], "Text",
+ CellChangeTimes->{{3.693903111485824*^9, 3.693903134369788*^9}},
+ CellID->1096111493],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   FractionBox[
+    RowBox[{"\[DifferentialD]", "S"}], 
+    RowBox[{"\[DifferentialD]", "t"}]], "=", 
+   RowBox[{"\[Sigma]", "+", 
+    RowBox[{
+     UnderscriptBox["\[Sum]", "i"], 
+     SubscriptBox["NEE", "i"]}]}]}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.6939031365362043`*^9, 3.693903165856679*^9}},
+ CellID->830311786],
+
+Cell[TextData[{
+ "where ",
+ Cell[BoxData[
+  FormBox["NEE", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is the Net entropy Exchanged across the boundary of the system\nand ",
+ Cell[BoxData[
+  FormBox["\[Sigma]", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is the entropy produced in the system."
+}], "Text",
+ CellChangeTimes->{{3.693903168527841*^9, 3.6939032141365347`*^9}},
+ CellID->1968394728],
+
+Cell[TextData[{
+ "In steady state ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     RowBox[{"\[DifferentialD]", "S"}], "/", 
+     RowBox[{"\[DifferentialD]", "t"}]}], "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", we have"
+}], "Text",
+ CellChangeTimes->{{3.6939032160516987`*^9, 3.693903232037859*^9}},
+ CellID->249121305],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[Sigma]", "=", 
+   RowBox[{
+    RowBox[{"F", "\[CenterDot]", 
+     RowBox[{"\[Del]", 
+      RowBox[{"(", 
+       FractionBox["1", "T"], ")"}]}]}], "=", 
+    RowBox[{"-", 
+     RowBox[{
+      UnderscriptBox["\[Sum]", "i"], 
+      SubscriptBox["NEE", "i"]}]}]}]}], TraditionalForm]], "EquationNumbered",\
+
+ CellChangeTimes->{{3.693903234472807*^9, 3.693903248225686*^9}},
+ CellID->820657891],
+
+Cell[TextData[{
+ "where ",
+ Cell[BoxData[
+  FormBox["F", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " are the heat fluxes"
+}], "Text",
+ CellChangeTimes->{{3.693903266563342*^9, 3.693903273725087*^9}},
+ CellID->1373087443]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Common objections", "Section",
+ CellChangeTimes->{{3.69390249520643*^9, 3.693902497782144*^9}},
+ CellID->1661711886],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+If the MEP principle was applicable to a range of systems, we should expect \
+empirical confirmation of the MEP principle from other studies.\
+\>", "Item1",
+ CellChangeTimes->{{3.693902501221299*^9, 3.693902533805094*^9}},
+ CellID->982255948],
+
+Cell["\<\
+No mechanism or explanation was proposed as to how the state of MEP was \
+achieved in these or other systems.\
+\>", "Item1",
+ CellChangeTimes->{{3.6939025841730347`*^9, 3.69390261702109*^9}},
+ CellID->816577804]
+}, Open  ]],
+
+Cell["\<\
+A number of studies by Dewar have attempted to derive the MEP principle as an \
+extension of the MaxEnt procedure of Jaynes.\
+\>", "Comment",
+ CellChangeTimes->{{3.6939026301132603`*^9, 3.693902669412591*^9}},
+ CellID->1015816668],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+There\[CloseCurlyQuote]s no clear specification of when the MEP principle \
+will and will not be applicable. \[OpenCurlyDoubleQuote]Sufficiently complex\
+\[CloseCurlyDoubleQuote] doesn\[CloseCurlyQuote]t say much.\
+\>", "Item1",
+ CellChangeTimes->{{3.693902721346756*^9, 3.6939027643973923`*^9}},
+ CellID->1118840903],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+The Earth\[CloseCurlyQuote]s atmosphere is not in a state of MEP with respect \
+to short to long wave radiation absorption and emissions because there are no \
+real degrees of freedom for the system to do otherwise.\
+\>", "Remark",
+ CellChangeTimes->{{3.693902816636118*^9, 3.6939028734682207`*^9}},
+ CellID->1204749403],
+
+Cell["\<\
+What rate of entropy production is being maximized for any particular system?\
+\
+\>", "Question",
+ CellChangeTimes->{{3.693903067835455*^9, 3.693903089108652*^9}},
+ CellID->161716713]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Identifying MEP systems procedure", "Section",
+ CellChangeTimes->{{3.6939033791581497`*^9, 3.693903393763809*^9}},
+ CellID->1332190614],
+
+Cell[CellGroupData[{
+
+Cell["Propose some system S1 is a MEP system", "Item1Numbered",
+ CellChangeTimes->{{3.693903401432922*^9, 3.693903412438508*^9}},
+ CellID->166363565],
+
+Cell[TextData[{
+ "Model the system and find a function for the rate of entropy production ",
+ Cell[BoxData[
+  FormBox["\[Sigma]", TraditionalForm]],
+  FormatType->"TraditionalForm"]
+}], "Item1Numbered",
+ CellChangeTimes->{{3.693903401432922*^9, 3.693903458346799*^9}},
+ CellID->1507775312],
+
+Cell["Maximize this function getting a set of predictions P1.", \
+"Item1Numbered",
+ CellChangeTimes->{{3.693903401432922*^9, 3.69390348375594*^9}},
+ CellID->612458654],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+If P1 are found to agree with observations, then we have identified S1 to be \
+an MEP system. \
+\>", "Item2Numbered",
+ CellChangeTimes->{{3.693903401432922*^9, 3.693903536186736*^9}},
+ CellID->1558692901],
+
+Cell["\<\
+If they do not agree with observations, then S1 is not a MEP system.\
+\>", "Item2Numbered",
+ CellChangeTimes->{{3.693903401432922*^9, 3.693903559502569*^9}},
+ CellID->353829352],
+
+Cell["How to falsify MEP?", "Question",
+ CellChangeTimes->{{3.693903621596908*^9, 3.6939036264532623`*^9}},
+ CellID->613604091]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["MaxEnt and MEP Principle", "Section",
+ CellChangeTimes->{{3.693905320716148*^9, 3.693905327461418*^9}},
+ CellID->1200268052],
+
+Cell["\<\
+Bayesian inference can be seen as a procedure to leverage the most amount of \
+information from what is currently known about a system. An important \
+component of that procedure is the formulation of the initial prior \
+functions. Jaynes showed that the best position to adopt is one where the \
+Shannon informational entropy of the initial probability density functions is \
+maximized.\
+\>", "Text",
+ CellChangeTimes->{{3.693905332590741*^9, 3.693905479930286*^9}},
+ CellID->95150223],
+
+Cell["\<\
+This will produce prior functions that will make only those assumptions that \
+are justified by the available information.\
+\>", "Comment",
+ CellChangeTimes->{{3.693905485166994*^9, 3.693905511983962*^9}, {
+  3.6939067740248613`*^9, 3.693906803887651*^9}},
+ CellID->1426303497],
+
+Cell["\<\
+If MEP subjected to constrains does not yield predictions consistent with \
+observations, it should not be seen as a failure of MEP per se, but rather as \
+the lack of further relevant information, for instance in terms of additional \
+constrains.\
+\>", "Text",
+ CellChangeTimes->{{3.693906805015541*^9, 3.693906869756097*^9}},
+ CellID->282812835],
+
+Cell["\<\
+The more non-equilibrium a system is the more information is needed to \
+describe it.\
+\>", "Text",
+ CellChangeTimes->{{3.6939077080590143`*^9, 3.6939077222466183`*^9}, 
+   3.693908085316481*^9},
+ CellID->430431260],
+
+Cell["\<\
+MEP Principle could allow better grid parametrization and \
+it\[CloseCurlyQuote]s evolution during integration\
+\>", "Text",
+ CellChangeTimes->{{3.693908094737824*^9, 3.6939081262039013`*^9}},
+ CellID->41205401],
+
+Cell[CellGroupData[{
+
+Cell["Problems", "Subsection",
+ CellChangeTimes->{{3.693907684906766*^9, 3.693907686160986*^9}},
+ CellID->557680584],
+
+Cell["\<\
+Fluxes are not always expressed in terms of thermodynamic gradients that \
+drive them.\
+\>", "Item1",
+ CellChangeTimes->{{3.6939076922626123`*^9, 3.6939077052620783`*^9}, {
+  3.6939077462808847`*^9, 3.693907774033498*^9}},
+ CellID->1159121646]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -77,15 +350,95 @@ Cell[CellGroupData[{
 Cell[580, 22, 142, 2, 73, "Title",
  CellID->1747755446],
 Cell[CellGroupData[{
-Cell[747, 28, 124, 2, 63, "Section",
+Cell[747, 28, 151, 3, 63, "Section",
  CellID->1268266661],
-Cell[874, 32, 184, 4, 37, "Text",
+Cell[901, 33, 184, 4, 37, "Text",
  CellID->648711918],
 Cell[CellGroupData[{
-Cell[1083, 40, 226, 6, 34, "Item1Numbered",
+Cell[1110, 41, 302, 6, 34, "Item1Numbered",
  CellID->521881969],
-Cell[1312, 48, 226, 5, 34, "Item1Numbered",
+Cell[1415, 49, 371, 8, 57, "Item1Numbered",
  CellID->133802023]
+}, Open  ]],
+Cell[1801, 60, 347, 7, 67, "Comment",
+ CellID->1778837106]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2185, 72, 111, 2, 63, "Section",
+ CellID->1635683871],
+Cell[2299, 76, 369, 11, 38, "Text",
+ CellID->1096111493],
+Cell[2671, 89, 379, 11, 61, "EquationNumbered",
+ CellID->830311786],
+Cell[3053, 102, 419, 12, 64, "Text",
+ CellID->1968394728],
+Cell[3475, 116, 353, 12, 38, "Text",
+ CellID->249121305],
+Cell[3831, 130, 425, 14, 61, "EquationNumbered",
+ CellID->820657891],
+Cell[4259, 146, 232, 8, 38, "Text",
+ CellID->1373087443]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4528, 159, 122, 2, 64, "Section",
+ CellID->1661711886],
+Cell[CellGroupData[{
+Cell[4675, 165, 252, 5, 53, "Item1",
+ CellID->982255948],
+Cell[4930, 172, 221, 5, 53, "Item1",
+ CellID->816577804]
+}, Open  ]],
+Cell[5166, 180, 240, 5, 45, "Comment",
+ CellID->1015816668],
+Cell[CellGroupData[{
+Cell[5431, 189, 327, 6, 53, "Item1",
+ CellID->1118840903],
+Cell[CellGroupData[{
+Cell[5783, 199, 330, 6, 45, "Remark",
+ CellID->1204749403],
+Cell[6116, 207, 193, 5, 22, "Question",
+ CellID->161716713]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6370, 219, 141, 2, 64, "Section",
+ CellID->1332190614],
+Cell[CellGroupData[{
+Cell[6536, 225, 149, 2, 34, "Item1Numbered",
+ CellID->166363565],
+Cell[6688, 229, 289, 7, 36, "Item1Numbered",
+ CellID->1507775312],
+Cell[6980, 238, 167, 3, 34, "Item1Numbered",
+ CellID->612458654],
+Cell[CellGroupData[{
+Cell[7172, 245, 214, 5, 24, "Item2Numbered",
+ CellID->1558692901],
+Cell[7389, 252, 187, 4, 24, "Item2Numbered",
+ CellID->353829352],
+Cell[7579, 258, 127, 2, 22, "Question",
+ CellID->613604091]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7767, 267, 130, 2, 63, "Section",
+ CellID->1200268052],
+Cell[7900, 271, 496, 9, 109, "Text",
+ CellID->95150223],
+Cell[8399, 282, 287, 6, 45, "Comment",
+ CellID->1426303497],
+Cell[8689, 290, 357, 7, 85, "Text",
+ CellID->282812835],
+Cell[9049, 299, 225, 6, 37, "Text",
+ CellID->430431260],
+Cell[9277, 307, 221, 5, 37, "Text",
+ CellID->41205401],
+Cell[CellGroupData[{
+Cell[9523, 316, 116, 2, 38, "Subsection",
+ CellID->557680584],
+Cell[9642, 320, 253, 6, 29, "Item1",
+ CellID->1159121646]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
