@@ -1,0 +1,2419 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     75088,       2411]
+NotebookOptionsPosition[     66027,       2091]
+NotebookOutlinePosition[     67348,       2141]
+CellTagsIndexPosition[     67115,       2131]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Microscopic Reversability", "Title",
+ CellChangeTimes->{{3.693293337594236*^9, 3.693293340344294*^9}, {
+  3.693293503823867*^9, 3.693293511558819*^9}, {3.693295069479866*^9, 
+  3.6932950748311663`*^9}},
+ CellID->375284743],
+
+Cell[CellGroupData[{
+
+Cell["Probability distributions", "Section",
+ CellChangeTimes->{{3.6932952581952953`*^9, 3.6932952634468107`*^9}, {
+  3.693738765552083*^9, 3.693738774409305*^9}},
+ CellID->1489406653],
+
+Cell["\<\
+Microscopic reversibility is a relation between probability ratios of \
+trajectories and the heat.\
+\>", "Text",
+ CellChangeTimes->{{3.693738431711583*^9, 3.6937384594345207`*^9}},
+ CellID->111235204],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox["E", TraditionalForm]]],
+ " designates the vector of energy states, ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["E", "x"], TraditionalForm]]],
+ " the energy for state ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "\[Element]", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "2", ",", "\[Ellipsis]", ",", "N"}], "}"}]}], 
+   TraditionalForm]]],
+ " \nIf these state energies do not vary with time then the stationary \
+probability distribution ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Pi]", "x"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is given by the canonical ensemble of equilibrium statistical mechanics"
+}], "Text",
+ CellChangeTimes->{{3.693730267003995*^9, 3.693730319134885*^9}, {
+  3.6937304378271523`*^9, 3.6937304387254877`*^9}},
+ CellID->1933012329],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   SubscriptBox["\[Pi]", "x"], "=", 
+   RowBox[{
+    RowBox[{"\[Rho]", "(", 
+     RowBox[{
+      RowBox[{"x", "\[VerticalSeparator]", "\[Beta]"}], ",", "E"}], ")"}], 
+    "=", 
+    RowBox[{
+     FractionBox[
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"-", "\[Beta]"}], "\[VeryThinSpace]", 
+        SubscriptBox["E", "x"]}]], 
+      RowBox[{
+       UnderscriptBox["\[Sum]", "x"], 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{"-", "\[Beta]"}], "\[VeryThinSpace]", 
+         SubscriptBox["E", "x"]}]]}]], "=", 
+     RowBox[{"exp", "(", 
+      RowBox[{
+       RowBox[{"\[Beta]", "\[VeryThinSpace]", "F"}], "-", 
+       RowBox[{"\[Beta]", "\[VeryThinSpace]", 
+        SubscriptBox["E", "x"]}]}], ")"}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.693295266091125*^9, 3.693295348974169*^9}},
+ CellTags->"probDist",
+ CellID->1540085828],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"F", "(", 
+    RowBox[{"\[Beta]", ",", "E"}], ")"}], "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", 
+      SuperscriptBox["\[Beta]", 
+       RowBox[{"-", "1"}]]}], "ln", " ", 
+     RowBox[{
+      UnderscriptBox["\[Sum]", "x"], " ", 
+      RowBox[{"exp", "(", 
+       RowBox[{
+        RowBox[{"-", "\[Beta]"}], "\[VeryThinSpace]", 
+        SubscriptBox["E", "x"]}], ")"}]}]}], "=", 
+    RowBox[{
+     RowBox[{"-", 
+      SuperscriptBox["\[Beta]", 
+       RowBox[{"-", "1"}]]}], "ln", " ", "Z"}]}]}], 
+  TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.693730353597662*^9, 3.693730384916934*^9}},
+ CellID->1048702723],
+
+Cell[TextData[{
+ "The distribution ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Rho]", "(", 
+    RowBox[{
+     RowBox[{"x", "\[VerticalSeparator]", "\[Beta]"}], ",", "E"}], ")"}], 
+   TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", is the probability of state ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " given the temperature of the heat bath and the energies of all the \
+states."
+}], "Text",
+ CellChangeTimes->{{3.693295359377819*^9, 3.69329536951484*^9}, {
+  3.693295404970196*^9, 3.6932954268588333`*^9}, {3.693727485111557*^9, 
+  3.693727490651606*^9}, {3.693728510088977*^9, 3.693728513152176*^9}, {
+  3.693730405902998*^9, 3.693730507821158*^9}},
+ CellID->1970360540],
+
+Cell["\<\
+We adopt the convention that when there is insufficient information to \
+uniquely determine the probability distribution, then the maximum entropy \
+distribution should be assumed\
+\>", "Comment",
+ CellChangeTimes->{{3.693730525256544*^9, 3.693730574573145*^9}},
+ CellID->1734226641],
+
+Cell["\<\
+In contrast to an equilibrium ensemble, the probability distribution of a \
+non-equilibrium ensemble is not determined solely by the external \
+constraints, but explicitly depends on the dynamics and history of the system.\
+\>", "Remark",
+ CellChangeTimes->{{3.693730611257326*^9, 3.6937306702153482`*^9}},
+ CellID->244198466]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Markov chains", "Section",
+ CellChangeTimes->{{3.693731594248234*^9, 3.693731624491495*^9}},
+ CellID->1896821774],
+
+Cell[CellGroupData[{
+
+Cell["Transfer matrix", "Subsection",
+ CellChangeTimes->{{3.693736265043806*^9, 3.693736267586018*^9}},
+ CellID->1581230616],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   SubscriptBox[
+    RowBox[{"M", "(", "t", ")"}], 
+    RowBox[{
+     RowBox[{"x", "(", 
+      RowBox[{"t", "+", "1"}], ")"}], 
+     RowBox[{"x", "(", "t", ")"}]}]], "\[Congruent]", 
+   RowBox[{"P", "(", 
+    RowBox[{
+     RowBox[{"x", "(", "t", ")"}], "\[Rule]", 
+     RowBox[{"x", "(", 
+      RowBox[{"t", "+", "1"}], ")"}]}], ")"}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.693296759210623*^9, 3.693296779602375*^9}},
+ CellID->1884710626],
+
+Cell[CellGroupData[{
+
+Cell["all elements must be non\[Dash]negative", "Item1",
+ CellChangeTimes->{{3.6937316592031517`*^9, 3.693731666849848*^9}, {
+  3.6937362722971*^9, 3.693736272297303*^9}},
+ CellID->72331497],
+
+Cell["all columns must sum to one (normalization of probabilities)", "Item1",
+ CellChangeTimes->{{3.6937316592031517`*^9, 3.693731666849848*^9}, {
+  3.6937362729898853`*^9, 3.693736310101597*^9}},
+ CellID->1225582723]
+}, Open  ]],
+
+Cell["Single time step dynamics can be written as", "Text",
+ CellChangeTimes->{{3.69373639953708*^9, 3.693736408258737*^9}},
+ CellID->1897863217],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[Rho]", "(", 
+    RowBox[{"t", "+", "1"}], ")"}], "=", 
+   RowBox[{
+    RowBox[{"M", "(", "t", ")"}], 
+    RowBox[{"\[Rho]", "(", "t", ")"}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.6937363776023893`*^9, 3.693736387159636*^9}},
+ CellID->1459920089],
+
+Cell[TextData[{
+ "A vector of transition matrices ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"M", "=", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"M", "(", "0", ")"}], ",", 
+      RowBox[{"M", "(", "1", ")"}], ",", "\[Ellipsis]", ",", 
+      RowBox[{"M", "(", 
+       RowBox[{"\[Tau]", "-", "1"}], ")"}]}], ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " completely determines the dynamics of the system."
+}], "Text",
+ CellChangeTimes->{{3.693736954215501*^9, 3.693737006391346*^9}},
+ CellID->819541473],
+
+Cell["The state energies are always finite", "Remark",
+ CellChangeTimes->{{3.693737038611532*^9, 3.6937370530313787`*^9}},
+ CellID->1799279126],
+
+Cell[CellGroupData[{
+
+Cell["Balanced transition", "Subsubsection",
+ CellChangeTimes->{{3.693737538725874*^9, 3.693737555516676*^9}},
+ CellID->1158389807],
+
+Cell[TextData[{
+ "We call a transition matrix balanced, or say that the equilibrium \
+distribution ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Pi]", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is an invariant distribution of ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"M", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.693737574107085*^9, 3.6937376144701643`*^9}, {
+  3.693739251340015*^9, 3.6937392538700027`*^9}},
+ CellID->226443052],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[Pi]", "(", "t", ")"}], "=", 
+   RowBox[{
+    RowBox[{"M", "(", "t", ")"}], 
+    RowBox[{"\[Pi]", "(", "t", ")"}]}]}], TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.693737565515832*^9, 3.693737571657193*^9}},
+ CellTags->"invDistM",
+ CellID->1629014818],
+
+Cell["\<\
+If the system is already in equilibrium and the system is unperturbed, then \
+it must remain in equilibrium\
+\>", "Comment",
+ CellChangeTimes->{{3.693738022081629*^9, 3.693738045610869*^9}},
+ CellID->1221892782]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Detailed balance transition", "Subsubsection",
+ CellChangeTimes->{{3.693738285264731*^9, 3.69373829302505*^9}},
+ CellID->922241355],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox[
+     RowBox[{"M", "(", "t", ")"}], "ij"], 
+    SubscriptBox[
+     RowBox[{"\[Pi]", "(", "t", ")"}], "j"]}], "=", 
+   RowBox[{
+    SubscriptBox[
+     RowBox[{"M", "(", "t", ")"}], "ji"], 
+    SubscriptBox[
+     RowBox[{"\[Pi]", "(", "t", ")"}], "i"]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.69373829950711*^9, 3.693738314018763*^9}},
+ CellTags->"detailedBalance",
+ CellID->1928161086],
+
+Cell["\<\
+Many Monte Carlo simulations are detailed balanced, but it\[CloseCurlyQuote]s \
+NOT a necessity in such simulations and for microscopic reversibility\
+\>", "Comment",
+ CellChangeTimes->{{3.693738329979381*^9, 3.6937384027894697`*^9}},
+ CellID->720214616]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Microscopic picture of work and heat", "Section",
+ CellChangeTimes->{{3.693738485594303*^9, 3.693738492596216*^9}},
+ CellID->716047456],
+
+Cell[CellGroupData[{
+
+Cell["Work \[Dash] change in states energy levels", "Item1",
+ CellChangeTimes->{{3.693738498575296*^9, 3.693738507831276*^9}},
+ CellID->1183884519],
+
+Cell["Heat \[Dash] changes between states", "Item1",
+ CellChangeTimes->{{3.693738498575296*^9, 3.693738540884685*^9}},
+ CellID->183582858]
+}, Open  ]],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"Q", "[", "x", "]"}], "=", 
+   RowBox[{
+    UnderoverscriptBox["\[Sum]", 
+     RowBox[{"t", "=", "0"}], 
+     RowBox[{"\[Tau]", "-", "1"}]], 
+    RowBox[{"[", 
+     RowBox[{
+      SubscriptBox[
+       RowBox[{"E", "(", "t", ")"}], 
+       RowBox[{"x", "(", 
+        RowBox[{"t", "+", "1"}], ")"}]], "-", 
+      SubscriptBox[
+       RowBox[{"E", "(", "t", ")"}], 
+       RowBox[{"x", "(", "t", ")"}]]}], "]"}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.6937385458417873`*^9, 3.693738576459593*^9}},
+ CellTags->"defHeat",
+ CellID->1408018398],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"W", "[", "x", "]"}], "=", 
+   RowBox[{
+    UnderoverscriptBox["\[Sum]", 
+     RowBox[{"t", "=", "0"}], 
+     RowBox[{"\[Tau]", "-", "1"}]], 
+    RowBox[{"[", 
+     RowBox[{
+      SubscriptBox[
+       RowBox[{"E", "(", 
+        RowBox[{"t", "+", "1"}], ")"}], 
+       RowBox[{"x", "(", 
+        RowBox[{"t", "+", "1"}], ")"}]], "-", 
+      SubscriptBox[
+       RowBox[{"E", "(", "t", ")"}], 
+       RowBox[{"x", "(", 
+        RowBox[{"t", "+", "1"}], ")"}]]}], "]"}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.693738580711452*^9, 3.6937386176975737`*^9}},
+ CellID->334180279],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"\[CapitalDelta]E", "=", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox[
+      RowBox[{"E", "(", "\[Tau]", ")"}], 
+      RowBox[{"x", "(", "\[Tau]", ")"}]], "-", 
+     SubscriptBox[
+      RowBox[{"E", "(", "0", ")"}], 
+      RowBox[{"x", "(", "0", ")"}]]}], "=", 
+    RowBox[{"W", "+", "Q"}]}]}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.6937386225988817`*^9, 3.693738646482003*^9}},
+ CellID->978268147],
+
+Cell[CellGroupData[{
+
+Cell["Reversible work", "Subsection",
+ CellChangeTimes->{{3.693738658623032*^9, 3.693738661348507*^9}},
+ CellID->392222220],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   SubscriptBox["W", "r"], "=", 
+   RowBox[{"\[CapitalDelta]F", "=", 
+    RowBox[{
+     RowBox[{"F", "(", 
+      RowBox[{"\[Beta]", ",", 
+       RowBox[{"E", "(", "\[Tau]", ")"}]}], ")"}], "-", 
+     RowBox[{"F", "(", 
+      RowBox[{"\[Beta]", ",", 
+       RowBox[{"E", "(", "0", ")"}]}], ")"}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.693738665239923*^9, 3.6937386918135777`*^9}},
+ CellID->1472550227],
+
+Cell["It\[CloseCurlyQuote]s a state function!", "Comment",
+ CellChangeTimes->{{3.693738723317569*^9, 3.693738726523773*^9}},
+ CellID->1149727846]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Dissipative work", "Subsection",
+ CellChangeTimes->{{3.693738701741253*^9, 3.693738704474185*^9}},
+ CellID->1983252871],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["W", "d"], "[", "x", "]"}], "=", 
+   RowBox[{
+    RowBox[{"W", "[", "x", "]"}], "-", 
+    SubscriptBox["W", "r"]}]}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.693738708755642*^9, 3.693738715371977*^9}},
+ CellID->313486710]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Time reversal", "Section",
+ CellChangeTimes->{{3.693738873830489*^9, 3.693738876116153*^9}},
+ CellID->1080226443],
+
+Cell["\<\
+Can be implemented by reversal of dynamics or permutations of the state space \
+(inverting momenta of all particles)\
+\>", "Text",
+ CellChangeTimes->{{3.693738898457431*^9, 3.6937389557986917`*^9}},
+ CellID->1509369544],
+
+Cell[CellGroupData[{
+
+Cell["Reversal of dynamics", "Subsection",
+ CellChangeTimes->{{3.693739125999866*^9, 3.693739131475361*^9}},
+ CellID->739526773],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    OverscriptBox["x", "^"], "(", "t", ")"}], "=", 
+   RowBox[{"x", "(", 
+    RowBox[{"\[Tau]", "-", "t"}], ")"}]}], TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.69373913499611*^9, 3.693739140305725*^9}},
+ CellID->138049645],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    OverscriptBox["E", "^"], "(", "t", ")"}], "=", 
+   RowBox[{"E", "(", 
+    RowBox[{"\[Tau]", "-", "t"}], ")"}]}], TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.693739144420826*^9, 3.6937391517332973`*^9}},
+ CellID->1297349150],
+
+Cell[TextData[{
+ "Consider a time homogenous Markov chain (chain with a \
+time\[Dash]independent transition matrix). Let ",
+ Cell[BoxData[
+  FormBox["\[Pi]", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " be the invariant distribution of the transition matrix ",
+ Cell[BoxData[
+  ButtonBox[
+   RowBox[{"(", 
+    CounterBox["Section", "invDistM"], ".", 
+    CounterBox["Equation", "invDistM"], ")"}],
+   BaseStyle->{"Hyperlink", Larger},
+   ButtonData->"invDistM",
+   Tooltip->{
+     DynamicBox[
+      RowBox[
+       Flatten[{
+         PackageUtils`CellStrip[
+          NotebookRead[
+           First[
+            Cells[
+             EvaluationNotebook[], CellTags -> {"invDistM"}]]]]}]], 
+      UpdateInterval -> Infinity]},
+   TooltipDelay->0.05,
+   TooltipStyle->{
+    Background -> RGBColor[1, 1, 1], CellFrameColor -> RGBColor[1, 1, 1], 
+     CellFrame -> 2}]]],
+ ".\nIf the system is in equilibrium then a time reversal should have no \
+effect on that distribution.\nProbability ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"i", "\[Rule]", "j"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " in forward chain should be equal to probability of ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"j", "\[Rule]", "i"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " in the time reversed chain. So it follows that:"
+}], "Text",
+ CellChangeTimes->{{3.693739301937973*^9, 3.693739437071252*^9}, {
+  3.693739547728549*^9, 3.693739612519466*^9}},
+ CellID->581407032],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     SubscriptBox[
+      OverscriptBox["M", "^"], "ji"], 
+     SubscriptBox["\[Pi]", "i"]}], "=", 
+    RowBox[{
+     SubscriptBox["M", "ij"], 
+     SubscriptBox["\[Pi]", "j"]}]}], ",", " ", 
+   RowBox[{"for", " ", "all", " ", "i"}], ",", "j"}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.6932954649413757`*^9, 3.693295483337467*^9}, {
+  3.6932955214873238`*^9, 3.693295543689481*^9}, {3.69373961433558*^9, 
+  3.693739617816923*^9}},
+ CellTags->"ForwardBackwardM",
+ CellID->110239261],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["M", "^"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is called the reversal of ",
+ Cell[BoxData[
+  FormBox["M", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " or the ",
+ Cell[BoxData[
+  FormBox["\[Pi]", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\[Dash]dual of ",
+ Cell[BoxData[
+  FormBox["M", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Comment",
+ CellChangeTimes->{{3.6937412877104588`*^9, 3.6937413250078497`*^9}},
+ CellID->1562285455],
+
+Cell[TextData[{
+ "This can be solved for ",
+ Cell[BoxData[
+  FormBox[
+   OverscriptBox["M", "^"], TraditionalForm]]],
+ " using a simple trick"
+}], "Text",
+ CellChangeTimes->{{3.693295574158787*^9, 3.693295603659288*^9}},
+ CellID->1512710022],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   OverscriptBox["M", "^"], "=", 
+   RowBox[{
+    RowBox[{"diag", "(", "\[Pi]", ")"}], 
+    RowBox[{"M", "\[Transpose]"}], 
+    SuperscriptBox[
+     RowBox[{"diag", "(", "\[Pi]", ")"}], 
+     RowBox[{"-", "1"}]]}]}], TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.6932956182610407`*^9, 3.693295634427335*^9}},
+ CellID->999809404],
+
+Cell["Which works because:", "Text",
+ CellChangeTimes->{{3.693295607829064*^9, 3.693295613296748*^9}},
+ CellID->1041468735],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox[
+     OverscriptBox["M", "^"], "ji"], 
+    SubscriptBox["\[Pi]", "i"]}], "=", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["\[Delta]", "jk"], 
+     SubscriptBox[
+      RowBox[{
+       SubscriptBox["\[Pi]", "k"], "(", 
+       RowBox[{"M", "\[Transpose]"}], ")"}], "kl"], 
+     SubscriptBox[
+      RowBox[{"(", 
+       FractionBox["1", "\[Pi]"], ")"}], "l"], 
+     SubscriptBox["\[Delta]", "li"], 
+     SubscriptBox["\[Pi]", "i"]}], "=", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox[
+       RowBox[{
+        SubscriptBox["\[Pi]", "j"], "(", 
+        RowBox[{"M", "\[Transpose]"}], ")"}], "ji"], 
+      FractionBox["1", 
+       SubscriptBox["\[Pi]", "i"]], 
+      SubscriptBox["\[Pi]", "i"]}], "=", 
+     RowBox[{
+      SubscriptBox["M", "ij"], 
+      SubscriptBox["\[Pi]", "j"]}]}]}]}], TraditionalForm]],
+ FormatType->"TraditionalForm"]], "Proof",
+ CellChangeTimes->{{3.693295583562126*^9, 3.6932955891523857`*^9}, {
+  3.693295637016138*^9, 3.6932956414632607`*^9}, {3.693296047201576*^9, 
+  3.693296101664741*^9}, {3.6937415271037693`*^9, 3.6937415370011263`*^9}},
+ CellID->2034128991],
+
+Cell[TextData[{
+ "If the transition matrix obeys the detailed balance ",
+ Cell[BoxData[
+  ButtonBox[
+   RowBox[{"(", 
+    CounterBox["Section", "detailedBalance"], ".", 
+    CounterBox["EquationNumbered", "detailedBalance"], ")"}],
+   BaseStyle->{"Hyperlink", Larger},
+   ButtonData->"detailedBalance",
+   Tooltip->{
+     DynamicBox[
+      RowBox[
+       Flatten[{
+         PackageUtils`CellStrip[
+          NotebookRead[
+           First[
+            Cells[
+             EvaluationNotebook[], CellTags -> {"detailedBalance"}]]]]}]], 
+      UpdateInterval -> Infinity]},
+   TooltipDelay->0.05,
+   TooltipStyle->{
+    Background -> RGBColor[1, 1, 1], CellFrameColor -> RGBColor[1, 1, 1], 
+     CellFrame -> 2}]]],
+ " then ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox["M", "^"], "=", "M"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Remark",
+ CellChangeTimes->{{3.693741327136024*^9, 3.69374133875458*^9}, {
+  3.693741392396274*^9, 3.693741408057375*^9}, {3.693741955388311*^9, 
+  3.693741962801709*^9}, {3.6937479018725433`*^9, 3.693747907014312*^9}},
+ CellID->1262598687]
+}, Open  ]],
+
+Cell["For non\[Dash]homogeneous chain we have", "Text",
+ CellChangeTimes->{{3.693743063337268*^9, 3.693743073804003*^9}, {
+  3.693743117013933*^9, 3.693743118381859*^9}},
+ CellID->1497526433],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   OverscriptBox["M", "^"], "=", 
+   RowBox[{
+    RowBox[{"diag", "(", 
+     RowBox[{"\[Pi]", "(", 
+      RowBox[{"\[Tau]", "-", "t"}], ")"}], ")"}], 
+    RowBox[{
+     RowBox[{"M", "(", 
+      RowBox[{"\[Tau]", "-", "t"}], ")"}], "\[Transpose]"}], 
+    SuperscriptBox[
+     RowBox[{"diag", "(", 
+      RowBox[{"\[Pi]", "(", 
+       RowBox[{"\[Tau]", "-", "t"}], ")"}], ")"}], 
+     RowBox[{"-", "1"}]]}]}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.6932956182610407`*^9, 3.693295634427335*^9}, {
+  3.693743174010036*^9, 3.693743188187052*^9}},
+ CellTags->"nonhomoInvChain",
+ CellID->609736316],
+
+Cell["For reverse transitions", "Text",
+ CellChangeTimes->{{3.6937438234687157`*^9, 3.693743827274598*^9}},
+ CellID->1626542589],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    OverscriptBox["\[Rho]", "^"], "(", "t", ")"}], "=", 
+   RowBox[{
+    RowBox[{
+     OverscriptBox["M", "^"], "(", "t", ")"}], 
+    RowBox[{
+     OverscriptBox["\[Rho]", "^"], "(", 
+     RowBox[{"t", "-", "1"}], ")"}]}]}], TraditionalForm]], "EquationNumbered",\
+
+ CellChangeTimes->{{3.693745362388775*^9, 3.693745372607943*^9}},
+ CellID->112824292],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"Q", "[", "x", "]"}], "=", 
+   RowBox[{"-", 
+    RowBox[{"Q", "[", 
+     OverscriptBox["x", "^"], "]"}]}]}], TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.693745892129361*^9, 3.6937458981086893`*^9}},
+ CellID->1800246308],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"W", "[", "x", "]"}], "=", 
+   RowBox[{"-", 
+    RowBox[{"W", "[", 
+     OverscriptBox["x", "^"], "]"}]}]}], TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.693745902422464*^9, 3.693745907667429*^9}},
+ CellID->1720652550],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["W", "d"], "[", "x", "]"}], "=", 
+   RowBox[{"-", 
+    RowBox[{
+     SubscriptBox["W", "d"], "[", 
+     OverscriptBox["x", "^"], "]"}]}]}], TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.6937459147143717`*^9, 3.693745924719396*^9}},
+ CellID->1765287582]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Forward/reverse trajectories relation", "Section",
+ CellChangeTimes->{{3.6937460391468277`*^9, 3.693746043155344*^9}, {
+  3.693746117043604*^9, 3.693746127903647*^9}},
+ CellID->46246775],
+
+Cell[TextData[{
+ "Let ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[ScriptCapitalP]", "[", 
+    RowBox[{
+     RowBox[{"x", "\[VerticalSeparator]", 
+      RowBox[{"x", "(", "0", ")"}]}], ",", "M"}], "]"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " be the probability of observing the trajectory ",
+ Cell[BoxData[
+  FormBox["x", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", given that the system started in state ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "(", "0", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ".\nThe probability of the corresponding reversed path is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    OverscriptBox["\[ScriptCapitalP]", "^"], "[", 
+    RowBox[{
+     RowBox[{
+      OverscriptBox["x", "^"], "\[VerticalSeparator]", 
+      RowBox[{
+       OverscriptBox["x", "^"], "(", "0", ")"}]}], ",", 
+     OverscriptBox["M", "^"]}], "]"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". The ratio of those path probabilities is a simple function of the heat \
+exchanged with the bath"
+}], "Text",
+ CellChangeTimes->{{3.693746134775427*^9, 3.693746228307378*^9}},
+ CellID->297184323],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   FractionBox[
+    RowBox[{"\[ScriptCapitalP]", "[", 
+     RowBox[{
+      RowBox[{"x", "\[VerticalSeparator]", 
+       RowBox[{"x", "(", "0", ")"}]}], ",", "M"}], "]"}], 
+    RowBox[{
+     OverscriptBox["\[ScriptCapitalP]", "^"], "[", 
+     RowBox[{
+      RowBox[{
+       OverscriptBox["x", "^"], "\[VerticalSeparator]", 
+       RowBox[{
+        OverscriptBox["x", "^"], "(", "0", ")"}]}], ",", 
+      OverscriptBox["M", "^"]}], "]"}]], "=", 
+   SuperscriptBox["\[ExponentialE]", 
+    RowBox[{
+     RowBox[{"-", "\[Beta]"}], "\[VeryThinSpace]", 
+     RowBox[{"Q", "[", "x", "]"}]}]]}], TraditionalForm]], "EquationNumbered",\
+
+ CellChangeTimes->{{3.693746047910707*^9, 3.6937460842431917`*^9}},
+ CellID->606567785],
+
+Cell[TextData[{
+ "\tFirst we expand the path probability as a product of single time step \
+probabilities (Markovian dynamics)\n ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox[
+     RowBox[{"\[ScriptCapitalP]", "[", 
+      RowBox[{
+       RowBox[{"x", "\[VerticalSeparator]", 
+        RowBox[{"x", "(", "0", ")"}]}], ",", "M"}], "]"}], 
+     RowBox[{
+      OverscriptBox["\[ScriptCapitalP]", "^"], "[", 
+      RowBox[{
+       RowBox[{
+        OverscriptBox["x", "^"], "\[VerticalSeparator]", 
+        RowBox[{
+         OverscriptBox["x", "^"], "(", "0", ")"}]}], ",", 
+       OverscriptBox["M", "^"]}], "]"}]], "=", 
+    RowBox[{
+     FractionBox[
+      RowBox[{
+       UnderoverscriptBox["\[Product]", 
+        RowBox[{"t", "=", "0"}], 
+        RowBox[{"\[Tau]", "-", "1"}]], 
+       RowBox[{"P", "(", 
+        RowBox[{
+         RowBox[{"x", "(", "t", ")"}], "\[Rule]", 
+         RowBox[{"x", "(", 
+          RowBox[{"t", "+", "1"}], ")"}]}], ")"}]}], 
+      RowBox[{
+       UnderoverscriptBox["\[Product]", 
+        RowBox[{
+         SuperscriptBox["t", "\[Prime]"], "=", "0"}], 
+        RowBox[{"\[Tau]", "-", "1"}]], 
+       RowBox[{"P", "(", 
+        RowBox[{
+         RowBox[{
+          OverscriptBox["x", "^"], "(", 
+          SuperscriptBox["t", "\[Prime]"], ")"}], "\[Rule]", 
+         RowBox[{
+          OverscriptBox["x", "^"], "(", 
+          RowBox[{
+           SuperscriptBox["t", "\[Prime]"], "+", "1"}], ")"}]}], ")"}]}]], 
+     "=", 
+     RowBox[{
+      FractionBox[
+       RowBox[{
+        SubscriptBox[
+         RowBox[{"M", "(", "0", ")"}], 
+         RowBox[{
+          RowBox[{"x", "(", "1", ")"}], 
+          RowBox[{"x", "(", "0", ")"}]}]], 
+        SubscriptBox[
+         RowBox[{"M", "(", "1", ")"}], 
+         RowBox[{
+          RowBox[{"x", "(", "2", ")"}], 
+          RowBox[{"x", "(", "1", ")"}]}]], "\[Ellipsis]", " ", 
+        SubscriptBox[
+         RowBox[{"M", "(", 
+          RowBox[{"\[Tau]", "-", "1"}], ")"}], 
+         RowBox[{
+          RowBox[{"x", "(", "\[Tau]", ")"}], 
+          RowBox[{"x", "(", 
+           RowBox[{"\[Tau]", "-", "1"}], ")"}]}]]}], 
+       RowBox[{
+        SubscriptBox[
+         RowBox[{
+          OverscriptBox["M", "^"], "(", "1", ")"}], 
+         RowBox[{
+          RowBox[{
+           OverscriptBox["x", "^"], "(", "1", ")"}], 
+          RowBox[{
+           OverscriptBox["x", "^"], "(", "0", ")"}]}]], 
+        SubscriptBox[
+         RowBox[{
+          OverscriptBox["M", "^"], "(", "2", ")"}], 
+         RowBox[{
+          RowBox[{
+           OverscriptBox["x", "^"], "(", "2", ")"}], 
+          RowBox[{
+           OverscriptBox["x", "^"], "(", "1", ")"}]}]], "\[Ellipsis]", " ", 
+        SubscriptBox[
+         RowBox[{
+          OverscriptBox["M", "^"], "(", "\[Tau]", ")"}], 
+         RowBox[{
+          RowBox[{
+           OverscriptBox["x", "^"], "(", "\[Tau]", ")"}], 
+          RowBox[{
+           OverscriptBox["x", "^"], "(", 
+           RowBox[{"\[Tau]", "-", "1"}], ")"}]}]]}]], 
+      OverscriptBox["=", 
+       RowBox[{
+        OverscriptBox["x", "^"], "\[Rule]", "x"}]], 
+      RowBox[{
+       FractionBox[
+        RowBox[{
+         SubscriptBox[
+          RowBox[{"M", "(", "0", ")"}], 
+          RowBox[{
+           RowBox[{"x", "(", "1", ")"}], 
+           RowBox[{"x", "(", "0", ")"}]}]], 
+         SubscriptBox[
+          RowBox[{"M", "(", "1", ")"}], 
+          RowBox[{
+           RowBox[{"x", "(", "2", ")"}], 
+           RowBox[{"x", "(", "1", ")"}]}]], "\[Ellipsis]", " ", 
+         SubscriptBox[
+          RowBox[{"M", "(", 
+           RowBox[{"\[Tau]", "-", "1"}], ")"}], 
+          RowBox[{
+           RowBox[{"x", "(", "\[Tau]", ")"}], 
+           RowBox[{"x", "(", 
+            RowBox[{"\[Tau]", "-", "1"}], ")"}]}]]}], 
+        RowBox[{
+         SubscriptBox[
+          RowBox[{
+           OverscriptBox["M", "^"], "(", "1", ")"}], 
+          RowBox[{
+           RowBox[{"x", "(", 
+            RowBox[{"\[Tau]", "-", "1"}], ")"}], 
+           RowBox[{"x", "(", "\[Tau]", ")"}]}]], 
+         SubscriptBox[
+          RowBox[{
+           OverscriptBox["M", "^"], "(", "2", ")"}], 
+          RowBox[{
+           RowBox[{"x", "(", 
+            RowBox[{"\[Tau]", "-", "2"}], ")"}], 
+           RowBox[{"x", "(", 
+            RowBox[{"\[Tau]", "-", "1"}], ")"}]}]], "\[Ellipsis]", " ", 
+         SubscriptBox[
+          RowBox[{
+           OverscriptBox["M", "^"], "(", "\[Tau]", ")"}], 
+          RowBox[{
+           RowBox[{"x", "(", "0", ")"}], 
+           RowBox[{"x", "(", "1", ")"}]}]]}]], 
+       OverscriptBox["=", 
+        ButtonBox[
+         RowBox[{"(", 
+          CounterBox["Section", "nonhomoInvChain"], ".", 
+          CounterBox["EquationNumbered", "nonhomoInvChain"], ")"}],
+         BaseStyle->{"Hyperlink", Larger},
+         ButtonData->"nonhomoInvChain",
+         Tooltip->{
+           DynamicBox[
+            RowBox[
+             Flatten[{
+               PackageUtils`CellStrip[
+                NotebookRead[
+                 First[
+                  Cells[
+                   EvaluationNotebook[], 
+                   CellTags -> {"nonhomoInvChain"}]]]]}]], UpdateInterval -> 
+            Infinity]},
+         TooltipDelay->0.05,
+         TooltipStyle->{
+          Background -> RGBColor[1, 1, 1], CellFrameColor -> 
+           RGBColor[1, 1, 1], CellFrame -> 2}]], 
+       RowBox[{
+        FractionBox[
+         RowBox[{
+          SubscriptBox[
+           RowBox[{"M", "(", "0", ")"}], 
+           RowBox[{
+            RowBox[{"x", "(", "1", ")"}], 
+            RowBox[{"x", "(", "0", ")"}]}]], 
+          SubscriptBox[
+           RowBox[{"M", "(", "1", ")"}], 
+           RowBox[{
+            RowBox[{"x", "(", "2", ")"}], 
+            RowBox[{"x", "(", "1", ")"}]}]], "\[Ellipsis]", " ", 
+          SubscriptBox[
+           RowBox[{"M", "(", 
+            RowBox[{"\[Tau]", "-", "1"}], ")"}], 
+           RowBox[{
+            RowBox[{"x", "(", "\[Tau]", ")"}], 
+            RowBox[{"x", "(", 
+             RowBox[{"\[Tau]", "-", "1"}], ")"}]}]]}], 
+         RowBox[{
+          RowBox[{"\[Pi]", "(", 
+           RowBox[{"\[Tau]", "-", "1"}], ")"}], 
+          SubscriptBox[
+           RowBox[{"M", "(", 
+            RowBox[{"\[Tau]", "-", "1"}], ")"}], 
+           RowBox[{
+            RowBox[{"x", "(", "\[Tau]", ")"}], 
+            RowBox[{"x", "(", 
+             RowBox[{"\[Tau]", "-", "1"}], ")"}]}]], 
+          SuperscriptBox[
+           RowBox[{"\[Pi]", "(", 
+            RowBox[{"\[Tau]", "-", "1"}], ")"}], 
+           RowBox[{"-", "1"}]], 
+          RowBox[{"\[Pi]", "(", 
+           RowBox[{"\[Tau]", "-", "2"}], ")"}], 
+          SubscriptBox[
+           RowBox[{"M", "(", 
+            RowBox[{"\[Tau]", "-", "2"}], ")"}], 
+           RowBox[{
+            RowBox[{"x", "(", 
+             RowBox[{"\[Tau]", "-", "1"}], ")"}], 
+            RowBox[{"x", "(", 
+             RowBox[{"\[Tau]", "-", "2"}], ")"}]}]], 
+          SuperscriptBox[
+           RowBox[{"\[Pi]", "(", 
+            RowBox[{"\[Tau]", "-", "2"}], ")"}], 
+           RowBox[{"-", "1"}]], "\[Ellipsis]", " \[VeryThinSpace]", 
+          RowBox[{"\[Pi]", "(", "0", ")"}], 
+          SubscriptBox[
+           RowBox[{"M", "(", "0", ")"}], 
+           RowBox[{
+            RowBox[{"x", "(", "1", ")"}], 
+            RowBox[{"x", "(", "0", ")"}]}]], 
+          SuperscriptBox[
+           RowBox[{"\[Pi]", "(", "0", ")"}], 
+           RowBox[{"-", "1"}]]}]], 
+        OverscriptBox["=", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"M", "'"}], "s", " ", "are"}], "\[LineSeparator]", " ", 
+          "numbers"}]], 
+        RowBox[{
+         RowBox[{
+          UnderoverscriptBox["\[Product]", 
+           RowBox[{"t", "=", "0"}], 
+           RowBox[{"\[Tau]", "-", "1"}]], 
+          FractionBox[
+           SubscriptBox[
+            RowBox[{"\[Pi]", "(", "t", ")"}], 
+            RowBox[{"x", "(", 
+             RowBox[{"t", "+", "1"}], ")"}]], 
+           SubscriptBox[
+            RowBox[{"\[Pi]", "(", "t", ")"}], 
+            RowBox[{"x", "(", "t", ")"}]]]}], 
+         OverscriptBox["=", 
+          ButtonBox[
+           RowBox[{"(", 
+            CounterBox["Section", "probDist"], ".", 
+            CounterBox["EquationNumbered", "probDist"], ")"}],
+           BaseStyle->{"Hyperlink", Larger},
+           ButtonData->"probDist",
+           Tooltip->{
+             DynamicBox[
+              RowBox[
+               Flatten[{
+                 PackageUtils`CellStrip[
+                  NotebookRead[
+                   First[
+                    Cells[
+                    EvaluationNotebook[], CellTags -> {"probDist"}]]]]}]], 
+              UpdateInterval -> Infinity]},
+           TooltipDelay->0.05,
+           
+           TooltipStyle->{
+            Background -> RGBColor[1, 1, 1], CellFrameColor -> 
+             RGBColor[1, 1, 1], CellFrame -> 2}]], "\[IndentingNewLine]", 
+         "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{
+           UnderoverscriptBox["\[Product]", 
+            RowBox[{"t", "=", "0"}], 
+            RowBox[{"\[Tau]", "-", "1"}]], 
+           FractionBox[
+            RowBox[{"\[Rho]", "(", 
+             RowBox[{
+              RowBox[{"t", "+", "1"}], ",", "\[Beta]", ",", 
+              RowBox[{"E", "(", "t", ")"}]}], ")"}], 
+            RowBox[{"\[Rho]", "(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"t", "+", "1"}], "\[VerticalSeparator]", "\[Beta]"}], 
+              ",", 
+              RowBox[{"E", "(", "t", ")"}]}], ")"}]]}], "=", 
+          RowBox[{
+           RowBox[{"exp", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "\[Beta]"}], 
+              RowBox[{
+               UnderoverscriptBox["\[Sum]", 
+                RowBox[{"t", "=", "0"}], 
+                RowBox[{"\[Tau]", "-", "1"}]], 
+               RowBox[{"[", 
+                RowBox[{
+                 SubscriptBox[
+                  RowBox[{"E", "(", "t", ")"}], 
+                  RowBox[{"x", "(", 
+                   RowBox[{"t", "+", "1"}], ")"}]], "-", 
+                 SubscriptBox[
+                  RowBox[{"E", "(", "t", ")"}], 
+                  RowBox[{"x", "(", "t", ")"}]]}], "]"}]}]}], "}"}]}], 
+           OverscriptBox["=", 
+            ButtonBox[
+             RowBox[{"(", 
+              CounterBox["Section", "defHeat"], ".", 
+              CounterBox["EquationNumbered", "defHeat"], ")"}],
+             BaseStyle->{"Hyperlink", Larger},
+             ButtonData->"defHeat",
+             Tooltip->{
+               DynamicBox[
+                RowBox[
+                 Flatten[{
+                   PackageUtils`CellStrip[
+                    NotebookRead[
+                    First[
+                    Cells[
+                    EvaluationNotebook[], CellTags -> {"defHeat"}]]]]}]], 
+                UpdateInterval -> Infinity]},
+             TooltipDelay->0.05,
+             
+             TooltipStyle->{
+              Background -> RGBColor[1, 1, 1], CellFrameColor -> 
+               RGBColor[1, 1, 1], CellFrame -> 2}]], 
+           RowBox[{"exp", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"-", "\[Beta]"}], "\[VeryThinSpace]", 
+              RowBox[{"Q", "[", "x", "]"}]}], "}"}]}]}]}]}]}]}]}]}]}], 
+   TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "\n "
+}], "Proof",
+ CellChangeTimes->CompressedData["
+1:eJwlx1kowwEAx/F/Q3Kt5kWNZCXbA5k1LUVh/zHaw6w9qClz/LWk/qxhUWvl
+yBxzFJsjmfDiCHlyPjA2WWmOp9mUIyIPypni//t7+PbpK6imNRSHIAgBE3yw
+SbjyrqeC4IU7GYZrY85gnYtmvXMmhNjXZbG2kDOPcHWF9wzPrWsSkrHTekhC
+jvC4Eq5zQ3qYK1VRkJL922vQ0VAj3zdBP09oh9eL08Owdk3hhC/00hQcUY+7
+ihh73N5Z+DrfHlnMKLpxRUGj/0QOPQEPCdVxNiVMC4m0sCG6Ugc3P6wVkF9V
+Ww1T5jLq4XeZsxH6thKbYDrlboZ2Tl4rlLTYLbD5XjgKD97JPThAb7LernQc
+wW3PhheWD7T7IE+bcwqTk3LPYSzlvYTKhb1PqLCbvqAjbrJGyTjRTRthwEiY
+oZkva4MPu/kWKBYv98HyY9kvVEotrEVXprASRjKoj4COpkIenN+di4fSncEM
+OJt6mwl/NEQ2DLwNktAQNlYKs/uHVPAP0IwDuw==
+  "],
+ CellID->169992973],
+
+Cell["\<\
+Essential assumptions made along the way:
+\[Dash] accessible energies are always finite
+\[Dash] dynamics are Markovian
+\[Dash] unperturbed preserve the equilibrium distribution\
+\>", "Comment",
+ CellChangeTimes->{{3.693759098745823*^9, 3.693759110386775*^9}, {
+  3.6937591436409473`*^9, 3.693759181748823*^9}},
+ CellID->423185070],
+
+Cell[TextData[{
+ "Crooks, claims \[OpenCurlyDoubleQuote]those conditions are valid \
+independently of the strength of the perturbation, or the distance of the \
+ensemble from equilibrium\[CloseCurlyDoubleQuote] are they?\nLooks like they \
+could since ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"E", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " depends on ",
+ Cell[BoxData[
+  FormBox["t", TraditionalForm]],
+  FormatType->"TraditionalForm"]
+}], "Question",
+ CellChangeTimes->{{3.693759212279029*^9, 3.693759286305064*^9}, {
+  3.693759330834765*^9, 3.69375935298232*^9}},
+ CellID->162863812]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Generalization to continuous\[Dash]time Markov chains", "Section",
+ CellChangeTimes->{{3.693759451650167*^9, 3.693759472512197*^9}},
+ CellID->1108925102],
+
+Cell["Assumptions:", "Text",
+ CellChangeTimes->{{3.693759502914783*^9, 3.693759509347308*^9}},
+ CellID->1984221871],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+there are only a finite number of state transitions in finite time\
+\>", "Item1",
+ CellChangeTimes->{{3.693759510806562*^9, 3.693759551281331*^9}},
+ CellID->1836124156],
+
+Cell["process is \[OpenCurlyDoubleQuote]right\[Dash]continuous\
+\[CloseCurlyDoubleQuote] ", "Item1",
+ CellChangeTimes->{{3.693759510806562*^9, 3.6937595606327133`*^9}},
+ CellID->1762381543]
+}, Open  ]],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"x", "(", "s", ")"}], "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"x", "(", "t", ")"}], " ", "for", " ", "t"}], "\[LessEqual]", 
+    "s", "\[LessEqual]", 
+    RowBox[{"t", "+", "\[Epsilon]"}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.693759568013219*^9, 3.6937595804396553`*^9}},
+ CellID->776990855],
+
+Cell[CellGroupData[{
+
+Cell["Transition rate matrix", "Subsection",
+ CellChangeTimes->{{3.693832473696018*^9, 3.69383248078166*^9}},
+ CellID->829557754],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["Q", "ij"], "\[GreaterEqual]", "0"}], ",", " ", 
+   RowBox[{"i", "\[NotEqual]", "j"}]}], TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.69383248374321*^9, 3.693832497405786*^9}, {
+  3.693832569147668*^9, 3.693832569733078*^9}},
+ CellID->480384010],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     UnderscriptBox["\[Sum]", "i"], 
+     SubscriptBox["Q", "ij"]}], "=", "0"}], ",", " ", 
+   RowBox[{"\[ForAll]", "i"}]}], TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.69383248374321*^9, 3.6938325038848886`*^9}, {
+  3.693832557560554*^9, 3.69383256500413*^9}},
+ CellID->263014346],
+
+Cell[TextData[{
+ "The negatives of the diagonal elements ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"-", 
+    SubscriptBox["Q", "ii"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " are the rate of leaving state ",
+ Cell[BoxData[
+  FormBox["i", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", and the off\[Dash]diagonal elements ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["Q", "ij"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " give the rate of going from state ",
+ Cell[BoxData[
+  FormBox["j", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " to state ",
+ Cell[BoxData[
+  FormBox["i", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Text",
+ CellID->1126300538],
+
+Cell[TextData[{
+ "For homogeneous Markov process the finite time transition matrix, ",
+ Cell[BoxData[
+  FormBox["M", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", can be obtained from a matrix exponential of the corresponding ",
+ Cell[BoxData[
+  FormBox["Q", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " matrix"
+}], "Text",
+ CellChangeTimes->{{3.693832663786312*^9, 3.693832764097574*^9}, {
+  3.693839978749436*^9, 3.6938399805043497`*^9}},
+ CellID->1703411206],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"M", "=", 
+   RowBox[{
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{"\[Tau]", "\[VeryThinSpace]", "Q"}]], "=", 
+    RowBox[{
+     UnderoverscriptBox["\[Sum]", 
+      RowBox[{"k", "=", "0"}], "\[Infinity]"], 
+     FractionBox[
+      SuperscriptBox[
+       RowBox[{"(", 
+        RowBox[{"\[Tau]", "\[VeryThinSpace]", "Q"}], ")"}], "k"], 
+      RowBox[{"k", "!"}]]}]}]}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.693832766517064*^9, 3.693832785286467*^9}},
+ CellID->1775229718],
+
+Cell[TextData[{
+ "Because ",
+ Cell[BoxData[
+  FormBox["M", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is a polynomial in ",
+ Cell[BoxData[
+  FormBox["Q", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " it follows that ",
+ Cell[BoxData[
+  FormBox["Q", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox["M", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " always have the same invariant distributions.\nThe elements ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["M", "ij"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " are the probabilities of the system being in state ",
+ Cell[BoxData[
+  FormBox["i", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " at time ",
+ Cell[BoxData[
+  FormBox["\[Tau]", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", given that it was in state ",
+ Cell[BoxData[
+  FormBox["j", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " at time ",
+ Cell[BoxData[
+  FormBox["0", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Comment",
+ CellChangeTimes->{{3.69383280032998*^9, 3.693832833705236*^9}, {
+  3.6938343998369017`*^9, 3.693834447226324*^9}},
+ CellID->1083438700],
+
+Cell[TextData[{
+ "This representation therefore loses information about the path that was \
+taken between state ",
+ Cell[BoxData[
+  FormBox["j", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and state ",
+ Cell[BoxData[
+  FormBox["i", TraditionalForm]],
+  FormatType->"TraditionalForm"]
+}], "Critique",
+ CellChangeTimes->{{3.693835938085672*^9, 3.6938359655712976`*^9}},
+ CellID->1616966080]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Trajectories approach", "Subsection",
+ CellChangeTimes->{{3.6938359198851357`*^9, 3.6938359236325912`*^9}},
+ CellID->54508218],
+
+Cell["\<\
+Alternative approach is to consider explicitly the probability of a \
+trajectory. The total probability can be broken into a product of a single \
+step transition probabilities. These in turn can be split into a holding time \
+probability and a jump probability.\
+\>", "Text",
+ CellChangeTimes->{{3.693835925236607*^9, 3.6938359274129477`*^9}, {
+   3.693838804702149*^9, 3.693838853560029*^9}, {3.6938388967149467`*^9, 
+   3.693838935883086*^9}, 3.693839682781836*^9},
+ CellID->622297781],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[ScriptCapitalP]", "[", 
+    RowBox[{
+     RowBox[{"x", "\[VerticalSeparator]", 
+      RowBox[{"x", "(", "0", ")"}]}], ",", "Q"}], "]"}], "=", 
+   RowBox[{
+    UnderoverscriptBox["\[Product]", 
+     RowBox[{"j", "=", "0"}], 
+     RowBox[{"J", "-", "1"}]], 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["P", "H"], "(", 
+      RowBox[{"x", "(", 
+       SubscriptBox["t", "j"], ")"}], ")"}], 
+     RowBox[{
+      SubscriptBox["P", "J"], "(", 
+      RowBox[{
+       RowBox[{"x", "(", 
+        SubscriptBox["t", "j"], ")"}], "\[Rule]", 
+       RowBox[{"x", "(", 
+        SubscriptBox["t", 
+         RowBox[{"j", "+", "1"}]], ")"}]}], ")"}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.693838938957595*^9, 3.693838974422709*^9}},
+ CellID->1721502153],
+
+Cell[TextData[{
+ "The holding time probability, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["P", "H"], "(", 
+    RowBox[{"x", "(", 
+     SubscriptBox["t", "j"], ")"}], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", is the probability of holding in state ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "(", 
+    SubscriptBox["t", "j"], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " for a time ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["t", 
+     RowBox[{"j", "+", "1"}]], "-", 
+    SubscriptBox["t", "j"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", before making a jump to the next state.\nFor a non\[Dash]homogeneous \
+chain we can write the holding time probabilities in terms of the diagonal \
+elements of ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"Q", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ","
+}], "Text",
+ CellChangeTimes->{{3.693838977524336*^9, 3.693839096517488*^9}},
+ CellID->1240102932],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["P", "H"], "(", 
+    RowBox[{"x", "(", 
+     SubscriptBox["t", "j"], ")"}], ")"}], "=", 
+   RowBox[{"exp", 
+    RowBox[{"{", 
+     RowBox[{
+      UnderoverscriptBox["\[Integral]", 
+       SubscriptBox["t", "j"], 
+       SubscriptBox["t", 
+        RowBox[{"j", "+", "1"}]]], 
+      RowBox[{
+       SubscriptBox[
+        RowBox[{"Q", "(", 
+         SuperscriptBox["t", "\[Prime]"], ")"}], 
+        RowBox[{
+         RowBox[{"x", "(", 
+          SubscriptBox["t", "j"], ")"}], 
+         RowBox[{"x", "(", 
+          SubscriptBox["t", "j"], ")"}]}]], 
+       RowBox[{"\[DifferentialD]", 
+        SuperscriptBox["t", "\[Prime]"]}]}]}], "}"}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.6938391003387423`*^9, 3.693839134194603*^9}},
+ CellID->311027335],
+
+Cell["\<\
+The jump probabilities, are probabilities of making the specified transition \
+given that some jump has occured\
+\>", "Text",
+ CellChangeTimes->{{3.6938396265976267`*^9, 3.69383963178924*^9}, {
+  3.693839995843018*^9, 3.693840022932756*^9}},
+ CellID->267618971],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["P", "J"], "(", 
+    RowBox[{
+     RowBox[{"x", "(", 
+      SubscriptBox["t", "j"], ")"}], "\[Rule]", 
+     RowBox[{"x", "(", 
+      SubscriptBox["t", 
+       RowBox[{"j", "+", "1"}]], ")"}]}], ")"}], "=", 
+   RowBox[{
+    RowBox[{"-", 
+     SubscriptBox[
+      RowBox[{"Q", "(", 
+       SubscriptBox["t", 
+        RowBox[{"j", "+", "1"}]], ")"}], 
+      RowBox[{
+       RowBox[{"x", "(", 
+        RowBox[{
+         SubscriptBox["t", "j"], "+", "1"}], ")"}], 
+       RowBox[{"x", "(", 
+        SubscriptBox["t", "j"], ")"}]}]]}], "/", 
+    SubscriptBox["Q", 
+     RowBox[{
+      RowBox[{"x", "(", 
+       SubscriptBox["t", "j"], ")"}], 
+      RowBox[{"x", "(", 
+       SubscriptBox["t", "j"], ")"}]}]]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.6938405191142387`*^9, 3.6938405663511457`*^9}},
+ CellID->76057715],
+
+Cell[TextData[{
+ "Note that the jump from state ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "(", 
+    SubscriptBox["t", "j"], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " to ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "(", 
+    SubscriptBox["t", 
+     RowBox[{"j", "+", "1"}]], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " occurs at time ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["t", 
+    RowBox[{"j", "+", "1"}]], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", and that the jump probabilities depend only on the transition rate matrix \
+at that time."
+}], "Remark",
+ CellChangeTimes->{{3.693840589428709*^9, 3.693840635603425*^9}},
+ CellID->1065323520]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Time reversal", "Subsection",
+ CellChangeTimes->{{3.693841039414544*^9, 3.6938410424743347`*^9}},
+ CellID->187893627],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox[
+     OverscriptBox["t", "^"], "j"], "=", 
+    RowBox[{"\[Tau]", "-", 
+     SubscriptBox["t", 
+      RowBox[{"J", "-", "j"}]]}]}], ",", " ", 
+   RowBox[{"\[ForAll]", "j"}]}], TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.693841053917693*^9, 3.693841074180841*^9}},
+ CellID->1384382364],
+
+Cell["\<\
+Equilibrium ensemble should again be unaffected by a time reversal, and that \
+the probability of a transition in equilibrium should be the same as the \
+probability of reverse transition in the reverse dynamics. The time reversal \
+of the transition rate matrix is then identical to the time reversal of the \
+discrete time transition matrix.\
+\>", "Text",
+ CellChangeTimes->{{3.6938411165691357`*^9, 3.6938411699275637`*^9}, {
+  3.693841245091178*^9, 3.6938412744926662`*^9}},
+ CellID->304391453],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    OverscriptBox["Q", "^"], "(", "t", ")"}], "=", 
+   RowBox[{
+    RowBox[{"diag", "(", 
+     RowBox[{"\[Pi]", "(", 
+      RowBox[{"\[Tau]", "-", "t"}], ")"}], ")"}], 
+    RowBox[{
+     RowBox[{"Q", "(", 
+      RowBox[{"\[Tau]", "-", "t"}], ")"}], "\[Transpose]"}], 
+    SuperscriptBox[
+     RowBox[{"diag", "(", 
+      RowBox[{"\[Pi]", "(", 
+       RowBox[{"\[Tau]", "-", "t"}], ")"}], ")"}], 
+     RowBox[{"-", "1"}]]}]}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.693841276207385*^9, 3.693841302545197*^9}},
+ CellID->1398664607],
+
+Cell[TextData[{
+ "Recall that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Pi]", 
+    RowBox[{"(", "t", ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is the invariant distribution of ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"Q", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", which is identical to the probability distribution defined by equilibrium \
+statistical mechanics, ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[Pi]", "(", "t", ")"}], "=", 
+    RowBox[{"\[Rho]", "(", 
+     RowBox[{
+      RowBox[{"x", "\[VerticalSeparator]", "\[Beta]"}], ",", 
+      RowBox[{"E", "(", "t", ")"}]}], ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.693841321085011*^9, 3.6938413955139523`*^9}},
+ CellID->1874624856],
+
+Cell[TextData[{
+ "This transformation does not alter the diagonal elements of ",
+ Cell[BoxData[
+  FormBox["Q", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", so the holding time probabilities of the reverse path are the same as \
+those in the forward path."
+}], "Comment",
+ CellChangeTimes->{{3.693841441318808*^9, 3.693841500747663*^9}},
+ CellID->1872386916],
+
+Cell["\<\
+The jump probabilities of the forward path can be simply related to the jump \
+probabilities of the reverse path via the time reversal operation. With these \
+observations and definitions it is now possible to show that continuous time \
+Markovian dynamics is also microscopically reversible.\
+\>", "Text",
+ CellChangeTimes->{{3.6938415020884*^9, 3.6938415672422533`*^9}},
+ CellID->1434280118],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    OverscriptBox["\[ScriptCapitalP]", "^"], "[", 
+    RowBox[{
+     RowBox[{
+      OverscriptBox["x", "^"], "\[VerticalSeparator]", 
+      RowBox[{
+       OverscriptBox["x", "^"], "(", "0", ")"}]}], ",", 
+     OverscriptBox["Q", "^"]}], "]"}], "=", 
+   RowBox[{
+    RowBox[{
+     UnderoverscriptBox["\[Product]", 
+      RowBox[{"j", "=", "0"}], 
+      RowBox[{"J", "-", "1"}]], 
+     RowBox[{
+      RowBox[{
+       SubscriptBox["P", "H"], "(", 
+       RowBox[{
+        OverscriptBox["x", "^"], "(", 
+        SubscriptBox[
+         OverscriptBox["t", "^"], 
+         RowBox[{"j", "+", "1"}]], ")"}], ")"}], 
+      RowBox[{
+       SubscriptBox["P", "J"], "(", 
+       RowBox[{
+        RowBox[{
+         OverscriptBox["x", "^"], "(", 
+         SubscriptBox[
+          OverscriptBox["t", "^"], "j"], ")"}], "\[Rule]", 
+        RowBox[{
+         OverscriptBox["x", "^"], "(", 
+         SubscriptBox[
+          OverscriptBox["t", "^"], 
+          RowBox[{"j", "+", "1"}]], ")"}]}], ")"}]}]}], "=", 
+    RowBox[{
+     RowBox[{
+      UnderoverscriptBox["\[Product]", 
+       RowBox[{"j", "=", "0"}], 
+       RowBox[{"J", "-", "1"}]], 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["P", "H"], "(", 
+        RowBox[{"x", "(", 
+         SubscriptBox["t", "j"], ")"}], ")"}], 
+       RowBox[{
+        SubscriptBox["P", "J"], "(", 
+        RowBox[{
+         RowBox[{"x", "(", 
+          SubscriptBox["t", "j"], ")"}], "\[Rule]", 
+         RowBox[{"x", "(", 
+          SubscriptBox["t", 
+           RowBox[{"j", "+", "1"}]], ")"}]}], ")"}], 
+       FractionBox[
+        RowBox[{"\[Rho]", "(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"x", "(", 
+            SubscriptBox["t", "j"], ")"}], "\[VerticalSeparator]", 
+           "\[Beta]"}], ",", 
+          RowBox[{"E", "(", 
+           SubscriptBox["t", "j"], ")"}]}], ")"}], 
+        RowBox[{"\[Rho]", "(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"x", "(", 
+            SubscriptBox["t", 
+             RowBox[{"j", "+", "1"}]], ")"}], "\[VerticalSeparator]", 
+           "\[Beta]"}], ",", 
+          RowBox[{"E", "(", 
+           SubscriptBox["t", "j"], ")"}]}], ")"}]]}]}], "=", 
+     RowBox[{
+      RowBox[{"\[ScriptCapitalP]", "[", 
+       RowBox[{
+        RowBox[{"x", "\[VerticalSeparator]", 
+         RowBox[{"x", "(", "0", ")"}]}], ",", "Q"}], "]"}], "exp", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"+", "\[Beta]"}], "\[VeryThinSpace]", 
+        RowBox[{"Q", "[", "x", "]"}]}], "}"}]}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ InitializationCell->True,
+ CellChangeTimes->{{3.693841577930665*^9, 3.6938416566372433`*^9}, {
+  3.693841713342025*^9, 3.693841732100322*^9}},
+ CellID->1702515205]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Generalization to continuous\[Dash]time and space Markov processes", \
+"Section",
+ CellChangeTimes->{{3.693841763580186*^9, 3.693841772525711*^9}},
+ CellID->2031447069],
+
+Cell[TextData[{
+ "Note that some measure theoretic subtleties are being ignored. For example, \
+the state of the system should strictly speaking, be represented by an \
+element of a Borel set, rather than an arbitrary element of ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["\[DoubleStruckCapitalR]", "n"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Critique",
+ CellChangeTimes->{{3.6938418387486143`*^9, 3.693841905310338*^9}},
+ CellID->1716221137],
+
+Cell[TextData[{
+ "Let ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " be the state of the system at time ",
+ Cell[BoxData[
+  FormBox["t", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". The phase space probability density is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[Rho]", "(", 
+    RowBox[{"x", ",", "t"}], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". The time evolution of the probability density can be described by an \
+operator ",
+ Cell[BoxData[
+  FormBox["U", TraditionalForm]],
+  FormatType->"TraditionalForm"]
+}], "Text",
+ CellChangeTimes->{{3.6938423319196157`*^9, 3.693842376717636*^9}},
+ CellID->1135008439],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"\[Rho]", "(", 
+     RowBox[{"x", ",", 
+      SubscriptBox["t", "2"]}], ")"}], "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"U", "(", 
+       RowBox[{
+        SubscriptBox["t", "2"], ",", 
+        SubscriptBox["t", "1"]}], ")"}], 
+      RowBox[{"\[Rho]", "(", 
+       RowBox[{"x", ",", 
+        SubscriptBox["t", "1"]}], ")"}]}], "=", 
+     RowBox[{"\[Integral]", 
+      RowBox[{
+       RowBox[{"P", "(", 
+        RowBox[{"x", ",", 
+         RowBox[{
+          SubscriptBox["t", "2"], "\[VerticalSeparator]", 
+          SuperscriptBox["x", "\[Prime]"]}], ",", 
+         SubscriptBox["t", "1"]}], ")"}], 
+       RowBox[{"\[Rho]", "(", 
+        RowBox[{
+         SuperscriptBox["x", "\[Prime]"], ",", 
+         SubscriptBox["t", "1"]}], ")"}], 
+       RowBox[{"\[DifferentialD]", 
+        SuperscriptBox["x", "\[Prime]"]}]}]}]}]}], ",", " ", 
+   RowBox[{
+    SubscriptBox["t", "2"], "\[GreaterEqual]", 
+    SubscriptBox["t", "1"]}]}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.693842381104332*^9, 3.693842394417012*^9}, {
+  3.693842446271131*^9, 3.693842473944152*^9}},
+ CellID->159173981],
+
+Cell["\<\
+We assume that statistical mechanics correctly describes the equilibrium \
+behavior of the system. It follows that for an unperturbed system the \
+propagator must preserve the appropriate equilibrium distribution.\
+\>", "Text",
+ CellChangeTimes->{{3.693842541291073*^9, 3.693842600394746*^9}},
+ CellID->849068094],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[Rho]", "(", 
+    RowBox[{
+     RowBox[{"x", "\[VerticalSeparator]", "\[Beta]"}], ",", "E"}], ")"}], "=", 
+   RowBox[{"\[Integral]", 
+    RowBox[{
+     RowBox[{"P", "(", 
+      RowBox[{"x", ",", 
+       RowBox[{"t", "\[VerticalSeparator]", 
+        SuperscriptBox["x", "\[Prime]"]}], ",", 
+       SuperscriptBox["t", "\[Prime]"]}], ")"}], 
+     RowBox[{"\[Rho]", "(", 
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["x", "\[Prime]"], "\[VerticalSeparator]", "\[Beta]"}], 
+       ",", "E"}], ")"}], 
+     RowBox[{"\[DifferentialD]", 
+      SuperscriptBox["x", "\[Prime]"]}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.693842602825001*^9, 3.6938426333254347`*^9}},
+ CellID->102394686],
+
+Cell[TextData[{
+ "The probability density of the path ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"x", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", given the set of evolution operators ",
+ Cell[BoxData[
+  FormBox["U", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is"
+}], "Text",
+ CellChangeTimes->{{3.6938517244628*^9, 3.6938517467154922`*^9}},
+ CellID->477612564],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[ScriptP]", "[", 
+    RowBox[{
+     RowBox[{"x", "(", "t", ")"}], "\[VerticalSeparator]", "U"}], "]"}], "=", 
+   
+   RowBox[{
+    UnderoverscriptBox["\[Product]", 
+     RowBox[{"j", "=", "0"}], 
+     RowBox[{"J", "-", "1"}]], 
+    RowBox[{"P", "(", 
+     RowBox[{"x", ",", 
+      RowBox[{
+       SubscriptBox["t", 
+        RowBox[{"j", "+", "1"}]], "|", "x"}], ",", 
+      SubscriptBox["t", "j"]}], ")"}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.6938516966194*^9, 3.6938517191414137`*^9}},
+ CellID->425178963],
+
+Cell["\<\
+In this derivation, it was assumed that the state energies only changed in \
+discrete steps.\
+\>", "Remark",
+ CellChangeTimes->{{3.693852273688097*^9, 3.693852293403412*^9}},
+ CellID->234484450]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Example", "Section",
+ CellChangeTimes->{{3.693746027724698*^9, 3.693746028677733*^9}},
+ CellID->1501779575],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"M", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0", ",", 
+       RowBox[{"2.", "/", "3"}], ",", 
+       RowBox[{"1.", "/", "3"}], ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"2.", "/", "3"}], ",", "0", ",", "0", ",", "0", ",", 
+       RowBox[{"1.", "/", "3"}], ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", 
+       RowBox[{"2.", "/", "3"}], ",", "0", ",", "0", ",", "0", ",", 
+       RowBox[{"1.", "/", "3"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"1.", "/", "3"}], ",", "0", ",", "0", ",", "0", ",", 
+       RowBox[{"2.", "/", "3"}], ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", 
+       RowBox[{"1.", "/", "3"}], ",", "0", ",", "0", ",", "0", ",", 
+       RowBox[{"2.", "/", "3"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"0", ",", "0", ",", 
+       RowBox[{"1.", "/", "3"}], ",", 
+       RowBox[{"2.", "/", "3"}], ",", "0", ",", "0"}], "}"}]}], "}"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.6937419740319767`*^9, 3.6937420684349527`*^9}},
+ CellID->490173154],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"x", "=", 
+   RowBox[{"Array", "[", 
+    RowBox[{"X", ",", "6"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Normalize", "[", 
+  RowBox[{
+   RowBox[{"First", "@", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"x", "/.", 
+       RowBox[{"Solve", "[", 
+        RowBox[{
+         RowBox[{"x", "==", 
+          RowBox[{"M", ".", "x"}]}], ",", "x"}], "]"}]}], "/.", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"X", "[", "1", "]"}], "\[Rule]", "1"}], "}"}]}], ")"}]}], ",",
+    "Total"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.693743831576187*^9, 3.693743846410624*^9}, {
+  3.6937439811514597`*^9, 3.693744170607978*^9}, {3.693744203733383*^9, 
+  3.693744226149057*^9}, {3.693744265014682*^9, 3.693744283271793*^9}, {
+  3.693745344894659*^9, 3.693745355332589*^9}, {3.69375977320427*^9, 
+  3.693759775424139*^9}},
+ CellID->1869122807],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0.16666666666666669`", ",", "0.16666666666666666`", ",", 
+   "0.16666666666666663`", ",", "0.16666666666666666`", ",", 
+   "0.16666666666666666`", ",", "0.16666666666666666`"}], "}"}]], "Output",
+ CellChangeTimes->{3.693745356223031*^9, 3.693759776351557*^9},
+ CellID->820736042]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Q", "=", 
+  RowBox[{"MatrixLog", "[", "M", "]"}]}]], "Input",
+ CellChangeTimes->{{3.693840237154314*^9, 3.693840255524085*^9}, {
+  3.693840330242633*^9, 3.693840342343698*^9}, {3.693840383823216*^9, 
+  3.693840396524691*^9}, {3.6938404555142097`*^9, 3.693840478571537*^9}},
+ CellID->1453618925],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "0.5493061443340544`"}], ",", 
+     RowBox[{"-", "1.5459306102231425`"}], ",", "1.5459306102231432`", ",", 
+     "1.21372245492678`", ",", 
+     RowBox[{"-", "0.332208155296362`"}], ",", 
+     RowBox[{"-", "0.3322081552963639`"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"1.5459306102231407`", ",", 
+     RowBox[{"-", "0.5493061443340533`"}], ",", 
+     RowBox[{"-", "1.545930610223143`"}], ",", 
+     RowBox[{"-", "0.33220815529636316`"}], ",", "1.2137224549267795`", ",", 
+     RowBox[{"-", "0.33220815529636144`"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "1.5459306102231412`"}], ",", "1.5459306102231412`", ",", 
+     RowBox[{"-", "0.5493061443340559`"}], ",", 
+     RowBox[{"-", "0.33220815529636327`"}], ",", 
+     RowBox[{"-", "0.33220815529636216`"}], ",", "1.21372245492678`"}], "}"}],
+    ",", 
+   RowBox[{"{", 
+    RowBox[{"1.2137224549267789`", ",", 
+     RowBox[{"-", "0.3322081552963617`"}], ",", 
+     RowBox[{"-", "0.332208155296363`"}], ",", 
+     RowBox[{"-", "0.5493061443340552`"}], ",", "1.5459306102231434`", ",", 
+     RowBox[{"-", "1.545930610223142`"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "0.33220815529636205`"}], ",", "1.213722454926779`", ",", 
+     RowBox[{"-", "0.3322081552963628`"}], ",", 
+     RowBox[{"-", "1.5459306102231425`"}], ",", 
+     RowBox[{"-", "0.549306144334055`"}], ",", "1.5459306102231425`"}], "}"}],
+    ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "0.3322081552963615`"}], ",", 
+     RowBox[{"-", "0.3322081552963635`"}], ",", "1.21372245492678`", ",", 
+     "1.5459306102231425`", ",", 
+     RowBox[{"-", "1.5459306102231425`"}], ",", 
+     RowBox[{"-", "0.5493061443340552`"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.6938402400158443`*^9, 3.693840255897946*^9}, {
+  3.693840336201745*^9, 3.693840342768031*^9}, {3.693840387919918*^9, 
+  3.693840397034718*^9}, {3.693840471721221*^9, 3.6938404790020237`*^9}},
+ CellID->882345166]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Q", "+", 
+     RowBox[{"Sum", "[", 
+      RowBox[{
+       FractionBox[
+        RowBox[{"MatrixPower", "[", 
+         RowBox[{"Q", ",", "k"}], "]"}], 
+        RowBox[{"k", "!"}]], ",", 
+       RowBox[{"{", 
+        RowBox[{"k", ",", "1", ",", "N"}], "}"}]}], "]"}]}], "//", 
+    "MatrixForm"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"N", ",", "1"}], "}"}], ",", "1", ",", "100"}], "}"}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.693840069148303*^9, 3.693840163042492*^9}, {
+  3.693840196831415*^9, 3.693840249609832*^9}, {3.6938403694740677`*^9, 
+  3.693840369872802*^9}, {3.693840399913978*^9, 3.693840423348216*^9}, {
+  3.693840486639278*^9, 3.693840492785623*^9}},
+ CellID->1907780582],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{N$$ = 1., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[N$$], 1}, 1, 100}}, Typeset`size$$ = {
+    456., {45.8544921875, 51.1455078125}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = True, N$4768$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {N$$ = 1}, "ControllerVariables" :> {
+        Hold[N$$, N$4768$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      MatrixForm[$CellContext`Q + 
+        Sum[MatrixPower[$CellContext`Q, $CellContext`k]/
+          Factorial[$CellContext`k], {$CellContext`k, 1, N$$}]], 
+      "Specifications" :> {{{N$$, 1}, 1, 100}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{499., {91., 96.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.693840097774651*^9, 3.6938401680328503`*^9}, {
+   3.693840232915196*^9, 3.693840251132742*^9}, 3.69384028552547*^9, {
+   3.693840346621122*^9, 3.693840371645356*^9}, {3.693840403145628*^9, 
+   3.693840424220477*^9}, 3.69384049676619*^9},
+ CellID->481326052]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1436, 855},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+ShowCellLabel->False,
+ShowCellTags->False,
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
+StyleDefinitions->"Science.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "defHeat"->{
+  Cell[10107, 336, 612, 20, 67, "EquationNumbered",
+   CellTags->"defHeat",
+   CellID->1408018398]},
+ "detailedBalance"->{
+  Cell[8834, 291, 476, 16, 37, "EquationNumbered",
+   CellTags->"detailedBalance",
+   CellID->1928161086]},
+ "ForwardBackwardM"->{
+  Cell[15667, 526, 564, 17, 39, "EquationNumbered",
+   CellTags->"ForwardBackwardM",
+   CellID->110239261]},
+ "invDistM"->{
+  Cell[8126, 266, 307, 9, 32, "Equation",
+   CellTags->"invDistM",
+   CellID->1629014818]},
+ "nonhomoInvChain"->{
+  Cell[20035, 675, 648, 19, 37, "EquationNumbered",
+   CellTags->"nonhomoInvChain",
+   CellID->609736316]},
+ "probDist"->{
+  Cell[2054, 68, 952, 29, 61, "EquationNumbered",
+   CellTags->"probDist",
+   CellID->1540085828]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"defHeat", 66377, 2104},
+ {"detailedBalance", 66500, 2108},
+ {"ForwardBackwardM", 66631, 2112},
+ {"invDistM", 66755, 2116},
+ {"nonhomoInvChain", 66869, 2120},
+ {"probDist", 66992, 2124}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 228, 4, 73, "Title",
+ CellID->375284743],
+Cell[CellGroupData[{
+Cell[833, 30, 184, 3, 64, "Section",
+ CellID->1489406653],
+Cell[1020, 35, 210, 5, 37, "Text",
+ CellID->111235204],
+Cell[1233, 42, 818, 24, 66, "Text",
+ CellID->1933012329],
+Cell[2054, 68, 952, 29, 61, "EquationNumbered",
+ CellTags->"probDist",
+ CellID->1540085828],
+Cell[3009, 99, 667, 22, 54, "Equation",
+ CellID->1048702723],
+Cell[3679, 123, 726, 20, 41, "Text",
+ CellID->1970360540],
+Cell[4408, 145, 293, 6, 22, "Comment",
+ CellID->1734226641],
+Cell[4704, 153, 336, 6, 45, "Remark",
+ CellID->244198466]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5077, 164, 119, 2, 63, "Section",
+ CellID->1896821774],
+Cell[CellGroupData[{
+Cell[5221, 170, 124, 2, 38, "Subsection",
+ CellID->1581230616],
+Cell[5348, 174, 501, 16, 36, "EquationNumbered",
+ CellID->1884710626],
+Cell[CellGroupData[{
+Cell[5874, 194, 190, 3, 29, "Item1",
+ CellID->72331497],
+Cell[6067, 199, 217, 3, 29, "Item1",
+ CellID->1225582723]
+}, Open  ]],
+Cell[6299, 205, 145, 2, 37, "Text",
+ CellID->1897863217],
+Cell[6447, 209, 324, 10, 34, "EquationNumbered",
+ CellID->1459920089],
+Cell[6774, 221, 521, 15, 40, "Text",
+ CellID->819541473],
+Cell[7298, 238, 143, 2, 41, "Remark",
+ CellID->1799279126],
+Cell[CellGroupData[{
+Cell[7466, 244, 131, 2, 35, "Subsubsection",
+ CellID->1158389807],
+Cell[7600, 248, 523, 16, 38, "Text",
+ CellID->226443052],
+Cell[8126, 266, 307, 9, 32, "Equation",
+ CellTags->"invDistM",
+ CellID->1629014818],
+Cell[8436, 277, 221, 5, 22, "Comment",
+ CellID->1221892782]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8694, 287, 137, 2, 35, "Subsubsection",
+ CellID->922241355],
+Cell[8834, 291, 476, 16, 37, "EquationNumbered",
+ CellTags->"detailedBalance",
+ CellID->1928161086],
+Cell[9313, 309, 264, 5, 22, "Comment",
+ CellID->720214616]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9638, 321, 141, 2, 63, "Section",
+ CellID->716047456],
+Cell[CellGroupData[{
+Cell[9804, 327, 147, 2, 29, "Item1",
+ CellID->1183884519],
+Cell[9954, 331, 138, 2, 29, "Item1",
+ CellID->183582858]
+}, Open  ]],
+Cell[10107, 336, 612, 20, 67, "EquationNumbered",
+ CellTags->"defHeat",
+ CellID->1408018398],
+Cell[10722, 358, 647, 21, 67, "EquationNumbered",
+ CellID->334180279],
+Cell[11372, 381, 454, 13, 36, "EquationNumbered",
+ CellID->978268147],
+Cell[CellGroupData[{
+Cell[11851, 398, 123, 2, 38, "Subsection",
+ CellID->392222220],
+Cell[11977, 402, 467, 14, 34, "EquationNumbered",
+ CellID->1472550227],
+Cell[12447, 418, 145, 2, 22, "Comment",
+ CellID->1149727846]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12629, 425, 125, 2, 38, "Subsection",
+ CellID->1983252871],
+Cell[12757, 429, 306, 9, 34, "EquationNumbered",
+ CellID->313486710]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13112, 444, 119, 2, 63, "Section",
+ CellID->1080226443],
+Cell[13234, 448, 229, 5, 37, "Text",
+ CellID->1509369544],
+Cell[CellGroupData[{
+Cell[13488, 457, 128, 2, 38, "Subsection",
+ CellID->739526773],
+Cell[13619, 461, 279, 8, 32, "Equation",
+ CellID->138049645],
+Cell[13901, 471, 283, 8, 36, "Equation",
+ CellID->1297349150],
+Cell[14187, 481, 1477, 43, 93, "Text",
+ CellID->581407032],
+Cell[15667, 526, 564, 17, 39, "EquationNumbered",
+ CellTags->"ForwardBackwardM",
+ CellID->110239261],
+Cell[16234, 545, 551, 20, 29, "Comment",
+ CellID->1562285455],
+Cell[16788, 567, 241, 8, 42, "Text",
+ CellID->1512710022],
+Cell[17032, 577, 370, 11, 37, "Equation",
+ CellID->999809404],
+Cell[17405, 590, 123, 2, 36, "Text",
+ CellID->1041468735],
+Cell[CellGroupData[{
+Cell[17553, 596, 1164, 35, 48, "Proof",
+ CellID->2034128991],
+Cell[18720, 633, 1106, 34, 41, "Remark",
+ CellID->1262598687]
+}, Open  ]],
+Cell[19841, 670, 191, 3, 37, "Text",
+ CellID->1497526433],
+Cell[20035, 675, 648, 19, 37, "EquationNumbered",
+ CellTags->"nonhomoInvChain",
+ CellID->609736316],
+Cell[20686, 696, 128, 2, 36, "Text",
+ CellID->1626542589],
+Cell[20817, 700, 398, 13, 37, "EquationNumbered",
+ CellID->112824292],
+Cell[21218, 715, 274, 8, 34, "Equation",
+ CellID->1800246308],
+Cell[21495, 725, 272, 8, 32, "Equation",
+ CellID->1720652550],
+Cell[21770, 735, 323, 10, 34, "Equation",
+ CellID->1765287582]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22142, 751, 192, 3, 65, "Section",
+ CellID->46246775],
+Cell[22337, 756, 1146, 34, 74, "Text",
+ CellID->297184323],
+Cell[23486, 792, 750, 22, 63, "EquationNumbered",
+ CellID->606567785],
+Cell[24239, 816, 11809, 332, 259, "Proof",
+ CellID->169992973],
+Cell[36051, 1150, 340, 8, 90, "Comment",
+ CellID->423185070],
+Cell[36394, 1160, 615, 16, 48, "Question",
+ CellID->162863812]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[37046, 1181, 159, 2, 63, "Section",
+ CellID->1108925102],
+Cell[37208, 1185, 115, 2, 36, "Text",
+ CellID->1984221871],
+Cell[CellGroupData[{
+Cell[37348, 1191, 178, 4, 29, "Item1",
+ CellID->1836124156],
+Cell[37529, 1197, 189, 3, 29, "Item1",
+ CellID->1762381543]
+}, Open  ]],
+Cell[37733, 1203, 372, 11, 32, "EquationNumbered",
+ CellID->776990855],
+Cell[CellGroupData[{
+Cell[38130, 1218, 129, 2, 38, "Subsection",
+ CellID->829557754],
+Cell[38262, 1222, 317, 8, 36, "Equation",
+ CellID->480384010],
+Cell[38582, 1232, 350, 10, 54, "Equation",
+ CellID->263014346],
+Cell[38935, 1244, 714, 26, 42, "Text",
+ CellID->1126300538],
+Cell[39652, 1272, 483, 13, 40, "Text",
+ CellID->1703411206],
+Cell[40138, 1287, 535, 15, 66, "EquationNumbered",
+ CellID->1775229718],
+Cell[40676, 1304, 1203, 42, 57, "Comment",
+ CellID->1083438700],
+Cell[41882, 1348, 400, 12, 27, "Critique",
+ CellID->1616966080]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[42319, 1365, 132, 2, 38, "Subsection",
+ CellID->54508218],
+Cell[42454, 1369, 498, 9, 61, "Text",
+ CellID->622297781],
+Cell[42955, 1380, 819, 26, 70, "EquationNumbered",
+ CellID->1721502153],
+Cell[43777, 1408, 1004, 33, 72, "Text",
+ CellID->1240102932],
+Cell[44784, 1443, 835, 27, 83, "EquationNumbered",
+ CellID->311027335],
+Cell[45622, 1472, 271, 6, 37, "Text",
+ CellID->267618971],
+Cell[45896, 1480, 901, 31, 46, "EquationNumbered",
+ CellID->76057715],
+Cell[46800, 1513, 705, 24, 41, "Remark",
+ CellID->1065323520]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[47542, 1542, 123, 2, 38, "Subsection",
+ CellID->187893627],
+Cell[47668, 1546, 356, 11, 39, "Equation",
+ CellID->1384382364],
+Cell[48027, 1559, 508, 9, 61, "Text",
+ CellID->304391453],
+Cell[48538, 1570, 598, 18, 37, "EquationNumbered",
+ CellID->1398664607],
+Cell[49139, 1590, 812, 26, 41, "Text",
+ CellID->1874624856],
+Cell[49954, 1618, 369, 9, 27, "Comment",
+ CellID->1872386916],
+Cell[50326, 1629, 403, 7, 61, "Text",
+ CellID->1434280118],
+Cell[50732, 1638, 2739, 85, 70, "EquationNumbered",
+ InitializationCell->True,
+ CellID->1702515205]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[53520, 1729, 174, 3, 63, "Section",
+ CellID->2031447069],
+Cell[53697, 1734, 471, 11, 25, "Critique",
+ CellID->1716221137],
+Cell[54171, 1747, 718, 23, 40, "Text",
+ CellID->1135008439],
+Cell[54892, 1772, 1167, 35, 52, "EquationNumbered",
+ CellID->159173981],
+Cell[56062, 1809, 323, 6, 61, "Text",
+ CellID->849068094],
+Cell[56388, 1817, 764, 22, 52, "EquationNumbered",
+ CellID->102394686],
+Cell[57155, 1841, 400, 13, 38, "Text",
+ CellID->477612564],
+Cell[57558, 1856, 585, 19, 70, "EquationNumbered",
+ CellID->425178963],
+Cell[58146, 1877, 204, 5, 41, "Remark",
+ CellID->234484450]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[58387, 1887, 113, 2, 63, "Section",
+ CellID->1501779575],
+Cell[58503, 1891, 1155, 31, 30, "Input",
+ CellID->490173154],
+Cell[CellGroupData[{
+Cell[59683, 1926, 882, 24, 51, "Input",
+ CellID->1869122807],
+Cell[60568, 1952, 322, 7, 30, "Output",
+ CellID->820736042]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[60927, 1964, 318, 6, 31, "Input",
+ CellID->1453618925],
+Cell[61248, 1972, 2046, 46, 67, "Output",
+ CellID->882345166]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[63331, 2023, 800, 23, 50, "Input",
+ CellID->1907780582],
+Cell[64134, 2048, 1853, 38, 204, "Output",
+ CellID->481326052]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

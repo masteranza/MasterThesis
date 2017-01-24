@@ -1,0 +1,424 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     12044,        416]
+NotebookOptionsPosition[     10502,        359]
+NotebookOutlinePosition[     10859,        375]
+CellTagsIndexPosition[     10816,        372]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["MaxEnt", "Title",
+ CellChangeTimes->{{3.693912265730547*^9, 3.693912269312686*^9}},
+ CellID->459184328],
+
+Cell[CellGroupData[{
+
+Cell["Introduction", "Section",
+ CellChangeTimes->{{3.69391231136134*^9, 3.693912313554242*^9}},
+ CellID->1969192907],
+
+Cell[TextData[{
+ "Consider a situation with ",
+ Cell[BoxData[
+  FormBox["n", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " potential outcomes and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"m", "<", "n"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " constraints in the form of known values ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["F", "k"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " of certain functions ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["f", "k"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " (",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"1", "\[LessEqual]", "k", "\[LessEqual]", "m"}], TraditionalForm]],
+  
+  FormatType->"TraditionalForm"],
+ ")"
+}], "Text",
+ CellChangeTimes->{{3.6939123257616796`*^9, 3.693912398776119*^9}},
+ CellID->1130224225],
+
+Cell[TextData[{
+ "We assign Bayesian probabilities ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["p", "i"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "(",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"1", "\[LessEqual]", "i", "\[LessEqual]", "n"}], TraditionalForm]],
+  
+  FormatType->"TraditionalForm"],
+ ") so as to quantify our partial information about the outcomes. In MaxEnt \
+approach we choose the distribution ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["p", "i"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " that maximizes the Shannon information entropy"
+}], "Text",
+ CellChangeTimes->{{3.6939124480677834`*^9, 3.693912504548377*^9}, {
+  3.6939125641267557`*^9, 3.693912572691104*^9}},
+ CellID->922439804],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"H", "=", 
+   RowBox[{"-", 
+    RowBox[{
+     UnderoverscriptBox["\[Sum]", 
+      RowBox[{"i", "=", "1"}], "n"], 
+     RowBox[{
+      SubscriptBox["p", "i"], "log", " ", 
+      SubscriptBox["p", "i"]}]}]}]}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.693912575001547*^9, 3.6939125878377247`*^9}},
+ CellID->991119954],
+
+Cell["subject to the constrains", "Text",
+ CellChangeTimes->{{3.693912590482442*^9, 3.693912595231645*^9}},
+ CellID->1379897896],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"\[LeftAngleBracket]", 
+     SubscriptBox["f", "k"], "\[RightAngleBracket]"}], "\[Congruent]", 
+    RowBox[{
+     UnderoverscriptBox["\[Sum]", 
+      RowBox[{"i", "=", "1"}], "n"], 
+     RowBox[{
+      SubscriptBox["p", "i"], 
+      RowBox[{
+       SubscriptBox["f", "k"], "(", "i", ")"}]}]}]}], "=", 
+   SubscriptBox["F", "k"]}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.6939125969760303`*^9, 3.693912616260251*^9}},
+ CellID->1455246606],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    UnderoverscriptBox["\[Sum]", 
+     RowBox[{"i", "=", "1"}], "n"], 
+    SubscriptBox["p", "i"]}], "=", "1"}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.693912620591544*^9, 3.6939126273101473`*^9}},
+ CellID->1778966756],
+
+Cell["\<\
+This procedure gives the least\[Dash]biased probability distribution \
+consistent with the available information.\
+\>", "Text",
+ CellChangeTimes->{{3.693912635199335*^9, 3.693912676448271*^9}},
+ CellID->1509217055],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["F", "k"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " can represent any data, not only averages"
+}], "Comment",
+ CellChangeTimes->{{3.69391308261134*^9, 3.6939130948175287`*^9}, 
+   3.6939132139416637`*^9},
+ CellID->158854015],
+
+Cell[TextData[{
+ "By introducing the vector of Lagrange multipliers ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{
+      SubscriptBox["\[Lambda]", "1"], ",", "\[Ellipsis]", ",", 
+      SubscriptBox["\[Lambda]", "m"]}], ")"}], "\[Congruent]", "\[Lambda]"}], 
+   TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and defining the partition function"
+}], "Text",
+ CellChangeTimes->{{3.693913198318362*^9, 3.693913242759347*^9}},
+ CellID->670893311],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"Z", "(", "\[Lambda]", ")"}], "\[Congruent]", 
+   RowBox[{
+    UnderoverscriptBox["\[Sum]", 
+     RowBox[{"i", "=", "1"}], "n"], 
+    RowBox[{"exp", "[", 
+     RowBox[{
+      OverscriptBox[
+       UnderscriptBox["\[Sum]", 
+        RowBox[{"k", "=", "1"}]], "m"], 
+      RowBox[{
+       SubscriptBox["\[Lambda]", "k"], 
+       RowBox[{
+        SubscriptBox["f", "k"], "(", "i", ")"}]}]}], "]"}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.6939132457043667`*^9, 3.693913281455555*^9}},
+ CellID->370638731],
+
+Cell["The MaxEnt distribution is obtained as", "Text",
+ CellChangeTimes->{{3.693913287677002*^9, 3.693913301440024*^9}},
+ CellID->1908275189],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   SubscriptBox["p", "i"], "=", 
+   RowBox[{
+    RowBox[{
+     FractionBox["1", 
+      RowBox[{"Z", "(", "\[Lambda]", ")"}]], "exp", 
+     RowBox[{"{", 
+      RowBox[{
+       UnderoverscriptBox["\[Sum]", 
+        RowBox[{"k", "=", "1"}], "m"], 
+       RowBox[{
+        SubscriptBox["\[Lambda]", "k"], 
+        RowBox[{
+         SubscriptBox["f", "k"], "(", "i", ")"}]}]}], "}"}]}], "\[Congruent]", 
+    RowBox[{"p", "(", 
+     RowBox[{"i", "\[VerticalSeparator]", 
+      RowBox[{"F", "\[VeryThinSpace]", "C"}]}], ")"}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.693913303840373*^9, 3.693913333496627*^9}},
+ CellID->10042656],
+
+Cell[TextData[{
+ "where the notion ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"p", "(", 
+    RowBox[{"\[ImaginaryI]", "\[VerticalSeparator]", 
+     RowBox[{"F", "\[VeryThinSpace]", "C"}]}], ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " (the probability of a ",
+ Cell[BoxData[
+  FormBox["i", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " given ",
+ Cell[BoxData[
+  FormBox["F", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox["C", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ") reminds us that ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["p", "i"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is conditional on the available information consisting of the constraint \
+vector ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"F", "\[Congruent]", 
+    RowBox[{"(", 
+     RowBox[{
+      SubscriptBox["F", "1"], ",", "\[Ellipsis]", ",", 
+      SubscriptBox["F", "m"]}], ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " together with the prior information ",
+ Cell[BoxData[
+  FormBox["C", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " (microscopic laws of motion) that determines the set of allowed outcomes \
+and corresponding function values ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["f", "k"], "(", "i", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". The Lagrange multipliers ",
+ Cell[BoxData[
+  FormBox["\[Lambda]", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " may be expressed in terms of the constrains ",
+ Cell[BoxData[
+  FormBox["F", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " by solving the relations"
+}], "Text",
+ CellChangeTimes->{{3.693913531640654*^9, 3.693913709235618*^9}},
+ CellID->361348381],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   SubscriptBox["F", "k"], "=", 
+   RowBox[{
+    RowBox[{"\[LeftAngleBracket]", 
+     SubscriptBox["f", "k"], "\[RightAngleBracket]"}], "=", 
+    FractionBox[
+     RowBox[{
+      RowBox[{"\[PartialD]", "log"}], " ", 
+      RowBox[{"Z", "(", "\[Lambda]", ")"}]}], 
+     RowBox[{"\[PartialD]", 
+      SubscriptBox["\[Lambda]", "ks"]}]]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.693913711885819*^9, 3.693913754080872*^9}, 
+   3.693913799453805*^9},
+ CellID->2035549314],
+
+Cell["\<\
+leading directly to the reciprocity relations and fluctuation formulae\
+\>", "Text",
+ CellChangeTimes->{{3.693913819312381*^9, 3.69391383565618*^9}},
+ CellID->948595770],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["B", "jk"], "\[Congruent]", 
+    FractionBox[
+     RowBox[{"\[PartialD]", 
+      SubscriptBox["F", "k"]}], 
+     RowBox[{"\[PartialD]", 
+      SubscriptBox["\[Lambda]", "j"]}]]}], "=", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"\[PartialD]", 
+      SubscriptBox["F", "j"]}], 
+     RowBox[{"\[PartialD]", 
+      SubscriptBox["\[Lambda]", "k"]}]], "=", 
+    RowBox[{
+     FractionBox[
+      RowBox[{
+       RowBox[{
+        SuperscriptBox["\[PartialD]", "2"], "log"}], " ", 
+       RowBox[{"Z", "(", "\[Lambda]", ")"}]}], 
+      RowBox[{
+       RowBox[{"\[PartialD]", 
+        SubscriptBox["\[Lambda]", "j"]}], 
+       RowBox[{"\[PartialD]", 
+        SubscriptBox["\[Lambda]", "k"]}]}]], "=", 
+     RowBox[{
+      RowBox[{"\[LeftAngleBracket]", 
+       RowBox[{
+        SubscriptBox["f", "j"], 
+        SubscriptBox["f", "k"]}], "\[RightAngleBracket]"}], "-", 
+      RowBox[{
+       RowBox[{"\[LeftAngleBracket]", 
+        SubscriptBox["f", "j"], "\[RightAngleBracket]"}], 
+       RowBox[{"\[LeftAngleBracket]", 
+        SubscriptBox["f", "k"], "\[RightAngleBracket]"}]}]}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.693913838441931*^9, 3.693913906657061*^9}},
+ CellID->2024675212],
+
+Cell["The maximal value of the information entropy is", "Text",
+ CellChangeTimes->{{3.693913933477125*^9, 3.693913942260859*^9}},
+ CellID->1732080271],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   SubscriptBox["H", "max"], "=", 
+   RowBox[{
+    RowBox[{"log", " ", 
+     RowBox[{"Z", "(", "\[Lambda]", ")"}]}], "-", 
+    RowBox[{
+     UnderoverscriptBox["\[Sum]", 
+      RowBox[{"k", "=", "1"}], "m"], 
+     RowBox[{
+      SubscriptBox["\[Lambda]", "k"], 
+      SubscriptBox["F", "k"]}]}]}]}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.693913946632277*^9, 3.69391396331461*^9}},
+ CellID->1318629084]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 755},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
+StyleDefinitions->"Science.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 109, 2, 73, "Title",
+ CellID->459184328],
+Cell[CellGroupData[{
+Cell[714, 28, 117, 2, 63, "Section",
+ CellID->1969192907],
+Cell[834, 32, 805, 29, 68, "Text",
+ CellID->1130224225],
+Cell[1642, 63, 732, 22, 93, "Text",
+ CellID->922439804],
+Cell[2377, 87, 369, 11, 64, "EquationNumbered",
+ CellID->991119954],
+Cell[2749, 100, 128, 2, 37, "Text",
+ CellID->1379897896],
+Cell[2880, 104, 517, 15, 64, "EquationNumbered",
+ CellID->1455246606],
+Cell[3400, 121, 290, 9, 64, "EquationNumbered",
+ CellID->1778966756],
+Cell[3693, 132, 224, 5, 37, "Text",
+ CellID->1509217055],
+Cell[3920, 139, 297, 9, 27, "Comment",
+ CellID->158854015],
+Cell[4220, 150, 477, 14, 40, "Text",
+ CellID->670893311],
+Cell[4700, 166, 574, 18, 66, "EquationNumbered",
+ CellID->370638731],
+Cell[5277, 186, 141, 2, 36, "Text",
+ CellID->1908275189],
+Cell[5421, 190, 685, 21, 65, "EquationNumbered",
+ CellID->10042656],
+Cell[6109, 213, 1762, 57, 149, "Text",
+ CellID->361348381],
+Cell[7874, 272, 528, 16, 56, "EquationNumbered",
+ CellID->2035549314],
+Cell[8405, 290, 179, 4, 37, "Text",
+ CellID->948595770],
+Cell[8587, 296, 1272, 39, 60, "EquationNumbered",
+ CellID->2024675212],
+Cell[9862, 337, 150, 2, 37, "Text",
+ CellID->1732080271],
+Cell[10015, 341, 459, 14, 65, "EquationNumbered",
+ CellID->1318629084]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

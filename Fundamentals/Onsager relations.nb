@@ -1,0 +1,59 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      1114,         49]
+NotebookOptionsPosition[       750,         30]
+NotebookOutlinePosition[      1109,         46]
+CellTagsIndexPosition[      1066,         43]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Onsager", "Title",
+ CellChangeTimes->{{3.691922542888291*^9, 3.6919225438045197`*^9}},
+ CellID->819986101],
+
+Cell["", "Section",
+ CellID->805130208]
+}, Open  ]]
+},
+WindowSize->{808, 755},
+WindowMargins->{{20, Automatic}, {Automatic, 44}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
+StyleDefinitions->"Science.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 112, 2, 73, "Title",
+ CellID->819986101],
+Cell[695, 26, 39, 1, 63, "Section",
+ CellID->805130208]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+

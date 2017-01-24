@@ -1,0 +1,770 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     25840,        762]
+NotebookOptionsPosition[     23900,        691]
+NotebookOutlinePosition[     24418,        714]
+CellTagsIndexPosition[     24341,        709]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Generalized Second Law", "Title",
+ CellChangeTimes->{{3.6942818166384087`*^9, 3.694281821153288*^9}, {
+  3.694282182816914*^9, 3.694282188637835*^9}},
+ CellID->116202796],
+
+Cell[CellGroupData[{
+
+Cell["Generalized Second Law from Microscopic Reversibility", "Section",
+ CellChangeTimes->{{3.6942629276781588`*^9, 3.6942629400560503`*^9}, {
+  3.694281788260232*^9, 3.694281803226022*^9}, {3.694282084325261*^9, 
+  3.694282084676673*^9}, {3.694282358422202*^9, 3.694282358769703*^9}},
+ CellID->1465328715],
+
+Cell["\<\
+Building on microscopic reversibility relation, we can fix the start and end \
+points getting\
+\>", "Text",
+ CellChangeTimes->{{3.69426251652772*^9, 3.6942625573970537`*^9}},
+ CellID->1759237970],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   FractionBox[
+    RowBox[{"\[Pi]", "(", 
+     RowBox[{
+      RowBox[{"j", "\[Rule]", "i"}], ";", "\[Tau]"}], ")"}], 
+    RowBox[{"\[Pi]", "(", 
+     RowBox[{
+      RowBox[{"i", "\[Rule]", "j"}], ";", "\[Tau]"}], ")"}]], "=", 
+   SubscriptBox[
+    RowBox[{"\[LeftAngleBracket]", 
+     RowBox[{"exp", "[", 
+      RowBox[{
+       RowBox[{"-", "\[Beta]"}], "\[VeryThinSpace]", 
+       SubsuperscriptBox["\[CapitalDelta]Q", 
+        RowBox[{"i", "\[Rule]", "j"}], "\[Tau]"]}], "]"}], 
+     "\[RightAngleBracket]"}], 
+    RowBox[{"i", "\[Rule]", "j"}]]}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.694262542726264*^9, 3.694262589133013*^9}, {
+  3.694280142427371*^9, 3.6942801572172527`*^9}},
+ CellTags->"fixedEndPoints",
+ CellID->706504164],
+
+Cell[TextData[{
+ "Now let\[CloseCurlyQuote]s define two macroscopic states ",
+ Cell[BoxData[
+  FormBox["I", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox["II", TraditionalForm]],
+  FormatType->"TraditionalForm"]
+}], "Text",
+ CellChangeTimes->{{3.6942626098940268`*^9, 3.694262629604273*^9}, {
+  3.694262667334865*^9, 3.6942626683786983`*^9}, {3.694280049236127*^9, 
+  3.694280062869391*^9}, {3.694280203240885*^9, 3.694280209882963*^9}},
+ CellID->27957036],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[Pi]", "(", 
+    RowBox[{"I", "\[Rule]", "II"}], ")"}], "=", 
+   RowBox[{
+    UnderscriptBox["\[Integral]", "II"], 
+    RowBox[{
+     RowBox[{"\[DifferentialD]", "j"}], 
+     RowBox[{
+      UnderscriptBox["\[Integral]", "I"], 
+      RowBox[{
+       RowBox[{"\[DifferentialD]", "i"}], " ", 
+       RowBox[{"p", "(", 
+        RowBox[{"i", "\[VerticalSeparator]", "I"}], ")"}], 
+       RowBox[{"\[Pi]", "(", 
+        RowBox[{"i", "\[Rule]", "j"}], ")"}]}]}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.6942626708672047`*^9, 3.694262703091247*^9}, {
+  3.69428008865359*^9, 3.694280113050838*^9}, {3.694280165310041*^9, 
+  3.694280185938588*^9}},
+ CellID->685886060],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[Pi]", "(", 
+    RowBox[{"II", "\[Rule]", "I"}], ")"}], "=", 
+   RowBox[{
+    UnderscriptBox["\[Integral]", "I"], 
+    RowBox[{
+     RowBox[{"\[DifferentialD]", "i"}], " ", 
+     RowBox[{
+      UnderscriptBox["\[Integral]", "II"], 
+      RowBox[{
+       RowBox[{"\[DifferentialD]", "j"}], " ", 
+       RowBox[{"p", "(", 
+        RowBox[{"j", "\[VerticalSeparator]", "I"}], ")"}], 
+       RowBox[{"\[Pi]", "(", 
+        RowBox[{"j", "\[Rule]", "i"}], ")"}]}]}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.6942626708672047`*^9, 3.69426273192953*^9}, {
+  3.694280093792622*^9, 3.694280115004977*^9}, {3.6942801729452047`*^9, 
+  3.6942801826360807`*^9}},
+ CellID->1713499666],
+
+Cell["Now let\[CloseCurlyQuote]s investigate the ratio", "Text",
+ CellChangeTimes->{{3.694281776537282*^9, 3.694281784482561*^9}},
+ CellID->1831306939],
+
+Cell[BoxData[{
+ FormBox[
+  RowBox[{
+   FractionBox[
+    RowBox[{"\[Pi]", "(", 
+     RowBox[{"II", "\[Rule]", "I"}], ")"}], 
+    RowBox[{"\[Pi]", "(", 
+     RowBox[{"I", "\[Rule]", "II"}], ")"}]], "=", 
+   RowBox[{
+    FractionBox[
+     RowBox[{
+      UnderscriptBox["\[Integral]", "I"], 
+      RowBox[{
+       RowBox[{"\[DifferentialD]", "i"}], 
+       RowBox[{
+        UnderscriptBox["\[Integral]", "II"], 
+        RowBox[{
+         RowBox[{"\[DifferentialD]", "j"}], " ", 
+         RowBox[{"(", 
+          FractionBox[
+           RowBox[{"p", "(", 
+            RowBox[{"j", "|", "II"}], ")"}], 
+           RowBox[{"p", "(", 
+            RowBox[{"i", "\[VerticalSeparator]", "I"}], ")"}]], ")"}], 
+         RowBox[{"p", "(", 
+          RowBox[{"i", "\[VerticalSeparator]", "II"}], ")"}], 
+         RowBox[{"\[Pi]", "(", 
+          RowBox[{"j", "\[Rule]", "i"}], ")"}]}]}]}]}], 
+     RowBox[{
+      UnderscriptBox["\[Integral]", "I"], 
+      RowBox[{
+       RowBox[{"\[DifferentialD]", "i"}], 
+       RowBox[{
+        UnderscriptBox["\[Integral]", "II"], 
+        RowBox[{
+         RowBox[{"\[DifferentialD]", "j"}], " ", 
+         RowBox[{"p", "(", 
+          RowBox[{"i", "\[VerticalSeparator]", "II"}], ")"}], 
+         RowBox[{"\[Pi]", "(", 
+          RowBox[{"i", "\[Rule]", "j"}], ")"}]}]}]}]}]], 
+    OverscriptBox["=", 
+     ButtonBox[
+      RowBox[{"(", 
+       CounterBox["Section", "fixedEndPoints"], ".", 
+       CounterBox["EquationNumbered", "fixedEndPoints"], ")"}],
+      BaseStyle->{"Hyperlink", Larger},
+      ButtonData->"fixedEndPoints",
+      Tooltip->{
+        DynamicBox[
+         RowBox[
+          Flatten[{
+            PackageUtils`CellStrip[
+             NotebookRead[
+              First[
+               Cells[
+                EvaluationNotebook[], CellTags -> {"fixedEndPoints"}]]]]}]], 
+         UpdateInterval -> Infinity]},
+      TooltipDelay->0.05,
+      TooltipStyle->{
+       Background -> RGBColor[1, 1, 1], CellFrameColor -> RGBColor[1, 1, 1], 
+        CellFrame -> 2}]], 
+    FractionBox[
+     RowBox[{
+      UnderscriptBox["\[Integral]", "I"], 
+      RowBox[{
+       RowBox[{"\[DifferentialD]", "i"}], 
+       RowBox[{
+        UnderscriptBox["\[Integral]", "II"], 
+        RowBox[{
+         RowBox[{"\[DifferentialD]", "j"}], " ", 
+         RowBox[{"p", "(", 
+          RowBox[{"i", "\[VerticalSeparator]", "I"}], ")"}], 
+         RowBox[{"\[Pi]", "(", 
+          RowBox[{"i", "\[Rule]", "j"}], ")"}], 
+         SubscriptBox[
+          RowBox[{"\[LeftAngleBracket]", 
+           SuperscriptBox["\[ExponentialE]", 
+            RowBox[{"-", 
+             SubscriptBox["\[Beta]\[CapitalDelta]Q", "ij"]}]], 
+           "\[RightAngleBracket]"}], 
+          RowBox[{"i", "\[Rule]", "j"}]], 
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"ln", "[", 
+           RowBox[{"(", 
+            FractionBox[
+             RowBox[{"p", "(", 
+              RowBox[{"j", "|", "II"}], ")"}], 
+             RowBox[{"p", "(", 
+              RowBox[{"i", "\[VerticalSeparator]", "I"}], ")"}]], ")"}], 
+           "]"}]]}]}]}]}], 
+     RowBox[{
+      UnderscriptBox["\[Integral]", "I"], 
+      RowBox[{
+       RowBox[{"\[DifferentialD]", "i"}], 
+       RowBox[{
+        UnderscriptBox["\[Integral]", "II"], 
+        RowBox[{
+         RowBox[{"\[DifferentialD]", "j"}], " ", 
+         RowBox[{"p", "(", 
+          RowBox[{"i", "\[VerticalSeparator]", "II"}], ")"}], 
+         RowBox[{"\[Pi]", "(", 
+          RowBox[{"i", "\[Rule]", "j"}], ")"}]}]}]}]}]]}]}], 
+  TraditionalForm], "\[LineSeparator]", 
+ FormBox[
+  RowBox[{"=", 
+   SubscriptBox[
+    RowBox[{"\[LeftAngleBracket]", 
+     RowBox[{
+      SubscriptBox[
+       RowBox[{"\[LeftAngleBracket]", 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"-", 
+          SubscriptBox["\[Beta]\[CapitalDelta]Q", "ij"]}]], 
+        "\[RightAngleBracket]"}], 
+       RowBox[{"i", "\[Rule]", "j"}]], 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{"ln", "[", 
+        RowBox[{"(", 
+         FractionBox[
+          RowBox[{"p", "(", 
+           RowBox[{"j", "|", "II"}], ")"}], 
+          RowBox[{"p", "(", 
+           RowBox[{"i", "\[VerticalSeparator]", "I"}], ")"}]], ")"}], 
+        "]"}]]}], "\[RightAngleBracket]"}], 
+    RowBox[{"I", "\[Rule]", "II"}]]}], TraditionalForm]}], "EquationNumbered",\
+
+ CellChangeTimes->{{3.6942628221014757`*^9, 3.6942628836158867`*^9}, {
+  3.694262917133397*^9, 3.694262923383811*^9}, {3.6942630042283583`*^9, 
+  3.6942631566129*^9}, {3.694280118096177*^9, 3.694280135292708*^9}},
+ CellID->1345289853],
+
+Cell["We might rearrange this to get", "Text",
+ CellChangeTimes->{{3.6942631831925592`*^9, 3.69426318822771*^9}, {
+  3.694263227077632*^9, 3.6942632279606657`*^9}},
+ CellID->893309871],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   SubscriptBox[
+    RowBox[{"\[LeftAngleBracket]", 
+     RowBox[{
+      SubscriptBox[
+       RowBox[{"\[LeftAngleBracket]", 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"-", 
+          SubscriptBox["\[Beta]\[CapitalDelta]Q", "ij"]}]], 
+        "\[RightAngleBracket]"}], 
+       RowBox[{"i", "\[Rule]", "j"}]], 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"ln", "[", 
+         RowBox[{"(", 
+          FractionBox[
+           RowBox[{"p", "(", 
+            RowBox[{"j", "|", "II"}], ")"}], 
+           RowBox[{"p", "(", 
+            RowBox[{"i", "\[VerticalSeparator]", "I"}], ")"}]], ")"}], "]"}], 
+        "-", 
+        RowBox[{"ln", "[", 
+         FractionBox[
+          RowBox[{"\[Pi]", "(", 
+           RowBox[{"II", "\[Rule]", "I"}], ")"}], 
+          RowBox[{"\[Pi]", "(", 
+           RowBox[{"I", "\[Rule]", "II"}], ")"}]], "]"}]}]]}], 
+     "\[RightAngleBracket]"}], 
+    RowBox[{"I", "\[Rule]", "II"}]], "=", "1"}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.694263193287133*^9, 3.6942632489260483`*^9}},
+ CellID->712296977],
+
+Cell[TextData[{
+ "We can safely extend the averaging of ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"i", "\[Rule]", "j"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " to ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"I", "\[Rule]", "II"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " getting a nice formula (the first means averaging over trajectories the \
+second over the states)."
+}], "Text",
+ CellChangeTimes->{{3.694279676723085*^9, 3.694279701452647*^9}, {
+  3.6942797323027477`*^9, 3.694279783497156*^9}, {3.694279867947153*^9, 
+  3.6942798689389887`*^9}},
+ CellID->361041599],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   SubscriptBox[
+    RowBox[{"\[LeftAngleBracket]", 
+     SubscriptBox[
+      RowBox[{"\[LeftAngleBracket]", 
+       RowBox[{
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{"-", 
+          SubscriptBox["\[Beta]\[CapitalDelta]Q", "ij"]}]], 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{
+          RowBox[{"ln", "[", 
+           RowBox[{"(", 
+            FractionBox[
+             RowBox[{"p", "(", 
+              RowBox[{"j", "|", "II"}], ")"}], 
+             RowBox[{"p", "(", 
+              RowBox[{"i", "\[VerticalSeparator]", "I"}], ")"}]], ")"}], 
+           "]"}], "-", 
+          RowBox[{"ln", "[", 
+           FractionBox[
+            RowBox[{"\[Pi]", "(", 
+             RowBox[{"II", "\[Rule]", "I"}], ")"}], 
+            RowBox[{"\[Pi]", "(", 
+             RowBox[{"I", "\[Rule]", "II"}], ")"}]], "]"}]}]]}], 
+       "\[RightAngleBracket]"}], 
+      RowBox[{"i", "\[Rule]", "j"}]], "\[RightAngleBracket]"}], 
+    RowBox[{"I", "\[Rule]", "II"}]], "=", "1"}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.694279712531869*^9, 3.69427972887236*^9}},
+ CellID->695339081],
+
+Cell[TextData[{
+ "Now using ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SuperscriptBox["\[ExponentialE]", "x"], "\[GreaterEqual]", 
+    RowBox[{"1", "+", "x"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " we get"
+}], "Text",
+ CellChangeTimes->{{3.69426327325135*^9, 3.694263282824196*^9}},
+ CellID->1393601328],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"1", "=", 
+   RowBox[{
+    SubscriptBox[
+     RowBox[{"\[LeftAngleBracket]", 
+      SubscriptBox[
+       RowBox[{"\[LeftAngleBracket]", 
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"-", 
+           SubscriptBox["\[Beta]\[CapitalDelta]Q", "ij"]}]], 
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{
+           RowBox[{"ln", "[", 
+            RowBox[{"(", 
+             FractionBox[
+              RowBox[{"p", "(", 
+               RowBox[{"j", "|", "II"}], ")"}], 
+              RowBox[{"p", "(", 
+               RowBox[{"i", "\[VerticalSeparator]", "I"}], ")"}]], ")"}], 
+            "]"}], "-", 
+           RowBox[{"ln", "[", 
+            FractionBox[
+             RowBox[{"\[Pi]", "(", 
+              RowBox[{"II", "\[Rule]", "I"}], ")"}], 
+             RowBox[{"\[Pi]", "(", 
+              RowBox[{"I", "\[Rule]", "II"}], ")"}]], "]"}]}]]}], 
+        "\[RightAngleBracket]"}], 
+       RowBox[{"i", "\[Rule]", "j"}]], "\[RightAngleBracket]"}], 
+     RowBox[{"I", "\[Rule]", "II"}]], "\[GreaterEqual]", "\[LineSeparator]", 
+    RowBox[{"1", "-", 
+     RowBox[{"\[Beta]", 
+      SubscriptBox[
+       RowBox[{"\[LeftAngleBracket]", 
+        SubscriptBox["\[CapitalDelta]Q", "ij"], "\[RightAngleBracket]"}], 
+       RowBox[{"I", "\[Rule]", "II"}]]}], "+", 
+     SubscriptBox[
+      RowBox[{"\[LeftAngleBracket]", 
+       RowBox[{"ln", "[", 
+        RowBox[{"(", 
+         FractionBox[
+          RowBox[{"p", "(", 
+           RowBox[{"j", "|", "II"}], ")"}], 
+          RowBox[{"p", "(", 
+           RowBox[{"i", "\[VerticalSeparator]", "I"}], ")"}]], ")"}], "]"}], 
+       "\[RightAngleBracket]"}], 
+      RowBox[{"I", "\[Rule]", "II"}]], "-", 
+     RowBox[{"ln", "[", 
+      FractionBox[
+       RowBox[{"\[Pi]", "(", 
+        RowBox[{"II", "\[Rule]", "I"}], ")"}], 
+       RowBox[{"\[Pi]", "(", 
+        RowBox[{"I", "\[Rule]", "II"}], ")"}]], "]"}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.694263311110877*^9, 3.69426348470865*^9}, {
+  3.69426356918079*^9, 3.694263573053967*^9}, {3.694263623821978*^9, 
+  3.694263650363347*^9}, {3.694263696556477*^9, 3.694263705655117*^9}, {
+  3.694263742911459*^9, 3.694263777089864*^9}, {3.69427116984626*^9, 
+  3.6942712746767197`*^9}, {3.694271338122987*^9, 3.694271397632493*^9}, {
+  3.694271470099493*^9, 3.694271504961096*^9}, {3.694276835464767*^9, 
+  3.6942768589445972`*^9}, {3.694276959087686*^9, 3.6942769948307343`*^9}, {
+  3.69427945874644*^9, 3.69427962477803*^9}, {3.694279886015378*^9, 
+  3.69427994418377*^9}},
+ CellID->2054883077],
+
+Cell["Or", "Text",
+ CellChangeTimes->{{3.694263809883554*^9, 3.694263810097389*^9}},
+ CellID->1995287523],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"\[Beta]", 
+     SubscriptBox[
+      RowBox[{"\[LeftAngleBracket]", 
+       SubscriptBox["\[CapitalDelta]Q", "ij"], "\[RightAngleBracket]"}], 
+      RowBox[{"I", "\[Rule]", "II"}]]}], "-", 
+    SubscriptBox[
+     RowBox[{"\[LeftAngleBracket]", 
+      RowBox[{"ln", "[", 
+       RowBox[{"(", 
+        FractionBox[
+         RowBox[{"p", "(", 
+          RowBox[{"j", "|", "II"}], ")"}], 
+         RowBox[{"p", "(", 
+          RowBox[{"i", "\[VerticalSeparator]", "I"}], ")"}]], ")"}], "]"}], 
+      "\[RightAngleBracket]"}], 
+     RowBox[{"I", "\[Rule]", "II"}]], "+", 
+    RowBox[{"ln", "[", 
+     FractionBox[
+      RowBox[{"\[Pi]", "(", 
+       RowBox[{"II", "\[Rule]", "I"}], ")"}], 
+      RowBox[{"\[Pi]", "(", 
+       RowBox[{"I", "\[Rule]", "II"}], ")"}]], "]"}]}], "\[GreaterEqual]", 
+   "0"}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.694263797334031*^9, 3.694263804020788*^9}, {
+   3.694263841728339*^9, 3.694263856079508*^9}, 3.694271541564979*^9, {
+   3.6942768645932903`*^9, 3.694276868071183*^9}, {3.69427701444573*^9, 
+   3.694277018497672*^9}, {3.694278974344363*^9, 3.694278981780437*^9}, {
+   3.6942796340910273`*^9, 3.6942796375597467`*^9}, {3.6942799613654833`*^9, 
+   3.6942799707114*^9}, {3.694281137180348*^9, 3.6942811391624937`*^9}},
+ CellID->366747887],
+
+Cell["Now let\[CloseCurlyQuote]s see what the second term gives us", "Text",
+ CellChangeTimes->{{3.694279999676573*^9, 3.694280018362876*^9}},
+ CellID->1135980237],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"-", 
+    SubscriptBox[
+     RowBox[{"\[LeftAngleBracket]", 
+      RowBox[{"ln", "[", 
+       RowBox[{"(", 
+        FractionBox[
+         RowBox[{"p", "(", 
+          RowBox[{"j", "|", "II"}], ")"}], 
+         RowBox[{"p", "(", 
+          RowBox[{"i", "\[VerticalSeparator]", "I"}], ")"}]], ")"}], "]"}], 
+      "\[RightAngleBracket]"}], 
+     RowBox[{"I", "\[Rule]", "II"}]]}], "=", 
+   RowBox[{
+    RowBox[{"-", 
+     FractionBox[
+      RowBox[{"\[Integral]", 
+       RowBox[{
+        RowBox[{"\[DifferentialD]", "i"}], 
+        RowBox[{"\[Integral]", 
+         RowBox[{
+          RowBox[{"\[DifferentialD]", "j"}], " ", 
+          RowBox[{"p", "(", 
+           RowBox[{"i", "\[VerticalSeparator]", "I"}], ")"}], 
+          RowBox[{"ln", "[", 
+           RowBox[{"(", 
+            FractionBox[
+             RowBox[{"p", "(", 
+              RowBox[{"j", "|", "II"}], ")"}], 
+             RowBox[{"p", "(", 
+              RowBox[{"i", "\[VerticalSeparator]", "I"}], ")"}]], ")"}], 
+           "]"}]}]}]}]}], 
+      RowBox[{"\[Integral]", 
+       RowBox[{
+        RowBox[{"\[DifferentialD]", "i"}], 
+        RowBox[{"\[Integral]", 
+         RowBox[{
+          RowBox[{"\[DifferentialD]", "j"}], " ", 
+          RowBox[{"p", "(", 
+           RowBox[{"i", "\[VerticalSeparator]", "I"}], ")"}]}]}]}]}]]}], "=", 
+    
+    RowBox[{
+     RowBox[{
+      RowBox[{"-", 
+       FractionBox[
+        RowBox[{"\[Integral]", 
+         RowBox[{
+          RowBox[{"\[DifferentialD]", "i"}], 
+          RowBox[{"\[Integral]", 
+           RowBox[{
+            RowBox[{"\[DifferentialD]", "j"}], " ", 
+            RowBox[{"p", "(", 
+             RowBox[{"i", "\[VerticalSeparator]", "I"}], ")"}], 
+            RowBox[{"ln", "[", 
+             RowBox[{"p", "(", 
+              RowBox[{"j", "|", "II"}], ")"}], "]"}]}]}]}]}], 
+        RowBox[{"\[Integral]", 
+         RowBox[{
+          RowBox[{"\[DifferentialD]", "i"}], 
+          RowBox[{"\[Integral]", 
+           RowBox[{
+            RowBox[{"\[DifferentialD]", "j"}], " ", 
+            RowBox[{"p", "(", 
+             RowBox[{"i", "\[VerticalSeparator]", "I"}], ")"}]}]}]}]}]]}], 
+      "+", 
+      FractionBox[
+       RowBox[{"\[Integral]", 
+        RowBox[{
+         RowBox[{"\[DifferentialD]", "i"}], 
+         RowBox[{"\[Integral]", 
+          RowBox[{
+           RowBox[{"\[DifferentialD]", "j"}], " ", 
+           RowBox[{"p", "(", 
+            RowBox[{"i", "\[VerticalSeparator]", "I"}], ")"}], 
+           RowBox[{"ln", "[", 
+            RowBox[{"p", "(", 
+             RowBox[{"i", "\[VerticalSeparator]", "I"}], ")"}], "]"}]}]}]}]}], 
+       RowBox[{"\[Integral]", 
+        RowBox[{
+         RowBox[{"\[DifferentialD]", "i"}], 
+         RowBox[{"\[Integral]", 
+          RowBox[{
+           RowBox[{"\[DifferentialD]", "j"}], " ", 
+           RowBox[{"p", "(", 
+            RowBox[{"i", "\[VerticalSeparator]", "I"}], ")"}]}]}]}]}]]}], "=",
+      "\[LineSeparator]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"-", 
+        FractionBox[
+         RowBox[{"\[Integral]", 
+          RowBox[{
+           RowBox[{"\[DifferentialD]", "i"}], 
+           RowBox[{"\[Integral]", 
+            RowBox[{
+             RowBox[{"\[DifferentialD]", "j"}], " ", 
+             RowBox[{"p", "(", 
+              RowBox[{"j", "\[VerticalSeparator]", "II"}], ")"}], 
+             FractionBox[
+              RowBox[{"p", "(", 
+               RowBox[{"i", "\[VerticalSeparator]", "I"}], ")"}], 
+              RowBox[{"p", "(", 
+               RowBox[{"j", "\[VerticalSeparator]", "II"}], ")"}]], 
+             RowBox[{"ln", "[", 
+              RowBox[{"p", "(", 
+               RowBox[{"j", "|", "II"}], ")"}], "]"}]}]}]}]}], 
+         RowBox[{"\[Integral]", 
+          RowBox[{
+           RowBox[{"\[DifferentialD]", "i"}], 
+           RowBox[{"\[Integral]", 
+            RowBox[{
+             RowBox[{"\[DifferentialD]", "j"}], " ", 
+             RowBox[{"p", "(", 
+              RowBox[{"i", "\[VerticalSeparator]", "I"}], ")"}]}]}]}]}]]}], 
+       "+", 
+       FractionBox[
+        RowBox[{"\[Integral]", 
+         RowBox[{
+          RowBox[{"\[DifferentialD]", "i"}], 
+          RowBox[{"\[Integral]", 
+           RowBox[{
+            RowBox[{"\[DifferentialD]", "j"}], " ", 
+            RowBox[{"p", "(", 
+             RowBox[{"i", "\[VerticalSeparator]", "I"}], ")"}], 
+            RowBox[{"ln", "[", 
+             RowBox[{"p", "(", 
+              RowBox[{"i", "\[VerticalSeparator]", "I"}], ")"}], 
+             "]"}]}]}]}]}], 
+        RowBox[{"\[Integral]", 
+         RowBox[{
+          RowBox[{"\[DifferentialD]", "i"}], 
+          RowBox[{"\[Integral]", 
+           RowBox[{
+            RowBox[{"\[DifferentialD]", "j"}], " ", 
+            RowBox[{"p", "(", 
+             RowBox[{"i", "\[VerticalSeparator]", "I"}], ")"}]}]}]}]}]]}], 
+      "=", 
+      RowBox[{
+       SubscriptBox["S", "II"], "-", 
+       SubscriptBox["S", "I"]}]}]}]}]}], TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.6942800256751137`*^9, 3.694280034501335*^9}, {
+  3.694280250615613*^9, 3.6942802877786303`*^9}, {3.694280428219658*^9, 
+  3.6942804989404793`*^9}, {3.694280539530221*^9, 3.694280602950973*^9}, {
+  3.6942806350066547`*^9, 3.6942806462921124`*^9}, {3.69428068554671*^9, 
+  3.6942806928108473`*^9}, {3.69428074452722*^9, 3.6942807464021893`*^9}, {
+  3.6942809031145077`*^9, 3.694280916714006*^9}},
+ CellID->682032643],
+
+Cell["\<\
+where the last step included Shannon entropy and it signifies the change of \
+internal entropy. Therefore the inequality becomes\
+\>", "Text",
+ CellChangeTimes->{{3.694263907059896*^9, 3.69426391646375*^9}, {
+  3.694280701605555*^9, 3.6942807143361473`*^9}, {3.694280927814406*^9, 
+  3.6942809460500593`*^9}, {3.6942810945109673`*^9, 3.694281100300898*^9}},
+ CellID->1591294021],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"\[Beta]", 
+     SubscriptBox[
+      RowBox[{"\[LeftAngleBracket]", 
+       SubscriptBox["\[CapitalDelta]Q", "ij"], "\[RightAngleBracket]"}], 
+      RowBox[{"I", "\[Rule]", "II"}]]}], "+", 
+    SubscriptBox["\[CapitalDelta]S", "int"], "+", 
+    RowBox[{"ln", "[", 
+     FractionBox[
+      RowBox[{"\[Pi]", "(", 
+       RowBox[{"II", "\[Rule]", "I"}], ")"}], 
+      RowBox[{"\[Pi]", "(", 
+       RowBox[{"I", "\[Rule]", "II"}], ")"}]], "]"}]}], "\[GreaterEqual]", 
+   "0"}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.694281117025407*^9, 3.6942811342448053`*^9}, {
+  3.6942812791806107`*^9, 3.6942812797707157`*^9}},
+ CellID->1486287095],
+
+Cell[TextData[{
+ "If we would have taken ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    FractionBox[
+     RowBox[{"\[Pi]", "(", 
+      RowBox[{"II", "\[Rule]", "I"}], ")"}], 
+     RowBox[{"\[Pi]", "(", 
+      RowBox[{"I", "\[Rule]", "II"}], ")"}]], "=", "1"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " then it would reduce to the Second Law of Thermodynamics."
+}], "Text",
+ CellChangeTimes->{{3.694281148057966*^9, 3.6942811948668547`*^9}},
+ CellID->1560589124],
+
+Cell[TextData[{
+ "Therefore the more negative the part ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"ln", "[", 
+    FractionBox[
+     RowBox[{"\[Pi]", "(", 
+      RowBox[{"II", "\[Rule]", "I"}], ")"}], 
+     RowBox[{"\[Pi]", "(", 
+      RowBox[{"I", "\[Rule]", "II"}], ")"}]], "]"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is the more positive the total entropy production."
+}], "Text",
+ CellChangeTimes->{{3.6942812843024397`*^9, 3.694281324714273*^9}},
+ CellID->383628576]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 855},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
+StyleDefinitions->"Science.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "fixedEndPoints"->{
+  Cell[1299, 42, 791, 22, 56, "EquationNumbered",
+   CellTags->"fixedEndPoints",
+   CellID->706504164]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"fixedEndPoints", 24213, 702}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 176, 3, 73, "Title",
+ CellID->116202796],
+Cell[CellGroupData[{
+Cell[781, 29, 307, 4, 64, "Section",
+ CellID->1465328715],
+Cell[1091, 35, 205, 5, 37, "Text",
+ CellID->1759237970],
+Cell[1299, 42, 791, 22, 56, "EquationNumbered",
+ CellTags->"fixedEndPoints",
+ CellID->706504164],
+Cell[2093, 66, 498, 13, 38, "Text",
+ CellID->27957036],
+Cell[2594, 81, 736, 21, 65, "EquationNumbered",
+ CellID->685886060],
+Cell[3333, 104, 746, 21, 65, "EquationNumbered",
+ CellID->1713499666],
+Cell[4082, 127, 151, 2, 37, "Text",
+ CellID->1831306939],
+Cell[4236, 131, 4531, 129, 205, "EquationNumbered",
+ CellID->1345289853],
+Cell[8770, 262, 184, 3, 37, "Text",
+ CellID->893309871],
+Cell[8957, 267, 1134, 33, 52, "EquationNumbered",
+ CellID->712296977],
+Cell[10094, 302, 597, 17, 65, "Text",
+ CellID->361041599],
+Cell[10694, 321, 1156, 32, 55, "EquationNumbered",
+ CellID->695339081],
+Cell[11853, 355, 325, 11, 38, "Text",
+ CellID->1393601328],
+Cell[12181, 368, 2596, 64, 108, "EquationNumbered",
+ CellID->2054883077],
+Cell[14780, 434, 105, 2, 36, "Text",
+ CellID->1995287523],
+Cell[14888, 438, 1354, 33, 58, "EquationNumbered",
+ CellID->366747887],
+Cell[16245, 473, 163, 2, 37, "Text",
+ CellID->1135980237],
+Cell[16411, 477, 5388, 148, 195, "Equation",
+ CellID->682032643],
+Cell[21802, 627, 388, 7, 61, "Text",
+ CellID->1591294021],
+Cell[22193, 636, 713, 19, 55, "EquationNumbered",
+ CellID->1486287095],
+Cell[22909, 657, 474, 14, 61, "Text",
+ CellID->1560589124],
+Cell[23386, 673, 486, 14, 61, "Text",
+ CellID->383628576]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

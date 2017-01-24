@@ -1,0 +1,93 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2305,         85]
+NotebookOptionsPosition[      1781,         60]
+NotebookOutlinePosition[      2138,         76]
+CellTagsIndexPosition[      2095,         73]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["The Fluctuation Theorems", "Title",
+ CellChangeTimes->{{3.693296908298423*^9, 3.693296913291026*^9}},
+ CellID->1714601433],
+
+Cell[CellGroupData[{
+
+Cell["", "Section",
+ CellID->1187229429],
+
+Cell["\<\
+The fluctuations theorems are a group of relations that describe the entropy \
+production of a finite classical system coupled to a constant temperature \
+heat bath, that is driven out of equilibrium by a time dependent work \
+process.
+Although the type of system, range of applicability, and the exact \
+interpretation differ, these theorems have the same general form,\
+\>", "Text",
+ CellChangeTimes->{{3.6932969384096622`*^9, 3.6932970347055883`*^9}, {
+  3.693297074752191*^9, 3.693297075772324*^9}},
+ CellID->470235192],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   FractionBox[
+    RowBox[{"P", "(", 
+     RowBox[{"+", "\[Sigma]"}], ")"}], 
+    RowBox[{"P", "(", 
+     RowBox[{"-", "\[Sigma]"}], ")"}]], "\[TildeEqual]", 
+   RowBox[{
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{"\[Tau]", "\[VeryThinSpace]", "\[Sigma]"}]], "."}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.693297037808236*^9, 3.693297073728806*^9}},
+ CellID->1923911492]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 755},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
+StyleDefinitions->"Science.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 128, 2, 73, "Title",
+ CellID->1714601433],
+Cell[CellGroupData[{
+Cell[733, 28, 40, 1, 63, "Section",
+ CellID->1187229429],
+Cell[776, 31, 533, 10, 133, "Text",
+ CellID->470235192],
+Cell[1312, 43, 441, 13, 55, "EquationNumbered",
+ CellID->1923911492]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
