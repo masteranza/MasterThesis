@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     75088,       2411]
-NotebookOptionsPosition[     66027,       2091]
-NotebookOutlinePosition[     67348,       2141]
-CellTagsIndexPosition[     67115,       2131]
+NotebookDataLength[     76387,       2451]
+NotebookOptionsPosition[     67194,       2127]
+NotebookOutlinePosition[     68515,       2177]
+CellTagsIndexPosition[     68282,       2167]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -329,8 +329,16 @@ Cell["Work \[Dash] change in states energy levels", "Item1",
  CellChangeTimes->{{3.693738498575296*^9, 3.693738507831276*^9}},
  CellID->1183884519],
 
-Cell["Heat \[Dash] changes between states", "Item1",
- CellChangeTimes->{{3.693738498575296*^9, 3.693738540884685*^9}},
+Cell[TextData[{
+ "Heat \[Dash] changes between states (here the convention is that it\
+\[CloseCurlyQuote]s the heat ",
+ Cell[BoxData[
+  FormBox["Q", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " that flows into the system from the attached heat bath)"
+}], "Item1",
+ CellChangeTimes->{{3.693738498575296*^9, 3.693738540884685*^9}, {
+  3.694590605037983*^9, 3.694590641396677*^9}},
  CellID->183582858]
 }, Open  ]],
 
@@ -761,17 +769,14 @@ Cell[TextData[{
    RowBox[{"\[ScriptCapitalP]", "[", 
     RowBox[{
      RowBox[{"x", "\[VerticalSeparator]", 
-      RowBox[{"x", "(", "0", ")"}]}], ",", "M"}], "]"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+      RowBox[{"x", "(", "0", ")"}]}], ",", "M"}], "]"}], TraditionalForm]]],
  " be the probability of observing the trajectory ",
  Cell[BoxData[
-  FormBox["x", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["x", TraditionalForm]]],
  ", given that the system started in state ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"x", "(", "0", ")"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   RowBox[{"x", "(", "0", ")"}], TraditionalForm]]],
  ".\nThe probability of the corresponding reversed path is ",
  Cell[BoxData[
   FormBox[
@@ -782,8 +787,7 @@ Cell[TextData[{
       OverscriptBox["x", "^"], "\[VerticalSeparator]", 
       RowBox[{
        OverscriptBox["x", "^"], "(", "0", ")"}]}], ",", 
-     OverscriptBox["M", "^"]}], "]"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+     OverscriptBox["M", "^"]}], "]"}], TraditionalForm]]],
  ". The ratio of those path probabilities is a simple function of the heat \
 exchanged with the bath"
 }], "Text",
@@ -1131,8 +1135,7 @@ probabilities (Markovian dynamics)\n ",
              RowBox[{
               RowBox[{"-", "\[Beta]"}], "\[VeryThinSpace]", 
               RowBox[{"Q", "[", "x", "]"}]}], "}"}]}]}]}]}]}]}]}]}]}], 
-   TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   TraditionalForm]]],
  "\n "
 }], "Proof",
  CellChangeTimes->CompressedData["
@@ -1174,7 +1177,40 @@ could since ",
 }], "Question",
  CellChangeTimes->{{3.693759212279029*^9, 3.693759286305064*^9}, {
   3.693759330834765*^9, 3.69375935298232*^9}},
- CellID->162863812]
+ CellID->162863812],
+
+Cell["\<\
+More commonly we see a relation in which the dissipated heat is used instead \
+of heat that entered the system\
+\>", "Text",
+ CellChangeTimes->{{3.694590736116384*^9, 3.694590775249702*^9}, {
+  3.694590878850152*^9, 3.694590893698326*^9}},
+ CellID->1350231474],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   FractionBox[
+    RowBox[{
+     OverscriptBox["\[ScriptCapitalP]", "^"], "[", 
+     RowBox[{
+      RowBox[{
+       OverscriptBox["x", "^"], "\[VerticalSeparator]", 
+       RowBox[{
+        OverscriptBox["x", "^"], "(", "0", ")"}]}], ",", 
+      OverscriptBox["M", "^"]}], "]"}], 
+    RowBox[{"\[ScriptCapitalP]", "[", 
+     RowBox[{
+      RowBox[{"x", "\[VerticalSeparator]", 
+       RowBox[{"x", "(", "0", ")"}]}], ",", "M"}], "]"}]], "=", 
+   SuperscriptBox["\[ExponentialE]", 
+    RowBox[{
+     RowBox[{"-", "\[Beta]"}], "\[VeryThinSpace]", 
+     RowBox[{"Q", "[", "x", "]"}]}]]}], TraditionalForm]], "EquationNumbered",\
+
+ CellChangeTimes->{
+  3.694590759935525*^9, {3.694590803968155*^9, 3.694590814299078*^9}},
+ CellID->18011524]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1472,10 +1508,10 @@ Cell[BoxData[
 
 Cell["\<\
 The jump probabilities, are probabilities of making the specified transition \
-given that some jump has occured\
+given that some jump has occurred\
 \>", "Text",
  CellChangeTimes->{{3.6938396265976267`*^9, 3.69383963178924*^9}, {
-  3.693839995843018*^9, 3.693840022932756*^9}},
+   3.693839995843018*^9, 3.693840022932756*^9}, 3.6945914576476192`*^9},
  CellID->267618971],
 
 Cell[BoxData[
@@ -2053,9 +2089,9 @@ Cell[BoxData[
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
-       Hold[N$$], 1}, 1, 100}}, Typeset`size$$ = {
-    456., {45.8544921875, 51.1455078125}}, Typeset`update$$ = 0, 
-    Typeset`initDone$$, Typeset`skipInitDone$$ = True, N$4768$$ = 0}, 
+       Hold[N$$], 1}, 1, 100}}, Typeset`size$$ = {138., {2.255859375, 9.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = True, 
+    N$4768$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {N$$ = 1}, "ControllerVariables" :> {
         Hold[N$$, N$4768$$, 0]}, 
@@ -2069,7 +2105,7 @@ Cell[BoxData[
           Factorial[$CellContext`k], {$CellContext`k, 1, N$$}]], 
       "Specifications" :> {{{N$$, 1}, 1, 100}}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{499., {91., 96.}},
+     ImageSizeCache->{279., {49., 54.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -2103,7 +2139,7 @@ StyleDefinitions->"Science.nb"
 (*CellTagsOutline
 CellTagsIndex->{
  "defHeat"->{
-  Cell[10107, 336, 612, 20, 67, "EquationNumbered",
+  Cell[10378, 344, 612, 20, 67, "EquationNumbered",
    CellTags->"defHeat",
    CellID->1408018398]},
  "detailedBalance"->{
@@ -2111,7 +2147,7 @@ CellTagsIndex->{
    CellTags->"detailedBalance",
    CellID->1928161086]},
  "ForwardBackwardM"->{
-  Cell[15667, 526, 564, 17, 39, "EquationNumbered",
+  Cell[15938, 534, 564, 17, 39, "EquationNumbered",
    CellTags->"ForwardBackwardM",
    CellID->110239261]},
  "invDistM"->{
@@ -2119,7 +2155,7 @@ CellTagsIndex->{
    CellTags->"invDistM",
    CellID->1629014818]},
  "nonhomoInvChain"->{
-  Cell[20035, 675, 648, 19, 37, "EquationNumbered",
+  Cell[20306, 683, 648, 19, 37, "EquationNumbered",
    CellTags->"nonhomoInvChain",
    CellID->609736316]},
  "probDist"->{
@@ -2130,12 +2166,12 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"defHeat", 66377, 2104},
- {"detailedBalance", 66500, 2108},
- {"ForwardBackwardM", 66631, 2112},
- {"invDistM", 66755, 2116},
- {"nonhomoInvChain", 66869, 2120},
- {"probDist", 66992, 2124}
+ {"defHeat", 67544, 2140},
+ {"detailedBalance", 67667, 2144},
+ {"ForwardBackwardM", 67798, 2148},
+ {"invDistM", 67922, 2152},
+ {"nonhomoInvChain", 68036, 2156},
+ {"probDist", 68159, 2160}
  }
 *)
 (*NotebookFileOutline
@@ -2212,203 +2248,207 @@ Cell[9638, 321, 141, 2, 63, "Section",
 Cell[CellGroupData[{
 Cell[9804, 327, 147, 2, 29, "Item1",
  CellID->1183884519],
-Cell[9954, 331, 138, 2, 29, "Item1",
+Cell[9954, 331, 409, 10, 32, "Item1",
  CellID->183582858]
 }, Open  ]],
-Cell[10107, 336, 612, 20, 67, "EquationNumbered",
+Cell[10378, 344, 612, 20, 67, "EquationNumbered",
  CellTags->"defHeat",
  CellID->1408018398],
-Cell[10722, 358, 647, 21, 67, "EquationNumbered",
+Cell[10993, 366, 647, 21, 67, "EquationNumbered",
  CellID->334180279],
-Cell[11372, 381, 454, 13, 36, "EquationNumbered",
+Cell[11643, 389, 454, 13, 36, "EquationNumbered",
  CellID->978268147],
 Cell[CellGroupData[{
-Cell[11851, 398, 123, 2, 38, "Subsection",
+Cell[12122, 406, 123, 2, 38, "Subsection",
  CellID->392222220],
-Cell[11977, 402, 467, 14, 34, "EquationNumbered",
+Cell[12248, 410, 467, 14, 34, "EquationNumbered",
  CellID->1472550227],
-Cell[12447, 418, 145, 2, 22, "Comment",
+Cell[12718, 426, 145, 2, 22, "Comment",
  CellID->1149727846]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12629, 425, 125, 2, 38, "Subsection",
+Cell[12900, 433, 125, 2, 38, "Subsection",
  CellID->1983252871],
-Cell[12757, 429, 306, 9, 34, "EquationNumbered",
+Cell[13028, 437, 306, 9, 34, "EquationNumbered",
  CellID->313486710]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[13112, 444, 119, 2, 63, "Section",
+Cell[13383, 452, 119, 2, 63, "Section",
  CellID->1080226443],
-Cell[13234, 448, 229, 5, 37, "Text",
+Cell[13505, 456, 229, 5, 37, "Text",
  CellID->1509369544],
 Cell[CellGroupData[{
-Cell[13488, 457, 128, 2, 38, "Subsection",
+Cell[13759, 465, 128, 2, 38, "Subsection",
  CellID->739526773],
-Cell[13619, 461, 279, 8, 32, "Equation",
+Cell[13890, 469, 279, 8, 32, "Equation",
  CellID->138049645],
-Cell[13901, 471, 283, 8, 36, "Equation",
+Cell[14172, 479, 283, 8, 36, "Equation",
  CellID->1297349150],
-Cell[14187, 481, 1477, 43, 93, "Text",
+Cell[14458, 489, 1477, 43, 93, "Text",
  CellID->581407032],
-Cell[15667, 526, 564, 17, 39, "EquationNumbered",
+Cell[15938, 534, 564, 17, 39, "EquationNumbered",
  CellTags->"ForwardBackwardM",
  CellID->110239261],
-Cell[16234, 545, 551, 20, 29, "Comment",
+Cell[16505, 553, 551, 20, 29, "Comment",
  CellID->1562285455],
-Cell[16788, 567, 241, 8, 42, "Text",
+Cell[17059, 575, 241, 8, 42, "Text",
  CellID->1512710022],
-Cell[17032, 577, 370, 11, 37, "Equation",
+Cell[17303, 585, 370, 11, 37, "Equation",
  CellID->999809404],
-Cell[17405, 590, 123, 2, 36, "Text",
+Cell[17676, 598, 123, 2, 36, "Text",
  CellID->1041468735],
 Cell[CellGroupData[{
-Cell[17553, 596, 1164, 35, 48, "Proof",
+Cell[17824, 604, 1164, 35, 48, "Proof",
  CellID->2034128991],
-Cell[18720, 633, 1106, 34, 41, "Remark",
+Cell[18991, 641, 1106, 34, 41, "Remark",
  CellID->1262598687]
 }, Open  ]],
-Cell[19841, 670, 191, 3, 37, "Text",
+Cell[20112, 678, 191, 3, 37, "Text",
  CellID->1497526433],
-Cell[20035, 675, 648, 19, 37, "EquationNumbered",
+Cell[20306, 683, 648, 19, 37, "EquationNumbered",
  CellTags->"nonhomoInvChain",
  CellID->609736316],
-Cell[20686, 696, 128, 2, 36, "Text",
+Cell[20957, 704, 128, 2, 36, "Text",
  CellID->1626542589],
-Cell[20817, 700, 398, 13, 37, "EquationNumbered",
+Cell[21088, 708, 398, 13, 37, "EquationNumbered",
  CellID->112824292],
-Cell[21218, 715, 274, 8, 34, "Equation",
+Cell[21489, 723, 274, 8, 34, "Equation",
  CellID->1800246308],
-Cell[21495, 725, 272, 8, 32, "Equation",
+Cell[21766, 733, 272, 8, 32, "Equation",
  CellID->1720652550],
-Cell[21770, 735, 323, 10, 34, "Equation",
+Cell[22041, 743, 323, 10, 34, "Equation",
  CellID->1765287582]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[22142, 751, 192, 3, 65, "Section",
+Cell[22413, 759, 192, 3, 65, "Section",
  CellID->46246775],
-Cell[22337, 756, 1146, 34, 74, "Text",
+Cell[22608, 764, 1014, 30, 74, "Text",
  CellID->297184323],
-Cell[23486, 792, 750, 22, 63, "EquationNumbered",
+Cell[23625, 796, 750, 22, 63, "EquationNumbered",
  CellID->606567785],
-Cell[24239, 816, 11809, 332, 259, "Proof",
+Cell[24378, 820, 11776, 331, 259, "Proof",
  CellID->169992973],
-Cell[36051, 1150, 340, 8, 90, "Comment",
+Cell[36157, 1153, 340, 8, 90, "Comment",
  CellID->423185070],
-Cell[36394, 1160, 615, 16, 48, "Question",
- CellID->162863812]
+Cell[36500, 1163, 615, 16, 48, "Question",
+ CellID->162863812],
+Cell[37118, 1181, 270, 6, 37, "Text",
+ CellID->1350231474],
+Cell[37391, 1189, 772, 23, 64, "EquationNumbered",
+ CellID->18011524]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[37046, 1181, 159, 2, 63, "Section",
+Cell[38200, 1217, 159, 2, 63, "Section",
  CellID->1108925102],
-Cell[37208, 1185, 115, 2, 36, "Text",
+Cell[38362, 1221, 115, 2, 36, "Text",
  CellID->1984221871],
 Cell[CellGroupData[{
-Cell[37348, 1191, 178, 4, 29, "Item1",
+Cell[38502, 1227, 178, 4, 29, "Item1",
  CellID->1836124156],
-Cell[37529, 1197, 189, 3, 29, "Item1",
+Cell[38683, 1233, 189, 3, 29, "Item1",
  CellID->1762381543]
 }, Open  ]],
-Cell[37733, 1203, 372, 11, 32, "EquationNumbered",
+Cell[38887, 1239, 372, 11, 32, "EquationNumbered",
  CellID->776990855],
 Cell[CellGroupData[{
-Cell[38130, 1218, 129, 2, 38, "Subsection",
+Cell[39284, 1254, 129, 2, 38, "Subsection",
  CellID->829557754],
-Cell[38262, 1222, 317, 8, 36, "Equation",
+Cell[39416, 1258, 317, 8, 36, "Equation",
  CellID->480384010],
-Cell[38582, 1232, 350, 10, 54, "Equation",
+Cell[39736, 1268, 350, 10, 54, "Equation",
  CellID->263014346],
-Cell[38935, 1244, 714, 26, 42, "Text",
+Cell[40089, 1280, 714, 26, 42, "Text",
  CellID->1126300538],
-Cell[39652, 1272, 483, 13, 40, "Text",
+Cell[40806, 1308, 483, 13, 40, "Text",
  CellID->1703411206],
-Cell[40138, 1287, 535, 15, 66, "EquationNumbered",
+Cell[41292, 1323, 535, 15, 66, "EquationNumbered",
  CellID->1775229718],
-Cell[40676, 1304, 1203, 42, 57, "Comment",
+Cell[41830, 1340, 1203, 42, 57, "Comment",
  CellID->1083438700],
-Cell[41882, 1348, 400, 12, 27, "Critique",
+Cell[43036, 1384, 400, 12, 27, "Critique",
  CellID->1616966080]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[42319, 1365, 132, 2, 38, "Subsection",
+Cell[43473, 1401, 132, 2, 38, "Subsection",
  CellID->54508218],
-Cell[42454, 1369, 498, 9, 61, "Text",
+Cell[43608, 1405, 498, 9, 61, "Text",
  CellID->622297781],
-Cell[42955, 1380, 819, 26, 70, "EquationNumbered",
+Cell[44109, 1416, 819, 26, 70, "EquationNumbered",
  CellID->1721502153],
-Cell[43777, 1408, 1004, 33, 72, "Text",
+Cell[44931, 1444, 1004, 33, 72, "Text",
  CellID->1240102932],
-Cell[44784, 1443, 835, 27, 83, "EquationNumbered",
+Cell[45938, 1479, 835, 27, 83, "EquationNumbered",
  CellID->311027335],
-Cell[45622, 1472, 271, 6, 37, "Text",
+Cell[46776, 1508, 297, 6, 37, "Text",
  CellID->267618971],
-Cell[45896, 1480, 901, 31, 46, "EquationNumbered",
+Cell[47076, 1516, 901, 31, 46, "EquationNumbered",
  CellID->76057715],
-Cell[46800, 1513, 705, 24, 41, "Remark",
+Cell[47980, 1549, 705, 24, 41, "Remark",
  CellID->1065323520]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[47542, 1542, 123, 2, 38, "Subsection",
+Cell[48722, 1578, 123, 2, 38, "Subsection",
  CellID->187893627],
-Cell[47668, 1546, 356, 11, 39, "Equation",
+Cell[48848, 1582, 356, 11, 39, "Equation",
  CellID->1384382364],
-Cell[48027, 1559, 508, 9, 61, "Text",
+Cell[49207, 1595, 508, 9, 61, "Text",
  CellID->304391453],
-Cell[48538, 1570, 598, 18, 37, "EquationNumbered",
+Cell[49718, 1606, 598, 18, 37, "EquationNumbered",
  CellID->1398664607],
-Cell[49139, 1590, 812, 26, 41, "Text",
+Cell[50319, 1626, 812, 26, 41, "Text",
  CellID->1874624856],
-Cell[49954, 1618, 369, 9, 27, "Comment",
+Cell[51134, 1654, 369, 9, 27, "Comment",
  CellID->1872386916],
-Cell[50326, 1629, 403, 7, 61, "Text",
+Cell[51506, 1665, 403, 7, 61, "Text",
  CellID->1434280118],
-Cell[50732, 1638, 2739, 85, 70, "EquationNumbered",
+Cell[51912, 1674, 2739, 85, 70, "EquationNumbered",
  InitializationCell->True,
  CellID->1702515205]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[53520, 1729, 174, 3, 63, "Section",
+Cell[54700, 1765, 174, 3, 63, "Section",
  CellID->2031447069],
-Cell[53697, 1734, 471, 11, 25, "Critique",
+Cell[54877, 1770, 471, 11, 25, "Critique",
  CellID->1716221137],
-Cell[54171, 1747, 718, 23, 40, "Text",
+Cell[55351, 1783, 718, 23, 40, "Text",
  CellID->1135008439],
-Cell[54892, 1772, 1167, 35, 52, "EquationNumbered",
+Cell[56072, 1808, 1167, 35, 52, "EquationNumbered",
  CellID->159173981],
-Cell[56062, 1809, 323, 6, 61, "Text",
+Cell[57242, 1845, 323, 6, 61, "Text",
  CellID->849068094],
-Cell[56388, 1817, 764, 22, 52, "EquationNumbered",
+Cell[57568, 1853, 764, 22, 52, "EquationNumbered",
  CellID->102394686],
-Cell[57155, 1841, 400, 13, 38, "Text",
+Cell[58335, 1877, 400, 13, 38, "Text",
  CellID->477612564],
-Cell[57558, 1856, 585, 19, 70, "EquationNumbered",
+Cell[58738, 1892, 585, 19, 70, "EquationNumbered",
  CellID->425178963],
-Cell[58146, 1877, 204, 5, 41, "Remark",
+Cell[59326, 1913, 204, 5, 41, "Remark",
  CellID->234484450]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[58387, 1887, 113, 2, 63, "Section",
+Cell[59567, 1923, 113, 2, 63, "Section",
  CellID->1501779575],
-Cell[58503, 1891, 1155, 31, 30, "Input",
+Cell[59683, 1927, 1155, 31, 30, "Input",
  CellID->490173154],
 Cell[CellGroupData[{
-Cell[59683, 1926, 882, 24, 51, "Input",
+Cell[60863, 1962, 882, 24, 51, "Input",
  CellID->1869122807],
-Cell[60568, 1952, 322, 7, 30, "Output",
+Cell[61748, 1988, 322, 7, 30, "Output",
  CellID->820736042]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[60927, 1964, 318, 6, 31, "Input",
+Cell[62107, 2000, 318, 6, 31, "Input",
  CellID->1453618925],
-Cell[61248, 1972, 2046, 46, 67, "Output",
+Cell[62428, 2008, 2046, 46, 67, "Output",
  CellID->882345166]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[63331, 2023, 800, 23, 50, "Input",
+Cell[64511, 2059, 800, 23, 50, "Input",
  CellID->1907780582],
-Cell[64134, 2048, 1853, 38, 204, "Output",
+Cell[65314, 2084, 1840, 38, 120, "Output",
  CellID->481326052]
 }, Open  ]]
 }, Open  ]]

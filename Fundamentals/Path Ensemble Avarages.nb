@@ -1,0 +1,238 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6802,        230]
+NotebookOptionsPosition[      5274,        169]
+NotebookOutlinePosition[      5633,        185]
+CellTagsIndexPosition[      5590,        182]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Path Ensemble Avarages", "Title",
+ CellChangeTimes->{{3.693296908298423*^9, 3.693296913291026*^9}, {
+  3.694591799314199*^9, 3.6945918041485662`*^9}},
+ CellID->1714601433],
+
+Cell[CellGroupData[{
+
+Cell["Nonequilibrium relations", "Section",
+ CellChangeTimes->{{3.694592946757186*^9, 3.694592956900832*^9}},
+ CellID->1187229429],
+
+Cell["\<\
+There exist only a handful of relations correct arbitrarily far from \
+equilibrium, these include:\
+\>", "Text",
+ CellChangeTimes->{{3.6932969384096622`*^9, 3.6932970347055883`*^9}, {
+  3.693297074752191*^9, 3.693297075772324*^9}, {3.694592003497333*^9, 
+  3.694592031743691*^9}, {3.694592704695485*^9, 3.6945927102469587`*^9}},
+ CellID->470235192],
+
+Cell["Jarzy\:0144ski non-equilibrium work relation", "Item1",
+ CellChangeTimes->{{3.6945927120681562`*^9, 3.6945927395411453`*^9}, 
+   3.694592923439446*^9},
+ CellID->2073419845],
+
+Cell["\<\
+Gives equilibrium free energy differences in terms of non-equilibrium \
+measurements of the work required to switch from one ensemble to another\
+\>", "Comment",
+ CellChangeTimes->{{3.694592864918507*^9, 3.694592918967815*^9}},
+ CellID->1707661339],
+
+Cell["Kawasaki relation", "Item1",
+ CellChangeTimes->{{3.6945927120681562`*^9, 3.694592763349908*^9}},
+ CellID->1912527546],
+
+Cell["\<\
+Specifies the nonlinear response of a classical system to an arbitrarily \
+large perturbation\
+\>", "Comment",
+ CellChangeTimes->{{3.694592830938348*^9, 3.6945928585794077`*^9}},
+ CellID->1411371452],
+
+Cell["Evans\[Dash]Searles transient fluctuation theorem", "Item1",
+ CellChangeTimes->{{3.6945927120681562`*^9, 3.694592774418014*^9}},
+ CellID->889680823],
+
+Cell["\<\
+Provides information about the entropy production of driven systems that are \
+initially in equilibrium\
+\>", "Comment",
+ CellChangeTimes->{{3.694592784977412*^9, 3.694592807169447*^9}},
+ CellID->997026950],
+
+Cell[CellGroupData[{
+
+Cell["Commonalities", "Subsection",
+ CellChangeTimes->{{3.694593075481868*^9, 3.6945930777266283`*^9}},
+ CellID->368940032],
+
+Cell["Those relations have several commonalities:", "Text",
+ CellChangeTimes->{{3.694592979510817*^9, 3.694593010284527*^9}},
+ CellID->2045099667],
+
+Cell[CellGroupData[{
+
+Cell["the system starts in thermal equilibrium", "Item1",
+ CellChangeTimes->{{3.69459301564357*^9, 3.694593028609776*^9}},
+ CellID->1203692759],
+
+Cell["\<\
+it is driven from that equilibrium by an external perturbation\
+\>", "Item1",
+ CellChangeTimes->{{3.69459301564357*^9, 3.694593052544911*^9}},
+ CellID->418888080],
+
+Cell["the energy of the system always remains finite", "Item1",
+ CellChangeTimes->{{3.69459301564357*^9, 3.694593064640369*^9}},
+ CellID->2040810587],
+
+Cell["the dynamics are markovian ", "Item1",
+ CellChangeTimes->{{3.69459301564357*^9, 3.694593089072241*^9}},
+ CellID->1223444689],
+
+Cell["\<\
+if the system is unperturbed then the dynamics preserve the equilibrium \
+ensemble\
+\>", "Item1",
+ CellChangeTimes->{{3.69459301564357*^9, 3.694593109318136*^9}},
+ CellID->985290726]
+}, Open  ]],
+
+Cell["\<\
+It\[CloseCurlyQuote]s clear from that a system with these properties is \
+microscopically reversible.\
+\>", "Text",
+ CellChangeTimes->{{3.694593119697138*^9, 3.69459314669518*^9}, 
+   3.694593267076119*^9},
+ CellID->1895220346],
+
+Cell["\<\
+All those relations can be considered a special cases of a single theorem\
+\>", "Text",
+ CellChangeTimes->{{3.6945931632641277`*^9, 3.6945931788452053`*^9}},
+ CellID->1193836511],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   SubscriptBox[
+    RowBox[{
+    "\[LeftAngleBracket]", "\[ScriptCapitalF]", "\[RightAngleBracket]"}], 
+    "F"], "=", 
+   SubscriptBox[
+    RowBox[{"\[LeftAngleBracket]", 
+     RowBox[{
+      OverscriptBox["\[ScriptCapitalF]", "^"], 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"-", "\[Beta]"}], "\[VeryThinSpace]", 
+        SubscriptBox["W", "d"]}]]}], "\[RightAngleBracket]"}], "R"]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.6945931830750427`*^9, 3.6945932071792088`*^9}},
+ CellID->1021835520],
+
+Cell[TextData[{
+ "Where ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox[
+    RowBox[{
+    "\[LeftAngleBracket]", "\[ScriptCapitalF]", "\[RightAngleBracket]"}], 
+    "F"], TraditionalForm]], "EquationNumbered",
+  CellChangeTimes->{{3.6945931830750427`*^9, 3.694593192109186*^9}}],
+ " indicates the average of the path function ",
+ Cell[BoxData[
+  FormBox["\[ScriptCapitalF]", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " which is implicitly an average over a suitably defined ensemble of paths."
+}], "Text",
+ CellChangeTimes->{{3.694593231811224*^9, 3.694593261427143*^9}, {
+  3.694593410754321*^9, 3.694593456024461*^9}},
+ CellID->1068566553]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 755},
+WindowMargins->{{Automatic, 305}, {5, Automatic}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
+StyleDefinitions->"Science.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 177, 3, 73, "Title",
+ CellID->1714601433],
+Cell[CellGroupData[{
+Cell[782, 29, 130, 2, 63, "Section",
+ CellID->1187229429],
+Cell[915, 33, 358, 7, 37, "Text",
+ CellID->470235192],
+Cell[1276, 42, 178, 3, 29, "Item1",
+ CellID->2073419845],
+Cell[1457, 47, 258, 5, 45, "Comment",
+ CellID->1707661339],
+Cell[1718, 54, 123, 2, 28, "Item1",
+ CellID->1912527546],
+Cell[1844, 58, 209, 5, 22, "Comment",
+ CellID->1411371452],
+Cell[2056, 65, 154, 2, 28, "Item1",
+ CellID->889680823],
+Cell[2213, 69, 216, 5, 22, "Comment",
+ CellID->997026950],
+Cell[CellGroupData[{
+Cell[2454, 78, 123, 2, 38, "Subsection",
+ CellID->368940032],
+Cell[2580, 82, 146, 2, 36, "Text",
+ CellID->2045099667],
+Cell[CellGroupData[{
+Cell[2751, 88, 143, 2, 29, "Item1",
+ CellID->1203692759],
+Cell[2897, 92, 172, 4, 29, "Item1",
+ CellID->418888080],
+Cell[3072, 98, 149, 2, 29, "Item1",
+ CellID->2040810587],
+Cell[3224, 102, 130, 2, 29, "Item1",
+ CellID->1223444689],
+Cell[3357, 106, 192, 5, 29, "Item1",
+ CellID->985290726]
+}, Open  ]],
+Cell[3564, 114, 237, 6, 37, "Text",
+ CellID->1895220346],
+Cell[3804, 122, 188, 4, 37, "Text",
+ CellID->1193836511],
+Cell[3995, 128, 586, 17, 41, "EquationNumbered",
+ CellID->1021835520],
+Cell[4584, 147, 650, 17, 65, "Text",
+ CellID->1068566553]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
