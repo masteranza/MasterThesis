@@ -2138,40 +2138,40 @@ StyleDefinitions->"Science.nb"
 (* Internal cache information *)
 (*CellTagsOutline
 CellTagsIndex->{
- "defHeat"->{
-  Cell[10378, 344, 612, 20, 67, "EquationNumbered",
-   CellTags->"defHeat",
-   CellID->1408018398]},
- "detailedBalance"->{
-  Cell[8834, 291, 476, 16, 37, "EquationNumbered",
-   CellTags->"detailedBalance",
-   CellID->1928161086]},
- "ForwardBackwardM"->{
-  Cell[15938, 534, 564, 17, 39, "EquationNumbered",
-   CellTags->"ForwardBackwardM",
-   CellID->110239261]},
+ "probDist"->{
+  Cell[2054, 68, 952, 29, 61, "EquationNumbered",
+   CellTags->"probDist",
+   CellID->1540085828]},
  "invDistM"->{
   Cell[8126, 266, 307, 9, 32, "Equation",
    CellTags->"invDistM",
    CellID->1629014818]},
+ "detailedBalance"->{
+  Cell[8834, 291, 476, 16, 37, "EquationNumbered",
+   CellTags->"detailedBalance",
+   CellID->1928161086]},
+ "defHeat"->{
+  Cell[10378, 344, 612, 20, 67, "EquationNumbered",
+   CellTags->"defHeat",
+   CellID->1408018398]},
+ "ForwardBackwardM"->{
+  Cell[15938, 534, 564, 17, 39, "EquationNumbered",
+   CellTags->"ForwardBackwardM",
+   CellID->110239261]},
  "nonhomoInvChain"->{
   Cell[20306, 683, 648, 19, 37, "EquationNumbered",
    CellTags->"nonhomoInvChain",
-   CellID->609736316]},
- "probDist"->{
-  Cell[2054, 68, 952, 29, 61, "EquationNumbered",
-   CellTags->"probDist",
-   CellID->1540085828]}
+   CellID->609736316]}
  }
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"defHeat", 67544, 2140},
- {"detailedBalance", 67667, 2144},
- {"ForwardBackwardM", 67798, 2148},
- {"invDistM", 67922, 2152},
- {"nonhomoInvChain", 68036, 2156},
- {"probDist", 68159, 2160}
+ {"probDist", 67545, 2140},
+ {"invDistM", 67660, 2144},
+ {"detailedBalance", 67774, 2148},
+ {"defHeat", 67896, 2152},
+ {"ForwardBackwardM", 68020, 2156},
+ {"nonhomoInvChain", 68151, 2160}
  }
 *)
 (*NotebookFileOutline

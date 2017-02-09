@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    123363,       3111]
-NotebookOptionsPosition[    115347,       2840]
-NotebookOutlinePosition[    116382,       2878]
-CellTagsIndexPosition[    116191,       2870]
+NotebookDataLength[    123315,       3109]
+NotebookOptionsPosition[    115299,       2838]
+NotebookOutlinePosition[    116334,       2876]
+CellTagsIndexPosition[    116143,       2868]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -2779,21 +2779,19 @@ Cell[TextData[{
 things: internal entropy ",
  Cell[BoxData[
   FormBox[
-   SubscriptBox["\[CapitalDelta]s", "int"], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   SubscriptBox["\[CapitalDelta]s", "int"], TraditionalForm]]],
  ", it\[CloseCurlyQuote]s durability ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"1", "/", "\[Delta]"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   RowBox[{"1", "/", "\[Delta]"}], TraditionalForm]]],
  " and the heat dissipated into the surrounding bath during the process of \
 replication ",
  Cell[BoxData[
-  FormBox["\[CapitalDelta]q", TraditionalForm]],
-  FormatType->"TraditionalForm"],
+  FormBox["\[CapitalDelta]q", TraditionalForm]]],
  "."
 }], "Text",
- CellChangeTimes->{{3.694530703019355*^9, 3.6945307753594637`*^9}},
+ CellChangeTimes->{{3.694530703019355*^9, 3.6945307753594637`*^9}, {
+  3.6955587008833647`*^9, 3.695558700991745*^9}},
  CellID->1786163171],
 
 Cell["\<\
@@ -2869,10 +2867,10 @@ CellTagsIndex->{
 *)
 (*CellTagsIndex
 CellTagsIndex->{
- {"fixedEndPoints", 115661, 2851},
- {"MacroscopicLaw", 115787, 2855},
- {"GeneralizedSecondLaw", 115924, 2859},
- {"MacroscopicLaw2", 116060, 2863}
+ {"fixedEndPoints", 115613, 2849},
+ {"MacroscopicLaw", 115739, 2853},
+ {"GeneralizedSecondLaw", 115876, 2857},
+ {"MacroscopicLaw2", 116012, 2861}
  }
 *)
 (*NotebookFileOutline
@@ -3097,18 +3095,18 @@ Cell[112586, 2756, 115, 2, 37, "Text",
  CellID->828530569],
 Cell[112704, 2760, 470, 14, 34, "EquationNumbered",
  CellID->181433689],
-Cell[113177, 2776, 694, 20, 66, "Text",
+Cell[113177, 2776, 646, 18, 66, "Text",
  CellID->1786163171],
-Cell[113874, 2798, 344, 7, 37, "Text",
+Cell[113826, 2796, 344, 7, 37, "Text",
  CellID->883593407],
-Cell[114221, 2807, 267, 5, 22, "Comment",
+Cell[114173, 2805, 267, 5, 22, "Comment",
  CellID->719802596],
-Cell[114491, 2814, 362, 7, 37, "Text",
+Cell[114443, 2812, 362, 7, 37, "Text",
  CellID->350803228],
 Cell[CellGroupData[{
-Cell[114878, 2825, 124, 2, 38, "Subsection",
+Cell[114830, 2823, 124, 2, 38, "Subsection",
  CellID->1296117023],
-Cell[115005, 2829, 302, 6, 37, "Text",
+Cell[114957, 2827, 302, 6, 37, "Text",
  CellID->769887303]
 }, Open  ]]
 }, Open  ]]

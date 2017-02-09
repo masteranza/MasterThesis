@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     12044,        416]
-NotebookOptionsPosition[     10502,        359]
-NotebookOutlinePosition[     10859,        375]
-CellTagsIndexPosition[     10816,        372]
+NotebookDataLength[     12095,        417]
+NotebookOptionsPosition[     10553,        360]
+NotebookOutlinePosition[     10910,        376]
+CellTagsIndexPosition[     10867,        373]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -208,7 +208,8 @@ Cell[BoxData[
      RowBox[{"i", "\[VerticalSeparator]", 
       RowBox[{"F", "\[VeryThinSpace]", "C"}]}], ")"}]}]}], 
   TraditionalForm]], "EquationNumbered",
- CellChangeTimes->{{3.693913303840373*^9, 3.693913333496627*^9}},
+ CellChangeTimes->{{3.693913303840373*^9, 3.693913333496627*^9}, {
+  3.695628400910613*^9, 3.6956284021924562`*^9}},
  CellID->10042656],
 
 Cell[TextData[{
@@ -402,19 +403,19 @@ Cell[4700, 166, 574, 18, 66, "EquationNumbered",
  CellID->370638731],
 Cell[5277, 186, 141, 2, 36, "Text",
  CellID->1908275189],
-Cell[5421, 190, 685, 21, 65, "EquationNumbered",
+Cell[5421, 190, 736, 22, 65, "EquationNumbered",
  CellID->10042656],
-Cell[6109, 213, 1762, 57, 149, "Text",
+Cell[6160, 214, 1762, 57, 149, "Text",
  CellID->361348381],
-Cell[7874, 272, 528, 16, 56, "EquationNumbered",
+Cell[7925, 273, 528, 16, 56, "EquationNumbered",
  CellID->2035549314],
-Cell[8405, 290, 179, 4, 37, "Text",
+Cell[8456, 291, 179, 4, 37, "Text",
  CellID->948595770],
-Cell[8587, 296, 1272, 39, 60, "EquationNumbered",
+Cell[8638, 297, 1272, 39, 60, "EquationNumbered",
  CellID->2024675212],
-Cell[9862, 337, 150, 2, 37, "Text",
+Cell[9913, 338, 150, 2, 37, "Text",
  CellID->1732080271],
-Cell[10015, 341, 459, 14, 65, "EquationNumbered",
+Cell[10066, 342, 459, 14, 65, "EquationNumbered",
  CellID->1318629084]
 }, Open  ]]
 }, Open  ]]
