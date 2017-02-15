@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     15144,        441]
-NotebookOptionsPosition[     13834,        388]
-NotebookOutlinePosition[     14286,        408]
-CellTagsIndexPosition[     14243,        405]
+NotebookDataLength[     15230,        442]
+NotebookOptionsPosition[     13920,        389]
+NotebookOutlinePosition[     14372,        409]
+CellTagsIndexPosition[     14329,        406]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -376,12 +376,13 @@ nic specjalnego o konwekcji i dlatego cz\[LSlash]on ",
    RowBox[{
     RowBox[{"\[DifferentialD]", 
      SubscriptBox["S", "i"]}], "/", 
-    RowBox[{"\[DifferentialD]", "t"}]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
- " nie mo\:017ce by\[CAcute] uto\:017csamiony z MEP...\ne"
+    RowBox[{"\[DifferentialD]", "t"}]}], TraditionalForm]]],
+ " nie mo\:017ce by\[CAcute] uto\:017csamiony z MEP (kt\[OAcute]ry nie wyst\
+\:0119puje np. blisko stanu r\[OAcute]wnowagi)"
 }], "Critique",
  CellChangeTimes->{{3.696189931262416*^9, 3.696190044504492*^9}, {
-  3.696190099654457*^9, 3.69619017943425*^9}},
+  3.696190099654457*^9, 3.69619017943425*^9}, {3.6961904140321817`*^9, 
+  3.6961904361589527`*^9}},
  CellID->1803491100]
 }, Open  ]]
 }, Open  ]]
@@ -439,7 +440,7 @@ Cell[11414, 327, 716, 15, 87, "Text",
  CellID->2022587143],
 Cell[12133, 344, 974, 22, 114, "Text",
  CellID->1828800032],
-Cell[13110, 368, 696, 16, 70, "Critique",
+Cell[13110, 368, 782, 17, 71, "Critique",
  CellID->1803491100]
 }, Open  ]]
 }, Open  ]]
