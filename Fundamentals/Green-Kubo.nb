@@ -10,20 +10,451 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[       965,         39]
-NotebookOptionsPosition[       692,         24]
-NotebookOutlinePosition[      1049,         40]
-CellTagsIndexPosition[      1006,         37]
+NotebookDataLength[     15351,        534]
+NotebookOptionsPosition[     13269,        455]
+NotebookOutlinePosition[     13789,        478]
+CellTagsIndexPosition[     13712,        473]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
 Cell["Green\[Dash]Kubo relations", "Title",
  CellChangeTimes->{{3.695636422246784*^9, 3.695636427992751*^9}},
- CellID->1304931225]
+ CellID->1304931225],
+
+Cell[CellGroupData[{
+
+Cell["Generalized Langevin equation", "Section",
+ CellChangeTimes->{{3.695636568827648*^9, 3.695636576668325*^9}},
+ CellID->92457491],
+
+Cell[TextData[{
+ "Generalized Langevin equation for non\[Dash]markovian processes and phase \
+variable ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"A", "(", "\[CapitalGamma]", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.695636603456009*^9, 3.695636615944664*^9}, {
+  3.695636647801259*^9, 3.695636655231139*^9}, {3.695636800349183*^9, 
+  3.695636822221918*^9}},
+ CellID->291924072],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   FractionBox[
+    RowBox[{"\[DifferentialD]", 
+     RowBox[{"A", "(", "t", ")"}]}], 
+    RowBox[{"\[DifferentialD]", "t"}]], "=", 
+   RowBox[{
+    RowBox[{"-", 
+     RowBox[{
+      UnderoverscriptBox["\[Integral]", "0", "t"], 
+      RowBox[{
+       RowBox[{"\[DifferentialD]", 
+        SuperscriptBox["t", "\[Prime]"]}], 
+       RowBox[{"K", "(", 
+        RowBox[{"t", "-", 
+         SuperscriptBox["t", "\[Prime]"]}], ")"}], 
+       RowBox[{"A", "(", 
+        SuperscriptBox["t", "\[Prime]"], ")"}]}]}]}], "+", 
+    RowBox[{"F", "(", "t", ")"}]}]}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.695636583727133*^9, 3.695636635809692*^9}},
+ CellID->17849492],
+
+Cell[TextData[{
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"F", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is a random force which satisfies"
+}], "Text",
+ CellChangeTimes->{{3.695636823988922*^9, 3.695636829573382*^9}},
+ CellID->618160712],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[LeftAngleBracket]", 
+    RowBox[{
+     RowBox[{"A", "(", "0", ")"}], 
+     RowBox[{"F", "(", "t", ")"}]}], "\[RightAngleBracket]"}], "=", 
+   RowBox[{
+    RowBox[{"\[LeftAngleBracket]", 
+     RowBox[{
+      RowBox[{"A", "(", 
+       SubscriptBox["t", "0"], ")"}], 
+      RowBox[{"F", "(", 
+       RowBox[{
+        SubscriptBox["t", "0"], "+", "t"}], ")"}]}], "\[RightAngleBracket]"}],
+     "=", "0"}]}], TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.695636831837172*^9, 3.69563684768216*^9}},
+ CellID->1336904666],
+
+Cell[TextData[{
+ "Multiplying both sides of the previous equation by a complex conjugate of \
+",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"A", "(", "0", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and taking a canonical average we see that,"
+}], "Text",
+ CellChangeTimes->{{3.695636907349368*^9, 3.6956369574503927`*^9}},
+ CellID->732182460],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   FractionBox[
+    RowBox[{"\[DifferentialD]", 
+     RowBox[{"C", "(", "t", ")"}]}], 
+    RowBox[{"\[DifferentialD]", "t"}]], "=", 
+   RowBox[{"-", 
+    RowBox[{
+     UnderoverscriptBox["\[Integral]", "0", "t"], 
+     RowBox[{
+      RowBox[{"\[DifferentialD]", 
+       SuperscriptBox["t", "\[Prime]"]}], 
+      RowBox[{"K", "(", 
+       RowBox[{"t", "-", 
+        SuperscriptBox["t", "\[Prime]"]}], ")"}], 
+      RowBox[{"C", "(", 
+       SuperscriptBox["t", "\[Prime]"], ")"}]}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.695636959659543*^9, 3.695636985942625*^9}},
+ CellTags->"LangevinWithA0",
+ CellID->1056435098],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"C", "(", "t", ")"}], "\[Congruent]", 
+   RowBox[{"\[LeftAngleBracket]", 
+    RowBox[{
+     RowBox[{"A", "(", "t", ")"}], 
+     RowBox[{
+      SuperscriptBox["A", "*"], "(", "0", ")"}]}], "\[RightAngleBracket]"}]}],
+   TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.695637021068802*^9, 3.69563703134121*^9}},
+ CellID->729024044],
+
+Cell[TextData[{
+ "We define a useful flux autocorrelation function ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"f", "(", "t", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"]
+}], "Text",
+ CellChangeTimes->{{3.695637281156418*^9, 3.69563729874009*^9}},
+ CellID->1738455602],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[CurlyPhi]", "(", "t", ")"}], "=", 
+   RowBox[{"\[LeftAngleBracket]", 
+    RowBox[{
+     RowBox[{
+      OverscriptBox["A", "."], "(", "t", ")"}], 
+     RowBox[{
+      SuperscriptBox[
+       OverscriptBox["A", "."], "*"], "(", "0", ")"}]}], 
+    "\[RightAngleBracket]"}]}], TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.695637303108707*^9, 3.695637316191719*^9}},
+ CellID->2128069762],
+
+Cell[TextData[{
+ "Taking a Laplace transform of equation ",
+ Cell[BoxData[
+  ButtonBox[
+   RowBox[{"(", 
+    CounterBox["Section", "LangevinWithA0"], ".", 
+    CounterBox["EquationNumbered", "LangevinWithA0"], ")"}],
+   BaseStyle->{"Hyperlink", Larger},
+   ButtonData->"LangevinWithA0",
+   Tooltip->{
+     DynamicBox[
+      RowBox[
+       Flatten[{
+         PackageUtils`CellStrip[
+          NotebookRead[
+           First[
+            Cells[
+             EvaluationNotebook[], CellTags -> {"LangevinWithA0"}]]]]}]], 
+      UpdateInterval -> Infinity]},
+   TooltipDelay->0.05,
+   TooltipStyle->{
+    Background -> RGBColor[1, 1, 1], CellFrameColor -> RGBColor[1, 1, 1], 
+     CellFrame -> 2}]]],
+ " we get"
+}], "Text",
+ CellChangeTimes->{{3.695637336673974*^9, 3.695637375575283*^9}},
+ CellID->143637230],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    UnderoverscriptBox["\[Integral]", "0", "\[Infinity]"], 
+    RowBox[{
+     RowBox[{"\[DifferentialD]", "t"}], "\[VeryThinSpace]", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "s"}], "\[VeryThinSpace]", "t"}]], 
+     FractionBox[
+      RowBox[{"\[DifferentialD]", 
+       RowBox[{"C", "(", "t", ")"}]}], 
+      RowBox[{"\[DifferentialD]", "t"}]]}]}], "=", 
+   RowBox[{
+    RowBox[{
+     SubsuperscriptBox[
+      RowBox[{"[", 
+       RowBox[{
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{
+          RowBox[{"-", "s"}], "\[VeryThinSpace]", "t"}]], 
+        RowBox[{"C", "(", "t", ")"}]}], "]"}], "0", "\[Infinity]"], "-", 
+     RowBox[{
+      UnderoverscriptBox["\[Integral]", "0", "\[Infinity]"], 
+      RowBox[{
+       RowBox[{"\[DifferentialD]", 
+        RowBox[{"t", "(", 
+         RowBox[{
+          RowBox[{"-", "s"}], "\[VeryThinSpace]", 
+          SuperscriptBox["\[ExponentialE]", 
+           RowBox[{
+            RowBox[{"-", "s"}], "\[VeryThinSpace]", "t"}]]}], ")"}]}], 
+       RowBox[{"C", "(", "t", ")"}]}]}]}], "=", 
+    RowBox[{
+     RowBox[{"s", "\[VeryThinSpace]", 
+      RowBox[{
+       OverscriptBox["C", "~"], "(", "s", ")"}]}], "-", 
+     RowBox[{"C", "(", "0", ")"}]}]}]}], TraditionalForm]], "EquationNumbered",\
+
+ CellChangeTimes->{{3.695637377735894*^9, 3.695637398433056*^9}, {
+  3.695637447862771*^9, 3.695637513460517*^9}, {3.695637688024185*^9, 
+  3.695637695540077*^9}},
+ CellID->484851797],
+
+Cell["The right side:", "Text",
+ CellChangeTimes->{{3.6956497630059958`*^9, 3.695649765841565*^9}},
+ CellID->516550728],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"-", 
+   RowBox[{
+    UnderoverscriptBox["\[Integral]", "0", "\[Infinity]"], 
+    RowBox[{
+     RowBox[{"\[DifferentialD]", "t"}], "\[VeryThinSpace]", 
+     RowBox[{
+      UnderoverscriptBox["\[Integral]", "0", "t"], 
+      RowBox[{
+       RowBox[{"\[DifferentialD]", 
+        SuperscriptBox["t", "\[Prime]"]}], 
+       RowBox[{"K", "(", 
+        RowBox[{"t", "-", 
+         SuperscriptBox["t", "\[Prime]"]}], ")"}], 
+       RowBox[{"C", "(", 
+        SuperscriptBox["t", "\[Prime]"], ")"}], 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{"-", "s"}], "\[VeryThinSpace]", "t"}]]}]}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.695649767168582*^9, 3.6956497771586647`*^9}},
+ CellID->1125355969],
+
+Cell["So we get:", "Text",
+ CellChangeTimes->{{3.695637784290367*^9, 3.6956377900002737`*^9}},
+ CellID->267934037],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"s", "\[VeryThinSpace]", 
+     RowBox[{
+      OverscriptBox["C", "~"], "(", "s", ")"}]}], "-", 
+    RowBox[{"C", "(", "0", ")"}]}], "=", 
+   RowBox[{
+    RowBox[{"-", 
+     RowBox[{
+      OverscriptBox["K", "~"], "(", "s", ")"}]}], 
+    RowBox[{
+     OverscriptBox["C", "~"], "(", "s", ")"}]}]}], 
+  TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.6956377926418447`*^9, 3.695637808220069*^9}},
+ CellID->234355891],
+
+Cell["or", "Text",
+ CellChangeTimes->{{3.695649717896844*^9, 3.695649717985449*^9}},
+ CellID->871517541],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    OverscriptBox["C", "~"], "(", "s", ")"}], "=", 
+   FractionBox[
+    RowBox[{"C", "(", "0", ")"}], 
+    RowBox[{"s", "+", 
+     RowBox[{
+      OverscriptBox["K", "~"], "(", "s", ")"}]}]]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.69564972120653*^9, 3.695649721907848*^9}, {
+  3.695654997543438*^9, 3.695655008496756*^9}},
+ CellID->1449158306],
+
+Cell["Now let\[CloseCurlyQuote]s inspect", "Text",
+ CellChangeTimes->{{3.695655054580859*^9, 3.695655065728956*^9}},
+ CellID->1126090631],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    FractionBox[
+     SuperscriptBox["\[DifferentialD]", "2"], 
+     RowBox[{"\[DifferentialD]", 
+      SuperscriptBox["t", "2"]}]], 
+    RowBox[{"C", "(", "t", ")"}]}], "=", 
+   RowBox[{
+    RowBox[{
+     FractionBox["\[DifferentialD]", 
+      RowBox[{"\[DifferentialD]", "t"}]], 
+     RowBox[{"\[LeftAngleBracket]", 
+      RowBox[{
+       FractionBox[
+        RowBox[{"\[DifferentialD]", 
+         RowBox[{"A", "(", "t", ")"}]}], 
+        RowBox[{"\[DifferentialD]", "t"}]], 
+       RowBox[{
+        SuperscriptBox["A", "*"], "(", "0", ")"}]}], 
+      "\[RightAngleBracket]"}]}], "=", 
+    RowBox[{
+     FractionBox["\[DifferentialD]", 
+      RowBox[{"\[DifferentialD]", "t"}]], 
+     RowBox[{"\[LeftAngleBracket]", 
+      RowBox[{"[", 
+       RowBox[{"iL", " ", 
+        RowBox[{"A", "(", "t", ")"}]}]}]}]}]}]}], 
+  TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.695655068863452*^9, 3.695655094756502*^9}, {
+  3.695655162336361*^9, 3.6956551706161118`*^9}},
+ CellID->1779643342],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Sum", "[", 
+  RowBox[{
+   FractionBox["1", 
+    SuperscriptBox["n", "2"]], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "\[Infinity]"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6957230501457453`*^9, 3.69572306098003*^9}, {
+  3.695723137085466*^9, 3.695723159593938*^9}},
+ CellID->998973392],
+
+Cell[BoxData[
+ FractionBox[
+  SuperscriptBox["\[Pi]", "2"], "6"]], "Output",
+ CellChangeTimes->{{3.695723155858732*^9, 3.695723160195158*^9}},
+ CellID->599907104]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Series", "[", 
+  RowBox[{
+   RowBox[{"Log", "[", "x", "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "1", ",", "10"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.6957233737421637`*^9, 3.695723426543281*^9}},
+ CellID->202974263],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{"x", "-", "1"}], ")"}], "-", 
+   RowBox[{
+    FractionBox["1", "2"], " ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"x", "-", "1"}], ")"}], "2"]}], "+", 
+   RowBox[{
+    FractionBox["1", "3"], " ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"x", "-", "1"}], ")"}], "3"]}], "-", 
+   RowBox[{
+    FractionBox["1", "4"], " ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"x", "-", "1"}], ")"}], "4"]}], "+", 
+   RowBox[{
+    FractionBox["1", "5"], " ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"x", "-", "1"}], ")"}], "5"]}], "-", 
+   RowBox[{
+    FractionBox["1", "6"], " ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"x", "-", "1"}], ")"}], "6"]}], "+", 
+   RowBox[{
+    FractionBox["1", "7"], " ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"x", "-", "1"}], ")"}], "7"]}], "-", 
+   RowBox[{
+    FractionBox["1", "8"], " ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"x", "-", "1"}], ")"}], "8"]}], "+", 
+   RowBox[{
+    FractionBox["1", "9"], " ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"x", "-", "1"}], ")"}], "9"]}], "-", 
+   RowBox[{
+    FractionBox["1", "10"], " ", 
+    SuperscriptBox[
+     RowBox[{"(", 
+      RowBox[{"x", "-", "1"}], ")"}], "10"]}], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", 
+      RowBox[{"x", "-", "1"}], "]"}], "11"],
+    SeriesData[$CellContext`x, 1, {}, 1, 11, 1],
+    Editable->False]}],
+  SeriesData[$CellContext`x, 1, {1, 
+    Rational[-1, 2], 
+    Rational[1, 3], 
+    Rational[-1, 4], 
+    Rational[1, 5], 
+    Rational[-1, 6], 
+    Rational[1, 7], 
+    Rational[-1, 8], 
+    Rational[1, 9], 
+    Rational[-1, 10]}, 1, 11, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{{3.695723383429762*^9, 3.695723427056319*^9}},
+ CellID->1438760784]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
 },
-WindowSize->{808, 755},
-WindowMargins->{{4, Automatic}, {Automatic, 4}},
+WindowSize->{718, 855},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
 FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
 21, 2016)",
 StyleDefinitions->"Science.nb"
@@ -32,18 +463,80 @@ StyleDefinitions->"Science.nb"
 
 (* Internal cache information *)
 (*CellTagsOutline
-CellTagsIndex->{}
+CellTagsIndex->{
+ "LangevinWithA0"->{
+  Cell[3225, 110, 680, 21, 78, "EquationNumbered",
+   CellTags->"LangevinWithA0",
+   CellID->1056435098]}
+ }
 *)
 (*CellTagsIndex
-CellTagsIndex->{}
+CellTagsIndex->{
+ {"LangevinWithA0", 13582, 466}
+ }
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 130, 2, 73, "Title",
- CellID->1304931225]
+Cell[CellGroupData[{
+Cell[580, 22, 130, 2, 73, "Title",
+ CellID->1304931225],
+Cell[CellGroupData[{
+Cell[735, 28, 133, 2, 64, "Section",
+ CellID->92457491],
+Cell[871, 32, 432, 12, 38, "Text",
+ CellID->291924072],
+Cell[1306, 46, 711, 21, 78, "EquationNumbered",
+ CellID->17849492],
+Cell[2020, 69, 263, 8, 38, "Text",
+ CellID->618160712],
+Cell[2286, 79, 577, 17, 34, "EquationNumbered",
+ CellID->1336904666],
+Cell[2866, 98, 356, 10, 63, "Text",
+ CellID->732182460],
+Cell[3225, 110, 680, 21, 78, "EquationNumbered",
+ CellTags->"LangevinWithA0",
+ CellID->1056435098],
+Cell[3908, 133, 380, 11, 32, "Equation",
+ CellID->729024044],
+Cell[4291, 146, 278, 8, 38, "Text",
+ CellID->1738455602],
+Cell[4572, 156, 438, 13, 39, "Equation",
+ CellID->2128069762],
+Cell[5013, 171, 804, 26, 40, "Text",
+ CellID->143637230],
+Cell[5820, 199, 1514, 43, 75, "EquationNumbered",
+ CellID->484851797],
+Cell[7337, 244, 119, 2, 37, "Text",
+ CellID->516550728],
+Cell[7459, 248, 783, 22, 78, "EquationNumbered",
+ CellID->1125355969],
+Cell[8245, 272, 114, 2, 37, "Text",
+ CellID->267934037],
+Cell[8362, 276, 477, 16, 35, "Equation",
+ CellID->234355891],
+Cell[8842, 294, 104, 2, 36, "Text",
+ CellID->871517541],
+Cell[8949, 298, 416, 13, 58, "EquationNumbered",
+ CellID->1449158306],
+Cell[9368, 313, 137, 2, 36, "Text",
+ CellID->1126090631],
+Cell[9508, 317, 1034, 32, 56, "Equation",
+ CellID->1779643342],
+Cell[CellGroupData[{
+Cell[10567, 353, 322, 9, 50, "Input",
+ CellID->998973392],
+Cell[10892, 364, 162, 4, 50, "Output",
+ CellID->599907104]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11091, 373, 261, 7, 31, "Input",
+ CellID->202974263],
+Cell[11355, 382, 1874, 68, 81, "Output",
+ CellID->1438760784]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 

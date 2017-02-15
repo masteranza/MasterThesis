@@ -1,0 +1,449 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     15144,        441]
+NotebookOptionsPosition[     13834,        388]
+NotebookOutlinePosition[     14286,        408]
+CellTagsIndexPosition[     14243,        405]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Benard Cell analysis", "Title",
+ CellChangeTimes->{{3.696190064150262*^9, 3.696190069630651*^9}},
+ CellID->364079977],
+
+Cell[CellGroupData[{
+
+Cell["Schema", "Section",
+ CellChangeTimes->{{3.696166105749515*^9, 3.696166108099186*^9}, {
+  3.696184466993978*^9, 3.696184471890778*^9}, {3.696190076913989*^9, 
+  3.696190077849946*^9}},
+ CellID->1191607392],
+
+Cell[TextData[{
+ "A simple Benard cell can be represented by three parts: the heater ",
+ Cell[BoxData[
+  FormBox["H", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", the cooler ",
+ Cell[BoxData[
+  FormBox["C", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " much bigger than the system of interest ",
+ Cell[BoxData[
+  FormBox["S", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " which is placed in between the two. The analysis usually goes along this \
+lines: if the temperature difference between the heater and the cooler ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[CapitalDelta]T", "=", 
+    RowBox[{
+     SubscriptBox["T", "H"], "-", 
+     SubscriptBox["T", "C"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is small then the heat transfer occurs by diffusion, however if the \
+temperature difference a critical point a second mechanism, convection, \
+engages in heat transfer."
+}], "Text",
+ CellChangeTimes->{{3.69618479501653*^9, 3.696184798355729*^9}, {
+  3.69618489383782*^9, 3.6961849251974277`*^9}, {3.696185286441575*^9, 
+  3.696185822787496*^9}, {3.6961875401156797`*^9, 3.696187542753928*^9}},
+ CellID->328207306],
+
+Cell[CellGroupData[{
+
+Cell[TextData[Cell[BoxData[
+ GraphicsBox[{
+   {EdgeForm[{Opacity[1.], AbsoluteThickness[1.6]}], FaceForm[None], 
+    RectangleBox[{0.2721056251341565, 0.9245681819177403}, \
+{1.0565141778262572, 0.5777644899443216}]}, 
+   {EdgeForm[{Opacity[1.], AbsoluteThickness[1.6]}], FaceForm[None], 
+    RectangleBox[{0.40816719891010567, 0.438233477455219}, \
+{0.9198568418470383, 0.5798321352380198}]}, 
+   {EdgeForm[{Opacity[1.], AbsoluteThickness[1.6]}], FaceForm[None], 
+    RectangleBox[{0.2733672392116663, 0.44059900385055095}, \
+{1.057775791903767, 0.0937953118771323}]}, InsetBox[
+    StyleBox[Cell["C",
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left],
+     FontSize->10,
+     Magnification->1.25,
+     Background->GrayLevel[1.]], {0.39933590036753275, 0.7264246820776331}, {
+    Left, Baseline}, {0.07014223822603044, 0.11004078342729731}, {{1., 0.}, {
+    0., 1.}},
+    Alignment->{Left, Top}], InsetBox[
+    StyleBox[Cell["H",
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left],
+     FontSize->17,
+     Magnification->1.25,
+     Background->GrayLevel[1.]], {0.40729107802294573, 0.24152681587005365}, {
+    Left, Baseline},
+    Alignment->{Left, Top}], InsetBox[
+    StyleBox[Cell["S",
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left],
+     FontSize->17,
+     Magnification->1.25,
+     Background->GrayLevel[1.]], {0.44408815528366596, 0.4768003189080028}, {
+    Left, Baseline}, {0.06849513095816961, 0.10273393522838284}, {{1., 0.}, {
+    0., 1.}},
+    Alignment->{Left, Top}], 
+   {AbsolutePointSize[8.912509381337456], AbsoluteThickness[1.6], StrokeForm[{
+    GrayLevel[0.], Opacity[1.]}], EdgeForm[{Opacity[1.], AbsoluteThickness[
+    1.6]}], FaceForm[None], 
+    ArrowBox[{{0.8186824017978003, 0.34080883480302604`}, {0.8186824017978003,
+      0.51527954827207}}]}, 
+   {AbsolutePointSize[8.912509381337456], AbsoluteThickness[1.6], StrokeForm[{
+    GrayLevel[0.], Opacity[1.]}], EdgeForm[{Opacity[1.], AbsoluteThickness[
+    1.6]}], FaceForm[None], 
+    ArrowBox[{{0.7351355139982216, 0.49793235470630237`}, {0.7351355139982216,
+      0.6859303746730969}}]}, InsetBox[
+    StyleBox[Cell[TextData[Cell[BoxData[
+      FormBox[
+       SubscriptBox["Q", "C"], TraditionalForm]],
+      FormatType->"TraditionalForm"]],
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left],
+     FontSize->17,
+     Magnification->1.25,
+     Background->GrayLevel[1.]], {0.7768388682270382, 0.6232526864056702}, {
+    Left, Baseline},
+    Alignment->{Left, Top}], InsetBox[
+    StyleBox[Cell[TextData[Cell[BoxData[
+      FormBox[
+       SubscriptBox["Q", "H"], TraditionalForm]],
+      FormatType->"TraditionalForm"]],
+      GeneratedCell->False,
+      CellAutoOverwrite->False,
+      CellBaseline->Baseline,
+      TextAlignment->Left],
+     FontSize->17,
+     Magnification->1.25,
+     Background->GrayLevel[1.]], {0.8449485059948574, 0.332222850108858}, {
+    Left, Baseline}, {0.1512535099593042, 0.11214347355648134}, {{1., 0.}, {
+    0., 1.}},
+    Alignment->{Left, Top}]},
+  ContentSelectable->True,
+  ImagePadding->{{0., 0.}, {0., 0.}},
+  ImageSize->{297.23828125, 224.},
+  PlotRange->{{0., 1.3333333333333335`}, {0., 1.}},
+  PlotRangePadding->Automatic]], "Input"]], "Figure",
+ CellChangeTimes->{
+  3.696184946848242*^9, {3.696185011679598*^9, 3.696185011683085*^9}, {
+   3.696185088705365*^9, 3.696185173106249*^9}, {3.69618521373202*^9, 
+   3.696185213732553*^9}, {3.696185976556305*^9, 3.696186006512294*^9}, {
+   3.696190196646717*^9, 3.6961901998995943`*^9}},
+ CellID->1014437082],
+
+Cell["\<\
+Benard cell schema; the heater and cooler are in thermal equilibrium.\
+\>", "FigureCaption",
+ CellChangeTimes->{{3.69618527516171*^9, 3.696185279216853*^9}, {
+  3.696187555557353*^9, 3.696187574528387*^9}},
+ CellID->1195566503]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Analysis", "Section",
+ CellChangeTimes->{{3.696190083362928*^9, 3.696190084651794*^9}},
+ CellID->1793141499],
+
+Cell[TextData[{
+ "We\[CloseCurlyQuote]ll analyze it from the perspective of internal entropy \
+produced (",
+ Cell[BoxData[
+  FormBox["i", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ") and external entropy transferred ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"(", "e", ")"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " to the system of interest ",
+ Cell[BoxData[
+  FormBox["S", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". Of course entropy change of the system ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[DifferentialD]", 
+    SubscriptBox["S", "S"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " would be the sum of those two:"
+}], "Text",
+ CellChangeTimes->{{3.696185924242936*^9, 3.696185929917721*^9}, {
+  3.696186022910219*^9, 3.696186050546915*^9}, {3.696186109876833*^9, 
+  3.696186182651223*^9}, {3.696186332480044*^9, 3.696186342106935*^9}, {
+  3.6961875986590633`*^9, 3.696187717910839*^9}, {3.696187968085896*^9, 
+  3.69618799475042*^9}, {3.696188071768744*^9, 3.696188072389517*^9}, {
+  3.696188605781311*^9, 3.696188612559417*^9}},
+ CellID->906505399],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   FractionBox[
+    RowBox[{"\[DifferentialD]", 
+     SubscriptBox["S", "S"]}], 
+    RowBox[{"\[DifferentialD]", "t"}]], "=", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"\[DifferentialD]", 
+      SubscriptBox["S", "i"]}], 
+     RowBox[{"\[DifferentialD]", "t"}]], "+", 
+    FractionBox[
+     RowBox[{"\[DifferentialD]", 
+      SubscriptBox["S", "e"]}], 
+     RowBox[{"\[DifferentialD]", "t"}]]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.696166112499309*^9, 3.69616613191191*^9}, {
+   3.6961666618557253`*^9, 3.696166691624464*^9}, {3.696184481360423*^9, 
+   3.6961844817053022`*^9}, {3.696186191762726*^9, 3.696186197520791*^9}, {
+   3.696187644920981*^9, 3.696187655121274*^9}, 3.696188617804152*^9},
+ CellID->678088994],
+
+Cell[TextData[{
+ "In our analysis we\[CloseCurlyQuote]ll limit ourselves to the scenario of a \
+stable state in which the same amount of heat that goes in also goes out. In \
+other words ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["Q", "C"], "=", 
+    RowBox[{"-", 
+     SubscriptBox["Q", "H"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and we get"
+}], "Text",
+ CellChangeTimes->{{3.696166134522587*^9, 3.6961661537063723`*^9}, 
+   3.6961880114387293`*^9, {3.6961881190823793`*^9, 3.6961882181801357`*^9}, {
+   3.6961882525235157`*^9, 3.696188286049322*^9}},
+ CellID->470741310],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[DifferentialD]", 
+    SubscriptBox["S", "e"]}], "=", 
+   RowBox[{
+    RowBox[{
+     FractionBox[
+      RowBox[{"\[DifferentialD]", 
+       SubscriptBox["Q", "H"]}], 
+      SubscriptBox["T", "H"]], "+", 
+     FractionBox[
+      RowBox[{"\[DifferentialD]", 
+       SubscriptBox["Q", "C"]}], 
+      SubscriptBox["T", "C"]]}], "=", 
+    RowBox[{
+     RowBox[{"\[DifferentialD]", 
+      RowBox[{
+       SubscriptBox["Q", "H"], "(", 
+       RowBox[{
+        FractionBox["1", 
+         SubscriptBox["T", "H"]], "-", 
+        FractionBox["1", 
+         SubscriptBox["T", "C"]]}], ")"}]}], "=", 
+     RowBox[{
+      RowBox[{"\[DifferentialD]", 
+       RowBox[{
+        SubscriptBox["Q", "H"], "(", 
+        FractionBox[
+         RowBox[{
+          SubscriptBox["T", "C"], "-", 
+          SubscriptBox["T", "H"]}], 
+         RowBox[{
+          SubscriptBox["T", "H"], 
+          SubscriptBox["T", "C"]}]], ")"}]}], "<", "0"}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.696166157368793*^9, 3.696166163711254*^9}, {
+  3.696166203332521*^9, 3.696166221292987*^9}, {3.69616626042102*^9, 
+  3.69616630852325*^9}, {3.6961880911036167`*^9, 3.696188112348518*^9}, {
+  3.696188243149064*^9, 3.6961882494545097`*^9}, {3.696188291561118*^9, 
+  3.696188362990588*^9}},
+ CellID->1588102537],
+
+Cell[TextData[{
+ "Therefore the process transfers some of the entropy outside the system. \
+However, since we require a stable state ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[DifferentialD]", 
+     SubscriptBox["S", "S"]}], "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " it leads us to the conclusion that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[DifferentialD]", 
+     SubscriptBox["S", "i"]}], ">", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ", so in a sense we could say that the rate of internal entropy production \
+",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[DifferentialD]", 
+    SubscriptBox["S", "i"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " is a function of the entropy inflow ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[DifferentialD]", 
+    SubscriptBox["S", "e"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". "
+}], "Text",
+ CellChangeTimes->{{3.696188395014122*^9, 3.696188416561644*^9}, {
+   3.696188504644948*^9, 3.6961885351832323`*^9}, {3.696188570621696*^9, 
+   3.696188664693328*^9}, {3.696188703648032*^9, 3.696188782445056*^9}, {
+   3.6961888158845377`*^9, 3.696188832829782*^9}, 3.696189057897834*^9, 
+   3.6961891358854733`*^9},
+ CellID->795597320],
+
+Cell[TextData[{
+ "Before steady\[Dash]state the inflow of entropy ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[DifferentialD]", 
+    SubscriptBox["S", "e"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " might not be exactly balanced out by the internal entropy production. In \
+fact, at first it\[CloseCurlyQuote]s value we\[CloseCurlyQuote]ll be positive \
+if the system temperature is closer to the temperature of the cooler and \
+negative if it\[CloseCurlyQuote]s closer to the temperature of the heater."
+}], "Text",
+ CellChangeTimes->{{3.696188876543013*^9, 3.6961889004398737`*^9}, {
+  3.696188930888666*^9, 3.69618896852947*^9}, {3.696189007972334*^9, 
+  3.696189088255474*^9}},
+ CellID->2022587143],
+
+Cell[TextData[{
+ "Now we may make a weak association with information \[Dash] since erase of \
+information is associated with entropy production (due to Landauer), then we \
+can say that at steady\[Dash]state the amount of information stays constant, \
+even though the it\[CloseCurlyQuote]s inflow is non\[Dash]zero (negative ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[DifferentialD]", 
+    SubscriptBox["S", "e"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ") it get\[CloseCurlyQuote]s immediately erased by the non\[Dash]zero \
+internal entropy production (positive ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[DifferentialD]", 
+    SubscriptBox["S", "i"]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ")"
+}], "Text",
+ CellChangeTimes->{{3.696189358450292*^9, 3.696189581283299*^9}, {
+  3.696189613069861*^9, 3.6961896183946133`*^9}, {3.696189694506515*^9, 
+  3.696189748691848*^9}, {3.696189824495924*^9, 3.696189867030896*^9}},
+ CellID->1828800032],
+
+Cell[TextData[{
+ "Problem jaki widz\:0119, to to, \:017ce te r\[OAcute]wnania s\:0105 spe\
+\[LSlash]nione r\[OAcute]wnania s\:0105 spe\[LSlash]nione \
+r\[OAcute]wnie\:017c podczas dyfuzji, a wi\:0119c nie m\[OAcute]wi\:0105 nam \
+nic specjalnego o konwekcji i dlatego cz\[LSlash]on ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"\[DifferentialD]", 
+     SubscriptBox["S", "i"]}], "/", 
+    RowBox[{"\[DifferentialD]", "t"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " nie mo\:017ce by\[CAcute] uto\:017csamiony z MEP...\ne"
+}], "Critique",
+ CellChangeTimes->{{3.696189931262416*^9, 3.696190044504492*^9}, {
+  3.696190099654457*^9, 3.69619017943425*^9}},
+ CellID->1803491100]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 755},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+PrintingCopies->1,
+PrintingPageRange->{1, Automatic},
+ShowCellLabel->True,
+ShowCellTags->True,
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
+StyleDefinitions->"Science.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 123, 2, 73, "Title",
+ CellID->364079977],
+Cell[CellGroupData[{
+Cell[728, 28, 210, 4, 63, "Section",
+ CellID->1191607392],
+Cell[941, 34, 1167, 29, 142, "Text",
+ CellID->328207306],
+Cell[CellGroupData[{
+Cell[2133, 67, 3745, 90, 238, "Figure",
+ CellID->1014437082],
+Cell[5881, 159, 237, 5, 56, "FigureCaption",
+ CellID->1195566503]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6167, 170, 114, 2, 64, "Section",
+ CellID->1793141499],
+Cell[6284, 174, 1110, 29, 91, "Text",
+ CellID->906505399],
+Cell[7397, 205, 782, 21, 54, "EquationNumbered",
+ CellID->678088994],
+Cell[8182, 228, 610, 16, 66, "Text",
+ CellID->470741310],
+Cell[8795, 246, 1344, 41, 58, "EquationNumbered",
+ CellID->1588102537],
+Cell[10142, 289, 1269, 36, 92, "Text",
+ CellID->795597320],
+Cell[11414, 327, 716, 15, 87, "Text",
+ CellID->2022587143],
+Cell[12133, 344, 974, 22, 114, "Text",
+ CellID->1828800032],
+Cell[13110, 368, 696, 16, 70, "Critique",
+ CellID->1803491100]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
