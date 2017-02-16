@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     15230,        442]
-NotebookOptionsPosition[     13920,        389]
-NotebookOutlinePosition[     14372,        409]
-CellTagsIndexPosition[     14329,        406]
+NotebookDataLength[     30816,        904]
+NotebookOptionsPosition[     28404,        813]
+NotebookOutlinePosition[     28856,        833]
+CellTagsIndexPosition[     28813,        830]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -294,53 +294,479 @@ However, since we require a stable state ",
   FormBox[
    RowBox[{
     RowBox[{"\[DifferentialD]", 
-     SubscriptBox["S", "S"]}], "=", "0"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+     SubscriptBox["S", "S"]}], "=", "0"}], TraditionalForm]]],
  " it leads us to the conclusion that ",
  Cell[BoxData[
   FormBox[
    RowBox[{
     RowBox[{"\[DifferentialD]", 
-     SubscriptBox["S", "i"]}], ">", "0"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+     SubscriptBox["S", "i"]}], "=", 
+    RowBox[{
+     RowBox[{"-", 
+      RowBox[{"\[DifferentialD]", 
+       SubscriptBox["S", "e"]}]}], ">", "0"}]}], TraditionalForm]]],
  ", so in a sense we could say that the rate of internal entropy production \
 ",
  Cell[BoxData[
   FormBox[
    RowBox[{"\[DifferentialD]", 
-    SubscriptBox["S", "i"]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+    SubscriptBox["S", "i"]}], TraditionalForm]]],
  " is a function of the entropy inflow ",
  Cell[BoxData[
   FormBox[
    RowBox[{"\[DifferentialD]", 
-    SubscriptBox["S", "e"]}], TraditionalForm]],
+    SubscriptBox["S", "e"]}], TraditionalForm]]],
+ ". Moreover the entropy gets lowered by negative inflow of entropy, so ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"S", "-", 
+     SubscriptBox["S", "0"]}], "<", "0"}], TraditionalForm]],
   FormatType->"TraditionalForm"],
- ". "
+ ", where ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["S", "0"], "=", 
+    RowBox[{"S", "(", 
+     RowBox[{"t", "=", "0"}], ")"}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
 }], "Text",
  CellChangeTimes->{{3.696188395014122*^9, 3.696188416561644*^9}, {
    3.696188504644948*^9, 3.6961885351832323`*^9}, {3.696188570621696*^9, 
    3.696188664693328*^9}, {3.696188703648032*^9, 3.696188782445056*^9}, {
    3.6961888158845377`*^9, 3.696188832829782*^9}, 3.696189057897834*^9, 
-   3.6961891358854733`*^9},
+   3.6961891358854733`*^9, {3.696233932194109*^9, 3.696233936271215*^9}, {
+   3.6962340877344217`*^9, 3.696234105206826*^9}, {3.6962341379609613`*^9, 
+   3.696234160353746*^9}},
  CellID->795597320],
 
 Cell[TextData[{
- "Before steady\[Dash]state the inflow of entropy ",
+ "If we now consider a scenario in which ",
  Cell[BoxData[
   FormBox[
-   RowBox[{"\[DifferentialD]", 
-    SubscriptBox["S", "e"]}], TraditionalForm]],
+   RowBox[{
+    SubscriptBox["j", "e"], "=", 
+    FractionBox[
+     RowBox[{"\[DifferentialD]", 
+      SubscriptBox["S", "e"]}], 
+     RowBox[{"\[DifferentialD]", "t"}]]}], TraditionalForm]],
   FormatType->"TraditionalForm"],
- " might not be exactly balanced out by the internal entropy production. In \
-fact, at first it\[CloseCurlyQuote]s value we\[CloseCurlyQuote]ll be positive \
-if the system temperature is closer to the temperature of the cooler and \
-negative if it\[CloseCurlyQuote]s closer to the temperature of the heater."
+ " was non\[Dash]zero for some time and then turned off, then by Tylor \
+expansion"
 }], "Text",
- CellChangeTimes->{{3.696188876543013*^9, 3.6961889004398737`*^9}, {
-  3.696188930888666*^9, 3.69618896852947*^9}, {3.696189007972334*^9, 
-  3.696189088255474*^9}},
- CellID->2022587143],
+ CellChangeTimes->{{3.69623395710896*^9, 3.696234010458929*^9}, {
+  3.69623405027684*^9, 3.69623408593416*^9}, {3.696234166452174*^9, 
+  3.696234245500404*^9}, {3.696235630318152*^9, 3.6962357002878847`*^9}},
+ CellID->1753641127],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   FractionBox[
+    RowBox[{"\[DifferentialD]", 
+     SubscriptBox["S", "i"]}], 
+    RowBox[{"\[DifferentialD]", "t"}]], "=", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["j", "i"], "(", "S", ")"}], "=", 
+    RowBox[{
+     RowBox[{
+      SubscriptBox["j", "i"], "(", 
+      SubscriptBox["S", "0"], ")"}], "+", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{"S", "-", 
+        SubscriptBox["S", "0"]}], ")"}], 
+      SubscriptBox["C", "1"]}], "+", 
+     RowBox[{"\[ScriptCapitalO]", "(", 
+      SuperscriptBox["S", "2"], ")"}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{
+  3.696234247566268*^9, {3.6962346468137417`*^9, 3.6962346529113398`*^9}},
+ CellID->39590445],
+
+Cell[TextData[{
+ "and noticing that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["j", "i"], "(", 
+     SubscriptBox["S", "0"], ")"}], "=", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " by definition (if the inflow of entropy is null, then the system stays in \
+equilibrium) and therefore ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["C", "1"], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " has to be negative since ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["j", "i"], "(", "S", ")"}], ">", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " and ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"S", "-", 
+     SubscriptBox["S", "0"]}], "<", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ".\nFurther we rewrite the equation with ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["C", "1"], "=", 
+    RowBox[{"-", 
+     FractionBox["1", "\[Tau]"]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " (",
+ Cell[BoxData[
+  FormBox["\[Tau]", TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " positive)"
+}], "Text",
+ CellChangeTimes->{{3.696234249935107*^9, 3.69623425509678*^9}, {
+  3.696234309085969*^9, 3.696234426899233*^9}, {3.696234467859188*^9, 
+  3.696234553937027*^9}, {3.6962356853380213`*^9, 3.696235685945859*^9}},
+ CellID->2040259235],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   FractionBox[
+    RowBox[{"\[DifferentialD]", 
+     SubscriptBox["S", "i"]}], 
+    RowBox[{"\[DifferentialD]", "t"}]], "=", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["j", "i"], "(", 
+     SubscriptBox["S", "i"], ")"}], "=", 
+    RowBox[{
+     FractionBox[
+      RowBox[{
+       SubscriptBox["S", "0"], "-", 
+       SubscriptBox["S", "i"]}], "\[Tau]"], "+", 
+     RowBox[{"\[ScriptCapitalO]", "(", 
+      SuperscriptBox["S", "2"], ")"}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.696234558183608*^9, 3.69623457878461*^9}, 
+   3.696234893256133*^9, {3.696235266074687*^9, 3.696235269537549*^9}},
+ CellID->430277213],
+
+Cell["and solve this equation:", "Text",
+ CellChangeTimes->{{3.696234588973349*^9, 3.6962345990121*^9}},
+ CellID->328396141],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"y", "'"}], "[", "t", "]"}], "==", 
+    FractionBox[
+     RowBox[{"y0", "-", 
+      RowBox[{"y", "[", "t", "]"}]}], "\[Tau]"]}], ",", 
+   RowBox[{"y", "[", "t", "]"}], ",", "t"}], "]"}]], "Input",
+ CellChangeTimes->{{3.696235209328156*^9, 3.6962353304850073`*^9}, {
+  3.6962354543334827`*^9, 3.696235462566077*^9}},
+ CellID->258628497],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"y", "[", "t", "]"}], "\[Rule]", 
+    RowBox[{"y0", "+", 
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{"-", 
+        FractionBox["t", "\[Tau]"]}]], " ", 
+      RowBox[{"C", "[", "1", "]"}]}]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.696235325209279*^9, 3.696235343762617*^9}, 
+   3.6962354632704*^9},
+ CellID->931412988]
+}, Open  ]],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["S", "i"], "(", "t", ")"}], "=", 
+   RowBox[{
+    RowBox[{
+     SubscriptBox["S", "0"], "(", 
+     RowBox[{"1", "-", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"-", "t"}], "/", "\[Tau]"}]]}], ")"}], "+", 
+    RowBox[{
+     SubscriptBox["S", "1"], 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "t"}], "/", "\[Tau]"}]]}]}]}], 
+  TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.69623460408928*^9, 3.6962346153892717`*^9}, {
+  3.696235534342442*^9, 3.696235538681859*^9}, {3.696236243433119*^9, 
+  3.696236243801098*^9}},
+ CellID->689566840],
+
+Cell["Therefore the system returns to equilibrium.", "Text",
+ CellChangeTimes->{{3.69623558471319*^9, 3.696235586619001*^9}, {
+  3.696235716118338*^9, 3.696235737838125*^9}},
+ CellID->1265458174],
+
+Cell[TextData[{
+ "However if consider an equation in which ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    SubscriptBox["j", "e"], "\[NotEqual]", "0"}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ " then we get a different solution"
+}], "Text",
+ CellChangeTimes->{
+  3.6962357391589737`*^9, {3.696235772064054*^9, 3.6962358009993267`*^9}},
+ CellID->1374481012],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"DSolve", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"y", "'"}], "[", "t", "]"}], "\[Equal]", 
+    RowBox[{"je", "+", 
+     FractionBox[
+      RowBox[{"y0", "-", 
+       RowBox[{"y", "[", "t", "]"}]}], "\[Tau]"]}]}], ",", 
+   RowBox[{"y", "[", "t", "]"}], ",", "t"}], "]"}]], "Input",
+ CellChangeTimes->{{3.69623575385466*^9, 3.696235758949147*^9}},
+ CellID->735017959],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"y", "[", "t", "]"}], "\[Rule]", 
+    RowBox[{"y0", "+", 
+     RowBox[{"je", " ", "\[Tau]"}], "+", 
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{"-", 
+        FractionBox["t", "\[Tau]"]}]], " ", 
+      RowBox[{"C", "[", "1", "]"}]}]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{3.696235759774695*^9},
+ CellID->577364602]
+}, Open  ]],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    SubscriptBox["S", "i"], "(", "t", ")"}], "=", 
+   RowBox[{
+    SubscriptBox["S", "0"], "+", 
+    RowBox[{
+     SubscriptBox["j", "e"], 
+     RowBox[{"\[Tau]", "(", 
+      RowBox[{"1", "-", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{"-", "t"}], "/", "\[Tau]"}]]}], ")"}]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.69623581011797*^9, 3.696235828420648*^9}, {
+  3.696236246523038*^9, 3.69623624680593*^9}},
+ CellID->459822593],
+
+Cell["The entropy smoothly lowers to minimum entropy", "Text",
+ CellChangeTimes->{{3.696235849108348*^9, 3.696235867166842*^9}, {
+  3.6962366002667313`*^9, 3.696236610696341*^9}},
+ CellID->1505066174],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"y0", "+", 
+       RowBox[{"je", " ", "\[Tau]"}], "+", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"-", 
+         FractionBox["t", "\[Tau]"]}]]}], " ", "/.", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"\[Tau]", "\[Rule]", "1"}], ",", 
+        RowBox[{"y0", "\[Rule]", "2"}], ",", 
+        RowBox[{"je", "\[Rule]", "1"}]}], "}"}]}], ",", "3"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"t", ",", "0", ",", "5"}], "}"}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"0", ",", "5"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"2.7", ",", "4"}], "}"}]}], "}"}]}], ",", 
+   RowBox[{"PlotLabels", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       SubscriptBox["S", "i"], "[", "t", "]"}], ",", 
+      SubscriptBox["S", "min"]}], "}"}]}], ",", 
+   RowBox[{"AxesLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<t\>\"", ",", "\"\<\!\(\*SubscriptBox[\(S\), \(i\)]\)(t)\>\""}], 
+     "}"}]}], ",", 
+   RowBox[{"Ticks", "\[Rule]", "None"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.696235878119656*^9, 3.69623603917202*^9}, {
+  3.696236225909976*^9, 3.696236252404368*^9}, {3.6962363109359493`*^9, 
+  3.6962363191699963`*^9}, {3.696236355378264*^9, 3.696236367530951*^9}, {
+  3.6962364320476913`*^9, 3.6962364633777323`*^9}, {3.6962365359240313`*^9, 
+  3.6962365391882772`*^9}},
+ CellID->1653245640],
+
+Cell[BoxData[
+ GraphicsBox[{{{}, {}, 
+    TagBox[
+     {RGBColor[0.368417, 0.506779, 0.709798], AbsoluteThickness[1.6], Opacity[
+      1.], LineBox[CompressedData["
+1:eJwV0Hs0lHkYB3AifnNhjLe1SZlhHSKhk3Zrt3q/qW1bt1Yo12qmItdiTcet
+y84S1k6N1nZRFpHWkUvSbhRZlELTwepyaFcuKbk2TRnU7Lt/POc5nz++57lY
+iA9s2zdPS0vLg6n/e+4Rsd6KvUnr04c93mg0PDR3Cd13CP3pSfPHp3rneNDc
+rf9RKAyj3fxTomvVPOQ2yATzhQl0bmZQd4KSh8h1kqj3ggza58BP3vrDPHTN
+7s+eFJyj9bLKi4MUPOj39NuMCUroBY/i/MZyeShozYt5LaihR33S9WTgobwi
+oyfSoZWuuFAkt001RCjdcW40toue0BiLPIcNED1kO1Bd/pT+XBruyQ00ANsi
+xebf1X30868Kbmd3cHHCqM2uYPcArfPSyqwhmAtxj89tnfYX9D2nQyvjRzmI
+uZMiPmAzQitNZBbR6RxcPcj1XvjtGJ1S8qZ1iTMHBUkRI047JmmzlfWHfn7O
+hjRvzuvt6BQdHFFbMXeeDa2uPtxKVNKGe26ctNvJhnVcSLyPnYoOSpKGZVqw
+Mag6s51T946OlFNlknEWXIfCD5+KmaafJVh7J9xiwXNQvszcfIZu6Rg03SZn
+YaRJfOxe2Swd2PSqc1EECw78R0s27vpAi8+UmhRtZoFNq0S9yo90W8+E3msb
+Fr4ZC3hv6auF6HGvH56zWHjSuFc7wF4bAbvLFIETBNfTm3cKVdpYrL58Q/sp
+Qch8SZ9CMQ9+OUeGBU0Ee2KTrnNzdPChSdpYWUngGLpM4S7SxYbgOv+t+QQP
+je05kjXz4aKI+hVygpvl0vP2OnqoOtJ97YaUIEnb7rv2Z3qIcloaniwhYPcm
+bomu1gekYa/bwgiGii2y85IJrqxdVje1iyB7qalujS8LmdKsrW7bCeQ5IS0i
+IRsHT3+htPUkCMgOVnCH2RC5fsKZ3EwwvemSOq+eA2HV7yVPaYKBIZf4xjQu
+KrIWlfStIbi4boXZA5EBLpc6biLOBGWpEn7ockNM5DjfNHMkSPPd46ajMkT6
+ROy9m3YEq3oLStIe8MCL0SDWmuCs7fmyB25GmJfw6eFuS4KjDbKzbjVGOCpw
+cvIQEHiY+V5qteLjWq1BocNigg3RLYH8DD4OL4zNl5kS5C0WW7Wr+Oj1+fri
+jAmBVdPl056BxuBnrJI8XMDct7zRrrPeGJUuF0z6jZn/K3U77ttRuMvr9/to
+RCC++kaYcZLClSHqzxAeQaTUe841iwK7KuHtLsYS7+rH3F8o7DZ/7OzPOF0l
+OSE/TeFhwff1bozL16hnz+RSqNcYqpwYq//SPCoupZDvUz4+a8jM7+TKmlso
+HGsuZmczzimM2n/8PoULyalFMsaFcYqNW9qYfdat3JDG+A8T+UybgkLQ2Dtp
+IuPeAGp/VzeT/23ORsTYZsB0Y/8AhXDlxDsHxk7VieZFQxSi4u3rljL+MrVH
+vW+Ywmcyq+OWjN1tcitfjVAYP+ciNGEcGyE0n5qi4Ne+QPLBgCB57Q/qKiWF
+nO1cr/eMUw36/45TUah7cd1xivHZisLM6WkKFcGLVIOMLx7TDa2doeD+srPn
+H8alXvtckucohDSsvvOEcbXl3SXrP1JYUeN6tZNxvdJardFQEBXr57cz/g8F
+yRGk
+       "]]},
+     Annotation[#, "Charting`Private`Tag$6357#1"]& ], 
+    TagBox[
+     {RGBColor[0.880722, 0.611041, 0.142051], AbsoluteThickness[1.6], Opacity[
+      1.], LineBox[CompressedData["
+1:eJxTTMoPSmViYGAwAWIQPbcuic0wpdqOAQw4HNhvP1J/K7/SHsZfeGp+4Wv5
+nXD+uvWdt3P0TsH56fYXZ74pugzn5z3VfLxl3U04n0uxRf2+xQM4v0/gtNbC
+hMdwftLtkP3MZ57B+YVHW5Ly1V/B+RsLeIIlPN8i3FOd/cog/AOc3zT/T+CX
+Nx/hfIbLDxz2VH2G89VK0ipCtL7C+U++Tg/j3vsNzvd6mlU7qfAHnO/3ZIK2
+nNwvOP/V4aSGE2t/w/l6gtdkneP/Ivxn/zXxzud/cL7726jvSqEMDjD+jUMp
+jFE6jHD+1o4jcQpfEfw01tIH584xwfnJRdVbeWYxw/n66drnfBJZ4PzzQjrc
+pZascP7udU2zdZjZ4PxqRq2AM3cRfK47VR55W9jh/KfLFKfMr+GA86doSLLs
+DOWE8yfMSjueqMAF50dNiT3H8xzB/+Gy9Of8fdxw/uOnThWH2nng/EW2htJn
+E3nh/LWtpYLpunxwfntosjfzVwTf9M7Cle1n+eH8GZqz1571FoDz6w/0zvDe
+ieD7SocuPaUiCOc75h2PFuxE8OfLJKmc+YrgqxxePs0vWgjhP91DWpf2Ifhp
+n1kuntQShvOTNn5S6OxH8Cdc4uk9chzB3/dZ7ef//wg+ANQ6yyQ=
+       "]]},
+     Annotation[#, "Charting`Private`Tag$6357#2"]& ]}, {{{}, 
+     {GrayLevel[0.4], AbsoluteThickness[0.5], 
+      StyleBox[{{
+         LineBox[{
+          Scaled[{0, 0}, {5, 3.006737947686631}], 
+           Offset[{3, 0}, Scaled[{0, 0}, {5, 3.006737947686631}]], 
+           Offset[{7, 0}, Scaled[{0, 0}, {5, 3.0885588395183445`}]], 
+           Offset[{12, 0}, Scaled[{0, 0}, {5, 3.0885588395183445`}]]}], 
+         LineBox[{
+          Scaled[{0, 0}, {5, 3.}], Offset[{3, 0}, Scaled[{0, 0}, {5, 3.}]], 
+           Offset[{7, 0}, Scaled[{0, 0}, {5, 2.9181792665381168`}]], 
+           Offset[{12, 0}, Scaled[{0, 0}, {5, 2.9181792665381168`}]]}]}, {
+         InsetBox[
+          RowBox[{
+           SubscriptBox["S", "i"], "(", "t", ")"}], Offset[{15, 0}, 
+          Scaled[{0, 0}, {5, 3.0885588395183445}]], ImageScaled[{0, 0.5}]], 
+         InsetBox[
+          SubscriptBox["S", "min"], Offset[{15, 0}, 
+          Scaled[{0, 0}, {5, 2.9181792665381168}]], 
+          ImageScaled[{0, 0.5}]]}, {}, {}},
+       FontColor->GrayLevel[0.4]]}}, {}}, {{}, {}}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->{True, True},
+  AxesLabel->{
+    FormBox["\"t\"", TraditionalForm], 
+    FormBox[
+    "\"\\!\\(\\*SubscriptBox[\\(S\\), \\(i\\)]\\)(t)\"", TraditionalForm]},
+  AxesOrigin->{0, 2.7},
+  DisplayFunction->Identity,
+  Frame->{{False, False}, {False, False}},
+  FrameLabel->{{None, None}, {None, None}},
+  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
+  GridLines->{None, None},
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImagePadding->{{All, 52}, {All, All}},
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, "DefaultMeshStyle" -> 
+    AbsolutePointSize[6], "ScalingFunctions" -> None, 
+    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
+         Part[#, 1]], 
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
+         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
+         Part[#, 1]], 
+        (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
+         Part[#, 2]]}& )}},
+  PlotRange->{{0, 5}, {2.7, 4}},
+  PlotRangeClipping->False,
+  PlotRangePadding->{{0, 0}, {0, 0}},
+  Ticks->{{}, {}}]], "Output",
+ CellChangeTimes->{{3.696235932921015*^9, 3.6962360063361073`*^9}, 
+   3.696236039961174*^9, 3.696236254669963*^9, 3.696236321117715*^9, 
+   3.6962363684490557`*^9, {3.696236449561385*^9, 3.696236464104854*^9}, 
+   3.696236539853486*^9},
+ CellID->1873826727]
+}, Open  ]],
+
+Cell[TextData[{
+ "and we see that ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["j", "i"], "\[Rule]", 
+     SubscriptBox["j", "max"]}], "=", 
+    RowBox[{
+     FractionBox[
+      RowBox[{
+       SubscriptBox["S", "0"], "-", 
+       SubscriptBox["S", "min"]}], "\[Tau]"], "=", 
+     RowBox[{"-", 
+      SubscriptBox["j", "e"]}]}]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ". "
+}], "Text",
+ CellChangeTimes->{{3.696236053858794*^9, 3.696236091038075*^9}, {
+  3.696236152475114*^9, 3.6962361670388527`*^9}},
+ CellID->1950362622],
 
 Cell[TextData[{
  "Now we may make a weak association with information \[Dash] since erase of \
@@ -350,15 +776,13 @@ even though the it\[CloseCurlyQuote]s inflow is non\[Dash]zero (negative ",
  Cell[BoxData[
   FormBox[
    RowBox[{"\[DifferentialD]", 
-    SubscriptBox["S", "e"]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+    SubscriptBox["S", "e"]}], TraditionalForm]]],
  ") it get\[CloseCurlyQuote]s immediately erased by the non\[Dash]zero \
 internal entropy production (positive ",
  Cell[BoxData[
   FormBox[
    RowBox[{"\[DifferentialD]", 
-    SubscriptBox["S", "i"]}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+    SubscriptBox["S", "i"]}], TraditionalForm]]],
  ")"
 }], "Text",
  CellChangeTimes->{{3.696189358450292*^9, 3.696189581283299*^9}, {
@@ -387,8 +811,8 @@ nic specjalnego o konwekcji i dlatego cz\[LSlash]on ",
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{808, 755},
-WindowMargins->{{4, Automatic}, {Automatic, 4}},
+WindowSize->{718, 855},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
 PrintingCopies->1,
 PrintingPageRange->{1, Automatic},
 ShowCellLabel->True,
@@ -414,7 +838,7 @@ Cell[580, 22, 123, 2, 73, "Title",
 Cell[CellGroupData[{
 Cell[728, 28, 210, 4, 63, "Section",
  CellID->1191607392],
-Cell[941, 34, 1167, 29, 142, "Text",
+Cell[941, 34, 1167, 29, 166, "Text",
  CellID->328207306],
 Cell[CellGroupData[{
 Cell[2133, 67, 3745, 90, 238, "Figure",
@@ -426,7 +850,7 @@ Cell[5881, 159, 237, 5, 56, "FigureCaption",
 Cell[CellGroupData[{
 Cell[6167, 170, 114, 2, 64, "Section",
  CellID->1793141499],
-Cell[6284, 174, 1110, 29, 91, "Text",
+Cell[6284, 174, 1110, 29, 93, "Text",
  CellID->906505399],
 Cell[7397, 205, 782, 21, 54, "EquationNumbered",
  CellID->678088994],
@@ -434,13 +858,51 @@ Cell[8182, 228, 610, 16, 66, "Text",
  CellID->470741310],
 Cell[8795, 246, 1344, 41, 58, "EquationNumbered",
  CellID->1588102537],
-Cell[10142, 289, 1269, 36, 92, "Text",
+Cell[10142, 289, 1828, 53, 146, "Text",
  CellID->795597320],
-Cell[11414, 327, 716, 15, 87, "Text",
- CellID->2022587143],
-Cell[12133, 344, 974, 22, 114, "Text",
+Cell[11973, 344, 637, 17, 84, "Text",
+ CellID->1753641127],
+Cell[12613, 363, 725, 24, 53, "EquationNumbered",
+ CellID->39590445],
+Cell[13341, 389, 1378, 46, 115, "Text",
+ CellID->2040259235],
+Cell[14722, 437, 680, 21, 53, "EquationNumbered",
+ CellID->430277213],
+Cell[15405, 460, 124, 2, 36, "Text",
+ CellID->328396141],
+Cell[CellGroupData[{
+Cell[15554, 466, 423, 12, 49, "Input",
+ CellID->258628497],
+Cell[15980, 480, 424, 13, 44, "Output",
+ CellID->931412988]
+}, Open  ]],
+Cell[16419, 496, 667, 21, 38, "Equation",
+ CellID->689566840],
+Cell[17089, 519, 195, 3, 37, "Text",
+ CellID->1265458174],
+Cell[17287, 524, 367, 11, 40, "Text",
+ CellID->1374481012],
+Cell[CellGroupData[{
+Cell[17679, 539, 404, 12, 49, "Input",
+ CellID->735017959],
+Cell[18086, 553, 418, 13, 44, "Output",
+ CellID->577364602]
+}, Open  ]],
+Cell[18519, 569, 536, 17, 38, "EquationNumbered",
+ CellID->459822593],
+Cell[19058, 588, 200, 3, 37, "Text",
+ CellID->1505066174],
+Cell[CellGroupData[{
+Cell[19283, 595, 1517, 42, 90, "Input",
+ CellID->1653245640],
+Cell[20803, 639, 5296, 106, 226, "Output",
+ CellID->1873826727]
+}, Open  ]],
+Cell[26114, 748, 566, 20, 59, "Text",
+ CellID->1950362622],
+Cell[26683, 770, 908, 20, 139, "Text",
  CellID->1828800032],
-Cell[13110, 368, 782, 17, 71, "Critique",
+Cell[27594, 792, 782, 17, 71, "Critique",
  CellID->1803491100]
 }, Open  ]]
 }, Open  ]]
