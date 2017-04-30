@@ -10,28 +10,97 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      1114,         49]
-NotebookOptionsPosition[       750,         30]
-NotebookOutlinePosition[      1109,         46]
-CellTagsIndexPosition[      1066,         43]
+NotebookDataLength[      5139,        152]
+NotebookOptionsPosition[      3560,         99]
+NotebookOutlinePosition[      3913,        115]
+CellTagsIndexPosition[      3870,        112]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
-Cell["Onsager", "Title",
- CellChangeTimes->{{3.691922542888291*^9, 3.6919225438045197`*^9}},
- CellID->819986101],
+Cell["Onsager relations", "Title",
+ CellChangeTimes->{{3.691922542888291*^9, 3.6919225438045197`*^9}, {
+  3.7024467040810843`*^9, 3.702446705365532*^9}},
+ CellID->819986101,ExpressionUUID->"319156dc-2abf-4a4a-bdbf-07818d423c6c"],
+
+Cell[CellGroupData[{
+
+Cell["Intro", "Section",
+ CellChangeTimes->{{3.702447894077285*^9, 3.702447894632059*^9}},
+ CellID->805130208,ExpressionUUID->"84d3c97e-f372-45a0-a447-7b2066778797"],
+
+Cell[CellGroupData[{
+
+Cell["Recap", "Subsection",
+ CellChangeTimes->{{3.702447906684317*^9, 3.7024479085691767`*^9}},
+ CellID->946914969,ExpressionUUID->"03b7ee71-ffe9-4a95-9999-d8d1cc592a76"],
+
+Cell["\<\
+Reciprocal relations for heat conduction in an anisotropic medium are derived \
+from the assumption of microscopic reversibility, applied to fluctuations.\
+\>", "Text",
+ CellChangeTimes->{{3.702447521278507*^9, 3.702447617401258*^9}},
+ CellID->937781279,ExpressionUUID->"bbe6380d-cdea-417e-a4ff-8f5b656c9897"],
+
+Cell["\<\
+The reciprocal relations can be expressed in terms of a potential, the \
+dissipation\[Dash]function.\
+\>", "Text",
+ CellChangeTimes->{{3.70244776439568*^9, 3.7024477991191397`*^9}},
+ CellID->1548088363,ExpressionUUID->"b966e47d-28c0-4c58-a85c-d80ba60cf2c5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Peltier effect", "Subsection",
+ CellChangeTimes->{{3.702447914072105*^9, 3.702447916970821*^9}},
+ CellID->1206165265,ExpressionUUID->"f25b89ac-6bee-4e94-b683-c26323d0bda0"],
+
+Cell["\<\
+When two or more irreversible transport processes (heat conduction, \
+electrical conduction and diffusion) take place simultaneously in a \
+thermodynamic system the processes may interfere with each other. Thus an \
+electric current in a circuit that consists of different metallic conductors \
+will in general cause evolution or absorption of heat at the junctions. \
+(Peltier effect)\
+\>", "Text",
+ CellChangeTimes->{{3.702447923140686*^9, 3.702448034557643*^9}},
+ CellID->1503482777,ExpressionUUID->"b170eaf6-9de6-469b-912e-4ee16adb2bb0"],
+
+Cell["\<\
+Conversely, if the junctions are maintained at different temperatures an \
+electromotive force will usually appear in the circuit, the thermoelectric \
+force: the flow of heat has a tendency to carry the electricity along.\
+\>", "Text",
+ CellChangeTimes->{{3.702448026139264*^9, 3.702448089310341*^9}},
+ CellID->2133700465,ExpressionUUID->"9f30c5df-9d14-413d-a6f5-fd3f3a4d23f5"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
 
 Cell["", "Section",
- CellID->805130208]
+ CellID->459086900,ExpressionUUID->"85b49009-1d41-4e7f-8b9b-bb4247fe8f3a"],
+
+Cell[TextData[{
+ "According to Lord Rayleigh\[CloseCurlyQuote]s \
+\[OpenCurlyDoubleQuote]principle of the least dissipation of energy\
+\[CloseCurlyDoubleQuote], the ",
+ StyleBox["rate of increase of the entropy",
+  Background->RGBColor[0.88, 1, 0.88]],
+ " plays the role of a potential."
+}], "Text",
+ CellChangeTimes->{{3.702452330151127*^9, 3.702452393908327*^9}},
+ CellID->2126049612,ExpressionUUID->"521a0203-d5e2-45ab-b5dd-204c05ebc448"]
+}, Open  ]]
 }, Open  ]]
 },
-WindowSize->{808, 755},
-WindowMargins->{{20, Automatic}, {Automatic, 44}},
-FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
-21, 2016)",
+WindowSize->{718, 855},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 16, \
+2017)",
 StyleDefinitions->"Science.nb"
 ]
 (* End of Notebook Content *)
@@ -46,14 +115,46 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 112, 2, 73, "Title",
+Cell[580, 22, 228, 3, 73, "Title", "ExpressionUUID" -> \
+"319156dc-2abf-4a4a-bdbf-07818d423c6c",
  CellID->819986101],
-Cell[695, 26, 39, 1, 63, "Section",
- CellID->805130208]
+Cell[CellGroupData[{
+Cell[833, 29, 165, 2, 63, "Section", "ExpressionUUID" -> \
+"84d3c97e-f372-45a0-a447-7b2066778797",
+ CellID->805130208],
+Cell[CellGroupData[{
+Cell[1023, 35, 170, 2, 38, "Subsection", "ExpressionUUID" -> \
+"03b7ee71-ffe9-4a95-9999-d8d1cc592a76",
+ CellID->946914969],
+Cell[1196, 39, 319, 5, 61, "Text", "ExpressionUUID" -> \
+"bbe6380d-cdea-417e-a4ff-8f5b656c9897",
+ CellID->937781279],
+Cell[1518, 46, 267, 5, 36, "Text", "ExpressionUUID" -> \
+"b966e47d-28c0-4c58-a85c-d80ba60cf2c5",
+ CellID->1548088363]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1822, 56, 178, 2, 38, "Subsection", "ExpressionUUID" -> \
+"f25b89ac-6bee-4e94-b683-c26323d0bda0",
+ CellID->1206165265],
+Cell[2003, 60, 551, 9, 136, "Text", "ExpressionUUID" -> \
+"b170eaf6-9de6-469b-912e-4ee16adb2bb0",
+ CellID->1503482777],
+Cell[2557, 71, 388, 6, 85, "Text", "ExpressionUUID" -> \
+"9f30c5df-9d14-413d-a6f5-fd3f3a4d23f5",
+ CellID->2133700465]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2994, 83, 94, 1, 63, "Section", "ExpressionUUID" -> \
+"85b49009-1d41-4e7f-8b9b-bb4247fe8f3a",
+ CellID->459086900],
+Cell[3091, 86, 441, 9, 61, "Text", "ExpressionUUID" -> \
+"521a0203-d5e2-45ab-b5dd-204c05ebc448",
+ CellID->2126049612]
+}, Open  ]]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 

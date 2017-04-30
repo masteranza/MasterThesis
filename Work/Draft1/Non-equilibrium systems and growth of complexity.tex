@@ -1,0 +1,58 @@
+% !TEX encoding = Mac Central European Roman
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{verbatim}
+\usepackage[polish]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[macce]{inputenc}
+%\usepackage[latin2]{inputenc}
+
+\usepackage{xcolor}
+\definecolor{lightgray}{gray}{0.90}
+\newtheorem{theorem}{Theorem}
+\usepackage{framed}
+\renewenvironment{leftbar}[1][\hsize]
+{% 
+\def\FrameCommand 
+{%
+
+    {\hspace{-3pt}\color{black}\vrule width 3pt}%
+    \hspace{0pt}%must no space.
+    \fboxsep=\FrameSep\colorbox{lightgray}%
+}%
+\MakeFramed{\hsize#1\advance\hsize-\width\FrameRestore}%
+}
+{\endMakeFramed}
+\setlength{\FrameSep}{0pt}
+
+\textwidth=16.5 truecm
+\textheight=25 truecm
+\hoffset=-2.5 truecm
+\voffset=-2 truecm
+
+\def\baselinestretch{1.2}
+
+\pagestyle{empty}
+
+\begin{document}
+
+\title{Non-equilibrium systems and growth of complexity}
+
+\author{Micha{\l } Mandrysz \\
+Instytut Fizyki, Uniwersytet JagielloÄski, ul. {\L }ojasiewicza
+11, 30-348 Krak—w, Polska }
+
+\maketitle
+
+\section{General properties of irreversible processes}
+
+The term "irreversible process" is synonymous with a specific direction of time.
+To our best knowledge the direction of time is an emergent phenomena. 
+Isolated thermodynamic systems evolve in the direction of more probable states i.e. growing entropy.
+When they finally reach that state the direction of time ceases to exist for the whole system.
+Therefore in the description of irreversible processes the history of the systems evolution becomes relevant.
+
+\end{document}
