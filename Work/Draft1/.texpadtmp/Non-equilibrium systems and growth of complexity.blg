@@ -1,0 +1,48 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: /Users/masteranza/Projects/MasterThesis/Work/Draft1/.texpadtmp/Non-equilibrium systems and growth of complexity.aux
+The style file: ieeetr.bst
+Database file #1: ../Refs.bib
+Warning--I didn't find a database entry for "Evans:2002gg"
+You've used 4 entries,
+            1876 wiz_defined-function locations,
+            510 strings with 4307 characters,
+and the built_in function-call counts, 980 in all, are:
+= -- 97
+> -- 34
+< -- 0
++ -- 13
+- -- 9
+* -- 65
+:= -- 143
+add.period$ -- 5
+call.type$ -- 4
+change.case$ -- 3
+chr.to.int$ -- 0
+cite$ -- 4
+duplicate$ -- 48
+empty$ -- 100
+format.name$ -- 9
+if$ -- 239
+int.to.chr$ -- 0
+int.to.str$ -- 4
+missing$ -- 4
+newline$ -- 16
+num.names$ -- 4
+pop$ -- 15
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 32
+stack$ -- 0
+substring$ -- 59
+swap$ -- 17
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 10
+width$ -- 5
+write$ -- 40
+(There was 1 warning)

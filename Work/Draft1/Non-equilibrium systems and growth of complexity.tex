@@ -1,16 +1,11 @@
 % !TEX encoding = Mac Central European Roman
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,12pt,nofootinbib]{article}
 
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{mathtools}
-\usepackage{verbatim}
-\usepackage[polish]{babel}
+\usepackage{amsmath, amssymb, mathtools, verbatim, bm, xcolor, hyperref}
+%\usepackage[polish]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[macce]{inputenc}
 %\usepackage[latin2]{inputenc}
-
-\usepackage{xcolor}
 \definecolor{lightgray}{gray}{0.90}
 \newtheorem{theorem}{Theorem}
 \usepackage{framed}
@@ -28,10 +23,10 @@
 {\endMakeFramed}
 \setlength{\FrameSep}{0pt}
 
-\textwidth=16.5 truecm
-\textheight=25 truecm
-\hoffset=-2.5 truecm
-\voffset=-2 truecm
+%\textwidth=16.5 truecm
+%\textheight=25 truecm
+%\hoffset=-2.5 truecm
+%\voffset=-2 truecm
 
 \def\baselinestretch{1.2}
 
@@ -42,17 +37,283 @@
 \title{Non-equilibrium systems and growth of complexity}
 
 \author{Micha{\l } Mandrysz \\
-Instytut Fizyki, Uniwersytet Jagielloƒski, ul. {\L }ojasiewicza
-11, 30-348 Kraków, Polska }
+Instytut Fizyki, Uniwersytet Jagielloƒski,\\
+ul. {\L }ojasiewicza 11, 30-348 Kraków, Polska }
 
 \maketitle
+
+\section*{Summary of Schr{\" o}dinger{'}s contributions}
+
+By writing his book {``}What is life?{''} (1944) Schr{\" o}dinger inspired generations of physicists to answer the alluring (though not easy) question
+of the role of physics in biological processes. In any event it probably wouldn{'}t be an exaggeration to say that Schr{\" o}dinger himself (as he
+admits), was inspired by the work of German-American physicists Max Delbr{\" u}ck; who helped launch the molecular biology research program in the
+late 1930s and explained (in main part) the mechanism of heredity and mutation.
+
+Regardless, Schr{\" o}dinger makes some very essential observations on the nature of living organisms which I shall describe here shortly.
+
+First, their operation (living organisms) as a macroscopic system resembles approximately, a purely mechanical system rather than a thermodynamical
+system. Even though their size is far from what is considered a thermodynamic limit, they tend stay unaffected (in special environments) by random
+molecular motion known as heat and; at the same time, evade the decay towards equilibrium for an unusually long time. This is essentially the definition
+of a living system.
+
+Secondly, he notices that the way an organism accomplishes the above is through the exchange of energy and matter with it's environment, that leaves
+it's own internal state in low entropy. He withdraws from considerations of free energy, although he acknowledges that the exact physical understanding
+should be accomplished through it rather than through entropy. Worth mentioning is his hypothesis of {``}life intensity{''} the term which ought
+to parallel with the rate at which the system produces entropy.
+
+Thirdly, each cell depends on very small group of atoms, the genetic code, which determine it's evolution, something unprecedented, beyond the description
+of ordinary statistical physics. Perhaps, a partial explanation for this dynamical behavior (rather than statistical) can be traced to rigidity and
+tightness of chemical bonds. However the very vital point Schr{\" o}dinger tries to make is the hypothesis, that there must exist a yet unknown,
+new law of physics that would explain fully how order can be produced out of order. The formulation of this law is to my knowledge; still in development.
+
+Lastly, even though Schr{\" o}dinger introduces some quantum mechanics principles, like the uniqueness of Heitler-London bond in order to defend
+the theory laid down by Delbr{\" u}ck, he assures that quantum indeterminacy should play only marginal role in the future laws of dynamics of living
+systems.
+
+\section*{Summary of Prigogine contributions}
+
+The term {``}dissipative structures{''} was first used by Ilya Prigogine (http://bactra.org/notebooks/dissipative-structures.html) and although Prigogine
+ideas were not really correct ones it might be worth to recall some of them.
+
+\subsection*{Nobel Lecture (8 December 1977)}
+
+Prigogine nobel prize lecture {``}Time, structure and fluctuations{''} begins with the critique of Helmholtz free energy and the assertion that living
+system posses a different type of functional order which can be traced to their non$--$equilibrium state. This statement is consistent with the today{'}s
+predominant view.
+
+{``}However thermodynamic potentials exist only for exceptional situations{''} - is that true?
+
+One of his often cited contributions is connected with a term for entropy for open systems, an extension of Clausius entropy for isolated systems:
+
+\begin{displaymath}
+	dS=d_iS+d_eS
+\end{displaymath}
+
+
+Where \(d_iS\) is connected with entropy produced within the system and \(d_eS\) is the entropy transferred across the boundaries of the system.
+The second law states that \(d_iS\geq 0\), so if a system is to stay in law entropy state it{'}s production must be compensated by an inflow of negative
+entropy.
+
+He then develops an explicit expression for entropy production, assuming that even outside equilibrium (but near) entropy depends only on the same
+variables as at equilibrium ({``}local{''} equilibrium)
+
+\begin{displaymath}
+	P=\frac{d_iS}{dt}=\sum _{\rho } J_{\rho }X_{\rho }\geq 0
+\end{displaymath}
+
+
+where \(J_{\rho }\) are the rates of the various irreversible processes involved (chemical reactions, heat flow, diffusion$\ldots $) and \(X_{\rho
+}\) are the corresponding, generalized forces (affinities, gradients of temperature, of chemical potentials$\ldots $). The flows are described using
+different empirical laws (Fourier{'}s law, Fick{'}s law, etc.) 
+
+\begin{displaymath}
+	J_{\rho }=\sum _{\rho } L_{\rho \rho '}X_{\rho '}
+\end{displaymath}
+
+
+Onsager relations \(L_{\rho \rho '}=L_{\rho '\rho }\)
+
+Prigogine rightly criticized the efforts to extend the principle of minimum entropy production (which is valid only very near equilibrium)
+to non-equilibrium regimes, showing that. What exactly is this principle is well explained by Prigogine; when a system is constricted by a boundary
+condition and perturbed, the entropy production will increase, but then the system settles down to the state of {``}least dissipation{''}.\\
+An example of a process such process, namely Rayleigh$--$B{\' e}nard convection is given, which he perceives as a prime example of occurrence of
+{``}dissipative structures{''} which fail to be described by Boltzmann laws. In Prigogine view the fluctuations are the trigger for the instabilities
+instabilities, which in turn give rise to spacetime structure. Here instabilities carry the sense of bifurcations of equations of motion.
+
+[I need to learn more about Nicolis work on dynamics of chemical reactions]
+
+Furthermore Prigogine develops an uncommon perspective on the microscopic equations of motion, which in his opinion should not be invariant under
+time inversion.\\
+A proposed way to achieve this is through a non$--$unitary transformation which yield a type Lyapounov function, analogue to Bolzmann H-function.
+The goal was to obtain a microscopic representation of entropy. It{'}s known in literature as Misra-Prigogine-Courbage theory of irreversibility.
+
+Prigogine view on reversibility are probably best summarized by the quotes {``}I have always found it difficult to accept this conclusion [macroscopic
+irreversibility emerging from initial conditions] { }especially because of the constructive role of irreversible processes. Can dissipative structures
+be the result of mistakes?{''}
+
+[At the present moment I can{'}t comment much on this, but some extensive critique can be found {``}Science of Chaos or Chaos in Science{''} by Bricmont]
+
+The best account (or the most understandable) of Prigogine views are perhaps his own words in {``}Laws of Chaos{''} - {``}The essential condition
+is that the microscopic description of the universe be made in terms of unstable dynamical systems. This is a radical change in point of view. From
+the point of view of classical physics, stable systems were the rule and unstable systems the exceptions. We are now reversing that perspective.{''}\\
+First it{'}s not true that stable systems are the rule in classical physics, one can easily devise classical examples of unstable systems following
+purely classical mechanics, the reason why they are not being analyzed is that analytic methods fail to solve them. Prigogine seems to require more
+complexity to explain complexity, which is in my opinion not needed.
+
+\section{Modern view on statistical mechanics}
+\subsection{MaxEnt}
+The essence of MaxEnt method can be summarized in the formula for maximization of relative entropy (negative Kullback-Leibler divergence)
+
+\begin{displaymath}
+  H(p\lor q) = -\sum_i \ln p_i \frac{p_i}{q_i}
+\end{displaymath}
+with respect to $p_i$ (new aposteriori distribution). $H(p||q)$ can be interpreted as the information gained by using $p_i$ instead of $q_i$.
+
+\section{Departure from equilibrium}
+
+Almost two centuries have passed since birth of equilibrium thermodynamics, but it took almost a *hundred* years before the principles were finally settled and a microscopic picture emerged under the name of statistical mechanics. 
+
+Systems out of equilibrium can exhibit a variety of behaviours including relaxation, ageing, various meta-stable states, and steady-states.
+
+\subsection{Near equilibrium results}
+\subsection{Extensions that did not work}
+Prigogine himself noted \cite{Prigogine:1979ul}:
+"It came as a great surprise when it was shown that in systems far from equilibrium the thermodynamic behavior could be quite different-in fact, even directly opposite that predicted by the theorem of minimum entropy production."
+
+Dewar and Maritan \cite{Dewar:2014ek} showed using Jaynes's maximum entropy method that a state of minimum dissipation (MinEP) is selected for a system without dynamic instability, whereas that of maximum dissipation (MaxEP) is selected for a system with dynamic instability.
+\subsection{Solid extensions to deep in-equilibrium}
+In 1993 Evans et al discovered a relation known as the Fluctuation Theorem (FT), which gives an analytical expression for the probability of observing Second Law violating dynamical fluctuations in thermostatted dissipative non-equilibrium systems.
+The Fluctuation Theorem does much more than merely prove that in large systems observed for long periods of time, the Second Law is overwhelmingly likely to be valid. The Fluctuation Theorem quantifies the probability of observing violations of the Second Law in small systems observed for a short period of time \cite{Evans:2002gy}. The quantitative predictions made by the fluctuation theorem have been confirmed experimentally, both using laboratory experiments and using molecular dynamics computer simulations.
+
+\newpage
+\section{General properties of irreversible processes}
+
+\section{Concepts of non-equilibrium thermodynamics}
+
+\subsection{Local equilibrium}
+The thermodynamical variables are often defined subject to the kinematical requirement of local thermodynamic equilibrium. This means that collisions between molecules are so frequent that chemical and radiative processes do not disrupt the local Maxwell-Boltzmann distribution of molecular velocities. This principle is valid for hydrodynamic flows and chemical reactions and it's formulation goes back to Clark Maxwell [Citation?].
+It's usage can be usually justified by assuming analyticity of thermodynamic state functions arbitrarily close to equilibrium - then, local equilibrium is obtained from first order expansion of thermodynamic properties in the irreversible fluxes ${X_i}$ \cite{Evans:2002gg}.
+\subsubsection{Definition of temperature}
+When the temperature differences are "smooth" enough, i.e., locally there is a reasonable definition of temperature (local equilibrium), then the temperature gradient determines the heat flux. In the opposite case, it is molecular kinetics who determines the energy transfer. The latter happens much faster and local equilibrium gets established quickly.
+
+\subsection{Entropy production}
+
+In near equilibrium regime, where local thermodynamic equilibrium is expected to be valid, the theory predicts that there will be a 'spontaneous production of entropy' in non-equilibrium systems.
+This spontaneous production of entropy is given by the entropy production per unit volume $\sigma$ by the following expression \cite{DeGroot:1984ue}
+\begin{displaymath}
+  \int d\bm{r} \sigma(\bm{r},t)=\int d\bm{r}(\sum_i J_i(\bm{r},t)X_i(\bm{r},t))>0,
+\end{displaymath}
+where $J_i(\bm{r},t)$ are the Navier-Stokes hydrodynamic fluxes (e.g. the stress tensor, heat flux vector,...) at position $\bm{r}$ and time $t$ and $X_i$ is the thermodynamic force which is conjugate to $J_i(\bm{r},t)$ (e.g. strain rate tensor divided by temperature or the gradient of the reciprocal of temperature,... respectively).
+
+\subsection{Steady states}
+The most basic of non-equilibrium conditions, the steady state is already difficult to describe as may of the basic state functions (including temperature and entropy), are undefined for far from equilibrium states and the distribution function of a steady state is fractal and non-analytic. 
+
+
+\section{Non-equilibrium relations}
+There exist only a handful of relations correct arbitrarily far from equilibrium, these include:
+\begin{itemize}
+  \item Jarzynski non-equilibrium work relation
+  \item Kawasaki relation
+  \item Evans-Searles transient fluctuation theorem
+\end{itemize}
+Those relations have several commonalities:
+\begin{itemize}
+  \item the system starts in thermal equilibrium
+  \item it is driven from that equilibrium by an external perturbation
+  \item the energy of the system always remains finite
+  \item the dynamics are markovian 
+  \item if the system is unperturbed then the dynamics preserve the equilibrium ensemble
+\end{itemize}
+It's clear from that a system with these properties is microscopically reversible.
+
+All those relations can be considered a special cases of a single theorem
+
+\subsection{Dissipation function}
+
+
+
+\begin{displaymath}
+  \Omega_t(\Gamma(0))=ln{\frac{P(\Gamma(0),0)}{P(\Gamma^*(t),0)}}
+\end{displaymath}
+
+The dissipation function is similar to the entropy production, and although it's not a state function it provides description of non-equilibrium systems through various fluctuation theorems.
+
+\subsection{Fluctuation Theorem}
+The Fluctuation Theorem is best regarded as a set of closely related theorems.
+One of the reason for this situation is because we'd expect different fluctuations for different statistical mechanical ensembles.
+Second reason, because of which we've got this diversity is that some of this theorems refer to non-equilibrium steady state fluctuations (e.g.), while others refer to transient fluctuations.
+For the needs of this we will further refer to Steady State Fluctuation Theorems (SSFT) valid in the long averaging times and Transient Fluctuation Theorems (TFT) which are exact for arbitrary averaging times.
+
+\subsection{Derivation of Fluctuation Theorem}
+...
+
+We have now completed our derivation of the Transient Fluctuation Theorem
+\begin{displaymath}
+  \frac{p(\Omega_t=A)}{p(\Omega_t=-A)}=exp(A t)
+\end{displaymath}
+
+
+If we're interested in steady state then we'll allow the system for some relaxation time $\tau_r$
+
+\begin{displaymath}
+  lim_{\frac{t}{\tau_R}\rightarrow \infty} \frac{1}{t} ln{\frac{p(\Omega_{t,ss}=A)}{p(\Omega_{t,ss}=-A)}} =A
+\end{displaymath}
+
+
+The fluctuation theorem relates the probabilities of observing time averaged values of a generalized entropy production (dissipation function), for a time period t.
+
+\begin{displaymath}
+  \Omega(\Gamma) \equiv \ln \left(\frac{f(\Gamma ,0)}{f(\Gamma  t,0)}\right)+\underset{0}{\overset{t}{\int }}\frac{\left(\dot{Q} s\right) ds}{k_B T_{\text{res}}}
+\end{displaymath}
+
+\subsubsection{As a measure of irreversibility}
+If we denote T as irreversibility then I can be interpreted as a measure of T-symmetry breaking.
+\begin{displaymath}
+  I =\int p(x) \ln{\frac{p( x)}{p(T x)}}
+\end{displaymath}
+
+
+\subsection{Dissipation Theorem}
+The Dissipation Theorem says that the nonlinear response of an arbitrary phase variable can be calculated from the time integral of the non-equilibrium transient time correlation function of the phase variable with the dissipation function
+
+
+\begin{displaymath}
+\langle B(t)\rangle =\langle B(0) \rangle +\int_0^t ds \langle B(s) \Omega(0) \rangle 
+\end{displaymath}
+
+\subsection{Relaxation Theorem}
+The Relaxation Theorem says that if an arbitrary initial ensemble of ergodic Hamiltonian systems is in contact with a heat bath and there is a decay of temporal correlations, then the system will at long times, relax to the Maxwell-Boltzmann distribution. Further, this distribution has zero dissipation everywhere in phase space. For such systems no other distribution has zero dissipation everywhere.
+\begin{displaymath}
+  \lim_{t\to \infty } \Omega (\Gamma ;f(\Gamma ,t))=0, \forall \Gamma
+\end{displaymath}
+
+A system can relax to equilibrium in two ways: conformally and non-conformally.
+Each of the above results is exact arbitrarily far from equilibrium and independent of system size.
+
+\section{Search for a unifying principle}
+
+The search for variational or extremization principles in physics has a long history of success. In classical mechanics, one finds the Lagrangian and Hamiltonian formalisms with the principle of least action. In thermodynamics and statistical physics of equilibrium state the principle of maximum entropy reigns. 
+
+In 1912, Ehrenfest was the first who asked whether such a principle for a yet unknown function could exist for non-equilibrium steady states. 
+
+This approach has also gained a lot of criticism.
+On the other hand, according to Kondepudi (2008),[7] and to Grandy (2008),[8] there is no general rule that provides an extremum principle that governs the evolution of a far-from-equilibrium system to a steady state. 
+Silhavy (1997)[11] offers the opinion that "... the extremum principles of thermodynamics ... do not have any counterpart for [non-equilibrium] steady states (despite many claims in the literature)." It follows that any general extremal principle for a non-equilibrium problem will need to refer in some detail to the constraints that are specific for the structure of the system considered in the problem.
+
+There seems to be a theoretical relationship between maximum irreversibility and dynamic stability [Beyond the Second Law] a link suggested here by the fact that MaxEnt/MaxEP predicts the same dissipation functional as Malkus's instability criterion in shear turbulence
+
+\subsection{Rayleigh's insight}
+Studying jets of water from a nozzle, Rayleigh (1878,[27] 1896/1926[28]) noted that when a jet is in a state of conditionally stable dynamical structure, the mode of fluctuation most likely to grow to its full extent and lead to another state of conditionally stable dynamical structure is the one with the fastest growth rate. In other words, a jet can settle into a conditionally stable state, but it is likely to suffer fluctuation so as to pass to another, less unstable, conditionally stable state. He used like reasoning in a study of Benard convection.[39] These physically lucid considerations of Rayleigh seem to contain the heart of the distinction between the principles of minimum and maximum rates of dissipation of energy and entropy production, which have been developed in the course of physical investigations by later authors.
+
+\subsection{Current state of affairs}
+
+- near equilibrium least dissipation
+- near-equilibrium minEP
+- near-equilibrium maxEP
+- far from equilibrium non-variational maxEP
+- far from equilibrium variational maxEP and optimization EP
+
+far from equilibrium usually means far from global equilibrium near local equalibrium.
+
 
 \section{General properties of irreversible processes}
 
 The term "irreversible process" is synonymous with a specific direction of time.
-To our best knowledge the direction of time is an emergent phenomena. 
+To our best knowledge the specific direction of time we experience is an emergent phenomena. 
 Isolated thermodynamic systems evolve in the direction of more probable states i.e. growing entropy.
 When they finally reach that state the direction of time ceases to exist for the whole system.
-Therefore in the description of irreversible processes the history of the systems evolution becomes relevant.
+Therefore in the description of irreversible processes the history of the system evolution becomes relevant.
+
+\section{Relation between fluctuation theorem and MEP}
+\section{Statistical measures of complexity}
+
+\section{Growth of complexity}
+
+
+[In quantum computation, the notion of complexity refers to the minimum number of gates needed to prepare a certain state from a reference state. This pragmatic notion has now been related to something more exotic: black hole horizons. More precisely, it has been conjectured that the growth of the volume of a black hole interior is dual to the growthin computational complexity. Adam Brown and colleagues revisited this conjecture and restated it, this time relating complexity to the action of a particular type of spacetime region called a Wheeler–DeWitt patch. In other words, the computational complexity of a boundary relates to the geometry of a bulk region.There are reasons to believe that the original conjecture, and hence the new one, is likely to be correct. Interestingly, the new conjecture may have deeper implications connecting quantum information and quantum gravity. And it also suggests that black holes could reach the physical limits of computation determined by the fundamental constants. In this sense, black holes are the fastest computers in the known universe.]
+
+\bibliographystyle{ieeetr}
+\bibliography{Refs}
+
 
 \end{document}

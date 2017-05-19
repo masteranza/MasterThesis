@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      5139,        152]
+NotebookDataLength[      5140,        152]
 NotebookOptionsPosition[      3560,         99]
-NotebookOutlinePosition[      3913,        115]
-CellTagsIndexPosition[      3870,        112]
+NotebookOutlinePosition[      3915,        115]
+CellTagsIndexPosition[      3872,        112]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -97,8 +97,8 @@ Cell[TextData[{
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{718, 855},
-WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+WindowSize->{1436, 855},
+WindowMargins->{{-4, Automatic}, {Automatic, 0}},
 FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 16, \
 2017)",
 StyleDefinitions->"Science.nb"
@@ -126,7 +126,7 @@ Cell[CellGroupData[{
 Cell[1023, 35, 170, 2, 38, "Subsection", "ExpressionUUID" -> \
 "03b7ee71-ffe9-4a95-9999-d8d1cc592a76",
  CellID->946914969],
-Cell[1196, 39, 319, 5, 61, "Text", "ExpressionUUID" -> \
+Cell[1196, 39, 319, 5, 37, "Text", "ExpressionUUID" -> \
 "bbe6380d-cdea-417e-a4ff-8f5b656c9897",
  CellID->937781279],
 Cell[1518, 46, 267, 5, 36, "Text", "ExpressionUUID" -> \
@@ -137,10 +137,10 @@ Cell[CellGroupData[{
 Cell[1822, 56, 178, 2, 38, "Subsection", "ExpressionUUID" -> \
 "f25b89ac-6bee-4e94-b683-c26323d0bda0",
  CellID->1206165265],
-Cell[2003, 60, 551, 9, 136, "Text", "ExpressionUUID" -> \
+Cell[2003, 60, 551, 9, 62, "Text", "ExpressionUUID" -> \
 "b170eaf6-9de6-469b-912e-4ee16adb2bb0",
  CellID->1503482777],
-Cell[2557, 71, 388, 6, 85, "Text", "ExpressionUUID" -> \
+Cell[2557, 71, 388, 6, 61, "Text", "ExpressionUUID" -> \
 "9f30c5df-9d14-413d-a6f5-fd3f3a4d23f5",
  CellID->2133700465]
 }, Open  ]]
@@ -149,7 +149,7 @@ Cell[CellGroupData[{
 Cell[2994, 83, 94, 1, 63, "Section", "ExpressionUUID" -> \
 "85b49009-1d41-4e7f-8b9b-bb4247fe8f3a",
  CellID->459086900],
-Cell[3091, 86, 441, 9, 61, "Text", "ExpressionUUID" -> \
+Cell[3091, 86, 441, 9, 37, "Text", "ExpressionUUID" -> \
 "521a0203-d5e2-45ab-b5dd-204c05ebc448",
  CellID->2126049612]
 }, Open  ]]

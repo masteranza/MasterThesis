@@ -1,0 +1,994 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     37986,        986]
+NotebookOptionsPosition[     27973,        709]
+NotebookOutlinePosition[     28326,        725]
+CellTagsIndexPosition[     28283,        722]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Non-equilibrium systems and growth of complexity", "Title",
+ CellChangeTimes->{3.703572062249501*^9},
+ CellID->480179159,ExpressionUUID->"1436bb69-33ae-4860-9a7f-746d1bea9161"],
+
+Cell[CellGroupData[{
+
+Cell["Departure(s) from equilibrium", "Section",
+ CellChangeTimes->{{3.703572071249159*^9, 3.7035720799493*^9}, {
+  3.7041004289799337`*^9, 3.7041004292560387`*^9}},
+ CellID->316829191,ExpressionUUID->"89865eed-69e7-41d0-9512-fd6d9c8bcafd"],
+
+Cell["\<\
+Almost two centuries have passed since birth of equilibrium thermodynamics, \
+but it took almost a *hundred* years before the principles were finally \
+settled and a microscopic picture emerged under the name of statistical \
+mechanics. [Citation?]\
+\>", "Text",
+ CellChangeTimes->{{3.70357395024518*^9, 3.7035739516100883`*^9}, {
+  3.70357403164819*^9, 3.703574058436037*^9}, {3.70357417020148*^9, 
+  3.703574338118222*^9}, {3.704100084298455*^9, 3.704100088434952*^9}},
+ CellID->1982704394,ExpressionUUID->"b777abb4-1878-4fd4-8c3e-34c3976f10f2"],
+
+Cell["\<\
+Systems out of equilibrium can exhibit a variety of behaviours including \
+relaxation, ageing, various meta\[Dash]stable states, and steady-states.\
+\>", "Text",
+ CellChangeTimes->{{3.70367319678648*^9, 3.703673253982864*^9}, {
+  3.704105532444461*^9, 3.704105541468438*^9}},
+ CellID->370967927,ExpressionUUID->"1c675fd9-71fe-4199-a3df-12cf4a8af402"],
+
+Cell["Near equilibrium results", "Subsection",
+ CellChangeTimes->{{3.704100228419276*^9, 3.7041002311970587`*^9}, {
+  3.704102111440761*^9, 3.704102112492375*^9}},
+ CellID->1611293144,ExpressionUUID->"f4ad8832-0ef7-4920-bfd3-b2e1abb569ef"],
+
+Cell[CellGroupData[{
+
+Cell["Extensions that did not work", "Subsection",
+ CellChangeTimes->{{3.7041002329841003`*^9, 3.704100238107959*^9}},
+ CellID->780955137,ExpressionUUID->"16c689d7-0205-4102-9450-44c56c6d7dfb"],
+
+Cell["\<\
+Prigogine himself noted [From being to becoming]:
+\[OpenCurlyDoubleQuote]It came as a great surprise when it was shown that in \
+systems far from equilibrium the thermodynamic behavior could be quite \
+different\[LongDash]in fact, even directly opposite that predicted by the \
+theorem of minimum entropy production.\[CloseCurlyDoubleQuote]\
+\>", "Text",
+ CellChangeTimes->{{3.7041002710305157`*^9, 3.704100283407484*^9}, {
+  3.70410041168723*^9, 3.704100415975812*^9}},
+ CellID->705580194,ExpressionUUID->"c8955f1b-4285-46e9-9e8d-96457b5ec9dc"],
+
+Cell["\<\
+Dewar and Maritan [Beyond the Second Law] showed using Jaynes\
+\[CloseCurlyQuote]s maximum entropy method that a state of minimum \
+dissipation (MinEP) is selected for a system without dynamic instability, \
+whereas that of maximum dissipation (MaxEP) is selected for a system with \
+dynamic instability.\
+\>", "Text",
+ CellChangeTimes->{{3.7041021337584467`*^9, 3.704102145915536*^9}},
+ CellID->1258904528,ExpressionUUID->"eb328aef-b077-4643-b26e-49a3ba471d4d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Solid extensions to deep in-equilibrium", "Subsection",
+ CellChangeTimes->{{3.704100240635016*^9, 3.704100254998258*^9}},
+ CellID->1605455683,ExpressionUUID->"a20a0b97-2e2d-4dd9-9a89-ca3dc6493c65"],
+
+Cell["\<\
+In 1993 Evans et al discovered a relation known as the Fluctuation Theorem \
+(FT), which gives an analytical expression for the probability of observing \
+Second Law violating dynamical fluctuations in thermostatted dissipative mp\
+\>", "Text",
+ CellChangeTimes->{{3.70411586991998*^9, 3.704115906076915*^9}, {
+  3.704115939125086*^9, 3.704116025765068*^9}},
+ CellID->2034173393,ExpressionUUID->"aa07b7df-86c5-49d6-b671-7ed75c6e38f1"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Tools and techniques allowing an extension", "Section",
+ CellChangeTimes->{{3.703574437393242*^9, 3.703574449126854*^9}},
+ CellID->14396842,ExpressionUUID->"663ca696-6878-4152-96de-a3f8916fb7c8"],
+
+Cell["General properties of irreversible processes", "Subsection",
+ CellChangeTimes->{3.703572318879211*^9},
+ CellID->1752772157,ExpressionUUID->"e26b239a-6d04-44b9-8866-752da62ed2ad"],
+
+Cell[CellGroupData[{
+
+Cell["Steady states", "Subsection",
+ CellChangeTimes->{{3.70357209404036*^9, 3.703572098382086*^9}, {
+  3.703673302189034*^9, 3.703673305226144*^9}, {3.703673362073679*^9, 
+  3.703673362471863*^9}},
+ CellID->589455363,ExpressionUUID->"daed1f46-9536-49d5-b0ac-453e5aa25a1f"],
+
+Cell["\<\
+The most basic of non\[Dash]equilibrium conditions, the steady state is \
+already difficult to describe as may of the basic state functions (including \
+temperature and entropy), are undefined for far from equilibrium states and \
+the distribution function of a steady state is fractal and \
+non\[Dash]analytic. \
+\>", "Text",
+ CellChangeTimes->{{3.703673315222427*^9, 3.7036735073303223`*^9}, {
+  3.703678845536379*^9, 3.703678862847822*^9}},
+ CellID->387750346,ExpressionUUID->"167a4bda-94e1-41d5-bac7-0d76bcb6c07a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Local equilibrium", "Subsection",
+ CellChangeTimes->{{3.70357209404036*^9, 3.703572102333992*^9}},
+ CellID->816549951,ExpressionUUID->"556d6e91-ef8d-44c0-976a-e35facc311bc"],
+
+Cell["\<\
+The thermodynamical variables are defined subject to the kinematical \
+requirement of local thermodynamic equilibrium. This means that collisions \
+between molecules are so frequent that chemical and radiative processes do \
+not disrupt the local Maxwell-Boltzmann distribution of molecular velocities.\
+\
+\>", "Text",
+ CellChangeTimes->{3.7035721773363457`*^9},
+ CellID->238078885,ExpressionUUID->"38ad1ff3-9993-4293-8b6a-2e83953b11b0"],
+
+Cell["It is valid for hydrodynamic flows and chemical reactions", "Text",
+ CellChangeTimes->{{3.703574568578433*^9, 3.703574584029736*^9}},
+ CellID->307531649,ExpressionUUID->"4b9a7e81-cc42-4b8e-816d-50bf5457dd20"],
+
+Cell[CellGroupData[{
+
+Cell["Definition of temperature", "Subsubsection",
+ CellChangeTimes->{{3.70357216065121*^9, 3.703572164945015*^9}},
+ CellID->370488801,ExpressionUUID->"72626b10-f8dd-4a72-8296-c20e6326751e"],
+
+Cell["\<\
+When the temperature differences are \[OpenCurlyDoubleQuote]smooth\
+\[CloseCurlyDoubleQuote] enough, i.e., locally there is a reasonable \
+definition of temperature (local equilibrium), then the temperature gradient \
+determines the heat flux. In the opposite case, it is molecular kinetics who \
+determines the energy transfer. The latter happens much faster and local \
+equilibrium gets established quickly.\
+\>", "Text",
+ CellChangeTimes->{
+  3.703572170527711*^9, {3.703573329837782*^9, 3.703573346800823*^9}},
+ CellID->43584816,ExpressionUUID->"13b1a768-73c3-4d69-a3f1-ccd58a3eaa5b"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Entropy production", "Subsection",
+ CellChangeTimes->{{3.7035721437945833`*^9, 3.703572147179167*^9}},
+ CellID->564835256,ExpressionUUID->"211db716-4d51-4cd7-af12-2f1b1bac2866"],
+
+Cell["With the work of Lars Onsager", "Text",
+ CellChangeTimes->{{3.7036710839366083`*^9, 3.70367109115204*^9}},
+ CellID->1011846755,ExpressionUUID->"f311c589-6bde-42fb-a05a-84b72d3a45bb"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Dissipation function", "Subsection",
+ CellChangeTimes->{{3.703820549634654*^9, 3.703820553900165*^9}},
+ CellID->1446305333,ExpressionUUID->"b7e12d68-c94e-4383-97ba-5026279b253c"],
+
+Cell["\<\
+The dissipation function is similar to the entropy production, and although \
+it\[CloseCurlyQuote]s not a state function it provides description of \
+nonequilibrium systems through various fluctuation theorems. \
+\>", "Text",
+ CellChangeTimes->{{3.703820557511157*^9, 3.7038205893113213`*^9}, {
+   3.703847204468526*^9, 3.703847233080752*^9}, {3.7038476451672087`*^9, 
+   3.703847690622209*^9}, {3.703847721678594*^9, 3.703847769726349*^9}, {
+   3.7038478177724323`*^9, 3.703847825462349*^9}, 3.7038482832113667`*^9},
+ CellID->726159792,ExpressionUUID->"ffd0b606-03a4-4e5c-b554-b70e1a11a3c8"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Dissipation Theorem", "Subsection",
+ CellChangeTimes->{{3.70384848074407*^9, 3.703848483938134*^9}},
+ CellID->433205539,ExpressionUUID->"9a525833-a0db-4d20-9320-c993d99135ab"],
+
+Cell["\<\
+The Dissipation Theorem says that the nonlinear response of an arbitrary \
+phase variable can be calculated from the time integral of the nonequilibrium \
+transient time correlation function of the phase variable with the \
+dissipation function\
+\>", "Text",
+ CellChangeTimes->{{3.703848486411574*^9, 3.703848493476099*^9}},
+ CellID->1266874625,ExpressionUUID->"8fa0cad0-bf83-4517-b23d-a215079f3487"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[LeftAngleBracket]", 
+    RowBox[{"B", "(", "t", ")"}], "\[RightAngleBracket]"}], "=", 
+   RowBox[{
+    RowBox[{"\[LeftAngleBracket]", 
+     RowBox[{"B", "(", "0", ")"}], "\[RightAngleBracket]"}], "+", 
+    RowBox[{
+     UnderoverscriptBox["\[Integral]", "0", "t"], 
+     RowBox[{
+      RowBox[{"\[DifferentialD]", "s"}], "\[VeryThinSpace]", 
+      RowBox[{"\[LeftAngleBracket]", 
+       RowBox[{
+        RowBox[{"B", "(", "s", ")"}], 
+        RowBox[{"\[CapitalOmega]", "(", "0", ")"}]}], 
+       "\[RightAngleBracket]"}]}]}]}]}], TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.703848515609078*^9, 3.70384853549923*^9}},
+ CellID->233706032,ExpressionUUID->"4cec6755-18a9-4c3b-9f13-3b44d2402c76"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Relaxation Theorem", "Subsection",
+ CellChangeTimes->{{3.703848545823763*^9, 3.703848551097962*^9}},
+ CellID->1695330300,ExpressionUUID->"de895781-aeeb-49b8-80a2-cb5a5e02e320"],
+
+Cell["\<\
+The Relaxation Theorem says that if an arbitrary initial ensemble of ergodic \
+Hamiltonian systems is in contact with a heat bath and there is a decay of \
+temporal correlations, then the system will at long times, relax to the \
+Maxwell-Boltzmann distribution. Further, this distribution has zero \
+dissipation everywhere in phase space. For such systems no other distribution \
+has zero dissipation everywhere.\
+\>", "Text",
+ CellChangeTimes->{{3.703848561233959*^9, 3.703848561979784*^9}},
+ CellID->1040618336,ExpressionUUID->"1cea6438-15f0-4259-9eca-9a97be7e8638"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     UnderscriptBox["lim", 
+      RowBox[{"t", "\[Rule]", "\[Infinity]"}]], 
+     RowBox[{"\[CapitalOmega]", "(", 
+      RowBox[{"\[CapitalGamma]", ";", 
+       RowBox[{"f", "(", 
+        RowBox[{"\[CapitalGamma]", ",", "t"}], ")"}]}], ")"}]}], "=", "0"}], 
+   ",", " ", 
+   RowBox[{"\[ForAll]", "\[CapitalGamma]"}]}], TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.703848585406863*^9, 3.703848607171286*^9}},
+ CellID->96562022,ExpressionUUID->"eabd0eec-2c8c-4f56-bbe8-d3153bd007a5"],
+
+Cell["\<\
+A system can relax to equilibrium in two ways: conformally and \
+non\[Dash]conformally.\
+\>", "Text",
+ CellChangeTimes->{{3.703855825162538*^9, 3.7038558532608843`*^9}},
+ CellID->440815411,ExpressionUUID->"d089bdc6-acbf-470e-a210-a3a759cf8b40"],
+
+Cell["\<\
+Each of the above results is exact arbitrarily far from equilibrium and \
+independent of system size.\
+\>", "Text",
+ CellChangeTimes->{{3.703848662567513*^9, 3.703848669059971*^9}},
+ CellID->1381736693,ExpressionUUID->"18661c19-7b9c-4d24-bfc1-690b3af5ba03"],
+
+Cell["", "Text",
+ CellID->37384953,ExpressionUUID->"9da34f40-95ad-43a4-8d99-9b7fe9e98bf5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Nonequilibrium relations", "Subsection",
+ CellChangeTimes->{{3.694592946757186*^9, 3.694592956900832*^9}},
+ CellID->1187229429,ExpressionUUID->"b6e54c69-bc69-49b2-8ab0-8cdb629fa03b"],
+
+Cell["\<\
+There exist only a handful of relations correct arbitrarily far from \
+equilibrium, these include:\
+\>", "Text",
+ CellChangeTimes->{{3.6932969384096622`*^9, 3.6932970347055883`*^9}, {
+  3.693297074752191*^9, 3.693297075772324*^9}, {3.694592003497333*^9, 
+  3.694592031743691*^9}, {3.694592704695485*^9, 3.6945927102469587`*^9}},
+ CellID->911538871,ExpressionUUID->"4b190f4f-5b44-48d7-8951-690a8cf911f1"],
+
+Cell["Jarzy\:0144ski non-equilibrium work relation", "Item1",
+ CellChangeTimes->{{3.6945927120681562`*^9, 3.6945927395411453`*^9}, 
+   3.694592923439446*^9},
+ CellID->2073419845,ExpressionUUID->"4c5530f2-30e4-430c-a0ee-5398e5a80b7c"],
+
+Cell["\<\
+Gives equilibrium free energy differences in terms of non-equilibrium \
+measurements of the work required to switch from one ensemble to another\
+\>", "Comment",
+ CellChangeTimes->{{3.694592864918507*^9, 3.694592918967815*^9}},
+ CellID->1707661339,ExpressionUUID->"1f360934-a0f3-4871-a383-07da5076782f"],
+
+Cell["Kawasaki relation", "Item1",
+ CellChangeTimes->{{3.6945927120681562`*^9, 3.694592763349908*^9}},
+ CellID->1912527546,ExpressionUUID->"ca1c43c3-3d76-40d5-bbdd-bd68af401d26"],
+
+Cell["\<\
+Specifies the nonlinear response of a classical system to an arbitrarily \
+large perturbation\
+\>", "Comment",
+ CellChangeTimes->{{3.694592830938348*^9, 3.6945928585794077`*^9}},
+ CellID->1411371452,ExpressionUUID->"320de0d2-deb1-41ec-b511-0c223864d715"],
+
+Cell["Evans\[Dash]Searles transient fluctuation theorem", "Item1",
+ CellChangeTimes->{{3.6945927120681562`*^9, 3.694592774418014*^9}},
+ CellID->889680823,ExpressionUUID->"b01f2ca6-8ca9-4e44-9b20-f474400e843b"],
+
+Cell["\<\
+Provides information about the entropy production of driven systems that are \
+initially in equilibrium\
+\>", "Comment",
+ CellChangeTimes->{{3.694592784977412*^9, 3.694592807169447*^9}},
+ CellID->997026950,ExpressionUUID->"684e8910-5b5d-43ff-9439-acb7c0ba563a"],
+
+Cell[CellGroupData[{
+
+Cell["Commonalities", "Subsubsection",
+ CellChangeTimes->{{3.694593075481868*^9, 3.6945930777266283`*^9}},
+ CellID->368940032,ExpressionUUID->"f56c0729-7779-4083-8518-cc567c54333d"],
+
+Cell["Those relations have several commonalities:", "Text",
+ CellChangeTimes->{{3.694592979510817*^9, 3.694593010284527*^9}},
+ CellID->2045099667,ExpressionUUID->"c27869a8-bbfa-4eae-b901-02be8e16ec2b"],
+
+Cell[CellGroupData[{
+
+Cell["the system starts in thermal equilibrium", "Item1",
+ CellChangeTimes->{{3.69459301564357*^9, 3.694593028609776*^9}},
+ CellID->1203692759,ExpressionUUID->"4962cfb9-a9dc-41fa-92e8-61a113f849b3"],
+
+Cell["\<\
+it is driven from that equilibrium by an external perturbation\
+\>", "Item1",
+ CellChangeTimes->{{3.69459301564357*^9, 3.694593052544911*^9}},
+ CellID->418888080,ExpressionUUID->"f1ccb269-3c8d-4833-8cee-be671d65591c"],
+
+Cell["the energy of the system always remains finite", "Item1",
+ CellChangeTimes->{{3.69459301564357*^9, 3.694593064640369*^9}},
+ CellID->2040810587,ExpressionUUID->"07ec449d-6f3a-4ff5-94f6-9b526b5c96de"],
+
+Cell["the dynamics are markovian ", "Item1",
+ CellChangeTimes->{{3.69459301564357*^9, 3.694593089072241*^9}},
+ CellID->1223444689,ExpressionUUID->"d72d5dae-129a-463c-8468-cff7aebab9f9"],
+
+Cell["\<\
+if the system is unperturbed then the dynamics preserve the equilibrium \
+ensemble\
+\>", "Item1",
+ CellChangeTimes->{{3.69459301564357*^9, 3.694593109318136*^9}},
+ CellID->985290726,ExpressionUUID->"bd6adb17-be7f-48fc-bf80-c73574af3cc1"]
+}, Open  ]],
+
+Cell["\<\
+It\[CloseCurlyQuote]s clear from that a system with these properties is \
+microscopically reversible.\
+\>", "Text",
+ CellChangeTimes->{{3.694593119697138*^9, 3.69459314669518*^9}, 
+   3.694593267076119*^9},
+ CellID->1895220346,ExpressionUUID->"d1470841-88f9-4277-a441-3ffc055492f4"],
+
+Cell["\<\
+All those relations can be considered a special cases of a single theorem\
+\>", "Text",
+ CellChangeTimes->{{3.6945931632641277`*^9, 3.6945931788452053`*^9}},
+ CellID->1193836511,ExpressionUUID->"9ffa5750-24cd-472e-806f-dfa2d8cc529a"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   SubscriptBox[
+    RowBox[{
+    "\[LeftAngleBracket]", "\[ScriptCapitalF]", "\[RightAngleBracket]"}], 
+    "F"], "=", 
+   SubscriptBox[
+    RowBox[{"\[LeftAngleBracket]", 
+     RowBox[{
+      OverscriptBox["\[ScriptCapitalF]", "^"], 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"-", "\[Beta]"}], "\[VeryThinSpace]", 
+        SubscriptBox["W", "d"]}]]}], "\[RightAngleBracket]"}], "R"]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.6945931830750427`*^9, 3.6945932071792088`*^9}},
+ CellID->1021835520,ExpressionUUID->"fb0238fe-de2c-4afa-9ac3-c61632c02687"],
+
+Cell[TextData[{
+ "Where ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox[
+    RowBox[{
+    "\[LeftAngleBracket]", "\[ScriptCapitalF]", "\[RightAngleBracket]"}], 
+    "F"], TraditionalForm]], "EquationNumbered",
+  CellChangeTimes->{{3.6945931830750427`*^9, 3.694593192109186*^9}},
+  ExpressionUUID->"3d1c0b68-fb0f-4c5f-8b44-89ef7c35fae9"],
+ " indicates the average of the path function ",
+ Cell[BoxData[
+  FormBox["\[ScriptCapitalF]", TraditionalForm]],ExpressionUUID->
+  "bb9a035a-b8a5-4964-a08a-d1779bebc715"],
+ " which is implicitly an average over a suitably defined ensemble of paths."
+}], "Text",
+ CellChangeTimes->{{3.694593231811224*^9, 3.694593261427143*^9}, {
+  3.694593410754321*^9, 3.694593456024461*^9}},
+ CellID->1068566553,ExpressionUUID->"16cdaac5-b8bf-4d6d-99f3-6c65694772d5"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Fluctuation Theorem", "Section",
+ CellChangeTimes->{{3.7035721495153*^9, 3.70357215320964*^9}},
+ CellID->1816895020,ExpressionUUID->"e29f4782-c8c3-4eec-a277-3edbfca11d40"],
+
+Cell["\<\
+The fluctuations theorems are a group of relations that describe the entropy \
+production of a finite classical system coupled to a constant temperature \
+heat bath, that is driven out of equilibrium by a time dependent work \
+process.
+Although the type of system, range of applicability, and the exact \
+interpretation differ, these theorems have the same general form,\
+\>", "Text",
+ CellChangeTimes->{{3.6932969384096622`*^9, 3.6932970347055883`*^9}, {
+  3.693297074752191*^9, 3.693297075772324*^9}},
+ CellID->470235192,ExpressionUUID->"6f9bccb2-990b-4986-85b7-b37484c7e123"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   FractionBox[
+    RowBox[{"P", "(", 
+     RowBox[{"+", "\[Sigma]"}], ")"}], 
+    RowBox[{"P", "(", 
+     RowBox[{"-", "\[Sigma]"}], ")"}]], "\[TildeEqual]", 
+   RowBox[{
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{"\[Tau]", "\[VeryThinSpace]", "\[Sigma]"}]], "."}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.693297037808236*^9, 3.693297073728806*^9}},
+ CellID->1923911492,ExpressionUUID->"9d0158e8-ea3b-42d5-82f2-16c87b094c48"],
+
+Cell[TextData[{
+ "The fluctuation theorem relates the probabilities of observing time \
+averaged values of a generalized entropy production (dissipation function), \
+for a time period ",
+ Cell[BoxData[
+  FormBox["t", TraditionalForm]],ExpressionUUID->
+  "68362702-5ffe-4062-b72c-3fe77f6e0963"],
+ ", "
+}], "Text",
+ CellChangeTimes->{{3.703848352105914*^9, 3.703848439883827*^9}},
+ CellID->1655879731,ExpressionUUID->"55221b3a-b4b4-4179-9f13-a9f2a778222b"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"\[CapitalOmega]", "(", "\[CapitalGamma]", ")"}], "\[Congruent]", 
+   RowBox[{
+    RowBox[{"ln", "(", 
+     FractionBox[
+      RowBox[{"f", "(", 
+       RowBox[{"\[CapitalGamma]", ",", "0"}], ")"}], 
+      RowBox[{"f", "(", 
+       RowBox[{
+        RowBox[{"\[CapitalGamma]", "(", "t", ")"}], ",", "0"}], ")"}]], ")"}],
+     "+", 
+    RowBox[{
+     UnderoverscriptBox["\[Integral]", "0", "t"], 
+     RowBox[{
+      RowBox[{"\[DifferentialD]", "s"}], "\[VeryThinSpace]", 
+      FractionBox[
+       RowBox[{
+        OverscriptBox["Q", "."], "(", "s", ")"}], 
+       RowBox[{
+        SubscriptBox["k", "B"], 
+        SubscriptBox["T", "res"]}]]}]}]}]}], TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.703848292842578*^9, 3.703848341740383*^9}},
+ CellID->1853038103,ExpressionUUID->"eff730cb-7d0c-4266-83bb-4db4e24a682b"],
+
+Cell[CellGroupData[{
+
+Cell["As a measure of irreversibility", "Subsection",
+ CellChangeTimes->{{3.704095673480122*^9, 3.70409568053566*^9}, 
+   3.7040975184347277`*^9},
+ CellID->1200112310,ExpressionUUID->"c45b24e8-ff0f-4dab-ae57-27671aaf9638"],
+
+Cell[TextData[{
+ "If we denote ",
+ Cell[BoxData[
+  FormBox["T", TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "f7977275-bca1-4f3e-a114-9017b3ef29ae"],
+ " as irreversibility then ",
+ Cell[BoxData[
+  FormBox["I", TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "ace3cc0b-7b5b-4e29-b4f0-165135f53e1b"],
+ " can be interpreted as a measure of ",
+ Cell[BoxData[
+  FormBox["T", TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "930e16c7-0fee-4482-bb75-86f0c5849ac1"],
+ "\[Dash]symmetry breaking."
+}], "Text",
+ CellChangeTimes->{{3.704097563979404*^9, 3.704097614655961*^9}},
+ CellID->1330239751,ExpressionUUID->"954b6345-8c78-46eb-a681-67b3bcfde8a4"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{"I", "=", 
+   RowBox[{"\[Integral]", 
+    RowBox[{
+     RowBox[{"p", "(", "x", ")"}], "ln", " ", 
+     FractionBox[
+      RowBox[{"p", "(", "x", ")"}], 
+      RowBox[{"p", "(", 
+       RowBox[{"T", " ", "x"}], ")"}]]}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.7040975241565533`*^9, 3.704097547121975*^9}},
+ CellID->1113531603,ExpressionUUID->"1a0ce526-a6cb-40fe-8160-5ac6362234aa"]
+}, Open  ]]
+}, Open  ]],
+
+Cell["Onsager relations", "Section",
+ CellChangeTimes->{{3.703572273398164*^9, 3.703572276386649*^9}},
+ CellID->1661288577,ExpressionUUID->"160ce093-288c-4408-b1ea-54a434ea2a73"],
+
+Cell[CellGroupData[{
+
+Cell["Search for a unifying principle", "Section",
+ CellChangeTimes->{3.7035722087674913`*^9},
+ CellID->629785834,ExpressionUUID->"1f01cbbc-6738-43ad-84fc-66a3159926c5"],
+
+Cell["\<\
+The search for variational or extremization principles in physics has a long \
+history of success. In classical mechanics, one finds the Lagrangian and \
+Hamiltonian formalisms with the principle of least action. In thermodynamics \
+and statistical physics of equilibrium state the principle of maximum entropy \
+reigns. 
+
+In 1912, Ehrenfest was the first who asked whether such a principle for a yet \
+unknown function could exist for non-equilibrium steady states. 
+
+This approach has also gained a lot of criticism.
+On the other hand, according to Kondepudi (2008),[7] and to Grandy (2008),[8] \
+there is no general rule that provides an extremum principle that governs the \
+evolution of a far-from-equilibrium system to a steady state. 
+Silhavy (1997)[11] offers the opinion that \"... the extremum principles of \
+thermodynamics ... do not have any counterpart for [non-equilibrium] steady \
+states (despite many claims in the literature).\" It follows that any general \
+extremal principle for a non-equilibrium problem will need to refer in some \
+detail to the constraints that are specific for the structure of the system \
+considered in the problem.
+\
+\>", "Text",
+ CellID->2011099622,ExpressionUUID->"a0ee6993-ccdb-4359-bfd2-7f93cbf82ca5"],
+
+Cell["\<\
+There seems to be a theoretical relationship between maximum irreversibility \
+and dynamic stability [Beyond the Second Law] a link suggested here by the \
+fact that MaxEnt/MaxEP predicts the same dissipation functional as Malkus\
+\[CloseCurlyQuote]s instability criterion in shear turbulence\
+\>", "Text",
+ CellChangeTimes->{{3.704097215999984*^9, 3.704097245211656*^9}, {
+  3.7040973583150463`*^9, 3.704097370860223*^9}},
+ CellID->1416786063,ExpressionUUID->"53c1163e-3c32-43e7-8f4c-afbb5f2d9dab"],
+
+Cell[CellGroupData[{
+
+Cell["Rayleigh\[CloseCurlyQuote]s insight", "Subsection",
+ CellChangeTimes->{3.703572223206604*^9},
+ CellID->1306226821,ExpressionUUID->"55ca33cc-78b2-456b-8820-150d7aa064b4"],
+
+Cell["\<\
+Studying jets of water from a nozzle, Rayleigh (1878,[27] 1896/1926[28]) \
+noted that when a jet is in a state of conditionally stable dynamical \
+structure, the mode of fluctuation most likely to grow to its full extent and \
+lead to another state of conditionally stable dynamical structure is the one \
+with the fastest growth rate. In other words, a jet can settle into a \
+conditionally stable state, but it is likely to suffer fluctuation so as to \
+pass to another, less unstable, conditionally stable state. He used like \
+reasoning in a study of Benard convection.[39] These physically lucid \
+considerations of Rayleigh seem to contain the heart of the distinction \
+between the principles of minimum and maximum rates of dissipation of energy \
+and entropy production, which have been developed in the course of physical \
+investigations by later authors.\
+\>", "Text",
+ CellID->28857266,ExpressionUUID->"a0981394-98e9-43c1-9b62-dd08aecd85fd"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Current state of affairs", "Section",
+ CellChangeTimes->{3.7035722442763166`*^9},
+ CellID->1820249087,ExpressionUUID->"39b15378-9ea4-48bc-b198-048f93b59c10"],
+
+Cell["\<\
+- near equilibrium least dissipation
+- near-equilibrium minEP
+- near-equilibrium maxEP
+- far from equilibrium non-variational maxEP
+- far from equilibrium variational maxEP and optimization EP
+
+far from equilibrium usually means far from global equilibrium near local \
+equalibrium.
+\
+\>", "Text",
+ CellChangeTimes->{3.703572338700877*^9},
+ CellID->1397381609,ExpressionUUID->"10759ae8-31da-4f6e-be83-35d15be179c5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["MaxEnt", "Section",
+ CellChangeTimes->{{3.703870381632506*^9, 3.703870392267462*^9}},
+ CellID->1042829075,ExpressionUUID->"d7dc33ab-1ae4-4850-80d3-255bfe37dbba"],
+
+Cell["\<\
+The essence of MaxEnt method can be summarized in the formula for \
+maximization of relative entropy (negative Kullback\[Dash]Leibler divergence)\
+\
+\>", "Text",
+ CellChangeTimes->{{3.7038703994523363`*^9, 3.703870466545923*^9}, {
+  3.703870528876133*^9, 3.703870533066588*^9}},
+ CellID->1179868051,ExpressionUUID->"1b784df3-c78c-4b04-bfd8-91893abd23d2"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"H", "(", 
+    RowBox[{"p", "||", "q"}], ")"}], "=", 
+   RowBox[{"-", 
+    RowBox[{
+     UnderscriptBox["\[Sum]", "i"], 
+     RowBox[{
+      SubscriptBox["p", "i"], "ln", " ", 
+      FractionBox[
+       SubscriptBox["p", "i"], 
+       SubscriptBox["q", "i"]]}]}]}]}], TraditionalForm]], "EquationNumbered",\
+
+ CellChangeTimes->{{3.70387047101*^9, 3.7038704886911373`*^9}},
+ CellID->434649498,ExpressionUUID->"a4f4aa30-9faf-4407-aa9f-882fc6a22edc"],
+
+Cell[TextData[{
+ "with respect to ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["p", "i"], TraditionalForm]],ExpressionUUID->
+  "bdd5f40e-680d-4076-8335-22573d9b9716"],
+ " (new aposteriori distribution). ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"H", "(", 
+    RowBox[{"p", "||", "q"}], ")"}], TraditionalForm]],ExpressionUUID->
+  "58fd0bf6-5754-472b-8414-fb0b20cc1b09"],
+ " can be interpreted as the information gained by using ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["p", "i"], TraditionalForm]],ExpressionUUID->
+  "cab1152b-3111-4b40-a0ee-68ad215fdec7"],
+ " instead of ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["q", "i"], TraditionalForm]],ExpressionUUID->
+  "540437c6-e109-4d94-8a82-0b40c5db41dd"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.7038704948716087`*^9, 3.703870544740944*^9}, {
+  3.703870647469431*^9, 3.703870679469623*^9}},
+ CellID->506254498,ExpressionUUID->"7c45c207-41c1-44fb-b535-fd5478e6922a"]
+}, Open  ]],
+
+Cell["Relation between fluctuation theorem and MEP", "Section",
+ CellChangeTimes->{3.703572259490941*^9},
+ CellID->2021853694,ExpressionUUID->"69008584-2f26-4959-966b-06ff3b4a36b1"],
+
+Cell["Statistical measures of complexity", "Section",
+ CellChangeTimes->{{3.704094601291769*^9, 3.704094607716281*^9}},
+ CellID->1121556831,ExpressionUUID->"9e60ae01-c069-4821-a3b2-dd886f7d9958"],
+
+Cell["Ziegler\[CloseCurlyQuote]s Maximum Dissipation", "Section",
+ CellChangeTimes->{{3.704096699389655*^9, 3.704096716448986*^9}},
+ CellID->181245310,ExpressionUUID->"32e73d30-7693-4c7e-baa3-d1027d296f23"]
+}, Open  ]]
+},
+WindowSize->{718, 855},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 16, \
+2017)",
+StyleDefinitions->"Science.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 182, 2, 108, "Title", "ExpressionUUID" -> \
+"1436bb69-33ae-4860-9a7f-746d1bea9161",
+ CellID->480179159],
+Cell[CellGroupData[{
+Cell[787, 28, 240, 3, 64, "Section", "ExpressionUUID" -> \
+"89865eed-69e7-41d0-9512-fd6d9c8bcafd",
+ CellID->316829191],
+Cell[1030, 33, 557, 9, 87, "Text", "ExpressionUUID" -> \
+"b777abb4-1878-4fd4-8c3e-34c3976f10f2",
+ CellID->1982704394],
+Cell[1590, 44, 360, 6, 61, "Text", "ExpressionUUID" -> \
+"1c675fd9-71fe-4199-a3df-12cf4a8af402",
+ CellID->370967927],
+Cell[1953, 52, 239, 3, 38, "Subsection", "ExpressionUUID" -> \
+"f4ad8832-0ef7-4920-bfd3-b2e1abb569ef",
+ CellID->1611293144],
+Cell[CellGroupData[{
+Cell[2217, 59, 193, 2, 38, "Subsection", "ExpressionUUID" -> \
+"16c689d7-0205-4102-9450-44c56c6d7dfb",
+ CellID->780955137],
+Cell[2413, 63, 555, 9, 110, "Text", "ExpressionUUID" -> \
+"c8955f1b-4285-46e9-9e8d-96457b5ec9dc",
+ CellID->705580194],
+Cell[2971, 74, 472, 8, 111, "Text", "ExpressionUUID" -> \
+"eb328aef-b077-4643-b26e-49a3ba471d4d",
+ CellID->1258904528]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3480, 87, 203, 2, 38, "Subsection", "ExpressionUUID" -> \
+"a20a0b97-2e2d-4dd9-9a89-ca3dc6493c65",
+ CellID->1605455683],
+Cell[3686, 91, 444, 7, 85, "Text", "ExpressionUUID" -> \
+"aa07b7df-86c5-49d6-b671-7ed75c6e38f1",
+ CellID->2034173393]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4179, 104, 201, 2, 64, "Section", "ExpressionUUID" -> \
+"663ca696-6878-4152-96de-a3f8916fb7c8",
+ CellID->14396842],
+Cell[4383, 108, 184, 2, 38, "Subsection", "ExpressionUUID" -> \
+"e26b239a-6d04-44b9-8866-752da62ed2ad",
+ CellID->1752772157],
+Cell[CellGroupData[{
+Cell[4592, 114, 273, 4, 38, "Subsection", "ExpressionUUID" -> \
+"daed1f46-9536-49d5-b0ac-453e5aa25a1f",
+ CellID->589455363],
+Cell[4868, 120, 528, 9, 110, "Text", "ExpressionUUID" -> \
+"167a4bda-94e1-41d5-bac7-0d76bcb6c07a",
+ CellID->387750346]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5433, 134, 179, 2, 38, "Subsection", "ExpressionUUID" -> \
+"556d6e91-ef8d-44c0-976a-e35facc311bc",
+ CellID->816549951],
+Cell[5615, 138, 447, 8, 109, "Text", "ExpressionUUID" -> \
+"38ad1ff3-9993-4293-8b6a-2e83953b11b0",
+ CellID->238078885],
+Cell[6065, 148, 214, 2, 37, "Text", "ExpressionUUID" -> \
+"4b9a7e81-cc42-4b8e-816d-50bf5457dd20",
+ CellID->307531649],
+Cell[CellGroupData[{
+Cell[6304, 154, 190, 2, 35, "Subsubsection", "ExpressionUUID" -> \
+"72626b10-f8dd-4a72-8296-c20e6326751e",
+ CellID->370488801],
+Cell[6497, 158, 598, 10, 110, "Text", "ExpressionUUID" -> \
+"13b1a768-73c3-4d69-a3f1-ccd58a3eaa5b",
+ CellID->43584816]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7144, 174, 183, 2, 38, "Subsection", "ExpressionUUID" -> \
+"211db716-4d51-4cd7-af12-2f1b1bac2866",
+ CellID->564835256],
+Cell[7330, 178, 188, 2, 37, "Text", "ExpressionUUID" -> \
+"f311c589-6bde-42fb-a05a-84b72d3a45bb",
+ CellID->1011846755]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7555, 185, 184, 2, 38, "Subsection", "ExpressionUUID" -> \
+"b7e12d68-c94e-4383-97ba-5026279b253c",
+ CellID->1446305333],
+Cell[7742, 189, 602, 9, 85, "Text", "ExpressionUUID" -> \
+"ffd0b606-03a4-4e5c-b554-b70e1a11a3c8",
+ CellID->726159792]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8381, 203, 181, 2, 38, "Subsection", "ExpressionUUID" -> \
+"9a525833-a0db-4d20-9320-c993d99135ab",
+ CellID->433205539],
+Cell[8565, 207, 410, 7, 85, "Text", "ExpressionUUID" -> \
+"8fa0cad0-bf83-4517-b23d-a215079f3487",
+ CellID->1266874625],
+Cell[8978, 216, 750, 18, 78, "Equation", "ExpressionUUID" -> \
+"4cec6755-18a9-4c3b-9f13-3b44d2402c76",
+ CellID->233706032]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9765, 239, 182, 2, 38, "Subsection", "ExpressionUUID" -> \
+"de895781-aeeb-49b8-80a2-cb5a5e02e320",
+ CellID->1695330300],
+Cell[9950, 243, 578, 9, 133, "Text", "ExpressionUUID" -> \
+"1cea6438-15f0-4259-9eca-9a97be7e8638",
+ CellID->1040618336],
+Cell[10531, 254, 549, 14, 43, "Equation", "ExpressionUUID" -> \
+"eabd0eec-2c8c-4f56-bbe8-d3153bd007a5",
+ CellID->96562022],
+Cell[11083, 270, 254, 5, 37, "Text", "ExpressionUUID" -> \
+"d089bdc6-acbf-470e-a210-a3a759cf8b40",
+ CellID->440815411],
+Cell[11340, 277, 267, 5, 61, "Text", "ExpressionUUID" -> \
+"18661c19-7b9c-4d24-bfc1-690b3af5ba03",
+ CellID->1381736693],
+Cell[11610, 284, 90, 1, 36, "Text", "ExpressionUUID" -> \
+"9da34f40-95ad-43a4-8d99-9b7fe9e98bf5",
+ CellID->37384953]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11737, 290, 188, 2, 38, "Subsection", "ExpressionUUID" -> \
+"b6e54c69-bc69-49b2-8ab0-8cdb629fa03b",
+ CellID->1187229429],
+Cell[11928, 294, 413, 7, 61, "Text", "ExpressionUUID" -> \
+"4b190f4f-5b44-48d7-8951-690a8cf911f1",
+ CellID->911538871],
+Cell[12344, 303, 233, 3, 29, "Item1", "ExpressionUUID" -> \
+"4c5530f2-30e4-430c-a0ee-5398e5a80b7c",
+ CellID->2073419845],
+Cell[12580, 308, 313, 5, 45, "Comment", "ExpressionUUID" -> \
+"1f360934-a0f3-4871-a383-07da5076782f",
+ CellID->1707661339],
+Cell[12896, 315, 178, 2, 28, "Item1", "ExpressionUUID" -> \
+"ca1c43c3-3d76-40d5-bbdd-bd68af401d26",
+ CellID->1912527546],
+Cell[13077, 319, 264, 5, 22, "Comment", "ExpressionUUID" -> \
+"320de0d2-deb1-41ec-b511-0c223864d715",
+ CellID->1411371452],
+Cell[13344, 326, 209, 2, 28, "Item1", "ExpressionUUID" -> \
+"b01f2ca6-8ca9-4e44-9b20-f474400e843b",
+ CellID->889680823],
+Cell[13556, 330, 271, 5, 45, "Comment", "ExpressionUUID" -> \
+"684e8910-5b5d-43ff-9439-acb7c0ba563a",
+ CellID->997026950],
+Cell[CellGroupData[{
+Cell[13852, 339, 181, 2, 35, "Subsubsection", "ExpressionUUID" -> \
+"f56c0729-7779-4083-8518-cc567c54333d",
+ CellID->368940032],
+Cell[14036, 343, 201, 2, 36, "Text", "ExpressionUUID" -> \
+"c27869a8-bbfa-4eae-b901-02be8e16ec2b",
+ CellID->2045099667],
+Cell[CellGroupData[{
+Cell[14262, 349, 198, 2, 29, "Item1", "ExpressionUUID" -> \
+"4962cfb9-a9dc-41fa-92e8-61a113f849b3",
+ CellID->1203692759],
+Cell[14463, 353, 227, 4, 29, "Item1", "ExpressionUUID" -> \
+"f1ccb269-3c8d-4833-8cee-be671d65591c",
+ CellID->418888080],
+Cell[14693, 359, 204, 2, 29, "Item1", "ExpressionUUID" -> \
+"07ec449d-6f3a-4ff5-94f6-9b526b5c96de",
+ CellID->2040810587],
+Cell[14900, 363, 185, 2, 29, "Item1", "ExpressionUUID" -> \
+"d72d5dae-129a-463c-8468-cff7aebab9f9",
+ CellID->1223444689],
+Cell[15088, 367, 247, 5, 29, "Item1", "ExpressionUUID" -> \
+"bd6adb17-be7f-48fc-bf80-c73574af3cc1",
+ CellID->985290726]
+}, Open  ]],
+Cell[15350, 375, 292, 6, 37, "Text", "ExpressionUUID" -> \
+"d1470841-88f9-4277-a441-3ffc055492f4",
+ CellID->1895220346],
+Cell[15645, 383, 243, 4, 37, "Text", "ExpressionUUID" -> \
+"9ffa5750-24cd-472e-806f-dfa2d8cc529a",
+ CellID->1193836511],
+Cell[15891, 389, 641, 17, 41, "EquationNumbered", "ExpressionUUID" -> \
+"fb0238fe-de2c-4afa-9ac3-c61632c02687",
+ CellID->1021835520],
+Cell[16535, 408, 788, 18, 65, "Text", "ExpressionUUID" -> \
+"16cdaac5-b8bf-4d6d-99f3-6c65694772d5",
+ CellID->1068566553]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17384, 433, 177, 2, 63, "Section", "ExpressionUUID" -> \
+"e29f4782-c8c3-4eec-a277-3edbfca11d40",
+ CellID->1816895020],
+Cell[17564, 437, 588, 10, 133, "Text", "ExpressionUUID" -> \
+"6f9bccb2-990b-4986-85b7-b37484c7e123",
+ CellID->470235192],
+Cell[18155, 449, 496, 13, 55, "EquationNumbered", "ExpressionUUID" -> \
+"9d0158e8-ea3b-42d5-82f2-16c87b094c48",
+ CellID->1923911492],
+Cell[18654, 464, 454, 10, 63, "Text", "ExpressionUUID" -> \
+"55221b3a-b4b4-4179-9f13-a9f2a778222b",
+ CellID->1655879731],
+Cell[19111, 476, 869, 24, 78, "Equation", "ExpressionUUID" -> \
+"eff730cb-7d0c-4266-83bb-4db4e24a682b",
+ CellID->1853038103],
+Cell[CellGroupData[{
+Cell[20005, 504, 222, 3, 38, "Subsection", "ExpressionUUID" -> \
+"c45b24e8-ff0f-4dab-ae57-27671aaf9638",
+ CellID->1200112310],
+Cell[20230, 509, 710, 19, 63, "Text", "ExpressionUUID" -> \
+"954b6345-8c78-46eb-a681-67b3bcfde8a4",
+ CellID->1330239751],
+Cell[20943, 530, 443, 12, 55, "EquationNumbered", "ExpressionUUID" -> \
+"1a0ce526-a6cb-40fe-8160-5ac6362234aa",
+ CellID->1113531603]
+}, Open  ]]
+}, Open  ]],
+Cell[21413, 546, 178, 2, 64, "Section", "ExpressionUUID" -> \
+"160ce093-288c-4408-b1ea-54a434ea2a73",
+ CellID->1661288577],
+Cell[CellGroupData[{
+Cell[21616, 552, 169, 2, 38, "Section", "ExpressionUUID" -> \
+"1f01cbbc-6738-43ad-84fc-66a3159926c5",
+ CellID->629785834],
+Cell[21788, 556, 1261, 22, 449, "Text", "ExpressionUUID" -> \
+"a0ee6993-ccdb-4359-bfd2-7f93cbf82ca5",
+ CellID->2011099622],
+Cell[23052, 580, 509, 8, 86, "Text", "ExpressionUUID" -> \
+"53c1163e-3c32-43e7-8f4c-afbb5f2d9dab",
+ CellID->1416786063],
+Cell[CellGroupData[{
+Cell[23586, 592, 175, 2, 38, "Subsection", "ExpressionUUID" -> \
+"55ca33cc-78b2-456b-8820-150d7aa064b4",
+ CellID->1306226821],
+Cell[23764, 596, 964, 14, 258, "Text", "ExpressionUUID" -> \
+"a0981394-98e9-43c1-9b62-dd08aecd85fd",
+ CellID->28857266]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24777, 616, 163, 2, 63, "Section", "ExpressionUUID" -> \
+"39b15378-9ea4-48bc-b198-048f93b59c10",
+ CellID->1820249087],
+Cell[24943, 620, 425, 12, 205, "Text", "ExpressionUUID" -> \
+"10759ae8-31da-4f6e-be83-35d15be179c5",
+ CellID->1397381609]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25405, 637, 167, 2, 63, "Section", "ExpressionUUID" -> \
+"d7dc33ab-1ae4-4850-80d3-255bfe37dbba",
+ CellID->1042829075],
+Cell[25575, 641, 364, 7, 62, "Text", "ExpressionUUID" -> \
+"1b784df3-c78c-4b04-bfd8-91893abd23d2",
+ CellID->1179868051],
+Cell[25942, 650, 493, 15, 58, "EquationNumbered", "ExpressionUUID" -> \
+"a4f4aa30-9faf-4407-aa9f-882fc6a22edc",
+ CellID->434649498],
+Cell[26438, 667, 916, 26, 68, "Text", "ExpressionUUID" -> \
+"7c45c207-41c1-44fb-b535-fd5478e6922a",
+ CellID->506254498]
+}, Open  ]],
+Cell[27369, 696, 181, 2, 63, "Section", "ExpressionUUID" -> \
+"69008584-2f26-4959-966b-06ff3b4a36b1",
+ CellID->2021853694],
+Cell[27553, 700, 195, 2, 38, "Section", "ExpressionUUID" -> \
+"9e60ae01-c069-4821-a3b2-dd886f7d9958",
+ CellID->1121556831],
+Cell[27751, 704, 206, 2, 38, "Section", "ExpressionUUID" -> \
+"32e73d30-7693-4c7e-baa3-d1027d296f23",
+ CellID->181245310]
+}, Open  ]]
+}
+]
+*)
+
