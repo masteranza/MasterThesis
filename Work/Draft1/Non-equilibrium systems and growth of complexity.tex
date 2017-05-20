@@ -42,6 +42,34 @@ ul. {\L }ojasiewicza 11, 30-348 Krak—w, Polska }
 
 \maketitle
 
+\section{Departure from equilibrium}
+
+Almost a hundred fifty years (1870s) have passed since Ludwig Boltzmann proposed his statistical interpretation of entropy, which back then created a heated debate among prominent physicists of that time. 
+One of the opposing arguments known as the Loschmidt paradox, has been understood long ago to be no threat to the Second Law of Thermodynamics. However the formal argument defending the Second Law appeared as late as in 1993, under the name of The Fluctuation Theorem discovered by Evans at al.
+
+This example demonstrates the enormous difficulties connected with justification of (equilibrium) physical intuitions into firm mathematical formalism which in fact required the departure into non-equilibrium statistical mechanics.
+
+[...]
+
+Systems out of equilibrium can exhibit a variety of behaviours including relaxation, ageing, various meta-stable states, and steady states.
+Even at steady state the difficulties seem to pile up as the basic state functions, such as temperature or entropy cease to exist outside of near equilibrium and the distribution functions appear fractal and non-analytic \cite{Dewar:2014ek}.
+
+\subsection{Near equilibrium results}
+
+Green-Kubo relations
+
+\subsection{Extensions that did not work}
+Prigogine himself noted \cite{Prigogine:1979ul}:
+"It came as a great surprise when it was shown that in systems far from equilibrium the thermodynamic behavior could be quite different-in fact, even directly opposite that predicted by the theorem of minimum entropy production."
+
+Dewar and Maritan \cite{Dewar:2014ek} showed using Jaynes's maximum entropy method that a state of minimum dissipation (MinEP) is selected for a system without dynamic instability, whereas that of maximum dissipation (MaxEP) is selected for a system with dynamic instability.
+\subsection{Solid extensions to deep in-equilibrium}
+In 1993 Evans et al discovered a relation known as the Fluctuation Theorem (FT), which gives an analytical expression for the probability of observing Second Law violating dynamical fluctuations in thermostatted dissipative non-equilibrium systems.
+The Fluctuation Theorem does much more than merely prove that in large systems observed for long periods of time, the Second Law is overwhelmingly likely to be valid. The Fluctuation Theorem quantifies the probability of observing violations of the Second Law in small systems observed for a short period of time \cite{Evans:2002gy}. The quantitative predictions made by the fluctuation theorem have been confirmed experimentally, both using laboratory experiments and using molecular dynamics computer simulations.
+
+\newpage
+\section{General properties of irreversible processes}
+
 \section*{Summary of Schr{\" o}dinger{'}s contributions}
 
 By writing his book {``}What is life?{''} (1944) Schr{\" o}dinger inspired generations of physicists to answer the alluring (though not easy) question
@@ -81,7 +109,7 @@ Prigogine nobel prize lecture {``}Time, structure and fluctuations{''} begins wi
 system posses a different type of functional order which can be traced to their non$--$equilibrium state. This statement is consistent with the today{'}s
 predominant view.
 
-{``}However thermodynamic potentials exist only for exceptional situations{''} - is that true?
+{``}However thermodynamic potentials exist only for exceptional situations{''}
 
 One of his often cited contributions is connected with a term for entropy for open systems, an extension of Clausius entropy for isolated systems:
 
@@ -149,25 +177,6 @@ The essence of MaxEnt method can be summarized in the formula for maximization o
 \end{displaymath}
 with respect to $p_i$ (new aposteriori distribution). $H(p||q)$ can be interpreted as the information gained by using $p_i$ instead of $q_i$.
 
-\section{Departure from equilibrium}
-
-Almost two centuries have passed since birth of equilibrium thermodynamics, but it took almost a *hundred* years before the principles were finally settled and a microscopic picture emerged under the name of statistical mechanics. 
-
-Systems out of equilibrium can exhibit a variety of behaviours including relaxation, ageing, various meta-stable states, and steady-states.
-
-\subsection{Near equilibrium results}
-\subsection{Extensions that did not work}
-Prigogine himself noted \cite{Prigogine:1979ul}:
-"It came as a great surprise when it was shown that in systems far from equilibrium the thermodynamic behavior could be quite different-in fact, even directly opposite that predicted by the theorem of minimum entropy production."
-
-Dewar and Maritan \cite{Dewar:2014ek} showed using Jaynes's maximum entropy method that a state of minimum dissipation (MinEP) is selected for a system without dynamic instability, whereas that of maximum dissipation (MaxEP) is selected for a system with dynamic instability.
-\subsection{Solid extensions to deep in-equilibrium}
-In 1993 Evans et al discovered a relation known as the Fluctuation Theorem (FT), which gives an analytical expression for the probability of observing Second Law violating dynamical fluctuations in thermostatted dissipative non-equilibrium systems.
-The Fluctuation Theorem does much more than merely prove that in large systems observed for long periods of time, the Second Law is overwhelmingly likely to be valid. The Fluctuation Theorem quantifies the probability of observing violations of the Second Law in small systems observed for a short period of time \cite{Evans:2002gy}. The quantitative predictions made by the fluctuation theorem have been confirmed experimentally, both using laboratory experiments and using molecular dynamics computer simulations.
-
-\newpage
-\section{General properties of irreversible processes}
-
 \section{Concepts of non-equilibrium thermodynamics}
 
 \subsection{Local equilibrium}
@@ -209,7 +218,10 @@ It's clear from that a system with these properties is microscopically reversibl
 All those relations can be considered a special cases of a single theorem
 
 \subsection{Dissipation function}
-
+The instantaneous dissipation function:
+\begin{displaymath}
+  \Omega_t(\Gamma(t))=\frac{d \Omega_t(\Gamma(0))}{dt}
+\end{displaymath}
 
 
 \begin{displaymath}
@@ -224,7 +236,9 @@ One of the reason for this situation is because we'd expect different fluctuatio
 Second reason, because of which we've got this diversity is that some of this theorems refer to non-equilibrium steady state fluctuations (e.g.), while others refer to transient fluctuations.
 For the needs of this we will further refer to Steady State Fluctuation Theorems (SSFT) valid in the long averaging times and Transient Fluctuation Theorems (TFT) which are exact for arbitrary averaging times.
 
-\subsection{Derivation of Fluctuation Theorem}
+\subsubsection{Evans-Searles Fluctuation Theorem}
+Evans-Searles Fluctuation Theorem results in a generalisation of the Second Law of Thermodynamics so that it applies to small systems, including those that evolve far from equilibrium.
+It describes how a finite sized system's irreversibility develops in time from a completely time-reversible system at short observation times, to an irreversible one at long times or when the system's size increases. 
 ...
 
 We have now completed our derivation of the Transient Fluctuation Theorem
@@ -245,6 +259,10 @@ The fluctuation theorem relates the probabilities of observing time averaged val
 \begin{displaymath}
   \Omega(\Gamma) \equiv \ln \left(\frac{f(\Gamma ,0)}{f(\Gamma  t,0)}\right)+\underset{0}{\overset{t}{\int }}\frac{\left(\dot{Q} s\right) ds}{k_B T_{\text{res}}}
 \end{displaymath}
+
+\subsubsection{Crooks Fluctuation Theorem}
+
+Crooks Fluctuation Theorem, provides a method of predicting equilibrium free energy difference from ex- perimental information taken from nonequilibrium paths that connect two equi- librium states. This FT can be used to derive the well known Jarzynski Equality, which expresses the free energy difference between two equilibrium states in terms of an average over irreversible paths.
 
 \subsubsection{As a measure of irreversibility}
 If we denote T as irreversibility then I can be interpreted as a measure of T-symmetry breaking.
@@ -306,6 +324,7 @@ Therefore in the description of irreversible processes the history of the system
 
 \section{Relation between fluctuation theorem and MEP}
 \section{Statistical measures of complexity}
+\subsection{Kolmogorov complexity}
 
 \section{Growth of complexity}
 

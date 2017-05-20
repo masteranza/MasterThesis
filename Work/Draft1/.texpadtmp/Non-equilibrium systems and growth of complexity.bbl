@@ -1,18 +1,23 @@
 \begin{thebibliography}{1}
 
-\bibitem{Prigogine:1979ul}
-I.~Prigogine, {\em {From Being to Becoming: Time and Complexity in the Natural
-  Sciences}}.
-\newblock San Francisco: WH Freeman {\&} Co. Proust, 1979.
-
 \bibitem{Dewar:2014ek}
 R.~C. Dewar, C.~H. Lineweaver, R.~K. Niven, and K.~Regenauer-Lieb, ``{Beyond
   the Second Law: An Overview},'' in {\em Beyond the Second Law}, pp.~3--27,
   Berlin, Heidelberg: Springer Berlin Heidelberg, 2014.
 
+\bibitem{Prigogine:1979ul}
+I.~Prigogine, {\em {From Being to Becoming: Time and Complexity in the Natural
+  Sciences}}.
+\newblock San Francisco: WH Freeman {\&} Co. Proust, 1979.
+
 \bibitem{Evans:2002gy}
 D.~J. Evans and D.~J. Searles, ``{The Fluctuation Theorem},'' {\em Advances in
   Physics}, vol.~51, pp.~1529--1585, Nov. 2002.
+
+\bibitem{Evans:2002gg}
+D.~J. Evans and L.~Rondoni, ``{Comments on the Entropy of Nonequilibrium Steady
+  States},'' {\em Journal of Statistical Physics}, vol.~109, no.~3/4,
+  pp.~895--920, 2002.
 
 \bibitem{DeGroot:1984ue}
 S.~R. De~Groot and P.~Mazur, ``{Non-Equilibrium Thermodynamics}.'' Dover, New
