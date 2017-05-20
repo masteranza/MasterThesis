@@ -54,11 +54,69 @@ This example demonstrates the enormous difficulties connected with justification
 Systems out of equilibrium can exhibit a variety of behaviours including relaxation, ageing, various meta-stable states, and steady states.
 Even at steady state the difficulties seem to pile up as the basic state functions, such as temperature or entropy cease to exist outside of near equilibrium and the distribution functions appear fractal and non-analytic \cite{Dewar:2014ek}.
 
-\subsection{Near equilibrium results}
+Even though the descriptions of non-equilibrium phenomena are most often being associated with names of Prigogine or Schr{\" o}dinger which undeniably have had an enormous influence on the field in question, they were not however the first.
+The earliest efforts into explaining (near) non-equilibrium behaviour in a systematic way can be traced back to Einstein and theory of fluctuations [...] then to Lars Onsager's reciprocal relations
 
-Green-Kubo relations
+\subsection{Near equilibrium results and concepts}
 
-\subsection{Extensions that did not work}
+\subsubsection{Theory of Fluctuations}
+
+Let us consider an adiabatically insulated system and a number of variables $x^i (i=1,...,n)$ which in the equilibrium state assume values $ x_0^i $, we can account for small variations ($\alpha^i$) by setting
+
+\begin{displaymath}
+  x^i = x_0^i + \alpha^i.
+\end{displaymath}
+
+The entropy in a state differing from the equilibrium state will be $S=S_0+\Delta S$, where $\Delta S$ is of the form
+
+\begin{displaymath}
+  \Delta S = - \frac{1}{2} \sum_{i,k} S_{ik} \alpha^i \alpha^k
+\end{displaymath}
+where $ S_{ik} $ is a positive definite form. The probability distribution for the $\alpha^i$ is given by
+
+\begin{displaymath}
+  W(\alpha^1,...,\alpha^n)d\alpha^1 ... d\alpha^1= \frac{e^{k_B \Delta S} d\alpha^1...d\alpha^n}{\int ... \int e^{k_B \Delta S} d\alpha^1...d\alpha^n}
+\end{displaymath}
+
+where $k_B$ is Boltzmann's constant.
+
+Define
+
+\begin{equation}
+\gamma_i =\sum_k S_{ik} \alpha^k; \label{gammai}	
+\end{equation}
+  
+
+then it is easily shown that
+
+\begin{equation}
+\langle \gamma_i \alpha^l \rangle = k_B \delta_i^l	
+\end{equation}
+
+Assuming ergodicity, this average may be interpreted either as an average over a microcanonical ensemble of systems, or as a time average for one single system.
+By solving eq. \ref{gammai} for $\alpha^i $ we get
+
+\begin{equation}
+  \alpha^i=\sum_l S^{il}\gamma_l,
+\end{equation}
+and thus we find
+
+\begin{equation}
+	\langle \alpha^i \alpha^j \rangle = k_B S^{ij}   
+\end{equation}
+
+Let's suppose that $\alpha^i$ are even functions of the particle velocities with respect to time reversal.
+The fact that it's average future behaviour of a 
+
+
+\paragraph{Relation to detailed balance}
+
+The principle of detailed balance is formulated for kinetic systems which are decomposed into elementary processes
+\subsubsection{Reciprocal relations}
+\subsubsection{Green-Kubo relations}
+
+
+\subsection{Prigogine's MinEP}
 Prigogine himself noted \cite{Prigogine:1979ul}:
 "It came as a great surprise when it was shown that in systems far from equilibrium the thermodynamic behavior could be quite different-in fact, even directly opposite that predicted by the theorem of minimum entropy production."
 
@@ -100,14 +158,12 @@ systems.
 
 \section*{Summary of Prigogine contributions}
 
-The term {``}dissipative structures{''} was first used by Ilya Prigogine (http://bactra.org/notebooks/dissipative-structures.html) and although Prigogine
-ideas were not really correct ones it might be worth to recall some of them.
+The term {``}dissipative structures{''} was first used by Ilya Prigogine (http://bactra.org/notebooks/dissipative-structures.html) and although Prigogine ideas were not really correct ones it might be worth to recall some of them.
 
 \subsection*{Nobel Lecture (8 December 1977)}
 
 Prigogine nobel prize lecture {``}Time, structure and fluctuations{''} begins with the critique of Helmholtz free energy and the assertion that living
-system posses a different type of functional order which can be traced to their non$--$equilibrium state. This statement is consistent with the today{'}s
-predominant view.
+system posses a different type of functional order which can be traced to their non$--$equilibrium state. This statement is consistent with the today{'}s predominant view.
 
 {``}However thermodynamic potentials exist only for exceptional situations{''}
 
@@ -193,6 +249,8 @@ This spontaneous production of entropy is given by the entropy production per un
   \int d\bm{r} \sigma(\bm{r},t)=\int d\bm{r}(\sum_i J_i(\bm{r},t)X_i(\bm{r},t))>0,
 \end{displaymath}
 where $J_i(\bm{r},t)$ are the Navier-Stokes hydrodynamic fluxes (e.g. the stress tensor, heat flux vector,...) at position $\bm{r}$ and time $t$ and $X_i$ is the thermodynamic force which is conjugate to $J_i(\bm{r},t)$ (e.g. strain rate tensor divided by temperature or the gradient of the reciprocal of temperature,... respectively).
+
+Limitations:
 
 \subsection{Steady states}
 The most basic of non-equilibrium conditions, the steady state is already difficult to describe as may of the basic state functions (including temperature and entropy), are undefined for far from equilibrium states and the distribution function of a steady state is fractal and non-analytic. 
