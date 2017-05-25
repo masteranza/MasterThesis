@@ -3,6 +3,14 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: /Users/masteranza/Projects/MasterThesis/Work/Draft1/.texpadtmp/Non-equilibrium systems and growth of complexity.aux
 The style file: ieeetr.bst
 Database file #1: ../Refs.bib
+Repeated entry---line 2003 of file ../Refs.bib
+ : @book{Prigogine:1979ul
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2351 of file ../Refs.bib
+ : @book{Prigogine:1979ul
+ :                       ,
+I'm skipping whatever remains of this entry
 You've used 5 entries,
             1876 wiz_defined-function locations,
             516 strings with 4444 characters,
@@ -44,3 +52,4 @@ warning$ -- 0
 while$ -- 14
 width$ -- 6
 write$ -- 51
+(There were 2 error messages)

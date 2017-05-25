@@ -106,8 +106,52 @@ and thus we find
 \end{equation}
 
 Let's suppose that $\alpha^i$ are even functions of the particle velocities with respect to time reversal.
-The fact that it's average future behaviour of a 
+The fact that its average future behaviour is identical to it's average past behaviour can be expressed by the equation:
 
+\begin{equation}
+  \langle \alpha^k (t+\tau)_{\alpha^{i \neq k}} \rangle =   \langle \alpha^k(t-\tau)_{\alpha^{i \neq k}} \rangle
+\end{equation}
+
+where the suffixes denote the values that remain fixed. Multiplying by $\alpha^l(t)$ and taking the average, we find
+
+\begin{equation}
+  \langle \alpha^l(t) \alpha^k (t+\tau) \rangle = \langle \alpha^l(t) \alpha^k(t-\tau) \rangle
+\end{equation}
+
+In a similar manner, for odd functions of velocities we get
+
+\begin{equation}
+  \langle \beta^l(t) \beta^k (t+\tau) \rangle = \langle - \beta^l(t) \beta^k(t-\tau) \rangle
+\end{equation}
+
+and also (by mixing odd and even functions) we get
+
+\begin{equation}
+  \langle \alpha^l(t) \beta^k (t+\tau) \rangle = \langle - \alpha^l(t) \beta^k(t-\tau) \rangle
+\end{equation}
+
+Those relations hold for all phenomena with the exception of coriolis and magnetic forces, but if we'd inverse those as well then the relations continue to hold.
+
+By rewritting the macroscopic equations, which are of the form
+
+\begin{equation}
+  \dot{\alpha^i}= \sum_k L_k^i \alpha_k
+\end{equation}
+
+into the form
+
+\begin{equation}
+  \dot{\alpha^i}= \sum_k p^{ik} \gamma_k
+\end{equation}
+
+We assume that the same equations also describe the average behaviour of fluctuations in the following sense: there exists a time interval $\tau_1$ suchthat for $\tau > \tau_1$, but $\tau \ll T$, where $T$ is the time in which, according to our equations, a disturbance of equilibrium is appreciably reduced; then
+
+\begin{equation}
+    \langle \alpha^l(t+\tau)- \alpha^l (t) \rangle = \tau \sum_k p^{ik} \gamma_k(t).
+\end{equation}
+
+
+		
 
 \paragraph{Relation to detailed balance}
 
@@ -124,6 +168,10 @@ Dewar and Maritan \cite{Dewar:2014ek} showed using Jaynes's maximum entropy meth
 \subsection{Solid extensions to deep in-equilibrium}
 In 1993 Evans et al discovered a relation known as the Fluctuation Theorem (FT), which gives an analytical expression for the probability of observing Second Law violating dynamical fluctuations in thermostatted dissipative non-equilibrium systems.
 The Fluctuation Theorem does much more than merely prove that in large systems observed for long periods of time, the Second Law is overwhelmingly likely to be valid. The Fluctuation Theorem quantifies the probability of observing violations of the Second Law in small systems observed for a short period of time \cite{Evans:2002gy}. The quantitative predictions made by the fluctuation theorem have been confirmed experimentally, both using laboratory experiments and using molecular dynamics computer simulations.
+
+\subsection{Gibbs entropy}
+
+In Hamiltonian systems Gibbs entropy stays constant.
 
 \newpage
 \section{General properties of irreversible processes}
@@ -238,8 +286,11 @@ with respect to $p_i$ (new aposteriori distribution). $H(p||q)$ can be interpret
 \subsection{Local equilibrium}
 The thermodynamical variables are often defined subject to the kinematical requirement of local thermodynamic equilibrium. This means that collisions between molecules are so frequent that chemical and radiative processes do not disrupt the local Maxwell-Boltzmann distribution of molecular velocities. This principle is valid for hydrodynamic flows and chemical reactions and it's formulation goes back to Clark Maxwell [Citation?].
 It's usage can be usually justified by assuming analyticity of thermodynamic state functions arbitrarily close to equilibrium - then, local equilibrium is obtained from first order expansion of thermodynamic properties in the irreversible fluxes ${X_i}$ \cite{Evans:2002gg}.
+
 \subsubsection{Definition of temperature}
 When the temperature differences are "smooth" enough, i.e., locally there is a reasonable definition of temperature (local equilibrium), then the temperature gradient determines the heat flux. In the opposite case, it is molecular kinetics who determines the energy transfer. The latter happens much faster and local equilibrium gets established quickly.
+
+On the other hand, far from equilibrium there might be a problem defining temperature and also Clausius entropy which depends on it. One of the solutions provided by Evans at al in  is to define temperature of non equilibrium state by the temperature of the target equilibrium state to which the system would otherwise relax.
 
 \subsection{Entropy production}
 
@@ -275,7 +326,16 @@ It's clear from that a system with these properties is microscopically reversibl
 
 All those relations can be considered a special cases of a single theorem
 
+\subsection{Dissipation}
+
+If external fields are applied to the system of particles and the external field does work on the system and if that work can be turned completely into heat that can diffuse out of the system, the external field is termed a dissipative field. If the work can be completely stored in the system in the form of potential energy, the external field is termed non-dissipative.
+
+A simple example of a system that turns from non-dissipative into a dissipative system is sodium chloride. In solid state it's an insulator (internal energy increases through polarization), but when heated to around 1100K, melts and becomes a conductor.
+
 \subsection{Dissipation function}
+
+Dissipation function was first properly (not implicitly) defined in 2000 by Searles and Evans 
+
 The instantaneous dissipation function:
 \begin{displaymath}
   \Omega_t(\Gamma(t))=\frac{d \Omega_t(\Gamma(0))}{dt}
@@ -287,6 +347,7 @@ The instantaneous dissipation function:
 \end{displaymath}
 
 The dissipation function is similar to the entropy production, and although it's not a state function it provides description of non-equilibrium systems through various fluctuation theorems.
+
 
 \subsection{Fluctuation Theorem}
 The Fluctuation Theorem is best regarded as a set of closely related theorems.
@@ -333,9 +394,24 @@ If we denote T as irreversibility then I can be interpreted as a measure of T-sy
 The Dissipation Theorem says that the nonlinear response of an arbitrary phase variable can be calculated from the time integral of the non-equilibrium transient time correlation function of the phase variable with the dissipation function
 
 
-\begin{displaymath}
-\langle B(t)\rangle =\langle B(0) \rangle +\int_0^t ds \langle B(s) \Omega(0) \rangle 
-\end{displaymath}
+\begin{equation}
+\langle B(t)\rangle =\langle B(0) \rangle +\int_0^t ds \langle B(s) \Omega(0) \rangle \label{disstheo}
+\end{equation}
+
+A simple consequence of this theorem can be read of immediately that is, for equilibrium (lack of dissipation) the ensemble averages stay constant.
+
+In systems in which the external field drives the system out of equilibrium in a linear manner (weak field), Eq. \ref{disstheo} reduces to Green-Kubo linear response relation.
+
+
+\subsubsection{$\Omega T$ Mixing}
+
+We say that a system possesses the property of $\Omega T$ mixing if the integral
+\begin{equation}
+  \int_0^t ds \langle B(s) \Omega(0) \rangle
+\end{equation}
+is bounded from above. This requirement let's us predict that the system will relax either to a non-equilibrium steady state or toward an equilibrium.
+
+This property is more restrictive than $T$ mixing known from ergodic theory, therefore if a system is $\Omega T$ mixing it's also $T$ mixing, but not necessarily the opposite.
 
 \subsection{Relaxation Theorem}
 The Relaxation Theorem says that if an arbitrary initial ensemble of ergodic Hamiltonian systems is in contact with a heat bath and there is a decay of temporal correlations, then the system will at long times, relax to the Maxwell-Boltzmann distribution. Further, this distribution has zero dissipation everywhere in phase space. For such systems no other distribution has zero dissipation everywhere.
@@ -345,6 +421,14 @@ The Relaxation Theorem says that if an arbitrary initial ensemble of ergodic Ham
 
 A system can relax to equilibrium in two ways: conformally and non-conformally.
 Each of the above results is exact arbitrarily far from equilibrium and independent of system size.
+
+
+\section{Models of time-reversible thermostat}
+
+\subsection{Nose-Hoover}
+
+By including a term $-S_i \alpha \bm{p}_i $ to the EOM we get a deterministic, time-reversible Nose-Hoover thermostat, which can be used to add or remove heat from the particles in the reservoir region through introduction of an extra degree of freedom described by $\alpha$
+
 
 \section{Search for a unifying principle}
 
