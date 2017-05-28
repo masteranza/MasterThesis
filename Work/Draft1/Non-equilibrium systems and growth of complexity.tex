@@ -3,9 +3,12 @@
 
 \usepackage{amsmath, amssymb, mathtools, verbatim, bm, xcolor, hyperref}
 %\usepackage[polish]{babel}
+\usepackage{polski}
 \usepackage[T1]{fontenc}
-\usepackage[macce]{inputenc}
+\usepackage[utf8]{inputenc}
+%\usepackage[macce]{inputenc}
 %\usepackage[latin2]{inputenc}
+
 \definecolor{lightgray}{gray}{0.90}
 \newtheorem{theorem}{Theorem}
 \usepackage{framed}
@@ -30,15 +33,15 @@
 
 \def\baselinestretch{1.2}
 
-\pagestyle{empty}
+%\pagestyle{empty}
 
 \begin{document}
 
 \title{Non-equilibrium systems and growth of complexity}
 
-\author{Micha{\l } Mandrysz \\
-Instytut Fizyki, Uniwersytet JagielloÄski,\\
-ul. {\L }ojasiewicza 11, 30-348 Krak—w, Polska }
+\author{Michal Mandrysz \\}
+%Instytut Fizyki, Uniwersytet Jagiellonski,\\
+%ul. Lojasiewicza 11, 30-348 Krako—w, Polska }
 
 \maketitle
 
@@ -140,13 +143,6 @@ First it{'}s not true that stable systems are the rule in classical physics, one
 purely classical mechanics, the reason why they are not being analyzed is that analytic methods fail to solve them. Prigogine seems to require more
 complexity to explain complexity, which is in my opinion not needed.
 
-The essence of MaxEnt method can be summarized in the formula for maximization of relative entropy (negative Kullback-Leibler divergence)
-
-\begin{displaymath}
-  H(p\lor q) = -\sum_i \ln p_i \frac{p_i}{q_i}
-\end{displaymath}
-with respect to $p_i$ (new aposteriori distribution). $H(p||q)$ can be interpreted as the information gained by using $p_i$ instead of $q_i$.
-
 
 \section{Departure from equilibrium}
 
@@ -170,9 +166,106 @@ The Fluctuation Theorem does much more than merely prove that in large systems o
 \subsection{Gibbs entropy}
 
 In Hamiltonian systems Gibbs entropy stays constant.
+
 \subsubsection{Simple model}
+Let's consider a model consisting of three elements: the cooler $C$, the heater $H$ and the system under consideration $S$, staying out of equilibrium.
+We assume, that the temperatures of the cooler and the heater stay constant, and that heat $Q_H$ flows into the system $S$ and heat $Q_C$ flows out. The situation is illustrated by the picture \ref{Fig2}.
+\begin{figure}[ht!]
+\centering \includegraphics[width=6cm]{system} \caption{System (S) model}
+\label{Fig2} 
+\end{figure}
+
+Treating the heater and the cooler as the environment, we can think of our system $S$ as an open system.
+Further on we'll analyze the system $S$ from the perspective of internal $(i)$ entropy production
+and external $(e)$ entropy flux, flowing \emph{to} the system $S$. 
+Of course the change in entropy will be the sum of those two contributions:
+\begin{equation}
+dS_S=dS_i+dS_e.
+\label{entrosum}
+\end{equation}
+
+In the current analysis let's consider a situation in which the same amount of heat flows in as flows out, that is $dQ_C=-dQ_H$. Using this relation we get the following term for the change of entropy:
+\begin{equation}
+dS_e=\frac{dQ_H}{T_H}+\frac{dQ_C}{T_C}=dQ_H\left(\frac{1}{T_H}-\frac{1}{T_C}\right)
+=dQ_H\left(\frac{T_C-T_H}{T_HT_C}\right)<0.
+\label{dSe1}
+\end{equation}
+From which it follows, that the heat flow takes the entropy out of our system.
+For the purpose of further discussion we introduce the concept of rate of entropy change connected with the heat flow:
+\begin{equation}
+j_e \equiv  \frac{dS_e}{dt}. 
+\end{equation}
+In the considered scenerio, the $j_e$ is held constant (steady-state) and we suspect a continuous fall in system's entropy
+
+Yet, moving away from the equilibrium state we suspect, that the a major role will be played by $dS_i$ moving the system back to equilibrium state. Similarly, as before we define the rate of internal entropy production:
+
+\begin{equation}
+j_i \equiv \frac{dS_i}{dt}.   
+\end{equation} 
+
+When $T_H=T_C$, i.e. the system is in equilibrium with constant entropy $S_{EQ}$ then it follows that $j_i=0$.
+Therefore the rate of internal entropy production $j_i$ should be a function  of system's entropy $S_S$, i.e. $j_i = j_i(S_S)$ with the boundary condition $j_i(S_S=S_{EQ})=0$. 
+
+Near the equilibrium state $S_S=S_{EQ}$, we can Taylor expand the function $j_i(S_S)$ to it's linear term
+\begin{equation}
+j_i(S_S)=j_i\left(S_{EQ}\right)+\left(S_S-S_{EQ}\right)C_1+\mathcal{O}\left(S_S^2\right),
+\end{equation} 
+fulfilling $j_i\left(S_{EQ}\right)=0$. 
+
+The dimensional and stability analysis tells us that $C_1$ has the dimension of inverse time and in the case of 
+$j_e=0$ should simply be equal to $S_{EQ}$, therefore:
+
+Using the equation (\ref{entrosum}) we get
+\begin{equation}
+\frac{dS_S}{dt}=j_i\left(S_S\right)=\left(S_S-S_{EQ}\right)C_1, 
+\label{stab}
+\end{equation} 
+Now we set $C_1 = -\frac{1}{\tau}$, where $\tau$ is a positive defined relaxation constant.
+
+The solution of the equation (\ref{stab}) is then
+\begin{equation}
+S_S(t) =S_{EQ}+(S_0-S_{EQ})e^{-t/\tau}, 
+\end{equation}
+where the initial condition was set $S_S(0)=S_0$.
+
+
+Now we include the term $j_e$ into our considerations.
+In this case the equation (\ref{entrosum}) results in the following 
+\begin{equation}
+\frac{dS_S}{dt}=j_e + j_i\left(S_S\right)=j_e +\frac{S_{EQ}-S_S}{\tau}.
+\label{dSSdt}
+\end{equation} 
+
+ 
+Given a boundary condition $S_S(0) =S_{EQ}$ it has a solution
+\begin{equation}
+S_S(t)=S_{EQ}+j_e\tau \left(1-e^{-t/\tau }\right),
+\end{equation} 
+where $j_e$ is a negative constant (graph of this function is presented on \ref{Fig4}). 
+In the limit $t\rightarrow \infty$ the entropy of the system falls to the minimal value
+\begin{equation}
+S_{min}=S(t\rightarrow \infty) =S_{EQ}+j_e \tau < S_{EQ}.
+\end{equation}
+
+\begin{figure}[ht!]
+\centering \includegraphics[width=12cm]{wykres3} 
+\caption{Inducing lower entropy with heat flow.}
+\label{Fig4} 
+\end{figure}
+
+This is of course consistent with the second law of thermodynamics as we're describing an open system.
+It's easy to notice that the total entropy change is equal to $dS=dS_i \geq 0$ (for simplicity it was assumed that the heater and cooler don't act as producers of entropy).
+
 
 \subsection{MaxEnt}
+
+The essence of MaxEnt method can be summarized in the formula for maximization of relative entropy (negative Kullback-Leibler divergence)
+
+\begin{displaymath}
+  H(p\lor q) = -\sum_i \ln p_i \frac{p_i}{q_i}
+\end{displaymath}
+with respect to $p_i$ (new aposteriori distribution). $H(p||q)$ can be interpreted as the information gained by using $p_i$ instead of $q_i$.
+
 
 \subsection{Near equilibrium results and concepts}
 
@@ -285,6 +378,12 @@ Dewar and Maritan \cite{Dewar:2014ek} showed using Jaynes's maximum entropy meth
 \newpage
 
 \section{Concepts of non-equilibrium thermodynamics}
+The term "irreversible process" is synonymous with a specific direction of time.
+To our best knowledge the specific direction of time we experience is an emergent phenomena.
+Isolated thermodynamic systems evolve in the direction of more probable states i.e. positive dissipation (larger entropy).
+When they finally reach that state the direction of time ceases to exist for the whole system. 
+Therefore in the description of irreversible processes the history of the system evolution becomes relevant.
+
 
 \subsection{Local equilibrium}
 The thermodynamical variables are often defined subject to the kinematical requirement of local thermodynamic equilibrium. This means that collisions between molecules are so frequent that chemical and radiative processes do not disrupt the local Maxwell-Boltzmann distribution of molecular velocities. This principle is valid for hydrodynamic flows and chemical reactions and it's formulation goes back to Clark Maxwell [Citation?].
@@ -309,15 +408,29 @@ Limitations:
 \subsection{Steady states}
 The most basic of non-equilibrium conditions, the steady state is already difficult to describe as may of the basic state functions (including temperature and entropy), are undefined for far from equilibrium states and the distribution function of a steady state is fractal and non-analytic. 
 
-\section{General properties of irreversible processes}
-The term "irreversible process" is synonymous with a specific direction of time.
-To our best knowledge the specific direction of time we experience is an emergent phenomena. 
-Isolated thermodynamic systems evolve in the direction of more probable states i.e. growing entropy.
-When they finally reach that state the direction of time ceases to exist for the whole system.
-Therefore in the description of irreversible processes the history of the system evolution becomes relevant.
+
+\subsection{Dissipation}
+
+If external fields are applied to the system of particles and the external field does work on the system and if that work can be turned completely into heat that can diffuse out of the system, the external field is termed a dissipative field. If the work can be completely stored in the system in the form of potential energy, the external field is termed non-dissipative.
+
+A simple example of a system that turns from non-dissipative into a dissipative system is sodium chloride. In solid state it's an insulator (internal energy increases through polarization), but when heated to around 1100K, melts and becomes a conductor.
+
+\subsection{Condition of adiabatic incompressibility of phase space}
+
+We say that a system fulfills the \textit{adiabatic incompressibility of phase space} or $AI\Gamma$ if in the absence of the thermostatting terms the equations of motion preserve the phase space volume, that is
+\begin{equation}
+  \Lambda \equiv (\partial / \partial\bm{\Gamma}) \cdot \dot{\bm{\Gamma}}=0
+\end{equation}
+
+\section{General properties of non-equilibrium systems}
+
+\subsection{Driven systems}
+
+A subcategory of non-equilibrium systems are those that we call \textit{driven}.
+Those systems, composed of interacting particles and possibly thermostatted, are subject to an external dissipative field $F_e$.
 
 
-\section{Non-equilibrium relations}
+\section{Non-equilibrium results}
 There exist only a handful of relations correct arbitrarily far from equilibrium, these include:
 \begin{itemize}
   \item Jarzynski non-equilibrium work relation
@@ -336,11 +449,6 @@ It's clear from that a system with these properties is microscopically reversibl
 
 All those relations can be considered a special cases of a single theorem
 
-\subsection{Dissipation}
-
-If external fields are applied to the system of particles and the external field does work on the system and if that work can be turned completely into heat that can diffuse out of the system, the external field is termed a dissipative field. If the work can be completely stored in the system in the form of potential energy, the external field is termed non-dissipative.
-
-A simple example of a system that turns from non-dissipative into a dissipative system is sodium chloride. In solid state it's an insulator (internal energy increases through polarization), but when heated to around 1100K, melts and becomes a conductor.
 
 \subsection{Dissipation function}
 
@@ -450,13 +558,19 @@ The Relaxation Theorem says that if an arbitrary initial ensemble of ergodic Ham
 A system can relax to equilibrium in two ways: conformally and non-conformally.
 Each of the above results is exact arbitrarily far from equilibrium and independent of system size.
 
+\subsection{Gibbs Entropy}
+
+\subsubsection{Constancy for Hamiltonian systems}
+
+\subsubsection{Divergence}
 
 \section{Models of time-reversible thermostat}
+
+The first time-reversible, deterministic thermostats and ergostats were invented in the early 1980s by Hoover, Ladd and Moran . Prior to this development there was no satisfactory mathematical way of modelling thermostatted non-equilibrium steady states. \cite{Hoover:1982dp}
 
 \subsection{Nose-Hoover}
 
 By including a term $-S_i \alpha \bm{p}_i $ to the EOM we get a deterministic, time-reversible Nose-Hoover thermostat, which can be used to add or remove heat from the particles in the reservoir region through introduction of an extra degree of freedom described by $\alpha$
-
 
 \section{Search for a unifying principle}
 
@@ -481,7 +595,7 @@ Studying jets of water from a nozzle, Rayleigh (1878,[27] 1896/1926[28]) noted t
 - far from equilibrium non-variational maxEP
 - far from equilibrium variational maxEP and optimization EP
 
-far from equilibrium usually means far from global equilibrium near local equalibrium.
+far from equilibrium usually means far from global equilibrium near local equilibrium.
 
 \subsection{MEP}
 \subsubsection{Relation between fluctuation theorem and MEP}
@@ -491,10 +605,10 @@ far from equilibrium usually means far from global equilibrium near local equali
 \section{Statistical measures of complexity}
 \subsection{Kolmogorov complexity}
 
-\section{Growth of complexity}
+\subsection{Growth of complexity}
 
 
-[In quantum computation, the notion of complexity refers to the minimum number of gates needed to prepare a certain state from a reference state. This pragmatic notion has now been related to something more exotic: black hole horizons. More precisely, it has been conjectured that the growth of the volume of a black hole interior is dual to the growthin computational complexity. Adam Brown and colleagues revisited this conjecture and restated it, this time relating complexity to the action of a particular type of spacetime region called a WheelerÐDeWitt patch. In other words, the computational complexity of a boundary relates to the geometry of a bulk region.There are reasons to believe that the original conjecture, and hence the new one, is likely to be correct. Interestingly, the new conjecture may have deeper implications connecting quantum information and quantum gravity. And it also suggests that black holes could reach the physical limits of computation determined by the fundamental constants. In this sense, black holes are the fastest computers in the known universe.]
+[In quantum computation, the notion of complexity refers to the minimum number of gates needed to prepare a certain state from a reference state. This pragmatic notion has now been related to something more exotic: black hole horizons. More precisely, it has been conjectured that the growth of the volume of a black hole interior is dual to the growth in computational complexity. Adam Brown and colleagues revisited this conjecture and restated it, this time relating complexity to the action of a particular type of spacetime region called a Wheeler DeWitt patch. In other words, the computational complexity of a boundary relates to the geometry of a bulk region.There are reasons to believe that the original conjecture, and hence the new one, is likely to be correct. Interestingly, the new conjecture may have deeper implications connecting quantum information and quantum gravity. And it also suggests that black holes could reach the physical limits of computation determined by the fundamental constants. In this sense, black holes are the fastest computers in the known universe.]
 
 \bibliographystyle{ieeetr}
 \bibliography{Refs}

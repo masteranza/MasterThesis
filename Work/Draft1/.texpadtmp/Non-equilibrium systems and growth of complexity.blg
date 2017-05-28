@@ -3,53 +3,53 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: /Users/masteranza/Projects/MasterThesis/Work/Draft1/.texpadtmp/Non-equilibrium systems and growth of complexity.aux
 The style file: ieeetr.bst
 Database file #1: ../Refs.bib
-Repeated entry---line 2003 of file ../Refs.bib
+Repeated entry---line 2025 of file ../Refs.bib
  : @book{Prigogine:1979ul
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2351 of file ../Refs.bib
+Repeated entry---line 2373 of file ../Refs.bib
  : @book{Prigogine:1979ul
  :                       ,
 I'm skipping whatever remains of this entry
-You've used 5 entries,
+You've used 6 entries,
             1876 wiz_defined-function locations,
-            516 strings with 4444 characters,
-and the built_in function-call counts, 1312 in all, are:
-= -- 135
-> -- 42
+            526 strings with 4668 characters,
+and the built_in function-call counts, 1687 in all, are:
+= -- 177
+> -- 53
 < -- 0
-+ -- 16
-- -- 11
-* -- 88
-:= -- 186
-add.period$ -- 6
-call.type$ -- 5
-change.case$ -- 4
++ -- 20
+- -- 14
+* -- 116
+:= -- 234
+add.period$ -- 7
+call.type$ -- 6
+change.case$ -- 5
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 65
-empty$ -- 130
-format.name$ -- 11
-if$ -- 322
+cite$ -- 6
+duplicate$ -- 83
+empty$ -- 161
+format.name$ -- 14
+if$ -- 414
 int.to.chr$ -- 0
-int.to.str$ -- 5
-missing$ -- 5
-newline$ -- 19
-num.names$ -- 5
-pop$ -- 16
+int.to.str$ -- 6
+missing$ -- 6
+newline$ -- 22
+num.names$ -- 6
+pop$ -- 17
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 47
+skip$ -- 65
 stack$ -- 0
-substring$ -- 91
-swap$ -- 26
+substring$ -- 131
+swap$ -- 37
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 14
-width$ -- 6
-write$ -- 51
+while$ -- 18
+width$ -- 7
+write$ -- 61
 (There were 2 error messages)

@@ -15,28 +15,33 @@
 \BOOKMARK [3][-]{subsubsection.3.1.1}{Definition of temperature}{subsection.3.1}% 15
 \BOOKMARK [2][-]{subsection.3.2}{Entropy production}{section.3}% 16
 \BOOKMARK [2][-]{subsection.3.3}{Steady states}{section.3}% 17
-\BOOKMARK [1][-]{section.4}{General properties of irreversible processes}{}% 18
-\BOOKMARK [1][-]{section.5}{Non-equilibrium relations}{}% 19
-\BOOKMARK [2][-]{subsection.5.1}{Dissipation}{section.5}% 20
-\BOOKMARK [2][-]{subsection.5.2}{Dissipation function}{section.5}% 21
-\BOOKMARK [3][-]{subsubsection.5.2.1}{Derivation}{subsection.5.2}% 22
-\BOOKMARK [2][-]{subsection.5.3}{Fluctuation Theorem}{section.5}% 23
-\BOOKMARK [3][-]{subsubsection.5.3.1}{Evans-Searles Fluctuation Theorem}{subsection.5.3}% 24
-\BOOKMARK [3][-]{subsubsection.5.3.2}{Crooks Fluctuation Theorem}{subsection.5.3}% 25
-\BOOKMARK [3][-]{subsubsection.5.3.3}{As a measure of irreversibility}{subsection.5.3}% 26
-\BOOKMARK [2][-]{subsection.5.4}{Dissipation Theorem}{section.5}% 27
-\BOOKMARK [3][-]{subsubsection.5.4.1}{Derivation}{subsection.5.4}% 28
-\BOOKMARK [3][-]{subsubsection.5.4.2}{T Mixing}{subsection.5.4}% 29
-\BOOKMARK [2][-]{subsection.5.5}{Relaxation Theorem}{section.5}% 30
-\BOOKMARK [1][-]{section.6}{Models of time-reversible thermostat}{}% 31
-\BOOKMARK [2][-]{subsection.6.1}{Nose-Hoover}{section.6}% 32
-\BOOKMARK [1][-]{section.7}{Search for a unifying principle}{}% 33
-\BOOKMARK [2][-]{subsection.7.1}{Rayleigh's insight}{section.7}% 34
-\BOOKMARK [2][-]{subsection.7.2}{Current state of affairs}{section.7}% 35
-\BOOKMARK [2][-]{subsection.7.3}{MEP}{section.7}% 36
-\BOOKMARK [3][-]{subsubsection.7.3.1}{Relation between fluctuation theorem and MEP}{subsection.7.3}% 37
-\BOOKMARK [3][-]{subsubsection.7.3.2}{Results for atmospheres?}{subsection.7.3}% 38
-\BOOKMARK [1][-]{section.8}{Physics of adaptation and self-replication}{}% 39
-\BOOKMARK [1][-]{section.9}{Statistical measures of complexity}{}% 40
-\BOOKMARK [2][-]{subsection.9.1}{Kolmogorov complexity}{section.9}% 41
-\BOOKMARK [1][-]{section.10}{Growth of complexity}{}% 42
+\BOOKMARK [2][-]{subsection.3.4}{Dissipation}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.5}{Condition of adiabatic incompressibility of phase space}{section.3}% 19
+\BOOKMARK [1][-]{section.4}{General properties of non-equilibrium systems}{}% 20
+\BOOKMARK [2][-]{subsection.4.1}{Driven systems}{section.4}% 21
+\BOOKMARK [1][-]{section.5}{Non-equilibrium results}{}% 22
+\BOOKMARK [2][-]{subsection.5.1}{Dissipation function}{section.5}% 23
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Derivation}{subsection.5.1}% 24
+\BOOKMARK [2][-]{subsection.5.2}{Fluctuation Theorem}{section.5}% 25
+\BOOKMARK [3][-]{subsubsection.5.2.1}{Evans-Searles Fluctuation Theorem}{subsection.5.2}% 26
+\BOOKMARK [3][-]{subsubsection.5.2.2}{Crooks Fluctuation Theorem}{subsection.5.2}% 27
+\BOOKMARK [3][-]{subsubsection.5.2.3}{As a measure of irreversibility}{subsection.5.2}% 28
+\BOOKMARK [2][-]{subsection.5.3}{Dissipation Theorem}{section.5}% 29
+\BOOKMARK [3][-]{subsubsection.5.3.1}{Derivation}{subsection.5.3}% 30
+\BOOKMARK [3][-]{subsubsection.5.3.2}{T Mixing}{subsection.5.3}% 31
+\BOOKMARK [2][-]{subsection.5.4}{Relaxation Theorem}{section.5}% 32
+\BOOKMARK [2][-]{subsection.5.5}{Gibbs Entropy}{section.5}% 33
+\BOOKMARK [3][-]{subsubsection.5.5.1}{Constancy for Hamiltonian systems}{subsection.5.5}% 34
+\BOOKMARK [3][-]{subsubsection.5.5.2}{Divergence}{subsection.5.5}% 35
+\BOOKMARK [1][-]{section.6}{Models of time-reversible thermostat}{}% 36
+\BOOKMARK [2][-]{subsection.6.1}{Nose-Hoover}{section.6}% 37
+\BOOKMARK [1][-]{section.7}{Search for a unifying principle}{}% 38
+\BOOKMARK [2][-]{subsection.7.1}{Rayleigh's insight}{section.7}% 39
+\BOOKMARK [2][-]{subsection.7.2}{Current state of affairs}{section.7}% 40
+\BOOKMARK [2][-]{subsection.7.3}{MEP}{section.7}% 41
+\BOOKMARK [3][-]{subsubsection.7.3.1}{Relation between fluctuation theorem and MEP}{subsection.7.3}% 42
+\BOOKMARK [3][-]{subsubsection.7.3.2}{Results for atmospheres?}{subsection.7.3}% 43
+\BOOKMARK [1][-]{section.8}{Physics of adaptation and self-replication}{}% 44
+\BOOKMARK [1][-]{section.9}{Statistical measures of complexity}{}% 45
+\BOOKMARK [2][-]{subsection.9.1}{Kolmogorov complexity}{section.9}% 46
+\BOOKMARK [2][-]{subsection.9.2}{Growth of complexity}{section.9}% 47
