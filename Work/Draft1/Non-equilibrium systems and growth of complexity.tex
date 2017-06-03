@@ -167,6 +167,8 @@ The Fluctuation Theorem does much more than merely prove that in large systems o
 
 In Hamiltonian systems Gibbs entropy stays constant.
 
+%Proof on page 43
+
 \subsubsection{Simple model}
 Let's consider a model consisting of three elements: the cooler $C$, the heater $H$ and the system under consideration $S$, staying out of equilibrium.
 We assume, that the temperatures of the cooler and the heater stay constant, and that heat $Q_H$ flows into the system $S$ and heat $Q_C$ flows out. The situation is illustrated by the picture \ref{Fig2}.
@@ -368,6 +370,8 @@ The principle of detailed balance is formulated for kinetic systems which are de
 
 \subsubsection{Green-Kubo relations}
 
+The Green-Kubo formulae relate the macroscopic, linear transport coefficients of a system to its microscopic equilibrium fluctuations.
+
 
 \subsection{Prigogine's MinEP}
 Prigogine himself noted \cite{Prigogine:1979ul}:
@@ -377,7 +381,7 @@ Dewar and Maritan \cite{Dewar:2014ek} showed using Jaynes's maximum entropy meth
 
 \newpage
 
-\section{Concepts of non-equilibrium thermodynamics}
+\section{Some concepts of non-equilibrium thermodynamics}
 The term "irreversible process" is synonymous with a specific direction of time.
 To our best knowledge the specific direction of time we experience is an emergent phenomena.
 Isolated thermodynamic systems evolve in the direction of more probable states i.e. positive dissipation (larger entropy).
@@ -409,18 +413,161 @@ Limitations:
 The most basic of non-equilibrium conditions, the steady state is already difficult to describe as may of the basic state functions (including temperature and entropy), are undefined for far from equilibrium states and the distribution function of a steady state is fractal and non-analytic. 
 
 
+\section{Ideas around fluctuation theorem}
+In the following considerations we'll assume that classical mechanics gives an adequate description of the dynamics.
+We'll also assume quantum and relativistic effects can be safely ignored.
+
+Performing an experiment we can control only a small number of variables that specify the macroscopic state of the system. We might know the systems volume, energy or the average kinetic energy of all the particles which number we assume to be constant. There will always be an enormous number of microstates consistent with the macroscopic constraints.
+
+\subsection{Time reversibility}
+Let's consider an isolated Hamiltonian system of interacting particles.
+In the microscopic picture the systems phase space $\{\bm{q_1},...,\bm{q_N},\bm{p_1},...,\bm{p_N} \} \equiv (\bm{q},\bm{p})\equiv \bm{\Gamma} $, $\bm{q_i}, \bm{p_i} $ denoting position and conjugate momenta of the particle $i$ evolve according to Hamiltonian equations of motion
+
+\begin{equation}
+\begin{aligned}
+  \dot{q_i} &=\frac{\partial H(\bm{q},\bm{p})}{\partial{\bm{p_i}}} \\
+  \dot{p_i} &=- \frac{\partial H(\bm{q},\bm{p})}{\partial{\bm{p_i}}.}
+\end{aligned}
+\end{equation}
+
+We now define a time reversal mapping $M^T$ to be an operator acting on phase space (the brackets indicate that the operator acts here on the phase exclusively) 
+
+\begin{equation}
+  M^T[ \Gamma] \equiv (\bm{q},-\bm{p})
+\end{equation}
+
+and a p-Liouvillean operator $iL$ defined by the solution of differential equation 
+
+\begin{equation}
+ \dot{\bm{\Gamma}} \equiv iL(\bm{\Gamma})\bm{\Gamma}
+\end{equation}
+
+which is given by
+
+\begin{equation}
+  S^t \bm{\Gamma} \equiv exp[iL(\bm{\Gamma})t]\bm{\Gamma}.
+\end{equation}
+
+
+we will further refer to $ exp[iL(\bm{\Gamma})t] $ as the p-propagator or the phase space propagator.
+
+%left out how M^T acts on iL (page 18)
+
+%\equiv  \dot{\bm{\Gamma}}\cdot \frac{\patial}{\partial{\bm{\Gamma}}}
+
+The time reversal dynamics satisfies an easy to check equation (with a simple physical intuition behind it)
+
+\begin{equation}
+  M^T S^t M^T S^t\ \bm{\Gamma} = \bm{\Gamma}
+\end{equation}
+
+where the action of operators $M^T$ and $S^t$ is evaluated from the right side to the left side.
+
+\subsection{Thermostated but time reversible systems}
+
+The first time-reversible, deterministic thermostats and ergostats were invented in the early 1980s by Hoover, Ladd and Moran . Prior to this development there was no satisfactory mathematical way of modelling thermostatted non-equilibrium steady states. \cite{Hoover:1982dp}
+
+The construction of thermostated time reversible systems is usually done inserting some time-reversible, but non-Hamiltonian terms into part of the equations of motion defined as the surroundings. Surroundings in first approximation are assumed to stay far from the system of interest and should not affect the system under consideration.
+The work done on a system, should be on average, converted into heat, which is conducted through the system of interest and eventually removed by the non-Hamiltonian terms residing in the remote boundaries.
+
+\subsubsection{Nose-Hoover}
+By including a term $-S_i \alpha \bm{p}_i $ to the EOM we get a deterministic, time-reversible Nose-Hoover thermostat, which can be used to add or remove heat from the particles in the reservoir region through introduction of an extra degree of freedom described by $\alpha$
+
+
+\paragraph{Phase space distribution function}
+
+The phase space distribution function $f(\bm{\Gamma};t)$ gives the probability per unit phase space volume of finding phase members near the phase vector $\bm{\Gamma}$ at time $t$.
+
+ 
+
+\paragraph{Ensemble averages:}
+
+Value of any phase function $A(\bm{\Gamma})$ can be obtained with the use of ensemble averages by taking $N_{\bm{\Gamma}} $ time evolved initial phases $\bm{\Gamma}$ consistent with macroscopic constraints
+
+\begin{equation}
+  \langle A(t) \rangle = \lim_{N_{\bm{\Gamma}}
+ \to \infty} \sum_{j=1}^{N_{\bm{\Gamma}}} A(S^t \bm{\Gamma}_j)/N_{\bm{\Gamma}}
+\end{equation}
+
+or in the continuous limit by specifying the initial phase space probability density $f(\bm{\Gamma};0)$ and time-dependent evolution of this density $f(\bm{\Gamma};t)$
+
+\begin{equation}
+  \langle A(t) \rangle = \int d\bm{\Gamma} A(\bm{\Gamma}) f(\bm{\Gamma};t) = \int d\bm{\Gamma} A(S^t\bm{\Gamma})f(\bm{\Gamma};0)
+\end{equation}
+
+Time stationarity of an ensemble average is then defined simply by
+\begin{equation}
+    \langle A(t) \rangle =   \langle A(t+\Delta) \rangle
+\end{equation}
+for any $\Delta > 0$.
+
+%More on ensemble averages can be found on page 35
+
+\paragraph{Ergodicity}
+Stationary system is said to be physically ergodic if the time average of the phase function representing a physical observable, along a trajectory that starts almost anywhere in the ostensible phase space, is equal to the ensemble average taken over an ensemble of systems consistent with the small number of macroscopic constraints on the system.
+
+
+\begin{equation}
+    \lim_{t \to \infty} \langle A(t) \rangle = \lim_{t \to \infty} \frac{1}{t} \int_0^t ds\ A(S^s \bm{\Gamma})
+\end{equation}
+
+\subsubsection{Construction}
+
+To model a three-dimensional system of $N$ interacting particles, we assume that the microstates were initially distributed according to a given normalized probability distribution function $f(\bm{\Gamma};0)$. As mentioned before we separate our system of $N$ particles into system and surroundings, where the surroundings are assumed to be composed of $N_{th}$ particles. 
+
+
+%Construction of the termostat left for later, start at page 24
+
+
+\subsection{Condition of adiabatic incompressibility of phase space}
+
+We say that a system fulfills the \textit{adiabatic incompressibility of phase space} or $AI\bm{\Gamma}$ if in the \textbf{absence} of the thermostatting terms the equations of motion preserve the phase space volume, that is
+\begin{equation}
+  \Lambda \equiv (\partial / \partial\bm{\Gamma}) \cdot \dot{\bm{\Gamma}}=0
+\end{equation}
+
+%Remark about Hermicity of Liouville page 35
+
+\subsection{Liouville equation}
+
+The motion of the phase space distribution function is governed by a Lagrangian form of the phase continuity equation (also known as \textit{streaming})
+
+\begin{equation}
+\label{LagrangianLiouville}
+  \frac{df(\bm{\Gamma};t)}{dt}=-f(\bm{\Gamma};t)\frac{\partial}{\partial \bm{\Gamma}} \cdot \dot{\bm{\Gamma}}(\bm{\Gamma}) = -f(\bm{\Gamma};t)\Lambda(\bm{\Gamma})
+\end{equation}
+
+this equation follows directly from a well known form of Liouville equation
+
+\begin{equation}
+    \frac{\partial f(\bm{\Gamma};t) }{\partial t}
+    = -\frac{\partial}{\partial \bm{\Gamma}} \cdot [\dot{\bm{\Gamma}}(\bm{\Gamma}) f(\bm{\Gamma};t)]
+     = -(\frac{\partial}{\partial \bm{\Gamma}} \cdot \dot{\bm{\Gamma}} + \dot{\bm{\Gamma}} \cdot \frac{\partial}{\partial \bm{\Gamma}}) f(\bm{\Gamma};t)
+\end{equation}
+
+where by moving the last term to the left side we get equation (\ref{LagrangianLiouville}).
+
+
+It can be shown that for isokinetic or isoenergetic systems with fixed total momentum and satisfying $AI\bm{\Gamma}$, the phase space expansion factor is exactly $\Lambda = - (3N_{th} -4) \alpha $ 
+
+If we make the following substitution $\bm{\Gamma} \to S^t\bm{\Gamma}$ in equation (\ref{LagrangianLiouville}) this first-order ordinary differential equation is solved by
+
+\begin{equation}
+  f(S^t\bm{\Gamma};t)=\exp[-\int_0^t ds\ \Lambda(S^s\bm{\Gamma})]f(\bm{\Gamma};0)
+\end{equation}
+
+The measure of an infinitesimal phase space volume $dV_{\bm{\Gamma}}(S^s \bm{\Gamma}$ centered on the streamed position $S^s\bm{\Gamma} : 0 \leq s \leq t $ along the phase space trajectory also changes, but in the opposite direction:
+
+\begin{equation}
+  dV_{\bm{\Gamma}}(S^s \bm{\Gamma} =\exp[\int_0^t ds\ \Lambda(S^s\bm{\Gamma})]dV_{\bm{\Gamma}}(\bm{\Gamma}
+\end{equation}
+ 
+In a lot of cases the phase space volume goes to zero, while the density approaches infinity.
 \subsection{Dissipation}
 
 If external fields are applied to the system of particles and the external field does work on the system and if that work can be turned completely into heat that can diffuse out of the system, the external field is termed a dissipative field. If the work can be completely stored in the system in the form of potential energy, the external field is termed non-dissipative.
 
 A simple example of a system that turns from non-dissipative into a dissipative system is sodium chloride. In solid state it's an insulator (internal energy increases through polarization), but when heated to around 1100K, melts and becomes a conductor.
-
-\subsection{Condition of adiabatic incompressibility of phase space}
-
-We say that a system fulfills the \textit{adiabatic incompressibility of phase space} or $AI\Gamma$ if in the absence of the thermostatting terms the equations of motion preserve the phase space volume, that is
-\begin{equation}
-  \Lambda \equiv (\partial / \partial\bm{\Gamma}) \cdot \dot{\bm{\Gamma}}=0
-\end{equation}
 
 \section{General properties of non-equilibrium systems}
 
@@ -489,6 +636,20 @@ The Fluctuation Theorem is best regarded as a set of closely related theorems.
 One of the reason for this situation is because we'd expect different fluctuations for different statistical mechanical ensembles.
 Second reason, because of which we've got this diversity is that some of this theorems refer to non-equilibrium steady state fluctuations (e.g.), while others refer to transient fluctuations.
 For the needs of this we will further refer to Steady State Fluctuation Theorems (SSFT) valid in the long averaging times and Transient Fluctuation Theorems (TFT) which are exact for arbitrary averaging times.
+
+The probability $p(\delta V_{\Gamma}(\Gamma(t),t))$, that a phase $\Gamma$, will be observed within an infinitesimal phase space volume of size $\delta V_{\Gamma}$ about $\bm{\Gamma}(t)$ at time $t$, is given by,
+
+\begin{equation}
+  p(\delta V_{\Gamma}(\Gamma(t),t)) = f(\bm{\Gamma}(t),t)\delta V_{\Gamma}
+\end{equation}
+
+where $f(\bm{\Gamma}(t),t)$ is the normalized phase space distribution function at the phase $\bm{\Gamma}(t)$ at time $t$.
+
+\begin{equation}
+  f(\bm{\Gamma}(t),t)= exp[- \int_0^t \Lambda(\bm{\Gamma}(s))\ ds ]f(\bm{\Gamma}(0),0)
+\end{equation}
+
+
 
 \subsubsection{Evans-Searles Fluctuation Theorem}
 Evans-Searles Fluctuation Theorem results in a generalisation of the Second Law of Thermodynamics so that it applies to small systems, including those that evolve far from equilibrium.
@@ -562,15 +723,12 @@ Each of the above results is exact arbitrarily far from equilibrium and independ
 
 \subsubsection{Constancy for Hamiltonian systems}
 
+The constancy of entropy in Hamiltonian systems was first discovered by Gibbs in 1903 and was commented on extensively but inconclusively by Ehrenfest review of the foundations of statistical mechanics.
+
 \subsubsection{Divergence}
 
-\section{Models of time-reversible thermostat}
 
-The first time-reversible, deterministic thermostats and ergostats were invented in the early 1980s by Hoover, Ladd and Moran . Prior to this development there was no satisfactory mathematical way of modelling thermostatted non-equilibrium steady states. \cite{Hoover:1982dp}
 
-\subsection{Nose-Hoover}
-
-By including a term $-S_i \alpha \bm{p}_i $ to the EOM we get a deterministic, time-reversible Nose-Hoover thermostat, which can be used to add or remove heat from the particles in the reservoir region through introduction of an extra degree of freedom described by $\alpha$
 
 \section{Search for a unifying principle}
 
