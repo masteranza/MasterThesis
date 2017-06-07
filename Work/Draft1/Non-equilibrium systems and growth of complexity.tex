@@ -8,6 +8,7 @@
 \usepackage[utf8]{inputenc}
 %\usepackage[macce]{inputenc}
 %\usepackage[latin2]{inputenc}
+\usepackage{physics}
 
 \definecolor{lightgray}{gray}{0.90}
 \newtheorem{theorem}{Theorem}
@@ -143,6 +144,70 @@ First it{'}s not true that stable systems are the rule in classical physics, one
 purely classical mechanics, the reason why they are not being analyzed is that analytic methods fail to solve them. Prigogine seems to require more
 complexity to explain complexity, which is in my opinion not needed.
 
+\section{Entropy in quantum systems}
+\subsection{von Neumann entropy}
+
+Although this work is meant to stay within the classical limit, it might be worth while to clear out the notion of entropy in quantum context.
+
+The von Neumann entropy is defined as 
+
+\begin{equation}
+  S_{vN}= -\Tr(\hat{\rho} \log{\hat{\rho}}).
+\end{equation}
+
+For which the general form of the density matrix operator is
+
+\begin{equation}
+	\hat{\rho}=\sum_k p_k \ket{\psi_k}\bra{\psi_k} 
+\end{equation}
+
+in case of pure state $\ket{\psi}$ the density matrix is simply
+\begin{equation}
+  \hat{\rho} = \ket{\psi}\bra{\psi}
+\end{equation}
+
+and it is easy to verify that the entropy of a pure state is equal to zero. The entropy of non-pure state is always greater than zero.
+If the system is in a pure state, it will continue to be in a pure state as long as it stays isolated. For a mixed state, the degree of ”non-purity” measured by the entropy will stay constant as long as it is isolated. This follows from the fact that the time evolution is unitary and the eigenvalues of the density operator therefore do not change with time.
+
+An interesting question one might ask (and not really discussed in textbooks) is how the entropy changes after a measurement of a particle in many-body system which, initially, was in pure state.
+
+Without loss of generalization let's consider an isolated system of two identical particles described solely by their momentum states.
+In the scenario of two particles of identical momentum we can write the initial pure state as 
+\begin{equation}
+  \ket{2,0,0,...}
+\end{equation}
+which entropy is of course zero.  
+In second quantization formalism the measurement of a particle is realized by Field operator $ \hat{\Psi}(x) =\sum_k \phi_k(x)\hat{a}_n$ which annihilates a single particle at position $x$.
+Therefore after the measurement of particle at some position $x$, one particle is "virtually" removed from the system under consideration, but the system stays in pure state
+\begin{equation}
+  \hat{\Psi}(x)\ket{2,0,0,...}=\phi_1(x)\ket{1,0,0,...},
+\end{equation}
+which entropy is zero. It's important to notice though that our system lost a particle and the systems before and after measurement are not equivalent! Of course, in reality the particle doesn't disappear. After determination of it's position by experiment ($\Delta x \to 0$), the uncertainty of it's momentum approaches infinity ($\Delta p \to \infty$), which means that we can reconstruct the state using a linear combination of states with \textit{any} value of momentum:
+
+\begin{equation}
+  c_1\ \ket{2,,0,...}+c_2\ \ket{1,1,0,...}+  c_3\ \ket{1,0,1,...}+...
+\end{equation}
+where the  squared modulus of the coefficients has to sum up to one ($ \sum_i \left| c_i \right|^2 = 1 $).
+
+Now depending on the precision of the measurement we can recalculate entropy of course getting a value greater then zero. If we would perform the same analysis for a pure state of two particles in different states i.e. $ket{1,1,...}$ then we would obtain an increase of entropy even without accounting for the lost particle.
+%% Correct also for correlated systems?
+This crude example gives a clear illustration of the fact that after \textbf{any} measurement the von Neumann entropy has to increase. However it's change is ultimately related to lost information about the system in the act of the measurement.
+
+There's another interesting feature of quantum entropy, namely inequalities that it fullfills.
+If we bipartite the system into subsystems $A$ and $B$ each containing it's own set of commuting observables, then in order to calculate the entropy $S_A$ of a subsystem $A$ we need to calculate the entropy with respect to density matrix traced over the other subsystem, namely
+\begin{equation}
+  \hat{\rho}^A = \Tr_B \hat{\rho} 
+\end{equation}
+then in general the following identities are satisfied
+
+\begin{equation}
+\begin{aligned}
+	S(\rho) &\leq S_A + S_B	\\
+	S(\rho) &\geq \left| S_A - S_B \right|
+\end{aligned}
+\end{equation}
+
+The interpretation of the first inequality is that the full information about the states of the subsystems $A$ and $B$ will in general not be sufficient to give full information about the state of the total system $A+B$. When there are correlations between the two subsystems, these are not seen in the description of $A$ and $B$ separately.
 
 \section{Departure from equilibrium}
 
@@ -165,7 +230,14 @@ The Fluctuation Theorem does much more than merely prove that in large systems o
 
 \subsection{Gibbs entropy}
 
+In comparison to Boltzmann entropy, Gibbs entropy is well defined also for a system of interacting particles
+
+%Jaynes - Gibbs vs Boltzmann Entropies
+
+
 In Hamiltonian systems Gibbs entropy stays constant.
+That however doesn't mean that the concept of Gibbs entropy 
+is useless.
 
 %Proof on page 43
 
@@ -257,6 +329,8 @@ S_{min}=S(t\rightarrow \infty) =S_{EQ}+j_e \tau < S_{EQ}.
 
 This is of course consistent with the second law of thermodynamics as we're describing an open system.
 It's easy to notice that the total entropy change is equal to $dS=dS_i \geq 0$ (for simplicity it was assumed that the heater and cooler don't act as producers of entropy).
+
+
 
 
 \subsection{MaxEnt}
