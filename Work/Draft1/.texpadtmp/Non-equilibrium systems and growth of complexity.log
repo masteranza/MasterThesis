@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.6)  7 JUN 2017 20:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.6)  9 JUN 2017 17:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1630,75 +1630,81 @@ LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <8> on input line 86.
 LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <6> on input line 86.
-[2] [3] [4] [5] [6] [7] <system.png, id=275, 278.54062pt x 288.3272pt>
+[2] [3] [4] [5] [6] [7] <system.png, id=267, 278.54062pt x 288.3272pt>
 File: system.png Graphic file (type png)
  <use system.png>
 Package pdftex.def Info: system.png used on input line 248.
 (pdftex.def)             Requested size: 170.71652pt x 176.71962pt.
- [8 <./system.png>] [9] <wykres3.png, id=296, 852.18375pt x 315.1775pt>
+ [8 <./system.png>] [9] <wykres3.png, id=288, 852.18375pt x 315.1775pt>
 File: wykres3.png Graphic file (type png)
  <use wykres3.png>
 Package pdftex.def Info: wykres3.png used on input line 325.
 (pdftex.def)             Requested size: 341.43306pt x 126.28036pt.
- [10 <./wykres3.png>] [11] [12] [13] [14] [15] [16] [17] [18] [19]
-Overfull \hbox (8.31297pt too wide) in paragraph at lines 646--646
-[]\T1/cmr/bx/n/17.28 General pro-per-ties of non-equilibrium sys-tems 
+ [10 <./wykres3.png>] [11] [12] [13] [14] [15] [16]
+Overfull \hbox (12.94946pt too wide) in paragraph at lines 566--567
+ []\T1/cmr/bx/n/12 Probabilities of pha-se spa-ce tra-jec-to-ries [] \T1/cmr/m/n/12 The pro-ba-bi-li-ty $\OML/plm/m/it/12 p\OT4/cmr/m/n/12 (\OML/plm/m/it/12 ^^NV[]\OT4/cmr/m/n/12 (\OT1/cmr/bx/n/12 ^^@\OT4/cmr/m/n/12 (\OML/plm/m/it/12 t\OT4/cmr/m/n/12 )\OML/plm/m/it/12 ; t\OT4/cmr/m/n/12 ))$\T1/cmr/m/n/12 ,
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 657.
-(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 657.
- [20]
-Overfull \hbox (1.97545pt too wide) detected at line 705
+[17] [18] [19] [20] [21]
+Overfull \hbox (5.14366pt too wide) in paragraph at lines 740--741
+ []\T1/cmr/bx/n/12 Kawasaki iden-ti-ty[] \T1/cmr/m/n/12 al-so known as Non-equilibrium Par-ti-tion Iden-ti-ty (NPI)
+ []
+
+[22]
+Overfull \hbox (11.89363pt too wide) detected at line 794
 [][][] []
  []
 
-[21] [22]
+[23]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 777.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Omega' on input line 777.
+(hyperref)                removing `math shift' on input line 844.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 777.
+(hyperref)                removing `\Omega' on input line 844.
 
-[23] [24]
-Overfull \hbox (8.94006pt too wide) in paragraph at lines 824--829
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 844.
+
+[24] [25]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 887.
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 887.
+ [26] [27] [28] [29]
+Overfull \hbox (8.94006pt too wide) in paragraph at lines 989--994
 \T1/cmr/m/n/12 - ne-ar equ-ili-brium le-ast dis-si-pa-tion - near-equilibrium mi-nEP - near-equilibrium
  []
 
-[25] (/Users/masteranza/Projects/MasterThesis/Work/Draft1/.texpadtmp/Non-equilibrium systems and growth of complexity.bbl [26])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 850.
- [27]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 850.
+[30] (/Users/masteranza/Projects/MasterThesis/Work/Draft1/.texpadtmp/Non-equilibrium systems and growth of complexity.bbl [31])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1015.
+ [32]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1015.
  (/Users/masteranza/Projects/MasterThesis/Work/Draft1/.texpadtmp/Non-equilibrium systems and growth of complexity.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 850.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 850.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1015.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1015.
 Package rerunfilecheck Info: File `"Non-equilibrium systems and growth of complexity".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 850.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1015.
  ) 
 Here is how much of TeX's memory you used:
- 14061 strings out of 493089
- 239088 string characters out of 6134843
- 307519 words of memory out of 5000000
- 17231 multiletter control sequences out of 15000+600000
+ 14097 strings out of 493089
+ 239589 string characters out of 6134843
+ 309961 words of memory out of 5000000
+ 17240 multiletter control sequences out of 15000+600000
  26971 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 45i,8n,39p,10426b,349s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 45i,11n,39p,10426b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plms.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plme.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plmi6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/pl/plsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2
 015/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on "/Users/masteranza/Projects/MasterThesis/Work/Draft1/.texpadtmp/Non-equilibrium systems and growth of complexity.pdf" (27 pages, 344052 bytes).
+Output written on "/Users/masteranza/Projects/MasterThesis/Work/Draft1/.texpadtmp/Non-equilibrium systems and growth of complexity.pdf" (32 pages, 358113 bytes).
 PDF statistics:
- 552 PDF objects out of 1000 (max. 8388607)
- 490 compressed objects within 5 object streams
- 144 named destinations out of 1000 (max. 500000)
- 435 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 608 PDF objects out of 1000 (max. 8388607)
+ 540 compressed objects within 6 object streams
+ 171 named destinations out of 1000 (max. 500000)
+ 419 words of extra memory for PDF output out of 10000 (max. 10000000)
 

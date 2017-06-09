@@ -25,29 +25,27 @@
 \BOOKMARK [2][-]{subsection.5.3}{Condition of adiabatic incompressibility of phase space}{section.5}% 25
 \BOOKMARK [2][-]{subsection.5.4}{Liouville equation}{section.5}% 26
 \BOOKMARK [2][-]{subsection.5.5}{Dissipation}{section.5}% 27
-\BOOKMARK [1][-]{section.6}{General properties of non-equilibrium systems}{}% 28
-\BOOKMARK [2][-]{subsection.6.1}{Driven systems}{section.6}% 29
-\BOOKMARK [1][-]{section.7}{Non-equilibrium results}{}% 30
-\BOOKMARK [2][-]{subsection.7.1}{Dissipation function}{section.7}% 31
-\BOOKMARK [3][-]{subsubsection.7.1.1}{Derivation}{subsection.7.1}% 32
-\BOOKMARK [2][-]{subsection.7.2}{Fluctuation Theorem}{section.7}% 33
-\BOOKMARK [3][-]{subsubsection.7.2.1}{Evans-Searles Fluctuation Theorem}{subsection.7.2}% 34
-\BOOKMARK [3][-]{subsubsection.7.2.2}{Crooks Fluctuation Theorem}{subsection.7.2}% 35
-\BOOKMARK [3][-]{subsubsection.7.2.3}{As a measure of irreversibility}{subsection.7.2}% 36
-\BOOKMARK [2][-]{subsection.7.3}{Dissipation Theorem}{section.7}% 37
-\BOOKMARK [3][-]{subsubsection.7.3.1}{Derivation}{subsection.7.3}% 38
-\BOOKMARK [3][-]{subsubsection.7.3.2}{T Mixing}{subsection.7.3}% 39
-\BOOKMARK [2][-]{subsection.7.4}{Relaxation Theorem}{section.7}% 40
-\BOOKMARK [2][-]{subsection.7.5}{Gibbs Entropy}{section.7}% 41
-\BOOKMARK [3][-]{subsubsection.7.5.1}{Constancy for Hamiltonian systems}{subsection.7.5}% 42
-\BOOKMARK [3][-]{subsubsection.7.5.2}{Divergence}{subsection.7.5}% 43
-\BOOKMARK [1][-]{section.8}{Search for a unifying principle}{}% 44
-\BOOKMARK [2][-]{subsection.8.1}{Rayleigh's insight}{section.8}% 45
-\BOOKMARK [2][-]{subsection.8.2}{Current state of affairs}{section.8}% 46
-\BOOKMARK [2][-]{subsection.8.3}{MEP}{section.8}% 47
-\BOOKMARK [3][-]{subsubsection.8.3.1}{Relation between fluctuation theorem and MEP}{subsection.8.3}% 48
-\BOOKMARK [3][-]{subsubsection.8.3.2}{Results for atmospheres?}{subsection.8.3}% 49
-\BOOKMARK [1][-]{section.9}{Physics of adaptation and self-replication}{}% 50
-\BOOKMARK [1][-]{section.10}{Statistical measures of complexity}{}% 51
-\BOOKMARK [2][-]{subsection.10.1}{Kolmogorov complexity}{section.10}% 52
-\BOOKMARK [2][-]{subsection.10.2}{Growth of complexity}{section.10}% 53
+\BOOKMARK [3][-]{subsubsection.5.5.1}{Evans-Searles Fluctuation Theorem}{subsection.5.5}% 28
+\BOOKMARK [3][-]{subsubsection.5.5.2}{Instantaneous dissipation function}{subsection.5.5}% 29
+\BOOKMARK [2][-]{subsection.5.6}{Dissipation Theorem}{section.5}% 30
+\BOOKMARK [3][-]{subsubsection.5.6.1}{T Mixing}{subsection.5.6}% 31
+\BOOKMARK [2][-]{subsection.5.7}{Relaxation Theorem}{section.5}% 32
+\BOOKMARK [2][-]{subsection.5.8}{Driven systems}{section.5}% 33
+\BOOKMARK [1][-]{section.6}{Non-equilibrium results}{}% 34
+\BOOKMARK [2][-]{subsection.6.1}{Fluctuation Theorem}{section.6}% 35
+\BOOKMARK [3][-]{subsubsection.6.1.1}{Evans-Searles Fluctuation Theorem}{subsection.6.1}% 36
+\BOOKMARK [3][-]{subsubsection.6.1.2}{Crooks Fluctuation Theorem}{subsection.6.1}% 37
+\BOOKMARK [3][-]{subsubsection.6.1.3}{As a measure of irreversibility}{subsection.6.1}% 38
+\BOOKMARK [2][-]{subsection.6.2}{Gibbs Entropy}{section.6}% 39
+\BOOKMARK [3][-]{subsubsection.6.2.1}{Constancy for Hamiltonian systems}{subsection.6.2}% 40
+\BOOKMARK [3][-]{subsubsection.6.2.2}{Divergence}{subsection.6.2}% 41
+\BOOKMARK [1][-]{section.7}{Search for a unifying principle}{}% 42
+\BOOKMARK [2][-]{subsection.7.1}{Rayleigh's insight}{section.7}% 43
+\BOOKMARK [2][-]{subsection.7.2}{Current state of affairs}{section.7}% 44
+\BOOKMARK [2][-]{subsection.7.3}{MEP}{section.7}% 45
+\BOOKMARK [3][-]{subsubsection.7.3.1}{Relation between fluctuation theorem and MEP}{subsection.7.3}% 46
+\BOOKMARK [3][-]{subsubsection.7.3.2}{Results for atmospheres?}{subsection.7.3}% 47
+\BOOKMARK [1][-]{section.8}{Physics of adaptation and self-replication}{}% 48
+\BOOKMARK [1][-]{section.9}{Statistical measures of complexity}{}% 49
+\BOOKMARK [2][-]{subsection.9.1}{Kolmogorov complexity}{section.9}% 50
+\BOOKMARK [2][-]{subsection.9.2}{Growth of complexity}{section.9}% 51

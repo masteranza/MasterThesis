@@ -481,8 +481,9 @@ This spontaneous production of entropy is given by the entropy production per un
 \end{displaymath}
 where $J_i(\bm{r},t)$ are the Navier-Stokes hydrodynamic fluxes (e.g. the stress tensor, heat flux vector,...) at position $\bm{r}$ and time $t$ and $X_i$ is the thermodynamic force which is conjugate to $J_i(\bm{r},t)$ (e.g. strain rate tensor divided by temperature or the gradient of the reciprocal of temperature,... respectively).
 
-Limitations:
-
+\paragraph{Problems:}
+In an electric circuit close to equilibrium, entropy production is equal to the product of the electric current times the voltage divided by the ambient temperature. If the circuit has a complex impedance, there will necessarily be a phase lag between the applied voltage and the current. Therefore there will exist an interval in which entropy production will be negative. 
+This example highlights a serious problem for linear, irreversible thermodynamics based on the concept of entropy production. As we will later see, this is not the case for \textit{dissipation}.
 \subsection{Steady states}
 The most basic of non-equilibrium conditions, the steady state is already difficult to describe as may of the basic state functions (including temperature and entropy), are undefined for far from equilibrium states and the distribution function of a steady state is fractal and non-analytic. 
 
@@ -525,6 +526,15 @@ which is given by
 
 we will further refer to $ exp[iL(\bm{\Gamma})t] $ as the p-propagator or the phase space propagator.
 
+
+An easy to check property useful in later part of this work is
+
+\begin{equation}
+\label{PhaseTimeDer}
+  \frac{d}{dt}(S^t \bm{\Gamma})=iL(\bm{\Gamma})\exp[iL(\bm{\Gamma})t]\bm{\Gamma}=S^t \dot{\bm{\Gamma}}
+\end{equation}
+
+
 %left out how M^T acts on iL (page 18)
 
 %\equiv  \dot{\bm{\Gamma}}\cdot \frac{\patial}{\partial{\bm{\Gamma}}}
@@ -552,7 +562,13 @@ By including a term $-S_i \alpha \bm{p}_i $ to the EOM we get a deterministic, t
 
 The phase space distribution function $f(\bm{\Gamma};t)$ gives the probability per unit phase space volume of finding phase members near the phase vector $\bm{\Gamma}$ at time $t$.
 
- 
+\paragraph{Probabilities of phase space trajectories }
+The probability $p(\delta V_{\bm{\Gamma}}(\bm{\Gamma}(t),t))$, that a phase $\bm{\Gamma}$, will be observed within an infinitesimal phase space volume of size $\delta V_{\bm{\Gamma}}$ about $\bm{\Gamma}(t)$ at time $t$, is given by,
+
+\begin{equation}
+  p(\delta V_{\bm{\Gamma}}(\bm{\Gamma}(t),t)) = f(\bm{\Gamma}(t),t)\delta V_{\bm{\Gamma}}.
+\end{equation}
+
 
 \paragraph{Ensemble averages:}
 
@@ -627,29 +643,243 @@ It can be shown that for isokinetic or isoenergetic systems with fixed total mom
 If we make the following substitution $\bm{\Gamma} \to S^t\bm{\Gamma}$ in equation (\ref{LagrangianLiouville}) this first-order ordinary differential equation is solved by
 
 \begin{equation}
+\label{distributionStreaming}
   f(S^t\bm{\Gamma};t)=\exp[-\int_0^t ds\ \Lambda(S^s\bm{\Gamma})]f(\bm{\Gamma};0)
 \end{equation}
 
-The measure of an infinitesimal phase space volume $dV_{\bm{\Gamma}}(S^s \bm{\Gamma}$ centered on the streamed position $S^s\bm{\Gamma} : 0 \leq s \leq t $ along the phase space trajectory also changes, but in the opposite direction:
+The measure of an infinitesimal phase space volume $dV_{\bm{\Gamma}}(S^s \bm{\Gamma})$ centered on the streamed position $S^s\bm{\Gamma} : 0 \leq s \leq t $ along the phase space trajectory also changes, but in the opposite direction (in order to keep the probability constant):
 
 \begin{equation}
-  dV_{\bm{\Gamma}}(S^s \bm{\Gamma} =\exp[\int_0^t ds\ \Lambda(S^s\bm{\Gamma})]dV_{\bm{\Gamma}}(\bm{\Gamma}
+\label{PhaseVolumeExpansion}
+  dV_{\bm{\Gamma}}(S^t \bm{\Gamma}) =\exp[\int_0^t ds\ \Lambda(S^s\bm{\Gamma})]dV_{\bm{\Gamma}}(\bm{\Gamma})
 \end{equation}
  
 In a lot of cases the phase space volume goes to zero, while the density approaches infinity.
+
+
+
 \subsection{Dissipation}
 
+
+%General intro
 If external fields are applied to the system of particles and the external field does work on the system and if that work can be turned completely into heat that can diffuse out of the system, the external field is termed a dissipative field. If the work can be completely stored in the system in the form of potential energy, the external field is termed non-dissipative.
 
 A simple example of a system that turns from non-dissipative into a dissipative system is sodium chloride. In solid state it's an insulator (internal energy increases through polarization), but when heated to around 1100K, melts and becomes a conductor.
 
-\section{General properties of non-equilibrium systems}
+Dissipation function was first properly (not implicitly) defined in 2000 by Searles and Evans.
+%citation needed
+The dissipation function is similar to the entropy production, and although it's not a state function it provides description of non-equilibrium systems through various fluctuation theorems.
+
+The most straight forward definition of the dissipation function is derived from the ratio of the probabilities $p$ at time zero, of observing sets of phase space trajectories originating inside infinitesimal volumes of phase space $\delta V_{\bm{\Gamma}}$ and $\delta V_{\bm{\Gamma}}(\bm{\Gamma}^*)\equiv \delta V_{\bm{\Gamma}}(M^T S^t \bm{\Gamma})$:
+
+\begin{equation}
+  \frac{p(\delta V_{\bm{\Gamma}}(\bm{\Gamma};0))}{p(\delta V_{\bm{\Gamma}}(\bm{\Gamma}^*;0))}= \frac{f(\bm{\Gamma};0)\delta V_{\bm{\Gamma}}(\bm{\Gamma})}{f(\bm{\Gamma}^*;0)\delta V_{\bm{\Gamma}}(\bm{\Gamma}^*)}
+\end{equation}
+now by noting that the Jacobian for the time reversal map is unity, 
+\newline $ \delta V_{\bm{\Gamma}}(M^T \bm{\Gamma}^*)/ \delta V_{\bm{\Gamma}}(\bm{\Gamma}^*) =1 $ together with equation (\ref{PhaseVolumeExpansion}) we get
+
+
+\begin{equation}
+  \frac{p(\delta V_{\bm{\Gamma}}(\bm{\Gamma};0))}{p(\delta V_{\bm{\Gamma}}(\bm{\Gamma}^*;0))}=\frac{f(\bm{\Gamma};0)}{f(\bm{\Gamma}^*;0)} 
+  \exp[-\int_0^t ds \ \Lambda(S^s \bm{\Gamma})]
+\end{equation}
+where the logarithm of the right side we'd like to use as the definition of the time integral of dissipation $\Omega$:
+
+\begin{equation}
+  \label{Dissipation}
+  \int_0^t ds\ \Omega(S^s \bm{\Gamma})\equiv \ln(\frac{f(\bm{\Gamma};0)}{f(\bm{\Gamma}^*;0)}) -\int_0^t ds \ \Lambda(S^s \bm{\Gamma}) \equiv \Omega_t(\bm{\Gamma})
+\end{equation}
+
+Usually one defines an auxiliary quantity $\bar{\Omega}_t$ called \textit{time-averaged dissipation} defined through relation $\Omega_t(\bm{\Gamma}) \equiv \bar{\Omega}_t(\bm{\Gamma})t$.
+
+A possible interpretation of this equation states that dissipation function is a measure of the temporal asymmetry inherent in sets of trajectories originating from an initial distribution of states.
+
+\subsubsection{Evans-Searles Fluctuation Theorem}
+
+If we now choose our volume elements in such a way that all the trajectories originating at time zero have the time averaged dissipation function $\bar{\Omega}_t(\bm{\Gamma})=(A \pm \delta A)$, then we get the Evans-Searles Fluctuation Theorem
+
+\begin{equation}
+\label{ESFT}
+  \frac{p(\bar{\Omega}_t=A)}{p(\bar{\Omega}_t=-A)}=\exp[A\ t].
+\end{equation}
+%Add assumptions - page 52
+%Connection to Kullback-Leibler divergence
+
+This fluctuation relation written ESFT is valid for arbitrary system size (the thermodynamic limit was not required) and can be applied to small systems observed for short periods of time.
+It was also verified experimentally, see Wang(2002)\cite{Wang:2002hw}, Carberry(2007)\cite{Carberry:2007be}
+%Add more references - page 53
+
+An important think to note is that it renders the Loschmidt's assertion (that each trajectory has it's own anti-trajectory and therefore irreversability is impossible) simply wrong. One must consider probabilities of infinitesimal sets of trajectories fulfilling given requirements instead of individual sets. Only at equilibrium all individual trajectories cancel out.
+
+\paragraph{Second Law Inequality}
+The Second Law of thermodynamics can be derived from ESFT in a trivial manner, by showing that time averages of the ensemble-averaged dissipation are non negative.
+\begin{equation}
+  \langle\Omega_t\rangle\geq 0,\  \forall t > 0
+\end{equation}
+
+ The proof follows from simple integration of equation (\ref{ESFT}):
+\begin{equation}
+\begin{aligned}
+  \langle \Omega_t \rangle &= \int_{-\infty}^{\infty} dB\ p(\Omega_t=B)B\\
+  &=\int_0^{\infty} dB\ p(\Omega_t=B)B +\int_{\infty}^{0} dB\ p(\Omega_t=B)B \\
+  &=\int_0^{\infty} dB\ p(\Omega_t=B)B -\int_{0}^{\infty} dB\ p(\Omega_t=-B)B \\
+  &= \int_0^{\infty} dB\ p(\Omega_t=B)B(1-\exp[-B]) \geq 0 
+\end{aligned}
+\end{equation} 
+
+At this point it's useful to define equilibrium system as the system for which, over the phase space domain $D$, the time-integrated dissipation function is identically zero:
+
+\begin{equation}
+  \bar{\Omega}_{eq,t}(\bm{\Gamma})=0, \forall\bm{\Gamma}\in  D, \forall t >0 \\
+  \Rightarrow \langle \Omega_t \rangle = 0, \forall t > 0
+\end{equation}
+
+
+\paragraph{Kawasaki identity}
+
+also known as Non-equilibrium Partition Identity (NPI) was first implied for Hamiltonian systems by Yamada and Kawasaki (1967) \cite{Anonymous:1967fr} and is stated as:
+
+\begin{equation}
+  \langle \exp[-\bar{\Omega}_t t] \rangle =1
+\end{equation}
+
+This result can also be derived from ESFT given by equation (\ref{ESFT}):
+
+\begin{equation}
+\begin{aligned}
+  \langle \exp[-\bar{\Omega}_t t] \rangle &= \int_{-\infty}^{\infty} dA\ p(\bar{\Omega}_t=A)\exp[-A t]\\
+  &=\int_{-\infty}^{\infty} dA\ p(\bar{\Omega}_t=-A)\\
+  &=\int_{-\infty}^{\infty} dA'\ p(\bar{\Omega}_t=A')=1
+\end{aligned}
+\end{equation}
+
+%Practical modification on pages 55-56
+
+\subsubsection{Instantaneous dissipation function}
+
+The dissipation function is a functional of both the dynamical equations that evolve the phase $S^t \bm{\Gamma} = \exp[iL(\bm{\Gamma})t]\bm{\Gamma}$ and also the initial distribution $f(\bm{\Gamma};0)$ and their initial time has to be the same.
+
+One could get an equation independent of this initial time by differentiation of equation (\ref{Dissipation}):
+
+\begin{equation}
+\begin{aligned}
+  \frac{\partial}{\partial t}\int_0^t ds\ \Omega(S^s  \bm{\Gamma}) &= \Omega(S^t \bm{\Gamma})\\
+  &=\frac{\partial}{\partial t}[\ln{f(\bm{\Gamma};0)}-\ln{f(S^t\bm{\Gamma};0)}
+-\int_0^t ds \ \Lambda(S^s \bm{\Gamma})
+]\\
+&=-\frac{1}{f(S^t\bm{\Gamma};0)}\frac{\partial f(S^t\bm{\Gamma};0)}{\partial t}-\Lambda(S^t \bm{\Gamma})\\
+&=-\frac{1}{f(S^t\bm{\Gamma};0)}\frac{\partial( S^t \bm{\Gamma})}{\partial t}\frac{\partial f(S^t\bm{\Gamma};0)}{\partial(S^t \bm{\Gamma})}-\Lambda(S^t \bm{\Gamma})\\
+&=-\frac{1}{f(S^t\bm{\Gamma};0)}S^t\dot{\bm{\Gamma}}
+\frac{\partial f(S^t\bm{\Gamma};0)}{\partial(S^t \bm{\Gamma})}-\Lambda(S^t \bm{\Gamma})
+\end{aligned}
+\end{equation}
+
+where the last one was obtained using equation (\ref{PhaseTimeDer}). 
+If we now set $t=0$ we obtain the expression for the \textit{instantaneous dissipation function}:
+
+\begin{equation}
+  \Omega(\bm{\Gamma})=-\frac{1}{f(\bm{\Gamma};0)}\dot{\bm{\Gamma}}(\bm{\Gamma})\frac{\partial{f(\bm{\Gamma};0)}}{\partial{\bm{\Gamma}}}-\Lambda(\bm{\Gamma})
+\end{equation}
+
+\subsection{Dissipation Theorem}
+
+Starting from the solution of the Lagrangian form of the Liouville equation (\ref{distributionStreaming}) we can use dissipation function equation (\ref{Dissipation}) to derive
+
+\begin{equation}
+\begin{aligned}
+  f(S^t\bm{\Gamma};t) &= \exp[-\int_0^t ds\ \Lambda(S^s\bm{\Gamma})]f(\bm{\Gamma};0)\\
+  &=\exp[-\int_0^t ds\ \Lambda(S^s\bm{\Gamma})]f(S^t \bm{\Gamma};0) \exp[\int_0^t ds\ \Omega(S^s \bm{\Gamma}) + \int_0^t ds\ \Lambda(S^s\bm{\Gamma})]\\
+  &=f(S^t \bm{\Gamma};0) \exp[\int_0^t ds\ \bm{\Omega}(S^s \bm{\Gamma})],
+\end{aligned}
+\end{equation}
+
+after substitution $\bm{\Gamma} \to S^{-t}\bm{\Gamma}$ and change of variables we get an interesting equation
+
+\begin{equation}
+\label{distributionPropagator}
+    f(\bm{\Gamma};t)=f(\bm{\Gamma};0)\exp[\int_0^t ds\ \bm{\Omega}(S^{-s} \bm{\Gamma})],
+\end{equation}
+
+which states that the forward in time propagator for the N-particle distribution function is given by the exponential time integral of the dissipative function. 
+An immediate conclusion one can draw from this is that for all non-equilibrium deterministic systems the N-particle distribution function has explicit time dependence: $f_{ne}(\bm{\Gamma};t)$ and cannot be written in a closed, time-stationary form - contrary to statements found in Jaynes (1980)
+%Add anything to that?
+As with ESFT, this result can be applied to any initial ensemble and time-reversible dynamics satisfying $AI\bm{\Gamma}$.
+
+%Connection to f-Liouville operator if needed page 66.
+From equation (\ref{distributionPropagator}) we can calculate non-equilibrium ensemble averages of any physical phase function $B(t)$:
+
+\begin{equation}
+\begin{aligned}
+	  \langle B(t) \rangle &= \int_D d\bm{\Gamma}\ B(\bm{\Gamma})\exp[\int_0^{t} ds\ \Omega(S^{-s}\bm{\Gamma})]f(\bm{\Gamma};0)\\
+	  &= \langle B(0) \exp[\int_0^{t} ds\ \Omega(S^{-s}\bm{\Gamma})] \rangle_{f(\bm{\Gamma};0)}
+\end{aligned}
+\end{equation}
+
+Differentiating the last equation with respect to time we get
+\begin{equation}
+\begin{aligned}
+ \frac{d\langle B(t) \rangle}{dt}
+ &= \int_D d\bm{\Gamma}\ B(\bm{\Gamma}) \Omega(S^{-t}\bm{\Gamma}) f(\bm{\Gamma};t)\\
+&= \int_D d\bm{\Gamma}\ B(S^t \bm{\Gamma}) \Omega(\bm{\Gamma})f(\bm{\Gamma};t)\\
+&= \langle B(t)\Omega(0) \rangle_{f(\bm{\Gamma};0)}
+\end{aligned}
+\end{equation}
+
+If we now integrate with in time, we can write the averages of physical phase functions as
+
+\begin{equation}
+\langle B(t)\rangle_{f(\bm{\Gamma};0)} =\langle B(0) \rangle_{f(\bm{\Gamma};0)} +\int_0^t ds \langle B(s) \Omega(0) \rangle_{f(\bm{\Gamma};0)}, \label{DissipationTheorem}
+\end{equation}
+
+getting the Dissipation Theorem which states that the nonlinear response of an arbitrary phase variable can be calculated from the time integral of the non-equilibrium transient time correlation function of the phase variable with the dissipation function.
+
+
+
+
+A simple consequence of this theorem can be read of immediately that is, for equilibrium (lack of dissipation) the ensemble averages stay constant.
+
+In systems in which the external field drives the system out of equilibrium in a linear manner (weak field), eq. (\ref{DissipationTheorem}) reduces to Green-Kubo linear response relation.
+
+
+\subsubsection{$\Omega T$ Mixing}
+
+We say that a system possesses the property of $\Omega T$ mixing if the integral
+\begin{equation}
+  \int_0^t ds \langle B(s) \Omega(0) \rangle
+\end{equation}
+is bounded from above. This requirement let's us predict that the system will relax either to a non-equilibrium steady state or toward an equilibrium.
+
+This property is more restrictive than $T$ mixing known from ergodic theory, therefore if a system is $\Omega T$ mixing it's also $T$ mixing, but not necessarily the opposite.
+
+\subsection{Relaxation Theorem}
+The Relaxation Theorem says that if an arbitrary initial ensemble of ergodic Hamiltonian systems is in contact with a heat bath and there is a decay of temporal correlations, then the system will at long times, relax to the Maxwell-Boltzmann distribution. Further, this distribution has zero dissipation everywhere in phase space. For such systems no other distribution has zero dissipation everywhere.
+\begin{displaymath}
+  \lim_{t\to \infty } \Omega (\Gamma ;f(\Gamma ,t))=0, \forall \Gamma
+\end{displaymath}
+
+A system can relax to equilibrium in two ways: conformally and non-conformally.
+Each of the above results is exact arbitrarily far from equilibrium and independent of system size.
 
 \subsection{Driven systems}
 
-A subcategory of non-equilibrium systems are those that we call \textit{driven}.
-Those systems, composed of interacting particles and possibly thermostatted, are subject to an external dissipative field $F_e$.
+Driven systems are a subcategory of non-equilibrium systems which are subject to an external dissipative field $F_e$.
+For driven systems we define so-called \textit{dissipative factor}, $[\beta J](\bm{\Gamma})]$, using the equation,
 
+\begin{equation}
+\label{primaryDissipationFunction}
+  \Omega(\bm{\Gamma})\equiv -[\beta J](\bm{\Gamma})V F_e
+\end{equation}
+where $V$ is the volume of the system.
+Even though in this definition dissipation is a linear functional of the field, we can always hide higher order dependence under $F_e$.
+
+If the system that is driven was initially at equilibrium, then equation (\ref{DissipationTheorem}) can be rewritten as:
+
+\begin{equation}
+  \langle B(t) \rangle_{f(\bm{\Gamma};0)}=\langle B(0) \rangle_{[f(\bm{\Gamma};0)} - V \int_0^t ds\ \langle[\beta J](0)B(s)\rangle_{f(\bm{\Gamma};0)} F_e
+\end{equation}
+
+and is called transient time correlation function (TTCF).
+%More on usage page 71
 
 \section{Non-equilibrium results}
 There exist only a handful of relations correct arbitrarily far from equilibrium, these include:
@@ -670,39 +900,6 @@ It's clear from that a system with these properties is microscopically reversibl
 
 All those relations can be considered a special cases of a single theorem
 
-
-\subsection{Dissipation function}
-
-Dissipation function was first properly (not implicitly) defined in 2000 by Searles and Evans 
-
-The instantaneous dissipation function:
-
-\begin{equation}
-  \Omega(\Gamma)=-\frac{1}{f(\bm{\Gamma};0)}\dot{\bm{\Gamma}}(\bm{\Gamma})\frac{\partial{f(\bm{\Gamma};0)}}{\partial{\bm{\Gamma}}}-\Lambda(\bm{\Gamma})
-\end{equation}
-
-
-\begin{displaymath}
-  \Omega_t(\Gamma(t))=\frac{d \Omega_t(\Gamma(0))}{dt}
-\end{displaymath}
-
-
-\begin{displaymath}
-  \Omega_t(\Gamma(0))=ln{\frac{P(\Gamma(0),0)}{P(\Gamma^*(t),0)}}
-\end{displaymath}
-
-The dissipation function is similar to the entropy production, and although it's not a state function it provides description of non-equilibrium systems through various fluctuation theorems.
-
-\subsubsection{Derivation}
-
-
-\begin{equation}
-\begin{aligned}
-  f(S^t\bm{\Gamma};t) &= exp[-\int_0^t ds\ \Lambda(S^s\bm{\Gamma})]f(\bm{\Gamma};0)\\
-  &=exp[-\int_0^t ds\ \Lambda(S^s\bm{\Gamma})]f(S^t \bm{\Gamma};0) exp[\int_0^t ds\ \Omega(S^s \bm{\Gamma}) + \int_0^t ds\ \Lambda(S^s\bm{\Gamma})]\\
-  &=f(S^t \bm{\Gamma};0) exp[\int_0^t ds\ \bm{\Omega}(S^s \bm{\Gamma})]
-\end{aligned}
-\end{equation}
 
 
 \subsection{Fluctuation Theorem}
@@ -760,38 +957,6 @@ If we denote T as irreversibility then I can be interpreted as a measure of T-sy
 \end{displaymath}
 
 
-\subsection{Dissipation Theorem}
-The Dissipation Theorem says that the nonlinear response of an arbitrary phase variable can be calculated from the time integral of the non-equilibrium transient time correlation function of the phase variable with the dissipation function
-
-
-\begin{equation}
-\langle B(t)\rangle =\langle B(0) \rangle +\int_0^t ds \langle B(s) \Omega(0) \rangle \label{disstheo}
-\end{equation}
-
-A simple consequence of this theorem can be read of immediately that is, for equilibrium (lack of dissipation) the ensemble averages stay constant.
-
-In systems in which the external field drives the system out of equilibrium in a linear manner (weak field), Eq. \ref{disstheo} reduces to Green-Kubo linear response relation.
-
-\subsubsection{Derivation}
-
-\subsubsection{$\Omega T$ Mixing}
-
-We say that a system possesses the property of $\Omega T$ mixing if the integral
-\begin{equation}
-  \int_0^t ds \langle B(s) \Omega(0) \rangle
-\end{equation}
-is bounded from above. This requirement let's us predict that the system will relax either to a non-equilibrium steady state or toward an equilibrium.
-
-This property is more restrictive than $T$ mixing known from ergodic theory, therefore if a system is $\Omega T$ mixing it's also $T$ mixing, but not necessarily the opposite.
-
-\subsection{Relaxation Theorem}
-The Relaxation Theorem says that if an arbitrary initial ensemble of ergodic Hamiltonian systems is in contact with a heat bath and there is a decay of temporal correlations, then the system will at long times, relax to the Maxwell-Boltzmann distribution. Further, this distribution has zero dissipation everywhere in phase space. For such systems no other distribution has zero dissipation everywhere.
-\begin{displaymath}
-  \lim_{t\to \infty } \Omega (\Gamma ;f(\Gamma ,t))=0, \forall \Gamma
-\end{displaymath}
-
-A system can relax to equilibrium in two ways: conformally and non-conformally.
-Each of the above results is exact arbitrarily far from equilibrium and independent of system size.
 
 \subsection{Gibbs Entropy}
 
