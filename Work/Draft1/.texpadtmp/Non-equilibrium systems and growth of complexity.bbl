@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{Dewar:2014ek}
 R.~C. Dewar, C.~H. Lineweaver, R.~K. Niven, and K.~Regenauer-Lieb, ``{Beyond
@@ -27,6 +27,10 @@ S.~R. De~Groot and P.~Mazur, ``{Non-Equilibrium Thermodynamics}.'' Dover, New
 W.~G. Hoover, A.~J.~C. Ladd, and B.~Moran, ``{High-Strain-Rate Plastic Flow
   Studied via Nonequilibrium Molecular Dynamics},'' {\em Physical Review
   Letters}, vol.~48, pp.~1818--1820, June 1982.
+
+\bibitem{Evans:2016tq}
+D.~J. Evans, ``{Fundamentals of Classical Statistical Thermodynamics},''
+  pp.~1--223, Apr. 2016.
 
 \bibitem{Wang:2002hw}
 G.~M. Wang, E.~M. Sevick, E.~Mittag, D.~J. Searles, and D.~J. Evans,

@@ -3,9 +3,10 @@
 
 \usepackage{amsmath, amssymb, mathtools, verbatim, bm, xcolor, hyperref}
 %\usepackage[polish]{babel}
-\usepackage{polski}
+%\usepackage{polski}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage{textcomp}
 %\usepackage[macce]{inputenc}
 %\usepackage[latin2]{inputenc}
 \usepackage{physics}
@@ -166,8 +167,8 @@ in case of pure state $\ket{\psi}$ the density matrix is simply
   \hat{\rho} = \ket{\psi}\bra{\psi}
 \end{equation}
 
-and it is easy to verify that the entropy of a pure state is equal to zero. The entropy of non-pure state is always greater than zero.
-If the system is in a pure state, it will continue to be in a pure state as long as it stays isolated. For a mixed state, the degree of ”non-purity” measured by the entropy will stay constant as long as it is isolated. This follows from the fact that the time evolution is unitary and the eigenvalues of the density operator therefore do not change with time.
+and it is easy to verify that the entropy of a pure state is equal to zero. The entropy of mixed state is always greater than zero.
+If the system is in a pure state, it will continue to be in a pure state as long as it stays isolated. For a mixed state, the degree of mixedness measured by the entropy will stay constant as long as it is isolated. This follows from the fact that the time evolution is unitary and the eigenvalues of the density operator therefore do not change with time.
 
 An interesting question one might ask (and not really discussed in textbooks) is how the entropy changes after a measurement of a particle in many-body system which, initially, was in pure state.
 
@@ -177,19 +178,19 @@ In the scenario of two particles of identical momentum we can write the initial 
   \ket{2,0,0,...}
 \end{equation}
 which entropy is of course zero.  
-In second quantization formalism the measurement of a particle is realized by Field operator $ \hat{\Psi}(x) =\sum_k \phi_k(x)\hat{a}_n$ which annihilates a single particle at position $x$.
+In second quantization formalism the measurement of a particle is realized by the field operator $ \hat{\Psi}(x) =\sum_k \phi_k(x)\hat{a}_n$ which annihilates a single particle at position $x$.
 Therefore after the measurement of particle at some position $x$, one particle is "virtually" removed from the system under consideration, but the system stays in pure state
 \begin{equation}
   \hat{\Psi}(x)\ket{2,0,0,...}=\phi_1(x)\ket{1,0,0,...},
 \end{equation}
-which entropy is zero. It's important to notice though that our system lost a particle and the systems before and after measurement are not equivalent! Of course, in reality the particle doesn't disappear. After determination of it's position by experiment ($\Delta x \to 0$), the uncertainty of it's momentum approaches infinity ($\Delta p \to \infty$), which means that we can reconstruct the state using a linear combination of states with \textit{any} value of momentum:
+which entropy is zero. It's important to notice though that our system lost a particle and therefore the systems before and after measurement are not equivalent! Of course, in reality the particle doesn't disappear. After determination of it's position by experiment ($\Delta x \to 0$), the uncertainty of it's momentum approaches infinity ($\Delta p \to \infty$), which means that we can reconstruct the state using a linear combination of states with \textit{any} value of momentum:
 
 \begin{equation}
   c_1\ \ket{2,,0,...}+c_2\ \ket{1,1,0,...}+  c_3\ \ket{1,0,1,...}+...
 \end{equation}
 where the  squared modulus of the coefficients has to sum up to one ($ \sum_i \left| c_i \right|^2 = 1 $).
 
-Now depending on the precision of the measurement we can recalculate entropy of course getting a value greater then zero. If we would perform the same analysis for a pure state of two particles in different states i.e. $ket{1,1,...}$ then we would obtain an increase of entropy even without accounting for the lost particle.
+Now depending on the precision of the measurement we can recalculate entropy of course getting a value greater than zero. If we would perform the same analysis for a pure state of two particles in different states i.e. $ket{1,1,...}$ then we would obtain an increase of entropy even without accounting for the lost particle.
 %% Correct also for correlated systems?
 This crude example gives a clear illustration of the fact that after \textbf{any} measurement the von Neumann entropy has to increase. However it's change is ultimately related to lost information about the system in the act of the measurement.
 
@@ -587,6 +588,7 @@ or in the continuous limit by specifying the initial phase space probability den
 
 Time stationarity of an ensemble average is then defined simply by
 \begin{equation}
+\label{StationaryStateDef}
     \langle A(t) \rangle =   \langle A(t+\Delta) \rangle
 \end{equation}
 for any $\Delta > 0$.
@@ -594,12 +596,12 @@ for any $\Delta > 0$.
 %More on ensemble averages can be found on page 35
 
 \paragraph{Ergodicity}
-Stationary system is said to be physically ergodic if the time average of the phase function representing a physical observable, along a trajectory that starts almost anywhere in the ostensible phase space, is equal to the ensemble average taken over an ensemble of systems consistent with the small number of macroscopic constraints on the system.
-
+Stationary system is said to be physically ergodic if the time average of the phase function representing a physical observable, along a trajectory that starts \textit{almost anywhere} in the ostensible phase space, is equal to the ensemble average taken over an ensemble of systems consistent with the small number of macroscopic constraints on the system.
 
 \begin{equation}
     \lim_{t \to \infty} \langle A(t) \rangle = \lim_{t \to \infty} \frac{1}{t} \int_0^t ds\ A(S^s \bm{\Gamma})
 \end{equation}
+%^ Page 22, another definition on page 74
 
 \subsubsection{Construction}
 
@@ -660,8 +662,9 @@ In a lot of cases the phase space volume goes to zero, while the density approac
 
 \subsection{Dissipation}
 
-
+The dissipation function serves as mathematical replacement for the entropy production. When entropy production can be defined, it is equal, on average, to the dissipation function. The main advantage though is that, unlike the entropy production, the dissipation function can, for ergodically consistent systems be always well defined \cite{Evans:2016tq}.
 %General intro
+
 If external fields are applied to the system of particles and the external field does work on the system and if that work can be turned completely into heat that can diffuse out of the system, the external field is termed a dissipative field. If the work can be completely stored in the system in the form of potential energy, the external field is termed non-dissipative.
 
 A simple example of a system that turns from non-dissipative into a dissipative system is sodium chloride. In solid state it's an insulator (internal energy increases through polarization), but when heated to around 1100K, melts and becomes a conductor.
@@ -831,7 +834,7 @@ If we now integrate with in time, we can write the averages of physical phase fu
 \langle B(t)\rangle_{f(\bm{\Gamma};0)} =\langle B(0) \rangle_{f(\bm{\Gamma};0)} +\int_0^t ds \langle B(s) \Omega(0) \rangle_{f(\bm{\Gamma};0)}, \label{DissipationTheorem}
 \end{equation}
 
-getting the Dissipation Theorem which states that the nonlinear response of an arbitrary phase variable can be calculated from the time integral of the non-equilibrium transient time correlation function of the phase variable with the dissipation function.
+getting the Dissipation Theorem which states that the nonlinear response of an arbitrary phase variable can be calculated from the time integral of the non-equilibrium transient time correlation function (TTCF) of the phase variable with the dissipation function.
 
 
 
@@ -840,16 +843,43 @@ A simple consequence of this theorem can be read of immediately that is, for equ
 
 In systems in which the external field drives the system out of equilibrium in a linear manner (weak field), eq. (\ref{DissipationTheorem}) reduces to Green-Kubo linear response relation.
 
+\subsubsection{Mixing properties and their relations}
 
-\subsubsection{$\Omega T$ Mixing}
+Let's consider a system with at least two phase variables $A(\bm{\Gamma})$ and $B(\bm{\Gamma})$. 
 
+\paragraph{Mixing}
+
+A system is said to be mixing if time correlation functions $\langle A(0) B(t) \rangle_{\mu}$ taken over a stationary distribution $\mu$ factorize in the long time limit:
+\begin{equation}
+  \lim_{t \to \infty} \langle A(0) B(t)\rangle_{\mu} = \langle A \rangle_{\mu} \langle B \rangle_{\mu}  
+\end{equation}
+
+\paragraph{Weak T-mixing}
+Weak T-mixing is a direct generalization of mixing for transient rather stationary distributions. Mixing is for correlation functions in systems that have stationary averages of physical phase functions such as equilibrium or steady-state distributions.
+
+If in a system either $\langle A(0) \rangle $ or $ \langle B(t) \rangle = 0, \forall t $, then such a system is called weakly T-mixing if
+
+\begin{equation}
+  \lim_{t \to \infty} \langle A(0) B(t) \rangle = 0
+\end{equation}
+
+\paragraph{T-mixing}
+If a system is weakly T-mixing and the decay of transient correlation takes place at a rate faster than $1/t$ then we say that the system is T-mixing and will be stationary at long times. In other words it's TTCFs must converge to finite values:
+
+\begin{equation}
+  \left| \int_0^t ds \langle A(0) B(s) \rangle \right| = const < \infty 
+\end{equation}
+
+
+\paragraph{$\bm{\Omega T}$-mixing}
 We say that a system possesses the property of $\Omega T$ mixing if the integral
 \begin{equation}
-  \int_0^t ds \langle B(s) \Omega(0) \rangle
+    \left| \int_0^t ds \langle B(s) \Omega(0) \rangle \right| = const < \infty
 \end{equation}
-is bounded from above. This requirement let's us predict that the system will relax either to a non-equilibrium steady state or toward an equilibrium.
+is bounded from above. This requirement let's us predict that the system will relax either to a non-equilibrium steady state or toward an equilibrium. In other words, it is a \textit{necessary} condition for ensemble averages to be time-independent or stationary at long times.
 
-This property is more restrictive than $T$ mixing known from ergodic theory, therefore if a system is $\Omega T$ mixing it's also $T$ mixing, but not necessarily the opposite.
+T-mixing systems are $\Omega T$-mixing, and therefore T-mixing systems must relax to time stationary states in the long time limit.
+
 
 \subsection{Relaxation Theorem}
 The Relaxation Theorem says that if an arbitrary initial ensemble of ergodic Hamiltonian systems is in contact with a heat bath and there is a decay of temporal correlations, then the system will at long times, relax to the Maxwell-Boltzmann distribution. Further, this distribution has zero dissipation everywhere in phase space. For such systems no other distribution has zero dissipation everywhere.
@@ -875,11 +905,28 @@ Even though in this definition dissipation is a linear functional of the field, 
 If the system that is driven was initially at equilibrium, then equation (\ref{DissipationTheorem}) can be rewritten as:
 
 \begin{equation}
-  \langle B(t) \rangle_{f(\bm{\Gamma};0)}=\langle B(0) \rangle_{[f(\bm{\Gamma};0)} - V \int_0^t ds\ \langle[\beta J](0)B(s)\rangle_{f(\bm{\Gamma};0)} F_e
+  \langle B(t) \rangle_{f(\bm{\Gamma};0)}=\langle B(0) \rangle_{f(\bm{\Gamma};0)} - V \int_0^t ds\ \langle[\beta J](0)B(s)\rangle_{f(\bm{\Gamma};0)} F_e
 \end{equation}
 
-and is called transient time correlation function (TTCF).
+and at zero field reduces to Green-Kubo expression for the linear response.
+
 %More on usage page 71
+
+\section{Non-equilibrium Steady States}
+
+From equation (\ref{StationaryStateDef}) we see that stationarity of a system implies that it's physical properties do not vary in time. This can be understood in the sense of all times or sufficiently late times, however stationarity does not imply that the distribution function is stationary (In fact we saw that in a non-equilibrium stationary state the Gibbs entropy diverges at a constant rate toward negative infinity).
+%need to add reference
+The time independent values of physical properties, can however, be dependent on the initial phase $\bm{\Gamma}$, if it is not we call it peNESS (physically ergodic non-equilibrium steady state):
+
+\begin{equation}
+      \lim_{t \to \infty} \langle A(t) \rangle_0 = \lim_{t \to \infty} \frac{1}{t} \int_0^t ds\ A(S^s \bm{\Gamma})
+\end{equation}
+ where $\langle ... \rangle_0$ denotes an ensemble over the initial time $t=0$ and ensemble $f(\bm{\Gamma};0)$.
+Contrary to intuition, not all NESSs are physically ergodic. An example is the Rayleigh-Benard instability which occurs in a system with fixed boundary conditions and fixed geometry where a system might develop to a fixed number of rolls (two, four etc.) and persist in it indefinitely.
+\section{Crooks fluctuation theorem}
+
+It was originally developed for determining the difference in free energy of canonical equilibrium states at the same temperature. 
+%page 156
 
 \section{Non-equilibrium results}
 There exist only a handful of relations correct arbitrarily far from equilibrium, these include:
