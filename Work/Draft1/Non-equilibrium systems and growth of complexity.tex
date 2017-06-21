@@ -3,7 +3,7 @@
 
 \usepackage{amsmath, amssymb, mathtools, verbatim, bm, xcolor, hyperref}
 %\usepackage[polish]{babel}
-%\usepackage{polski}
+\usepackage{polski}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{textcomp}
@@ -912,7 +912,7 @@ and at zero field reduces to Green-Kubo expression for the linear response.
 
 %More on usage page 71
 
-\section{Non-equilibrium Steady States}
+\subsection{Non-equilibrium Steady States}
 
 From equation (\ref{StationaryStateDef}) we see that stationarity of a system implies that it's physical properties do not vary in time. This can be understood in the sense of all times or sufficiently late times, however stationarity does not imply that the distribution function is stationary (In fact we saw that in a non-equilibrium stationary state the Gibbs entropy diverges at a constant rate toward negative infinity).
 %need to add reference
@@ -923,10 +923,79 @@ The time independent values of physical properties, can however, be dependent on
 \end{equation}
  where $\langle ... \rangle_0$ denotes an ensemble over the initial time $t=0$ and ensemble $f(\bm{\Gamma};0)$.
 Contrary to intuition, not all NESSs are physically ergodic. An example is the Rayleigh-Benard instability which occurs in a system with fixed boundary conditions and fixed geometry where a system might develop to a fixed number of rolls (two, four etc.) and persist in it indefinitely.
-\section{Crooks fluctuation theorem}
+\section{Generalized Crooks fluctuation theorem}
 
-It was originally developed for determining the difference in free energy of canonical equilibrium states at the same temperature. 
+Crooks fluctuation theorem together with Jarzynski equality were originally developed for determining the difference in free energy of canonical equilibrium states from experimental information taken from non-equilibrium paths that connect two equilibrium states. 
+
 %page 156
+In order to get the connection with Crooks fluctuation theorem, we'll need another definition of so called \textit{generalized dimensionless "work"} $\Delta X_{\tau}(\bm{\Gamma})$ for a trajectory of duration $\tau$ originating from the phase point $\bm{\Gamma}$ as
+
+\begin{equation}
+\begin{aligned}
+\label{GeneralizedWorkDef}
+  \exp[\Delta X_{\tau}(\bm{\Gamma})] &\equiv \lim_{\delta V_{\bm{\Gamma}} \to 0} \frac{p_{eq,1} (\delta V_{\bm{\Gamma}}(\bm{\Gamma};0))Z(\lambda_1)}{p_{eq,2} (\delta V_{\bm{\Gamma}}(S^{\tau}\bm{\Gamma};0))Z(\lambda_2)} \\
+  &= \frac{f_{eq,1}(\bm{\Gamma}) d\bm{\Gamma} Z(\lambda_1)}{f_{eq,2}(S^{\tau}\bm{\Gamma}) d(S^{\tau}\bm{\Gamma}) Z(\lambda_2)}
+\end{aligned}
+\end{equation}
+
+where $Z(\lambda_i)$ is the partition function for the system and is just a normalization factor for the equilibrium function $f_{eq}(\bm{\Gamma}) =\exp[F(\bm{\Gamma})]/Z$, where$F(\bm{\Gamma})$ is some single-valued phase function. After time $\tau$ the system ends it's parametric change in $\lambda$, however the system is \textit{not} in equilibrium. That is $f(\bm{\Gamma};0)=f_{eq,1}(\bm{\Gamma})$ but $f(\bm{\Gamma};\tau)\neq f_{eq,2}(\bm{\Gamma})$ in general, since relaxation to complete thermal equilibrium cannot take place in finite time.
+It can be shown that generalized work defined this way is in fact a state-function when evaluated along quasi-static paths.
+
+The Generalized Crooks Fluctuation Theorem (GCFT) considers probability $p_{eq,f}(\Delta X_t = B \pm dB)$ of observing values of $\Delta X_t$ in the range $B\pm dB$ for forward trajectories starting from the initial equilibrium distribution 1, $f_1(\bm{\Gamma};0)=f_{eq,1}(\bm{\Gamma})$, and the probability $p_{eq,r}(\Delta X_t = -B \mp dB)$ of observing $\Delta X_t$ in the range $ -B\mp dB$ for reverse trajectories byt starting from the equilibrium distribution given by $f_{eq,2}(\bm{\Gamma})$ of system 2.
+
+The probability that the phase variable $\Delta X_{\tau}$ takes the value $B$ for a forward evolved trajectories is given by
+\begin{equation}
+  p_{eq,1}(\Delta X_{\tau,f}=B\pm dB) = \int_{\Delta X_{\tau,f}=B\pm dB} d\bm{\Gamma} f_{eq,1}(\bm{\Gamma})
+\end{equation}
+
+Analogously, the probability of particular values for backward evolved trajectories starting from $f_{eq,2}(\bm{\Gamma})$ is given by
+
+\begin{equation}
+  p_{eq,2}(\Delta X_{\tau,r}=-B\mp dB) = \int_{\Delta X_{\tau,r}=-B\mp dB} d\bm{\Gamma} f_{eq,2}(\bm{\Gamma})
+\end{equation}
+Now looking at the ration of those probabilities we get (to simplify the notion we'll suppress $\pm B$ and instead use $+$/$-$ in the superscript of $\Delta X$)
+\begin{equation}
+\begin{aligned}
+  \frac{p_{eq,1}(\Delta X_{\tau,f}^+)}{p_{eq,2}(\Delta X_{\tau,r}^-)}
+= \frac{\int_{\Delta X_{\tau,f}^+(\bm{\Gamma})} d\bm{\Gamma} f_{eq,1}(\bm{\Gamma})}{\int_{\Delta X_{\tau,r}^-(\bm{\Gamma})} d\bm{\Gamma} f_{eq,2}(\bm{\Gamma})}
+\end{aligned}
+\end{equation}
+Now using the definition of generalized work, equation (\ref{GeneralizedWorkDef}), two times first get $f_{eq,2}(\bm{\Gamma})d\bm{\Gamma}= \exp[\Delta X_{r,\tau}(\bm{\Gamma})] f_{eq,1}(S^T \bm{\Gamma}) d(S^T \bm{\Gamma}) Z(\lambda_1)/Z(\lambda_2) $ and also (by inserting $\bm{\Gamma} \to M^T S^{\tau} \bm{\Gamma}$) we see that $\Delta X_{\tau,r}(\bm{\Gamma}) = -\Delta X_{\tau,f}(M^T S^{\tau} \bm{\Gamma}) $ or $\Delta X_{\tau,r}^-(\bm{\Gamma}) = \Delta X_{\tau,f}^+(M^T S^{\tau} \bm{\Gamma}) $ in the simplified notion. Using those two results we perform the transformations:
+
+\begin{equation}
+\begin{aligned}
+\frac{p_{eq,1}(\Delta X_{\tau,f}^+)}{p_{eq,2}(\Delta X_{\tau,r}^-)}
+&=\frac{\int_{\Delta X_{\tau,f}^+(\bm{\Gamma})} d\bm{\Gamma} f_{eq,1}(\bm{\Gamma})}{\int_{\Delta X_{\tau,r}^-(\bm{\Gamma})} d\bm{\Gamma} f_{eq,2}(\bm{\Gamma})} \\
+&= \frac{\int_{\Delta X_{\tau,f}^+(\bm{\Gamma})} d\bm{\Gamma} f_{eq,1}(\bm{\Gamma})Z(\lambda_2)/Z(\lambda_1)}{\int_{\Delta X_{\tau,f}^+(M^T S^{\tau}\bm{\Gamma})} \exp[-\Delta X_{\tau,f}^+(M^T S^{\tau}\bm{\Gamma})] d(M^T S^{\tau}\bm{\Gamma}) f_{eq,1}(M^T S^{\tau}\bm{\Gamma})} \\
+&=\frac{\int_{\Delta X_{\tau,f}^+(\bm{\Gamma})} d\bm{\Gamma} f_{eq,1}(\bm{\Gamma}) Z(\lambda_2)/Z(\lambda_1)}{\int_{\Delta X_{\tau,f}^+(\bm{\Gamma}')} d\bm{\Gamma}' \exp[-\Delta X_{\tau,f}^+(\bm{\Gamma}')] f_{eq,1}(\bm{\Gamma}')} \\
+&= \exp[B] \frac{Z(\lambda_2)}{Z(\lambda_1)}
+\end{aligned}
+\end{equation}
+
+%Not sure if that would hold for \tau \neq 0
+Rewriting this again in full notion
+\begin{equation}
+\label{GCFR}
+\frac{p_{eq,1}(\Delta X_{\tau,f}=B\pm dB)}{p_{eq,2}(\Delta X_{\tau,r}=-B\mp dB)}= \exp[B] \frac{Z(\lambda_2)}{Z(\lambda_1)}
+\end{equation}
+we obtain the generalized Crooks fluctuation relation (GCFR).
+
+\subsection{Jarzynski Equality}
+This GCFR can be used to derive the well known Jarzynski Equality, which expresses the free energy difference between two equilibrium states in terms of an average over irreversible paths.
+In fact a generalized Jarzynski equality (GJE) follows from:
+
+\begin{equation}
+\begin{aligned}
+  \langle \exp[-\Delta X_{\tau}(\bm{\Gamma})] \rangle_{eq,1} 
+  &= \int_{-\infty}^{\infty} dB\ p_f(\Delta X_\tau =B)\exp[-B]\\
+ &= \int_{-\infty}^{\infty} dB\ p_r(\Delta X_\tau =-B)\frac{Z(\lambda_2)}{Z(\lambda_1)}\\
+ &=\frac{Z(\lambda_2)}{Z(\lambda_1)}
+\end{aligned}
+\end{equation}
+
+where the brackets $\langle ... \rangle_{eq,1}$ denote an equilibrium ensemble average over the initial equilibrium distribution.
+
+%More discussion needed page 168
 
 \section{Non-equilibrium results}
 There exist only a handful of relations correct arbitrarily far from equilibrium, these include:
@@ -946,56 +1015,6 @@ Those relations have several commonalities:
 It's clear from that a system with these properties is microscopically reversible.
 
 All those relations can be considered a special cases of a single theorem
-
-
-
-\subsection{Fluctuation Theorem}
-The Fluctuation Theorem is best regarded as a set of closely related theorems.
-One of the reason for this situation is because we'd expect different fluctuations for different statistical mechanical ensembles.
-Second reason, because of which we've got this diversity is that some of this theorems refer to non-equilibrium steady state fluctuations (e.g.), while others refer to transient fluctuations.
-For the needs of this we will further refer to Steady State Fluctuation Theorems (SSFT) valid in the long averaging times and Transient Fluctuation Theorems (TFT) which are exact for arbitrary averaging times.
-
-The probability $p(\delta V_{\Gamma}(\Gamma(t),t))$, that a phase $\Gamma$, will be observed within an infinitesimal phase space volume of size $\delta V_{\Gamma}$ about $\bm{\Gamma}(t)$ at time $t$, is given by,
-
-\begin{equation}
-  p(\delta V_{\Gamma}(\Gamma(t),t)) = f(\bm{\Gamma}(t),t)\delta V_{\Gamma}
-\end{equation}
-
-where $f(\bm{\Gamma}(t),t)$ is the normalized phase space distribution function at the phase $\bm{\Gamma}(t)$ at time $t$.
-
-\begin{equation}
-  f(\bm{\Gamma}(t),t)= exp[- \int_0^t \Lambda(\bm{\Gamma}(s))\ ds ]f(\bm{\Gamma}(0),0)
-\end{equation}
-
-
-
-\subsubsection{Evans-Searles Fluctuation Theorem}
-Evans-Searles Fluctuation Theorem results in a generalisation of the Second Law of Thermodynamics so that it applies to small systems, including those that evolve far from equilibrium.
-It describes how a finite sized system's irreversibility develops in time from a completely time-reversible system at short observation times, to an irreversible one at long times or when the system's size increases. 
-...
-
-We have now completed our derivation of the Transient Fluctuation Theorem
-\begin{displaymath}
-  \frac{p(\Omega_t=A)}{p(\Omega_t=-A)}=exp(A t)
-\end{displaymath}
-
-
-If we're interested in steady state then we'll allow the system for some relaxation time $\tau_r$
-
-\begin{displaymath}
-  lim_{\frac{t}{\tau_R}\rightarrow \infty} \frac{1}{t} ln{\frac{p(\Omega_{t,ss}=A)}{p(\Omega_{t,ss}=-A)}} =A
-\end{displaymath}
-
-
-The fluctuation theorem relates the probabilities of observing time averaged values of a generalized entropy production (dissipation function), for a time period t.
-
-\begin{displaymath}
-  \Omega(\Gamma) \equiv \ln \left(\frac{f(\Gamma ,0)}{f(\Gamma  t,0)}\right)+\underset{0}{\overset{t}{\int }}\frac{\left(\dot{Q} s\right) ds}{k_B T_{\text{res}}}
-\end{displaymath}
-
-\subsubsection{Crooks Fluctuation Theorem}
-
-Crooks Fluctuation Theorem, provides a method of predicting equilibrium free energy difference from ex- perimental information taken from nonequilibrium paths that connect two equi- librium states. This FT can be used to derive the well known Jarzynski Equality, which expresses the free energy difference between two equilibrium states in terms of an average over irreversible paths.
 
 \subsubsection{As a measure of irreversibility}
 If we denote T as irreversibility then I can be interpreted as a measure of T-symmetry breaking.
@@ -1043,7 +1062,16 @@ far from equilibrium usually means far from global equilibrium near local equili
 
 \subsection{MEP}
 \subsubsection{Relation between fluctuation theorem and MEP}
-\subsubsection{Results for atmospheres?}
+\subsubsection{Results}
+\begin{itemize}
+	\item Paltridge's Explanation of the Global State of the Present Climate
+	\item Eddy fluxes in inviscid shallow water equations (Polyakov I, 2001)
+	\item Application in Photosynthesis model (Zupanovic P, 2003)
+	\item Kirchhoff's Voltage Law (Zupanovic P, 2004)
+\end{itemize}
+
+
+
 \section{Physics of adaptation and self-replication}
 
 \section{Statistical measures of complexity}
