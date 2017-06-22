@@ -10,7 +10,7 @@
 %\usepackage[macce]{inputenc}
 %\usepackage[latin2]{inputenc}
 \usepackage{physics}
-
+\usepackage{todonotes}
 \definecolor{lightgray}{gray}{0.90}
 \newtheorem{theorem}{Theorem}
 \usepackage{framed}
@@ -191,7 +191,7 @@ which entropy is zero. It's important to notice though that our system lost a pa
 where the  squared modulus of the coefficients has to sum up to one ($ \sum_i \left| c_i \right|^2 = 1 $).
 
 Now depending on the precision of the measurement we can recalculate entropy of course getting a value greater than zero. If we would perform the same analysis for a pure state of two particles in different states i.e. $ket{1,1,...}$ then we would obtain an increase of entropy even without accounting for the lost particle.
-%% Correct also for correlated systems?
+\todo{Correct also for correlated systems?}
 This crude example gives a clear illustration of the fact that after \textbf{any} measurement the von Neumann entropy has to increase. However it's change is ultimately related to lost information about the system in the act of the measurement.
 
 There's another interesting feature of quantum entropy, namely inequalities that it fullfills.
@@ -233,14 +233,14 @@ The Fluctuation Theorem does much more than merely prove that in large systems o
 
 In comparison to Boltzmann entropy, Gibbs entropy is well defined also for a system of interacting particles
 
-%Jaynes - Gibbs vs Boltzmann Entropies
+%TODO: Add Jaynes - Gibbs vs Boltzmann Entropies
 
 
 In Hamiltonian systems Gibbs entropy stays constant.
 That however doesn't mean that the concept of Gibbs entropy 
 is useless.
 
-%Proof on page 43
+%TODO: Proof from page 43
 
 \subsubsection{Simple model}
 Let's consider a model consisting of three elements: the cooler $C$, the heater $H$ and the system under consideration $S$, staying out of equilibrium.
@@ -593,7 +593,7 @@ Time stationarity of an ensemble average is then defined simply by
 \end{equation}
 for any $\Delta > 0$.
 
-%More on ensemble averages can be found on page 35
+%TODO: More on ensemble averages can be found on page 35
 
 \paragraph{Ergodicity}
 Stationary system is said to be physically ergodic if the time average of the phase function representing a physical observable, along a trajectory that starts \textit{almost anywhere} in the ostensible phase space, is equal to the ensemble average taken over an ensemble of systems consistent with the small number of macroscopic constraints on the system.
@@ -601,14 +601,16 @@ Stationary system is said to be physically ergodic if the time average of the ph
 \begin{equation}
     \lim_{t \to \infty} \langle A(t) \rangle = \lim_{t \to \infty} \frac{1}{t} \int_0^t ds\ A(S^s \bm{\Gamma})
 \end{equation}
-%^ Page 22, another definition on page 74
+%TODO: Page 22, another definition on page 74
+
+One may also talk about, so called \textit{ergodic consistency condition} in many context, the reason for this requirement stems from the requirement of existence of distributions sitting in the denominator of various theorems for example in the definition (in later introduced) dissipation function.
 
 \subsubsection{Construction}
 
 To model a three-dimensional system of $N$ interacting particles, we assume that the microstates were initially distributed according to a given normalized probability distribution function $f(\bm{\Gamma};0)$. As mentioned before we separate our system of $N$ particles into system and surroundings, where the surroundings are assumed to be composed of $N_{th}$ particles. 
 
 
-%Construction of the termostat left for later, start at page 24
+%TODO: Construction of the termostat left for later, start at page 24
 
 
 \subsection{Condition of adiabatic incompressibility of phase space}
@@ -618,7 +620,7 @@ We say that a system fulfills the \textit{adiabatic incompressibility of phase s
   \Lambda \equiv (\partial / \partial\bm{\Gamma}) \cdot \dot{\bm{\Gamma}}=0
 \end{equation}
 
-%Remark about Hermicity of Liouville page 35
+%TODO: Remark about Hermicity of Liouville page 35
 
 \subsection{Liouville equation}
 
@@ -663,14 +665,14 @@ In a lot of cases the phase space volume goes to zero, while the density approac
 \subsection{Dissipation}
 
 The dissipation function serves as mathematical replacement for the entropy production. When entropy production can be defined, it is equal, on average, to the dissipation function. The main advantage though is that, unlike the entropy production, the dissipation function can, for ergodically consistent systems be always well defined \cite{Evans:2016tq}.
-%General intro
+%TODO: More general intro
 
 If external fields are applied to the system of particles and the external field does work on the system and if that work can be turned completely into heat that can diffuse out of the system, the external field is termed a dissipative field. If the work can be completely stored in the system in the form of potential energy, the external field is termed non-dissipative.
 
 A simple example of a system that turns from non-dissipative into a dissipative system is sodium chloride. In solid state it's an insulator (internal energy increases through polarization), but when heated to around 1100K, melts and becomes a conductor.
 
 Dissipation function was first properly (not implicitly) defined in 2000 by Searles and Evans.
-%citation needed
+%TODO: citation needed
 The dissipation function is similar to the entropy production, and although it's not a state function it provides description of non-equilibrium systems through various fluctuation theorems.
 
 The most straight forward definition of the dissipation function is derived from the ratio of the probabilities $p$ at time zero, of observing sets of phase space trajectories originating inside infinitesimal volumes of phase space $\delta V_{\bm{\Gamma}}$ and $\delta V_{\bm{\Gamma}}(\bm{\Gamma}^*)\equiv \delta V_{\bm{\Gamma}}(M^T S^t \bm{\Gamma})$:
@@ -705,12 +707,12 @@ If we now choose our volume elements in such a way that all the trajectories ori
 \label{ESFT}
   \frac{p(\bar{\Omega}_t=A)}{p(\bar{\Omega}_t=-A)}=\exp[A\ t].
 \end{equation}
-%Add assumptions - page 52
-%Connection to Kullback-Leibler divergence
+%TODO: Add assumptions - page 52
+%TODO: Connection to Kullback-Leibler divergence
 
 This fluctuation relation written ESFT is valid for arbitrary system size (the thermodynamic limit was not required) and can be applied to small systems observed for short periods of time.
 It was also verified experimentally, see Wang(2002)\cite{Wang:2002hw}, Carberry(2007)\cite{Carberry:2007be}
-%Add more references - page 53
+%TODO: Add more references - page 53
 
 An important think to note is that it renders the Loschmidt's assertion (that each trajectory has it's own anti-trajectory and therefore irreversability is impossible) simply wrong. One must consider probabilities of infinitesimal sets of trajectories fulfilling given requirements instead of individual sets. Only at equilibrium all individual trajectories cancel out.
 
@@ -756,7 +758,7 @@ This result can also be derived from ESFT given by equation (\ref{ESFT}):
 \end{aligned}
 \end{equation}
 
-%Practical modification on pages 55-56
+%TODO: Practical modification on pages 55-56
 
 \subsubsection{Instantaneous dissipation function}
 
@@ -805,10 +807,10 @@ after substitution $\bm{\Gamma} \to S^{-t}\bm{\Gamma}$ and change of variables w
 
 which states that the forward in time propagator for the N-particle distribution function is given by the exponential time integral of the dissipative function. 
 An immediate conclusion one can draw from this is that for all non-equilibrium deterministic systems the N-particle distribution function has explicit time dependence: $f_{ne}(\bm{\Gamma};t)$ and cannot be written in a closed, time-stationary form - contrary to statements found in Jaynes (1980)
-%Add anything to that?
+%TODO: Add anything to that?
 As with ESFT, this result can be applied to any initial ensemble and time-reversible dynamics satisfying $AI\bm{\Gamma}$.
 
-%Connection to f-Liouville operator if needed page 66.
+%TODO: Connection to f-Liouville operator if needed page 66.
 From equation (\ref{distributionPropagator}) we can calculate non-equilibrium ensemble averages of any physical phase function $B(t)$:
 
 \begin{equation}
@@ -845,16 +847,17 @@ In systems in which the external field drives the system out of equilibrium in a
 
 \subsubsection{Mixing properties and their relations}
 
-Let's consider a system with at least two phase variables $A(\bm{\Gamma})$ and $B(\bm{\Gamma})$. 
+Let's consider a system with at least two zero-mean phase variables $A(\bm{\Gamma})$ and $B(\bm{\Gamma})$. 
 
 \paragraph{Mixing}
 
-A system is said to be mixing if time correlation functions $\langle A(0) B(t) \rangle_{\mu}$ taken over a stationary distribution $\mu$ factorize in the long time limit:
+A system is said to be mixing if for integrable, reasonably smooth physical phase functions, time correlation functions $\langle A(0) B(t) \rangle_{\mu}$ taken over a stationary distribution $\mu$ factorize in the long time limit:
 \begin{equation}
   \lim_{t \to \infty} \langle A(0) B(t)\rangle_{\mu} = \langle A \rangle_{\mu} \langle B \rangle_{\mu}  
 \end{equation}
 
 \paragraph{Weak T-mixing}
+
 Weak T-mixing is a direct generalization of mixing for transient rather stationary distributions. Mixing is for correlation functions in systems that have stationary averages of physical phase functions such as equilibrium or steady-state distributions.
 
 If in a system either $\langle A(0) \rangle $ or $ \langle B(t) \rangle = 0, \forall t $, then such a system is called weakly T-mixing if
@@ -910,12 +913,12 @@ If the system that is driven was initially at equilibrium, then equation (\ref{D
 
 and at zero field reduces to Green-Kubo expression for the linear response.
 
-%More on usage page 71
+%TODO: More on usage page 71
 
 \subsection{Non-equilibrium Steady States}
 
 From equation (\ref{StationaryStateDef}) we see that stationarity of a system implies that it's physical properties do not vary in time. This can be understood in the sense of all times or sufficiently late times, however stationarity does not imply that the distribution function is stationary (In fact we saw that in a non-equilibrium stationary state the Gibbs entropy diverges at a constant rate toward negative infinity).
-%need to add reference
+%TODO: need to add reference
 The time independent values of physical properties, can however, be dependent on the initial phase $\bm{\Gamma}$, if it is not we call it peNESS (physically ergodic non-equilibrium steady state):
 
 \begin{equation}
@@ -927,7 +930,7 @@ Contrary to intuition, not all NESSs are physically ergodic. An example is the R
 
 Crooks fluctuation theorem together with Jarzynski equality were originally developed for determining the difference in free energy of canonical equilibrium states from experimental information taken from non-equilibrium paths that connect two equilibrium states. 
 
-%page 156
+%TODO: Intro to GCFT page 156
 In order to get the connection with Crooks fluctuation theorem, we'll need another definition of so called \textit{generalized dimensionless "work"} $\Delta X_{\tau}(\bm{\Gamma})$ for a trajectory of duration $\tau$ originating from the phase point $\bm{\Gamma}$ as
 
 \begin{equation}
@@ -972,7 +975,7 @@ Now using the definition of generalized work, equation (\ref{GeneralizedWorkDef}
 \end{aligned}
 \end{equation}
 
-%Not sure if that would hold for \tau \neq 0
+\todo{Not sure if that would hold for $\tau \neq 0$}
 Rewriting this again in full notion
 \begin{equation}
 \label{GCFR}
@@ -980,6 +983,8 @@ Rewriting this again in full notion
 \end{equation}
 we obtain the generalized Crooks fluctuation relation (GCFR).
 
+%TODO: Improvement of GCFR?
+%TODO: More discussion needed - page 168
 \subsection{Jarzynski Equality}
 This GCFR can be used to derive the well known Jarzynski Equality, which expresses the free energy difference between two equilibrium states in terms of an average over irreversible paths.
 In fact a generalized Jarzynski equality (GJE) follows from:
@@ -995,8 +1000,55 @@ In fact a generalized Jarzynski equality (GJE) follows from:
 
 where the brackets $\langle ... \rangle_{eq,1}$ denote an equilibrium ensemble average over the initial equilibrium distribution.
 
-%More discussion needed page 168
+The usual practice is is use the inequality $e^x \geq 1+x $ to rewrite it in a form of an inequality:
 
+\begin{equation}
+\begin{aligned}
+  \frac{Z(\lambda_2)}{Z(\lambda_1)} &=\langle \exp[-\Delta X_\tau ]\rangle_1 \\
+  &=exp[-\langle\Delta X_\tau \rangle_1]\langle \exp[-\Delta X_\tau + \langle \Delta X_\tau \rangle_1]\rangle \\
+  &\geq exp[-\langle\Delta X_\tau \rangle_1]\langle 1- \Delta X_\tau + \langle \Delta X_\tau \rangle_1 \rangle \\
+  &=exp[-\langle\Delta X_\tau \rangle_1]
+\end{aligned}
+\end{equation}
+
+or taking the logarithm
+
+\begin{equation}
+  \langle \Delta X_\tau \rangle \geq \ln[\frac{Z(\lambda_1)}{Z(\lambda_2)}]=\beta \Delta F_{21}
+\end{equation}
+
+here the right side has is the free energy difference. Now it's time to specialize our generalized work with:
+\begin{equation}
+  \Delta X = \beta \int_0^\tau ds\ W(s)
+\end{equation}
+where $W$ denotes the work. This inequality implies $\Delta W_{21} \geq \Delta F_{21} $, so the minimum work is expended if the path is reversible or quasi-static, in which case the work is, in fact, the difference in the free energies divided by $k_B T$.
+
+If we choose the second equilibrium to be in fact our first equilibrium ($Z_1/Z_2=1$), therefore inducing a closed cycle, then the inequality implies
+
+\begin{equation}
+\label{CyclicInequalityForGeneralizedWork}
+  \oint ds \langle X(s) \rangle = \oint \langle dS \rangle \geq 0
+\end{equation}
+
+i.e. the ensemble average of the cyclic integral of the generalized work is nonnegative.
+Although it's appearance is similar to Clausius inequality, for the heat we have to complete many cycles until the system settles into a periodic response to the cyclic protocol before we can apply the cyclic integral of the heat. Not all systems do settle into a cyclic response. The reason for this disrepancy is that after the cycle is complete no more work is being done, but the long relaxation process of course includes heat exchange. 
+
+\section{England GCFR}
+
+Rewriting again equation (\ref{GCFR}) to 
+
+\begin{equation}
+  \begin{aligned}
+\frac{p_{eq,1}(\Delta X_{\tau,f}^+)}{p_{eq,2}(\Delta X_{\tau,r}^-)}
+&=\frac{\int_{\Delta X_{\tau,f}^+(\bm{\Gamma})} d\bm{\Gamma} f_{eq,1}(\bm{\Gamma})}{\int_{\Delta X_{\tau,r}^-(\bm{\Gamma})} d\bm{\Gamma} f_{eq,2}(\bm{\Gamma})} 
+&= \exp[B] \frac{Z(\lambda_2)}{Z(\lambda_1)}
+\end{aligned}
+\end{equation}
+
+and coalescing the distribution functions together with the pa
+
+
+%TODO: Show Clausius inequality with Nose-Hoover model
 \section{Non-equilibrium results}
 There exist only a handful of relations correct arbitrarily far from equilibrium, these include:
 \begin{itemize}
