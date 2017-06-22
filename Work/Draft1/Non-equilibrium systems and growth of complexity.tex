@@ -10,7 +10,7 @@
 %\usepackage[macce]{inputenc}
 %\usepackage[latin2]{inputenc}
 \usepackage{physics}
-\usepackage{todonotes}
+\usepackage[textsize=tiny]{todonotes}
 \definecolor{lightgray}{gray}{0.90}
 \newtheorem{theorem}{Theorem}
 \usepackage{framed}
@@ -28,6 +28,17 @@
 {\endMakeFramed}
 \setlength{\FrameSep}{0pt}
 
+%\usepackage{showframe}
+\usepackage[left=70pt,
+			right=70pt,
+            top=50pt,
+%            textwidth=345pt,
+            marginparsep=0pt,
+            marginparwidth=70pt,
+%            textheight=692pt,
+%            footskip=50pt
+            ]
+           {geometry}
 %\textwidth=16.5 truecm
 %\textheight=25 truecm
 %\hoffset=-2.5 truecm
@@ -229,6 +240,12 @@ The earliest efforts into explaining (near) non-equilibrium behaviour in a syste
 In 1993 Evans et al discovered a relation known as the Fluctuation Theorem (FT), which gives an analytical expression for the probability of observing Second Law violating dynamical fluctuations in thermostatted dissipative non-equilibrium systems.
 The Fluctuation Theorem does much more than merely prove that in large systems observed for long periods of time, the Second Law is overwhelmingly likely to be valid. The Fluctuation Theorem quantifies the probability of observing violations of the Second Law in small systems observed for a short period of time \cite{Evans:2002gy}. The quantitative predictions made by the fluctuation theorem have been confirmed experimentally, both using laboratory experiments and using molecular dynamics computer simulations.
 
+%TODO: Incorporate the following into bulk text
+The frontier of non-equilibrium physics is being pushed forward by many groups and the specifics of their approaches differs. 
+In classical physics part, the stochastic approach pioneered by Christopher Jarzynski and Gavin Crooks focuses on derivation of practical theorems and their numerical side. In fact the derivation of the fluctuation theorem by Crooks, although very lucid, depends on specific definitions of heat and work. One could argue for a more general approach and this is exactly what the Australian group of Evans et al. does. They start from the perspective of phase space evolution and first introduce the concept of dissipation, arguing why the concept of entropy production doesn't suffice and pointing out weaknesses of classical statistical mechanics constructs for description of non-equilibrium phenomena. Building on careful and general definitions they arrive at theorems of Crooks and Jarzynski. In this work we'll perform a continuous connection of the two approaches leading to a complete overview of the topic.
+
+On quantum side,... 
+%TODO: Finish the quantum side
 \subsection{Gibbs entropy}
 
 In comparison to Boltzmann entropy, Gibbs entropy is well defined also for a system of interacting particles
@@ -983,10 +1000,44 @@ Rewriting this again in full notion
 \end{equation}
 we obtain the generalized Crooks fluctuation relation (GCFR).
 
+In order to use GCFT we specialize it to an actual statistical mechanical ensemble and system of dynamics, obtaining the canonical forms of CFT between initial and final equilibrium states with the same values of temperature, volume and number of particles (T,V,N). We will consider T-mixing, Nose-Hoover isothermal systems in which the Hamiltonian is subject to a parametric transformation. Equilibrium distribution function $f(\bm{\Gamma};0)$ and the related free energy $F(\lambda)$ and partition function $Z_c$ are given by
+
+\begin{equation}
+\begin{aligned}
+  f(\bm{\Gamma};0)=Z_c^-1 \exp[-\beta H_0(\bm{\Gamma})]\\
+  F(\lambda)\equiv - k_B T \ln Z_c(\lambda) = -k_B T \ln[\int d\bm{\Gamma} \exp[-\beta H_0(\bm{\Gamma},\lambda)]]
+\end{aligned}
+\end{equation}
+
+The Hamiltonian given by
+\begin{equation}
+  H_0(\bm{\Gamma},\lambda(t)) = \sum_{i=1}^N \frac{p_i^2}{2m} + \Phi(\bm{q}, \lambda{t})
+\end{equation}
+
+is varied parametrically from $\lambda_1 =\lambda(0)$ to the final, unique equilibrium state $\lambda_2 = \lambda(\tau)$ (to which it will relax thanks to the property of T-mixing). In systems coupled to additional degrees of freedom, the phase space volume changes and so the work with the Hamiltonian $H_E$ for the extended system becomes
+
+\begin{equation}
+\begin{aligned}
+  \Delta X_\tau &= \beta ( H_E(S^\tau \bm{\Gamma}, \lambda(\tau))-H_E(\bm{\Gamma},\lambda(0))) + \ln\left[\frac{d\bm{\Gamma}}{d(S^\tau \bm{\Gamma})}\right]\\
+  &=\beta ( H_E(S^\tau \bm{\Gamma}, \lambda(\tau))-H_E(\bm{\Gamma},\lambda(0))) + \int_0^\tau ds\ \Lambda(S^s\bm{\Gamma})\\
+  &=\beta ( H_E(S^\tau \bm{\Gamma}, \lambda(\tau))-H_E(\bm{\Gamma},\lambda(0)) +\Delta Q_\tau) \\
+  &=\beta \Delta W_\tau
+\end{aligned}
+\end{equation}
+
+The generalized dimensionless "work" became identifiable as $\beta$ time the work performed over a period of time $\tau$
+\todo{Discussion of the extended Hamiltonian + the isothermal result}
+
+\begin{equation}
+\label{CFT}
+  \frac{p_1(\Delta W_\tau =W)}{p_2(\Delta W_\tau = -W)} = exp[-\beta (\Delta F - W)]
+\end{equation}
+
+
 %TODO: Improvement of GCFR?
 %TODO: More discussion needed - page 168
 \subsection{Jarzynski Equality}
-This GCFR can be used to derive the well known Jarzynski Equality, which expresses the free energy difference between two equilibrium states in terms of an average over irreversible paths.
+This GCFR can be used to derive the well known Jarzynski Equality in it's generalized form, which expresses the free energy difference between two equilibrium states in terms of an average over irreversible paths.
 In fact a generalized Jarzynski equality (GJE) follows from:
 
 \begin{equation}
@@ -1014,7 +1065,7 @@ The usual practice is is use the inequality $e^x \geq 1+x $ to rewrite it in a f
 or taking the logarithm
 
 \begin{equation}
-  \langle \Delta X_\tau \rangle \geq \ln[\frac{Z(\lambda_1)}{Z(\lambda_2)}]=\beta \Delta F_{21}
+  \langle \Delta X_\tau \rangle \geq \ln\left[\frac{Z(\lambda_1)}{Z(\lambda_2)}\right]=\beta \Delta F_{21}
 \end{equation}
 
 here the right side has is the free energy difference. Now it's time to specialize our generalized work with:
@@ -1033,22 +1084,20 @@ If we choose the second equilibrium to be in fact our first equilibrium ($Z_1/Z_
 i.e. the ensemble average of the cyclic integral of the generalized work is nonnegative.
 Although it's appearance is similar to Clausius inequality, for the heat we have to complete many cycles until the system settles into a periodic response to the cyclic protocol before we can apply the cyclic integral of the heat. Not all systems do settle into a cyclic response. The reason for this disrepancy is that after the cycle is complete no more work is being done, but the long relaxation process of course includes heat exchange. 
 
+%TODO: Show Clausius inequality with Nose-Hoover model
 \section{England GCFR}
 
-Rewriting again equation (\ref{GCFR}) to 
+Rewriting again equation (\ref{CFT}) to 
 
 \begin{equation}
-  \begin{aligned}
-\frac{p_{eq,1}(\Delta X_{\tau,f}^+)}{p_{eq,2}(\Delta X_{\tau,r}^-)}
-&=\frac{\int_{\Delta X_{\tau,f}^+(\bm{\Gamma})} d\bm{\Gamma} f_{eq,1}(\bm{\Gamma})}{\int_{\Delta X_{\tau,r}^-(\bm{\Gamma})} d\bm{\Gamma} f_{eq,2}(\bm{\Gamma})} 
-&= \exp[B] \frac{Z(\lambda_2)}{Z(\lambda_1)}
-\end{aligned}
+\frac{\pi (j\to i;\tau )}{\pi (i\to j;\tau )}=\left\langle \exp \left(-\beta  \Delta Q_{i\to j}^{\tau }\right)\right\rangle_{i\to j}
 \end{equation}
 
-and coalescing the distribution functions together with the pa
+and coalescing the equilibrium partition functions with the particular amount $B$ of generalized work performed we move to description known from the works of Crooks:
 
 
-%TODO: Show Clausius inequality with Nose-Hoover model
+
+
 \section{Non-equilibrium results}
 There exist only a handful of relations correct arbitrarily far from equilibrium, these include:
 \begin{itemize}
