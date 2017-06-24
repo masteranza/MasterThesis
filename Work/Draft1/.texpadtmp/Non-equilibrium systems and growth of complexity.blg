@@ -3,54 +3,54 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: /Users/masteranza/Projects/MasterThesis/Work/Draft1/.texpadtmp/Non-equilibrium systems and growth of complexity.aux
 The style file: ieeetr.bst
 Database file #1: ../Refs.bib
-Repeated entry---line 2185 of file ../Refs.bib
+Repeated entry---line 2228 of file ../Refs.bib
  : @book{Prigogine:1979ul
  :                       ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 2533 of file ../Refs.bib
+Repeated entry---line 2576 of file ../Refs.bib
  : @book{Prigogine:1979ul
  :                       ,
 I'm skipping whatever remains of this entry
 Warning--empty journal in Evans:2016tq
-You've used 13 entries,
+You've used 15 entries,
             1876 wiz_defined-function locations,
-            578 strings with 5889 characters,
-and the built_in function-call counts, 4063 in all, are:
-= -- 441
-> -- 123
+            592 strings with 6145 characters,
+and the built_in function-call counts, 4731 in all, are:
+= -- 519
+> -- 135
 < -- 0
-+ -- 46
-- -- 33
-* -- 279
-:= -- 541
-add.period$ -- 14
-call.type$ -- 13
-change.case$ -- 12
++ -- 51
+- -- 36
+* -- 325
+:= -- 625
+add.period$ -- 16
+call.type$ -- 15
+change.case$ -- 14
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 209
-empty$ -- 359
-format.name$ -- 33
-if$ -- 1004
+cite$ -- 16
+duplicate$ -- 243
+empty$ -- 418
+format.name$ -- 36
+if$ -- 1170
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 13
-newline$ -- 43
-num.names$ -- 13
-pop$ -- 29
+int.to.str$ -- 15
+missing$ -- 15
+newline$ -- 49
+num.names$ -- 15
+pop$ -- 31
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 186
+skip$ -- 220
 stack$ -- 0
-substring$ -- 343
-swap$ -- 111
+substring$ -- 415
+swap$ -- 131
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 44
-width$ -- 15
-write$ -- 130
+while$ -- 52
+width$ -- 17
+write$ -- 150
 (There were 2 error messages)

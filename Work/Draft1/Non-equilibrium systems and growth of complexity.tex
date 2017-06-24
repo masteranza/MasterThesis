@@ -1187,15 +1187,17 @@ In fact it was shown in \cite{Brookes:2011hu} through numerical simulations, tha
 
 One should note here that in the light of formulation of MEP from the previous paragraph this result doesn't prove or disprove the MEP principle as it compares steady states to transient states, instead of steady states to steady states. One might conclude however that the supposed theorem of maximum instantaneous dissipation for steady states does not generally apply.
 
-In order to provide further information on the behaviour of the dissipation, one should consider a system where multiple steady state solutions are known to exist. One such model was investigated by \cite{Zhang:2001jc} who considered heat flow in a one-dimensional lattice. The two possible steady states exist and depend on the initial conditions: a soliton and a diffusive heat flow. 
-In this case the state with maximum dissipation should stay the same at all field strengths, however at low fields, the soliton does not form whereas at high fields it does.
+In order to provide further information on the behaviour of the dissipation, one should consider a system where multiple steady state solutions are known to exist. One such model was investigated by \cite{Zhang:2001jc} who considered heat flow in a one-dimensional lattice. The two possible steady states exist - a soliton or a diffusive heat flow - and depend on the initial conditions and the field strength.
+For a given field strength, there is a certain set of trajectories from which a soliton emerge spontaneously. There's also a critical value of the field strength after which the probability of forming a soliton is equal to unity. This chaos-soliton transition becomes sharper as the size of the system (number of particles) is increased. One might think that it may very well be that after increased simulation time the transition becomes sharper as well, but it turns out for zero-field there exists a set of initial conditions (of zero measure) that also forms a soliton. This peculiar points of the phase space form a basin of attraction which grows after the external field is increased. This non-uniqness of the steady state stands in contrast to other 1D and 2D  numerical simulations like \cite{Maeda:1995bj}.
 
 This might suggest that the strong conjecture of MEP might not hold for all steady state or that the field strength should also be considered a constrain of the system.
 Perhaps, MEP requires the external forcing to be sufficiently large that low entropy states are unstable. It is clear that the results will depend on the constraints imposed, and therefore the problem could be reformulated as a problem in identification of the appropriate constraints.
 
 It is difficult to study MEP numerically at the microscopic level, the main reason for that is because systems that generate multiple steady states, such as convection and turbulent flow, are computationally very expensive. One would then obtain MEP as an objective way of finding the appropriate constrains.
 
-One should perhaps mention, before committing to such enterprise, that there exists a discouraging example seen in the derivation of the dissipation theorem for driven system from an extremum principle. In that case the number of constraints required in order to obtain the exact answer turned out to be infinite. 
+One should perhaps mention, before committing to such enterprise, that there exists a discouraging example seen in the derivation of the dissipation theorem for driven system from an extremum principle \cite{Evans:1985br}. In that case the number of constraints (chaining constrains of the dissipative flux for each time step) required in order to obtain the exact answer turned out to be infinite. 
+
+\subsubsection{MaxEnt based formulations of MEP}
 
 \section{Statistical measures of complexity}
 \subsection{Kolmogorov complexity}

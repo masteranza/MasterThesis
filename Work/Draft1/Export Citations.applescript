@@ -30,9 +30,6 @@ tell application "System Events" to tell process "Papers"
 	keystroke "Refs"
 	keystroke return
 	--	keystroke "Refs.bib"
-	keystroke return
-	keystroke return
-	keystroke return
 end tell
 
 delay 4
