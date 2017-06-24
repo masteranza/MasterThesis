@@ -1,5 +1,5 @@
 % !TEX encoding = Mac Central European Roman
-\documentclass[a4paper,12pt,nofootinbib]{article}
+\documentclass[a4paper,12pt]{article}
 
 \usepackage{amsmath, amssymb, mathtools, verbatim, bm, xcolor, hyperref}
 %\usepackage[polish]{babel}
@@ -56,7 +56,11 @@
 Instytut Fizyki, Uniwersytet Jagielloński, \\ul. Łojasiewicza
 11, 30-348 Kraków, Polska }
 
+
+
 \maketitle
+
+\tableofcontents
 
 \section{Historical introduction}
 
@@ -248,12 +252,14 @@ On quantum side,...
 %TODO: Finish the quantum side
 \subsection{Gibbs entropy}
 
-In comparison to Boltzmann entropy, Gibbs entropy is well defined also for a system of interacting particles
+In comparison to Boltzmann entropy, Gibbs entropy is well defined also for a system of interacting particles.
+
 
 %TODO: Add Jaynes - Gibbs vs Boltzmann Entropies
 
-
 In Hamiltonian systems Gibbs entropy stays constant.
+The constancy of entropy in Hamiltonian systems was first discovered by Gibbs in 1903 and was commented on extensively but inconclusively by Ehrenfest review of the foundations of statistical mechanics.
+
 That however doesn't mean that the concept of Gibbs entropy 
 is useless.
 
@@ -716,7 +722,7 @@ Usually one defines an auxiliary quantity $\bar{\Omega}_t$ called \textit{time-a
 
 A possible interpretation of this equation states that dissipation function is a measure of the temporal asymmetry inherent in sets of trajectories originating from an initial distribution of states.
 
-\subsubsection{Evans-Searles Fluctuation Theorem}
+\subsection{Evans-Searles Fluctuation Theorem}
 
 If we now choose our volume elements in such a way that all the trajectories originating at time zero have the time averaged dissipation function $\bar{\Omega}_t(\bm{\Gamma})=(A \pm \delta A)$, then we get the Evans-Searles Fluctuation Theorem
 
@@ -727,11 +733,11 @@ If we now choose our volume elements in such a way that all the trajectories ori
 %TODO: Add assumptions - page 52
 %TODO: Connection to Kullback-Leibler divergence
 
-This fluctuation relation written ESFT is valid for arbitrary system size (the thermodynamic limit was not required) and can be applied to small systems observed for short periods of time.
+This fluctuation relation written ESFT is valid for arbitrary system size (the thermodynamic limit was not required) and can be applied to small systems observed for short periods of time. The conditions of ergodic consistency and microsopic time reversibility are all that are required.
 It was also verified experimentally, see Wang(2002)\cite{Wang:2002hw}, Carberry(2007)\cite{Carberry:2007be}
 %TODO: Add more references - page 53
 
-An important think to note is that it renders the Loschmidt's assertion (that each trajectory has it's own anti-trajectory and therefore irreversability is impossible) simply wrong. One must consider probabilities of infinitesimal sets of trajectories fulfilling given requirements instead of individual sets. Only at equilibrium all individual trajectories cancel out.
+An important thing to note is that it renders the Loschmidt's assertion (that each trajectory has it's own anti-trajectory and therefore irreversability is impossible) simply wrong. One must consider probabilities of infinitesimal sets of trajectories fulfilling given requirements instead of individual sets. Only at equilibrium all individual trajectories cancel out.
 
 \paragraph{Second Law Inequality}
 The Second Law of thermodynamics can be derived from ESFT in a trivial manner, by showing that time averages of the ensemble-averaged dissipation are non negative.
@@ -815,14 +821,15 @@ Starting from the solution of the Lagrangian form of the Liouville equation (\re
 \end{aligned}
 \end{equation}
 
-after substitution $\bm{\Gamma} \to S^{-t}\bm{\Gamma}$ and change of variables we get an interesting equation
+after substitution $\bm{\Gamma} \to S^{-t}\bm{\Gamma}$ and change of variables we get 
 
 \begin{equation}
 \label{distributionPropagator}
     f(\bm{\Gamma};t)=f(\bm{\Gamma};0)\exp[\int_0^t ds\ \bm{\Omega}(S^{-s} \bm{\Gamma})],
 \end{equation}
+\todo{This is true to no field or a constant field - Beyond the second law page 37}
+which states that the forward in time propagator for the N-particle distribution function is given by the exponential time integral of the dissipative function. Important thing to note that this equation applies to systems with no field or a constant field, the case for time dependent field was presented in \cite{Williams:2008ft}.
 
-which states that the forward in time propagator for the N-particle distribution function is given by the exponential time integral of the dissipative function. 
 An immediate conclusion one can draw from this is that for all non-equilibrium deterministic systems the N-particle distribution function has explicit time dependence: $f_{ne}(\bm{\Gamma};t)$ and cannot be written in a closed, time-stationary form - contrary to statements found in Jaynes (1980)
 %TODO: Add anything to that?
 As with ESFT, this result can be applied to any initial ensemble and time-reversible dynamics satisfying $AI\bm{\Gamma}$.
@@ -850,7 +857,8 @@ Differentiating the last equation with respect to time we get
 If we now integrate with in time, we can write the averages of physical phase functions as
 
 \begin{equation}
-\langle B(t)\rangle_{f(\bm{\Gamma};0)} =\langle B(0) \rangle_{f(\bm{\Gamma};0)} +\int_0^t ds \langle B(s) \Omega(0) \rangle_{f(\bm{\Gamma};0)}, \label{DissipationTheorem}
+\label{DissipationTheorem}
+\langle B(t)\rangle_{f(\bm{\Gamma};0)} =\langle B(0) \rangle_{f(\bm{\Gamma};0)} +\int_0^t ds \langle B(s) \Omega(0) \rangle_{f(\bm{\Gamma};0)}, 
 \end{equation}
 
 getting the Dissipation Theorem which states that the nonlinear response of an arbitrary phase variable can be calculated from the time integral of the non-equilibrium transient time correlation function (TTCF) of the phase variable with the dissipation function.
@@ -901,15 +909,23 @@ is bounded from above. This requirement let's us predict that the system will re
 T-mixing systems are $\Omega T$-mixing, and therefore T-mixing systems must relax to time stationary states in the long time limit.
 
 
-\subsection{Relaxation Theorem}
+\subsection{Relaxation}
+
+Non-equilibrium system can relax to equilibrium in two ways: conformally and non-conformally.
+A conformal system relaxes such that the non-equilibrium distribution is of the form
+\begin{equation}
+  f(\bm{\Gamma};t)=\exp[-\beta H(\bm{\Gamma})+\lambda(t) g(\bm{\Gamma})] Z^{-1}
+\end{equation}
+for all times $t$ and the deviation function, $g$, is a constant over the relaxation.
+As one might suspect conformal relaxation is an exception rather than the norm in natural relaxation processes.
+
+\subsubsection{Relaxation Theorem}
 The Relaxation Theorem says that if an arbitrary initial ensemble of ergodic Hamiltonian systems is in contact with a heat bath and there is a decay of temporal correlations, then the system will at long times, relax to the Maxwell-Boltzmann distribution. Further, this distribution has zero dissipation everywhere in phase space. For such systems no other distribution has zero dissipation everywhere.
 \begin{displaymath}
   \lim_{t\to \infty } \Omega (\Gamma ;f(\Gamma ,t))=0, \forall \Gamma
 \end{displaymath}
 
-A system can relax to equilibrium in two ways: conformally and non-conformally.
-Each of the above results is exact arbitrarily far from equilibrium and independent of system size.
-
+This result is exact arbitrarily far from equilibrium and independent of system size.
 \subsection{Driven systems}
 
 Driven systems are a subcategory of non-equilibrium systems which are subject to an external dissipative field $F_e$.
@@ -931,6 +947,21 @@ If the system that is driven was initially at equilibrium, then equation (\ref{D
 and at zero field reduces to Green-Kubo expression for the linear response.
 
 %TODO: More on usage page 71
+
+If we consider a simple, nonequilibrium, thermostatted system of volume, V consisting of charged particles driven by an external field $F_e$ and consider a time-average of the current density along a trajectory as $J_{c,t}= \frac{1}{t}\int_0^t J_c(s)\ ds$, the fluctuation relation of equation (\ref{ESFT}) can then be stated:
+
+\begin{equation}
+  \frac{p(J_{c,t}=A\pm dA)}{p(J_{c,t}=-A\pm dA)}= \exp[A \beta F_e V t]
+\end{equation}
+
+From this equation, one can see that as the system size or time of observation is increased, the relative probability of observing positive to negative current density increases exponentially so the current density has a definit sign and the second law of thermodynamics is retrieved. In obtaining there results, nothing is assumed about the form of the distribution of current density (it deos not have to be Gaussian). Moreover, in the weak field limit, the rate of entropy production, $\dot{S}$, is given by linear irreversible thermodynamics as $\dot{S} \equiv \sum \langle J_i \rangle V X_i/T$ where the sum is over the product of all conjugate thermodynamic fluxes, $J_i$ and thermodynamics forces, $X_i$ divided by the temperature of the system, $T$. The relation stands out simply as:
+\begin{equation}
+  \lim_{F_e \to 0} \dot{S}(t) = k_B \langle \Omega(t) \rangle.
+\end{equation}
+The difference at high fields is because the temperature that appears in the dissipation function is that which the system would relax to if the fields were removed rather than any non-equilibrium system temperature observed with the field on. The change in entropy for a process will be similarly related to the time integral of the dissipation
+\begin{equation}
+  lim_{F_e \to 0} \Delta S= k_B \langle \Omega_t \rangle.
+\end{equation}
 
 \subsection{Non-equilibrium Steady States}
 
@@ -1095,46 +1126,13 @@ Rewriting again equation (\ref{CFT}) to
 
 and coalescing the equilibrium partition functions with the particular amount $B$ of generalized work performed we move to description known from the works of Crooks:
 
+\section{Physics of adaptation and self-replication}
 
-
-
-\section{Non-equilibrium results}
-There exist only a handful of relations correct arbitrarily far from equilibrium, these include:
-\begin{itemize}
-  \item Jarzynski non-equilibrium work relation
-  \item Kawasaki relation
-  \item Evans-Searles transient fluctuation theorem
-\end{itemize}
-Those relations have several commonalities:
-\begin{itemize}
-  \item the system starts in thermal equilibrium
-  \item it is driven from that equilibrium by an external perturbation
-  \item the energy of the system always remains finite
-  \item the dynamics are markovian 
-  \item if the system is unperturbed then the dynamics preserve the equilibrium ensemble
-\end{itemize}
-It's clear from that a system with these properties is microscopically reversible.
-
-All those relations can be considered a special cases of a single theorem
-
-\subsubsection{As a measure of irreversibility}
-If we denote T as irreversibility then I can be interpreted as a measure of T-symmetry breaking.
-\begin{displaymath}
-  I =\int p(x) \ln{\frac{p( x)}{p(T x)}}
-\end{displaymath}
-
-
-
-\subsection{Gibbs Entropy}
-
-\subsubsection{Constancy for Hamiltonian systems}
-
-The constancy of entropy in Hamiltonian systems was first discovered by Gibbs in 1903 and was commented on extensively but inconclusively by Ehrenfest review of the foundations of statistical mechanics.
-
-\subsubsection{Divergence}
-
-
-
+%\subsubsection{As a measure of irreversibility}
+%If we denote T as irreversibility then I can be interpreted as a measure of T-symmetry breaking.
+%\begin{displaymath}
+%  I =\int p(x) \ln{\frac{p( x)}{p(T x)}}
+%\end{displaymath}
 
 \section{Search for a unifying principle}
 
@@ -1152,18 +1150,18 @@ There seems to be a theoretical relationship between maximum irreversibility and
 Studying jets of water from a nozzle, Rayleigh (1878,[27] 1896/1926[28]) noted that when a jet is in a state of conditionally stable dynamical structure, the mode of fluctuation most likely to grow to its full extent and lead to another state of conditionally stable dynamical structure is the one with the fastest growth rate. In other words, a jet can settle into a conditionally stable state, but it is likely to suffer fluctuation so as to pass to another, less unstable, conditionally stable state. He used like reasoning in a study of Benard convection.[39] These physically lucid considerations of Rayleigh seem to contain the heart of the distinction between the principles of minimum and maximum rates of dissipation of energy and entropy production, which have been developed in the course of physical investigations by later authors.
 
 \subsection{Current state of affairs}
+\begin{itemize}
+	\item near equilibrium least dissipation
+	\item near-equilibrium minEP
+	\item near-equilibrium maxEP
+	\item far from equilibrium non-variational maxEP
+	\item far from equilibrium variational maxEP and optimization EP
+\end{itemize}
 
-- near equilibrium least dissipation
-- near-equilibrium minEP
-- near-equilibrium maxEP
-- far from equilibrium non-variational maxEP
-- far from equilibrium variational maxEP and optimization EP
-
-far from equilibrium usually means far from global equilibrium near local equilibrium.
 
 \subsection{MEP}
-\subsubsection{Relation between fluctuation theorem and MEP}
-\subsubsection{Results}
+
+\subsubsection{Claimed results}
 \begin{itemize}
 	\item Paltridge's Explanation of the Global State of the Present Climate
 	\item Eddy fluxes in inviscid shallow water equations (Polyakov I, 2001)
@@ -1171,9 +1169,33 @@ far from equilibrium usually means far from global equilibrium near local equili
 	\item Kirchhoff's Voltage Law (Zupanovic P, 2004)
 \end{itemize}
 
+\subsubsection{Differences between MinEP and MEP}
+For linear, near-equilibrium systems that only admit a single steady state, MinEP says that all of the system's transient states have a higher entropy production than the steady state. A transient state is a temporary state that is not a steady state. MinEP compares steady states with non-steady states.
 
+For some yet-to-be-determined class of non-linear, far-from-equilibrium systems that admit a continuum of possible steady states, MEP says that the system is most likely to be found in the steady state with the greatest entropy production. MEP compares steady states to other steady states, but says nothing about transient states.
 
-\section{Physics of adaptation and self-replication}
+%TODO: Cite Nathaniel
+
+\subsubsection{Extrema of the Dissipation Function and MEP}
+The dissipation function is similar to the entropy production, and although it is not directly connected to a state function, the various fluctuation theorems provide exact, non-equilibrium relations. Given this similarity it is interesting to consider whether there exists a principle akin to MaxEnt (maximum entropy) for equilibrium systems, and MEP (maximum entropy production rate) for non-equilibrium systems. There were several papers on the topic, including Williams and Evans \cite{Williams:2008ft}, concluding that MEP cannot be applied rigorously to non-equilibrium systems in general, as the distribution function at any time (including steady state) is not just a function of the dissipation at that time. However it might provide a good approximation in some cases.
+
+Considering a system that is driven from an initially equilibrium state to a steady-state one finds that the ensemble average of the instantaneous dissipation function stays positive, and that the average of the total dissipation function will approach infinity at long times. Considering equation (\ref{DissipationTheorem}) with $B=\Omega$, one can see \textit{then if} the autocorrelation function $\langle \Omega(\bm{\Gamma}(0))\Omega(\bm{\Gamma}(t))\rangle$ decays monotonically with time, then the value of the ensemble average of the instantaneous dissipation funciton, $\langle \Omega(t) \rangle$ will be higher when it reaches its steady state than for any other state it passes through. Therefore the system would find itself in a steady-state that maximises the dissipation function (rate of entropy production).
+
+However this is a special case, under the assumption of a monotonous autocorrelation function of the dissipation. Some numerical studies has been performed to study the behaviour of the instantaneous dissipation function more generally; examining whether it is a maximum in the steady state or if a transient state has a higher average instantaneous dissipation value.
+
+In fact it was shown in \cite{Brookes:2011hu} through numerical simulations, that the dissipation average peaks before dropping to a steady state for most field values. Therefore it is clear that the instantaneous dissipation is not a maximum in the steady state - the system evolves through unstable (transient) maximum. For stronger fields, the steady state reaches a higher instantaneous dissipation which is also maximum.
+
+One should note here that in the light of formulation of MEP from the previous paragraph this result doesn't prove or disprove the MEP principle as it compares steady states to transient states, instead of steady states to steady states. One might conclude however that the supposed theorem of maximum instantaneous dissipation for steady states does not generally apply.
+
+In order to provide further information on the behaviour of the dissipation, one should consider a system where multiple steady state solutions are known to exist. One such model was investigated by \cite{Zhang:2001jc} who considered heat flow in a one-dimensional lattice. The two possible steady states exist and depend on the initial conditions: a soliton and a diffusive heat flow. 
+In this case the state with maximum dissipation should stay the same at all field strengths, however at low fields, the soliton does not form whereas at high fields it does.
+
+This might suggest that the strong conjecture of MEP might not hold for all steady state or that the field strength should also be considered a constrain of the system.
+Perhaps, MEP requires the external forcing to be sufficiently large that low entropy states are unstable. It is clear that the results will depend on the constraints imposed, and therefore the problem could be reformulated as a problem in identification of the appropriate constraints.
+
+It is difficult to study MEP numerically at the microscopic level, the main reason for that is because systems that generate multiple steady states, such as convection and turbulent flow, are computationally very expensive. One would then obtain MEP as an objective way of finding the appropriate constrains.
+
+One should perhaps mention, before committing to such enterprise, that there exists a discouraging example seen in the derivation of the dissipation theorem for driven system from an extremum principle. In that case the number of constraints required in order to obtain the exact answer turned out to be infinite. 
 
 \section{Statistical measures of complexity}
 \subsection{Kolmogorov complexity}
