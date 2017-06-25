@@ -235,14 +235,14 @@ This example demonstrates the enormous difficulties connected with justification
 [...]
 
 Systems out of equilibrium can exhibit a variety of behaviours including relaxation, ageing, various meta-stable states, and steady states.
-Even at steady state the difficulties seem to pile up as the basic state functions, such as temperature or entropy cease to exist outside of near equilibrium and the distribution functions appear fractal and non-analytic \cite{Dewar:2014ek}.
+Even at steady state the difficulties seem to pile up as the basic state functions, such as temperature or entropy cease to exist outside of near equilibrium and the distribution functions appear fractal and non-analytic (Dewar, Lineweaver, Niven, & Regenauer-Lieb, 2014).
 
 Even though the descriptions of non-equilibrium phenomena are most often being associated with names of Prigogine or Schr{\" o}dinger which undeniably have had an enormous influence on the field in question, they were not however the first.
 The earliest efforts into explaining (near) non-equilibrium behaviour in a systematic way can be traced back to Einstein and theory of fluctuations [...] then to Lars Onsager's reciprocal relations
 
 
 In 1993 Evans et al discovered a relation known as the Fluctuation Theorem (FT), which gives an analytical expression for the probability of observing Second Law violating dynamical fluctuations in thermostatted dissipative non-equilibrium systems.
-The Fluctuation Theorem does much more than merely prove that in large systems observed for long periods of time, the Second Law is overwhelmingly likely to be valid. The Fluctuation Theorem quantifies the probability of observing violations of the Second Law in small systems observed for a short period of time \cite{Evans:2002gy}. The quantitative predictions made by the fluctuation theorem have been confirmed experimentally, both using laboratory experiments and using molecular dynamics computer simulations.
+The Fluctuation Theorem does much more than merely prove that in large systems observed for long periods of time, the Second Law is overwhelmingly likely to be valid. The Fluctuation Theorem quantifies the probability of observing violations of the Second Law in small systems observed for a short period of time (Evans & Searles, 2002). The quantitative predictions made by the fluctuation theorem have been confirmed experimentally, both using laboratory experiments and using molecular dynamics computer simulations.
 
 %TODO: Incorporate the following into bulk text
 The frontier of non-equilibrium physics is being pushed forward by many groups and the specifics of their approaches differs. 
@@ -472,10 +472,10 @@ The Green-Kubo formulae relate the macroscopic, linear transport coefficients of
 
 
 \subsection{Prigogine's MinEP}
-Prigogine himself noted \cite{Prigogine:1979ul}:
+Prigogine himself noted (Prigogine, 1979):
 "It came as a great surprise when it was shown that in systems far from equilibrium the thermodynamic behavior could be quite different-in fact, even directly opposite that predicted by the theorem of minimum entropy production."
 
-Dewar and Maritan \cite{Dewar:2014ek} showed using Jaynes's maximum entropy method that a state of minimum dissipation (MinEP) is selected for a system without dynamic instability, whereas that of maximum dissipation (MaxEP) is selected for a system with dynamic instability.
+Dewar and Maritan (Dewar et al., 2014) showed using Jaynes's maximum entropy method that a state of minimum dissipation (MinEP) is selected for a system without dynamic instability, whereas that of maximum dissipation (MaxEP) is selected for a system with dynamic instability.
 
 \newpage
 
@@ -489,7 +489,7 @@ Therefore in the description of irreversible processes the history of the system
 
 \subsection{Local equilibrium}
 The thermodynamical variables are often defined subject to the kinematical requirement of local thermodynamic equilibrium. This means that collisions between molecules are so frequent that chemical and radiative processes do not disrupt the local Maxwell-Boltzmann distribution of molecular velocities. This principle is valid for hydrodynamic flows and chemical reactions and it's formulation goes back to Clark Maxwell [Citation?].
-It's usage can be usually justified by assuming analyticity of thermodynamic state functions arbitrarily close to equilibrium - then, local equilibrium is obtained from first order expansion of thermodynamic properties in the irreversible fluxes ${X_i}$ \cite{Evans:2002gg}.
+It's usage can be usually justified by assuming analyticity of thermodynamic state functions arbitrarily close to equilibrium - then, local equilibrium is obtained from first order expansion of thermodynamic properties in the irreversible fluxes ${X_i}$ (Evans & Rondoni, 2002).
 
 \subsubsection{Definition of temperature}
 When the temperature differences are "smooth" enough, i.e., locally there is a reasonable definition of temperature (local equilibrium), then the temperature gradient determines the heat flux. In the opposite case, it is molecular kinetics who determines the energy transfer. The latter happens much faster and local equilibrium gets established quickly.
@@ -499,7 +499,7 @@ On the other hand, far from equilibrium there might be a problem defining temper
 \subsection{Entropy production}
 
 In near equilibrium regime, where local thermodynamic equilibrium is expected to be valid, the theory predicts that there will be a 'spontaneous production of entropy' in non-equilibrium systems.
-This spontaneous production of entropy is given by the entropy production per unit volume $\sigma$ by the following expression \cite{DeGroot:1984ue}
+This spontaneous production of entropy is given by the entropy production per unit volume $\sigma$ by the following expression (De Groot & Mazur, 1984)
 \begin{displaymath}
   \int d\bm{r} \sigma(\bm{r},t)=\int d\bm{r}(\sum_i J_i(\bm{r},t)X_i(\bm{r},t))>0,
 \end{displaymath}
@@ -509,15 +509,7 @@ where $J_i(\bm{r},t)$ are the Navier-Stokes hydrodynamic fluxes (e.g. the stress
 In an electric circuit close to equilibrium, entropy production is equal to the product of the electric current times the voltage divided by the ambient temperature. If the circuit has a complex impedance, there will necessarily be a phase lag between the applied voltage and the current. Therefore there will exist an interval in which entropy production will be negative. 
 This example highlights a serious problem for linear, irreversible thermodynamics based on the concept of entropy production. As we will later see, this is not the case for \textit{dissipation}.
 \subsection{Steady states}
-The most basic of non-equilibrium conditions, the steady state is already difficult to describe as many of the basic state functions (including temperature and entropy), are undefined for far from equilibrium states and the distribution function of a steady state is fractal and non-analytic. %TODO: Cite Evans?  
-One however can impose a formal condition of vanishing expectation value of $\partial \rho / \partial t$ over the probability density function $p(\rho)$ and non-vanishing expectation value of fluxes vector $\bm{f}$ over the probability density function $p(\bm{f})$: %TODO:Would need to cite Dewar on this, the second def seems sketchy...
-\begin{equation}
-\begin{aligned}
-\label{SteadyStates}
-  \langle \frac{\partial \rho}{\partial t} \rangle_{p(\bm{\rho})} &= 0 \\
-  \langle \bm{f} \rangle_{p(\bm{f})} &\neq 0
-\end{aligned}
-\end{equation}
+The most basic of non-equilibrium conditions, the steady state is already difficult to describe as may of the basic state functions (including temperature and entropy), are undefined for far from equilibrium states and the distribution function of a steady state is fractal and non-analytic. 
 
 
 \section{Ideas around fluctuation theorem}
@@ -581,7 +573,7 @@ where the action of operators $M^T$ and $S^t$ is evaluated from the right side t
 
 \subsection{Thermostated but time reversible systems}
 
-The first time-reversible, deterministic thermostats and ergostats were invented in the early 1980s by Hoover, Ladd and Moran . Prior to this development there was no satisfactory mathematical way of modelling thermostatted non-equilibrium steady states. \cite{Hoover:1982dp}
+The first time-reversible, deterministic thermostats and ergostats were invented in the early 1980s by Hoover, Ladd and Moran . Prior to this development there was no satisfactory mathematical way of modelling thermostatted non-equilibrium steady states. (Hoover, Ladd, & Moran, 1982)
 
 The construction of thermostated time reversible systems is usually done inserting some time-reversible, but non-Hamiltonian terms into part of the equations of motion defined as the surroundings. Surroundings in first approximation are assumed to stay far from the system of interest and should not affect the system under consideration.
 The work done on a system, should be on average, converted into heat, which is conducted through the system of interest and eventually removed by the non-Hamiltonian terms residing in the remote boundaries.
@@ -695,7 +687,7 @@ In a lot of cases the phase space volume goes to zero, while the density approac
 
 \subsection{Dissipation}
 
-The dissipation function serves as mathematical replacement for the entropy production. When entropy production can be defined, it is equal, on average, to the dissipation function. The main advantage though is that, unlike the entropy production, the dissipation function can, for ergodically consistent systems be always well defined \cite{Evans:2016tq}.
+The dissipation function serves as mathematical replacement for the entropy production. When entropy production can be defined, it is equal, on average, to the dissipation function. The main advantage though is that, unlike the entropy production, the dissipation function can, for ergodically consistent systems be always well defined (Evans, 2016).
 %TODO: More general intro
 
 If external fields are applied to the system of particles and the external field does work on the system and if that work can be turned completely into heat that can diffuse out of the system, the external field is termed a dissipative field. If the work can be completely stored in the system in the form of potential energy, the external field is termed non-dissipative.
@@ -742,7 +734,7 @@ If we now choose our volume elements in such a way that all the trajectories ori
 %TODO: Connection to Kullback-Leibler divergence
 
 This fluctuation relation written ESFT is valid for arbitrary system size (the thermodynamic limit was not required) and can be applied to small systems observed for short periods of time. The conditions of ergodic consistency and microsopic time reversibility are all that are required.
-It was also verified experimentally, see Wang(2002)\cite{Wang:2002hw}, Carberry(2007)\cite{Carberry:2007be}
+It was also verified experimentally, see Wang(2002)(Wang, Sevick, Mittag, Searles, & Evans, 2002), Carberry(2007)(Carberry, Baker, & Wang, 2007)
 %TODO: Add more references - page 53
 
 An important thing to note is that it renders the Loschmidt's assertion (that each trajectory has it's own anti-trajectory and therefore irreversability is impossible) simply wrong. One must consider probabilities of infinitesimal sets of trajectories fulfilling given requirements instead of individual sets. Only at equilibrium all individual trajectories cancel out.
@@ -773,7 +765,7 @@ At this point it's useful to define equilibrium system as the system for which, 
 
 \paragraph{Kawasaki identity}
 
-also known as Non-equilibrium Partition Identity (NPI) was first implied for Hamiltonian systems by Yamada and Kawasaki (1967) \cite{Anonymous:1967fr} and is stated as:
+also known as Non-equilibrium Partition Identity (NPI) was first implied for Hamiltonian systems by Yamada and Kawasaki (1967) (Yamada & Kawasaki, 1967) and is stated as:
 
 \begin{equation}
   \langle \exp[-\bar{\Omega}_t t] \rangle =1
@@ -836,7 +828,7 @@ after substitution $\bm{\Gamma} \to S^{-t}\bm{\Gamma}$ and change of variables w
     f(\bm{\Gamma};t)=f(\bm{\Gamma};0)\exp[\int_0^t ds\ \bm{\Omega}(S^{-s} \bm{\Gamma})],
 \end{equation}
 \todo{This is true to no field or a constant field - Beyond the second law page 37}
-which states that the forward in time propagator for the N-particle distribution function is given by the exponential time integral of the dissipative function. Important thing to note that this equation applies to systems with no field or a constant field, the case for time dependent field was presented in \cite{Williams:2008ft}.
+which states that the forward in time propagator for the N-particle distribution function is given by the exponential time integral of the dissipative function. Important thing to note that this equation applies to systems with no field or a constant field, the case for time dependent field was presented in (Williams & Evans, 2008).
 
 An immediate conclusion one can draw from this is that for all non-equilibrium deterministic systems the N-particle distribution function has explicit time dependence: $f_{ne}(\bm{\Gamma};t)$ and cannot be written in a closed, time-stationary form - contrary to statements found in Jaynes (1980)
 %TODO: Add anything to that?
@@ -1124,8 +1116,7 @@ i.e. the ensemble average of the cyclic integral of the generalized work is nonn
 Although it's appearance is similar to Clausius inequality, for the heat we have to complete many cycles until the system settles into a periodic response to the cyclic protocol before we can apply the cyclic integral of the heat. Not all systems do settle into a cyclic response. The reason for this disrepancy is that after the cycle is complete no more work is being done, but the long relaxation process of course includes heat exchange. 
 
 %TODO: Show Clausius inequality with Nose-Hoover model
-
-\section{Physics of adaptation and self-replication}
+\section{England GCFR}
 
 Rewriting again equation (\ref{CFT}) to 
 
@@ -1135,7 +1126,7 @@ Rewriting again equation (\ref{CFT}) to
 
 and coalescing the equilibrium partition functions with the particular amount $B$ of generalized work performed we move to description known from the works of Crooks:
 
-
+\section{Physics of adaptation and self-replication}
 
 %\subsubsection{As a measure of irreversibility}
 %If we denote T as irreversibility then I can be interpreted as a measure of T-symmetry breaking.
@@ -1170,14 +1161,13 @@ Studying jets of water from a nozzle, Rayleigh (1878,[27] 1896/1926[28]) noted t
 
 \subsection{MEP principle}
 
-Recently, a common working formulation of the maximum entropy production (MEP) principle surfaced stating roughly that \textit{for systems admitting a spectrum of possible steady states, MEP says that the system is most likely to be found in steady state  with the greatest entropy production}
-
-The conjecture of MEP has shown some promising (but controversial) success in studies of planetary climates \cite{Paltridge:2007jf}, fluid turbulence \cite{Ozawa:2003jt} \cite{MALKUS:2003ix}, crystal growth morphology, biological adaptation as well as earthquake dynamics. %TODO: Fill the references from chapter 3, Beyond the Second Law
+The conjecture of maximum entropy production (MEP) has shown some promising (but controversial) success in studies of planetary climates (Paltridge, Farquhar, & Cuntz, 2007), fluid turbulence  (MALKUS, 2003), crystal growth morphology, biological evolution and adaptation  as well as earthquake dynamics. %TODO: Fill the references from chapter 3, Beyond the Second Law
 The reason main reason that drove controversies around those successes has been an \textit{ad hoc} and unsystematic manner in which MEP was applied.
 
-For example, the earliest successes of MEP applied to Earth's climate were based on a 2-zone model where the energy balance and temperatures were obtained through maximization of entropy production (EP) associated with meridional heat transport in the atmosphere and the oceans, completely ignoring the dominant part of the total EP coming from radiative EP. At the same time general circulation models (GCM), found no extremum in EP. MEP was also not found in phenomenological models of heat flow in plasma/fluid system \cite{Kawazura:2010dy}, where maximum as well as minimum was observed depending on how the system is driven. Nevertheless, possible adjustments to MEP principle are still being researched.
+For example, the earliest successes of MEP applied to Earth's climate were based on a 2-zone model where the energy balance and temperatures were obtained through maximization of entropy production (EP) associated with meridional heat transport in the atmosphere and the oceans, completely ignoring the dominant part of the total EP coming from radiative EP. At the same time general circulation models (GCM), found no extremum in EP.
 
-\subsubsection{Relation to MinEP}
+
+\subsubsection{Differences between MinEP and MEP}
 For linear, near-equilibrium systems that only admit a single steady state, MinEP says that all of the system's transient states have a higher entropy production than the steady state. A transient state is a temporary state that is not a steady state. MinEP compares steady states with non-steady states.
 
 For some yet-to-be-determined class of non-linear, far-from-equilibrium systems that admit a continuum of possible steady states, MEP says that the system is most likely to be found in the steady state with the greatest entropy production. MEP compares steady states to other steady states, but says nothing about transient states.
@@ -1185,111 +1175,27 @@ For some yet-to-be-determined class of non-linear, far-from-equilibrium systems 
 %TODO: Cite Nathaniel
 
 \subsubsection{Extrema of the Dissipation Function and MEP}
-The dissipation function is similar to the entropy production, and although it is not directly connected to a state function, the various fluctuation theorems provide exact, non-equilibrium relations. Given this similarity it is interesting to consider whether there exists a principle akin to MaxEnt (maximum entropy) for equilibrium systems, and MEP (maximum entropy production rate) for non-equilibrium systems. There were several papers on the topic, including Williams and Evans \cite{Williams:2008ft}, concluding that MEP cannot be applied rigorously to non-equilibrium systems in general, as the distribution function at any time (including steady state) is not just a function of the dissipation at that time. However it might provide a good approximation in some cases.
+The dissipation function is similar to the entropy production, and although it is not directly connected to a state function, the various fluctuation theorems provide exact, non-equilibrium relations. Given this similarity it is interesting to consider whether there exists a principle akin to MaxEnt (maximum entropy) for equilibrium systems, and MEP (maximum entropy production rate) for non-equilibrium systems. There were several papers on the topic, including Williams and Evans (Williams & Evans, 2008), concluding that MEP cannot be applied rigorously to non-equilibrium systems in general, as the distribution function at any time (including steady state) is not just a function of the dissipation at that time. However it might provide a good approximation in some cases.
 
 Considering a system that is driven from an initially equilibrium state to a steady-state one finds that the ensemble average of the instantaneous dissipation function stays positive, and that the average of the total dissipation function will approach infinity at long times. Considering equation (\ref{DissipationTheorem}) with $B=\Omega$, one can see \textit{then if} the autocorrelation function $\langle \Omega(\bm{\Gamma}(0))\Omega(\bm{\Gamma}(t))\rangle$ decays monotonically with time, then the value of the ensemble average of the instantaneous dissipation funciton, $\langle \Omega(t) \rangle$ will be higher when it reaches its steady state than for any other state it passes through. Therefore the system would find itself in a steady-state that maximises the dissipation function (rate of entropy production).
 
 However this is a special case, under the assumption of a monotonous autocorrelation function of the dissipation. Some numerical studies has been performed to study the behaviour of the instantaneous dissipation function more generally; examining whether it is a maximum in the steady state or if a transient state has a higher average instantaneous dissipation value.
 
-In fact it was shown in \cite{Brookes:2011hu} through numerical simulations, that the dissipation average peaks before dropping to a steady state for most field values. Therefore it is clear that the instantaneous dissipation is not a maximum in the steady state - the system evolves through unstable (transient) maximum. For stronger fields, the steady state reaches a higher instantaneous dissipation which is also maximum.
+In fact it was shown in (Brookes, Reid, & Evans, 2011) through numerical simulations, that the dissipation average peaks before dropping to a steady state for most field values. Therefore it is clear that the instantaneous dissipation is not a maximum in the steady state - the system evolves through unstable (transient) maximum. For stronger fields, the steady state reaches a higher instantaneous dissipation which is also maximum.
 
 One should note here that in the light of formulation of MEP from the previous paragraph this result doesn't prove or disprove the MEP principle as it compares steady states to transient states, instead of steady states to steady states. One might conclude however that the supposed theorem of maximum instantaneous dissipation for steady states does not generally apply.
 
-In order to provide further information on the behaviour of the dissipation, one should consider a system where multiple steady state solutions are known to exist. One such model was investigated by \cite{Zhang:2001jc} who considered heat flow in a one-dimensional lattice. The two possible steady states exist - a soliton or a diffusive heat flow - and depend on the initial conditions and the field strength.
-For a given field strength, there is a certain set of trajectories from which a soliton emerge spontaneously. There's also a critical value of the field strength after which the probability of forming a soliton is equal to unity. This chaos-soliton transition becomes sharper as the size of the system (number of particles) is increased. One might think that it may very well be that after increased simulation time the transition becomes sharper as well, but it turns out for zero-field there exists a set of initial conditions (of zero measure) that also forms a soliton. This peculiar points of the phase space form a basin of attraction which grows after the external field is increased. This non-uniqness of the steady state stands in contrast to other 1D and 2D  numerical simulations like \cite{Maeda:1995bj}.
+In order to provide further information on the behaviour of the dissipation, one should consider a system where multiple steady state solutions are known to exist. One such model was investigated by (Zhang, Isbister, & Evans, 2001) who considered heat flow in a one-dimensional lattice. The two possible steady states exist - a soliton or a diffusive heat flow - and depend on the initial conditions and the field strength.
+For a given field strength, there is a certain set of trajectories from which a soliton emerge spontaneously. There's also a critical value of the field strength after which the probability of forming a soliton is equal to unity. This chaos-soliton transition becomes sharper as the size of the system (number of particles) is increased. One might think that it may very well be that after increased simulation time the transition becomes sharper as well, but it turns out for zero-field there exists a set of initial conditions (of zero measure) that also forms a soliton. This peculiar points of the phase space form a basin of attraction which grows after the external field is increased. This non-uniqness of the steady state stands in contrast to other 1D and 2D  numerical simulations like (Maeda & Munakata, 1995).
 
 This might suggest that the strong conjecture of MEP might not hold for all steady state or that the field strength should also be considered a constrain of the system.
 Perhaps, MEP requires the external forcing to be sufficiently large that low entropy states are unstable. It is clear that the results will depend on the constraints imposed, and therefore the problem could be reformulated as a problem in identification of the appropriate constraints.
 
 It is difficult to study MEP numerically at the microscopic level, the main reason for that is because systems that generate multiple steady states, such as convection and turbulent flow, are computationally very expensive. One would then obtain MEP as an objective way of finding the appropriate constrains.
 
-One should perhaps mention, before committing to such enterprise, that there exists a discouraging example seen in the derivation of the dissipation theorem for driven system from an extremum principle \cite{Evans:1985br}. In that case the number of constraints (chaining constrains of the dissipative flux for each time step) required in order to obtain the exact answer turned out to be infinite. 
+One should perhaps mention, before committing to such enterprise, that there exists a discouraging example seen in the derivation of the dissipation theorem for driven system from an extremum principle (Evans, 1985). In that case the number of constraints (chaining constrains of the dissipative flux for each time step) required in order to obtain the exact answer turned out to be infinite. 
 
 \subsubsection{MaxEnt based formulations of MEP}
-
-Perhaps the most promising interpretation of MEP principle, put forward by Dewar %citation to Don't shoot the messanger
-, assumes that MEP is not a physical principle at all. Instead, by analogy to Jaynes MaxEnt it is to be interpreted as an inference method i.e. a method for deducing the most unbiased predictions from an incomplete set of statistical data. 
-
-First step is done by narrowing the scope of validity. We notice that in systems that are weakly driven have (neglecting the set of measure zero) only one steady state available. Therefore there's no room for MEP to operate and we instead focus on systems driven strongly in far for equilibrium regime. Of course, in principle, there is always only one stationary state when our knowledge about the system is full, however, by assumption, in case of strongly driven systems our ignorance is much greater and there is more room for an inference principle. 
-
-Two classic examples of far from equilibrium systems involve \textit{shear turbulence} with Reynolds numbers greater than the critical value necessary for the onset of turbulence and \textit{Rayleigh-Bénard} cell with Rayleigh numbers greater than the critical value necessary for the onset of convection.
-In those scenarios both examples exhibit many flow solutions allowed when we apply only a restricted set of stationary conditions rather than the full dynamics.
-%TODO: Place for work of Ozawa
-
-Secondly, we introduce an information theoretical measure of the distance from equilibrium, or \textit{irreversibility} $I$, defined in terms of the relative probabilities of forward and reverse fluxes. 
-Our first demand (dynamical instability) is then reformulated as a string inequality constraint $I>I_{min}$. 
-Then using procedures known from MaxEnt we show that $I$ adopts it's maximum possible value under the stationarity constraints.
-
-The final step consists of reinterpretation of $I$ as thermodynamic entropy production. %DRAFT: Or dissipation? 
-In this derivation of MEP, entropy production depends of applied constraints.
-
-In the proceeding section we demonstrate this procedure in detail.
-
-
-%IDEA: Try to merge MEP and MaxEnt into one principle, by observation \int dt \dot{S} ->  S
-
-\section{MEP principle as an inference principle}
-
-The presence of fluxes, both within the system, and between the system and its environment is the primary characteristics of the non-equilibrium stationary states. We'll denote the instantaneous value of those fluxes, by the vector $\bm{f}$, which may in principle be infinite. The flux vector $\bm{f}$ may be related to some local density $\rho$ with the use of the continuity equation $\partial \rho / \partial t =  - \nabla \cdot \bm{f} + h$, where $h$ denotes a local source; alternatively (for example in case of Navier-Stokes equations), the components of $\bm{f}$ might themselves be identified with local densities. Macroscopic state of the system is the described by $\bm{f}$ (or $\rho$) with the stationarity condition given by equation (\ref{SteadyStates})
-
-Similarly to the MaxEnt we maximize the relative entropy
-
-\begin{equation}
-  H = - \int p(\bm{f})\ln \frac{p(\bm{f})}{q(\bm{f})} d\bm{f}
-\end{equation}
-
-with respect to $p(\bm{f})$, subject to given dynamical constraints (assumed relevant dynamics, typically involving a restricted number of stationary conditions) $C$, where $q(\bm{f})$ is a prior p.d.f, with the symmetry $p(\bm{f}) =p(\bm{-f})$ which corresponds to zero flux state $\bm{F}= \int q(\bm{f}) \bm{f} d\bm{f}=0 $.
-
-By Gibbs' inequality, $H \leq 0$ with equality if and only if $p(\bm{f})=q(\bm{f})$.
-
-
-The constraints represented by $C$ are written in the generic form of functionals of fluxes $\phi_m(\bm{f})$ and labeled by $m$:
-\begin{equation}
-\label{StationarityConditions}
-\label{Constrain1MEP}
-  \int p(\bm{f})\phi_m(\bm{f})d\bm{f} =0
-\end{equation}
-which we can demand without loss of generality to be zero.
-We also have the normalization constraint
-
-\begin{equation}
-\label{Constrain2MEP}
-  \int p(\bm{f})d\bm{f} = 1.
-\end{equation}
-
-In order to enforce the multiplicity of stationary states we introduce the textit{irreversibility} defined by the Kullback-Leibler (KL) divergence of $p(\bm{f})$ and $p(-\bm{f})$:
-
-\begin{equation}
-  I= \int p(\bm{f}) \ln \frac{p(\bm{f})}{p(-\bm{f})} d\bm{f}.
-\end{equation}
-
-By Gibbs' inequality, $I \geq 0$ with equality if and only if $p(\bm{f})=p(-\bm{f})$, so that $I=0$ corresponds to the equilibrium state $\bm{F} = \bm{0} $. The irreversibility $I$ is thus a natural information-theoretic measure of the distance from equilibrium, or time-reversal symmetry breaking, since it measure the extent to which $p(\bm{f} ) $ differs from $p(\bm{-f} ) $.
-
-Now we make the first step from the previous paragraph, by demanding that there is a state characterized by minimal irreversibility, $I>I_{min}(C)>0$, the value of which depends on the stationarity conditions $C$ of equation (\ref{StationarityConditions});.
-
-We assume that those conditions also determine the upper bound $I \leq I_{max}(C)$.
-
-Additionally we introduce a trial mean flux $\bm{F}$ (which is subsequently relaxed) via the auxiliary constraint
-
-\begin{equation}
-\label{Constrain3MEP}
-  \int p(\bm{f})\bm{f} d\bm{f} = \bm{F}.
-\end{equation}
-
-The motivation for introducing $\bm{F}$ this way is that $\bm{F}$ represents a trial estimate of the actual fluxes, $\bm{F}(C)$ selected under C. Introducing $\bm{F}$ in this wa allows one to establish an extremal principle whereby $\bm{F}(C)$ is determined by varying the trial solution $\bm{F}$.
-This approach is analogous to the way in which equilibrium variational principles (e.g. minimum free energy) can be derived from MaxEnt by enlarging the set of fixed macroscopic variables $X$ to include one or more free unconstrained variables $Y$ , then maximizing $S=H_{max}(X,Y)$ with respect to $Y$ with $X$ held fixed.
-
-The MaxEnt solution for $p(\bm{f})$ is given by 
-
-\begin{equation}
-  p(\bm{f})^* = q( \bm{f} ) Z^{-1} \exp[\bm{\lambda} \cdot \bm{f}+ \bm{\alpha} \cdot \bm{\phi} (\bm{f}) - \mu ( d(\bm{f}) - e^{-d(\bm{f}))}]
-\end{equation}
-
-where $d(\bm{f})= \ln{p(\bm{f})/p(-\bm{f})}$, $\phi(\bm{f})$ denotes the vector with components $\phi_m(\bm{f})$, $Z = Z(\lambda, \bm{\alpha},\mu)$ is a normalisation factor (partition function) and $\bm{\lambda}$, $\bm{\alpha}$ and $\mu$ are Lagrange multipliers for (\ref{Constrain3MEP}), (\ref{Constrain1MEP}) and the upper-bound inequality $I<I_{max}$ respectively. The maximized relative entropy is
-
-\begin{equation}
-  S(\bm{F}, I_0, C) \equiv H_{max} = \ln Z(\lambda, \bm{\alpha}, \mu) - \bm{\lambda} \cdot \bm{F} + \mu(I_0 -1)
-\end{equation}
 
 \section{Statistical measures of complexity}
 \subsection{Kolmogorov complexity}
@@ -1300,7 +1206,24 @@ where $d(\bm{f})= \ln{p(\bm{f})/p(-\bm{f})}$, $\phi(\bm{f})$ denotes the vector 
 [In quantum computation, the notion of complexity refers to the minimum number of gates needed to prepare a certain state from a reference state. This pragmatic notion has now been related to something more exotic: black hole horizons. More precisely, it has been conjectured that the growth of the volume of a black hole interior is dual to the growth in computational complexity. Adam Brown and colleagues revisited this conjecture and restated it, this time relating complexity to the action of a particular type of spacetime region called a Wheeler DeWitt patch. In other words, the computational complexity of a boundary relates to the geometry of a bulk region.There are reasons to believe that the original conjecture, and hence the new one, is likely to be correct. Interestingly, the new conjecture may have deeper implications connecting quantum information and quantum gravity. And it also suggests that black holes could reach the physical limits of computation determined by the fundamental constants. In this sense, black holes are the fastest computers in the known universe.]
 
 \bibliographystyle{ieeetr}
-\bibliography{Refs}
+Brookes, S. J., Reid, J. C., & Evans, D. J. (2011). The fluctuation theorem and dissipation theorem for Poiseuille flow. Journal of Physics: …, 297, 012017. http://doi.org/10.1088/1742-6596/297/1/012017
+Carberry, D. M., Baker, M., & Wang, G. M. (2007). An optical trap experiment to demonstrate fluctuation theorems in viscoelastic media. Journal of Optics a: …, 9(8), S204–S214. http://doi.org/10.1088/1464-4258/9/8/s13
+De Groot, S. R., & Mazur, P. (1984). Non-Equilibrium Thermodynamics. New York: Dover.
+Dewar, R. C., Lineweaver, C. H., Niven, R. K., & Regenauer-Lieb, K. (2014). Beyond the Second Law: An Overview. In Beyond the Second Law (pp. 3–27). Berlin, Heidelberg: Springer Berlin Heidelberg. http://doi.org/10.1007/978-3-642-40154-1_1
+Evans, D. J. (1985). Response theory as a free-energy extremum. Physical Review A, 32(5), 2923–2925. http://doi.org/10.1103/PhysRevA.32.2923
+Evans, D. J. (2016). Fundamentals of Classical Statistical Thermodynamics, 1–223.
+Evans, D. J., & Rondoni, L. (2002). Comments on the Entropy of Nonequilibrium Steady States. Journal of Statistical Physics, 109(3/4), 895–920. http://doi.org/10.1023/A:1020435219996
+Evans, D. J., & Searles, D. J. (2002). The Fluctuation Theorem. Advances in Physics, 51(7), 1529–1585. http://doi.org/10.1080/00018730210155133
+Hoover, W. G., Ladd, A. J. C., & Moran, B. (1982). High-Strain-Rate Plastic Flow Studied via Nonequilibrium Molecular Dynamics. Physical Review Letters, 48(26), 1818–1820. http://doi.org/10.1103/PhysRevLett.48.1818
+Maeda, A., & Munakata, T. (1995). Lattice thermal conductivity via homogeneous nonequilibrium molecular dynamics. Physical Review E, 52(1), 234–239. http://doi.org/10.1103/PhysRevE.52.234
+MALKUS, W. V. R. (2003). Borders of disorder: in turbulent channel flow. Journal of Fluid Mechanics, 489, 185–198. http://doi.org/10.1017/S0022112003004907
+Paltridge, G. W., Farquhar, G. D., & Cuntz, M. (2007). Maximum entropy production, cloud feedback, and climate change. Geophysical Research …, 34(14), 3445. http://doi.org/10.1029/2007GL029925
+Prigogine, I. (1979). From Being to Becoming: Time and Complexity in the Natural Sciences. San Francisco: WH Freeman & Co. Proust.
+Wang, G. M., Sevick, E. M., Mittag, E., Searles, D. J., & Evans, D. J. (2002). Experimental Demonstration of Violations of the Second Law of Thermodynamics for Small Systems and Short Time Scales. Physical Review Letters, 89(5), 128–4. http://doi.org/10.1103/PhysRevLett.89.050601
+Williams, S. R., & Evans, D. J. (2008). Time-dependent response theory and nonequilibrium free-energy relations. Physical Review E, 78(2), 021119–7. http://doi.org/10.1103/PhysRevE.78.021119
+Yamada, T., & Kawasaki, K. (1967). Nonlinear Effects in the Shear Viscosity of Critical Mixtures. Progress of Theoretical Physics, 38(5), 1031–1051. http://doi.org/10.1143/PTP.38.1031
+Zhang, F., Isbister, D. J., & Evans, D. J. (2001). Multiple nonequilibrium steady states for one-dimensional heat flow. Physical Review E, 64(2), 1645–5. http://doi.org/10.1103/PhysRevE.64.021102
 
 
 \end{document}
+\bibliography{}

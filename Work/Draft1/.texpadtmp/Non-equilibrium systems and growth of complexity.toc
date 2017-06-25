@@ -22,7 +22,7 @@
 \contentsline {section}{\numberline {5}Ideas around fluctuation theorem}{14}{section.5}
 \contentsline {subsection}{\numberline {5.1}Time reversibility}{14}{subsection.5.1}
 \contentsline {subsection}{\numberline {5.2}Thermostated but time reversible systems}{15}{subsection.5.2}
-\contentsline {subsubsection}{\numberline {5.2.1}Nose-Hoover}{15}{subsubsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.1}Nose-Hoover}{16}{subsubsection.5.2.1}
 \contentsline {paragraph}{Phase space distribution function}{16}{section*.6}
 \contentsline {paragraph}{Probabilities of phase space trajectories }{16}{section*.7}
 \contentsline {paragraph}{Ensemble averages:}{16}{section*.8}
@@ -47,15 +47,15 @@
 \contentsline {subsection}{\numberline {5.10}Non-equilibrium Steady States}{24}{subsection.5.10}
 \contentsline {section}{\numberline {6}Generalized Crooks fluctuation theorem}{24}{section.6}
 \contentsline {subsection}{\numberline {6.1}Jarzynski Equality}{26}{subsection.6.1}
-\contentsline {section}{\numberline {7}England GCFR}{28}{section.7}
-\contentsline {section}{\numberline {8}Physics of adaptation and self-replication}{28}{section.8}
-\contentsline {section}{\numberline {9}Search for a unifying principle}{28}{section.9}
-\contentsline {subsection}{\numberline {9.1}Rayleigh's insight}{28}{subsection.9.1}
-\contentsline {subsection}{\numberline {9.2}Current state of affairs}{29}{subsection.9.2}
-\contentsline {subsection}{\numberline {9.3}MEP}{29}{subsection.9.3}
-\contentsline {subsubsection}{\numberline {9.3.1}Claimed results}{29}{subsubsection.9.3.1}
-\contentsline {subsubsection}{\numberline {9.3.2}Differences between MinEP and MEP}{29}{subsubsection.9.3.2}
-\contentsline {subsubsection}{\numberline {9.3.3}Extrema of the Dissipation Function and MEP}{29}{subsubsection.9.3.3}
-\contentsline {section}{\numberline {10}Statistical measures of complexity}{31}{section.10}
-\contentsline {subsection}{\numberline {10.1}Kolmogorov complexity}{31}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}Growth of complexity}{31}{subsection.10.2}
+\contentsline {section}{\numberline {7}Physics of adaptation and self-replication}{28}{section.7}
+\contentsline {section}{\numberline {8}Search for a unifying principle}{28}{section.8}
+\contentsline {subsection}{\numberline {8.1}Rayleigh's insight}{28}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Current state of affairs}{29}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}MEP principle}{29}{subsection.8.3}
+\contentsline {subsubsection}{\numberline {8.3.1}Relation to MinEP}{29}{subsubsection.8.3.1}
+\contentsline {subsubsection}{\numberline {8.3.2}Extrema of the Dissipation Function and MEP}{30}{subsubsection.8.3.2}
+\contentsline {subsubsection}{\numberline {8.3.3}MaxEnt based formulations of MEP}{31}{subsubsection.8.3.3}
+\contentsline {section}{\numberline {9}MEP principle as an inference principle}{32}{section.9}
+\contentsline {section}{\numberline {10}Statistical measures of complexity}{34}{section.10}
+\contentsline {subsection}{\numberline {10.1}Kolmogorov complexity}{34}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Growth of complexity}{34}{subsection.10.2}

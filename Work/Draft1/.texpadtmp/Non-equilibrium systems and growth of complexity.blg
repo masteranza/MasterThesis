@@ -3,54 +3,71 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: /Users/masteranza/Projects/MasterThesis/Work/Draft1/.texpadtmp/Non-equilibrium systems and growth of complexity.aux
 The style file: ieeetr.bst
 Database file #1: ../Refs.bib
+Repeated entry---line 2058 of file ../Refs.bib
+ : @article{MALKUS:2003ix
+ :                       ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 2228 of file ../Refs.bib
  : @book{Prigogine:1979ul
  :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2346 of file ../Refs.bib
+ : @article{Ozawa:2003jt
+ :                      ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 2576 of file ../Refs.bib
  : @book{Prigogine:1979ul
  :                       ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 3891 of file ../Refs.bib
+ : @article{MALKUS:2003ix
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3992 of file ../Refs.bib
+ : @article{Ozawa:2003jt
+ :                      ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Kawazura:2010dy"
 Warning--empty journal in Evans:2016tq
-You've used 15 entries,
+You've used 18 entries,
             1876 wiz_defined-function locations,
-            592 strings with 6145 characters,
-and the built_in function-call counts, 4731 in all, are:
-= -- 519
-> -- 135
+            618 strings with 6721 characters,
+and the built_in function-call counts, 5647 in all, are:
+= -- 623
+> -- 154
 < -- 0
-+ -- 51
-- -- 36
-* -- 325
-:= -- 625
-add.period$ -- 16
-call.type$ -- 15
-change.case$ -- 14
++ -- 59
+- -- 41
+* -- 387
+:= -- 743
+add.period$ -- 19
+call.type$ -- 18
+change.case$ -- 17
 chr.to.int$ -- 0
-cite$ -- 16
-duplicate$ -- 243
-empty$ -- 418
-format.name$ -- 36
-if$ -- 1170
+cite$ -- 19
+duplicate$ -- 294
+empty$ -- 499
+format.name$ -- 41
+if$ -- 1400
 int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 15
-newline$ -- 49
-num.names$ -- 15
-pop$ -- 31
+int.to.str$ -- 18
+missing$ -- 18
+newline$ -- 58
+num.names$ -- 18
+pop$ -- 35
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 220
+skip$ -- 266
 stack$ -- 0
-substring$ -- 415
-swap$ -- 131
+substring$ -- 495
+swap$ -- 160
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 52
-width$ -- 17
-write$ -- 150
-(There were 2 error messages)
+while$ -- 62
+width$ -- 20
+write$ -- 181
+(There were 6 error messages)

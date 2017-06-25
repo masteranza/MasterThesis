@@ -35,15 +35,15 @@
 \BOOKMARK [2][-]{subsection.5.10}{Non-equilibrium Steady States}{section.5}% 35
 \BOOKMARK [1][-]{section.6}{Generalized Crooks fluctuation theorem}{}% 36
 \BOOKMARK [2][-]{subsection.6.1}{Jarzynski Equality}{section.6}% 37
-\BOOKMARK [1][-]{section.7}{England GCFR}{}% 38
-\BOOKMARK [1][-]{section.8}{Physics of adaptation and self-replication}{}% 39
-\BOOKMARK [1][-]{section.9}{Search for a unifying principle}{}% 40
-\BOOKMARK [2][-]{subsection.9.1}{Rayleigh's insight}{section.9}% 41
-\BOOKMARK [2][-]{subsection.9.2}{Current state of affairs}{section.9}% 42
-\BOOKMARK [2][-]{subsection.9.3}{MEP}{section.9}% 43
-\BOOKMARK [3][-]{subsubsection.9.3.1}{Claimed results}{subsection.9.3}% 44
-\BOOKMARK [3][-]{subsubsection.9.3.2}{Differences between MinEP and MEP}{subsection.9.3}% 45
-\BOOKMARK [3][-]{subsubsection.9.3.3}{Extrema of the Dissipation Function and MEP}{subsection.9.3}% 46
+\BOOKMARK [1][-]{section.7}{Physics of adaptation and self-replication}{}% 38
+\BOOKMARK [1][-]{section.8}{Search for a unifying principle}{}% 39
+\BOOKMARK [2][-]{subsection.8.1}{Rayleigh's insight}{section.8}% 40
+\BOOKMARK [2][-]{subsection.8.2}{Current state of affairs}{section.8}% 41
+\BOOKMARK [2][-]{subsection.8.3}{MEP principle}{section.8}% 42
+\BOOKMARK [3][-]{subsubsection.8.3.1}{Relation to MinEP}{subsection.8.3}% 43
+\BOOKMARK [3][-]{subsubsection.8.3.2}{Extrema of the Dissipation Function and MEP}{subsection.8.3}% 44
+\BOOKMARK [3][-]{subsubsection.8.3.3}{MaxEnt based formulations of MEP}{subsection.8.3}% 45
+\BOOKMARK [1][-]{section.9}{MEP principle as an inference principle}{}% 46
 \BOOKMARK [1][-]{section.10}{Statistical measures of complexity}{}% 47
 \BOOKMARK [2][-]{subsection.10.1}{Kolmogorov complexity}{section.10}% 48
 \BOOKMARK [2][-]{subsection.10.2}{Growth of complexity}{section.10}% 49
