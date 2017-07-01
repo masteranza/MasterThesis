@@ -1,0 +1,237 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7727,        229]
+NotebookOptionsPosition[      5922,        174]
+NotebookOutlinePosition[      6275,        190]
+CellTagsIndexPosition[      6232,        187]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Boltzmann H\[Dash]Theorem", "Title",
+ CellChangeTimes->{{3.707736205438243*^9, 3.707736216242325*^9}},
+ CellID->1728365266,ExpressionUUID->"476c3db9-079b-4df6-b470-13eb784acbf6"],
+
+Cell[CellGroupData[{
+
+Cell["Introduction", "Section",
+ CellChangeTimes->{{3.707736237474292*^9, 3.707736248299799*^9}},
+ CellID->825994534,ExpressionUUID->"a710e36f-df8b-4836-a537-e8daf9b33ba3"],
+
+Cell[TextData[{
+ "The average volume for one particle is bigger than size of the particle ",
+ Cell[BoxData[
+  FormBox[
+   SuperscriptBox["a", "3"], TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "bd57bc66-349c-4f79-afba-51e61468e960"]
+}], "Text",
+ CellChangeTimes->{{3.707736299388424*^9, 3.707736334003681*^9}},
+ CellID->1983871398,ExpressionUUID->"3078cc0d-6c71-44db-8cdc-6141fa6d52ca"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{"V", "/", "N"}], "\[GreaterGreater]", 
+   SuperscriptBox["a", "3"]}], TraditionalForm]], "Equation",
+ CellChangeTimes->{{3.707736339685351*^9, 3.707736376562962*^9}},
+ CellID->1377708642,ExpressionUUID->"ff826280-d997-4dc1-9eee-51b0222e3ae7"],
+
+Cell[TextData[{
+ "The distribution function in 6\[Dash]dim 1\[Dash]particle phase space ",
+ Cell[BoxData[
+  FormBox["\[Mu]", TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "bc6be08d-35df-4029-9273-1ed2fb324500"],
+ " is ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"F", "(", 
+    RowBox[{
+     OverscriptBox["r", "\[RightVector]"], ",", 
+     OverscriptBox["v", "\[RightVector]"], ",", "t"}], ")"}], 
+   TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "deb8dca4-247e-41d5-a0d7-cfd447296f1a"],
+ ". There are 4 processes which can affect ",
+ Cell[BoxData[
+  FormBox["F", TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "d9a1bad7-cf6d-44a2-af75-4ca9ff37aa30"]
+}], "Text",
+ CellChangeTimes->{{3.7077363825752077`*^9, 3.707736476212656*^9}},
+ CellID->124433253,ExpressionUUID->"b24dc236-55fe-4d4f-89e3-4a643ad803c3"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Drift from/to ",
+ Cell[BoxData[
+  FormBox["\[Delta]r", TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "08c534ae-ce1f-4b0c-baa1-b0ec8b131908"]
+}], "Item1Numbered",
+ CellChangeTimes->{{3.707736495716176*^9, 3.7077365269542217`*^9}},
+ CellID->485095357,ExpressionUUID->"547a2b3b-f652-47b7-90b8-65c121573b77"],
+
+Cell[TextData[{
+ "Escape ",
+ Cell[BoxData[
+  FormBox["\[Delta]v", TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "c99ae1a7-c78c-4089-92b5-a0777c152846"],
+ " because of collision"
+}], "Item1Numbered",
+ CellChangeTimes->{{3.707736495716176*^9, 3.707736558223192*^9}},
+ CellID->1404877894,ExpressionUUID->"f1b4d33f-342a-4362-8e94-59622e95bd9c"],
+
+Cell[TextData[{
+ "Enter ",
+ Cell[BoxData[
+  FormBox["\[Delta]v", TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "e1dd16e9-d255-46f0-9566-cc4def3b3738"],
+ " because of collision"
+}], "Item1Numbered",
+ CellChangeTimes->{{3.707736495716176*^9, 3.707736570541586*^9}},
+ CellID->2011298134,ExpressionUUID->"99a675f0-94db-467e-a4a9-2731c7081adb"],
+
+Cell["Collision with the box edges", "Item1Numbered",
+ CellChangeTimes->{{3.707736495716176*^9, 3.707736583796529*^9}},
+ CellID->2001726260,ExpressionUUID->"41b59994-d7db-4c81-9ef3-03ea322eb884"]
+}, Open  ]],
+
+Cell[TextData[{
+ "We assume big number of collisions during ",
+ Cell[BoxData[
+  FormBox["\[Delta]t", TraditionalForm]],
+  FormatType->"TraditionalForm",ExpressionUUID->
+  "a8b7fb52-dafe-4a38-ab56-4abbc809872e"]
+}], "Text",
+ CellChangeTimes->{{3.707736683825304*^9, 3.707736695417892*^9}},
+ CellID->569610867,ExpressionUUID->"ed80c363-9e6a-4312-8589-b4a012e7a765"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   RowBox[{
+    RowBox[{"[", 
+     RowBox[{
+      RowBox[{"F", "(", 
+       RowBox[{
+        OverscriptBox["r", "\[RightVector]"], ",", 
+        OverscriptBox["v", "\[RightVector]"], ",", 
+        RowBox[{"t", "+", "\[Delta]t"}]}], ")"}], "-", 
+      RowBox[{"F", "(", 
+       RowBox[{
+        OverscriptBox["r", "\[RightVector]"], ",", 
+        OverscriptBox["v", "\[RightVector]"], ",", "t"}], ")"}]}], "]"}], 
+    "\[Delta]", 
+    OverscriptBox["r", "\[RightVector]"], "\[Delta]", 
+    OverscriptBox["v", "\[RightVector]"]}], "=", 
+   RowBox[{
+    SubscriptBox["\[CapitalGamma]", "f"], "-", 
+    SubscriptBox["\[CapitalGamma]", "-"], "+", 
+    SubscriptBox["\[CapitalGamma]", "+"], "+", 
+    SubscriptBox["\[CapitalGamma]", "w"]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.70773669993253*^9, 3.707736767033031*^9}, 
+   3.7077369812803802`*^9},
+ CellID->741696464,ExpressionUUID->"1d68db19-ba0e-41a2-a34a-22df6d77704e"],
+
+Cell[BoxData[
+ FormBox[
+  RowBox[{
+   SubscriptBox["\[CapitalGamma]", "f"], "=", 
+   RowBox[{
+    RowBox[{"-", "\[Delta]"}], 
+    OverscriptBox["v", "\[RightVector]"], "\[Delta]t\[Delta]", 
+    OverscriptBox["r", "\[RightVector]"], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      OverscriptBox["v", "\[RightVector]"], "\[CenterDot]", "\[Del]"}], ")"}], 
+    RowBox[{"F", "(", 
+     RowBox[{
+      OverscriptBox["r", "\[RightVector]"], ",", 
+      OverscriptBox["v", "\[RightVector]"], ",", "t"}], ")"}]}]}], 
+  TraditionalForm]], "EquationNumbered",
+ CellChangeTimes->{{3.707736974431041*^9, 3.707737035357774*^9}},
+ CellID->867451285,ExpressionUUID->"5622907f-348e-42fd-9b03-2ba2e212be37"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{808, 755},
+WindowMargins->{{4, Automatic}, {Automatic, 4}},
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 16, \
+2017)",
+StyleDefinitions->"Science.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 184, 2, 73, "Title", "ExpressionUUID" -> \
+"476c3db9-079b-4df6-b470-13eb784acbf6",
+ CellID->1728365266],
+Cell[CellGroupData[{
+Cell[789, 28, 172, 2, 63, "Section", "ExpressionUUID" -> \
+"a710e36f-df8b-4836-a537-e8daf9b33ba3",
+ CellID->825994534],
+Cell[964, 32, 411, 9, 40, "Text", "ExpressionUUID" -> \
+"3078cc0d-6c71-44db-8cdc-6141fa6d52ca",
+ CellID->1983871398],
+Cell[1378, 43, 288, 6, 34, "Equation", "ExpressionUUID" -> \
+"ff826280-d997-4dc1-9eee-51b0222e3ae7",
+ CellID->1377708642],
+Cell[1669, 51, 872, 23, 66, "Text", "ExpressionUUID" -> \
+"b24dc236-55fe-4d4f-89e3-4a643ad803c3",
+ CellID->124433253],
+Cell[CellGroupData[{
+Cell[2566, 78, 346, 8, 36, "Item1Numbered", "ExpressionUUID" -> \
+"547a2b3b-f652-47b7-90b8-65c121573b77",
+ CellID->485095357],
+Cell[2915, 88, 364, 9, 36, "Item1Numbered", "ExpressionUUID" -> \
+"f1b4d33f-342a-4362-8e94-59622e95bd9c",
+ CellID->1404877894],
+Cell[3282, 99, 363, 9, 36, "Item1Numbered", "ExpressionUUID" -> \
+"99a675f0-94db-467e-a4a9-2731c7081adb",
+ CellID->2011298134],
+Cell[3648, 110, 195, 2, 34, "Item1Numbered", "ExpressionUUID" -> \
+"41b59994-d7db-4c81-9ef3-03ea322eb884",
+ CellID->2001726260]
+}, Open  ]],
+Cell[3858, 115, 363, 8, 38, "Text", "ExpressionUUID" -> \
+"ed80c363-9e6a-4312-8589-b4a012e7a765",
+ CellID->569610867],
+Cell[4224, 125, 981, 26, 34, "EquationNumbered", "ExpressionUUID" -> \
+"1d68db19-ba0e-41a2-a34a-22df6d77704e",
+ CellID->741696464],
+Cell[5208, 153, 686, 17, 34, "EquationNumbered", "ExpressionUUID" -> \
+"5622907f-348e-42fd-9b03-2ba2e212be37",
+ CellID->867451285]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+

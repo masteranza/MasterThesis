@@ -1,0 +1,211 @@
+\documentclass{beamer}
+
+\usepackage{pgfpages,bm}
+%\setbeameroption{show notes}
+%\setbeameroption{show notes on second screen=right}
+\mode<presentation> {
+  \usetheme{default}
+  \usecolortheme{beaver}
+  \setbeamercovered{transparent}
+}
+\usepackage[french]{babel}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usepackage{latexsym} 
+\usepackage[MeX]{polski} 
+\usepackage[utf8]{inputenc} 
+
+%\pgfdeclareimage[height=1.5cm]{le-logo}{uj}
+%\logo{\pgfuseimage{le-logo}}
+\setbeamertemplate{footline}[frame number]
+
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title[Going out of equilibrium]{Moving out of equilibrium}
+\subtitle {and fixing some old issues on the way}
+
+\author[Michal Mandrysz] 
+{Michal Mandrysz}
+
+\institute[]
+{
+  Faculty of Physics, Astronomy and Applied Computer Science\\
+  Jagiellonian University\\
+%  Kraków, Poland
+}
+
+\date[2017] 
+
+
+%{Kraków, 2017}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+  \note{Good morning everybody. 
+  My name is Michal Mandrysz and   
+  today I'm going to talk about ...
+  }
+\end{frame}
+
+\begin{frame}{Outline}
+\note{To start with I'll say some words about Onsager and then outline the basic concepts used in non-equilibrium thermodynamics, such as driving forces and entropy representation.
+Then building on those basic concepts Onsager relations will be derived and presented on an example.
+\newline
+Please, feel free to interrupt me if you have any questions.
+}
+  \tableofcontents 
+\end{frame}
+
+\section{Old problems}
+\subsection{The Loschmidt paradax}
+\begin{frame}{The Loschmidt paradax}
+\begin{block}{An old objection to Boltzmann entropy}
+
+	All equations of motion (both classical and quantum) are time-reversal symmetric. Therefore if we pick a set of trajectories and let the particles evolve, reaching a state of maximum entropy, then we can easily imagine a reverse trajectory (momentum $p \rightarrow -p $) which should lower the entropy...
+\newline\newline
+	Even though the mentioned paradox was understood it waited until 1993 for a full resolution.
+\end{block}        
+\end{frame}
+
+\subsection{Less known fact}
+\begin{frame}{Less known fact...}
+\begin{block}{Clausius\ inequality}
+\note{Clausius' inequality for the heat $Q_{th}$ transferred to a thermal reservoir states that the cyclic integral $ \oint \frac{dQ_{th}}{T} \geq 0 $. When this inequality is, in fact, an equality (the process is quasi-static), we have the usual argument that $ \int \frac{dQ_{th}}{T_{th}} $ is a state function and represents the change in the equilibrium entropy of the reservoir $S_{th}$ and $T_{th}$ is the equilibrium thermodynamic temperature of that reservoir.}
+Clausius entropy is ill-defined for non-equilibrium paths and so is temperature.
+\begin{equation}
+   \int \frac{dQ_{th}}{T} 
+\end{equation}
+Clausius only defined the temperature for quasi-static or equilibrium process.
+\newline\newline
+In this scenerio the Clausius inequality
+\begin{equation}
+   \oint \frac{dQ_{th}}{T} \geq 0
+\end{equation}
+is without meaning. This was noticed by Bertrand (1887), Orr (1904), Planck (1905)
+\note{Clausius went on to apply his inequality to the system of interest (SOI) and thermal reservoir (TH). Indeed, in his original papers he does not distinguish between the two systems.
+Difficulty?: When we have a strict inequality, either SOI or the TH is (are) not in true thermodynamic equilibrium. In this case, what is the temperature?}
+\end{block}        
+\end{frame}
+
+
+
+\subsection{More troubles...}
+\begin{frame}{More troubles...}
+\begin{block}{Gibbs entropy}
+Gibbs showed that the thermodynamic entropy
+\begin{equation}
+	S_G(t)\equiv - k_B \int d\bm{\Gamma} f(\bm{\Gamma};t) ln[f(\bm{\Gamma};t)]
+\end{equation}
+where $f(\Gamma;t)$ is the N-particle phase space distribution function at time t, is in fact a constant of the motion for autonomous Hamiltonian dynamics!
+\newline\newline
+Seminar treatise "Elementary Principles in Statistical Mechanics" Gibbs 1902
+\newline\newline
+Pointed out by Ehrenfests'
+Working solution: coarse graining, but then it's not an objective property of the system
+\note{
+Suppose we have a classical system (or ensemble) whose probability density (or density of representative points) is localized in some region. Then intuitively, one would expect this to spread out with time, and cause an increase in S. Liouville's theorem says this is not true. What actually happens, however, is that although the density moves incompressibly, it spreads into a complicated region of extreme threadiness}
+
+\end{block}        
+\end{frame}
+
+\subsection{Even more troubles...}
+\begin{frame}{Even more troubles...}
+\begin{block}{Boltzmann H-theorem}
+Boltzmann proved that the Boltzmann equation for the time evolution of the single particle probability density implies, for uniform ideal gases, a monotonic decrease of the H-function in time (Boltzmann, 1872)
+\newline\newline
+Essential problem: The Boltzmann equation (unlike Netwton's) is not time-reversal symmetric. It is therefore completely unsurprising that the Boltzmann equation predicts a time-irreversible result - the Boltzmann H-theorem.
+
+\note{
+Suppose we have a classical system (or ensemble) whose probability density (or density of representative points) is localized in some region. Then intuitively, one would expect this to spread out with time, and cause an increase in S. Liouville's theorem says this is not true. What actually happens, however, is that although the density moves incompressibly, it spreads into a complicated region of extreme threadiness}
+
+\end{block}        
+\end{frame}
+
+
+\section{New solutions}
+\subsection{Can we go arbitrary far from equilibrium?}
+\begin{frame}{Can we go arbitrary far from equilibrium?}
+Can we go below the thermodynamic limit?
+\newline
+Would that solution also solve the problems mentioned in the beginning?
+\newline\newline
+The answer to all those questions is yes.
+\newline\newline
+How? Using Fluctuation Theorem proposed in 1993 by Evans, Cohen and Morriss.
+\newline\newline
+Prerequisite: Dissipation function
+\end{frame}
+
+
+\subsection{Dissipation function - intuition}
+\begin{frame}{Dissipation function - intuition}
+Dissipation is not entirely new concept, it was implicit in some of the Lord Kelvin's XIX century papers.
+\newline\newline
+Has a nice property of turning into spontaneous entropy production in linear irreversible thermodynamics and is complementary to entropy
+\newline\newline
+For systems that are driven by an applied dissipative field (e.g., an electrically conducting system being driven by an electric field) the average dissipation is equal to the average power dissipated in the system divided by the thermodynamic temperature of the surrounding thermal reservoir.
+\end{frame}
+
+
+\subsection{Dissipation function}
+\begin{frame}{Dissipation function}
+It's a functional of both the dynamical equations of motion that determine $S^t \bm{\Gamma} = exp[iL(\bm{\Gamma})t]\bm{\Gamma}$ from the initial phase $\bm{\Gamma}$ and also the initial distribution $f(\bm{\Gamma};0)$. \newline\newline
+\begin{equation}
+  \int_0^t ds \Omega(S^s \bm{\Omega}) \equiv ln\frac{f(\bm{\Gamma};0)}{f(\bm{\Gamma}^*;0)} - \int_0^t \Lambda(S^s\bm{\Gamma}) ds \equiv \overline{\Omega_t(\bm{\Gamma})}t
+\end{equation}
+
+$ \Lambda $ denotes the phase space expansion factor.
+\newline
+By losing a certain quantity of heat from an otherwise Hamiltonian system, the system also gives up a certain amount of phase space.
+\newline\newline
+One way to think about the dissipation function is as a measure of the temporal asymmetry inherent in the sets of trajectories originating from an initial distribution of states.
+\end{frame}
+
+\subsection{Fluctuation Theorem}
+\begin{frame}{Fluctuation Theorem}
+Gives a relation between probabilities of time integrals of the dissipation function.
+\begin{equation}
+  \frac{p(\overline{\Omega_t} = A)}{p(\overline{\Omega_t}=-A)}=e^{A t}
+\end{equation}
+where $\overline{\Omega_t} $ is the time averaged dissipation function and $p$'s are the probabilities at time zero of observing sets of phase space trajectories originating inside infinitesimal volumes of phase space.
+\newline\newline
+Confirmed both by molecular dynamics computer simulations and in actual laboratory experiments. The first unambiguous laboratory demonstration of a fluctuation.
+
+\end{frame}
+
+\subsection{Fluctuation Theorem - second law and conditions}
+\begin{frame}{Fluctuation Theorem - second law and conditions}
+Follows from fluctuation theorem by simple integration
+
+\begin{displaymath}
+  \langle \Omega_t \rangle = \int_{-\infty}^{\infty} dB p(\Omega_t=B)B= \int_0^{\infty} dB p(\Omega_t=B)B(1-exp[-B]) \geq 0
+  \end{displaymath}
+
+Conditions for fluctuation theorem to hold:
+\begin{itemize}
+  \item Initial distribution should be even function of the momenta
+  \item The system is ergodically consistent
+  \item The dynamics must be time-reversal-symmetric
+  \item The dynamics should be smooth
+  \item Any time-dependent external fields must have a definite parity under time reversal, over the given time interval.
+\end{itemize}
+\end{frame}
+
+\section{Closing words}
+
+\begin{frame}{Closing words}
+Thank you for your attention!
+\end{frame}
+
+\begin{frame}{Literature}
+  \begin{itemize}
+  \item "Non-equilibrium thermodynamics" - S. Groot, P. Mazur; S. Degroot
+  \item "Fundamentals of Classical Statistical Thermodynamics" - D. Evans, D. Searles, S. Williams
+\end{itemize}
+
+\end{frame}
+
+\end{document}
