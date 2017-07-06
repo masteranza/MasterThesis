@@ -28,23 +28,23 @@
 \contentsline {paragraph}{Ensemble averages:}{16}{section*.8}
 \contentsline {paragraph}{Ergodicity}{16}{section*.9}
 \contentsline {subsubsection}{\numberline {5.2.2}Construction}{17}{subsubsection.5.2.2}
-\contentsline {subsection}{\numberline {5.3}Condition of adiabatic incompressibility of phase space}{17}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Liouville equation}{17}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Dissipation}{18}{subsection.5.5}
-\contentsline {subsection}{\numberline {5.6}Evans-Searles Fluctuation Theorem}{19}{subsection.5.6}
-\contentsline {paragraph}{Second Law Inequality}{19}{section*.10}
-\contentsline {paragraph}{Kawasaki identity}{19}{section*.11}
-\contentsline {subsubsection}{\numberline {5.6.1}Instantaneous dissipation function}{20}{subsubsection.5.6.1}
-\contentsline {subsection}{\numberline {5.7}Dissipation Theorem}{20}{subsection.5.7}
-\contentsline {subsubsection}{\numberline {5.7.1}Mixing properties and their relations}{21}{subsubsection.5.7.1}
-\contentsline {paragraph}{Mixing}{22}{section*.13}
-\contentsline {paragraph}{Weak T-mixing}{22}{section*.14}
-\contentsline {paragraph}{T-mixing}{22}{section*.15}
-\contentsline {paragraph}{$\bm {\Omega T}$-mixing}{22}{section*.16}
-\contentsline {subsection}{\numberline {5.8}Relaxation}{22}{subsection.5.8}
-\contentsline {subsubsection}{\numberline {5.8.1}Relaxation Theorem}{23}{subsubsection.5.8.1}
-\contentsline {subsection}{\numberline {5.9}Driven systems}{23}{subsection.5.9}
-\contentsline {subsection}{\numberline {5.10}Non-equilibrium Steady States}{24}{subsection.5.10}
+\contentsline {subsection}{\numberline {5.3}Liouville equation}{17}{subsection.5.3}
+\contentsline {paragraph}{Condition of adiabatic incompressibility of phase space}{17}{section*.10}
+\contentsline {subsection}{\numberline {5.4}Dissipation}{18}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Evans-Searles Fluctuation Theorem}{19}{subsection.5.5}
+\contentsline {paragraph}{Second Law Inequality}{19}{section*.11}
+\contentsline {paragraph}{Kawasaki identity}{19}{section*.12}
+\contentsline {subsubsection}{\numberline {5.5.1}Instantaneous dissipation function}{20}{subsubsection.5.5.1}
+\contentsline {subsection}{\numberline {5.6}Dissipation Theorem}{20}{subsection.5.6}
+\contentsline {subsubsection}{\numberline {5.6.1}Mixing properties and their relations}{21}{subsubsection.5.6.1}
+\contentsline {paragraph}{Mixing}{22}{section*.14}
+\contentsline {paragraph}{Weak T-mixing}{22}{section*.15}
+\contentsline {paragraph}{T-mixing}{22}{section*.16}
+\contentsline {paragraph}{$\bm {\Omega T}$-mixing}{22}{section*.17}
+\contentsline {subsection}{\numberline {5.7}Relaxation}{22}{subsection.5.7}
+\contentsline {subsubsection}{\numberline {5.7.1}Relaxation Theorem}{23}{subsubsection.5.7.1}
+\contentsline {subsection}{\numberline {5.8}Driven systems}{23}{subsection.5.8}
+\contentsline {subsection}{\numberline {5.9}Non-equilibrium Steady States}{24}{subsection.5.9}
 \contentsline {section}{\numberline {6}Generalized Crooks fluctuation theorem}{24}{section.6}
 \contentsline {subsection}{\numberline {6.1}Jarzynski Equality}{26}{subsection.6.1}
 \contentsline {section}{\numberline {7}Physics of adaptation and self-replication}{28}{section.7}

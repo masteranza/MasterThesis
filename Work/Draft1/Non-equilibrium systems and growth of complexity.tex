@@ -311,14 +311,13 @@ j_i(S_S)=j_i\left(S_{EQ}\right)+\left(S_S-S_{EQ}\right)C_1+\mathcal{O}\left(S_S^
 fulfilling $j_i\left(S_{EQ}\right)=0$. 
 
 The dimensional and stability analysis tells us that $C_1$ has the dimension of inverse time and in the case of 
-$j_e=0$ should simply be equal to $S_{EQ}$, therefore:
+$j_e=0$ should simply be equal to $S_{EQ}$, therefore we set $C_1 = -\frac{1}{\tau}$, where $\tau$ is a positive defined relaxation constant.
 
 Using the equation (\ref{entrosum}) we get
 \begin{equation}
 \frac{dS_S}{dt}=j_i\left(S_S\right)=\left(S_S-S_{EQ}\right)C_1, 
 \label{stab}
 \end{equation} 
-Now we set $C_1 = -\frac{1}{\tau}$, where $\tau$ is a positive defined relaxation constant.
 
 The solution of the equation (\ref{stab}) is then
 \begin{equation}
@@ -371,7 +370,8 @@ with respect to $p_i$ (new aposteriori distribution). $H(p||q)$ can be interpret
 
 \subsubsection{Theory of Fluctuations}
 
-Let us consider an adiabatically insulated system and a number of variables $x^i (i=1,...,n)$ which in the equilibrium state assume values $ x_0^i $, we can account for small variations ($\alpha^i$) by setting
+Let us consider an %adiabatically ??
+insulated system and a number of variables $x^i (i=1,...,n)$ which in the equilibrium state assume values $ x_0^i $, we can account for small variations ($\alpha^i$) by setting
 
 \begin{displaymath}
   x^i = x_0^i + \alpha^i.
@@ -485,16 +485,16 @@ To our best knowledge the specific direction of time we experience is an emergen
 Isolated thermodynamic systems evolve in the direction of more probable states i.e. positive dissipation (larger entropy).
 When they finally reach that state the direction of time ceases to exist for the whole system. 
 Therefore in the description of irreversible processes the history of the system evolution becomes relevant.
-
+%Improve this text
 
 \subsection{Local equilibrium}
-The thermodynamical variables are often defined subject to the kinematical requirement of local thermodynamic equilibrium. This means that collisions between molecules are so frequent that chemical and radiative processes do not disrupt the local Maxwell-Boltzmann distribution of molecular velocities. This principle is valid for hydrodynamic flows and chemical reactions and it's formulation goes back to Clark Maxwell [Citation?].
+The thermodynamical variables are often defined subject to the kinematical requirement of local thermodynamic equilibrium. This means that collisions between molecules are so frequent that chemical and radiative processes do not disrupt the local Maxwell-Boltzmann distribution of molecular velocities. This principle is valid for hydrodynamic flows and chemical reactions and it's formulation goes back to Clark Maxwell [Citation?].%TODO: Cite Maxwell
 It's usage can be usually justified by assuming analyticity of thermodynamic state functions arbitrarily close to equilibrium - then, local equilibrium is obtained from first order expansion of thermodynamic properties in the irreversible fluxes ${X_i}$ \cite{Evans:2002gg}.
 
 \subsubsection{Definition of temperature}
 When the temperature differences are "smooth" enough, i.e., locally there is a reasonable definition of temperature (local equilibrium), then the temperature gradient determines the heat flux. In the opposite case, it is molecular kinetics who determines the energy transfer. The latter happens much faster and local equilibrium gets established quickly.
 
-On the other hand, far from equilibrium there might be a problem defining temperature and also Clausius entropy which depends on it. One of the solutions provided by Evans at al in  is to define temperature of non equilibrium state by the temperature of the target equilibrium state to which the system would otherwise relax.
+On the other hand, far from equilibrium there might be a problem defining temperature and also Clausius entropy which depends on it. One of the solutions provided by Evans at al in  is to define temperature of non equilibrium state by the temperature of the underlying equilibrium state to which the system would otherwise relax.
 
 \subsection{Entropy production}
 
@@ -617,6 +617,8 @@ or in the continuous limit by specifying the initial phase space probability den
   \langle A(t) \rangle = \int d\bm{\Gamma} A(\bm{\Gamma}) f(\bm{\Gamma};t) = \int d\bm{\Gamma} A(S^t\bm{\Gamma})f(\bm{\Gamma};0)
 \end{equation}
 
+This equation can be seen as an application of equivalence of Heisenberg and Schrödinger representations.
+
 Time stationarity of an ensemble average is then defined simply by
 \begin{equation}
 \label{StationaryStateDef}
@@ -643,16 +645,6 @@ To model a three-dimensional system of $N$ interacting particles, we assume that
 
 %TODO: Construction of the termostat left for later, start at page 24
 
-
-\subsection{Condition of adiabatic incompressibility of phase space}
-
-We say that a system fulfills the \textit{adiabatic incompressibility of phase space} or $AI\bm{\Gamma}$ if in the \textbf{absence} of the thermostatting terms the equations of motion preserve the phase space volume, that is
-\begin{equation}
-  \Lambda \equiv (\partial / \partial\bm{\Gamma}) \cdot \dot{\bm{\Gamma}}=0
-\end{equation}
-
-%TODO: Remark about Hermicity of Liouville page 35
-
 \subsection{Liouville equation}
 
 The motion of the phase space distribution function is governed by a Lagrangian form of the phase continuity equation (also known as \textit{streaming})
@@ -671,6 +663,13 @@ this equation follows directly from a well known form of Liouville equation
 \end{equation}
 
 where by moving the last term to the left side we get equation (\ref{LagrangianLiouville}).
+
+\paragraph{Condition of adiabatic incompressibility of phase space}
+
+We say that a system fulfills the \textit{adiabatic incompressibility of phase space} or $AI\bm{\Gamma}$ if in the \textbf{absence} of the thermostatting terms the equations of motion preserve the phase space volume, that is
+\begin{equation}
+  \Lambda \equiv (\partial / \partial\bm{\Gamma}) \cdot \dot{\bm{\Gamma}}=0
+\end{equation}
 
 
 It can be shown that for isokinetic or isoenergetic systems with fixed total momentum and satisfying $AI\bm{\Gamma}$, the phase space expansion factor is exactly $\Lambda = - (3N_{th} -4) \alpha $ 
@@ -691,6 +690,9 @@ The measure of an infinitesimal phase space volume $dV_{\bm{\Gamma}}(S^s \bm{\Ga
  
 In a lot of cases the phase space volume goes to zero, while the density approaches infinity.
 
+
+
+%TODO: Remark about Hermicity of Liouville page 35
 
 
 \subsection{Dissipation}
