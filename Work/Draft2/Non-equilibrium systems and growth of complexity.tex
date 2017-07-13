@@ -1,0 +1,219 @@
+% !TEX encoding = Mac Central European Roman
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{amsmath, amssymb, mathtools, verbatim, bm, xcolor, hyperref}
+%\usepackage[polish]{babel}
+%\usepackage{polski}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+%\usepackage[macce]{inputenc}
+%\usepackage[latin2]{inputenc}
+\usepackage{epigraph}
+\usepackage{physics}
+\usepackage[textsize=tiny]{todonotes}
+\definecolor{lightgray}{gray}{0.90}
+\newtheorem{theorem}{Theorem}
+\usepackage{framed}
+\renewenvironment{leftbar}[1][\hsize]
+{% 
+\def\FrameCommand 
+{%
+
+    {\hspace{-3pt}\color{black}\vrule width 3pt}%
+    \hspace{0pt}%must no space.
+    \fboxsep=\FrameSep\colorbox{lightgray}%
+}%
+\MakeFramed{\hsize#1\advance\hsize-\width\FrameRestore}%
+}
+{\endMakeFramed}
+\setlength{\FrameSep}{0pt}
+
+%\usepackage{showframe}
+\usepackage[left=70pt,
+			right=70pt,
+            top=50pt,
+%            textwidth=345pt,
+            marginparsep=0pt,
+            marginparwidth=70pt,
+%            textheight=692pt,
+%            footskip=50pt
+            ]
+           {geometry}
+%\textwidth=16.5 truecm
+%\textheight=25 truecm
+%\hoffset=-2.5 truecm
+%\voffset=-2 truecm
+
+\def\baselinestretch{1.2}
+
+%\pagestyle{empty}
+
+\begin{document}
+
+\title{Non-equilibrium systems and growth of complexity}
+
+\author{Michał Mandrysz \\
+Instytut Fizyki, Uniwersytet Jagielloński, \\ul. Łojasiewicza
+11, 30-348 Kraków, Polska }
+
+
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+\epigraph{True logic of this world lies in the calculus of probabilities}{\textit{James Clerk Maxwell}}
+
+\section{Historical introduction}
+\subsection{The founding fathers of thermodynamics}
+The history of thermodynamics reaches back to the 1600s when first rudimentary thermoscopes (the ancestor of the thermometer) started to be constructed and a scientists, like Francis Bacon began to formulate the right ideas about the nature of heat. 
+
+It took however until 1850s, after the experiments of James Joule, for the wide scientific community to finally accept heat as a form of energy. The relation between heat and energy was important for the development of steam engines and led to the description of idealized heat engines and their theoretical efficiency in 1824 by Sadi Carnot. 
+
+After that, around 1850 Rudolf Clausius and William Thomson (Lord Kelvin) stated both the First Law (the conservation of total energy) as well as the Second Law (heat does not spontaneously flow from colder to hotter objects). Other formulations followed quickly and the general implications of the laws were understood. 
+
+More important developments came after the recognition by Rudolf Clausius and James Clerk Maxwell in 1850s (first noticed by Daniel Bernoulli in 1738) that gases consist of molecules at motion. This simple idea allowed Maxwell to derive and calculate many macroscopic properties of gases at equilibrium. 
+
+Shortly after that, Rudolf Clausius introduced the notion of entropy, defined as the ratio of heat and temperature and redefined the Second Law stating that for isolated systems this quantity can only increase in time.
+%TODO: Describe the problem with defining the temperature
+
+In 1872 Ludwig Boltzmann constructed an equation that he thought could describe the detailed time development of any gas and used it to derive the so-called H-theorem. The theorem stated that a quantity equal to entropy must always increase in time. Therefore it seemed that Boltzmann had successfully proved the Second Law. During his times however, a famous objection was poised known as the Loschmidt paradox which stated basically, that due to time-reversal property of Newton laws the evolution could be run in reverse leading to decrease in entropy. 
+
+The resolution of this paradox was noted much later and should probably classified as hard to grasp or at least hard to get accustomed to because even today one can find discussions and erroneous statements about the "arrow of time" in the literature.
+We will intentionally postpone the discussion to the later part of this paragraph in order to go through it thoroughly and to highlight the more recent paths of developments in non-equilibrium thermodynamics and statistical physics.
+
+In responding to some of the other objections Boltzmann realized around 1876 that in a gas there are many more states that seem chaotic and random than seem orderly. This realization led him to argue that entropy must be proportional to the logarithm of the number of possible states of a system and the nature of the Second Law - probabilistic.
+
+Around 1900, Williard Gibbs formulated statistical mechanics in more general context and introduced the notion of ensemble - a collection a collection of many macroscopically similar copies of the system upon which the notion of ergodicity was built. 
+It was argued that if a single particle visits every possible piece of the phase space, then when averaged over a sufficiently long time then a property in question would have the same value if one would instead think of ensembles. 
+
+Gibbs also introduced another definition of entropy, which, as noted by him 
+%TODO: Citation needed
+would only increase in a closed system if it were measured in a "coarse-grained" way in which nearby states were not distinguished. In literature one can sometimes find statements \cite{Evans:2016tq} that this property of Gibbs entropy is problematic, but in fact the resolution of this paradox in very similar to the resolution of the Loschmidt paradox.
+
+During the beginning of the XX century, the development of thermodynamics was largely overshadowed by quantum theory and little fundamental work was done on it. 
+Nevertheless, the Second Law had become to be regarded as a fundamental principal, whose foundations should be questioned only as a curiosity. Ergodic theory on the other hand has became an active area of pure mathematics, and between 1920-1960 many properties of simple systems related to ergodicity were established \cite{Wolfram:552851}.
+
+\subsection{The information era and Schrödingers influence on physics}
+
+In the 1940s Claude Shannon introduced the notion of information quantity and during the 1950s, it was recognized that entropy is simply the negative of Shannon's quantity. This way a fundamental link between information theory and thermodynamics was established. This coincided with the discovery of the structure of DNA by James Watson and Francis Crick and together with written a little earlier, influential book titled "What is life?" by  Erwin Schrödinger sparked enthusiasm and inspired generations of physicists to answer the alluring (though not easy) question of the role of physics in biological processes. 
+
+In any event it probably wouldn't be an exaggeration to say that Schrödinger himself (as he admits), was inspired by the work of German-American physicists Max Delbrück; who helped launch the molecular biology research program in the late 1930s and explained (in main part) the mechanism of heredity and mutation.
+Regardless, Schrödinger makes some very essential observations on the nature of living organisms.
+
+First, their operation (living organisms) as a macroscopic system resembles approximately, a purely mechanical system rather than a thermodynamical system. 
+Even though their size is far from what is considered a thermodynamic limit, they tend stay unaffected (in special environments) by random molecular motion known as heat and; at the same time, evade the decay towards equilibrium for an unusually long time. This is essentially the definition of a living system.
+
+Secondly, he notices that the way an organism accomplishes the above is through the exchange of energy and matter with it's environment, that leaves it's own internal state in low entropy. He withdraws from considerations of free energy, although he acknowledges that the exact physical understanding should be accomplished through it rather than through entropy. Worth mentioning is his hypothesis of "life intensity" the term which ought to parallel with the rate at which the system produces entropy or dissipates heat.
+
+Thirdly, each cell depends on very small group of atoms, the genetic code, which determine it's evolution, something unprecedented, beyond the description of ordinary statistical physics. He proposes, that perhaps, a partial explanation for this dynamical behaviour (rather than statistical) can be traced to rigidity and tightness of chemical bonds. However the very vital point Schrödinger tries to make is the hypothesis, that there must exist a yet unknown, new law of physics that would explain fully how order can be produced out of order. 
+
+Lastly, even though Schrödinger introduces some quantum mechanics principles, like the uniqueness of Heitler-London bond in order to defend the theory laid down by Delbrück, he assures that quantum indeterminacy should play only marginal role in the future laws of dynamics of living systems. The possibility that remains is that the origins of life, not their evolution could be quantum mechanical.
+
+As mentioned earlier, Schrödinger influence driven many researchers to focus on the topic of non-equilibrium phenomena, however their individual approaches diverged widely, due to, as we will see the resolution of the Loschmidt paradox.
+
+\subsection{The resolution of the Loschmidt paradox }
+
+The Loschmidt paradox confronts the fact that the fundamental equations of motion are time-reversible. How therefore the irreversibility enters the picture?
+
+The answer lies in the time-asymmetric probabilistic way in which we make predictions about the world. 
+Besides the pure probabilistic description we need the common sense, axiom of causality in order to obtain the time-asymmetric description.
+We use it so frequently implicitly, that we often forget about it \cite{Evans:2016tq}. 
+
+Indeed, Boltzmann himself didn't noticed that the way in which he derived the H-Theorem implicitly assumed that the particles are uncorrelated before the collisions, but become correlated after the collision\cite{Dorfman:ozm67-zD}, thus causing the time-reversal asymmetry.
+
+One can also see this most clearly in a generic example, reviewing the procedure in which we compute some future macroscopic state from an initial state macrostate. The final state is obtained by taking the \textit{sum} of the probabilities over the indistinguishable microstates, however the initial state is obtained by taking the \textit{avarage} over the initial microstates.
+
+\subsection{Different approaches towards irreversibility and non-equilibrium}
+
+As one might tell from the large amount of literature on the subject %TODO citations
+, this explanation of irreversibility noticed long time by Boltzmann %TODO: Citation
+and also Einstein %Citation
+leaves some dissatisfaction in many.
+
+Different alternatives for explanations of irreversible processes have been proposed over the years, including randomness of the radiative process, quantum processes, CP violation and even gravity. We will shortly discuss each of those approaches, but first we will distress slightly to discuss Ilya Prigogine and his own ideas about the source of irreversibility and complexity.
+
+-----------------------
+
+One of the most often cited contributions of Ilya Prigogine is connected with a term for entropy for open systems, an extension of Clausius entropy for isolated systems:
+
+\begin{displaymath}
+	dS=d_iS+d_eS
+\end{displaymath}
+
+
+Where \(d_iS\) is connected with entropy produced within the system and \(d_eS\) is the entropy transferred across the boundaries of the system.
+The second law states that \(d_iS\geq 0\), so if a system is to stay in law entropy state it{'}s production must be compensated by an inflow of negative
+entropy.
+
+He then develops an explicit expression for entropy production, assuming that even outside equilibrium (but near) entropy depends only on the same
+variables as at equilibrium ("local" equilibrium)
+
+\begin{displaymath}
+	P=\frac{d_iS}{dt}=\sum _{\rho } J_{\rho }X_{\rho }\geq 0
+\end{displaymath}
+
+
+where \(J_{\rho }\) are the rates of the various irreversible processes involved (chemical reactions, heat flow, diffusion$\ldots $) and \(X_{\rho
+}\) are the corresponding, generalized forces (affinities, gradients of temperature, of chemical potentials$\ldots $). The flows are described using
+different empirical laws (Fourier{'}s law, Fick{'}s law, etc.) 
+
+\begin{displaymath}
+	J_{\rho }=\sum _{\rho } L_{\rho \rho '}X_{\rho '}
+\end{displaymath}
+
+
+Onsager relations \(L_{\rho \rho '}=L_{\rho '\rho }\)
+
+Prigogine rightly criticized the efforts to extend the principle of minimum entropy production (which is valid only very near equilibrium)
+to non-equilibrium regimes, showing that. What exactly is this principle is well explained by Prigogine; when a system is constricted by a boundary
+condition and perturbed, the entropy production will increase, but then the system settles down to the state of {``}least dissipation{''}.\\
+An example of a process such process, namely Rayleigh$--$B{\' e}nard convection is given, which he perceives as a prime example of occurrence of
+{``}dissipative structures{''} which fail to be described by Boltzmann laws. In Prigogine view the fluctuations are the trigger for the instabilities
+instabilities, which in turn give rise to spacetime structure. Here instabilities carry the sense of bifurcations of equations of motion.
+
+[I need to learn more about Nicolis work on dynamics of chemical reactions]
+
+Furthermore Prigogine develops an uncommon perspective on the microscopic equations of motion, which in his opinion should not be invariant under
+time inversion.\\
+A proposed way to achieve this is through a non$--$unitary transformation which yield a type Lyapounov function, analogue to Bolzmann H-function.
+The goal was to obtain a microscopic representation of entropy. It{'}s known in literature as Misra-Prigogine-Courbage theory of irreversibility.
+
+Prigogine view on reversibility are probably best summarized by the quotes {``}I have always found it difficult to accept this conclusion [macroscopic
+irreversibility emerging from initial conditions] { }especially because of the constructive role of irreversible processes. Can dissipative structures
+be the result of mistakes?{''}
+
+[At the present moment I can{'}t comment much on this, but some extensive critique can be found {``}Science of Chaos or Chaos in Science{''} by Bricmont]
+
+The best account (or the most understandable) of Prigogine views are perhaps his own words in {``}Laws of Chaos{''} - {``}The essential condition
+is that the microscopic description of the universe be made in terms of unstable dynamical systems. This is a radical change in point of view. From
+the point of view of classical physics, stable systems were the rule and unstable systems the exceptions. We are now reversing that perspective.{''}\\
+First it{'}s not true that stable systems are the rule in classical physics, one can easily devise classical examples of unstable systems following
+purely classical mechanics, the reason why they are not being analyzed is that analytic methods fail to solve them. Prigogine seems to require more
+complexity to explain complexity, which is in my opinion not needed.
+
+
+
+
+
+
+Indeed, one of the most influential persona in statistical physics of 1970s, Ilya Prigogine strongly believed that this should not be considered as the final answer.
+
+
+Prigogine nobel prize lecture "Time, structure and fluctuations" begins with the critique of Helmholtz free energy and the assertion that living system posses a different type of functional order which can be traced to their non-equilibrium state. This statement is consistent with the today's predominant view.
+
+
+
+
+\subsection{Physics of computation}
+
+Following statements by John von Neumann, it was thought that any computational process must necessarily increase entropy,  but by the early 1970s, notably with work by Charles Bennett, it became accepted that this is not so (see page 1023), laying some early groundwork for relating computational and thermodynamic ideas. 
+
+
+\bibliographystyle{ieeetr}
+\bibliography{Refs}
+
+
+\end{document}
