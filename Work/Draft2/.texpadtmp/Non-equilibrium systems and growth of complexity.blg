@@ -3,46 +3,54 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: /Users/masteranza/Projects/MasterThesis/Work/Draft2/.texpadtmp/Non-equilibrium systems and growth of complexity.aux
 The style file: ieeetr.bst
 Database file #1: ../Refs.bib
+Warning--entry type for "Bricmont:7zJsfTpK" isn't style-file defined
+--line 2823 of file ../Refs.bib
+Warning--I didn't find a database entry for "Gibbs:1928tw"
+Warning--I didn't find a database entry for "Gibbs:1962bk"
+Warning--I didn't find a database entry for "Rovelli:2015tv"
+Warning--I didn't find a database entry for "Courbage:1983eo"
+Warning--I didn't find a database entry for "Nicolis:1979cv"
 Warning--empty publisher in Evans:2016tq
-You've used 3 entries,
+Warning--empty year in Doyle:wf
+You've used 8 entries,
             1876 wiz_defined-function locations,
-            493 strings with 3995 characters,
-and the built_in function-call counts, 418 in all, are:
-= -- 35
-> -- 12
+            534 strings with 4642 characters,
+and the built_in function-call counts, 1250 in all, are:
+= -- 114
+> -- 32
 < -- 0
-+ -- 6
-- -- 3
-* -- 19
-:= -- 67
-add.period$ -- 4
-call.type$ -- 3
-change.case$ -- 1
++ -- 16
+- -- 8
+* -- 70
+:= -- 189
+add.period$ -- 8
+call.type$ -- 8
+change.case$ -- 6
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 23
-empty$ -- 54
-format.name$ -- 3
-if$ -- 100
+cite$ -- 10
+duplicate$ -- 71
+empty$ -- 153
+format.name$ -- 8
+if$ -- 302
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 4
-newline$ -- 14
-num.names$ -- 3
-pop$ -- 18
+int.to.str$ -- 8
+missing$ -- 8
+newline$ -- 29
+num.names$ -- 8
+pop$ -- 35
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 6
+skip$ -- 31
 stack$ -- 0
-substring$ -- 0
-swap$ -- 2
+substring$ -- 32
+swap$ -- 14
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 1
-while$ -- 3
-width$ -- 4
-write$ -- 25
-(There was 1 warning)
+warning$ -- 2
+while$ -- 11
+width$ -- 9
+write$ -- 67
+(There were 8 warnings)
