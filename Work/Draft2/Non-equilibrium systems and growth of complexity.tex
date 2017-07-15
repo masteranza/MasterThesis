@@ -125,12 +125,14 @@ Indeed, Boltzmann himself didn't noticed that the way in which he derived the H-
 
 One can also see this most clearly in a generic example, reviewing the procedure in which we compute some future macroscopic state from an initial state macrostate. The final state is obtained by taking the \textit{sum} of the probabilities over the indistinguishable microstates, however the initial state is obtained by taking the \textit{avarage} over the initial microstates.
 
+However, if we would consider a scenerio where we either know the initial configuration exactly or be able to study all degrees of freedom at the final state, the arrow of time would indeed disappear as is the case with microscopic or structureless objects.
+
 \subsection{Different approaches towards irreversibility and non-equilibrium}
 
 As one might tell from the large amount of literature on the subject \cite{Doyle:wf} \cite{Layzer:1970dx} \cite{Wolfram:552851} \cite{Rovelli:2015tv} \cite{Courbage:1983eo} %TODO: Add more citations
- that this explanation of irreversibility noticed long time ago by Boltzmann, Kelvin, Maxwell \cite{Wolfram:552851} and also Einstein (in the polemic with Ritz over time-reversal symmetry of Maxwell equations) still leaves dissatisfaction in many.
+ that this explanation of irreversibility noticed long time ago by Boltzmann, Kelvin, Maxwell \cite{Wolfram:552851} and also Einstein (in the polemic with Walter Ritz over time-reversal symmetry of Maxwell equations) still leaves dissatisfaction in many.
 
-Different alternatives for explanations of irreversible processes have been proposed over the years, including fluctuations, randomness of the radiative process, quantum mechanics, CP violation, cellular automata and even gravity. We now will shortly discuss each of those approaches, starting our discussion from the most direct one, given Ilya Prigogine.
+Different alternatives for explanations of irreversible processes have been proposed over the years, including retarded potentials of electromagnetism, randomness of the radiative process, quantum mechanics, CP violation, fluctuations, cellular automata and even gravity. We now will shortly discuss each of those approaches, starting our discussion from the most direct one, given Ilya Prigogine.
 
 The motivation for such development was clearly articulated by Prigogine:
 "I have always found it difficult to accept this conclusion [macroscopic irreversibility emerging from initial conditions] {...} especially because of the constructive role of irreversible processes. Can dissipative structures be the result of mistakes?" \cite{Prigogine:1978kz}.
@@ -138,17 +140,20 @@ The motivation for such development was clearly articulated by Prigogine:
 His personal dissatisfaction with lack of irreversibility and unitary evolution at the microscopic level led him to postulate the existence of microscopic representation of entropy in the equations of motion. 
 In essence, the idea was to change the fundamental laws of physics as to make them irreversible at the microscopic level. The details of this approach, known in literature as Misra-Prigogine-Courbage theory\cite{Courbage:1983eo}, will not be presented here, as in so far no evidence for its validity has been found\cite{Bricmont:7zJsfTpK}.
 
-Some authors \cite{Doyle:wf}, stated that irreversibility enters
+Somewhat related is the Ritz argument about the irreversibility of Maxwell's laws of electromagnetism. In the polemic with Einstein he states that the retarded and advanced potentials should not be treated on equal footing, to which Einstein disagrees. 
+According to John Fox, who was a later commentator of the debate, based on the long lifetimes of fast muons (which are taken as evidence for time dilation) and the speed-of-light gamma rays from rapidly moving sources, Fox gave a decision in favor of Einstein \cite{Fox:1965bg}.
 
-Classical statistical physics (with its Maxwell-Boltzmann distribution and other insights) was replaced by quantum statistical physics (with its Bose-Einstein and Fermi-Dirac distributions and similar wisdom). But both of these disciplines imply pretty much the same large N limit called thermodynamics. In the quantum case, the large N limit also includes the classical limit. The qualitative relation between thermodynamics on one side and statistical physics on the other side is pretty much identical in the classical and quantum world.
+Now to see why irreversibility cannot be driven by quantum mechanics one just needs to notice that all quantum phenomena are controlled by Planck's constant, while the manifestations of the irreversibility - such as friction - are clearly macroscopically large. %It's not true completely in case of light...
 
-Another simple way to debunk the myth is to notice that the strength of all quantum phenomena is controlled by Planck's constant which is very tiny in "everyday units" while the manifestations of the arrow of time - such as friction - are clearly macroscopically large. So they can't be proportional to Planck's constant: their essence can't depend on quantum mechanics.
+A different school of thought \cite{KIEFER2005}\cite{Barbour:2014hq}, %TODO:[promoted by Roger Penrose] Find Penrose on gravity/time arrow
+claims that gravity is the source of irreversibility. However, it is a well known fact that in the absence of gravitational fields friction and irreversibility occurs as well. Beside that, similarly to the quantum case the Newton's constant is to small to have such an effect. It is demonstrable that the magnitude of friction is controlled by atomic physics and electromagnetism and therefore is a \textit{local} effect. 
 
-Other approaches to irreversible process mentioned earlier, most likely also fail.
-
-including fluctuations, randomness of the radiative process, quantum mechanics, CP violation, cellular automata and even gravity
-
-To summarise ...
+One of often cited local causes of irreversibility is CP violation. %TODO: CP citations
+The weak nuclear interactions violate the CP symmetry which is equivalent to saying that they violate the T symmetry, because to our best knowledge the CPT symmetry is strictly conserved. However the case here, is again similar to the discussion of gravitational and quantum mechanical effects, namely the effect is again to small to explain the friction force. Friction would have to be proportional to the small angle from the Cabibbo-Kobayashi-Matrix matrix.
+Once again, this is clearly not the case because the friction force is much stronger and it is controlled by electromagnetic collisions - collisions caused by a force whose microscopic description is time-reversal-symmetric.
+%TODO: fluctuations, cellular automat
+ 
+To summarise, one can see that the Second Law and irreversibility are intimately connected with statistics, inference methods and our lack of full information about systems.
 
 \subsection{Physics of computation}
 
@@ -173,7 +178,7 @@ In comparison to Boltzmann entropy, Gibbs entropy is well defined also for a sys
 %TODO: Add Jaynes - Gibbs vs Boltzmann Entropies
 
 In Hamiltonian systems Gibbs entropy stays constant.
-The constancy of entropy in Hamiltonian systems was first discovered by Gibbs in 1903 and was commented on extensively but inconclusively by Ehrenfest review of the foundations of statistical mechanics.
+The constancy of entropy in Hamiltonian systems was first discovered by Gibbs in 1903 and was commented on extensively but inconclusively by Ehrenfest review \cite{Ehrenfest:1960ia} of the foundations of statistical mechanics.
 
 That however doesn't mean that the concept of Gibbs entropy 
 is useless.
@@ -388,6 +393,13 @@ In Prigogine's view the fluctuations are the trigger for the instabilities (or r
 An often given example of instabilities leading to formation of structures are the Rayleigh-Bénard convection cells. In further part of this it will be demonstrated that this non-equilibrium system indeed lowers it's entropy.
 
 \subsection{Green-Kubo relations}
+
+\section{General Irreversibility}
+
+P(H/E) = P(E/H) P(H) / P(E)
+"P(E)" is the so-called marginal probability of evidence "E" in all contradicting hypotheses, equal to the sum of "P(E/H_i) P(H_i)" over "i".
+
+ The main point of this discussion is to emphasize that the conditional probabilities "P(E/H)" and "P(H/E)" are two very different animals. There is no symmetry between assumptions and assertions in conditional probability calculus. The additional factor of "P(H) / P(E)" that distinguishes them is a more general version of the "1/N" factor in the averaging over the initial states that we discussed previously, in the comments about particle physics.
 
 \bibliographystyle{ieeetr}
 \bibliography{Refs}
