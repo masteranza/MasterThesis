@@ -81,7 +81,7 @@ Shortly after that, Rudolf Clausius introduced the notion of entropy, defined as
 
 In 1872 Ludwig Boltzmann constructed an equation that he thought could describe the detailed time development of any gas and used it to derive the so-called H-theorem. The theorem stated that a quantity equal to entropy must always increase in time. Therefore it seemed that Boltzmann had successfully proved the Second Law. During his times however, a famous objection was poised known as the Loschmidt paradox which stated basically, that due to time-reversal property of Newton laws the evolution could be run in reverse leading to decrease in entropy. 
 
-The resolution of this paradox was noted much later and should probably classified as hard to grasp or at least hard to get accustomed to because even today one can find discussions and erroneous statements about the "arrow of time" in the literature. Indeed, those difficulties were noted by Gibbs as well\cite{Gibbs:1928tw}:
+The resolution of this paradox was noted much later and should probably classified as hard to grasp or at least hard to get accustomed to, because even today one can find discussions and erroneous statements about the "arrow of time" in the literature. Indeed, those difficulties were noted by Gibbs as well\cite{Gibbs:1928tw}:
 “Any method involving the notion of entropy, the very existence of which depends on the second law of thermodynamics, will doubtless seem to many far-fetched, and may repel beginners as obscure and difficult of comprehension.” 
 We will intentionally postpone the discussion to the later part of this paragraph in order to go through it thoroughly and to highlight the more recent paths of developments in non-equilibrium thermodynamics and statistical physics.
 
@@ -97,7 +97,7 @@ Nevertheless, the Second Law had become to be regarded as a fundamental principa
 
 \subsection{The information era and Schrödingers influence on physics}
 
-In the 1940s Claude Shannon introduced the notion of information quantity and during the 1950s, it was recognized that entropy is simply the negative of Shannon's quantity. This way a fundamental link between information theory and thermodynamics was established. This coincided with the discovery of the structure of DNA by James Watson and Francis Crick and together with written a little earlier, influential book titled "What is life?" by  Erwin Schrödinger sparked enthusiasm and inspired generations of physicists to answer the alluring (though not easy) question of the role of physics in biological processes. 
+In the 1940s Claude Shannon introduced the notion of information quantity \cite{Shannon:429164} and during the 1950s, it was recognized that entropy is simply the negative of Shannon's quantity. This way a fundamental link between information theory and thermodynamics was established. This coincided with the discovery of the structure of DNA by James Watson and Francis Crick and together with written a little earlier, influential book titled "What is life?" by  Erwin Schrödinger sparked enthusiasm and inspired generations of physicists to answer the alluring (though not easy) question of the role of physics in biological processes. 
 
 In any event it probably wouldn't be an exaggeration to say that Schrödinger himself (as he admits), was inspired by the work of German-American physicists Max Delbrück; who helped launch the molecular biology research program in the late 1930s and explained (in main part) the mechanism of heredity and mutation.
 Regardless, Schrödinger makes some very essential observations on the nature of living organisms.
@@ -121,16 +121,16 @@ The answer lies in the time-asymmetric probabilistic way in which we make predic
 Besides the pure probabilistic description we need the common sense, axiom of causality in order to obtain the time-asymmetric description.
 We use it so frequently implicitly, that we often forget about it \cite{Evans:2016tq}. 
 
-Indeed, Boltzmann himself didn't noticed that the way in which he derived the H-Theorem from his equation, implicitly assumed that the particles are uncorrelated before the collisions, but become correlated after the collision\cite{Dorfman:ozm67-zD}\cite{Wolfram:552851}, thus causing the time-reversal asymmetry.
+Indeed, Boltzmann himself didn't noticed that the way in which he derived the H-Theorem from his equation, implicitly assumed that the particles are uncorrelated before the collisions (through Stosszahlansatz), but become correlated after the collision\cite{Dorfman:ozm67-zD}\cite{Wolfram:552851}, thus causing the time-reversal asymmetry.
 
 One can also see this most clearly in a generic example, reviewing the procedure in which we compute some future macroscopic state from an initial state macrostate. The final state is obtained by taking the \textit{sum} of the probabilities over the indistinguishable microstates, however the initial state is obtained by taking the \textit{avarage} over the initial microstates.
 
-However, if we would consider a scenerio where we either know the initial configuration exactly or be able to study all degrees of freedom at the final state, the arrow of time would indeed disappear as is the case with microscopic or structureless objects.
+However, if we would consider a scenerio where we either know the initial configuration exactly or are able to study all degrees of freedom at the final state, the arrow of time would indeed disappear as is the case with microscopic or structureless objects.
 
 \subsection{Different approaches towards irreversibility and non-equilibrium}
 
 As one might tell from the large amount of literature on the subject \cite{Doyle:wf} \cite{Layzer:1970dx} \cite{Wolfram:552851} \cite{Rovelli:2015tv} \cite{Courbage:1983eo} %TODO: Add more citations
- that this explanation of irreversibility noticed long time ago by Boltzmann, Kelvin, Maxwell \cite{Wolfram:552851} and also Einstein (in the polemic with Walter Ritz over time-reversal symmetry of Maxwell equations) still leaves dissatisfaction in many.
+ that this explanation of irreversibility noticed long time ago by Clausius, Boltzmann, Kelvin, Maxwell \cite{Wolfram:552851} and also Einstein (in the polemic with Walter Ritz over time-reversal symmetry of Maxwell equations) still leaves dissatisfaction in many.
 
 Different alternatives for explanations of irreversible processes have been proposed over the years, including retarded potentials of electromagnetism, randomness of the radiative process, quantum mechanics, CP violation, fluctuations, cellular automata and even gravity. We now will shortly discuss each of those approaches, starting our discussion from the most direct one, given Ilya Prigogine.
 
@@ -155,11 +155,10 @@ Once again, this is clearly not the case because the friction force is much stro
  
 To summarise, one can see that the Second Law and irreversibility are intimately connected with statistics, inference methods and our lack of full information about systems.
 
-\subsection{Physics of computation}
+\subsection{Jaynes formulation of statistical mechanics (MaxEnt)}
 
-Following statements by John von Neumann, it was thought that any computational process must necessarily increase entropy,  but by the early 1970s, notably with work by Charles Bennett, it became accepted that this is not so (see page 1023), laying some early groundwork for relating computational and thermodynamic ideas. 
-
-\subsection{Jaynes formulation of statistical mechanics}
+In 1957 Edwin Jaynes published an illuminating article on the information theoretical basis of statistical mechanics which, with agreement to our earlier discussion, equated entropy to our lack of knowledge about the system. From this approach it follows that the maximum entropy state i.e. equilibrium state of statistical physics can be viewed through information theory as the least biased state given the available information (e.g. energy constraints).
+Statistical mechanics then becomes, in a strict sense, a form of statistical inference rather than a physical theory.
 
 The essence of MaxEnt method can be summarized in the formula for maximization of relative entropy (negative Kullback-Leibler divergence)
 
@@ -168,24 +167,52 @@ The essence of MaxEnt method can be summarized in the formula for maximization o
 \end{displaymath}
 with respect to $p_i$ (new aposteriori distribution). $H(p||q)$ can be interpreted as the information gained by using $p_i$ instead of $q_i$.
 
+\subsection{Physics of computation}
+
+After Shannon and Jaynes established the links between information theory, statistical mechanics and thermodynamics, there was a growing need to include the concept of computation as well. Following some preliminary statements by John von Neumann, it was thought that any computational process must necessarily increase entropy.
+However in 1970s, Charles Bennett pointed out that it is not the case\cite{Bennett:1973ko}, laying some early groundwork for relating computational and thermodynamic ideas. 
+
+%TODO: Expand on Bennett
 
 \section{Treatment of entropy in standard contexts}
 
 \subsection{Gibbs entropy}
 
-In comparison to Boltzmann entropy, Gibbs entropy is well defined also for a system of interacting particles \cite{Jaynes:1965gg}.
+The Gibbs Entropy defined with the use of the N particle distribution function $ \rho $ and the Boltzmann constant $k_B$:
+\begin{equation}
+  S_G = k_B \int \rho \log{\rho},
+\end{equation}
 
-%TODO: Add Jaynes - Gibbs vs Boltzmann Entropies
+is a generalization of Boltzmann entropy $S_B = k_B \log{W}$ where $W$ represents the number of possible microscopic configuration of a macrostate (phase volume). From this fact we see that $\log{k_B^{-1} S_G}$ is a measure of the phase volume of microstates or measure of our degree of ignorance as to the true unknown microstate.
 
-In Hamiltonian systems Gibbs entropy stays constant.
-The constancy of entropy in Hamiltonian systems was first discovered by Gibbs in 1903 and was commented on extensively but inconclusively by Ehrenfest review \cite{Ehrenfest:1960ia} of the foundations of statistical mechanics.
+Gibbs entropy is also the correct generalization of Boltzmann $H$ useful only for description of systems of non-interacting molecules\cite{Jaynes:1965gg}. 
 
-That however doesn't mean that the concept of Gibbs entropy 
-is useless.
+Moreover can also be demonstrated \cite{Jaynes:1965gg} that the change of Gibbs entropy over a reversible path is equal to Clausius entropy:
 
-%TODO: Proof from page 43
+\begin{equation}
+\begin{aligned}
+  \Delta S_G &= \int_1^2 \frac{d\langle K+ B \rangle+ \langle P \rangle d\Omega}{T}
+  &= \frac{dQ}{T}.
+\end{aligned}
+\end{equation}
 
-\subsubsection{Simple model}
+Here $K$ is the total kinetic energy, $V$ is the interparticle potential and $P$, $T$ are pressure and temperature. We may therefore drop the $G$, and from now on speak of entropy $S$.
+
+In closed Hamiltonian systems Gibbs entropy stays constant.
+This feature of entropy was first noted by Gibbs himself and was solved by a coarse-graining procedure\cite{Gibbs:1928tw}. This alleged arbitrariness of this procedure was subject to critique \cite{Evans:2241458}. %TODO: more on coarse-graining
+
+However, even without coarse-graining one can use Gibbs entropy for closed systems subject to adiabatic change. If we knew that on the beginning, at time $t_0$ the system is in \textit{complete} thermodynamic equilibrium having entropy $S_G$, then we know that at the later time; after the external adiabatic ceased the new "test" or experimental distribution function will have entropy $S_e \geq S_G$. By saying that we demand \textit{complete} thermodynamic equilibrium at the beginning, we say that the systems history has to be followed by the experimenter to become confident of the obtained equilibrium, as some otherwise unexplainable exceptions exist, such as the Hahn experiment. %TODO Cite Hahn
+
+It is perhaps worth underlying, that the increase of entropy is linked to our knowledge about the system, rather than it is doing internally. This should not come up as particularly surprising as our division between work and heat is somewhat arbitrary.
+
+One can propose a thought experiment, leading to paradox to see the case more clearly. Consider a case of an simple gas closed in an isolated box container of size $L$ which molecules are localized in an imaginary box-like area of size $L/2$ at time $t_0$ (Figure 1a). %TODO: pics   
+It is obvious that the gas will expand, but according to the constancy of Gibbs entropy for an isolated system the entropy will not change. Of course the answer to this apparent paradox is very simple - if we had the ability to wait the time necessary for particles to localize in the volume $L/2$, we would probably not need the Second Law. In every imaginable case, we  would need to place the particles in the initial state by hand, that is close them in an actual box of size $L/2$ and then release. 
+In this scenerio, the final phase space is of course larger than the initial one and Gibbs entropy increases, as expected.
+
+Classical entropy is by construction, an additive property. 
+The Second Law of course holds for isolated systems as a whole and one can therefore imagine that out of equilibrium some subsystems may maintain lower entropy. We'll demonstrate this in the next paragraph.
+
+\subsubsection{Decrease of entropy in a simple model}
 Let's consider a model consisting of three elements: the cooler $C$, the heater $H$ and the system under consideration $S$, staying out of equilibrium.
 We assume, that the temperatures of the cooler and the heater stay constant, and that heat $Q_H$ flows into the system $S$ and heat $Q_C$ flows out. The situation is illustrated by the picture \ref{Fig2}.
 \begin{figure}[ht!]
@@ -340,6 +367,7 @@ The interpretation of the first inequality is that the full information about th
 \section{Near-equilibrium thermodynamics}
 
 \subsection{Concepts}
+
 \subsection{Theory of fluctuations}
 \subsection{Onsager relations}
 %TODO Onsager START
@@ -396,10 +424,9 @@ An often given example of instabilities leading to formation of structures are t
 
 \section{General Irreversibility}
 
-P(H/E) = P(E/H) P(H) / P(E)
-"P(E)" is the so-called marginal probability of evidence "E" in all contradicting hypotheses, equal to the sum of "P(E/H_i) P(H_i)" over "i".
-
- The main point of this discussion is to emphasize that the conditional probabilities "P(E/H)" and "P(H/E)" are two very different animals. There is no symmetry between assumptions and assertions in conditional probability calculus. The additional factor of "P(H) / P(E)" that distinguishes them is a more general version of the "1/N" factor in the averaging over the initial states that we discussed previously, in the comments about particle physics.
+$P(H/E) = P(E/H) P(H) / P(E)$
+"P(E)" is the so-called marginal probability of evidence "E" in all contradicting hypotheses, equal to the sum of $P(E/H_i) P(H_i)$ over "i".
+ The main point of this discussion is to emphasize that the conditional probabilities "$(E/H)$ and $P(H/E)$ are two very different animals. There is no symmetry between assumptions and assertions in conditional probability calculus. The additional factor of "P(H) / P(E)" that distinguishes them is a more general version of the "1/N" factor in the averaging over the initial states that we discussed previously, in the comments about particle physics.
 
 \bibliographystyle{ieeetr}
 \bibliography{Refs}

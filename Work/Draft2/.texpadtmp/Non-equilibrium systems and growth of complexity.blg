@@ -4,21 +4,23 @@ The top-level auxiliary file: /Users/masteranza/Projects/MasterThesis/Work/Draft
 The style file: ieeetr.bst
 Database file #1: ../Refs.bib
 Warning--I didn't find a database entry for "Gibbs:1962bk"
+Warning--I didn't find a database entry for "Shannon:429164"
 Warning--I didn't find a database entry for "KIEFER2005"
 Warning--I didn't find a database entry for "Barbour:2014hq"
+Warning--I didn't find a database entry for "Bennett:1973ko"
 Warning--empty publisher in Evans:2016tq
 Warning--empty year in Doyle:wf
 You've used 14 entries,
             1876 wiz_defined-function locations,
-            575 strings with 5423 characters,
-and the built_in function-call counts, 2819 in all, are:
+            579 strings with 5558 characters,
+and the built_in function-call counts, 2831 in all, are:
 = -- 290
-> -- 68
+> -- 71
 < -- 0
-+ -- 31
-- -- 17
-* -- 178
-:= -- 403
++ -- 32
+- -- 18
+* -- 180
+:= -- 406
 add.period$ -- 16
 call.type$ -- 14
 change.case$ -- 11
@@ -26,8 +28,8 @@ chr.to.int$ -- 0
 cite$ -- 16
 duplicate$ -- 154
 empty$ -- 299
-format.name$ -- 17
-if$ -- 688
+format.name$ -- 18
+if$ -- 690
 int.to.chr$ -- 0
 int.to.str$ -- 14
 missing$ -- 15
@@ -37,7 +39,7 @@ pop$ -- 48
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 89
+skip$ -- 88
 stack$ -- 0
 substring$ -- 163
 swap$ -- 52
@@ -49,4 +51,4 @@ warning$ -- 2
 while$ -- 29
 width$ -- 16
 write$ -- 126
-(There were 5 warnings)
+(There were 7 warnings)
