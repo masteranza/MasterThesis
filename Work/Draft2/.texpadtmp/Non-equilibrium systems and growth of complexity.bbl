@@ -53,9 +53,18 @@ D.~J. Evans, D.~J. Searles, and S.~R. Williams, {\em {Fundamentals of classical
   theorems}}.
 \newblock Berlin: John Wiley {\&} Sons, 2016.
 
+\bibitem{Evans:2002gg}
+D.~J. Evans and L.~Rondoni, ``{Comments on the Entropy of Nonequilibrium Steady
+  States},'' {\em Journal of Statistical Physics}, vol.~109, no.~3/4,
+  pp.~895--920, 2002.
+
 \bibitem{Nicolis:1979cv}
 G.~Nicolis and I.~Prigogine, ``{Irreversible processes at nonequilibrium steady
   states and Lyapounov functions},'' {\em Proceedings of the National Academy
   of Sciences}, vol.~76, no.~12, pp.~6060--6061, 1979.
+
+\bibitem{Jarzynski:1997uj}
+C.~Jarzynski, ``{Nonequilibrium Equality for Free Energy Differences},'' {\em
+  Physical Review Letters}, vol.~78, pp.~2690--2693, Apr. 1997.
 
 \end{thebibliography}

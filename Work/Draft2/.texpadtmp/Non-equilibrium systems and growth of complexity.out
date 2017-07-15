@@ -5,14 +5,23 @@
 \BOOKMARK [2][-]{subsection.1.4}{Different approaches towards irreversibility and non-equilibrium}{section.1}% 5
 \BOOKMARK [2][-]{subsection.1.5}{Jaynes formulation of statistical mechanics \(MaxEnt\)}{section.1}% 6
 \BOOKMARK [2][-]{subsection.1.6}{Physics of computation}{section.1}% 7
-\BOOKMARK [1][-]{section.2}{Treatment of entropy in standard contexts}{}% 8
+\BOOKMARK [1][-]{section.2}{Treatment of entropy in the standard contexts}{}% 8
 \BOOKMARK [2][-]{subsection.2.1}{Gibbs entropy}{section.2}% 9
 \BOOKMARK [3][-]{subsubsection.2.1.1}{Decrease of entropy in a simple model}{subsection.2.1}% 10
 \BOOKMARK [2][-]{subsection.2.2}{von Neumann entropy}{section.2}% 11
 \BOOKMARK [1][-]{section.3}{Near-equilibrium thermodynamics}{}% 12
 \BOOKMARK [2][-]{subsection.3.1}{Concepts}{section.3}% 13
-\BOOKMARK [2][-]{subsection.3.2}{Theory of fluctuations}{section.3}% 14
-\BOOKMARK [2][-]{subsection.3.3}{Onsager relations}{section.3}% 15
-\BOOKMARK [2][-]{subsection.3.4}{MinEP}{section.3}% 16
-\BOOKMARK [2][-]{subsection.3.5}{Green-Kubo relations}{section.3}% 17
-\BOOKMARK [1][-]{section.4}{General Irreversibility}{}% 18
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Local equilibrium}{subsection.3.1}% 14
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Definition of temperature}{subsection.3.1}% 15
+\BOOKMARK [3][-]{subsubsection.3.1.3}{Entropy production}{subsection.3.1}% 16
+\BOOKMARK [3][-]{subsubsection.3.1.4}{Steady states}{subsection.3.1}% 17
+\BOOKMARK [2][-]{subsection.3.2}{Theory of fluctuations}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.3}{Onsager relations}{section.3}% 19
+\BOOKMARK [2][-]{subsection.3.4}{MinEP}{section.3}% 20
+\BOOKMARK [2][-]{subsection.3.5}{Green-Kubo relations}{section.3}% 21
+\BOOKMARK [1][-]{section.4}{Pure non-equilibrium results}{}% 22
+\BOOKMARK [2][-]{subsection.4.1}{Jarzynski equality}{section.4}% 23
+\BOOKMARK [2][-]{subsection.4.2}{Crooks fluctuation theorem}{section.4}% 24
+\BOOKMARK [2][-]{subsection.4.3}{Onsager-Machlup path integrals}{section.4}% 25
+\BOOKMARK [2][-]{subsection.4.4}{Evans derivation}{section.4}% 26
+\BOOKMARK [2][-]{subsection.4.5}{Appropriate treatment of reverse trajectories}{section.4}% 27

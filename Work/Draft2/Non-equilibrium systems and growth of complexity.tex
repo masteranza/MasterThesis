@@ -174,7 +174,7 @@ However in 1970s, Charles Bennett pointed out that it is not the case\cite{Benne
 
 %TODO: Expand on Bennett
 
-\section{Treatment of entropy in standard contexts}
+\section{Treatment of entropy in the standard contexts}
 
 \subsection{Gibbs entropy}
 
@@ -203,16 +203,18 @@ This feature of entropy was first noted by Gibbs himself and was solved by a coa
 
 However, even without coarse-graining one can use Gibbs entropy for closed systems subject to adiabatic change. If we knew that on the beginning, at time $t_0$ the system is in \textit{complete} thermodynamic equilibrium having entropy $S_G$, then we know that at the later time; after the external adiabatic ceased the new "test" or experimental distribution function will have entropy $S_e \geq S_G$. By saying that we demand \textit{complete} thermodynamic equilibrium at the beginning, we say that the systems history has to be followed by the experimenter to become confident of the obtained equilibrium, as some otherwise unexplainable exceptions exist, such as the Hahn experiment. %TODO Cite Hahn
 
-It is perhaps worth underlying, that the increase of entropy is linked to our knowledge about the system, rather than it is doing internally. This should not come up as particularly surprising as our division between work and heat is somewhat arbitrary.
-
 One can propose a thought experiment, leading to paradox to see the case more clearly. Consider a case of an simple gas closed in an isolated box container of size $L$ which molecules are localized in an imaginary box-like area of size $L/2$ at time $t_0$ (Figure 1a). %TODO: pics   
 It is obvious that the gas will expand, but according to the constancy of Gibbs entropy for an isolated system the entropy will not change. Of course the answer to this apparent paradox is very simple - if we had the ability to wait the time necessary for particles to localize in the volume $L/2$, we would probably not need the Second Law. In every imaginable case, we  would need to place the particles in the initial state by hand, that is close them in an actual box of size $L/2$ and then release. 
 In this scenerio, the final phase space is of course larger than the initial one and Gibbs entropy increases, as expected.
+
+It is perhaps worth underlying, that the increase of entropy is linked to our knowledge about the system, rather than anything it is doing internally. This should not come up as particularly surprising as our division between work and heat is somewhat arbitrary. 
+Moreover, even the exact parameters of entropy depend on the situation, so does their number. We can increase their number as far as we wish and in doing so, we move toward classical deterministic description and the notion of entropy collapses.
 
 Classical entropy is by construction, an additive property. 
 The Second Law of course holds for isolated systems as a whole and one can therefore imagine that out of equilibrium some subsystems may maintain lower entropy. We'll demonstrate this in the next paragraph.
 
 \subsubsection{Decrease of entropy in a simple model}
+\label{simple-model}
 Let's consider a model consisting of three elements: the cooler $C$, the heater $H$ and the system under consideration $S$, staying out of equilibrium.
 We assume, that the temperatures of the cooler and the heater stay constant, and that heat $Q_H$ flows into the system $S$ and heat $Q_C$ flows out. The situation is illustrated by the picture \ref{Fig2}.
 \begin{figure}[ht!]
@@ -345,7 +347,7 @@ which entropy is zero. It's important to notice though that our system lost a pa
 where the  squared modulus of the coefficients has to sum up to one ($ \sum_i \left| c_i \right|^2 = 1 $).
 
 Now depending on the precision of the measurement we can recalculate entropy of course getting a value greater than zero. If we would perform the same analysis for a pure state of two particles in different states i.e. $ket{1,1,...}$ then we would obtain an increase of entropy even without accounting for the lost particle.
-\todo{Correct also for correlated systems?}
+%TODO Correct also for correlated systems?
 This crude example gives a clear illustration of the fact that after \textbf{any} measurement the von Neumann entropy has to increase. However it's change is ultimately related to lost information about the system in the act of the measurement.
 
 There's another interesting feature of quantum entropy, namely inequalities that it fullfills.
@@ -368,7 +370,42 @@ The interpretation of the first inequality is that the full information about th
 
 \subsection{Concepts}
 
+Near-equilibrium thermodynamics is essentially an extension of the equilibrium thermodynamics. In effect many concepts were borrowed from it, but slightly modified.
+
+\subsubsection{Local equilibrium}
+The thermodynamical variables are often defined subject to the kinematical requirement of local thermodynamic equilibrium. This means that collisions between molecules are so frequent that chemical and radiative processes do not disrupt the local Maxwell-Boltzmann distribution of molecular velocities. This principle is valid for hydrodynamic flows and chemical reactions and it's formulation goes back to Clark Maxwell [Citation?].%TODO: Cite Maxwell
+It's usage can be usually justified by assuming analyticity of thermodynamic state functions arbitrarily close to equilibrium - then, local equilibrium is obtained from first order expansion of thermodynamic properties in the irreversible fluxes ${X_i}$ \cite{Evans:2002gg}.
+
+\subsubsection{Definition of temperature}
+When the temperature differences are "smooth" enough, i.e., locally there is a reasonable definition of temperature (local equilibrium), then the temperature gradient determines the heat flux. In the opposite case, it is molecular kinetics who determines the energy transfer. The latter happens much faster and local equilibrium gets established quickly.
+
+On the other hand, far from equilibrium there might be a problem defining temperature and also Clausius entropy which depends on it. One of the solutions provided by Evans at al in  is to define temperature of non equilibrium state by the temperature of the underlying equilibrium state to which the system would otherwise relax.
+
+\subsubsection{Entropy production}
+
+In near equilibrium regime, where local thermodynamic equilibrium is expected to be valid, the theory predicts that there will be a 'spontaneous production of entropy' in non-equilibrium systems.
+This spontaneous production of entropy is given by the entropy production per unit volume $\sigma$ by the following expression \cite{DeGroot:1984ue}
+\begin{displaymath}
+  \int d\bm{r} \sigma(\bm{r},t)=\int d\bm{r}(\sum_i J_i(\bm{r},t)X_i(\bm{r},t))>0,
+\end{displaymath}
+where $J_i(\bm{r},t)$ are the Navier-Stokes hydrodynamic fluxes (e.g. the stress tensor, heat flux vector,...) at position $\bm{r}$ and time $t$ and $X_i$ is the thermodynamic force which is conjugate to $J_i(\bm{r},t)$ (e.g. strain rate tensor divided by temperature or the gradient of the reciprocal of temperature,... respectively).
+
+\paragraph{Problems:}
+In an electric circuit close to equilibrium, entropy production is equal to the product of the electric current times the voltage divided by the ambient temperature. If the circuit has a complex impedance, there will necessarily be a phase lag between the applied voltage and the current. Therefore there will exist an interval in which entropy production will be negative. 
+This example highlights a serious problem for linear, irreversible thermodynamics based on the concept of entropy production. As we will later see, this is not the case for \textit{dissipation}.
+\subsubsection{Steady states}
+The most basic of non-equilibrium conditions, the steady state is already difficult to describe as many of the basic state functions (including temperature and entropy), are undefined for far from equilibrium states and the distribution function of a steady state is fractal and non-analytic. %TODO: Cite Evans?  
+One however can impose a formal condition of vanishing expectation value of $\partial \rho / \partial t$ over the probability density function $p(\rho)$ and non-vanishing expectation value of fluxes vector $\bm{f}$ over the probability density function $p(\bm{f})$: %TODO:Would need to cite Dewar on this, the second def seems sketchy...
+\begin{equation}
+\begin{aligned}
+\label{SteadyStates}
+  \langle \frac{\partial \rho}{\partial t} \rangle_{p(\bm{\rho})} &= 0 \\
+  \langle \bm{f} \rangle_{p(\bm{f})} &\neq 0
+\end{aligned}
+\end{equation}
+
 \subsection{Theory of fluctuations}
+
 \subsection{Onsager relations}
 %TODO Onsager START
 [IN PROGRESS]
@@ -418,15 +455,87 @@ It is important however, that this result holds only for steady states near-equi
 
 The term "dissipative structures" was also coined by Prigogine.
 In Prigogine's view the fluctuations are the trigger for the instabilities (or rather bifurcations in the equations of motion), which in turn give rise to spacetime structures, called poetically "dissipative structures". 
-An often given example of instabilities leading to formation of structures are the Rayleigh-Bénard convection cells. In further part of this it will be demonstrated that this non-equilibrium system indeed lowers it's entropy.
+
+An often given example of instabilities leading to formation of structures are the Rayleigh-Bénard convection cells, which simplified model we considered in paragraph \ref{simple-model}.
 
 \subsection{Green-Kubo relations}
 
-\section{General Irreversibility}
+The Green-Kubo formulae relate the macroscopic, linear transport coefficients of a system to its microscopic equilibrium fluctuations.
 
-$P(H/E) = P(E/H) P(H) / P(E)$
-"P(E)" is the so-called marginal probability of evidence "E" in all contradicting hypotheses, equal to the sum of $P(E/H_i) P(H_i)$ over "i".
- The main point of this discussion is to emphasize that the conditional probabilities "$(E/H)$ and $P(H/E)$ are two very different animals. There is no symmetry between assumptions and assertions in conditional probability calculus. The additional factor of "P(H) / P(E)" that distinguishes them is a more general version of the "1/N" factor in the averaging over the initial states that we discussed previously, in the comments about particle physics.
+\section{Pure non-equilibrium results}
+
+In case of pure non-equilibrium fewer results are known in general.
+
+In ordinary statistical physics when transitions between two equilibrium states are performed infinitely slowly along some path between the initial point $A$ and the final point $B$, then the total work $W$ performed on such a system is equal to the Helmholtz free energy difference $\Delta F$ between the initial and final configurations. However, this is not the case when non-equilibrium transitions are considered. In fact, on average the work performed on the system will exceed Helmholtz free energy $ \langle  W \rangle \geq \Delta F $ and the difference will be equal to the dissipated energy, associated with increase of entropy during an irreversible process.
+
+\subsection{Jarzyński equality}
+
+In 1996, Christopher Jarzynski\cite{Jarzynski:1997uj} derived a very useful equality for the equilibrium free energy differences between two configuration of a system in terms of an ensemble finite-time measurements of the work performed during parametric switching in between those two configurations.
+
+\begin{equation}
+\label{JarzynskiInequality}
+  \langle \exp(-\beta W) \rangle = \exp(-\beta  \Delta F)
+\end{equation}
+
+\subsection{Crooks fluctuation theorem}
+
+\subsection{Onsager-Machlup path integrals}
+
+
+\subsection{Evans derivation}
+
+
+
+\subsection{Appropriate treatment of reverse trajectories}
+
+Let's consider a generic system statistical mechanical system a two times, an initial time $t_0$ and a final time $t_1$, each described by a complete set of possible macrostates $\{A_i\}$ for $ i=1,...,N_A $ and $\{B_j\}$ for $ j=1,...,N_B $  respectively. Each macrostate consists of some number of corresponding microstates denoted by $M_i$ for the initial macrostates and $N_j$ for the final macrostates. The deterministic, microscopic equations of motion then evolve a certain number of the microstates $K_{ij}$ from an initial macrostate $A_i$ to some final macrostate $B_j$.
+
+The probability of the forward transition $P(B_j|A_i)$ is then equal to
+\begin{equation}
+  P(B_j|A_i)= \frac{K_{ij}}{M_i}
+\end{equation}
+
+Now for the time reversed case, that is to obtain $P(A_i|B_j)$, we use the Bayes theorem
+
+\begin{equation}
+  P(A_i|B_j)=\frac{P(B_j|A_i)P(A_i)}{P(B_j)},
+\end{equation}
+
+but on the way of doing so, we note that $A_i$ is still our "hypothesis" and $B_j$ is our evidence. Now, since we have no a priori knowledge about the initial macrostates, each of them is equally probable $P(A_i)= 1/N_A$.
+
+$P(B_j)$ is then the marginal probability of evidence in all contradicting hypotheses or in other words a normalization factor obtained using the relation 
+
+\begin{equation}
+  \sum_i P(A_i|B_j) = 1
+\end{equation}
+which leads to $P(B_j) = \sum_i P(B_j|A_i)P(A_i)$. Using this we obtain the following expression for the post-diction
+
+\begin{equation}
+\begin{aligned}
+  P(A_i|B_j) &= \frac{K_{ij}}{M_i} P(A_i) ( \sum_k \frac{K_{kj}}{M_k}P(A_k) )^{-1}\\
+  &= \frac{K_{ij}}{M_i} ( \sum_{k,m} \frac{K_{kj}}{K_{km}})^{-1}
+\end{aligned}
+\end{equation}
+
+where in the last equation we made use of the fact that $\sum_m K_{km}=M_k $.
+This form is especially useful, because the matrix elements can be normalized.
+
+It is important to emphasize that the conditional probabilities $P(B_j|A_i)$ and $P(A_i|B_j)$ are entirely different in nature - the first represents a prediction, but the second is a post-diction. There is no symmetry between assumptions and assertions in conditional probability calculus.
+
+Using those results one may obtain the correct measure of irreversibility, comparing the probability of forward macroscopic evolution to backward probability evolution, called (but not derived) by Evans, dissipation function:
+
+\begin{equation}
+  \frac{P(B_j|A_i)}{P(A_i|B_j)}= e^{\ln{\sum_{k,m} \frac{K_{kj}}{K_{km}}}}
+\end{equation}
+
+Using random matrices, satisfying the conditions $\sum_j K_{kj} = 1$ for any $k$, one can obtain the distributions for the possible values of $ \Omega_t = \ln{\sum_{k,m} \frac{K_{kj}}{K_{km}}} $ presented on figure \ref{Fig4}.
+
+\begin{figure}[ht!]
+\centering \includegraphics[width=8cm]{dissipation} \caption{Distribution of generic dissipation function for $N_A = 5$ and $N_B=3$}
+\label{Fig4} 
+\end{figure}
+
+\newpage
 
 \bibliographystyle{ieeetr}
 \bibliography{Refs}
