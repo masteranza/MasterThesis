@@ -160,10 +160,10 @@ To summarise, one can see that the Second Law and irreversibility are intimately
 In 1957 Edwin Jaynes published an illuminating article on the information theoretical basis of statistical mechanics which, with agreement to our earlier discussion, equated entropy to our lack of knowledge about the system. From this approach it follows that the maximum entropy state i.e. equilibrium state of statistical physics can be viewed through information theory as the least biased state given the available information (e.g. energy constraints).
 Statistical mechanics then becomes, in a strict sense, a form of statistical inference rather than a physical theory.
 
-The essence of MaxEnt method can be summarized in the formula for maximization of relative entropy (negative Kullback-Leibler divergence)
+The essence of MaxEnt approach can be summarized in the formula for maximization of relative entropy (negative Kullback-Leibler divergence)
 
 \begin{displaymath}
-  H(p\lor q) = -\sum_i \ln p_i \frac{p_i}{q_i}
+  H(p\lor q) = -\sum_i p_i \ln \frac{p_i}{q_i}
 \end{displaymath}
 with respect to $p_i$ (new aposteriori distribution). $H(p||q)$ can be interpreted as the information gained by using $p_i$ instead of $q_i$.
 
@@ -174,10 +174,10 @@ However in 1970s, Charles Bennett pointed out that it is not the case\cite{Benne
 
 %TODO: Expand on Bennett
 
-\section{Treatment of entropy in the standard contexts}
+\section{Treatments of entropy in the standard contexts}
 
 \subsection{Gibbs entropy}
-
+\label{Gibbs entropy}
 The Gibbs Entropy defined with the use of the N particle distribution function $ \rho $ and the Boltzmann constant $k_B$:
 \begin{equation}
   S_G = k_B \int \rho \log{\rho},
@@ -208,8 +208,288 @@ It is obvious that the gas will expand, but according to the constancy of Gibbs 
 In this scenerio, the final phase space is of course larger than the initial one and Gibbs entropy increases, as expected.
 
 It is perhaps worth underlying, that the increase of entropy is linked to our knowledge about the system, rather than anything it is doing internally. This should not come up as particularly surprising as our division between work and heat is somewhat arbitrary. 
-Moreover, even the exact parameters of entropy depend on the situation, so does their number. We can increase their number as far as we wish and in doing so, we move toward classical deterministic description and the notion of entropy collapses.
+Moreover, even the exact parameters of entropy depend on the situation, so does their number. We can increase their number as far as we wish and in doing so, we move toward classical deterministic description and the notion of entropy collapses (this is not the case for von Neumann entropy).
 
+\subsection{von Neumann entropy}
+
+Although this work is meant to stay within the classical limit, it might be worth while to clear out the notion of entropy in quantum context.
+
+The von Neumann entropy is defined as 
+
+\begin{equation}
+  S_{vN}= -\Tr(\hat{\rho} \log{\hat{\rho}}).
+\end{equation}
+
+For which the general form of the density matrix operator is
+
+\begin{equation}
+	\hat{\rho}=\sum_k p_k \ket{\psi_k}\bra{\psi_k} 
+\end{equation}
+
+in case of pure state $\ket{\psi}$ the density matrix is simply
+\begin{equation}
+  \hat{\rho} = \ket{\psi}\bra{\psi}
+\end{equation}
+
+and it is easy to verify that the entropy of a pure state is equal to zero. The entropy of mixed state is always greater than zero.
+If the system is in a pure state, it will continue to be in a pure state as long as it stays isolated. For a mixed state, the degree of mixedness measured by the entropy will stay constant as long as it is isolated. This follows from the fact that the time evolution is unitary and the eigenvalues of the density operator therefore do not change with time.
+
+An interesting question one might ask (and not really discussed in textbooks) is how the entropy changes after a measurement of a particle in many-body system which, initially, was in pure state.
+
+Without loss of generalization let's consider an isolated system of two identical particles described solely by their momentum states.
+In the scenario of two particles of identical momentum we can write the initial pure state as 
+\begin{equation}
+  \ket{2,0,0,...}
+\end{equation}
+which entropy is of course zero.  
+In second quantization formalism the measurement of a particle is realized by the field operator $ \hat{\Psi}(x) =\sum_k \phi_k(x)\hat{a}_n$ which annihilates a single particle at position $x$.
+Therefore after the measurement of particle at some position $x$, one particle is "virtually" removed from the system under consideration, but the system stays in pure state
+\begin{equation}
+  \hat{\Psi}(x)\ket{2,0,0,...}=\phi_1(x)\ket{1,0,0,...},
+\end{equation}
+which entropy is zero. It's important to notice though that our system lost a particle and therefore the systems before and after measurement are not equivalent! Of course, in reality the particle doesn't disappear. After determination of it's position by experiment ($\Delta x \to 0$), the uncertainty of it's momentum approaches infinity ($\Delta p \to \infty$), which means that we can reconstruct the state using a linear combination of states with \textit{any} value of momentum:
+
+\begin{equation}
+  c_1\ \ket{2,,0,...}+c_2\ \ket{1,1,0,...}+  c_3\ \ket{1,0,1,...}+...
+\end{equation}
+where the  squared modulus of the coefficients has to sum up to one ($ \sum_i \left| c_i \right|^2 = 1 $).
+
+Now depending on the precision of the measurement we can recalculate entropy of course getting a value greater than zero. If we would perform the same analysis for a pure state of two particles in different states i.e. $ket{1,1,...}$ then we would obtain an increase of entropy even without accounting for the lost particle.
+%TODO Correct also for correlated systems?
+This crude example gives a clear illustration of the fact that after \textbf{any} measurement the von Neumann entropy has to increase. However it's change is ultimately related to lost information about the system in the act of the measurement.
+
+There's another interesting feature of quantum entropy, namely inequalities that it fullfills.
+If we bipartite the system into subsystems $A$ and $B$ each containing it's own set of commuting observables, then in order to calculate the entropy $S_A$ of a subsystem $A$ we need to calculate the entropy with respect to density matrix traced over the other subsystem, namely
+\begin{equation}
+  \hat{\rho}^A = \Tr_B \hat{\rho} 
+\end{equation}
+then in general the following identities are satisfied
+
+\begin{equation}
+\begin{aligned}
+	S(\rho) &\leq S_A + S_B	\\
+	S(\rho) &\geq \left| S_A - S_B \right|
+\end{aligned}
+\end{equation}
+
+The interpretation of the first inequality is that the full information about the states of the subsystems $A$ and $B$ will in general not be sufficient to give full information about the state of the total system $A+B$. Or in other words, when there are correlations between the two subsystems, these are not seen in the description of $A$ and $B$ separately. 
+
+\section{Near-equilibrium thermodynamics}
+
+\subsection{Linear response, regression and fluctuations}
+
+A very common approximation made in the treatment of near-equilibrium thermodynamics is the assumption of linear response. If an adiabatically insulated system is perturbed out of equilibrium (but still very near to it) by some time dependent force $f(t)$, then the response of mean zero observable $\delta X= X-\langle X \rangle_{eq}$  should satisfy the linearity property
+
+\begin{equation}
+\label{LiearityProperty}
+  \delta X(\lambda f(t),t) = \lambda \delta X(f(t),t)
+\end{equation}
+
+Linear response of a system driven from equilibrium can be described in terms of the \textit{time correlation function} of the observable $X$\footnote{From now on we will assume that $X$ is mean zero observable, that is $X=\delta X$}:
+ 
+\begin{equation}
+  C(t)=\langle X(t)X(0) \rangle = \frac{\Tr{X(t)X(0)\rho_{eq}}}{\Tr{\rho_{eq}}}.
+\end{equation}
+
+With correlation functions, we now study the effect of relaxation towards equilibrium, assuming that the external influence ceased at time $t=0$.
+Then a general property of such auto-correlation function for times $t\geq 0$ is called \textit{regression} and follows directly from the Schwarz inequality and $X^2(t)<X^2(0)$ - the assumption of fading disturbance:
+\begin{equation}
+ | C(t) | \leq C(0)
+\end{equation}
+In fact in the long time limit we expect to obtain the equilibrium values of observables and
+\begin{equation}
+  \lim_{t \to \infty} C(t)=0.
+\end{equation}
+
+Some further properties useful for further discussion can also be noted.
+On the microscopic level of enumerated, time dependent observables $X_i$, the equations of motion are time reversible and time translation invariant, thus leading to
+\footnote{Some of the variables $X_i$ can in fact be odd under time reversal, thus for those $\langle X_i(t+\tau) X_j(t) \rangle = \langle -X_i(t) X_j(t+\tau) \rangle$}:
+
+\begin{equation}
+  \langle X_i(t+\tau) X_j(t) \rangle =   \langle X_i(t-\tau) X_j(t) \rangle =  \langle X_i(t) X_j(t+\tau) \rangle
+\end{equation}
+
+Then dividing $\tau$ and going with it to the limit $\tau \to 0$ we obtain 
+
+\begin{equation}
+\label{CorrelationTimeDerivative}
+  \langle \dot{X}_i(t) X_j(t) \rangle = \langle X_i(t) \dot{X}_j(t) \rangle
+\end{equation}
+
+Now one might perform an analysis from macroscopic view.
+Assume that some system is described by a set of macroscopic variables $\{\bar{X}_i\}$ for $i=1,...,N$ of zero mean $E(\bar{X}_i)=0$, such that a non-zero value of $\bar{X}_i$ corresponds to an average deviation from the equilibrium value due to an applied external force $f$, again we'll assume the case in which the force ceases to exist i.e. $t>0$. 
+
+From experience one then postulates a set of phenomenological coupled equations bringing the system back to equilibrium state: 
+\begin{equation}
+\label{LinearResponseEq}
+  \dot{\bar{X}}_i=-\sum_j \lambda_{ij} \bar{X}_j
+\end{equation}
+
+Such coupling between between macroscopic variables is the source of many old relations, such as thermoelectric Peltier and Seeback effects.
+
+The probability of such deviations is then proportional to the phase volume given by exponential of entropy (see \ref{Gibbs entropy}):
+
+\begin{equation}
+  P \propto \exp(\frac{S(\bar{X}_1,...,\bar{X}_N)-S_0}{k_B})
+\end{equation}
+
+where $S_0$ is the equilibrium value of entropy. Since, we consider near-equilibrium the linear term in the expansion disappears and we're left with
+
+\begin{equation}
+  S-S_0 = - \sum_{ij} S_{ij}\bar{X}_i \bar{X}_j
+\end{equation}
+
+where $S_{ij}= -\frac{1}{2}\frac{\partial^2{S}}{\partial{\bar{X}_i}\partial{\bar{X}_j}}$ is a positive definite, symmetric matrix. %Check on this later
+
+One then defines so-called \textbf{generalized thermodynamic forces} as
+
+\begin{equation}
+  F_i= -\frac{\partial{S}}{\partial{\bar{X}_i}}= \sum_j S_{ij}\bar{X}_j
+\end{equation}
+
+From which, by matrix inversion one can obtain again the macroscopic variables $\bar{X}_i$
+
+\begin{equation}
+  \bar{X}_j = \sum_i (S^{-1})_{ji} F_i
+\end{equation}
+
+
+Inserting those back to equation (\ref{LinearResponseEq}) one gets
+
+\begin{equation}
+\label{FluxesOnMacroscopic}
+  \dot{\bar{X}}_i=-\sum_j \lambda_{ij} \sum_k (S^{-1})_{jk} F_k = \sum_k \gamma_{ik} F_k
+\end{equation}
+
+\subsection{Onsager relations and hypothesis}
+
+In 1931, Onsager shown \cite{Anonymous:zgWBDrcO} that $\gamma_{ik}$ from the previous paragraph is in fact symmetric.
+
+Combining equation (\ref{CorrelationTimeDerivative}) with equation (\ref{FluxesOnMacroscopic}) we obtain finally the celebrated Onsager relations
+
+\begin{equation}
+  \gamma_{ij}=\gamma_{ji}.
+\end{equation}
+
+In general the relaxation of small macroscopic non-equilibrium disturbances need not to be related to the regression of microscopic fluctuations in the corresponding equilibrium system. 
+However, Onsager conjectured that in the linear approximation they should be equal. To see why this is the case we give a heuristic argument.
+Let's consider the expression for $\bar{X}$ for time $t < 0$:
+
+\begin{equation}
+  \bar{X}(0)=\frac{\langle X e^{-\beta (H-f X)} \rangle}{\langle e^{-\beta (H-f X)} \rangle} \approx \beta f (\langle A(0)A(0) \rangle - \langle A(0) \rangle^2)= \beta f C(0)
+\end{equation}
+
+where in approximation each exponential was Taylor expanded to first order.
+For time $t>0$
+
+\begin{equation}
+  \bar{X}(t)=\frac{\langle X(t) e^{-\beta (H-f X)} \rangle}{\langle e^{-\beta (H-f X)} \rangle} \approx \beta f (\langle A(t)A(0) \rangle - \langle A(0) \rangle^2)= \beta f C(t)
+\end{equation}
+
+Onsager hypothesis can now be seen as simply
+
+\begin{equation}
+  \frac{\bar{X}(t)}{\bar{X}(0)}=\frac{C(t)}{C(0)}
+\end{equation}
+
+As a practical note on application of Onsager relations, we quote Charles Kittel:
+
+"It is rarely a trivial problem to find the correct choice of (generalized) forces and fluxes applicable to the Onsager relation."
+
+\subsection{Local equilibrium and Entropy production}
+
+The thermodynamical variables are often defined subject to the kinematical requirement of local thermodynamic equilibrium. This means that collisions between molecules are so frequent that chemical and radiative processes do not disrupt the local Maxwell-Boltzmann distribution of molecular velocities. This principle is valid for hydrodynamic flows and chemical reactions and it's formulation goes back to Clark Maxwell [Citation?].%TODO: Cite Maxwell
+It's usage can be usually justified by assuming analyticity of thermodynamic state functions arbitrarily close to equilibrium - then, local equilibrium is obtained from first order expansion of thermodynamic properties in the irreversible fluxes ${X_i}$ \cite{Evans:2002gg}.
+
+In near equilibrium regime, where local thermodynamic equilibrium is expected to be valid, the theory predicts that there will be a 'spontaneous production of entropy' in non-equilibrium systems.
+This spontaneous production of entropy is given by the entropy production per unit volume $\sigma$ by the following expression \cite{DeGroot:1984ue}
+\begin{displaymath}
+  \int d\bm{r} \sigma(\bm{r},t)=\int d\bm{r}(\sum_i J_i(\bm{r},t)X_i(\bm{r},t))>0,
+\end{displaymath}
+where $J_i(\bm{r},t)$ are the Navier-Stokes hydrodynamic fluxes (e.g. the stress tensor, heat flux vector,...) at position $\bm{r}$ and time $t$ and $X_i$ is the thermodynamic force which is conjugate to $J_i(\bm{r},t)$ (e.g. strain rate tensor divided by temperature or the gradient of the reciprocal of temperature,... respectively).
+
+\paragraph{Problems:}
+In an electric circuit close to equilibrium, entropy production is equal to the product of the electric current times the voltage divided by the ambient temperature. If the circuit has a complex impedance, there will necessarily be a phase lag between the applied voltage and the current. Therefore there will exist an interval in which entropy production will be negative. 
+This example highlights a serious problem for linear, irreversible thermodynamics based on the concept of entropy production. As we will later see, this is not the case for \textit{dissipation}.
+
+
+
+%TODO Onsager START
+[IN PROGRESS]
+a term for entropy for open systems, an extension of Clausius entropy for isolated systems:
+
+\begin{displaymath}
+	dS=d_iS+d_eS
+\end{displaymath}
+
+
+Where \(d_iS\) is connected with entropy produced within the system and \(d_eS\) is the entropy transferred across the boundaries of the system.
+The second law states that \(d_iS\geq 0\), so if a system is to stay in law entropy state it{'}s production must be compensated by an inflow of negative
+entropy.
+
+He then develops an explicit expression for entropy production, assuming that even outside equilibrium (but near) entropy depends only on the same
+variables as at equilibrium ("local" equilibrium)
+
+\begin{displaymath}
+	P=\frac{d_iS}{dt}=\sum _{\rho } J_{\rho }X_{\rho }\geq 0
+\end{displaymath}
+
+
+where \(J_{\rho }\) are the rates of the various irreversible processes involved (chemical reactions, heat flow, diffusion$\ldots $) and \(X_{\rho
+}\) are the corresponding, generalized forces (affinities, gradients of temperature, of chemical potentials$\ldots $). The flows are described using
+different empirical laws (Fourier{'}s law, Fick{'}s law, etc.) 
+
+\begin{displaymath}
+	J_{\rho }=\sum _{\rho } L_{\rho \rho '}X_{\rho '}
+\end{displaymath}
+
+Onsager relations \(L_{\rho \rho '}=L_{\rho '\rho }\)
+[IN PROGRESS END]
+%TODO: Onsager END
+
+
+
+\subsubsection{Definition of temperature}
+When the temperature differences are "smooth" enough, i.e., locally there is a reasonable definition of temperature (local equilibrium), then the temperature gradient determines the heat flux. In the opposite case, it is molecular kinetics who determines the energy transfer. The latter happens much faster and local equilibrium gets established quickly.
+
+On the other hand, far from equilibrium there might be a problem defining temperature and also Clausius entropy which depends on it. One of the solutions provided by Evans at al in  is to define temperature of non equilibrium state by the temperature of the underlying equilibrium state to which the system would otherwise relax.
+
+\subsubsection{Steady states}
+The most basic of non-equilibrium conditions, the steady state is already difficult to describe as many of the basic state functions (including temperature and entropy), are undefined for far from equilibrium states and the distribution function of a steady state is fractal and non-analytic. %TODO: Cite Evans?  
+One however can impose a formal condition of vanishing expectation value of $\partial \rho / \partial t$ over the probability density function $p(\rho)$ and non-vanishing expectation value of fluxes vector $\bm{f}$ over the probability density function $p(\bm{f})$: %TODO:Would need to cite Dewar on this, the second def seems sketchy...
+\begin{equation}
+\begin{aligned}
+\label{SteadyStates}
+  \langle \frac{\partial \rho}{\partial t} \rangle_{p(\bm{\rho})} &= 0 \\
+  \langle \bm{f} \rangle_{p(\bm{f})} &\neq 0
+\end{aligned}
+\end{equation}
+
+
+
+\subsection{MinEP}
+
+The most well known contribution of Ilya Prigogine to statistical physics, often called the Minimum Entropy Production (MinEP) principle, sprouts from the analysis of second order excess entropy around a steady state $ (\delta^2 S)_{ss} $. 
+
+If we perturb the system around it's equilibrium state we obtain
+\begin{equation}
+  S=S_0 + \delta S + \frac{1}{2}\delta^2 S
+\end{equation}
+
+This quantity is than used as a Lyuponov function and has benefits over other (not necessarily all) Lyupanov functions one could define. 
+Its macroscopic meaning is conserved independently of microscopic details of the system under consideration and is also independent of the nature of particular (possibly inhomogeneous) fluctuations.
+It is important however, that this result holds only for steady states near-equilibrium. It is only near-equilibrium that the quantity $ (\delta^2 S)_{ss} $ generates probability of fluctuations, as Prigogine insisted in response to criticism \cite{Nicolis:1979cv}. 
+
+The term "dissipative structures" was also coined by Prigogine.
+In Prigogine's view the fluctuations are the trigger for the instabilities (or rather bifurcations in the equations of motion), which in turn give rise to spacetime structures, called poetically "dissipative structures". 
+
+An often given example of instabilities leading to formation of structures are the Rayleigh-Bénard convection cells, which simplified model we considered in paragraph \ref{simple-model}.
+
+\subsection{Green-Kubo relations}
+
+The Green-Kubo formulae relate the macroscopic, linear transport coefficients of a system to its microscopic equilibrium fluctuations.
+
+\subsection{Example analysis}
 Classical entropy is by construction, an additive property. 
 The Second Law of course holds for isolated systems as a whole and one can therefore imagine that out of equilibrium some subsystems may maintain lower entropy. We'll demonstrate this in the next paragraph.
 
@@ -302,166 +582,6 @@ S_{min}=S(t\rightarrow \infty) =S_{EQ}+j_e \tau < S_{EQ}.
 This is of course consistent with the second law of thermodynamics as we're describing an open system.
 It's easy to notice that the total entropy change is equal to $dS=dS_i \geq 0$ (for simplicity it was assumed that the heater and cooler don't act as producers of entropy).
 
-\subsection{von Neumann entropy}
-
-Although this work is meant to stay within the classical limit, it might be worth while to clear out the notion of entropy in quantum context.
-
-The von Neumann entropy is defined as 
-
-\begin{equation}
-  S_{vN}= -\Tr(\hat{\rho} \log{\hat{\rho}}).
-\end{equation}
-
-For which the general form of the density matrix operator is
-
-\begin{equation}
-	\hat{\rho}=\sum_k p_k \ket{\psi_k}\bra{\psi_k} 
-\end{equation}
-
-in case of pure state $\ket{\psi}$ the density matrix is simply
-\begin{equation}
-  \hat{\rho} = \ket{\psi}\bra{\psi}
-\end{equation}
-
-and it is easy to verify that the entropy of a pure state is equal to zero. The entropy of mixed state is always greater than zero.
-If the system is in a pure state, it will continue to be in a pure state as long as it stays isolated. For a mixed state, the degree of mixedness measured by the entropy will stay constant as long as it is isolated. This follows from the fact that the time evolution is unitary and the eigenvalues of the density operator therefore do not change with time.
-
-An interesting question one might ask (and not really discussed in textbooks) is how the entropy changes after a measurement of a particle in many-body system which, initially, was in pure state.
-
-Without loss of generalization let's consider an isolated system of two identical particles described solely by their momentum states.
-In the scenario of two particles of identical momentum we can write the initial pure state as 
-\begin{equation}
-  \ket{2,0,0,...}
-\end{equation}
-which entropy is of course zero.  
-In second quantization formalism the measurement of a particle is realized by the field operator $ \hat{\Psi}(x) =\sum_k \phi_k(x)\hat{a}_n$ which annihilates a single particle at position $x$.
-Therefore after the measurement of particle at some position $x$, one particle is "virtually" removed from the system under consideration, but the system stays in pure state
-\begin{equation}
-  \hat{\Psi}(x)\ket{2,0,0,...}=\phi_1(x)\ket{1,0,0,...},
-\end{equation}
-which entropy is zero. It's important to notice though that our system lost a particle and therefore the systems before and after measurement are not equivalent! Of course, in reality the particle doesn't disappear. After determination of it's position by experiment ($\Delta x \to 0$), the uncertainty of it's momentum approaches infinity ($\Delta p \to \infty$), which means that we can reconstruct the state using a linear combination of states with \textit{any} value of momentum:
-
-\begin{equation}
-  c_1\ \ket{2,,0,...}+c_2\ \ket{1,1,0,...}+  c_3\ \ket{1,0,1,...}+...
-\end{equation}
-where the  squared modulus of the coefficients has to sum up to one ($ \sum_i \left| c_i \right|^2 = 1 $).
-
-Now depending on the precision of the measurement we can recalculate entropy of course getting a value greater than zero. If we would perform the same analysis for a pure state of two particles in different states i.e. $ket{1,1,...}$ then we would obtain an increase of entropy even without accounting for the lost particle.
-%TODO Correct also for correlated systems?
-This crude example gives a clear illustration of the fact that after \textbf{any} measurement the von Neumann entropy has to increase. However it's change is ultimately related to lost information about the system in the act of the measurement.
-
-There's another interesting feature of quantum entropy, namely inequalities that it fullfills.
-If we bipartite the system into subsystems $A$ and $B$ each containing it's own set of commuting observables, then in order to calculate the entropy $S_A$ of a subsystem $A$ we need to calculate the entropy with respect to density matrix traced over the other subsystem, namely
-\begin{equation}
-  \hat{\rho}^A = \Tr_B \hat{\rho} 
-\end{equation}
-then in general the following identities are satisfied
-
-\begin{equation}
-\begin{aligned}
-	S(\rho) &\leq S_A + S_B	\\
-	S(\rho) &\geq \left| S_A - S_B \right|
-\end{aligned}
-\end{equation}
-
-The interpretation of the first inequality is that the full information about the states of the subsystems $A$ and $B$ will in general not be sufficient to give full information about the state of the total system $A+B$. Or in other words, when there are correlations between the two subsystems, these are not seen in the description of $A$ and $B$ separately. 
-
-\section{Near-equilibrium thermodynamics}
-
-\subsection{Concepts}
-
-Near-equilibrium thermodynamics is essentially an extension of the equilibrium thermodynamics. In effect many concepts were borrowed from it, but slightly modified.
-
-\subsubsection{Local equilibrium}
-The thermodynamical variables are often defined subject to the kinematical requirement of local thermodynamic equilibrium. This means that collisions between molecules are so frequent that chemical and radiative processes do not disrupt the local Maxwell-Boltzmann distribution of molecular velocities. This principle is valid for hydrodynamic flows and chemical reactions and it's formulation goes back to Clark Maxwell [Citation?].%TODO: Cite Maxwell
-It's usage can be usually justified by assuming analyticity of thermodynamic state functions arbitrarily close to equilibrium - then, local equilibrium is obtained from first order expansion of thermodynamic properties in the irreversible fluxes ${X_i}$ \cite{Evans:2002gg}.
-
-\subsubsection{Definition of temperature}
-When the temperature differences are "smooth" enough, i.e., locally there is a reasonable definition of temperature (local equilibrium), then the temperature gradient determines the heat flux. In the opposite case, it is molecular kinetics who determines the energy transfer. The latter happens much faster and local equilibrium gets established quickly.
-
-On the other hand, far from equilibrium there might be a problem defining temperature and also Clausius entropy which depends on it. One of the solutions provided by Evans at al in  is to define temperature of non equilibrium state by the temperature of the underlying equilibrium state to which the system would otherwise relax.
-
-\subsubsection{Entropy production}
-
-In near equilibrium regime, where local thermodynamic equilibrium is expected to be valid, the theory predicts that there will be a 'spontaneous production of entropy' in non-equilibrium systems.
-This spontaneous production of entropy is given by the entropy production per unit volume $\sigma$ by the following expression \cite{DeGroot:1984ue}
-\begin{displaymath}
-  \int d\bm{r} \sigma(\bm{r},t)=\int d\bm{r}(\sum_i J_i(\bm{r},t)X_i(\bm{r},t))>0,
-\end{displaymath}
-where $J_i(\bm{r},t)$ are the Navier-Stokes hydrodynamic fluxes (e.g. the stress tensor, heat flux vector,...) at position $\bm{r}$ and time $t$ and $X_i$ is the thermodynamic force which is conjugate to $J_i(\bm{r},t)$ (e.g. strain rate tensor divided by temperature or the gradient of the reciprocal of temperature,... respectively).
-
-\paragraph{Problems:}
-In an electric circuit close to equilibrium, entropy production is equal to the product of the electric current times the voltage divided by the ambient temperature. If the circuit has a complex impedance, there will necessarily be a phase lag between the applied voltage and the current. Therefore there will exist an interval in which entropy production will be negative. 
-This example highlights a serious problem for linear, irreversible thermodynamics based on the concept of entropy production. As we will later see, this is not the case for \textit{dissipation}.
-\subsubsection{Steady states}
-The most basic of non-equilibrium conditions, the steady state is already difficult to describe as many of the basic state functions (including temperature and entropy), are undefined for far from equilibrium states and the distribution function of a steady state is fractal and non-analytic. %TODO: Cite Evans?  
-One however can impose a formal condition of vanishing expectation value of $\partial \rho / \partial t$ over the probability density function $p(\rho)$ and non-vanishing expectation value of fluxes vector $\bm{f}$ over the probability density function $p(\bm{f})$: %TODO:Would need to cite Dewar on this, the second def seems sketchy...
-\begin{equation}
-\begin{aligned}
-\label{SteadyStates}
-  \langle \frac{\partial \rho}{\partial t} \rangle_{p(\bm{\rho})} &= 0 \\
-  \langle \bm{f} \rangle_{p(\bm{f})} &\neq 0
-\end{aligned}
-\end{equation}
-
-\subsection{Theory of fluctuations}
-
-\subsection{Onsager relations}
-%TODO Onsager START
-[IN PROGRESS]
-a term for entropy for open systems, an extension of Clausius entropy for isolated systems:
-
-\begin{displaymath}
-	dS=d_iS+d_eS
-\end{displaymath}
-
-
-Where \(d_iS\) is connected with entropy produced within the system and \(d_eS\) is the entropy transferred across the boundaries of the system.
-The second law states that \(d_iS\geq 0\), so if a system is to stay in law entropy state it{'}s production must be compensated by an inflow of negative
-entropy.
-
-He then develops an explicit expression for entropy production, assuming that even outside equilibrium (but near) entropy depends only on the same
-variables as at equilibrium ("local" equilibrium)
-
-\begin{displaymath}
-	P=\frac{d_iS}{dt}=\sum _{\rho } J_{\rho }X_{\rho }\geq 0
-\end{displaymath}
-
-
-where \(J_{\rho }\) are the rates of the various irreversible processes involved (chemical reactions, heat flow, diffusion$\ldots $) and \(X_{\rho
-}\) are the corresponding, generalized forces (affinities, gradients of temperature, of chemical potentials$\ldots $). The flows are described using
-different empirical laws (Fourier{'}s law, Fick{'}s law, etc.) 
-
-\begin{displaymath}
-	J_{\rho }=\sum _{\rho } L_{\rho \rho '}X_{\rho '}
-\end{displaymath}
-
-Onsager relations \(L_{\rho \rho '}=L_{\rho '\rho }\)
-[IN PROGRESS END]
-%TODO: Onsager END
-
-\subsection{MinEP}
-
-The most well known contribution of Ilya Prigogine to statistical physics, often called the Minimum Entropy Production (MinEP) principle, sprouts from the analysis of second order excess entropy around a steady state $ (\delta^2 S)_{ss} $. 
-
-If we perturb the system around it's equilibrium state we obtain
-\begin{equation}
-  S=S_0 + \delta S + \frac{1}{2}\delta^2 S
-\end{equation}
-
-This quantity is than used as a Lyuponov function and has benefits over other (not necessarily all) Lyupanov functions one could define. 
-Its macroscopic meaning is conserved independently of microscopic details of the system under consideration and is also independent of the nature of particular (possibly inhomogeneous) fluctuations.
-It is important however, that this result holds only for steady states near-equilibrium. It is only near-equilibrium that the quantity $ (\delta^2 S)_{ss} $ generates probability of fluctuations, as Prigogine insisted in response to criticism \cite{Nicolis:1979cv}. 
-
-The term "dissipative structures" was also coined by Prigogine.
-In Prigogine's view the fluctuations are the trigger for the instabilities (or rather bifurcations in the equations of motion), which in turn give rise to spacetime structures, called poetically "dissipative structures". 
-
-An often given example of instabilities leading to formation of structures are the Rayleigh-Bénard convection cells, which simplified model we considered in paragraph \ref{simple-model}.
-
-\subsection{Green-Kubo relations}
-
-The Green-Kubo formulae relate the macroscopic, linear transport coefficients of a system to its microscopic equilibrium fluctuations.
-
 \section{Pure non-equilibrium results}
 
 In case of pure non-equilibrium fewer results are known in general.
@@ -518,7 +638,7 @@ which leads to $P(B_j) = \sum_i P(B_j|A_i)P(A_i)$. Using this we obtain the foll
 \end{equation}
 
 where in the last equation we made use of the fact that $\sum_m K_{km}=M_k $.
-This form is especially useful, because the matrix elements can be normalized.
+This form is especially useful, because the matrix elements can be normalized and effectively we obtain a stochastic description.
 
 It is important to emphasize that the conditional probabilities $P(B_j|A_i)$ and $P(A_i|B_j)$ are entirely different in nature - the first represents a prediction, but the second is a post-diction. There is no symmetry between assumptions and assertions in conditional probability calculus.
 
