@@ -9,15 +9,15 @@
 \BOOKMARK [2][-]{subsection.2.1}{Gibbs entropy}{section.2}% 9
 \BOOKMARK [2][-]{subsection.2.2}{von Neumann entropy}{section.2}% 10
 \BOOKMARK [1][-]{section.3}{Near-equilibrium thermodynamics}{}% 11
-\BOOKMARK [2][-]{subsection.3.1}{Linear response, regression and fluctuations}{section.3}% 12
-\BOOKMARK [2][-]{subsection.3.2}{Onsager relations and hypothesis}{section.3}% 13
-\BOOKMARK [2][-]{subsection.3.3}{Local equilibrium and Entropy production}{section.3}% 14
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Definition of temperature}{subsection.3.3}% 15
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Steady states}{subsection.3.3}% 16
-\BOOKMARK [2][-]{subsection.3.4}{MinEP}{section.3}% 17
-\BOOKMARK [2][-]{subsection.3.5}{Green-Kubo relations}{section.3}% 18
-\BOOKMARK [2][-]{subsection.3.6}{Example analysis}{section.3}% 19
-\BOOKMARK [3][-]{subsubsection.3.6.1}{Decrease of entropy in a simple model}{subsection.3.6}% 20
+\BOOKMARK [2][-]{subsection.3.1}{Local equilibrium and entropy production}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.2}{Linear response, regression and fluctuations}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.3}{Onsager relations and hypothesis}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.4}{Green-Kubo relations}{section.3}% 15
+\BOOKMARK [2][-]{subsection.3.5}{Definition of temperature}{section.3}% 16
+\BOOKMARK [2][-]{subsection.3.6}{Steady states}{section.3}% 17
+\BOOKMARK [2][-]{subsection.3.7}{MinEP}{section.3}% 18
+\BOOKMARK [2][-]{subsection.3.8}{Example analysis}{section.3}% 19
+\BOOKMARK [3][-]{subsubsection.3.8.1}{Decrease of entropy in a simple model}{subsection.3.8}% 20
 \BOOKMARK [1][-]{section.4}{Pure non-equilibrium results}{}% 21
 \BOOKMARK [2][-]{subsection.4.1}{Jarzynski equality}{section.4}% 22
 \BOOKMARK [2][-]{subsection.4.2}{Crooks fluctuation theorem}{section.4}% 23

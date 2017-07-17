@@ -66,6 +66,9 @@ Instytut Fizyki, Uniwersytet Jagielloński, \\ul. Łojasiewicza
 \newpage
 \epigraph{True logic of this world lies in the calculus of probabilities}{\textit{James Clerk Maxwell}}
 
+%TODO: Dodaj wstęp podobny do Umberto Marini Bettolo Marconi
+%Fluctuation-Dissipation: Response Theory in Statistical Physics
+
 \section{Historical introduction}
 \subsection{The founding fathers of thermodynamics}
 The history of thermodynamics reaches back to the 1600s when first rudimentary thermoscopes (the ancestor of the thermometer) started to be constructed and a scientists, like Francis Bacon began to formulate the right ideas about the nature of heat. 
@@ -121,7 +124,7 @@ The answer lies in the time-asymmetric probabilistic way in which we make predic
 Besides the pure probabilistic description we need the common sense, axiom of causality in order to obtain the time-asymmetric description.
 We use it so frequently implicitly, that we often forget about it \cite{Evans:2016tq}. 
 
-Indeed, Boltzmann himself didn't noticed that the way in which he derived the H-Theorem from his equation, implicitly assumed that the particles are uncorrelated before the collisions (through Stosszahlansatz), but become correlated after the collision\cite{Dorfman:ozm67-zD}\cite{Wolfram:552851}, thus causing the time-reversal asymmetry.
+Indeed, Boltzmann himself didn't noticed that the way in which he derived the H-Theorem from his equation, implicitly assumed that the particles are uncorrelated before the collisions (through Stosszahlansatz), but become correlated after the collision\cite{Schwabl:2016wn} \cite{Dorfman:ozm67-zD}, thus causing the time-reversal asymmetry.
 
 One can also see this most clearly in a generic example, reviewing the procedure in which we compute some future macroscopic state from an initial state macrostate. The final state is obtained by taking the \textit{sum} of the probabilities over the indistinguishable microstates, however the initial state is obtained by taking the \textit{avarage} over the initial microstates.
 
@@ -275,6 +278,51 @@ then in general the following identities are satisfied
 The interpretation of the first inequality is that the full information about the states of the subsystems $A$ and $B$ will in general not be sufficient to give full information about the state of the total system $A+B$. Or in other words, when there are correlations between the two subsystems, these are not seen in the description of $A$ and $B$ separately. 
 
 \section{Near-equilibrium thermodynamics}
+\subsection{Local equilibrium and entropy production}
+
+The term local equilibrium describes the situation in which the thermodynamic quantities of the system such as density, temperature, pressure, etc. can vary spatially and with time, but in each volume element the thermodynamic relations between the values which apply locally there are obeyed.
+
+ The resulting dynamics are quite generally termed hydrodynamics in condensed-matter physics, in analogy to the dynamic equations which are valid in this limit for the flow of gases and liquids. The conditions for local equilibrium are
+
+The thermodynamical variables are often defined subject to the kinematical requirement of local thermodynamic equilibrium. 
+This means that collisions between molecules are so frequent that chemical and radiative processes do not disrupt the local Maxwell-Boltzmann distribution of molecular velocities. This principle is valid for hydrodynamic flows and chemical reactions and it's formulation goes back to Clark Maxwell\cite{Dewar:2014ek}.%TODO: Cite Maxwell
+
+It's usage can be usually justified by assuming analyticity of thermodynamic state functions arbitrarily close to equilibrium - then, local equilibrium is obtained from first order expansion of thermodynamic properties in the irreversible fluxes $\{X_i\}$ \cite{Evans:2002gg}.
+
+
+An approached pioneered by Onsager, for the entropy for open systems, isan extension of Clausius entropy for isolated systems:
+
+\begin{equation}
+  	dS=d_iS+d_eS
+\end{equation}
+
+Where $d_iS$ is connected with entropy produced within the system and $d_eS$ is the entropy transferred across the boundaries of the system.
+The second law states that $d_iS\geq 0$, so if a system is to stay in law entropy state it{'}s production must be compensated by an inflow of negative
+entropy.
+
+He then develops an explicit expression for entropy production, assuming that even outside equilibrium (but near) entropy depends only on the same
+variables as at equilibrium ("local" equilibrium)
+
+\begin{equation}
+  	P=\frac{d_iS}{dt}=\sum _{\rho } J_{\rho }X_{\rho }\geq 0
+\end{equation}
+
+where \(J_{\rho }\) are the rates of the various irreversible processes involved (chemical reactions, heat flow, diffusion$\ldots $) and \(X_{\rho
+}\) are the corresponding, generalized forces (affinities, gradients of temperature, of chemical potentials$\ldots $).
+
+
+In near equilibrium regime, where local thermodynamic equilibrium is expected to be valid, the theory predicts that there will be a 'spontaneous production of entropy' in non-equilibrium systems.
+This spontaneous production of entropy is given by the entropy production per unit volume $\sigma$ by the following expression \cite{DeGroot:2013ue}
+
+\begin{equation}
+    \int d\bm{r} \sigma(\bm{r},t)=\int d\bm{r}(\sum_i J_i(\bm{r},t)X_i(\bm{r},t))>0,
+\end{equation}
+
+where $J_i(\bm{r},t)$ are the Navier-Stokes hydrodynamic fluxes (e.g. the stress tensor, heat flux vector,...) at position $\bm{r}$ and time $t$ and $X_i$ is the thermodynamic force which is conjugate to $J_i(\bm{r},t)$ (e.g. strain rate tensor divided by temperature or the gradient of the reciprocal of temperature,... respectively).
+
+\paragraph{Problems:}
+In an electric circuit close to equilibrium, entropy production is equal to the product of the electric current times the voltage divided by the ambient temperature. If the circuit has a complex impedance, there will necessarily be a phase lag between the applied voltage and the current. Therefore there will exist an interval in which entropy production will be negative. 
+This example highlights a serious problem for linear, irreversible thermodynamics based on the concept of entropy production. As we will later see, this is not the case for \textit{dissipation}.
 
 \subsection{Linear response, regression and fluctuations}
 
@@ -285,11 +333,13 @@ A very common approximation made in the treatment of near-equilibrium thermodyna
   \delta X(\lambda f(t),t) = \lambda \delta X(f(t),t)
 \end{equation}
 
-Linear response of a system driven from equilibrium can be described in terms of the \textit{time correlation function} of the observable $X$\footnote{From now on we will assume that $X$ is mean zero observable, that is $X=\delta X$}:
+Linear response of a system driven from equilibrium can be described in terms of the \textit{time correlation (autocorrelation) function} of the observable $X$\footnote{From now on we will assume that $X$ is mean zero observable, that is $X=\delta X$}:
  
 \begin{equation}
   C(t)=\langle X(t)X(0) \rangle = \frac{\Tr{X(t)X(0)\rho_{eq}}}{\Tr{\rho_{eq}}}.
 \end{equation}
+% Change Tr to integrals?
+where $\rho_{eq}$ is the equilibrium density function.
 
 With correlation functions, we now study the effect of relaxation towards equilibrium, assuming that the external influence ceased at time $t=0$.
 Then a general property of such auto-correlation function for times $t\geq 0$ is called \textit{regression} and follows directly from the Schwarz inequality and $X^2(t)<X^2(0)$ - the assumption of fading disturbance:
@@ -302,7 +352,7 @@ In fact in the long time limit we expect to obtain the equilibrium values of obs
 \end{equation}
 
 Some further properties useful for further discussion can also be noted.
-On the microscopic level of enumerated, time dependent observables $X_i$, the equations of motion are time reversible and time translation invariant, thus leading to
+On the microscopic level of enumerated, time dependent observables $X_i$, the equations of motion are time reversible and time translation invariant\cite{Anonymous:vN0-ttAB}, thus leading to
 \footnote{Some of the variables $X_i$ can in fact be odd under time reversal, thus for those $\langle X_i(t+\tau) X_j(t) \rangle = \langle -X_i(t) X_j(t+\tau) \rangle$}:
 
 \begin{equation}
@@ -363,7 +413,7 @@ Inserting those back to equation (\ref{LinearResponseEq}) one gets
 
 \subsection{Onsager relations and hypothesis}
 
-In 1931, Onsager shown \cite{Anonymous:zgWBDrcO} that $\gamma_{ik}$ from the previous paragraph is in fact symmetric.
+In 1931, Onsager\cite{Onsager:zgWBDrcO} shown  that $\gamma_{ik}$ from the previous paragraph is in fact symmetric.
 
 Combining equation (\ref{CorrelationTimeDerivative}) with equation (\ref{FluxesOnMacroscopic}) we obtain finally the celebrated Onsager relations
 
@@ -372,9 +422,10 @@ Combining equation (\ref{CorrelationTimeDerivative}) with equation (\ref{FluxesO
 \end{equation}
 
 In general the relaxation of small macroscopic non-equilibrium disturbances need not to be related to the regression of microscopic fluctuations in the corresponding equilibrium system. 
-However, Onsager conjectured that in the linear approximation they should be equal. To see why this is the case we give a heuristic argument.
-Let's consider the expression for $\bar{X}$ for time $t < 0$:
-
+However, Onsager conjectured that in the linear approximation they should be equal. To see why this is the case we give a heuristic argument for mechanical forces.
+If we assume that the external force $f$ couples to the observable $X$ then the Hamiltonian will exhibit an additional\footnote{This comes from small displacements approximation and $f=-\frac{\partial}{\partial{X}} H$.} term $H'=-f X$.
+Let's now consider the expression for $\bar{X}$ for time $t < 0$:
+%TODO: Justify the approximation a bit better
 \begin{equation}
   \bar{X}(0)=\frac{\langle X e^{-\beta (H-f X)} \rangle}{\langle e^{-\beta (H-f X)} \rangle} \approx \beta f (\langle A(0)A(0) \rangle - \langle A(0) \rangle^2)= \beta f C(0)
 \end{equation}
@@ -392,69 +443,26 @@ Onsager hypothesis can now be seen as simply
   \frac{\bar{X}(t)}{\bar{X}(0)}=\frac{C(t)}{C(0)}
 \end{equation}
 
-As a practical note on application of Onsager relations, we quote Charles Kittel:
+As a practical note on application of Onsager relations, we quote Charles Kittel \cite{Kittel:817295}:
 
 "It is rarely a trivial problem to find the correct choice of (generalized) forces and fluxes applicable to the Onsager relation."
 
-\subsection{Local equilibrium and Entropy production}
 
-The thermodynamical variables are often defined subject to the kinematical requirement of local thermodynamic equilibrium. This means that collisions between molecules are so frequent that chemical and radiative processes do not disrupt the local Maxwell-Boltzmann distribution of molecular velocities. This principle is valid for hydrodynamic flows and chemical reactions and it's formulation goes back to Clark Maxwell [Citation?].%TODO: Cite Maxwell
-It's usage can be usually justified by assuming analyticity of thermodynamic state functions arbitrarily close to equilibrium - then, local equilibrium is obtained from first order expansion of thermodynamic properties in the irreversible fluxes ${X_i}$ \cite{Evans:2002gg}.
+\subsection{Green-Kubo relations}
 
-In near equilibrium regime, where local thermodynamic equilibrium is expected to be valid, the theory predicts that there will be a 'spontaneous production of entropy' in non-equilibrium systems.
-This spontaneous production of entropy is given by the entropy production per unit volume $\sigma$ by the following expression \cite{DeGroot:1984ue}
-\begin{displaymath}
-  \int d\bm{r} \sigma(\bm{r},t)=\int d\bm{r}(\sum_i J_i(\bm{r},t)X_i(\bm{r},t))>0,
-\end{displaymath}
-where $J_i(\bm{r},t)$ are the Navier-Stokes hydrodynamic fluxes (e.g. the stress tensor, heat flux vector,...) at position $\bm{r}$ and time $t$ and $X_i$ is the thermodynamic force which is conjugate to $J_i(\bm{r},t)$ (e.g. strain rate tensor divided by temperature or the gradient of the reciprocal of temperature,... respectively).
-
-\paragraph{Problems:}
-In an electric circuit close to equilibrium, entropy production is equal to the product of the electric current times the voltage divided by the ambient temperature. If the circuit has a complex impedance, there will necessarily be a phase lag between the applied voltage and the current. Therefore there will exist an interval in which entropy production will be negative. 
-This example highlights a serious problem for linear, irreversible thermodynamics based on the concept of entropy production. As we will later see, this is not the case for \textit{dissipation}.
+\begin{equation}
+  \gamma = \int_0^{\infty} \langle \dot{A}(t) \dot{A}(0) \rangle dt
+\end{equation}
 
 
+The Green-Kubo formulae relate the macroscopic, linear transport coefficients of a system to its microscopic equilibrium fluctuations.
 
-%TODO Onsager START
-[IN PROGRESS]
-a term for entropy for open systems, an extension of Clausius entropy for isolated systems:
-
-\begin{displaymath}
-	dS=d_iS+d_eS
-\end{displaymath}
-
-
-Where \(d_iS\) is connected with entropy produced within the system and \(d_eS\) is the entropy transferred across the boundaries of the system.
-The second law states that \(d_iS\geq 0\), so if a system is to stay in law entropy state it{'}s production must be compensated by an inflow of negative
-entropy.
-
-He then develops an explicit expression for entropy production, assuming that even outside equilibrium (but near) entropy depends only on the same
-variables as at equilibrium ("local" equilibrium)
-
-\begin{displaymath}
-	P=\frac{d_iS}{dt}=\sum _{\rho } J_{\rho }X_{\rho }\geq 0
-\end{displaymath}
-
-
-where \(J_{\rho }\) are the rates of the various irreversible processes involved (chemical reactions, heat flow, diffusion$\ldots $) and \(X_{\rho
-}\) are the corresponding, generalized forces (affinities, gradients of temperature, of chemical potentials$\ldots $). The flows are described using
-different empirical laws (Fourier{'}s law, Fick{'}s law, etc.) 
-
-\begin{displaymath}
-	J_{\rho }=\sum _{\rho } L_{\rho \rho '}X_{\rho '}
-\end{displaymath}
-
-Onsager relations \(L_{\rho \rho '}=L_{\rho '\rho }\)
-[IN PROGRESS END]
-%TODO: Onsager END
-
-
-
-\subsubsection{Definition of temperature}
+\subsection{Definition of temperature}
 When the temperature differences are "smooth" enough, i.e., locally there is a reasonable definition of temperature (local equilibrium), then the temperature gradient determines the heat flux. In the opposite case, it is molecular kinetics who determines the energy transfer. The latter happens much faster and local equilibrium gets established quickly.
 
 On the other hand, far from equilibrium there might be a problem defining temperature and also Clausius entropy which depends on it. One of the solutions provided by Evans at al in  is to define temperature of non equilibrium state by the temperature of the underlying equilibrium state to which the system would otherwise relax.
 
-\subsubsection{Steady states}
+\subsection{Steady states}
 The most basic of non-equilibrium conditions, the steady state is already difficult to describe as many of the basic state functions (including temperature and entropy), are undefined for far from equilibrium states and the distribution function of a steady state is fractal and non-analytic. %TODO: Cite Evans?  
 One however can impose a formal condition of vanishing expectation value of $\partial \rho / \partial t$ over the probability density function $p(\rho)$ and non-vanishing expectation value of fluxes vector $\bm{f}$ over the probability density function $p(\bm{f})$: %TODO:Would need to cite Dewar on this, the second def seems sketchy...
 \begin{equation}
@@ -476,7 +484,7 @@ If we perturb the system around it's equilibrium state we obtain
   S=S_0 + \delta S + \frac{1}{2}\delta^2 S
 \end{equation}
 
-This quantity is than used as a Lyuponov function and has benefits over other (not necessarily all) Lyupanov functions one could define. 
+This quantity is than used as a Lyapunov function and has benefits over other (not necessarily all) Lyapunov functions one could define. 
 Its macroscopic meaning is conserved independently of microscopic details of the system under consideration and is also independent of the nature of particular (possibly inhomogeneous) fluctuations.
 It is important however, that this result holds only for steady states near-equilibrium. It is only near-equilibrium that the quantity $ (\delta^2 S)_{ss} $ generates probability of fluctuations, as Prigogine insisted in response to criticism \cite{Nicolis:1979cv}. 
 
@@ -485,9 +493,6 @@ In Prigogine's view the fluctuations are the trigger for the instabilities (or r
 
 An often given example of instabilities leading to formation of structures are the Rayleigh-Bénard convection cells, which simplified model we considered in paragraph \ref{simple-model}.
 
-\subsection{Green-Kubo relations}
-
-The Green-Kubo formulae relate the macroscopic, linear transport coefficients of a system to its microscopic equilibrium fluctuations.
 
 \subsection{Example analysis}
 Classical entropy is by construction, an additive property. 
