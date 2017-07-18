@@ -7,21 +7,21 @@
 \contentsline {subsection}{\numberline {1.6}Physics of computation}{7}{subsection.1.6}
 \contentsline {section}{\numberline {2}Treatments of entropy in the standard contexts}{8}{section.2}
 \contentsline {subsection}{\numberline {2.1}Gibbs entropy}{8}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}von Neumann entropy}{9}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.2}von Neumann entropy during measurement process}{9}{subsection.2.2}
 \contentsline {section}{\numberline {3}Near-equilibrium thermodynamics}{11}{section.3}
 \contentsline {subsection}{\numberline {3.1}Local equilibrium and entropy production}{11}{subsection.3.1}
 \contentsline {paragraph}{Problems:}{12}{section*.2}
 \contentsline {subsection}{\numberline {3.2}Linear response, regression and fluctuations}{12}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}Onsager relations and hypothesis}{14}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Green-Kubo relations}{14}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.4}Green-Kubo relations}{15}{subsection.3.4}
 \contentsline {subsection}{\numberline {3.5}Definition of temperature}{15}{subsection.3.5}
 \contentsline {subsection}{\numberline {3.6}Steady states}{15}{subsection.3.6}
 \contentsline {subsection}{\numberline {3.7}MinEP}{15}{subsection.3.7}
 \contentsline {subsection}{\numberline {3.8}Example analysis}{16}{subsection.3.8}
 \contentsline {subsubsection}{\numberline {3.8.1}Decrease of entropy in a simple model}{16}{subsubsection.3.8.1}
 \contentsline {section}{\numberline {4}Pure non-equilibrium results}{18}{section.4}
-\contentsline {subsection}{\numberline {4.1}Jarzy\IeC {\'n}ski equality}{18}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Crooks fluctuation theorem}{19}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Onsager-Machlup path integrals}{19}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Evans derivation}{19}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Appropriate treatment of reverse trajectories}{19}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.1}A word from equilibrium statistical mechanics}{18}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Jarzy\IeC {\'n}ski equality}{20}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Crooks fluctuation theorem}{20}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Onsager-Machlup path integrals}{20}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Evans derivation}{20}{subsection.4.5}

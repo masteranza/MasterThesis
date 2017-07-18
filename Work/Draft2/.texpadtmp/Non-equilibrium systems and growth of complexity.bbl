@@ -11,6 +11,10 @@ D.~J. Evans, {\em {Fundamentals of Classical Statistical Thermodynamics}}.
 S.~Wolfram, {\em {A new kind of science}}.
 \newblock Urbana-Champaign, IL: Wolfram Media, 2002.
 
+\bibitem{Schwabl:2002}
+F.~Schwabl, {\em {Statistical mechanics}}.
+\newblock Advanced Texts in Physics, Berlin: Springer, 2002.
+
 \bibitem{Dorfman:ozm67-zD}
 J.~R. Dorfman, ``{An Introduction to Chaos in Nonequilibrium Statistical
   Mechanics, 1999}.''
@@ -30,6 +34,10 @@ C.~Rovelli, ``{Is Time's Arrow Perspectival?},'' {\em arXiv.org}, May 2015.
 M.~Courbage and I.~Prigogine, ``{Intrinsic randomness and intrinsic
   irreversibility in classical dynamical systems},'' {\em Proceedings of the
   National Academy of Sciences}, vol.~80, pp.~2412--2416, Apr. 1983.
+
+\bibitem{Anonymous:0uVSJOI5}
+J.~C. Maxwell, ``{On the Dynamical Theory of Gases.},'' in {\em Proceedings of
+  the Royal Society of {\ldots}}, 1866.
 
 \bibitem{Prigogine:1978kz}
 I.~Prigogine, ``{Time, structure and fluctuations},'' {\em Nobel Lectures in
@@ -97,5 +105,9 @@ G.~Nicolis and I.~Prigogine, ``{Irreversible processes at nonequilibrium steady
 \bibitem{Jarzynski:1997uj}
 C.~Jarzynski, ``{Nonequilibrium Equality for Free Energy Differences},'' {\em
   Physical Review Letters}, vol.~78, pp.~2690--2693, Apr. 1997.
+
+\bibitem{Crooks:2008ta}
+G.~Crooks, ``{Entropy production fluctuation theorem and the nonequilibrium
+  work relation for free energy differences},'' pp.~1--7, Feb. 2008.
 
 \end{thebibliography}

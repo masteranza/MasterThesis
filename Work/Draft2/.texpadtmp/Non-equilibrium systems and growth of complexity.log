@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.6)  17 JUL 2017 18:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.6)  18 JUL 2017 15:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1965,44 +1965,43 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
  [2] [3]
 
-LaTeX Warning: Citation `Gibbs:1962bk' on page 4 undefined on input line 96.
-
-
 LaTeX Warning: Citation `Shannon:429164' on page 4 undefined on input line 103.
 
-[4]
-
-LaTeX Warning: Citation `Schwabl:2016wn' on page 5 undefined on input line 127.
-
-[5]
+[4] [5]
 Overfull \hbox (16.11769pt too wide) in paragraph at lines 133--133
 []\T1/cmr/bx/n/14.4 Different ap-proaches to-wards ir-re-versibil-ity and non-equilibrium 
  []
 
+[6]
 
-LaTeX Warning: Citation `KIEFER2005' on page 6 undefined on input line 151.
+LaTeX Warning: Citation `KIEFER2005' on page 7 undefined on input line 151.
 
-[6] [7] [8] [9] [10] [11] [12] [13] [14] [15] <system.png, id=324, 278.54062pt x 288.3272pt>
+[7]
+Overfull \hbox (16.31865pt too wide) in paragraph at lines 189--192
+\OML/cmm/m/it/12 k[] [] W$ \T1/cmr/m/n/12 where $\OML/cmm/m/it/12 W$ \T1/cmr/m/n/12 rep-re-sents the num-ber of pos-si-ble mi-cro-scopic con-fig-u-ra-tion of a macrostate
+ []
+
+[8] [9] [10] [11] [12] [13] [14] [15] <system.png, id=335, 278.54062pt x 288.3272pt>
 File: system.png Graphic file (type png)
  <use system.png>
-Package pdftex.def Info: system.png used on input line 506.
+Package pdftex.def Info: system.png used on input line 508.
 (pdftex.def)             Requested size: 170.71652pt x 176.71962pt.
- [16 <./system.png>] <wykres3.png, id=340, 852.18375pt x 315.1775pt>
+ [16 <./system.png>] [17] <wykres3.png, id=360, 852.18375pt x 315.1775pt>
 File: wykres3.png Graphic file (type png)
  <use wykres3.png>
-Package pdftex.def Info: wykres3.png used on input line 582.
+Package pdftex.def Info: wykres3.png used on input line 584.
 (pdftex.def)             Requested size: 341.43306pt x 126.28036pt.
- [17] [18 <./wykres3.png>] [19] <dissipation.png, id=373, 379.4175pt x 242.9075pt>
+ [18 <./wykres3.png>] [19] <dissipation.png, id=386, 373.395pt x 232.87pt>
 File: dissipation.png Graphic file (type png)
  <use dissipation.png>
-Package pdftex.def Info: dissipation.png used on input line 659.
-(pdftex.def)             Requested size: 227.62204pt x 145.72708pt.
+Package pdftex.def Info: dissipation.png used on input line 648.
+(pdftex.def)             Requested size: 227.62204pt x 141.9581pt.
  [20 <./dissipation.png>] (/Users/masteranza/Projects/MasterThesis/Work/Draft2/.texpadtmp/Non-equilibrium systems and growth of complexity.bbl [21]) [22]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 669.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 669.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 684.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 684.
  (/Users/masteranza/Projects/MasterThesis/Work/Draft2/.texpadtmp/Non-equilibrium systems and growth of complexity.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 669.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 669.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 684.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 684.
 Package rerunfilecheck Info: File `"Non-equilibrium systems and growth of complexity".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 
@@ -2012,18 +2011,22 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 669.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 684.
  ) 
 Here is how much of TeX's memory you used:
- 24575 strings out of 493089
- 463411 string characters out of 6134843
- 508542 words of memory out of 5000000
- 27534 multiletter control sequences out of 15000+600000
+ 24582 strings out of 493089
+ 463504 string characters out of 6134843
+ 508651 words of memory out of 5000000
+ 27536 multiletter control sequences out of 15000+600000
  30281 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,8n,56p,10463b,443s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsubsection.3.7.1} has been referenced but does not exist, replaced by a fixed one
+ 62i,8n,56p,10463b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on "/Users/masteranza/Projects/MasterThesis/Work/Draft2/.texpadtmp/Non-equilibrium systems and growth of complexity.pdf" (22 pages, 470667 bytes).
+PDF statistics:
+ 529 PDF objects out of 1000 (max. 8388607)
+ 465 compressed objects within 5 object streams
+ 136 named destinations out of 1000 (max. 500000)
+ 236 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-pdfTeX warning (dest): name{subsubsection.3.5.1} has been referenced but does not exist, replaced by a fixed one
-
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2015/texmf-dis

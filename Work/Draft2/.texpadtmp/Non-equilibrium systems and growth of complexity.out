@@ -7,7 +7,7 @@
 \BOOKMARK [2][-]{subsection.1.6}{Physics of computation}{section.1}% 7
 \BOOKMARK [1][-]{section.2}{Treatments of entropy in the standard contexts}{}% 8
 \BOOKMARK [2][-]{subsection.2.1}{Gibbs entropy}{section.2}% 9
-\BOOKMARK [2][-]{subsection.2.2}{von Neumann entropy}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.2}{von Neumann entropy during measurement process}{section.2}% 10
 \BOOKMARK [1][-]{section.3}{Near-equilibrium thermodynamics}{}% 11
 \BOOKMARK [2][-]{subsection.3.1}{Local equilibrium and entropy production}{section.3}% 12
 \BOOKMARK [2][-]{subsection.3.2}{Linear response, regression and fluctuations}{section.3}% 13
@@ -19,8 +19,8 @@
 \BOOKMARK [2][-]{subsection.3.8}{Example analysis}{section.3}% 19
 \BOOKMARK [3][-]{subsubsection.3.8.1}{Decrease of entropy in a simple model}{subsection.3.8}% 20
 \BOOKMARK [1][-]{section.4}{Pure non-equilibrium results}{}% 21
-\BOOKMARK [2][-]{subsection.4.1}{Jarzynski equality}{section.4}% 22
-\BOOKMARK [2][-]{subsection.4.2}{Crooks fluctuation theorem}{section.4}% 23
-\BOOKMARK [2][-]{subsection.4.3}{Onsager-Machlup path integrals}{section.4}% 24
-\BOOKMARK [2][-]{subsection.4.4}{Evans derivation}{section.4}% 25
-\BOOKMARK [2][-]{subsection.4.5}{Appropriate treatment of reverse trajectories}{section.4}% 26
+\BOOKMARK [2][-]{subsection.4.1}{A word from equilibrium statistical mechanics}{section.4}% 22
+\BOOKMARK [2][-]{subsection.4.2}{Jarzynski equality}{section.4}% 23
+\BOOKMARK [2][-]{subsection.4.3}{Crooks fluctuation theorem}{section.4}% 24
+\BOOKMARK [2][-]{subsection.4.4}{Onsager-Machlup path integrals}{section.4}% 25
+\BOOKMARK [2][-]{subsection.4.5}{Evans derivation}{section.4}% 26
