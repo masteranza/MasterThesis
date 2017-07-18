@@ -57,19 +57,19 @@
 Instytut Fizyki, Uniwersytet Jagielloński, \\ul. Łojasiewicza
 11, 30-348 Kraków, Polska }
 
-
-
 \maketitle
 
 \tableofcontents
 
 \newpage
-\epigraph{True logic of this world lies in the calculus of probabilities}{\textit{James Clerk Maxwell}}
 
+\section{Introduction}
 %TODO: Dodaj wstęp podobny do Umberto Marini Bettolo Marconi
 %Fluctuation-Dissipation: Response Theory in Statistical Physics
 
-\section{Historical introduction}
+\newpage
+\epigraph{True logic of this world lies in the calculus of probabilities}{\textit{James Clerk Maxwell}}
+\section{Historical outline}
 \subsection{The founding fathers of thermodynamics}
 The history of thermodynamics reaches back to the 1600s when first rudimentary thermoscopes (the ancestor of the thermometer) started to be constructed and a scientists, like Francis Bacon began to formulate the right ideas about the nature of heat. 
 
@@ -205,11 +205,11 @@ Due, to the generality of Gibbs entropy we may therefore drop the $G$, and from 
 In closed Hamiltonian systems Gibbs entropy stays constant.
 This feature of entropy was first noted by Gibbs himself and was solved by a coarse-graining procedure\cite{Gibbs:1928tw}. This alleged arbitrariness of this procedure was subject to critique \cite{Evans:2241458}. %TODO: more on coarse-graining
 
-One can propose a thought experiment, leading to paradox to see the case more clearly. Consider a case of an simple gas closed in an isolated box container of size $L$ which molecules are localized in an imaginary box-like area of size $L/2$ at time $t_0$ (Figure 1a). %TODO: pics   
+One can propose a thought experiment, leading to paradox and immediately resolving it to see the case more clearly. Consider a case of an simple gas closed in an isolated box container of size $L$ which molecules are localized in an imaginary box-like area of size $L/2$ at time $t_0$ (Figure 1a). %TODO: pics   
 It is obvious that the gas will expand, but according to the constancy of Gibbs entropy for an isolated system the entropy will not change. Of course the answer to this apparent paradox is very simple - if we had the ability to wait the time necessary for particles to localize in the volume $L/2$, we would probably not need the Second Law of thermodynamics. In every imaginable case, we  would need to place the particles in the initial state by hand, that is close them in an actual box of size $L/2$ and then release. 
 In this scenerio, the final phase space is of course larger than the initial one and Gibbs entropy increases, as expected.
 
-The means of practical use of un-coarse-grained entropy in closed systems subject to adiabatic change was explained by MaxEnt approach of Jaynes\cite{Jaynes:1965gg}. If we knew that on the beginning, at time $t_0$ the system is in \textit{complete} thermodynamic equilibrium having entropy $S$, then we know that at the later time; after the external adiabatic ceased the new "test" or experimental distribution function will have entropy $S_e \geq S$. By saying that we demand \textit{complete} thermodynamic equilibrium at the beginning, we say that the systems history has to be followed by the experimenter to become confident of the obtained equilibrium, as some otherwise unexplainable exceptions exist, such as the Hahn experiment. %TODO Cite Hahn
+The means of practical use of still non-coarse-grained entropy in closed systems subject to adiabatic change was explained by MaxEnt approach of Jaynes\cite{Jaynes:1965gg}. If we knew that on the beginning, at time $t_0$ the system is in \textit{complete} thermodynamic equilibrium having entropy $S$, then we know that at the later time; after the external adiabatic ceased the new "test" or experimental distribution function will have entropy $S_e \geq S$. By saying that we demand \textit{complete} thermodynamic equilibrium at the beginning, we say that the systems history has to be followed by the experimenter to become confident of the obtained equilibrium, as some otherwise unexplainable exceptions exist, such as the Hahn experiment. %TODO Cite Hahn
 
 It is perhaps worth underlying, that the increase of entropy is linked to our knowledge about the system, rather than anything it is doing internally. This should not come up as particularly surprising as our division between work and heat is somewhat arbitrary.
 
@@ -450,7 +450,7 @@ As a practical note on application of Onsager relations, we quote Charles Kittel
 "It is rarely a trivial problem to find the correct choice of (generalized) forces and fluxes applicable to the Onsager relation."
 
 
-\subsection{Green-Kubo relations}
+\subsection{Green-Kubo relations [in progress]}
 
 \begin{equation}
   \gamma = \int_0^{\infty} \langle \dot{A}(t) \dot{A}(0) \rangle dt
@@ -459,12 +459,12 @@ As a practical note on application of Onsager relations, we quote Charles Kittel
 
 The Green-Kubo formulae relate the macroscopic, linear transport coefficients of a system to its microscopic equilibrium fluctuations.
 
-\subsection{Definition of temperature}
+\subsection{Definition of temperature [in progress]}
 When the temperature differences are "smooth" enough, i.e., locally there is a reasonable definition of temperature (local equilibrium), then the temperature gradient determines the heat flux. In the opposite case, it is molecular kinetics who determines the energy transfer. The latter happens much faster and local equilibrium gets established quickly.
 
 On the other hand, far from equilibrium there might be a problem defining temperature and also Clausius entropy which depends on it. One of the solutions provided by Evans at al in  is to define temperature of non equilibrium state by the temperature of the underlying equilibrium state to which the system would otherwise relax.
 
-\subsection{Steady states}
+\subsection{Steady states [in progress]}
 The most basic of non-equilibrium conditions, the steady state is already difficult to describe as many of the basic state functions (including temperature and entropy), are undefined for far from equilibrium states and the distribution function of a steady state is fractal and non-analytic. %TODO: Cite Evans?  
 One however can impose a formal condition of vanishing expectation value of $\partial \rho / \partial t$ over the probability density function $p(\rho)$ and non-vanishing expectation value of fluxes vector $\bm{f}$ over the probability density function $p(\bm{f})$: %TODO:Would need to cite Dewar on this, the second def seems sketchy...
 \begin{equation}
@@ -493,15 +493,13 @@ It is important however, that this result holds only for steady states near-equi
 The term "dissipative structures" was also coined by Prigogine.
 In Prigogine's view the fluctuations are the trigger for the instabilities (or rather bifurcations in the equations of motion), which in turn give rise to spacetime structures, called poetically "dissipative structures". 
 
-An often given example of instabilities leading to formation of structures are the Rayleigh-Bénard convection cells, which simplified model we considered in paragraph \ref{simple-model}.
+An often given example of instabilities leading to formation of structures are the Rayleigh-Bénard convection cells, which simplified non-equilibrium (not MinEP) treatment we describe in the next section.
 
-
-\subsection{Example analysis}
-Classical entropy is by construction, an additive property. 
-The Second Law of course holds for isolated systems as a whole and one can therefore imagine that out of equilibrium some subsystems may maintain lower entropy. We'll demonstrate this in the next paragraph.
-
-\subsubsection{Decrease of entropy in a simple model}
+\section{Thermodynamic lowering of entropy in non-equilibrium conditions}
 \label{simple-model}
+
+The Second Law of course holds for isolated systems as a whole and one can therefore imagine (on the basis of additivity of entropy) that out of equilibrium some subsystems may maintain lower entropy.
+
 Let's consider a model consisting of three elements: the cooler $C$, the heater $H$ and the system under consideration $S$, staying out of equilibrium.
 We assume, that the temperatures of the cooler and the heater stay constant, and that heat $Q_H$ flows into the system $S$ and heat $Q_C$ flows out. The situation is illustrated by the picture \ref{Fig2}.
 \begin{figure}[ht!]
@@ -509,7 +507,7 @@ We assume, that the temperatures of the cooler and the heater stay constant, and
 \label{Fig2} 
 \end{figure}
 
-Treating the heater and the cooler as the environment, we can think of our system $S$ as an open system.
+Treating the heater and the cooler as the environment, we can think of our system $S$ as an open.
 Further on we'll analyze the system $S$ from the perspective of internal $(i)$ entropy production
 and external $(e)$ entropy flux, flowing \emph{to} the system $S$. 
 Of course the change in entropy will be the sum of those two contributions:
@@ -589,16 +587,10 @@ S_{min}=S(t\rightarrow \infty) =S_{EQ}+j_e \tau < S_{EQ}.
 This is of course consistent with the second law of thermodynamics as we are describing an open system.
 It is easy to notice that the total entropy change is equal to $dS=dS_i \geq 0$ (for simplicity it was assumed that the heater and cooler don't act as producers of entropy).
 
-\section{Pure non-equilibrium results}
+\section{Measure of irreversibility and the Second Law}
 
-In case of pure non-equilibrium fewer results are known in general. However some remarkable progress has been made in recent years.
-
-
-
-
-\subsection{A word from equilibrium statistical mechanics}
-
-In the following paragraph we show that Fluctuation Theorem is in fact, not a novel result. One can in fact obtain not only it, but also the exact form of the entropy produced in terms of microscopic transition probabilites, using nothing else than simple probability calculus and the hypothesis of equal apriori probabilities.
+In the following section we present a general protoplast of the Fluctuation Theorem. It is derived using nothing else than simple probability calculus and the hypothesis of equal apriori probabilities.
+In fact, one can obtain from it the exact form of the entropy produced in terms of microscopic transition probabilities for macroscopic objects.
 
 Let's consider a generic system statistical mechanical system a two times, an initial time $t_0$ and a final time $t_1$, each described by a complete set of possible macrostates $\{A_i\}$ for $ i=1,...,N_A $ and $\{B_j\}$ for $ j=1,...,N_B $  respectively. Each macrostate consists of some number of corresponding microstates denoted by $M_i$ for the initial macrostates and $N_j$ for the final macrostates. The deterministic, microscopic equations of motion then evolve a certain number of the microstates $K_{ij}$ from an initial macrostate $A_i$ to some final macrostate $B_j$.
 
@@ -630,7 +622,7 @@ which leads to $P(B_j) = \sum_i P(B_j|A_i)P(A_i)$. Using this we obtain the foll
 \end{equation}
 
 where in the last equation we made use of the fact that $\sum_m K_{km}=M_k $.
-This form is especially useful, because the matrix elements can be normalized and effectively we obtain a stochastic description.
+This form is especially useful, because the matrix elements can be normalized and effectively we obtain a stochasticly-statistical description.
 
 It is important to emphasize that the conditional probabilities $P(B_j|A_i)$ and $P(A_i|B_j)$ are entirely different in nature - the first represents a prediction, but the second is a post-diction. There is no symmetry between assumptions and assertions in conditional probability calculus.
 
@@ -640,14 +632,27 @@ Now, comparing the probability of forward macroscopic evolution to backward evol
   \frac{P(B_j|A_i)}{P(A_i|B_j)}= e^{\ln{\sum_{k,m} \frac{K_{kj}}{K_{km}}}}.
 \end{equation}
 
-The interpretation of the term in the exponent, can be done by noticing that there's only one known macroscopic quantity\footnote{Up to a numerical factor - $k_B^{-1}$} that could change signs after reversing the left side, the measure of irreversibility - entropy. We have thus, described entropy produced purely in terms of microscopic transition probabilities between two macroscopic states, with no assumption about the dynamics nor about external forces influencing the system.
+%TODO: Show that it's positive for all cases!
 
-With the use random matrices, satisfying the conditions $\sum_j K_{kj} = 1$ for any $k$, to obtain the distributions for the possible values of entropy produced in the transition $ S = \ln{\sum_{k,m} \frac{K_{kj}}{K_{km}}} $. The results, for $N=10000$ random matrices are presented on figure \ref{Fig4}.
+The interpretation of the term in the exponent, can be done by noticing that there's only one known macroscopic quantity\footnote{Up to a numerical factor - $k_B^{-1}$} that is strictly positive and can change signs after reversing the left side, namely the standard measure of irreversibility - entropy.
+
+We have thus, described entropy produced by a macroscopic system solely in terms of microscopic transition probabilities between two macroscopic states, without any assumptions about the dynamics and external forces influencing the system.
+
+With the use real, positive random matrices, satisfying the conditions $\sum_j K_{kj} = 1$ for any $k$, to obtain the distributions for the possible values of entropy produced in the transition $ S = \ln{\sum_{k,m} \frac{K_{kj}}{K_{km}}} $. The results, for $N=10000$ random matrices are presented on figure \ref{Fig4}.
 
 \begin{figure}[ht!]
-\centering \includegraphics[width=8cm]{dissipation} \caption{Distribution of generic dissipation function for $N_A = 2$ and $N_B=2$}
+\centering \includegraphics[width=8cm]{dissipation} \caption{Distribution of entropy produced for $N_A = 2$ and $N_B=2$}
 \label{Fig4} 
 \end{figure}
+
+The remarkable feature of this results is that the obtained distributions are not gaussian! As we will see shortly, this might be seen %MOST LIKELY
+as the result of correspondence with the so-called Fluctuation Theorems.
+%TODO: Is it possible to modify this to fluctuation theorem????
+
+\section{Fluctuation theorems}
+
+In the previous chapter we have seen how irreversibility arrises in macroscopic systems, a complementary approach can be described using rather undemanding assumptions.
+This chapter describes the fluctuation theorems, that emerge from the analysis of a physical system interacting with its environment and rest upon the same, natural measure of irreversibility introduced before.
 
 
 \subsection{Jarzyński equality}
@@ -660,6 +665,8 @@ In 1996, Christopher Jarzynski\cite{Jarzynski:1997uj} derived a very useful equa
 \label{JarzynskiInequality}
   \langle \exp(-\beta W) \rangle = \exp(-\beta  \Delta F)
 \end{equation}
+
+%TODO: Jarzyński derivation
 
 \subsection{Crooks fluctuation theorem}
 
