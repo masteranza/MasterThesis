@@ -10,17 +10,44 @@
 \BOOKMARK [2][-]{subsection.3.1}{Gibbs entropy}{section.3}% 10
 \BOOKMARK [2][-]{subsection.3.2}{von Neumann entropy during measurement process}{section.3}% 11
 \BOOKMARK [1][-]{section.4}{Near-equilibrium thermodynamics}{}% 12
-\BOOKMARK [2][-]{subsection.4.1}{Local equilibrium and entropy production}{section.4}% 13
+\BOOKMARK [2][-]{subsection.4.1}{Local equilibrium and entropy production [in progress]}{section.4}% 13
 \BOOKMARK [2][-]{subsection.4.2}{Linear response, regression and fluctuations}{section.4}% 14
 \BOOKMARK [2][-]{subsection.4.3}{Onsager relations and hypothesis}{section.4}% 15
-\BOOKMARK [2][-]{subsection.4.4}{Green-Kubo relations [in progress]}{section.4}% 16
-\BOOKMARK [2][-]{subsection.4.5}{Definition of temperature [in progress]}{section.4}% 17
-\BOOKMARK [2][-]{subsection.4.6}{Steady states [in progress]}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.4}{Green-Kubo relations}{section.4}% 16
+\BOOKMARK [2][-]{subsection.4.5}{Steady states [in progress]}{section.4}% 17
+\BOOKMARK [2][-]{subsection.4.6}{Definition of temperature [in progress]}{section.4}% 18
 \BOOKMARK [2][-]{subsection.4.7}{MinEP}{section.4}% 19
 \BOOKMARK [1][-]{section.5}{Thermodynamic lowering of entropy in non-equilibrium conditions}{}% 20
 \BOOKMARK [1][-]{section.6}{Measure of irreversibility and the Second Law}{}% 21
 \BOOKMARK [1][-]{section.7}{Fluctuation theorems}{}% 22
-\BOOKMARK [2][-]{subsection.7.1}{Jarzynski equality}{section.7}% 23
-\BOOKMARK [2][-]{subsection.7.2}{Crooks fluctuation theorem}{section.7}% 24
-\BOOKMARK [2][-]{subsection.7.3}{Onsager-Machlup path integrals}{section.7}% 25
-\BOOKMARK [2][-]{subsection.7.4}{Evans derivation}{section.7}% 26
+\BOOKMARK [2][-]{subsection.7.1}{The deterministic approach}{section.7}% 23
+\BOOKMARK [3][-]{subsubsection.7.1.1}{Time reversibility}{subsection.7.1}% 24
+\BOOKMARK [2][-]{subsection.7.2}{Thermostated but time reversible systems}{section.7}% 25
+\BOOKMARK [3][-]{subsubsection.7.2.1}{Nose-Hoover}{subsection.7.2}% 26
+\BOOKMARK [3][-]{subsubsection.7.2.2}{Construction}{subsection.7.2}% 27
+\BOOKMARK [2][-]{subsection.7.3}{Liouville equation}{section.7}% 28
+\BOOKMARK [2][-]{subsection.7.4}{Dissipation}{section.7}% 29
+\BOOKMARK [2][-]{subsection.7.5}{Evans-Searles Fluctuation Theorem}{section.7}% 30
+\BOOKMARK [3][-]{subsubsection.7.5.1}{Instantaneous dissipation function}{subsection.7.5}% 31
+\BOOKMARK [2][-]{subsection.7.6}{Dissipation Theorem}{section.7}% 32
+\BOOKMARK [3][-]{subsubsection.7.6.1}{Mixing properties and their relations}{subsection.7.6}% 33
+\BOOKMARK [2][-]{subsection.7.7}{Relaxation}{section.7}% 34
+\BOOKMARK [3][-]{subsubsection.7.7.1}{Relaxation Theorem}{subsection.7.7}% 35
+\BOOKMARK [2][-]{subsection.7.8}{Driven systems}{section.7}% 36
+\BOOKMARK [2][-]{subsection.7.9}{Non-equilibrium Steady States}{section.7}% 37
+\BOOKMARK [1][-]{section.8}{Generalized Crooks fluctuation theorem}{}% 38
+\BOOKMARK [2][-]{subsection.8.1}{Jarzynski Equality}{section.8}% 39
+\BOOKMARK [2][-]{subsection.8.2}{Stochastic approach}{section.8}% 40
+\BOOKMARK [2][-]{subsection.8.3}{Jarzynski equality}{section.8}% 41
+\BOOKMARK [1][-]{section.9}{Physics of adaptation and self-replication}{}% 42
+\BOOKMARK [1][-]{section.10}{Search for a unifying principle}{}% 43
+\BOOKMARK [2][-]{subsection.10.1}{Rayleigh's insight}{section.10}% 44
+\BOOKMARK [2][-]{subsection.10.2}{Current state of affairs}{section.10}% 45
+\BOOKMARK [2][-]{subsection.10.3}{MEP principle}{section.10}% 46
+\BOOKMARK [3][-]{subsubsection.10.3.1}{Relation to MinEP}{subsection.10.3}% 47
+\BOOKMARK [3][-]{subsubsection.10.3.2}{Extrema of the Dissipation Function and MEP}{subsection.10.3}% 48
+\BOOKMARK [3][-]{subsubsection.10.3.3}{MaxEnt based formulations of MEP}{subsection.10.3}% 49
+\BOOKMARK [1][-]{section.11}{MEP principle as an inference principle}{}% 50
+\BOOKMARK [1][-]{section.12}{Statistical measures of complexity}{}% 51
+\BOOKMARK [2][-]{subsection.12.1}{Kolmogorov complexity}{section.12}% 52
+\BOOKMARK [2][-]{subsection.12.2}{Growth of complexity}{section.12}% 53

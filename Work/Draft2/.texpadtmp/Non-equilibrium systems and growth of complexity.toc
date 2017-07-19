@@ -10,18 +10,56 @@
 \contentsline {subsection}{\numberline {3.1}Gibbs entropy}{9}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}von Neumann entropy during measurement process}{10}{subsection.3.2}
 \contentsline {section}{\numberline {4}Near-equilibrium thermodynamics}{12}{section.4}
-\contentsline {subsection}{\numberline {4.1}Local equilibrium and entropy production}{12}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.1}Local equilibrium and entropy production [in progress]}{12}{subsection.4.1}
 \contentsline {paragraph}{Problems:}{13}{section*.2}
 \contentsline {subsection}{\numberline {4.2}Linear response, regression and fluctuations}{13}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Onsager relations and hypothesis}{15}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Green-Kubo relations [in progress]}{16}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}Definition of temperature [in progress]}{16}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}Steady states [in progress]}{16}{subsection.4.6}
-\contentsline {subsection}{\numberline {4.7}MinEP}{16}{subsection.4.7}
-\contentsline {section}{\numberline {5}Thermodynamic lowering of entropy in non-equilibrium conditions}{17}{section.5}
-\contentsline {section}{\numberline {6}Measure of irreversibility and the Second Law}{19}{section.6}
-\contentsline {section}{\numberline {7}Fluctuation theorems}{21}{section.7}
-\contentsline {subsection}{\numberline {7.1}Jarzy\IeC {\'n}ski equality}{21}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Crooks fluctuation theorem}{22}{subsection.7.2}
-\contentsline {subsection}{\numberline {7.3}Onsager-Machlup path integrals}{22}{subsection.7.3}
-\contentsline {subsection}{\numberline {7.4}Evans derivation}{22}{subsection.7.4}
+\contentsline {subsection}{\numberline {4.4}Green-Kubo relations}{16}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Steady states [in progress]}{16}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}Definition of temperature [in progress]}{17}{subsection.4.6}
+\contentsline {subsection}{\numberline {4.7}MinEP}{17}{subsection.4.7}
+\contentsline {section}{\numberline {5}Thermodynamic lowering of entropy in non-equilibrium conditions}{18}{section.5}
+\contentsline {section}{\numberline {6}Measure of irreversibility and the Second Law}{20}{section.6}
+\contentsline {section}{\numberline {7}Fluctuation theorems}{22}{section.7}
+\contentsline {subsection}{\numberline {7.1}The deterministic approach}{23}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}Time reversibility}{23}{subsubsection.7.1.1}
+\contentsline {subsection}{\numberline {7.2}Thermostated but time reversible systems}{24}{subsection.7.2}
+\contentsline {subsubsection}{\numberline {7.2.1}Nose-Hoover}{24}{subsubsection.7.2.1}
+\contentsline {paragraph}{Phase space distribution function}{24}{section*.3}
+\contentsline {paragraph}{Probabilities of phase space trajectories }{24}{section*.4}
+\contentsline {paragraph}{Ensemble averages:}{24}{section*.5}
+\contentsline {paragraph}{Ergodicity}{25}{section*.6}
+\contentsline {subsubsection}{\numberline {7.2.2}Construction}{25}{subsubsection.7.2.2}
+\contentsline {subsection}{\numberline {7.3}Liouville equation}{25}{subsection.7.3}
+\contentsline {paragraph}{Condition of adiabatic incompressibility of phase space}{26}{section*.7}
+\contentsline {subsection}{\numberline {7.4}Dissipation}{26}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Evans-Searles Fluctuation Theorem}{27}{subsection.7.5}
+\contentsline {paragraph}{Second Law Inequality}{28}{section*.8}
+\contentsline {paragraph}{Kawasaki identity}{28}{section*.9}
+\contentsline {subsubsection}{\numberline {7.5.1}Instantaneous dissipation function}{28}{subsubsection.7.5.1}
+\contentsline {subsection}{\numberline {7.6}Dissipation Theorem}{29}{subsection.7.6}
+\contentsline {subsubsection}{\numberline {7.6.1}Mixing properties and their relations}{30}{subsubsection.7.6.1}
+\contentsline {paragraph}{Mixing}{30}{section*.11}
+\contentsline {paragraph}{Weak T-mixing}{30}{section*.12}
+\contentsline {paragraph}{T-mixing}{31}{section*.13}
+\contentsline {paragraph}{$\bm {\Omega T}$-mixing}{31}{section*.14}
+\contentsline {subsection}{\numberline {7.7}Relaxation}{31}{subsection.7.7}
+\contentsline {subsubsection}{\numberline {7.7.1}Relaxation Theorem}{31}{subsubsection.7.7.1}
+\contentsline {subsection}{\numberline {7.8}Driven systems}{32}{subsection.7.8}
+\contentsline {subsection}{\numberline {7.9}Non-equilibrium Steady States}{33}{subsection.7.9}
+\contentsline {section}{\numberline {8}Generalized Crooks fluctuation theorem}{33}{section.8}
+\contentsline {subsection}{\numberline {8.1}Jarzynski Equality}{35}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Stochastic approach}{36}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Jarzy\IeC {\'n}ski equality}{36}{subsection.8.3}
+\contentsline {section}{\numberline {9}Physics of adaptation and self-replication}{37}{section.9}
+\contentsline {section}{\numberline {10}Search for a unifying principle}{37}{section.10}
+\contentsline {subsection}{\numberline {10.1}Rayleigh's insight}{38}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Current state of affairs}{38}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}MEP principle}{38}{subsection.10.3}
+\contentsline {subsubsection}{\numberline {10.3.1}Relation to MinEP}{39}{subsubsection.10.3.1}
+\contentsline {subsubsection}{\numberline {10.3.2}Extrema of the Dissipation Function and MEP}{39}{subsubsection.10.3.2}
+\contentsline {subsubsection}{\numberline {10.3.3}MaxEnt based formulations of MEP}{41}{subsubsection.10.3.3}
+\contentsline {section}{\numberline {11}MEP principle as an inference principle}{41}{section.11}
+\contentsline {section}{\numberline {12}Statistical measures of complexity}{43}{section.12}
+\contentsline {subsection}{\numberline {12.1}Kolmogorov complexity}{43}{subsection.12.1}
+\contentsline {subsection}{\numberline {12.2}Growth of complexity}{43}{subsection.12.2}

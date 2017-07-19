@@ -44,7 +44,7 @@ I.~Prigogine, ``{Time, structure and fluctuations},'' {\em Nobel Lectures in
   Chemistry 1971-1980}, 1993.
 
 \bibitem{Bricmont:7zJsfTpK}
-J.~Bricmont, ``{SCIENCE OF CHAOS OR CHAOS IN SCIENCE?},'' {\em Annals of the
+J.~Bricmont, ``{Science of chaos of chaos in science?},'' {\em Annals of the
   New York Academy of Sciences}, vol.~775, pp.~131--175, June 1995.
 
 \bibitem{Fox:1965bg}
@@ -97,17 +97,87 @@ L.~Onsager, ``{Reciprocal relations in irreversible processes. I.},'' {\em
 C.~Kittel, {\em {Introduction to Solid State Physics; 8th ed.}}
 \newblock Hoboken, NJ: Wiley, 2005.
 
+\bibitem{Kubo:1957cl}
+R.~Kubo, ``{Statistical-Mechanical Theory of Irreversible Processes. I. General
+  Theory and Simple Applications to Magnetic and Conduction Problems},'' {\em
+  Journal of the Physical Society of Japan}, vol.~12, pp.~570--586, June 1957.
+
 \bibitem{Nicolis:1979cv}
 G.~Nicolis and I.~Prigogine, ``{Irreversible processes at nonequilibrium steady
   states and Lyapounov functions},'' {\em Proceedings of the National Academy
   of Sciences}, vol.~76, no.~12, pp.~6060--6061, 1979.
 
-\bibitem{Jarzynski:1997uj}
-C.~Jarzynski, ``{Nonequilibrium Equality for Free Energy Differences},'' {\em
-  Physical Review Letters}, vol.~78, pp.~2690--2693, Apr. 1997.
+\bibitem{Kurchan:1998}
+J.~Kurchan, ``{Fluctuation theorem for stochastic dynamics},'' {\em Journal of
+  Physics A: Mathematical and General}, vol.~31, pp.~3719--3729, Apr. 1998.
 
 \bibitem{Crooks:2008ta}
 G.~Crooks, ``{Entropy production fluctuation theorem and the nonequilibrium
   work relation for free energy differences},'' pp.~1--7, Feb. 2008.
+
+\bibitem{Kurchan:2009ub}
+J.~Kurchan, ``{Six out of equilibrium lectures},'' {\em arXiv.org}, Jan. 2009.
+
+\bibitem{Hoover:1982dp}
+W.~G. Hoover, A.~J.~C. Ladd, and B.~Moran, ``{High-Strain-Rate Plastic Flow
+  Studied via Nonequilibrium Molecular Dynamics},'' {\em Physical Review
+  Letters}, vol.~48, pp.~1818--1820, June 1982.
+
+\bibitem{Wang:2002hw}
+G.~M. Wang, E.~M. Sevick, E.~Mittag, D.~J. Searles, and D.~J. Evans,
+  ``{Experimental Demonstration of Violations of the Second Law of
+  Thermodynamics for Small Systems and Short Time Scales},'' {\em Physical
+  Review Letters}, vol.~89, pp.~128--4, July 2002.
+
+\bibitem{Carberry:2007be}
+D.~M. Carberry, M.~Baker, and G.~M. Wang, ``{An optical trap experiment to
+  demonstrate fluctuation theorems in viscoelastic media},'' {\em Journal of
+  Optics A: {\ldots}}, vol.~9, no.~8, pp.~S204--S214, 2007.
+
+\bibitem{Williams:2008ft}
+S.~R. Williams and D.~J. Evans, ``{Time-dependent response theory and
+  nonequilibrium free-energy relations},'' {\em Physical Review E}, vol.~78,
+  pp.~021119--7, Aug. 2008.
+
+\bibitem{Jarzynski:1997uj}
+C.~Jarzynski, ``{Nonequilibrium Equality for Free Energy Differences},'' {\em
+  Physical Review Letters}, vol.~78, pp.~2690--2693, Apr. 1997.
+
+\bibitem{Paltridge:2007jf}
+G.~W. Paltridge, G.~D. Farquhar, and M.~Cuntz, ``{Maximum entropy production,
+  cloud feedback, and climate change},'' {\em Geophysical Research {\ldots}},
+  vol.~34, p.~3445, July 2007.
+
+\bibitem{Ozawa:2003jt}
+H.~Ozawa, ``{The second law of thermodynamics and the global climate system: A
+  review of the maximum entropy production principle},'' {\em Reviews of
+  Geophysics}, vol.~41, no.~4, pp.~1018--24, 2003.
+
+\bibitem{MALKUS:2003ix}
+W.~V.~R. MALKUS, ``{Borders of disorder: in turbulent channel flow},'' {\em
+  Journal of Fluid Mechanics}, vol.~489, pp.~185--198, July 2003.
+
+\bibitem{Kawazura:2010dy}
+Y.~Kawazura and Z.~Yoshida, ``{Entropy production rate in a flux-driven
+  self-organizing system},'' {\em Physical Review E}, vol.~82, no.~6, 2010.
+
+\bibitem{Brookes:2011hu}
+S.~J. Brookes, J.~C. Reid, and D.~J. Evans, ``{The fluctuation theorem and
+  dissipation theorem for Poiseuille flow},'' {\em Journal of Physics:
+  {\ldots}}, vol.~297, p.~012017, 2011.
+
+\bibitem{Zhang:2001jc}
+F.~Zhang, D.~J. Isbister, and D.~J. Evans, ``{Multiple nonequilibrium steady
+  states for one-dimensional heat flow},'' {\em Physical Review E}, vol.~64,
+  pp.~1645--5, July 2001.
+
+\bibitem{Maeda:1995bj}
+A.~Maeda and T.~Munakata, ``{Lattice thermal conductivity via homogeneous
+  nonequilibrium molecular dynamics},'' {\em Physical Review E}, vol.~52,
+  pp.~234--239, July 1995.
+
+\bibitem{Evans:1985br}
+D.~J. Evans, ``{Response theory as a free-energy extremum},'' {\em Physical
+  Review A}, vol.~32, pp.~2923--2925, Nov. 1985.
 
 \end{thebibliography}
