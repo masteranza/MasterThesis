@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.6)  19 JUL 2017 14:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.6)  19 JUL 2017 21:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1982,56 +1982,52 @@ Overfull \hbox (16.31865pt too wide) in paragraph at lines 189--192
  []
 
 [9] [10] [11] [12] [13] [14] [15] [16]
-Overfull \hbox (14.49794pt too wide) in paragraph at lines 524--524
+Overfull \hbox (14.49794pt too wide) in paragraph at lines 517--517
 []\T1/cmr/bx/n/17.28 Thermodynamic low-er-ing of en-tropy in non-equilibrium
  []
 
-[17] <system.png, id=485, 278.54062pt x 288.3272pt>
+<system.png, id=456, 278.54062pt x 288.3272pt>
 File: system.png Graphic file (type png)
  <use system.png>
-Package pdftex.def Info: system.png used on input line 532.
+Package pdftex.def Info: system.png used on input line 525.
 (pdftex.def)             Requested size: 170.71652pt x 176.71962pt.
- [18 <./system.png>] <wykres3.png, id=500, 852.18375pt x 315.1775pt>
+ [17] [18 <./system.png>] <wykres3.png, id=479, 852.18375pt x 315.1775pt>
 File: wykres3.png Graphic file (type png)
  <use wykres3.png>
-Package pdftex.def Info: wykres3.png used on input line 608.
+Package pdftex.def Info: wykres3.png used on input line 601.
 (pdftex.def)             Requested size: 341.43306pt x 126.28036pt.
- [19] [20 <./wykres3.png>] <dissipation.png, id=526, 373.395pt x 232.87pt>
+ [19 <./wykres3.png>] [20] <dissipation.png, id=505, 373.395pt x 232.87pt>
 File: dissipation.png Graphic file (type png)
  <use dissipation.png>
-Package pdftex.def Info: dissipation.png used on input line 670.
+Package pdftex.def Info: dissipation.png used on input line 665.
 (pdftex.def)             Requested size: 227.62204pt x 141.9581pt.
- [21] [22 <./dissipation.png>] [23] [24]
-Overfull \hbox (4.48065pt too wide) in paragraph at lines 798--799
+ [21 <./dissipation.png>] [22] [23]
+Overfull \hbox (4.48065pt too wide) in paragraph at lines 794--795
 []\T1/cmr/m/n/12 This equa-tion can be seen as an ap-pli-ca-tion of equiv-a-lence of Heisen-berg and Schrödinger
  []
 
-[25] [26] [27]
-
-LaTeX Warning: Citation `Anonymous:1967fr' on page 28 undefined on input line 956.
-
-[28]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 1018.
+[24] [25] [26] [27] [28]
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 1011.
  [29] [30] [31] [32]
-Overfull \hbox (10.35284pt too wide) in paragraph at lines 1183--1184
+Overfull \hbox (10.35284pt too wide) in paragraph at lines 1176--1177
 []\T1/cmr/m/n/12 The Gen-er-al-ized Crooks Fluc-tu-a-tion The-o-rem (GCFT) con-sid-ers prob-a-bil-ity $\OML/cmm/m/it/12 p[]\OT1/cmr/m/n/12 (^^A\OML/cmm/m/it/12 X[] \OT1/cmr/m/n/12 =
  []
 
-[33]
-Overfull \hbox (0.29614pt too wide) in paragraph at lines 1201--1203
+
+Overfull \hbox (0.29614pt too wide) in paragraph at lines 1194--1196
 \T1/cmr/m/n/12 Now us-ing the def-i-ni-tion of gen-er-al-ized work, equa-tion ([]95[]), two times first get $\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OT1/cmr/bx/n/12 ^^@\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 d\OT1/cmr/bx/n/12 ^^@ \OT1/cmr/m/n/12 =
  []
 
-[34] [35] [36] [37] [38] [39] [40] [41]
+[33] [34] [35] [36] [37] [38] [39] [40] [41]
 
-LaTeX Warning: Reference `StationarityConditions' on page 42 undefined on input line 1462.
+LaTeX Warning: Reference `StationarityConditions' on page 42 undefined on input line 1449.
 
 [42] [43] (/Users/masteranza/Projects/MasterThesis/Work/Draft2/.texpadtmp/Non-equilibrium systems and growth of complexity.bbl [44] [45]) [46]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1507.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1507.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1494.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1494.
  (/Users/masteranza/Projects/MasterThesis/Work/Draft2/.texpadtmp/Non-equilibrium systems and growth of complexity.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1507.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1507.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1494.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1494.
 Package rerunfilecheck Info: File `"Non-equilibrium systems and growth of complexity".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 
@@ -2041,22 +2037,22 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1507.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1494.
  ) 
 Here is how much of TeX's memory you used:
- 24877 strings out of 493089
- 468314 string characters out of 6134843
- 516596 words of memory out of 5000000
- 27677 multiletter control sequences out of 15000+600000
+ 24870 strings out of 493089
+ 468213 string characters out of 6134843
+ 519630 words of memory out of 5000000
+ 27673 multiletter control sequences out of 15000+600000
  32070 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,11n,76p,10463b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2015/t
 exmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on "/Users/masteranza/Projects/MasterThesis/Work/Draft2/.texpadtmp/Non-equilibrium systems and growth of complexity.pdf" (46 pages, 659171 bytes).
+Output written on "/Users/masteranza/Projects/MasterThesis/Work/Draft2/.texpadtmp/Non-equilibrium systems and growth of complexity.pdf" (46 pages, 657766 bytes).
 PDF statistics:
- 972 PDF objects out of 1000 (max. 8388607)
- 873 compressed objects within 9 object streams
- 287 named destinations out of 1000 (max. 500000)
- 452 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 957 PDF objects out of 1000 (max. 8388607)
+ 858 compressed objects within 9 object streams
+ 284 named destinations out of 1000 (max. 500000)
+ 420 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -282,27 +282,20 @@ The interpretation of the first inequality is that the full information about th
 \section{Near-equilibrium thermodynamics}
 \subsection{Local equilibrium and entropy production [in progress]}
 
-The term local equilibrium describes the situation in which the thermodynamic quantities of the system such as density, temperature, pressure, etc. can vary spatially and with time, but in each volume element the thermodynamic relations between the values which apply locally there are obeyed.
+The term local equilibrium describes the situation in which the thermodynamic quantities of the system such as density, temperature, pressure, etc. can vary spatially and with time, but in each volume element the thermodynamic relations between the values which apply locally there are obeyed. The resulting dynamics are quite generally termed hydrodynamics in condensed-matter physics, in analogy to the dynamic equations which are valid in this limit for the flow of gases and liquids. 
 
- The resulting dynamics are quite generally termed hydrodynamics in condensed-matter physics, in analogy to the dynamic equations which are valid in this limit for the flow of gases and liquids. The conditions for local equilibrium are
-
-The thermodynamical variables are often defined subject to the kinematical requirement of local thermodynamic equilibrium. 
-This means that collisions between molecules are so frequent that chemical and radiative processes do not disrupt the local Maxwell-Boltzmann distribution of molecular velocities. This principle is valid for hydrodynamic flows and chemical reactions and it's formulation goes back to Clark Maxwell\cite{Dewar:2014ek}.%TODO: Cite Maxwell
-
-It's usage can be usually justified by assuming analyticity of thermodynamic state functions arbitrarily close to equilibrium - then, local equilibrium is obtained from first order expansion of thermodynamic properties in the irreversible fluxes $\{X_i\}$ \cite{Evans:2002gg}.
+Its usage can be usually justified by assuming analyticity of thermodynamic state functions arbitrarily close to equilibrium - then, local equilibrium is obtained from first order expansion of thermodynamic properties in the irreversible fluxes $\{X_i\}$ \cite{Evans:2002gg}.
 
 
-An approached pioneered by Onsager, for the entropy for open systems, isan extension of Clausius entropy for isolated systems:
+An approached pioneered by Onsager, for the entropy for open systems, is an extension of Clausius entropy for isolated systems:
 
 \begin{equation}
   	dS=d_iS+d_eS
 \end{equation}
 
 Where $d_iS$ is connected with entropy produced within the system and $d_eS$ is the entropy transferred across the boundaries of the system.
-The second law states that $d_iS\geq 0$, so if a system is to stay in law entropy state it{'}s production must be compensated by an inflow of negative
-entropy.
 
-He then develops an explicit expression for entropy production, assuming that even outside equilibrium (but near) entropy depends only on the same
+One then develops an explicit expression for entropy production, assuming that even outside equilibrium (but near) entropy depends only on the same
 variables as at equilibrium ("local" equilibrium)
 
 \begin{equation}
@@ -526,7 +519,7 @@ An often given example of instabilities leading to formation of structures are t
 
 The Second Law of course holds for isolated systems as a whole and one can therefore imagine (on the basis of additivity of entropy) that out of equilibrium some subsystems may maintain lower entropy.
 
-Let's consider a model consisting of three elements: the cooler $C$, the heater $H$ and the system under consideration $S$, staying out of equilibrium.
+Let's consider a simple model consisting of three elements: the cooler $C$, the heater $H$ and the system under consideration $S$, staying out of equilibrium.
 We assume, that the temperatures of the cooler and the heater stay constant, and that heat $Q_H$ flows into the system $S$ and heat $Q_C$ flows out. The situation is illustrated by the picture \ref{Fig2}.
 \begin{figure}[ht!]
 \centering \includegraphics[width=6cm]{system} \caption{System (S) model}
@@ -551,31 +544,31 @@ dS_e=\frac{dQ_H}{T_H}+\frac{dQ_C}{T_C}=dQ_H\left(\frac{1}{T_H}-\frac{1}{T_C}\rig
 From which it follows, that the heat flow takes the entropy out of our system.
 For the purpose of further discussion we introduce the concept of rate of entropy change connected with the heat flow:
 \begin{equation}
-j_e \equiv  \frac{dS_e}{dt}. 
+\sigma_e \equiv  \frac{dS_e}{dt}. 
 \end{equation}
-In the considered scenerio, the $j_e$ is held constant (steady-state) and we suspect a continuous fall in system's entropy
+In the considered scenerio, the $\sigma_e$ is held constant (steady-state) and we suspect a continuous fall in system's entropy.
 
-Yet, moving away from the equilibrium state we suspect, that the a major role will be played by $dS_i$ moving the system back to equilibrium state. Similarly, as before we define the rate of internal entropy production:
+Yet, moving away from the equilibrium state we suspect, that the a balancing role will be played by $dS_i$ moving the system back to equilibrium state. Similarly, as before we define the rate of internal entropy production:
 
 \begin{equation}
-j_i \equiv \frac{dS_i}{dt}.   
+\sigma_i \equiv \frac{dS_i}{dt}.   
 \end{equation} 
 
-When $T_H=T_C$, i.e. the system is in equilibrium with constant entropy $S_{EQ}$ then it follows that $j_i=0$.
-Therefore the rate of internal entropy production $j_i$ should be a function  of system's entropy $S_S$, i.e. $j_i = j_i(S_S)$ with the boundary condition $j_i(S_S=S_{EQ})=0$. 
+When $T_H=T_C$, i.e. the system is in equilibrium with constant entropy $S_{EQ}$ then it follows that $\sigma_i=0$.
+Therefore the rate of internal entropy production $\sigma_i$ should be a function  of system's entropy $S_S$, i.e. $\sigma_i = \sigma_i(S_S)$ with the boundary condition $\sigma_i(S_S=S_{EQ})=0$. 
 
-Near the equilibrium state $S_S=S_{EQ}$, we can Taylor expand the function $j_i(S_S)$ to it's linear term
+Near the equilibrium state $S_S=S_{EQ}$, we can Taylor expand the function $\sigma_i(S_S)$ to it's linear term
 \begin{equation}
-j_i(S_S)=j_i\left(S_{EQ}\right)+\left(S_S-S_{EQ}\right)C_1+\mathcal{O}\left(S_S^2\right),
+\sigma_i(S_S)=\sigma_i\left(S_{EQ}\right)+\left(S_S-S_{EQ}\right)C_1+\mathcal{O}\left(S_S^2\right),
 \end{equation} 
-fulfilling $j_i\left(S_{EQ}\right)=0$. 
+fulfilling $\sigma_i\left(S_{EQ}\right)=0$. 
 
 The dimensional and stability analysis tells us that $C_1$ has the dimension of inverse time and in the case of 
-$j_e=0$ should simply be equal to $S_{EQ}$, therefore we set $C_1 = -\frac{1}{\tau}$, where $\tau$ is a positive defined relaxation constant.
+$\sigma_e=0$ should simply be equal to $S_{EQ}$, therefore we set $C_1 = -\frac{1}{\tau}$, where $\tau$ is a positive defined relaxation constant.
 
 Using the equation (\ref{entrosum}) we get
 \begin{equation}
-\frac{dS_S}{dt}=j_i\left(S_S\right)=\left(S_S-S_{EQ}\right)C_1, 
+\frac{dS_S}{dt}=\sigma_i\left(S_S\right)=\left(S_S-S_{EQ}\right)C_1, 
 \label{stab}
 \end{equation} 
 
@@ -586,22 +579,22 @@ S_S(t) =S_{EQ}+(S_0-S_{EQ})e^{-t/\tau},
 where the initial condition was set $S_S(0)=S_0$.
 
 
-Now we include the term $j_e$ into our considerations.
+Now we include the term $\sigma_e$ into our considerations.
 In this case the equation (\ref{entrosum}) results in the following 
 \begin{equation}
-\frac{dS_S}{dt}=j_e + j_i\left(S_S\right)=j_e +\frac{S_{EQ}-S_S}{\tau}.
+\frac{dS_S}{dt}=\sigma_e + \sigma_i\left(S_S\right)=\sigma_e +\frac{S_{EQ}-S_S}{\tau}.
 \label{dSSdt}
 \end{equation} 
 
  
 Given a boundary condition $S_S(0) =S_{EQ}$ it has a solution
 \begin{equation}
-S_S(t)=S_{EQ}+j_e\tau \left(1-e^{-t/\tau }\right),
+S_S(t)=S_{EQ}+\sigma_e\tau \left(1-e^{-t/\tau }\right),
 \end{equation} 
-where $j_e$ is a negative constant (graph of this function is presented on \ref{Fig4}). 
+where $\sigma_e$ is a negative constant (graph of this function is presented on \ref{Fig4}). 
 In the limit $t\rightarrow \infty$ the entropy of the system falls to the minimal value
 \begin{equation}
-S_{min}=S(t\rightarrow \infty) =S_{EQ}+j_e \tau < S_{EQ}.
+S_{min}=S(t\rightarrow \infty) =S_{EQ}+\sigma_e \tau < S_{EQ}.
 \end{equation}
 
 \begin{figure}[ht!]
@@ -612,6 +605,8 @@ S_{min}=S(t\rightarrow \infty) =S_{EQ}+j_e \tau < S_{EQ}.
 
 This is of course consistent with the second law of thermodynamics as we are describing an open system.
 It is easy to notice that the total entropy change is equal to $dS=dS_i \geq 0$ (for simplicity it was assumed that the heater and cooler don't act as producers of entropy).
+
+We see that if the relaxation constant $\tau = 0$ then the system would stay in equilibrium the whole time, of course, $\tau > 0$ for most materials (if not all). The most important part due to which this low entropy state was obtained is of course the entropy out-flow $\sigma_e$ without the non-equilibrium condition would not form.
 
 \section{Measure of irreversibility and the Second Law}
 
@@ -662,7 +657,7 @@ Now, comparing the probability of forward macroscopic evolution to backward evol
 
 The interpretation of the term in the exponent, can be done by noticing that there's only one known macroscopic quantity\footnote{Up to a numerical factor - $k_B^{-1}$} that is strictly positive and can change signs after reversing the left side, namely the standard measure of irreversibility - entropy\footnote{Later we will see that in the case of fluctuation theorems this quantity can be also negative. Then our association to Shannon entropy breaks down and in this case a secondary notion of \textit{dissipation} is sometimes introduced.}.
 
-We have thus, described entropy produced by a macroscopic system solely in terms of microscopic transition probabilities between two macroscopic states, without any assumptions about the dynamics and external forces influencing the system.
+We have thus, described entropy produced by a macroscopic system solely in terms of microscopic transition probabilities between two macroscopic states, without any assumptions about the dynamics and external forces influencing the system. Also this is perhaps the most straight-forward argument against Loschmidt.
 
 With the use real, positive random matrices, satisfying the conditions $\sum_j K_{kj} = 1$ for any $k$, to obtain the distributions for the possible values of entropy produced in the transition $ S = \ln{\sum_{k,m} \frac{K_{kj}}{K_{km}}} $. The results, for $N=10000$ random matrices are presented on figure \ref{Fig4}.
 
@@ -682,6 +677,9 @@ Despite its generality one has to remember that this result holds for macroscopi
 In the previous section we have seen how irreversibility arrises in macroscopic systems, now we wish to extend it to small systems living on the boundary between micro- and macroscopic descriptions. The crucial element of this extension is the same, natural measure of irreversibility introduced before, however now we will be taking into the account the possible microscopic trajectories of the systems. 
 An early indicator that this line of attack might indeed be needed was given in case of the mentioned in \ref{Gibbs entropy}, Hahn spin echoes experiment.
 
+The fluctuation theorems and their derivatives including Jarzynski equality have been demonstrated for a wide range of systems and in a number of experiments including DNA stretching [vii], optically trapped colloids [viii], shearing systems [ix], pendulums [x], molecular motors [xi] and various quantum mechanical systems [xii].
+%TODO: Extract references from evans_chapter_rev.pdf
+
 There exist many approaches for deriving fluctuation theorems, which can be roughly described as deterministic\cite{Evans:2002gg}\cite{Evans:2016tq} or stochastic \cite{Kurchan:1998}
 
 In the deterministic framework of Evans, irreversibility finds its origins in non-linear terms which provide a contraction of phase space, in contrast to the more direct irreversibility of the equations of motion found in stochastic descriptions which also has the merit of fewer technical difficulties \cite{Crooks:2008ta}. 
@@ -689,10 +687,8 @@ In the deterministic framework of Evans, irreversibility finds its origins in no
 Those technical difficulties have their source in ergodicity. If the aim of ergodic theory is to understand how randomness arises from deterministic constituents, once stochasticity is added ‘by hand’ the question is artificially bypassed.
 In fact the Gallavotti-Cohen theorem, which is a stationary fluctuation theorem for systems in contact with a deterministic Gaussian thermostat, breaks down in some systems and in most cases when the forcing is very strong.
 The Fluctuation Relation in the deterministic case holds only if the system has certain ‘ergodic’ properties\cite{Kurchan:2009ub}.
-%Both approaches, however, are attempts to represent a dissipative environment that imposes a thermal constraint. %
 
-They fluctuation theorems and their derivatives including Jarzynski equality have been demonstrated for a wide range of systems and in a number of experiments including DNA stretching [vii], optically trapped colloids [viii], shearing systems [ix], pendulums [x], molecular motors [xi] and various quantum mechanical systems [xii].
-%TODO: Extract references from evans_chapter_rev.pdf
+Despite this difficulties the deterministic approach of Searles and Evans will be described for reasons of generality, for aesthetic reasons also because it distances itself from the notion of entropy.
 
 \subsection{The deterministic approach}
 
@@ -700,7 +696,15 @@ The main objective of this section will be the derivation of the dissipation fun
 
 In the following considerations we will assume that classical mechanics gives an adequate description of the dynamics. We will also assume that quantum and relativistic effects can be safely ignored.
 
-Performing an experiment we can control only a small number of variables that specify the macroscopic state of the system. We might know the systems volume, energy or the average kinetic energy of all the particles which number we assume to be constant. There will always be an enormous number of microstates consistent with the macroscopic constraints.
+\subsubsection{Thermostated, but time reversible systems}
+
+The first time-reversible, deterministic thermostats and ergostats (homogeneous thermostats) were invented in the early 1980s by Hoover, Ladd and Moran. Prior to this development there was no satisfactory mathematical way of modelling thermostatted non-equilibrium steady states\cite{Hoover:1982dp}.
+
+The construction of thermostated time reversible systems is usually done inserting some time-reversible, but non-Hamiltonian terms into part of the equations of motion defined as the surroundings. Surroundings in first approximation are assumed to stay far from the system of interest and should not affect the system under consideration.
+The work done on a system, should be on average, converted into heat, which is conducted through the system of interest and eventually removed by the non-Hamiltonian terms residing in the remote boundaries.
+
+The construction of deterministic thermostats is usually accomplished by including a term $- S_i \alpha \bm{p}_i $ to the EOM. 
+This term serves as a mean by which we can add or remove heat from the particles in the reservoir region ($S_i =1$ for reservoir region and $S_i = 0$ outside this region) through introduction of an extra degree of freedom described by $\alpha$.
 
 \subsubsection{Time reversibility}
 Let's consider an isolated Hamiltonian system of interacting particles.
@@ -757,22 +761,14 @@ where the action of operators $M^T$ and $S^t$ is evaluated from the right side t
 
 
 
-\subsection{Thermostated but time reversible systems}
-
-The first time-reversible, deterministic thermostats and ergostats were invented in the early 1980s by Hoover, Ladd and Moran. Prior to this development there was no satisfactory mathematical way of modelling thermostatted non-equilibrium steady states. \cite{Hoover:1982dp}
-
-The construction of thermostated time reversible systems is usually done inserting some time-reversible, but non-Hamiltonian terms into part of the equations of motion defined as the surroundings. Surroundings in first approximation are assumed to stay far from the system of interest and should not affect the system under consideration.
-The work done on a system, should be on average, converted into heat, which is conducted through the system of interest and eventually removed by the non-Hamiltonian terms residing in the remote boundaries.
-
-\subsubsection{Nose-Hoover}
-By including a term $-S_i \alpha \bm{p}_i $ to the EOM we get a deterministic, time-reversible Nose-Hoover thermostat, which can be used to add or remove heat from the particles in the reservoir region through introduction of an extra degree of freedom described by $\alpha$
 
 
-\paragraph{Phase space distribution function}
+
+\paragraph{Phase space distribution function:}
 
 The phase space distribution function $f(\bm{\Gamma};t)$ gives the probability per unit phase space volume of finding phase members near the phase vector $\bm{\Gamma}$ at time $t$.
 
-\paragraph{Probabilities of phase space trajectories }
+\paragraph{Probabilities of phase space trajectories: }
 The probability $p(\delta V_{\bm{\Gamma}}(\bm{\Gamma}(t),t))$, that a phase $\bm{\Gamma}$, will be observed within an infinitesimal phase space volume of size $\delta V_{\bm{\Gamma}}$ about $\bm{\Gamma}(t)$ at time $t$, is given by,
 
 \begin{equation}
@@ -795,7 +791,7 @@ or in the continuous limit by specifying the initial phase space probability den
   \langle A(t) \rangle = \int d\bm{\Gamma} A(\bm{\Gamma}) f(\bm{\Gamma};t) = \int d\bm{\Gamma} A(S^t\bm{\Gamma})f(\bm{\Gamma};0)
 \end{equation}
 
-This equation can be seen as an application of equivalence of Heisenberg and Schrödinger representations.
+This equation can be seen as an application of equivalence of Heisenberg and Schrödinger representations - either the observable or the state is evolved.
 
 Time stationarity of an ensemble average is then defined simply by
 \begin{equation}
@@ -806,8 +802,8 @@ for any $\Delta > 0$.
 
 %TODO: More on ensemble averages can be found on page 35
 
-\paragraph{Ergodicity}
-Stationary system is said to be physically ergodic if the time average of the phase function representing a physical observable, along a trajectory that starts \textit{almost anywhere} in the ostensible phase space, is equal to the ensemble average taken over an ensemble of systems consistent with the small number of macroscopic constraints on the system.
+\paragraph{Ergodicity:}
+Stationary system is said to be physically ergodic if the time average of the phase function representing a physical observable, along a trajectory that starts \textit{almost anywhere}\cite{Evans:2016tq} in the ostensible phase space, is equal to the ensemble average taken over an ensemble of systems consistent with the small number of macroscopic constraints on the system.
 
 \begin{equation}
     \lim_{t \to \infty} \langle A(t) \rangle = \lim_{t \to \infty} \frac{1}{t} \int_0^t ds\ A(S^s \bm{\Gamma})
@@ -816,14 +812,11 @@ Stationary system is said to be physically ergodic if the time average of the ph
 
 One may also talk about, so called \textit{ergodic consistency condition} in many context, the reason for this requirement stems from the requirement of existence of distributions sitting in the denominator of various theorems for example in the definition (in later introduced) dissipation function.
 
-\subsubsection{Construction}
+\subsubsection{Liouville equation}
 
-To model a three-dimensional system of $N$ interacting particles, we assume that the microstates were initially distributed according to a given normalized probability distribution function $f(\bm{\Gamma};0)$. As mentioned before we separate our system of $N$ particles into system and surroundings, where the surroundings are assumed to be composed of $N_{th}$ particles. 
-
+%To model a three-dimensional system of $N$ interacting particles, we assume that the microstates were initially distributed according to a given normalized probability distribution function $f(\bm{\Gamma};0)$. As mentioned before we separate our system of $N$ particles into system and surroundings, where the surroundings are assumed to be composed of $N_{th}$ particles. 
 
 %TODO: Construction of the termostat left for later, start at page 24
-
-\subsection{Liouville equation}
 
 The motion of the phase space distribution function is governed by a Lagrangian form of the phase continuity equation (also known as \textit{streaming})
 
@@ -840,8 +833,9 @@ this equation follows directly from a well known form of Liouville equation
      = -(\frac{\partial}{\partial \bm{\Gamma}} \cdot \dot{\bm{\Gamma}} + \dot{\bm{\Gamma}} \cdot \frac{\partial}{\partial \bm{\Gamma}}) f(\bm{\Gamma};t)
 \end{equation}
 
-where by moving the last term to the left side we get equation (\ref{LagrangianLiouville}).
+where by moving the last term to the left side we get back equation (\ref{LagrangianLiouville}).
 
+\noindent\makebox[\linewidth]{\rule{\textwidth}{1pt}} 
 \paragraph{Condition of adiabatic incompressibility of phase space}
 
 We say that a system fulfills the \textit{adiabatic incompressibility of phase space} or $AI\bm{\Gamma}$ if in the \textbf{absence} of the thermostatting terms the equations of motion preserve the phase space volume, that is
@@ -850,7 +844,8 @@ We say that a system fulfills the \textit{adiabatic incompressibility of phase s
 \end{equation}
 
 
-It can be shown that for isokinetic or isoenergetic systems with fixed total momentum and satisfying $AI\bm{\Gamma}$, the phase space expansion factor is exactly $\Lambda = - (3N_{th} -4) \alpha $ 
+It can be shown\cite{Evans:2016tq} that for isokinetic or isoenergetic systems with fixed total momentum and satisfying $AI\bm{\Gamma}$, the phase space expansion factor is exactly $\Lambda = - (3N_{th} -4) \alpha $.
+\noindent\makebox[\linewidth]{\rule{\textwidth}{1pt}} 
 
 If we make the following substitution $\bm{\Gamma} \to S^t\bm{\Gamma}$ in equation (\ref{LagrangianLiouville}) this first-order ordinary differential equation is solved by
 
@@ -866,24 +861,21 @@ The measure of an infinitesimal phase space volume $dV_{\bm{\Gamma}}(S^s \bm{\Ga
   dV_{\bm{\Gamma}}(S^t \bm{\Gamma}) =\exp[\int_0^t ds\ \Lambda(S^s\bm{\Gamma})]dV_{\bm{\Gamma}}(\bm{\Gamma})
 \end{equation}
  
-In a lot of cases the phase space volume goes to zero, while the density approaches infinity.
-
-
+In a lot of cases the phase space volume goes to zero, while the density approaches infinity\cite{Evans:2016tq}.
 
 %TODO: Remark about Hermicity of Liouville page 35
-
 
 \subsection{Dissipation}
 
 The dissipation function serves as mathematical replacement for the entropy production. When entropy production can be defined, it is equal, on average, to the dissipation function. The main advantage though is that, unlike the entropy production, the dissipation function can, for ergodically consistent systems be always well defined \cite{Evans:2016tq}.
-%TODO: More general intro
 
-If external fields are applied to the system of particles and the external field does work on the system and if that work can be turned completely into heat that can diffuse out of the system, the external field is termed a dissipative field. If the work can be completely stored in the system in the form of potential energy, the external field is termed non-dissipative.
+Another justification for introducing can a new quantity is that in some cases dissipation can be negative, but strictly speaking entropy interpreted in the light of information theory, should be positive. This should not come up as a surprise since we're getting closed to scales at which the notion of thermodynamic entropy emerge. 
 
-A simple example of a system that turns from non-dissipative into a dissipative system is sodium chloride. In solid state it's an insulator (internal energy increases through polarization), but when heated to around 1100K, melts and becomes a conductor.
+%If external fields are applied to the system of particles and the external field does work on the system and if that work can be turned completely into heat that can diffuse out of the system, the external field is termed a \textbf{dissipative field}. If the work can be completely stored in the system in the form of potential energy, the external field is termed non-dissipative.
+%
+%A simple example of a system that turns from non-dissipative into a dissipative system is sodium chloride. In solid state it's an insulator (internal energy increases through polarization), but when heated to around 1100K, melts and becomes a conductor.
 
-Dissipation function was first properly (not implicitly) defined in 2000 by Searles and Evans.
-%TODO: citation needed
+Dissipation function was first properly (not implicitly) defined in 2000 by Searles and Evans\cite{Searles:2000ig}.
 The dissipation function is similar to the entropy production, and although it's not a state function it provides description of non-equilibrium systems through various fluctuation theorems.
 
 The most straight forward definition of the dissipation function is derived from the ratio of the probabilities $p$ at time zero, of observing sets of phase space trajectories originating inside infinitesimal volumes of phase space $\delta V_{\bm{\Gamma}}$ and $\delta V_{\bm{\Gamma}}(\bm{\Gamma}^*)\equiv \delta V_{\bm{\Gamma}}(M^T S^t \bm{\Gamma})$:
@@ -906,13 +898,14 @@ where the logarithm of the right side we'd like to use as the definition of the 
   \int_0^t ds\ \Omega(S^s \bm{\Gamma})\equiv \ln(\frac{f(\bm{\Gamma};0)}{f(\bm{\Gamma}^*;0)}) -\int_0^t ds \ \Lambda(S^s \bm{\Gamma}) \equiv \Omega_t(\bm{\Gamma})
 \end{equation}
 
+One should perhaps underline that this is the place in which we postulate that some time-asymmetry takes place.
 Usually one defines an auxiliary quantity $\bar{\Omega}_t$ called \textit{time-averaged dissipation} defined through relation $\Omega_t(\bm{\Gamma}) \equiv \bar{\Omega}_t(\bm{\Gamma})t$.
 
 A possible interpretation of this equation states that dissipation function is a measure of the temporal asymmetry inherent in sets of trajectories originating from an initial distribution of states.
 
 \subsection{Evans-Searles Fluctuation Theorem}
 
-If we now choose our volume elements in such a way that all the trajectories originating at time zero have the time averaged dissipation function $\bar{\Omega}_t(\bm{\Gamma})=(A \pm \delta A)$, then we get the Evans-Searles Fluctuation Theorem
+If we now choose our volume elements in such a way that all the trajectories originating at time zero have the time averaged dissipation function $\bar{\Omega}_t(\bm{\Gamma})=(A \pm \delta A)$, then we get the Evans-Searles Fluctuation Theorem (ESFT):
 
 \begin{equation}
 \label{ESFT}
@@ -921,11 +914,11 @@ If we now choose our volume elements in such a way that all the trajectories ori
 %TODO: Add assumptions - page 52
 %TODO: Connection to Kullback-Leibler divergence
 
-This fluctuation relation written ESFT is valid for arbitrary system size (the thermodynamic limit was not required) and can be applied to small systems observed for short periods of time. The conditions of ergodic consistency and microsopic time reversibility are all that are required.
+This fluctuation relation is valid for arbitrary system size (the thermodynamic limit was not required) and can be applied to small systems observed for short periods of time. The conditions of ergodic consistency and microsopic time reversibility are all that are required.
 It was also verified experimentally, see Wang(2002)\cite{Wang:2002hw}, Carberry(2007)\cite{Carberry:2007be}
 %TODO: Add more references - page 53
 
-An important thing to note is that it renders the Loschmidt's assertion (that each trajectory has it's own anti-trajectory and therefore irreversability is impossible) simply wrong. One must consider probabilities of infinitesimal sets of trajectories fulfilling given requirements instead of individual sets. Only at equilibrium all individual trajectories cancel out.
+One should note that this approach considers probabilities of infinitesimal sets of trajectories fulfilling given requirements instead of individual sets and only at equilibrium all individual trajectories cancel out.
 
 \paragraph{Second Law Inequality}
 The Second Law of thermodynamics can be derived from ESFT in a trivial manner, by showing that time averages of the ensemble-averaged dissipation are non negative.
@@ -953,7 +946,7 @@ At this point it's useful to define equilibrium system as the system for which, 
 
 \paragraph{Kawasaki identity}
 
-also known as Non-equilibrium Partition Identity (NPI) was first implied for Hamiltonian systems by Yamada and Kawasaki (1967) \cite{Anonymous:1967fr} and is stated as:
+also known as Non-equilibrium Partition Identity (NPI) was first implied for Hamiltonian systems by Yamada and Kawasaki (1967)\cite{Yamada:1967uo} and is stated as:
 
 \begin{equation}
   \langle \exp[-\bar{\Omega}_t t] \rangle =1
@@ -1244,7 +1237,7 @@ is varied parametrically from $\lambda_1 =\lambda(0)$ to the final, unique equil
 \end{aligned}
 \end{equation}
 
-The generalized dimensionless "work" became identifiable as $\beta$ time the work performed over a period of time $\tau$
+The generalized dimensionless "work" became identifiable as $\beta$ times the work performed over a period of time $\tau$
 \todo{Discussion of the extended Hamiltonian + the isothermal result}
 
 \begin{equation}
@@ -1256,7 +1249,18 @@ The generalized dimensionless "work" became identifiable as $\beta$ time the wor
 %TODO: Improvement of GCFR?
 %TODO: More discussion needed - page 168
 \subsection{Jarzynski Equality}
-This GCFR can be used to derive the well known Jarzynski Equality in it's generalized form, which expresses the free energy difference between two equilibrium states in terms of an average over irreversible paths.
+
+In ordinary statistical physics when transitions between two equilibrium states are performed infinitely slowly along some path between the initial point $A$ and the final point $B$, then the total work $W$ performed on such a system is equal to the Helmholtz free energy difference $\Delta F$ between the initial and final configurations. However, this is not the case when non-equilibrium transitions are considered. In fact, on average the work performed on the system will exceed Helmholtz free energy $ \langle  W \rangle \geq \Delta F $ and the difference will be equal to the dissipated energy, associated with increase of entropy during an irreversible process.
+
+In 1996, Christopher Jarzynski\cite{Jarzynski:1997uj} derived a very useful equality for the equilibrium free energy differences between two configuration of a system in terms of an ensemble finite-time measurements of the work performed during parametric switching in between those two configurations.
+
+\begin{equation}
+\label{JarzynskiInequality}
+  \langle \exp(-\beta W) \rangle = \exp(-\beta  \Delta F)
+\end{equation}
+
+
+Having already derived GCFR we will will use it to derive Jarzynski Equality also in it's generalized form, which expresses the free energy difference between two equilibrium states in terms of an average over irreversible paths.
 In fact a generalized Jarzynski equality (GJE) follows from:
 
 \begin{equation}
@@ -1303,39 +1307,22 @@ If we choose the second equilibrium to be in fact our first equilibrium ($Z_1/Z_
 i.e. the ensemble average of the cyclic integral of the generalized work is nonnegative.
 Although it's appearance is similar to Clausius inequality, for the heat we have to complete many cycles until the system settles into a periodic response to the cyclic protocol before we can apply the cyclic integral of the heat. Not all systems do settle into a cyclic response. The reason for this disrepancy is that after the cycle is complete no more work is being done, but the long relaxation process of course includes heat exchange. 
 
-
-\subsection{Stochastic approach}
-
-\subsection{Jarzyński equality}
-
-In ordinary statistical physics when transitions between two equilibrium states are performed infinitely slowly along some path between the initial point $A$ and the final point $B$, then the total work $W$ performed on such a system is equal to the Helmholtz free energy difference $\Delta F$ between the initial and final configurations. However, this is not the case when non-equilibrium transitions are considered. In fact, on average the work performed on the system will exceed Helmholtz free energy $ \langle  W \rangle \geq \Delta F $ and the difference will be equal to the dissipated energy, associated with increase of entropy during an irreversible process.
-
-In 1996, Christopher Jarzynski\cite{Jarzynski:1997uj} derived a very useful equality for the equilibrium free energy differences between two configuration of a system in terms of an ensemble finite-time measurements of the work performed during parametric switching in between those two configurations.
-
-\begin{equation}
-\label{JarzynskiInequality}
-  \langle \exp(-\beta W) \rangle = \exp(-\beta  \Delta F)
-\end{equation}
-
-%TODO: Jarzyński derivation
-
 \section{Physics of adaptation and self-replication}
 
-Rewriting again equation (\ref{CFT}) to 
+Now we wish to zoom out a bit from our theoretical considerations about the foundations of fluctuation theorems and just take them as a fact in some recent and interesting applications.
+
+We proceed by switching to a stochastic description in which the equation (\ref{CFT}) takes the form
 
 \begin{equation}
-\frac{\pi (j\to i;\tau )}{\pi (i\to j;\tau )}=\left\langle \exp \left(-\beta  \Delta Q_{i\to j}^{\tau }\right)\right\rangle_{i\to j}
+\frac{\pi (j\to i;\tau )}{\pi (i\to j;\tau )}=\left\langle \exp \left(-\beta  \Delta Q_{i\to j}^{\tau }\right)\right\rangle_{i\to j},
 \end{equation}
 
-and coalescing the equilibrium partition functions with the particular amount $B$ of generalized work performed we move to description known from the works of Crooks:
+where $\pi$'s are the probabilities of transition during time $\tau$ either from $ j\to i$ or $ i \to j $ and $Q$ is the dissipated heat:
+
+Note that before we had probability distributions, therefore now 
 
 
-
-%\subsubsection{As a measure of irreversibility}
-%If we denote T as irreversibility then I can be interpreted as a measure of T-symmetry breaking.
-%\begin{displaymath}
-%  I =\int p(x) \ln{\frac{p( x)}{p(T x)}}
-%\end{displaymath}
+%One may show that the probabilities for selecting macrostate 2 over macrostate 3 would be exactly the same if we were to use the Fluctuation theorem protoplast.
 
 \section{Search for a unifying principle}
 

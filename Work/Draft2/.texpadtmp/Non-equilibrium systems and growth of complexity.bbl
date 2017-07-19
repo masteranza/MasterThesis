@@ -70,12 +70,6 @@ D.~J. Evans, D.~J. Searles, and S.~R. Williams, {\em {Fundamentals of classical
   theorems}}.
 \newblock Berlin: John Wiley {\&} Sons, 2016.
 
-\bibitem{Dewar:2014ek}
-R.~C. Dewar, C.~H. Lineweaver, R.~K. Niven, and K.~Regenauer-Lieb, {\em {Beyond
-  the Second Law: An Overview}}.
-\newblock Understanding Complex Systems, Berlin, Heidelberg: Springer Berlin
-  Heidelberg, 2014.
-
 \bibitem{Evans:2002gg}
 D.~J. Evans and L.~Rondoni, ``{Comments on the Entropy of Nonequilibrium Steady
   States},'' {\em Journal of Statistical Physics}, vol.~109, no.~3/4,
@@ -123,6 +117,11 @@ W.~G. Hoover, A.~J.~C. Ladd, and B.~Moran, ``{High-Strain-Rate Plastic Flow
   Studied via Nonequilibrium Molecular Dynamics},'' {\em Physical Review
   Letters}, vol.~48, pp.~1818--1820, June 1982.
 
+\bibitem{Searles:2000ig}
+D.~J. Searles and D.~J. Evans, ``{The fluctuation theorem and
+  Green{\textendash}Kubo relations},'' {\em The Journal of Chemical Physics},
+  vol.~112, pp.~9727--9735, June 2000.
+
 \bibitem{Wang:2002hw}
 G.~M. Wang, E.~M. Sevick, E.~Mittag, D.~J. Searles, and D.~J. Evans,
   ``{Experimental Demonstration of Violations of the Second Law of
@@ -133,6 +132,10 @@ G.~M. Wang, E.~M. Sevick, E.~Mittag, D.~J. Searles, and D.~J. Evans,
 D.~M. Carberry, M.~Baker, and G.~M. Wang, ``{An optical trap experiment to
   demonstrate fluctuation theorems in viscoelastic media},'' {\em Journal of
   Optics A: {\ldots}}, vol.~9, no.~8, pp.~S204--S214, 2007.
+
+\bibitem{Yamada:1967uo}
+T.~Yamada and K.~Kawasaki, ``{Nonlinear effects in the shear viscosity of
+  critical mixtures},'' {\em Progress of Theoretical Physics}, 1967.
 
 \bibitem{Williams:2008ft}
 S.~R. Williams and D.~J. Evans, ``{Time-dependent response theory and
