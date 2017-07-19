@@ -49,13 +49,11 @@
 \contentsline {subsection}{\numberline {8.1}Jarzynski Equality}{35}{subsection.8.1}
 \contentsline {section}{\numberline {9}Physics of adaptation and self-replication}{36}{section.9}
 \contentsline {section}{\numberline {10}Search for a unifying principle}{37}{section.10}
-\contentsline {subsection}{\numberline {10.1}Rayleigh's insight}{37}{subsection.10.1}
-\contentsline {subsection}{\numberline {10.2}Current state of affairs}{37}{subsection.10.2}
-\contentsline {subsection}{\numberline {10.3}MEP principle}{38}{subsection.10.3}
-\contentsline {subsubsection}{\numberline {10.3.1}Relation to MinEP}{38}{subsubsection.10.3.1}
-\contentsline {subsubsection}{\numberline {10.3.2}Extrema of the Dissipation Function and MEP}{38}{subsubsection.10.3.2}
-\contentsline {subsubsection}{\numberline {10.3.3}MaxEnt based formulations of MEP}{40}{subsubsection.10.3.3}
-\contentsline {section}{\numberline {11}MEP principle as an inference principle}{41}{section.11}
-\contentsline {section}{\numberline {12}Statistical measures of complexity}{42}{section.12}
-\contentsline {subsection}{\numberline {12.1}Kolmogorov complexity}{42}{subsection.12.1}
-\contentsline {subsection}{\numberline {12.2}Growth of complexity}{42}{subsection.12.2}
+\contentsline {subsection}{\numberline {10.1}Rayleigh's insight}{38}{subsection.10.1}
+\contentsline {subsection}{\numberline {10.2}Current state of affairs}{38}{subsection.10.2}
+\contentsline {subsection}{\numberline {10.3}MEP principle}{39}{subsection.10.3}
+\contentsline {subsubsection}{\numberline {10.3.1}Relation to MinEP}{39}{subsubsection.10.3.1}
+\contentsline {subsubsection}{\numberline {10.3.2}Extrema of the Dissipation Function and MEP}{39}{subsubsection.10.3.2}
+\contentsline {subsubsection}{\numberline {10.3.3}MaxEnt based formulations of MEP}{41}{subsubsection.10.3.3}
+\contentsline {section}{\numberline {11}MEP principle as an inference principle}{42}{section.11}
+\contentsline {section}{\numberline {12}Summary}{43}{section.12}

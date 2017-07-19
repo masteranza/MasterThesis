@@ -637,8 +637,8 @@ which leads to $P(B_j) = \sum_i P(B_j|A_i)P(A_i)$. Using this we obtain the foll
 
 \begin{equation}
 \begin{aligned}
-  P(A_i|B_j) &= \frac{K_{ij}}{M_i} P(A_i) ( \sum_k \frac{K_{kj}}{M_k}P(A_k) )^{-1}\\
-  &= \frac{K_{ij}}{M_i} ( \sum_{k,m} \frac{K_{kj}}{K_{km}})^{-1}
+  P(A_i|B_j) &= \frac{K_{ij}}{M_i} P(A_i) \left( \sum_k \frac{K_{kj}}{M_k}P(A_k) \right)^{-1}\\
+  &= \frac{K_{ij}}{M_i} \left( \sum_{k,m} \frac{K_{kj}}{K_{km}} \right)^{-1}
 \end{aligned}
 \end{equation}
 
@@ -650,6 +650,7 @@ It is important to emphasize that the conditional probabilities $P(B_j|A_i)$ and
 Now, comparing the probability of forward macroscopic evolution to backward evolution probability one obtains: 
 
 \begin{equation}
+\label{MacrostatesPRatio}
   \frac{P(B_j|A_i)}{P(A_i|B_j)}= e^{\ln{\sum_{k,m} \frac{K_{kj}}{K_{km}}}}.
 \end{equation}
 
@@ -1242,7 +1243,7 @@ The generalized dimensionless "work" became identifiable as $\beta$ times the wo
 
 \begin{equation}
 \label{CFT}
-  \frac{p_1(\Delta W_\tau =W)}{p_2(\Delta W_\tau = -W)} = exp[-\beta (\Delta F - W)]
+  \frac{p_1(\Delta W_\tau =W)}{p_2(\Delta W_\tau = -W)} = exp[\beta (W - \Delta F)]
 \end{equation}
 
 
@@ -1309,21 +1310,55 @@ Although it's appearance is similar to Clausius inequality, for the heat we have
 
 \section{Physics of adaptation and self-replication}
 
-Now we wish to zoom out a bit from our theoretical considerations about the foundations of fluctuation theorems and just take them as a fact in some recent and interesting applications.
+Now we wish to zoom out a bit from our theoretical considerations about the foundations of fluctuation theorems and just take them as a fact in some recent and interesting applications\cite{Perunov:2016hl}\cite{England:2013ed}.
 
 We proceed by switching to a stochastic description in which the equation (\ref{CFT}) takes the form
-
+%Check why ensemble average
 \begin{equation}
-\frac{\pi (j\to i;\tau )}{\pi (i\to j;\tau )}=\left\langle \exp \left(-\beta  \Delta Q_{i\to j}^{\tau }\right)\right\rangle_{i\to j},
+\label{MicroscopicIrreversibility}
+\frac{\pi (i\to j;\tau )}{\pi (j\to i;\tau )}= \langle \exp[\beta  \Delta Q_{i\to j}^{\tau}] \rangle_{i \to j},
 \end{equation}
 
-where $\pi$'s are the probabilities of transition during time $\tau$ either from $ j\to i$ or $ i \to j $ and $Q$ is the dissipated heat:
+where $\pi$'s are the probability distributions of transitions over trajectories, during time $\tau$ either from $ j\to i$ or $ i \to j $ and $Q$ is the dissipated heat.
 
-Note that before we had probability distributions, therefore now 
+Now let's define two macroscopic states denoted by I and II.
+We can then define the probabilities of transitions from macrostate I to macrostate II with the use of conditional probabilities\footnote{Note that we can do that, because we take into account what happens at the microscopic level}:
 
+\begin{equation}
+  \pi (I\to II)=\int_{II} d j \int_I d i\ \pi(i\to j)p(i|I)
+\end{equation}
+and
+\begin{equation}
+  \pi (II\to I)=\int_{I} d i \int_{II} d j\ \pi(j\to i)p(j|II)
+\end{equation}
 
-%One may show that the probabilities for selecting macrostate 2 over macrostate 3 would be exactly the same if we were to use the Fluctuation theorem protoplast.
+Now let's investigate the ratio
 
+\begin{equation}
+\begin{aligned}
+\label{MacrostatesPRatio2}
+  \frac{\pi(I \to II)}{\pi(II \to I)} &= \frac{\int_{II} d j \int_I d i\ \pi(i\to j)p(i|I)}{\int_{I} d i \int_{II} d j\ \pi(j\to i)\frac{p(j|II)}{p(i|I)}p(i|I)}\\
+  &=\frac{\int_{II} d j \int_I d i\ \pi(i\to j) p(i|I)}{\int_{I} d i \int_{II} d j\ \pi(i\to j)\frac{1}{\langle \exp[\beta  \Delta Q_{i\to j}^{\tau}] \rangle_{i \to j} } \frac{p(j|II)}{p(i|I)}p(i|I)}\\
+  &=\langle \langle \exp[\beta  \Delta Q_{i\to j}^{\tau}] \rangle_{i \to j} e^{\ln[\frac{p(i|I)}{p(j|II)}]} \rangle_{I \to II}
+\end{aligned}
+\end{equation}
+
+where in the last step we made use of equation (\ref{MicroscopicIrreversibility}) and  $\langle ... \rangle_{I \to II}$ denotes an average over all paths from some microstatei in the initial ensemble I to some microstate j in the final ensembleII, with each path weighted by its likelihood.
+
+One can compare this equation (\ref{MacrostatesPRatio2}) with equation (\ref{MacrostatesPRatio}) to see the essential difference between those two equations, namely the partial knowledge about microscopic trajectories.
+
+One can also rewrite equation (\ref{MacrostatesPRatio2}) as
+
+\begin{equation}
+\langle \langle \exp[\beta  \Delta Q_{i\to j}^{\tau}] \rangle_{i \to j} e^{\ln[\frac{p(i|I)}{p(j|II)}]} e^{-\ln{\frac{\pi(I \to II)}{\pi(II \to I)}}} \rangle_{I \to II} = 1
+\end{equation}
+and by making use of $e^x \geq 1+x$ two times one gets
+
+\begin{equation}
+  \langle \langle \exp[\beta  \Delta Q_{i\to j}^{\tau}] \rangle_{i \to j} \rangle_{I \to II}+\langle \ln[\frac{p(i|I)}{p(j|II)}]  \rangle_{I \to II}-\langle \ln{\frac{\pi(I \to II)}{\pi(II \to I)}}  \rangle_{I \to II}\geq 0.
+\end{equation}
+
+The second term can now be identified with Shannon entropy
 \section{Search for a unifying principle}
 
 The search for variational or extremization principles in physics has a long history of success. In classical mechanics, one finds the equations of motion from Lagrangian formalisms with the principle of least action. In thermodynamics and statistical physics of equilibrium state the principle of maximum entropy yields the true equilibrium states of a given system. 
@@ -1472,15 +1507,7 @@ where $d(\bm{f})= \ln{p(\bm{f})/p(-\bm{f})}$, $\phi(\bm{f})$ denotes the vector 
   S(\bm{F}, I_0, C) \equiv H_{max} = \ln Z(\lambda, \bm{\alpha}, \mu) - \bm{\lambda} \cdot \bm{F} + \mu(I_0 -1)
 \end{equation}
 
-\section{Statistical measures of complexity}
-\subsection{Kolmogorov complexity}
-
-\subsection{Growth of complexity}
-
-
-[In quantum computation, the notion of complexity refers to the minimum number of gates needed to prepare a certain state from a reference state. This pragmatic notion has now been related to something more exotic: black hole horizons. More precisely, it has been conjectured that the growth of the volume of a black hole interior is dual to the growth in computational complexity. Adam Brown and colleagues revisited this conjecture and restated it, this time relating complexity to the action of a particular type of spacetime region called a Wheeler DeWitt patch. In other words, the computational complexity of a boundary relates to the geometry of a bulk region.
-There are reasons to believe that the original conjecture, and hence the new one, is likely to be correct. Interestingly, the new conjecture may have deeper implications connecting quantum information and quantum gravity. And it also suggests that black holes could reach the physical limits of computation determined by the fundamental constants. In this sense, black holes are the fastest computers in the known universe.]
-
+\section{Summary}
 
 
 %One gets non-gausian distribution!
