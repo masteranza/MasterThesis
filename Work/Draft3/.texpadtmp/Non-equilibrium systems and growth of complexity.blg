@@ -1,6 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: /Users/masteranza/Projects/MasterThesis/Work/Draft2/.texpadtmp/Non-equilibrium systems and growth of complexity.aux
+The top-level auxiliary file: /Users/masteranza/Projects/MasterThesis/Work/Draft3/.texpadtmp/Non-equilibrium systems and growth of complexity.aux
 The style file: ieeetr.bst
 Database file #1: ../Refs.bib
 Warning--I didn't find a database entry for "Shannon:429164"
@@ -10,45 +10,45 @@ Warning--empty year in Doyle:wf
 Warning--empty publisher in DeGroot:2013ue
 Warning--empty journal in Crooks:2008ta
 Warning--empty journal in England:2013ed
-You've used 45 entries,
+You've used 46 entries,
             1876 wiz_defined-function locations,
-            792 strings with 10192 characters,
-and the built_in function-call counts, 11594 in all, are:
-= -- 1254
-> -- 295
+            798 strings with 10311 characters,
+and the built_in function-call counts, 11978 in all, are:
+= -- 1301
+> -- 299
 < -- 0
-+ -- 122
-- -- 77
-* -- 767
-:= -- 1557
-add.period$ -- 51
-call.type$ -- 45
-change.case$ -- 38
++ -- 124
+- -- 78
+* -- 790
+:= -- 1601
+add.period$ -- 52
+call.type$ -- 46
+change.case$ -- 39
 chr.to.int$ -- 0
-cite$ -- 50
-duplicate$ -- 631
-empty$ -- 1107
-format.name$ -- 77
-if$ -- 2867
+cite$ -- 51
+duplicate$ -- 653
+empty$ -- 1140
+format.name$ -- 78
+if$ -- 2965
 int.to.chr$ -- 0
-int.to.str$ -- 45
-missing$ -- 50
-newline$ -- 145
-num.names$ -- 45
-pop$ -- 118
+int.to.str$ -- 46
+missing$ -- 51
+newline$ -- 148
+num.names$ -- 46
+pop$ -- 119
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 480
+skip$ -- 504
 stack$ -- 0
-substring$ -- 877
-swap$ -- 291
+substring$ -- 921
+swap$ -- 306
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 5
-while$ -- 122
-width$ -- 47
-write$ -- 430
+while$ -- 126
+width$ -- 48
+write$ -- 440
 (There were 7 warnings)

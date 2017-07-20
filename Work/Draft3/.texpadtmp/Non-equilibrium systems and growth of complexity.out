@@ -24,24 +24,25 @@
 \BOOKMARK [3][-]{subsubsection.7.1.1}{Thermostated, but time reversible systems}{subsection.7.1}% 24
 \BOOKMARK [3][-]{subsubsection.7.1.2}{Time reversibility}{subsection.7.1}% 25
 \BOOKMARK [3][-]{subsubsection.7.1.3}{Liouville equation}{subsection.7.1}% 26
-\BOOKMARK [2][-]{subsection.7.2}{Dissipation}{section.7}% 27
-\BOOKMARK [2][-]{subsection.7.3}{Evans-Searles Fluctuation Theorem}{section.7}% 28
-\BOOKMARK [3][-]{subsubsection.7.3.1}{Instantaneous dissipation function}{subsection.7.3}% 29
-\BOOKMARK [2][-]{subsection.7.4}{Dissipation Theorem}{section.7}% 30
-\BOOKMARK [3][-]{subsubsection.7.4.1}{Mixing properties and their relations}{subsection.7.4}% 31
-\BOOKMARK [2][-]{subsection.7.5}{Relaxation}{section.7}% 32
-\BOOKMARK [3][-]{subsubsection.7.5.1}{Relaxation Theorem}{subsection.7.5}% 33
-\BOOKMARK [2][-]{subsection.7.6}{Driven systems}{section.7}% 34
-\BOOKMARK [2][-]{subsection.7.7}{Non-equilibrium Steady States}{section.7}% 35
-\BOOKMARK [1][-]{section.8}{Generalized Crooks fluctuation theorem}{}% 36
-\BOOKMARK [2][-]{subsection.8.1}{Jarzynski Equality}{section.8}% 37
-\BOOKMARK [1][-]{section.9}{Application to self-replication and adaptation}{}% 38
-\BOOKMARK [2][-]{subsection.9.1}{Self-replication}{section.9}% 39
-\BOOKMARK [1][-]{section.10}{Search for a unifying principle}{}% 40
-\BOOKMARK [2][-]{subsection.10.1}{Rayleigh's insight}{section.10}% 41
-\BOOKMARK [2][-]{subsection.10.2}{MEP principle}{section.10}% 42
-\BOOKMARK [3][-]{subsubsection.10.2.1}{Relation to MinEP}{subsection.10.2}% 43
-\BOOKMARK [3][-]{subsubsection.10.2.2}{Extrema of the Dissipation Function and MEP}{subsection.10.2}% 44
-\BOOKMARK [3][-]{subsubsection.10.2.3}{MaxEnt based formulations of MEP}{subsection.10.2}% 45
-\BOOKMARK [2][-]{subsection.10.3}{MEP principle as an inference principle}{section.10}% 46
-\BOOKMARK [1][-]{section.11}{Summary}{}% 47
+\BOOKMARK [3][-]{subsubsection.7.1.4}{Dissipation}{subsection.7.1}% 27
+\BOOKMARK [3][-]{subsubsection.7.1.5}{Evans-Searles Fluctuation Theorem}{subsection.7.1}% 28
+\BOOKMARK [3][-]{subsubsection.7.1.6}{Instantaneous dissipation function}{subsection.7.1}% 29
+\BOOKMARK [3][-]{subsubsection.7.1.7}{Dissipation Theorem}{subsection.7.1}% 30
+\BOOKMARK [3][-]{subsubsection.7.1.8}{Mixing properties and their relations}{subsection.7.1}% 31
+\BOOKMARK [3][-]{subsubsection.7.1.9}{Relaxation}{subsection.7.1}% 32
+\BOOKMARK [3][-]{subsubsection.7.1.10}{Relaxation Theorem}{subsection.7.1}% 33
+\BOOKMARK [3][-]{subsubsection.7.1.11}{Driven systems}{subsection.7.1}% 34
+\BOOKMARK [3][-]{subsubsection.7.1.12}{Non-equilibrium Steady States}{subsection.7.1}% 35
+\BOOKMARK [2][-]{subsection.7.2}{Generalized Crooks fluctuation theorem}{section.7}% 36
+\BOOKMARK [2][-]{subsection.7.3}{Jarzynski Equality}{section.7}% 37
+\BOOKMARK [1][-]{section.8}{Application to self-replication and adaptation}{}% 38
+\BOOKMARK [2][-]{subsection.8.1}{Self-replication}{section.8}% 39
+\BOOKMARK [2][-]{subsection.8.2}{Energy landscape traversal}{section.8}% 40
+\BOOKMARK [1][-]{section.9}{Search for a unifying principle}{}% 41
+\BOOKMARK [2][-]{subsection.9.1}{Rayleigh's insight}{section.9}% 42
+\BOOKMARK [2][-]{subsection.9.2}{MEP principle}{section.9}% 43
+\BOOKMARK [3][-]{subsubsection.9.2.1}{Relation to MinEP}{subsection.9.2}% 44
+\BOOKMARK [3][-]{subsubsection.9.2.2}{Extrema of the Dissipation Function and MEP}{subsection.9.2}% 45
+\BOOKMARK [3][-]{subsubsection.9.2.3}{MaxEnt based formulations of MEP}{subsection.9.2}% 46
+\BOOKMARK [2][-]{subsection.9.3}{MEP principle as an inference principle}{section.9}% 47
+\BOOKMARK [1][-]{section.10}{Summary}{}% 48
