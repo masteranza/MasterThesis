@@ -1,7 +1,7 @@
 \contentsline {section}{\numberline {1}Introduction}{3}{section.1}
 \contentsline {section}{\numberline {2}Historical outline}{4}{section.2}
 \contentsline {subsection}{\numberline {2.1}The founding fathers of thermodynamics}{4}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}The information era and Schr\IeC {\"o}dingers influence on physics}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.2}The information era and Schr\IeC {\"o}dinger's influence on physics}{5}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}The resolution of the Loschmidt paradox }{6}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Different approaches towards irreversibility and non-equilibrium}{7}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Jaynes formulation of statistical mechanics (MaxEnt)}{8}{subsection.2.5}
@@ -49,12 +49,12 @@
 \contentsline {subsection}{\numberline {7.3}Jarzynski Equality}{35}{subsection.7.3}
 \contentsline {section}{\numberline {8}Application to self-replication and adaptation}{36}{section.8}
 \contentsline {subsection}{\numberline {8.1}Self-replication}{38}{subsection.8.1}
-\contentsline {subsection}{\numberline {8.2}Energy landscape traversal}{38}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.2}Traversal of energy landscape }{38}{subsection.8.2}
 \contentsline {section}{\numberline {9}Search for a unifying principle}{40}{section.9}
 \contentsline {subsection}{\numberline {9.1}Rayleigh's insight}{40}{subsection.9.1}
 \contentsline {subsection}{\numberline {9.2}MEP principle}{41}{subsection.9.2}
 \contentsline {subsubsection}{\numberline {9.2.1}Relation to MinEP}{41}{subsubsection.9.2.1}
-\contentsline {subsubsection}{\numberline {9.2.2}Extrema of the Dissipation Function and MEP}{42}{subsubsection.9.2.2}
+\contentsline {subsubsection}{\numberline {9.2.2}Extrema of the Dissipation Function and MEP}{41}{subsubsection.9.2.2}
 \contentsline {subsubsection}{\numberline {9.2.3}MaxEnt based formulations of MEP}{43}{subsubsection.9.2.3}
 \contentsline {subsection}{\numberline {9.3}MEP principle as an inference principle}{44}{subsection.9.3}
 \contentsline {section}{\numberline {10}Summary}{45}{section.10}

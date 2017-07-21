@@ -5,50 +5,49 @@ The style file: ieeetr.bst
 Database file #1: ../Refs.bib
 Warning--I didn't find a database entry for "Shannon:429164"
 Warning--I didn't find a database entry for "KIEFER2005"
-Warning--empty publisher in Evans:2016tq
 Warning--empty year in Doyle:wf
 Warning--empty publisher in DeGroot:2013ue
 Warning--empty journal in Crooks:2008ta
 Warning--empty journal in England:2013ed
-You've used 46 entries,
+You've used 54 entries,
             1876 wiz_defined-function locations,
-            798 strings with 10311 characters,
-and the built_in function-call counts, 11978 in all, are:
-= -- 1301
-> -- 299
+            856 strings with 11690 characters,
+and the built_in function-call counts, 14415 in all, are:
+= -- 1573
+> -- 361
 < -- 0
-+ -- 124
-- -- 78
-* -- 790
-:= -- 1601
-add.period$ -- 52
-call.type$ -- 46
-change.case$ -- 39
++ -- 149
+- -- 95
+* -- 961
+:= -- 1925
+add.period$ -- 61
+call.type$ -- 54
+change.case$ -- 46
 chr.to.int$ -- 0
-cite$ -- 51
-duplicate$ -- 653
-empty$ -- 1140
-format.name$ -- 78
-if$ -- 2965
+cite$ -- 58
+duplicate$ -- 776
+empty$ -- 1361
+format.name$ -- 95
+if$ -- 3567
 int.to.chr$ -- 0
-int.to.str$ -- 46
-missing$ -- 51
-newline$ -- 148
-num.names$ -- 46
-pop$ -- 119
+int.to.str$ -- 54
+missing$ -- 60
+newline$ -- 173
+num.names$ -- 54
+pop$ -- 130
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 504
+skip$ -- 609
 stack$ -- 0
-substring$ -- 921
-swap$ -- 306
+substring$ -- 1145
+swap$ -- 370
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 5
-while$ -- 126
-width$ -- 48
-write$ -- 440
-(There were 7 warnings)
+warning$ -- 4
+while$ -- 155
+width$ -- 56
+write$ -- 522
+(There were 6 warnings)

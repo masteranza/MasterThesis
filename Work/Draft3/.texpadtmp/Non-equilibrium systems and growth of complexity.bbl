@@ -3,9 +3,11 @@
 \bibitem{Gibbs:1928tw}
 J.~W. Gibbs, ``{The collected works of J. Willard Gibbs},'' 1928.
 
-\bibitem{Evans:2016tq}
-D.~J. Evans, {\em {Fundamentals of Classical Statistical Thermodynamics}}.
-\newblock Apr. 2016.
+\bibitem{Evans:2241458}
+D.~J. Evans, D.~J. Searles, and S.~R. Williams, {\em {Fundamentals of classical
+  statistical thermodynamics: dissipation, relaxation, and fluctuation
+  theorems}}.
+\newblock Berlin: John Wiley {\&} Sons, 2016.
 
 \bibitem{Wolfram:552851}
 S.~Wolfram, {\em {A new kind of science}}.
@@ -64,12 +66,6 @@ C.~H. Bennett, ``{Logical reversibility of computation},'' {\em IBM journal of
 E.~T. Jaynes, ``{Gibbs vs Boltzmann Entropies},'' {\em American Journal of
   Physics}, vol.~33, no.~5, pp.~391--398, 1965.
 
-\bibitem{Evans:2241458}
-D.~J. Evans, D.~J. Searles, and S.~R. Williams, {\em {Fundamentals of classical
-  statistical thermodynamics: dissipation, relaxation, and fluctuation
-  theorems}}.
-\newblock Berlin: John Wiley {\&} Sons, 2016.
-
 \bibitem{Evans:2002gg}
 D.~J. Evans and L.~Rondoni, ``{Comments on the Entropy of Nonequilibrium Steady
   States},'' {\em Journal of Statistical Physics}, vol.~109, no.~3/4,
@@ -101,6 +97,35 @@ G.~Nicolis and I.~Prigogine, ``{Irreversible processes at nonequilibrium steady
   states and Lyapounov functions},'' {\em Proceedings of the National Academy
   of Sciences}, vol.~76, no.~12, pp.~6060--6061, 1979.
 
+\bibitem{Collin:2005fx}
+D.~Collin, F.~Ritort, C.~Jarzynski, S.~B. Smith, I.~Tinoco, and C.~Bustamante,
+  ``{Verification of the Crooks fluctuation theorem and recovery of RNA folding
+  free energies},'' {\em arXiv.org}, pp.~231--234, Dec. 2005.
+
+\bibitem{Carberry:2007be}
+D.~M. Carberry, M.~Baker, and G.~M. Wang, ``{An optical trap experiment to
+  demonstrate fluctuation theorems in viscoelastic media},'' {\em Journal of
+  Optics A: {\ldots}}, vol.~9, no.~8, pp.~S204--S214, 2007.
+
+\bibitem{Evans:1993bl}
+D.~J. Evans, E.~G.~D. Cohen, and G.~P. Morriss, ``{Probability of second law
+  violations in shearing steady states},'' {\em Physical Review Letters},
+  vol.~71, pp.~2401--2404, Oct. 1993.
+
+\bibitem{Ciliberto:2010jg}
+S.~Joubaud, N.~B. Garnier, and S.~Ciliberto, ``{Fluctuation theorems for
+  harmonic oscillators},'' {\em Journal of Statistical Mechanics: Theory and
+  Experiment}, vol.~2007, pp.~P09018--P09018, Sept. 2007.
+
+\bibitem{Seifert:2005it}
+U.~Seifert, ``{Fluctuation theorem for a single enzym or molecular motor},''
+  {\em EPL (Europhysics Letters)}, vol.~70, no.~1, pp.~36--41, 2005.
+
+\bibitem{Monnai:2005ke}
+T.~Monnai, ``{Unified treatment of the quantum fluctuation theorem and the
+  Jarzynski equality in terms of microscopic reversibility},'' {\em Physical
+  Review E}, vol.~72, pp.~19--4, Aug. 2005.
+
 \bibitem{Kurchan:1998}
 J.~Kurchan, ``{Fluctuation theorem for stochastic dynamics},'' {\em Journal of
   Physics A: Mathematical and General}, vol.~31, pp.~3719--3729, Apr. 1998.
@@ -127,11 +152,6 @@ G.~M. Wang, E.~M. Sevick, E.~Mittag, D.~J. Searles, and D.~J. Evans,
   ``{Experimental Demonstration of Violations of the Second Law of
   Thermodynamics for Small Systems and Short Time Scales},'' {\em Physical
   Review Letters}, vol.~89, pp.~128--4, July 2002.
-
-\bibitem{Carberry:2007be}
-D.~M. Carberry, M.~Baker, and G.~M. Wang, ``{An optical trap experiment to
-  demonstrate fluctuation theorems in viscoelastic media},'' {\em Journal of
-  Optics A: {\ldots}}, vol.~9, no.~8, pp.~S204--S214, 2007.
 
 \bibitem{Yamada:1967uo}
 T.~Yamada and K.~Kawasaki, ``{Nonlinear effects in the shear viscosity of
@@ -163,6 +183,24 @@ R.~C. Dewar, C.~H. Lineweaver, R.~K. Niven, and K.~Regenauer-Lieb, {\em {Beyond
   the Second Law: An Overview}}.
 \newblock Understanding Complex Systems, Berlin, Heidelberg: Springer Berlin
   Heidelberg, 2014.
+
+\bibitem{Kondepudi:1141550}
+D.~Kondepudi, {\em {Introduction to modern thermodynamics}}.
+\newblock Chichester: Wiley, 2008.
+
+\bibitem{Grandy:1135724}
+W.~T. Grandy, {\em {Entropy and the Time Evolution of Macroscopic Systems}}.
+\newblock International series of monographs on physics, Oxford: Oxford Univ.
+  Press, 2008.
+
+\bibitem{Rayleigh:1878hb}
+L.~Rayleigh, ``{On The Instability Of Jets},'' {\em Proceedings of the London
+  Mathematical Society}, vol.~s1-10, pp.~4--13, Nov. 1878.
+
+\bibitem{Rayleigh:1916fa}
+L.~Rayleigh, ``{LIX.On convection currents in a horizontal layer of fluid, when
+  the higher temperature is on the under side},'' {\em Philosophical Magazine
+  Series 6}, vol.~32, no.~192, pp.~529--546, 1916.
 
 \bibitem{Paltridge:2007jf}
 G.~W. Paltridge, G.~D. Farquhar, and M.~Cuntz, ``{Maximum entropy production,
