@@ -297,12 +297,14 @@ An approached pioneered by Onsager, for the entropy for open systems, is an exte
 \end{equation}
 
 Where $d_iS$ is connected with entropy produced within the system and $d_eS$ is the entropy transferred across the boundaries of the system.
+%Where is entropy production coming from?
+%Answer: Entropy production is not dependent on coarse-graining \cite{Gilbert:1999ff} \cite{Goldstein:1998ip}
 
 One then develops an explicit expression for entropy production, assuming that even outside equilibrium (but near) entropy depends only on the same
 variables as at equilibrium ("local" equilibrium)
 
 \begin{equation}
-  	P=\frac{d_iS}{dt}=\sum _{\rho } J_{\rho }X_{\rho }\geq 0
+  	\sigma=\frac{d_iS}{dt}=\sum _{\rho } J_{\rho }X_{\rho }\geq 0
 \end{equation}
 
 where \(J_{\rho }\) are the rates of the various irreversible processes involved (chemical reactions, heat flow, diffusion$\ldots $) and \(X_{\rho
@@ -483,6 +485,7 @@ where by approximating $f X$ to be small we obtained a special case of Green-Kub
   \chi_{YX}^T = \langle Y X \rangle.
 \end{equation}
 
+As a note, let's mention a famous objection to the Kubo relations poised by van Kampen about the plausibility of taking the linear terms first and then the ensemble average (in general one should do the opposite), however one should remember that the microscopic trajectories of particles affected by the perturbing fields experience a large number of collisions in exceedingly small times ($\approx 10^{-9}s$ for low density gases) which makes the approximation possible\cite{Dorfman:ozm67-zD}.
 \subsection{Steady states [in progress]}
 The most basic of non-equilibrium conditions, the steady state is already difficult to describe as many of the basic state functions (including temperature and entropy), are undefined for far from equilibrium states and the distribution function of a steady state is fractal and non-analytic. %TODO: Cite Evans?  
 One however can impose a formal condition of vanishing expectation value of $\partial \rho / \partial t$ over the probability density function $p(\rho)$ and non-vanishing expectation value of fluxes vector $\bm{f}$ over the probability density function $p(\bm{f})$: %TODO:Would need to cite Dewar on this, the second def seems sketchy...
@@ -689,10 +692,10 @@ There exist many approaches for deriving fluctuation theorems, which can be roug
 In the deterministic framework of Evans, irreversibility finds its origins in non-linear terms which provide a contraction of phase space, in contrast to the more direct irreversibility of the equations of motion found in stochastic descriptions which also has the merit of fewer technical difficulties \cite{Crooks:2008ta}. 
 
 Those technical difficulties have their source in ergodicity. If the aim of ergodic theory is to understand how randomness arises from deterministic constituents, once stochasticity is added ‘by hand’ the question is artificially bypassed.
-In fact the Gallavotti-Cohen theorem, which is a stationary fluctuation theorem for systems in contact with a deterministic Gaussian thermostat, breaks down in some systems and in most cases when the forcing is very strong.
-The Fluctuation Relation in the deterministic case holds only if the system has certain ‘ergodic’ properties\cite{Kurchan:2009ub}.
+In fact the Gallavotti-Cohen theorem, which is a stationary fluctuation theorem for systems in contact with a deterministic Gaussian thermostat, breaks down in some systems and in most cases when the forcing is very strong. The Fluctuation Relation in the deterministic case holds only if the system has certain ‘ergodic’ properties\cite{Kurchan:2009ub}. 
+One should however remember that the assumption that stochastic processes retains it's stochastic character at arbitrary small temporal and spatial scales leads to a conclusion that the rate of production of entropy is infinite at the limit of infinite resolution \cite{Dorfman:ozm67-zD}.
 
-Despite this difficulties the deterministic approach of Searles and Evans will be described for reasons of generality, for aesthetic reasons also because it distances itself from the notion of entropy.
+Despite this difficulties the deterministic approach of Searles and Evans will be described for reasons of generality, aesthetics and also because it distances itself from the notion of entropy.
 
 \subsection{The deterministic approach}
 
@@ -707,8 +710,14 @@ The first time-reversible, deterministic thermostats and ergostats (homogeneous 
 The construction of thermostated time reversible systems is usually done inserting some time-reversible, but non-Hamiltonian terms into part of the equations of motion defined as the surroundings. Surroundings in first approximation are assumed to stay far from the system of interest and should not affect the system under consideration.
 The work done on a system, should be on average, converted into heat, which is conducted through the system of interest and eventually removed by the non-Hamiltonian terms residing in the remote boundaries.
 
-The construction of deterministic thermostats is usually accomplished by including a term $- S_i \alpha \bm{p}_i $ to the EOM. 
-This term serves as a mean by which we can add or remove heat from the particles in the reservoir region ($S_i =1$ for reservoir region and $S_i = 0$ outside this region) through introduction of an extra degree of freedom described by $\alpha$.
+The form of the mentioned time-reversible term is usually of the form $- S_i \alpha \bm{p}_i $ where $\alpha $ is determined by the thermostatting condition. It serves as a mean by which we can add or remove heat from the particles in the reservoir region ($S_i =1$ for reservoir region and $S_i = 0$ outside this region) through introduction of an extra degree of freedom described by $\alpha$.
+
+In case of isolated hyperbolic systems interacting with a thermostat the phase space is usually contracted to an attractor(the sum of Lyapunov exponents is less then zero).
+This stays in contrast with time-reversibility of the thermostatted equations of motion.
+
+ 
+The attractor can be described by a smooth measure in the unstable directions and a fractal measure in the stable directions.
+This kind of measures are known as SRB (Sinai-Ruelle-Bowen) measures. 
 
 \subsubsection{Time reversibility}
 Let's consider an isolated Hamiltonian system of interacting particles.
@@ -1012,7 +1021,7 @@ after substitution $\bm{\Gamma} \to S^{-t}\bm{\Gamma}$ and change of variables w
 \label{distributionPropagator}
     f(\bm{\Gamma};t)=f(\bm{\Gamma};0)\exp[\int_0^t ds\ \bm{\Omega}(S^{-s} \bm{\Gamma})],
 \end{equation}
-\todo{This is true to no field or a constant field - Beyond the second law page 37}
+\todo{This is true at no field or a constant field - Beyond the second law page 37}
 which states that the forward in time propagator for the N-particle distribution function is given by the exponential time integral of the dissipative function. Important thing to note that this equation applies to systems with no field or a constant field, the case for time dependent field was presented in \cite{Williams:2008ft}.
 
 An immediate conclusion one can draw from this is that for all non-equilibrium deterministic systems the N-particle distribution function has explicit time dependence: $f_{ne}(\bm{\Gamma};t)$ and cannot be written in a closed, time-stationary form - contrary to statements found in Jaynes (1980)
@@ -1150,9 +1159,9 @@ The difference at high fields is because the temperature that appears in the dis
 
 \subsubsection{Non-equilibrium Steady States}
 
-From equation (\ref{StationaryStateDef}) we see that stationarity of a system implies that it's physical properties do not vary in time. This can be understood in the sense of all times or sufficiently late times, however stationarity does not imply that the distribution function is stationary (In fact we saw that in a non-equilibrium stationary state the Gibbs entropy diverges at a constant rate toward negative infinity).
+From equation (\ref{StationaryStateDef}) we see that stationarity of a system implies that it's physical properties do not vary in time. This can be understood in the sense of all times or sufficiently late times, however stationarity does not imply that the distribution function is stationary.
 %TODO: need to add reference
-The time independent values of physical properties, can however, be dependent on the initial phase $\bm{\Gamma}$, if it is not we call it peNESS (physically ergodic non-equilibrium steady state):
+The time independent values of physical properties, can however, be dependent on the initial phase $\bm{\Gamma}$, if they are not we call it peNESS (physically ergodic non-equilibrium steady state):
 
 \begin{equation}
       \lim_{t \to \infty} \langle A(t) \rangle_0 = \lim_{t \to \infty} \frac{1}{t} \int_0^t ds\ A(S^s \bm{\Gamma})
