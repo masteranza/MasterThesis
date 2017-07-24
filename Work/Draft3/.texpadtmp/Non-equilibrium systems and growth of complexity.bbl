@@ -9,9 +9,25 @@ D.~J. Evans, D.~J. Searles, and S.~R. Williams, {\em {Fundamentals of classical
   theorems}}.
 \newblock Berlin: John Wiley {\&} Sons, 2016.
 
-\bibitem{Wolfram:552851}
-S.~Wolfram, {\em {A new kind of science}}.
-\newblock Urbana-Champaign, IL: Wolfram Media, 2002.
+\bibitem{Einstein:eEYNf903}
+A.~Einstein, ``{Investigations on the Theory of Brownian Motion.},'' 1956.
+
+\bibitem{Onsager:zgWBDrcO}
+L.~Onsager, ``{Reciprocal relations in irreversible processes. I.},'' {\em
+  Physical review}, vol.~37, no.~4, pp.~405--426, 1931.
+
+\bibitem{Onsager:sJs1Kffm}
+L.~Onsager, ``{Reciprocal Relations in Irreversible Processes. II.},'' {\em
+  Phys. Rev.}, vol.~38, pp.~2265--2279, Dec. 1931.
+
+\bibitem{Kubo:1957cl}
+R.~Kubo, ``{Statistical-Mechanical Theory of Irreversible Processes. I. General
+  Theory and Simple Applications to Magnetic and Conduction Problems},'' {\em
+  Journal of the Physical Society of Japan}, vol.~12, pp.~570--586, June 1957.
+
+\bibitem{Shannon:429164}
+C.~E. Shannon, ``{A mathematical theory of communication},'' {\em Bell Sys.
+  Tech. J.}, vol.~27, pp.~623--656, 1948.
 
 \bibitem{Schwabl:2002}
 F.~Schwabl, {\em {Statistical mechanics}}.
@@ -28,6 +44,10 @@ R.~O. Doyle, ``{The Origin of Irreversibility},'' {\em Information
 \bibitem{Layzer:1970dx}
 D.~Layzer, ``{Cosmic evolution and thermodynamic irreversibility},'' {\em Pure
   and Applied Chemistry}, vol.~22, no.~3-4, 1970.
+
+\bibitem{Wolfram:552851}
+S.~Wolfram, {\em {A new kind of science}}.
+\newblock Urbana-Champaign, IL: Wolfram Media, 2002.
 
 \bibitem{Rovelli:2015tv}
 C.~Rovelli, ``{Is Time's Arrow Perspectival?},'' {\em arXiv.org}, May 2015.
@@ -53,6 +73,10 @@ J.~Bricmont, ``{Science of chaos of chaos in science?},'' {\em Annals of the
 J.~G. Fox, ``{Evidence Against Emmision Theories},'' {\em American Journal of
   Physics}, vol.~33, pp.~1--17, Jan. 1965.
 
+\bibitem{KIEFER2005}
+C.~Kiefer, ``{Quantum cosmology and the arrow of time},'' {\em Brazilian
+  Journal of Physics}, vol.~35, pp.~296--299, June 2005.
+
 \bibitem{Barbour:2014hq}
 J.~Barbour, T.~Koslowski, and F.~Mercati, ``{Identification of a Gravitational
   Arrow of Time},'' {\em Physical Review Letters}, vol.~113, pp.~181101--5,
@@ -61,6 +85,15 @@ J.~Barbour, T.~Koslowski, and F.~Mercati, ``{Identification of a Gravitational
 \bibitem{Bennett:1973ko}
 C.~H. Bennett, ``{Logical reversibility of computation},'' {\em IBM journal of
   research and development}, vol.~17, no.~6, pp.~525--532, 1973.
+
+\bibitem{Gallavotti:1995gy}
+G.~Gallavotti and E.~G.~D. Cohen, ``{Dynamical Ensembles in Nonequilibrium
+  Statistical Mechanics},'' {\em Physical Review Letters}, vol.~74,
+  pp.~2694--2697, Apr. 1995.
+
+\bibitem{Crooks:2008ta}
+G.~Crooks, ``{Entropy production fluctuation theorem and the nonequilibrium
+  work relation for free energy differences},'' pp.~1--7, Feb. 2008.
 
 \bibitem{Jaynes:1965gg}
 E.~T. Jaynes, ``{Gibbs vs Boltzmann Entropies},'' {\em American Journal of
@@ -89,18 +122,9 @@ S.~Goldstein, J.~L. Lebowitz, and Y.~Sinai, ``{Remark on the (Non)convergence
 H.~B.~G. Casimir, ``{On Onsager's Principle of Microscopic Reversibility},''
   {\em Reviews of Modern Physics}, vol.~17, pp.~343--350, Apr. 1945.
 
-\bibitem{Onsager:zgWBDrcO}
-L.~Onsager, ``{Reciprocal relations in irreversible processes. I.},'' {\em
-  Physical review}, vol.~37, no.~4, pp.~405--426, 1931.
-
 \bibitem{Kittel:817295}
 C.~Kittel, {\em {Introduction to Solid State Physics; 8th ed.}}
 \newblock Hoboken, NJ: Wiley, 2005.
-
-\bibitem{Kubo:1957cl}
-R.~Kubo, ``{Statistical-Mechanical Theory of Irreversible Processes. I. General
-  Theory and Simple Applications to Magnetic and Conduction Problems},'' {\em
-  Journal of the Physical Society of Japan}, vol.~12, pp.~570--586, June 1957.
 
 \bibitem{Dewar:2014ek}
 R.~C. Dewar, C.~H. Lineweaver, R.~K. Niven, and K.~Regenauer-Lieb, {\em {Beyond
@@ -150,10 +174,6 @@ D.~J. Evans and L.~Rondoni, ``{Comments on the Entropy of Nonequilibrium Steady
 \bibitem{Kurchan:1998}
 J.~Kurchan, ``{Fluctuation theorem for stochastic dynamics},'' {\em Journal of
   Physics A: Mathematical and General}, vol.~31, pp.~3719--3729, Apr. 1998.
-
-\bibitem{Crooks:2008ta}
-G.~Crooks, ``{Entropy production fluctuation theorem and the nonequilibrium
-  work relation for free energy differences},'' pp.~1--7, Feb. 2008.
 
 \bibitem{Kurchan:2009ub}
 J.~Kurchan, ``{Six out of equilibrium lectures},'' {\em arXiv.org}, Jan. 2009.

@@ -3,52 +3,50 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: /Users/masteranza/Projects/MasterThesis/Work/Draft3/.texpadtmp/Non-equilibrium systems and growth of complexity.aux
 The style file: ieeetr.bst
 Database file #1: ../Refs.bib
-Warning--I didn't find a database entry for "Shannon:429164"
-Warning--I didn't find a database entry for "KIEFER2005"
 Warning--empty year in Doyle:wf
-Warning--empty publisher in DeGroot:2013ue
 Warning--empty journal in Crooks:2008ta
+Warning--empty publisher in DeGroot:2013ue
 Warning--empty journal in England:2013ed
 Warning--empty year in Lorenz:J80tzZkl
-You've used 62 entries,
+You've used 67 entries,
             1876 wiz_defined-function locations,
-            907 strings with 13073 characters,
-and the built_in function-call counts, 16596 in all, are:
-= -- 1814
-> -- 411
+            935 strings with 13596 characters,
+and the built_in function-call counts, 18027 in all, are:
+= -- 1979
+> -- 435
 < -- 0
-+ -- 170
-- -- 108
-* -- 1112
-:= -- 2216
-add.period$ -- 70
-call.type$ -- 62
-change.case$ -- 53
++ -- 181
+- -- 114
+* -- 1204
+:= -- 2398
+add.period$ -- 75
+call.type$ -- 67
+change.case$ -- 58
 chr.to.int$ -- 0
-cite$ -- 67
-duplicate$ -- 889
-empty$ -- 1568
-format.name$ -- 108
-if$ -- 4105
+cite$ -- 72
+duplicate$ -- 963
+empty$ -- 1702
+format.name$ -- 114
+if$ -- 4462
 int.to.chr$ -- 0
-int.to.str$ -- 62
-missing$ -- 69
-newline$ -- 198
-num.names$ -- 62
-pop$ -- 147
+int.to.str$ -- 67
+missing$ -- 73
+newline$ -- 213
+num.names$ -- 67
+pop$ -- 157
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 698
+skip$ -- 766
 stack$ -- 0
-substring$ -- 1332
-swap$ -- 424
+substring$ -- 1476
+swap$ -- 464
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 5
-while$ -- 181
-width$ -- 64
-write$ -- 600
-(There were 7 warnings)
+while$ -- 198
+width$ -- 69
+write$ -- 647
+(There were 5 warnings)

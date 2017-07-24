@@ -95,8 +95,16 @@ It was argued that if a single particle visits every possible piece of the phase
 
 Gibbs also introduced another definition of entropy, which, as noted by him \cite{Gibbs:1928tw} would only increase in a closed system if it was measured in a "coarse-grained" way in which nearby states were not distinguished. In literature one can sometimes find statements \cite{Evans:2241458} that this property of Gibbs entropy is problematic, but in fact the resolution of this paradox in very similar to the resolution of the Loschmidt paradox.
 
-During the beginning of the XX century, the development of thermodynamics was largely overshadowed by quantum theory and little fundamental work was done on it. 
-Nevertheless, the Second Law had become to be regarded as a fundamental principle, whose foundations should be questioned only as a curiosity\cite{Wolfram:552851}.
+During the beginning of the XX century, just before 
+the development of quantum theory which largely overshadowed the development of thermodynamics, Albert Einstein published his paper on Brownian motion\cite{Einstein:eEYNf903}(on par with Marian Smoluchowski). It connected the viscous friction coefficient with the diffusion constant and started a very successful line of investigations, followed by Langevin and the use of stochastic methods.
+
+Then during 1930s Lars Onsager published very influential papers\cite{Onsager:zgWBDrcO, Onsager:sJs1Kffm}, which may be considered as the first our-reach towards non-equilibrium phenomena.
+Besides refining the understanding of transport coefficients and their cross relations it hinted on the validity of the so-called Onsager hypothesis or "chaos hypothesis", a non-equilibrium parallel to the Boltzmann ergodic hypothesis.
+
+In the 1950s the theory was further extended by Melville Green and Ryogo Kubo in what is now known as Green-Kubo relations\cite{Kubo:1957cl}, a family of surprising relations connecting transport coefficients to the correlation functions of observables - those will be presented in further sections. 
+
+Meanwhile, thanks to the development of numerical methods and early computers the properties of various mechanical models were investigated.
+This ultimately led to the discovery of chaos (chaotic behaviour of systems) and development of information theory.
 
 \subsection{The information era and Schrödinger's influence on physics}
 
@@ -147,7 +155,7 @@ According to John Fox, who was a later commentator of the debate, based on the l
 
 Now to see why irreversibility cannot be driven by quantum mechanics one just needs to notice that all quantum phenomena are controlled by Planck's constant, while the manifestations of the irreversibility - such as friction - are clearly macroscopically large. %It's not true completely in case of light...
 
-A different school of thought \cite{KIEFER2005}\cite{Barbour:2014hq}, %TODO:[promoted by Roger Penrose] Find Penrose on gravity/time arrow
+A different school of thought \cite{KIEFER2005, Barbour:2014hq}, %TODO:[promoted by Roger Penrose] Find Penrose on gravity/time arrow
 claims that gravity is the source of irreversibility. However, it is a well known fact that in the absence of gravitational fields friction and irreversibility occurs as well. Beside that, similarly to the quantum case the Newton's constant is to small to have such an effect. It is demonstrable that the magnitude of friction is controlled by atomic physics and electromagnetism and therefore is a \textit{local} effect. 
 
 One of other hypothesised causes of irreversibility is CP violation. %TODO: CP citations
@@ -187,12 +195,9 @@ The practice of MaxEnt approach can also make frequent use of the formula for ma
 
 with respect to $p_i$ (new a posteriori distribution). $H(p||q)$ can be interpreted as the information gained by using $p_i$ instead of $q_i$.
 
-\subsection{Physics of computation}
 
 After Shannon and Jaynes established the links between information theory, statistical mechanics and thermodynamics, there was a growing need to include the concept of computation as well. Following some preliminary statements by John von Neumann, it was thought that any computational process must necessarily increase entropy.
-However in 1970s, Charles Bennett pointed out that it is not the case\cite{Bennett:1973ko}, laying some early groundwork for relating computational and thermodynamic ideas. This topic however will not be developed in this work.
-
-%TODO: Expand on Bennett
+However in 1970s, Charles Bennett pointed out that it is not the case\cite{Bennett:1973ko}, laying some early groundwork for relating computational and thermodynamic ideas. This interesting topic however will not be developed in this work. Instead we will focus on a more recent line of work, considering non-equilibrium systems with reversible Nosé-Hoover thermostats; initiated by Giovanni Gallavotti and Ezechiel Cohen \cite{Gallavotti:1995gy} leading to the works of Gavin Crooks\cite{Crooks:2008ta}, Denis Evans and the development of fluctuation theorems and it's applications.
 
 \section{Treatments of entropy in the standard contexts}
 
@@ -442,7 +447,7 @@ Inserting those back to equation (\ref{LinearResponseEq}) one gets
 
 \subsection{Onsager relations and hypothesis}
 
-In 1931, Onsager\cite{Onsager:zgWBDrcO} shown  that $\gamma_{ik}$ from the previous paragraph is in fact symmetric.
+Lars Onsager\cite{Onsager:zgWBDrcO} shown that $\gamma_{ik}$ from the previous paragraph is in fact symmetric.
 
 We can now do just that by combining equation (\ref{CorrelationTimeDerivative}) with equation (\ref{FluxesOnMacroscopic}), thus obtaining Onsager relations
 
@@ -1259,7 +1264,7 @@ Rewriting this again in full notion
 \end{equation}
 we obtain the generalized Crooks fluctuation relation (GCFR).
 
-In order to use GCFT we specialize it to an actual statistical mechanical ensemble and system of dynamics, obtaining the canonical forms of CFT between initial and final equilibrium states with the same values of temperature, volume and number of particles (T,V,N). We will consider T-mixing, Nose-Hoover isothermal systems in which the Hamiltonian is subject to a parametric transformation. Equilibrium distribution function $f(\bm{\Gamma};0)$ and the related free energy $F(\lambda)$ and partition function $Z_c$ are given by
+In order to use GCFT we specialize it to an actual statistical mechanical ensemble and system of dynamics, obtaining the canonical forms of CFT between initial and final equilibrium states with the same values of temperature, volume and number of particles (T,V,N). We will consider T-mixing, Nosé-Hoover isothermal systems in which the Hamiltonian is subject to a parametric transformation. Equilibrium distribution function $f(\bm{\Gamma};0)$ and the related free energy $F(\lambda)$ and partition function $Z_c$ are given by
 
 \begin{equation}
 \begin{aligned}
@@ -1508,7 +1513,7 @@ Now we might try to interprate each of those terms, the intuitive meaning of the
   -\ln \langle \exp(-\beta W_d)\rangle= \beta \langle W_d \rangle - \Phi
 \end{equation}
 
-where $\Phi$ holds all higher order terms of the cumulant expansion. From the convexity of the exponential function and Jensen's inequality one might check that we must have $\Phi \geq 0$. Thus, $\Phi$ can be thought of as a correction due to the dispersion of the dissipated work distribution about the average $\beta \langle W_d \rangle $ that gives the heaviest weight to the leftward tail of the work distribution.\cite{Jarzynski:2006cq}
+where $\Phi$ holds all higher order terms of the cumulant expansion. From the convexity of the exponential function and Jensen's inequality one might check\footnote{$e^{-\Psi + \Phi}=\langle \exp(-\beta W_d) \rangle \geq \exp(-\beta \langle W_d \rangle)= e^{-\Psi}$} that we must have $\Phi \geq 0$. Thus, $\Phi$ can be thought of as a correction due to the dispersion of the dissipated work distribution about the average $\beta \langle W_d \rangle $ that gives the heaviest weight to the leftward tail of the work distribution.\cite{Jarzynski:2006cq}
 
 One might now argue that $\langle W_d \rangle $ can be connected with particle drift through oscillatory energy barriers (details depending on the model), this in fact recently demonstrated by Nikolay Perunov et al\cite{Perunov:2016hl}.
 
@@ -1724,7 +1729,7 @@ Now, the equation (\ref{BalanceEq}) can be written as a condition
 
 with antisymmetric functional $\phi_1(\bm{f})=\sum_i \Delta f_i$. 
 
-One can show that the Lagrange multiplier $\lambda = - \Delta (\frac{1}{T_i}) = \frac{1}{T_{i+1}}-\frac{1}{T_i}$ by considering a slight modification of equation (\ref{MaxEntPDF2}) in which in zone $i$ for some finite time $\tau$ energy $u(\tau)$ is stored\cite{Dewar:2014ek}. 
+One can show that the Lagrange multiplier $\lambda = - \Delta (\frac{1}{T_i}) = \frac{1}{T_{i+1}}-\frac{1}{T_i}$ by considering a slight modification (non-steady state) of equation (\ref{MaxEntPDF2}) in which in zone $i$ energy $u(\tau)$ is stored for some finite time $\tau$\cite{Dewar:2014ek}. 
 
 Using the equation (\ref{SymmetricIrreversible}) one gets
 
