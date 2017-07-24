@@ -328,7 +328,7 @@ or per unit time:
   	\frac{dS_i}{dt}=\int \sigma dV \geq 0
 \end{equation}
 
-where $\sigma$ is entropy production source per unit volume.
+where $\sigma$ is entropy production source per unit volume and $dV$ denotes infinitezimal volume element.
 
 The entropy supplied, $dS_e$ on the other hand may be positive, zero or negative, depending on the interaction of the system with it's surroundings and may be written in terms of entropy flows through the boundaries of the system:
 
@@ -588,31 +588,31 @@ dS_e=\frac{dQ_H}{T_H}+\frac{dQ_C}{T_C}=dQ_H\left(\frac{1}{T_H}-\frac{1}{T_C}\rig
 From which it follows, that the heat flow takes the entropy out of our system.
 For the purpose of further discussion we introduce the concept of rate of entropy change connected with the heat flow:
 \begin{equation}
-\sigma_e \equiv  \frac{dS_e}{dt}. 
+j_e \equiv  \frac{dS_e}{dt}. 
 \end{equation}
-In the considered scenerio, the $\sigma_e$ is held constant (steady-state) and we suspect a continuous fall in system's entropy.
+In the considered scenerio, the $j_e$ is held constant (steady-state) and we suspect a continuous fall in system's entropy.
 
 Yet, moving away from the equilibrium state we suspect, that the a balancing role will be played by $dS_i$ moving the system back to equilibrium state. Similarly, as before we define the rate of internal entropy production:
 
 \begin{equation}
-\sigma_i \equiv \frac{dS_i}{dt}.   
+j_i \equiv \frac{dS_i}{dt}.   
 \end{equation} 
 
-When $T_H=T_C$, i.e. the system is in equilibrium with constant entropy $S_{EQ}$ then it follows that $\sigma_i=0$.
-Therefore the rate of internal entropy production $\sigma_i$ should be a function  of system's entropy $S_S$, i.e. $\sigma_i = \sigma_i(S_S)$ with the boundary condition $\sigma_i(S_S=S_{EQ})=0$. 
+When $T_H=T_C$, i.e. the system is in equilibrium with constant entropy $S_{EQ}$ then it follows that $j_i=0$.
+Therefore the rate of internal entropy production $j_i$ should be a function  of system's entropy $S_S$, i.e. $j_i = j_i(S_S)$ with the boundary condition $j_i(S_S=S_{EQ})=0$. 
 
-Near the equilibrium state $S_S=S_{EQ}$, we can Taylor expand the function $\sigma_i(S_S)$ to it's linear term
+Near the equilibrium state $S_S=S_{EQ}$, we can Taylor expand the function $j_i(S_S)$ to it's linear term
 \begin{equation}
-\sigma_i(S_S)=\sigma_i\left(S_{EQ}\right)+\left(S_S-S_{EQ}\right)C_1+\mathcal{O}\left(S_S^2\right),
+j_i(S_S)=j_i\left(S_{EQ}\right)+\left(S_S-S_{EQ}\right)C_1+\mathcal{O}\left(S_S^2\right),
 \end{equation} 
-fulfilling $\sigma_i\left(S_{EQ}\right)=0$. 
+fulfilling $j_i\left(S_{EQ}\right)=0$. 
 
 The dimensional and stability analysis tells us that $C_1$ has the dimension of inverse time and in the case of 
-$\sigma_e=0$ should simply be equal to $S_{EQ}$, therefore we set $C_1 = -\frac{1}{\tau}$, where $\tau$ is a positive defined relaxation constant.
+$j_e=0$ should simply be equal to $S_{EQ}$, therefore we set $C_1 = -\frac{1}{\tau}$, where $\tau$ is a positive defined relaxation constant.
 
 Using the equation (\ref{entrosum}) we get
 \begin{equation}
-\frac{dS_S}{dt}=\sigma_i\left(S_S\right)=\left(S_S-S_{EQ}\right)C_1, 
+\frac{dS_S}{dt}=j_i\left(S_S\right)=\left(S_S-S_{EQ}\right)C_1, 
 \label{stab}
 \end{equation} 
 
@@ -623,22 +623,22 @@ S_S(t) =S_{EQ}+(S_0-S_{EQ})e^{-t/\tau},
 where the initial condition was set $S_S(0)=S_0$.
 
 
-Now we include the term $\sigma_e$ into our considerations.
+Now we include the term $j_e$ into our considerations.
 In this case the equation (\ref{entrosum}) results in the following 
 \begin{equation}
-\frac{dS_S}{dt}=\sigma_e + \sigma_i\left(S_S\right)=\sigma_e +\frac{S_{EQ}-S_S}{\tau}.
+\frac{dS_S}{dt}=j_e + j_i\left(S_S\right)=j_e +\frac{S_{EQ}-S_S}{\tau}.
 \label{dSSdt}
 \end{equation} 
 
  
 Given a boundary condition $S_S(0) =S_{EQ}$ it has a solution
 \begin{equation}
-S_S(t)=S_{EQ}+\sigma_e\tau \left(1-e^{-t/\tau }\right),
+S_S(t)=S_{EQ}+j_e\tau \left(1-e^{-t/\tau }\right),
 \end{equation} 
-where $\sigma_e$ is a negative constant (graph of this function is presented on \ref{Fig4}). 
+where $j_e$ is a negative constant (graph of this function is presented on \ref{Fig4}). 
 In the limit $t\rightarrow \infty$ the entropy of the system falls to the minimal value
 \begin{equation}
-S_{min}=S(t\rightarrow \infty) =S_{EQ}+\sigma_e \tau < S_{EQ}.
+S_{min}=S(t\rightarrow \infty) =S_{EQ}+j_e \tau < S_{EQ}.
 \end{equation}
 
 \begin{figure}[ht!]
@@ -650,7 +650,7 @@ S_{min}=S(t\rightarrow \infty) =S_{EQ}+\sigma_e \tau < S_{EQ}.
 This is of course consistent with the second law of thermodynamics as we are describing an open system.
 It is easy to notice that the total entropy change is equal to $dS=dS_i \geq 0$ (for simplicity it was assumed that the heater and cooler don't act as producers of entropy).
 
-We see that if the relaxation constant $\tau = 0$ then the system would stay in equilibrium the whole time, of course, $\tau > 0$ for most materials (if not all). The most important part due to which this low entropy state was obtained is of course the entropy out-flow $\sigma_e$ without the non-equilibrium condition would not form.
+We see that if the relaxation constant $\tau = 0$ then the system would stay in equilibrium the whole time, of course, $\tau > 0$ for most materials (if not all). The most important part due to which this low entropy state was obtained is of course the entropy out-flow $j_e$ without the non-equilibrium condition would not form.
 
 \section{Measure of irreversibility and the Second Law}
 \label{IrreversibilityMeasure}
@@ -725,7 +725,7 @@ An early indicator that this line of attack might indeed be needed was given in 
 The fluctuation theorems and their derivatives including Jarzynski equality have been demonstrated for a wide range of systems and in a number of experiments including DNA stretching \cite{Collin:2005fx}, optically trapped colloids \cite{Carberry:2007be}, shearing systems \cite{Evans:1993bl}, pendulums \cite{Ciliberto:2010jg}, molecular motors \cite{Seifert:2005it} and various quantum mechanical systems \cite{Monnai:2005ke}.
 %TODO: Extract references from evans_chapter_rev.pdf
 
-There exist many approaches for deriving fluctuation theorems, which can be roughly described as deterministic\cite{Evans:2002gg}\cite{Evans:2241458} or stochastic \cite{Kurchan:1998}
+There exist many approaches for deriving fluctuation theorems, which can be roughly described as deterministic \cite{Evans:2002gg}\cite{Evans:2241458} or stochastic \cite{Kurchan:1998}.
 
 In the deterministic framework of Evans, irreversibility finds its origins in non-linear terms which provide a contraction of phase space, in contrast to the more direct irreversibility of the equations of motion found in stochastic descriptions which also has the merit of fewer technical difficulties \cite{Crooks:2008ta}. 
 
