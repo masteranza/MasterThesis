@@ -10,45 +10,45 @@ Warning--empty publisher in DeGroot:2013ue
 Warning--empty journal in Crooks:2008ta
 Warning--empty journal in England:2013ed
 Warning--empty year in Lorenz:J80tzZkl
-You've used 59 entries,
+You've used 62 entries,
             1876 wiz_defined-function locations,
-            889 strings with 12584 characters,
-and the built_in function-call counts, 15750 in all, are:
-= -- 1724
-> -- 381
+            907 strings with 13073 characters,
+and the built_in function-call counts, 16596 in all, are:
+= -- 1814
+> -- 411
 < -- 0
-+ -- 159
-- -- 100
-* -- 1053
-:= -- 2101
-add.period$ -- 66
-call.type$ -- 59
-change.case$ -- 51
++ -- 170
+- -- 108
+* -- 1112
+:= -- 2216
+add.period$ -- 70
+call.type$ -- 62
+change.case$ -- 53
 chr.to.int$ -- 0
-cite$ -- 64
-duplicate$ -- 848
-empty$ -- 1490
-format.name$ -- 100
-if$ -- 3896
+cite$ -- 67
+duplicate$ -- 889
+empty$ -- 1568
+format.name$ -- 108
+if$ -- 4105
 int.to.chr$ -- 0
-int.to.str$ -- 59
-missing$ -- 65
-newline$ -- 188
-num.names$ -- 59
-pop$ -- 139
+int.to.str$ -- 62
+missing$ -- 69
+newline$ -- 198
+num.names$ -- 62
+pop$ -- 147
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 666
+skip$ -- 698
 stack$ -- 0
-substring$ -- 1268
-swap$ -- 405
+substring$ -- 1332
+swap$ -- 424
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 5
-while$ -- 172
-width$ -- 61
-write$ -- 570
+while$ -- 181
+width$ -- 64
+write$ -- 600
 (There were 7 warnings)

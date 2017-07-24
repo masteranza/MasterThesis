@@ -140,8 +140,7 @@ Different alternatives for explanations of irreversible processes have been prop
 The motivation for such development was clearly articulated by Prigogine:
 "I have always found it difficult to accept this conclusion [macroscopic irreversibility emerging from initial conditions] {...} especially because of the constructive role of irreversible processes. Can dissipative structures be the result of mistakes?" \cite{Prigogine:1978kz}.
 
-His personal dissatisfaction with lack of irreversibility and unitary evolution at the microscopic level led him to postulate the existence of microscopic representation of entropy in the equations of motion. 
-In essence, the idea was to change the fundamental laws of physics as to make them irreversible at the microscopic level. The details of this approach, known in literature as Misra-Prigogine-Courbage theory\cite{Courbage:1983eo}, will not be presented here, as in so far no evidence for its validity has been found\cite{Bricmont:7zJsfTpK}.
+His personal dissatisfaction with lack of irreversibility and unitary evolution at the microscopic level led him to postulate a "stochastic" version of microscopic equations of motion. His idea was to change the fundamental laws of physics as to make them irreversible at the microscopic level. The details of this approach, known in literature as Misra-Prigogine-Courbage theory\cite{Courbage:1983eo}, will not be presented here, as in so far no evidence for its validity has been found\cite{Bricmont:7zJsfTpK}.
 
 Somewhat related to it, is the Ritz argument about the irreversibility of Maxwell's laws of electromagnetism. In a polemic with Einstein he states that the retarded and advanced potentials should not be treated on equal footing, to which Einstein disagrees. 
 According to John Fox, who was a later commentator of the debate, based on the long lifetimes of fast muons (which are taken as evidence for time dilation) and the speed-of-light gamma rays from rapidly moving sources, the evidence stands in favor of Einstein's explanation\cite{Fox:1965bg}.
@@ -191,7 +190,7 @@ with respect to $p_i$ (new a posteriori distribution). $H(p||q)$ can be interpre
 \subsection{Physics of computation}
 
 After Shannon and Jaynes established the links between information theory, statistical mechanics and thermodynamics, there was a growing need to include the concept of computation as well. Following some preliminary statements by John von Neumann, it was thought that any computational process must necessarily increase entropy.
-However in 1970s, Charles Bennett pointed out that it is not the case\cite{Bennett:1973ko}, laying some early groundwork for relating computational and thermodynamic ideas. 
+However in 1970s, Charles Bennett pointed out that it is not the case\cite{Bennett:1973ko}, laying some early groundwork for relating computational and thermodynamic ideas. This topic however will not be developed in this work.
 
 %TODO: Expand on Bennett
 
@@ -298,46 +297,61 @@ then in general the following identities are satisfied
 The interpretation of the first inequality is that the full information about the states of the subsystems $A$ and $B$ will in general not be sufficient to give full information about the state of the total system $A+B$. Or in other words, when there are correlations between the two subsystems, these are not seen in the description of $A$ and $B$ separately. 
 
 \section{Near-equilibrium thermodynamics}
-\subsection{Local equilibrium and entropy production [in progress]}
+\subsection{Local equilibrium and entropy production}
 
-The term local equilibrium describes the situation in which the thermodynamic quantities of the system such as density, temperature, pressure, etc. can vary spatially and with time, but in each volume element the thermodynamic relations between the values which apply locally there are obeyed. The resulting dynamics are quite generally termed hydrodynamics in condensed-matter physics, in analogy to the dynamic equations which are valid in this limit for the flow of gases and liquids. 
+The term local equilibrium describes the situation in which the thermodynamic quantities of the system such as density, temperature, pressure, etc. can vary spatially and with time, but in each volume element the thermodynamic relations between the values which apply locally there are obeyed. 
+Such conditions are possible through the assumption of efficient dissipation of effects imposed by gradients and chemical affinities through molecular collisions. We therefore expect that this to hold for fluids, moderately dense gases and many solids.
+Under this assumptions, extension of equilibrium thermodynamics is possible\cite{Anonymous:NJxQY1gt}.
 
-Its usage can be usually justified by assuming analyticity of thermodynamic state functions arbitrarily close to equilibrium - then, local equilibrium is obtained from first order expansion of thermodynamic properties in the irreversible fluxes $\{X_i\}$ \cite{Evans:2002gg}.
-
-
-An approached pioneered by Onsager, for the entropy for open systems, is an extension of Clausius entropy for isolated systems:
-
-\begin{equation}
-  	dS=d_iS+d_eS
-\end{equation}
-
-Where $d_iS$ is connected with entropy produced within the system and $d_eS$ is the entropy transferred across the boundaries of the system.
-%Where is entropy production coming from?
-%Answer: Entropy production is not dependent on coarse-graining \cite{Gilbert:1999ff} \cite{Goldstein:1998ip}
-
-One then develops an explicit expression for entropy production, assuming that even outside equilibrium (but near) entropy depends only on the same
-variables as at equilibrium ("local" equilibrium)
+An approached pioneered by Onsager for the entropy for open systems, is an extension of Clausius entropy for isolated systems, which states the variation of entropy $dS$ is the sum of two contributions: 
 
 \begin{equation}
-  	\sigma=\frac{d_iS}{dt}=\sum _{\rho } J_{\rho }X_{\rho }\geq 0
+  	dS=dS_i+dS_e,
 \end{equation}
 
-where \(J_{\rho }\) are the rates of the various irreversible processes involved (chemical reactions, heat flow, diffusion$\ldots $) and \(X_{\rho
-}\) are the corresponding, generalized forces (affinities, gradients of temperature, of chemical potentials$\ldots $).
+where $dS_i$ is the entropy produced within the system (for example by change of microscopic configuration) and $dS_e$ the entropy transferred into or out of the system through it's boundaries.
 
-
-In near equilibrium regime, where local thermodynamic equilibrium is expected to be valid, the theory predicts that there will be a 'spontaneous production of entropy' in non-equilibrium systems.
-This spontaneous production of entropy is given by the entropy production per unit volume $\sigma$ by the following expression \cite{DeGroot:2013ue}
+The Second Law then states that $dS_i$ must be zero for reversible (equilibrium) transformations and positive for non-equilibrium transformations of the system\cite{DeGroot:2013ue}:
 
 \begin{equation}
-    \int d\bm{r} \sigma(\bm{r},t)=\int d\bm{r}(\sum_i J_i(\bm{r},t)X_i(\bm{r},t))>0,
+  dS_i \geq 0,
 \end{equation}
 
-where $J_i(\bm{r},t)$ are the Navier-Stokes hydrodynamic fluxes (e.g. the stress tensor, heat flux vector,...) at position $\bm{r}$ and time $t$ and $X_i$ is the thermodynamic force which is conjugate to $J_i(\bm{r},t)$ (e.g. strain rate tensor divided by temperature or the gradient of the reciprocal of temperature,... respectively).
+or per unit time:
 
-\paragraph{Problems:}
-In an electric circuit close to equilibrium, entropy production is equal to the product of the electric current times the voltage divided by the ambient temperature. If the circuit has a complex impedance, there will necessarily be a phase lag between the applied voltage and the current. Therefore there will exist an interval in which entropy production will be negative. 
-This example highlights a serious problem for linear, irreversible thermodynamics based on the concept of entropy production. As we will later see, this is not the case for \textit{dissipation}.
+\begin{equation}
+  	\frac{dS_i}{dt}=\int \sigma dV \geq 0
+\end{equation}
+
+where $\sigma$ is entropy production source per unit volume.
+
+The entropy supplied, $dS_e$ on the other hand may be positive, zero or negative, depending on the interaction of the system with it's surroundings and may be written in terms of entropy flows through the boundaries of the system:
+
+\begin{equation}
+  	\frac{dS_e}{dt}=\int J d\Omega \geq 0
+\end{equation}
+
+where $J$ denotes the flux and $\Omega$ the boundaries of the system.
+
+For a closed system we have the Clausius relation in terms of exchanged heat:
+
+\begin{equation}
+  dS_e=\frac{dQ}{T}.
+\end{equation}
+
+
+The standard formalism of linear irreversible dynamics develops a more explicit expression for entropy production per unit time, assuming that even outside equilibrium (but near) entropy depends only on the same variables as at equilibrium, expanding it as follows: 
+
+\begin{equation}
+  \sigma(x,t) = \sum_i J_i(x,t) X_i(x,t) \geq 0.
+\end{equation}
+
+
+The sources of entropy production from the point of view of coarse-grained Gibbs entropy have been intensely studied in non-equilibrium systems. A notable result \cite{Gilbert:1999ff, Goldstein:1998ip} states that entropy production itself is independent of the level of coarse-graining applied to Gibbs entropy.
+
+There are exist however some problems with the assumption of non-negative entropy sources.
+For example in an electric circuit close to equilibrium, entropy production is equal to the product of the electric current times the voltage divided by the ambient temperature. If the circuit has a complex impedance, there will necessarily be a phase lag between the applied voltage and the current. Therefore there will exist an interval in which entropy production will be negative\cite{Evans:2241458}. 
+This problem is resolved in the context of fluctuation theorems and \textit{dissipation function}.
 
 \subsection{Linear response, regression and fluctuations}
 
@@ -412,10 +426,10 @@ One then defines so-called \textbf{generalized thermodynamic forces} as
   F_i= -\frac{\partial{S}}{\partial{\bar{X}_i}}= \sum_j S_{ij}\bar{X}_j
 \end{equation}
 
-From which, by matrix inversion one can obtain again the macroscopic variables $\bar{X}_i$
+From which, by matrix inversion one can obtain again the macroscopic variables $\bar{X}_i$:
 
 \begin{equation}
-  \bar{X}_j = \sum_i (S^{-1})_{ji} F_i
+  \bar{X}_j = \sum_i (S^{-1})_{ji} F_i.
 \end{equation}
 
 
@@ -423,7 +437,7 @@ Inserting those back to equation (\ref{LinearResponseEq}) one gets
 
 \begin{equation}
 \label{FluxesOnMacroscopic}
-  \dot{\bar{X}}_i=-\sum_j \lambda_{ij} \sum_k (S^{-1})_{jk} F_k = \sum_k \gamma_{ik} F_k
+  \dot{\bar{X}}_i=-\sum_j \lambda_{ij} \sum_k (S^{-1})_{jk} F_k = \sum_k \gamma_{ik} F_k.
 \end{equation}
 
 \subsection{Onsager relations and hypothesis}
@@ -501,21 +515,25 @@ where by approximating $f X$ to be small we obtained a special case of Green-Kub
 \end{equation}
 
 As a note, let's mention a famous objection to the Kubo relations poised by van Kampen about the plausibility of taking the linear terms first and then the ensemble average (in general one should do the opposite), however one should remember that the microscopic trajectories of particles affected by the perturbing fields experience a large number of collisions in exceedingly small times ($\approx 10^{-9}s$ for low density gases) which makes the approximation possible\cite{Dorfman:ozm67-zD}.
-\subsection{Steady states [in progress]}
-The most basic of non-equilibrium conditions, the steady state is already difficult to describe as many of the basic state functions (including temperature and entropy), are undefined for far from equilibrium states and the distribution function of a steady state is fractal and non-analytic. %TODO: Cite Evans?  
-One however can impose a formal condition of vanishing expectation value of $\partial \rho / \partial t$ over the probability density function $p(\rho)$ and non-vanishing expectation value of fluxes vector $\bm{f}$ over the probability density function $p(\bm{f})$: %TODO:Would need to cite Dewar on this, the second def seems sketchy...
+\subsection{Steady states and the definition of temperature}
+
+The steady state is loosely defined as an emergent  state of a driven system (in case of non-driven systems the steady state corresponds to equilibrium), which properties stabilized after a sufficiently long time. 
+
+More formally one can impose a condition of vanishing expectation value of $\partial \rho / \partial t$ over the probability density function $p(\rho)$ and non-vanishing expectation value of fluxes vector $\bm{f}$ over the probability density function $p(\bm{f})$\cite{Dewar:2014ek}, i.e.
 \begin{equation}
 \begin{aligned}
 \label{SteadyStates}
   \langle \frac{\partial \rho}{\partial t} \rangle_{p(\bm{\rho})} &= 0 \\
-  \langle \bm{f} \rangle_{p(\bm{f})} &\neq 0
+  \langle \bm{f} \rangle_{p(\bm{f})} &\neq 0.
 \end{aligned}
 \end{equation}
 
-\subsection{Definition of temperature [in progress]}
-When the temperature differences are "smooth" enough, i.e., locally there is a reasonable definition of temperature (local equilibrium), then the temperature gradient determines the heat flux. In the opposite case, it is molecular kinetics who determines the energy transfer. The latter happens much faster and local equilibrium gets established quickly.
+When discussing steady states one often uses Clausius entropy to describe entropy changes related to heat transfer, however the temperature used in it's definition is not always well defined. 
 
-On the other hand, far from equilibrium there might be a problem defining temperature and also Clausius entropy which depends on it. One of the solutions provided by Evans at al in  is to define temperature of non equilibrium state by the temperature of the underlying equilibrium state to which the system would otherwise relax.
+In cases of near-equilibrium that one may call local equilibrium the definition of temperature differences are "smooth" enough, i.e., locally there is a reasonable definition of temperature and the temperature gradient determines the heat flux. 
+In the opposite case, it is the molecular kinetics which determines the energy transfer. In most cases it happens much faster and local equilibrium gets established afterwards.
+
+On the other hand, in far from equilibrium conditions there might be several definitions of temperature. One of the solutions provided by Evans et al.\cite{Evans:2241458} is to define temperature of non-equilibrium state by the temperature of the underlying equilibrium state to which the system would otherwise relax. This definition gives consistent results.
 
 \subsection{MinEP}
 
@@ -1563,9 +1581,7 @@ Secondly, Dewar introduces information theoretical measure of the distance from 
 The first demand (dynamical instability) is then reformulated as a strong inequality constraint $I>I_{min}$. 
 Then using procedures known from MaxEnt it is shown that $I$ adopts it's maximum possible value under the stationarity constraints.
 
-The final step consists of reinterpretation of $I$ as thermodynamic entropy production. 
-
-In this derivation of MaxEP, entropy production depends of applied constraints.
+The final step consists of reinterpretation of $I$ as thermodynamic entropy production. In this derivation of MaxEP, entropy production depends of applied constraints.
 
 In the proceeding section the procedure (which is Dewar's third iteration of the principle) is presented in detail.
 

@@ -66,14 +66,24 @@ C.~H. Bennett, ``{Logical reversibility of computation},'' {\em IBM journal of
 E.~T. Jaynes, ``{Gibbs vs Boltzmann Entropies},'' {\em American Journal of
   Physics}, vol.~33, no.~5, pp.~391--398, 1965.
 
-\bibitem{Evans:2002gg}
-D.~J. Evans and L.~Rondoni, ``{Comments on the Entropy of Nonequilibrium Steady
-  States},'' {\em Journal of Statistical Physics}, vol.~109, no.~3/4,
-  pp.~895--920, 2002.
+\bibitem{Anonymous:NJxQY1gt}
+P.~Glansdorff, I.~Prigogine, and R.~N. Hill, {\em {Thermodynamic theory of
+  structure, stability and fluctuations}}, vol.~41.
+\newblock American Journal of Physics, 1973.
 
 \bibitem{DeGroot:2013ue}
 S.~R. De~Groot and P.~Mazur, {\em {Non-equilibrium thermodynamics}}.
 \newblock 2013.
+
+\bibitem{Gilbert:1999ff}
+T.~Gilbert and J.~R. Dorfman, ``{Entropy Production: From Open
+  Volume-Preserving to Dissipative Systems},'' {\em Journal of Statistical
+  Physics}, vol.~96, no.~1-2, pp.~225--269, 1999.
+
+\bibitem{Goldstein:1998ip}
+S.~Goldstein, J.~L. Lebowitz, and Y.~Sinai, ``{Remark on the (Non)convergence
+  of Ensemble Densities in Dynamical Systems},'' {\em arXiv.org}, pp.~393--395,
+  Apr. 1998.
 
 \bibitem{Anonymous:vN0-ttAB}
 H.~B.~G. Casimir, ``{On Onsager's Principle of Microscopic Reversibility},''
@@ -91,6 +101,12 @@ C.~Kittel, {\em {Introduction to Solid State Physics; 8th ed.}}
 R.~Kubo, ``{Statistical-Mechanical Theory of Irreversible Processes. I. General
   Theory and Simple Applications to Magnetic and Conduction Problems},'' {\em
   Journal of the Physical Society of Japan}, vol.~12, pp.~570--586, June 1957.
+
+\bibitem{Dewar:2014ek}
+R.~C. Dewar, C.~H. Lineweaver, R.~K. Niven, and K.~Regenauer-Lieb, {\em {Beyond
+  the Second Law: An Overview}}.
+\newblock Understanding Complex Systems, Berlin, Heidelberg: Springer Berlin
+  Heidelberg, 2014.
 
 \bibitem{Nicolis:1979cv}
 G.~Nicolis and I.~Prigogine, ``{Irreversible processes at nonequilibrium steady
@@ -125,6 +141,11 @@ U.~Seifert, ``{Fluctuation theorem for a single enzym or molecular motor},''
 T.~Monnai, ``{Unified treatment of the quantum fluctuation theorem and the
   Jarzynski equality in terms of microscopic reversibility},'' {\em Physical
   Review E}, vol.~72, pp.~19--4, Aug. 2005.
+
+\bibitem{Evans:2002gg}
+D.~J. Evans and L.~Rondoni, ``{Comments on the Entropy of Nonequilibrium Steady
+  States},'' {\em Journal of Statistical Physics}, vol.~109, no.~3/4,
+  pp.~895--920, 2002.
 
 \bibitem{Kurchan:1998}
 J.~Kurchan, ``{Fluctuation theorem for stochastic dynamics},'' {\em Journal of
@@ -177,12 +198,6 @@ J.~England, ``{Statistical physics of self-replication},'' vol.~139, no.~12,
 \bibitem{Jarzynski:2006cq}
 C.~Jarzynski, ``{Rare events and the convergence of exponentially averaged work
   values},'' {\em Physical Review E}, vol.~73, pp.~P09005--10, Apr. 2006.
-
-\bibitem{Dewar:2014ek}
-R.~C. Dewar, C.~H. Lineweaver, R.~K. Niven, and K.~Regenauer-Lieb, {\em {Beyond
-  the Second Law: An Overview}}.
-\newblock Understanding Complex Systems, Berlin, Heidelberg: Springer Berlin
-  Heidelberg, 2014.
 
 \bibitem{Kondepudi:1141550}
 D.~Kondepudi, {\em {Introduction to modern thermodynamics}}.

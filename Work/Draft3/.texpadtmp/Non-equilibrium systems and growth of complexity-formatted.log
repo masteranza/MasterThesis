@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.6)  24 JUL 2017 19:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.6)  24 JUL 2017 17:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"Non-equilibrium systems and growth of complexity.tex"
-(./Non-equilibrium systems and growth of complexity.tex
+**"Non-equilibrium systems and growth of complexity-formatted.tex"
+(./Non-equilibrium systems and growth of complexity-formatted.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 79 languages loaded.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
@@ -1848,7 +1848,7 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layouthoffset=\dimen214
 \Gm@layoutvoffset=\dimen215
 \Gm@dimlist=\toks38
-) (/Users/masteranza/Projects/MasterThesis/Work/Draft3/.texpadtmp/Non-equilibrium systems and growth of complexity.aux
+) (/Users/masteranza/Projects/MasterThesis/Work/Draft3/.texpadtmp/Non-equilibrium systems and growth of complexity-formatted.aux
 
 LaTeX Warning: Label `Fig4' multiply defined.
 
@@ -1859,7 +1859,7 @@ LaTeX Warning: Label `ReversibilityEvans' multiply defined.
 LaTeX Warning: Label `IrreversibilityMeasure' multiply defined.
 
 )
-\openout1 = `"Non-equilibrium systems and growth of complexity.aux"'.
+\openout1 = `"Non-equilibrium systems and growth of complexity-formatted.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
 LaTeX Font Info:    ... okay on input line 52.
@@ -1907,9 +1907,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 52.
 LaTeX Info: Redefining \pageref on input line 52.
 LaTeX Info: Redefining \nameref on input line 52.
- (/Users/masteranza/Projects/MasterThesis/Work/Draft3/.texpadtmp/Non-equilibrium systems and growth of complexity.out) (/Users/masteranza/Projects/MasterThesis/Work/Draft3/.texpadtmp/Non-equilibrium systems and growth of complexity.out)
+ (/Users/masteranza/Projects/MasterThesis/Work/Draft3/.texpadtmp/Non-equilibrium systems and growth of complexity-formatted.out) (/Users/masteranza/Projects/MasterThesis/Work/Draft3/.texpadtmp/Non-equilibrium systems and growth of complexity-formatted.out)
 \@outlinefile=\write4
-\openout4 = `"Non-equilibrium systems and growth of complexity.out"'.
+\openout4 = `"Non-equilibrium systems and growth of complexity-formatted.out"'.
 
  ABD: EveryShipout initializing macros (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -1963,103 +1963,916 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Try loading font information for U+msb on input line 61.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (/Users/masteranza/Projects/MasterThesis/Work/Draft3/.texpadtmp/Non-equilibrium systems and growth of complexity.toc [1
+) (/Users/masteranza/Projects/MasterThesis/Work/Draft3/.texpadtmp/Non-equilibrium systems and growth of complexity-formatted.toc [1
 
 {/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 \tf@toc=\write5
-\openout5 = `"Non-equilibrium systems and growth of complexity.toc"'.
+\openout5 = `"Non-equilibrium systems and growth of complexity-formatted.toc"'.
 
  [2] [3] [4]
-
-LaTeX Warning: Citation `Shannon:429164' on page 5 undefined on input line 103.
+./Non-equilibrium systems and growth of complexity-formatted.tex:96: Misplaced alignment tab character &.
+l.96 ...metimes find statements (Evans, Searles, &
+                                                   Williams, 2016) that this...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
 [5] [6]
 Overfull \hbox (16.11769pt too wide) in paragraph at lines 133--133
 []\T1/cmr/bx/n/14.4 Different ap-proaches to-wards ir-re-versibil-ity and non-equilibrium 
  []
 
+./Non-equilibrium systems and growth of complexity-formatted.tex:135: Misplaced alignment tab character &.
+l.135 ...olfram, 2002) (Rovelli, 2015) (Courbage &
+                                                   Prigogine, 1983) %TODO: A...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:144: Misplaced alignment tab character &.
+l.144 ...isra-Prigogine-Courbage theory(Courbage &
+                                                   Prigogine, 1983), will no...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
 [7]
+./Non-equilibrium systems and growth of complexity-formatted.tex:151: Misplaced alignment tab character &.
+l.151 ... school of thought (Barbour, Koslowski, &
+                                                   Mercati, 2014; Kiefer, 20...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-LaTeX Warning: Citation `KIEFER2005' on page 8 undefined on input line 150.
+[8] [9] [10] [11]
+./Non-equilibrium systems and growth of complexity-formatted.tex:305: Misplaced alignment tab character &.
+l.305 ...he irreversible fluxes $\{X_i\}$ (Evans &
+                                                   Rondoni, 2002).
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-[8]
-Overfull \hbox (16.31865pt too wide) in paragraph at lines 206--209
-\OML/cmm/m/it/12 k[] [] W$ \T1/cmr/m/n/12 where $\OML/cmm/m/it/12 W$ \T1/cmr/m/n/12 rep-re-sents the num-ber of pos-si-ble mi-cro-scopic con-fig-u-ra-tion of a macrostate
- []
+[12]
+./Non-equilibrium systems and growth of complexity-formatted.tex:330: Misplaced alignment tab character &.
+l.330 ...$ by the following expression (De Groot &
+                                                   Mazur, 2013)
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
-[9] [10] [11] [12] [13] [14] [15] [16] [17]
-Overfull \hbox (14.49794pt too wide) in paragraph at lines 556--556
+[13] [14] [15] [16] [17]
+./Non-equilibrium systems and growth of complexity-formatted.tex:535: Misplaced alignment tab character &.
+l.535 ...isted in response to criticism (Nicolis &
+                                                   Prigogine, 1979).
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (14.49794pt too wide) in paragraph at lines 542--542
 []\T1/cmr/bx/n/17.28 Thermodynamic low-er-ing of en-tropy in non-equilibrium
  []
 
-<system.png, id=474, 278.54062pt x 288.3272pt>
+<system.png, id=408, 278.54062pt x 288.3272pt>
 File: system.png Graphic file (type png)
  <use system.png>
-Package pdftex.def Info: system.png used on input line 564.
+Package pdftex.def Info: system.png used on input line 550.
 (pdftex.def)             Requested size: 170.71652pt x 176.71962pt.
- [18] [19 <./system.png>] <wykres3.png, id=497, 852.18375pt x 315.1775pt>
+ [18] [19 <./system.png>] <wykres3.png, id=431, 852.18375pt x 315.1775pt>
 File: wykres3.png Graphic file (type png)
  <use wykres3.png>
-Package pdftex.def Info: wykres3.png used on input line 640.
+Package pdftex.def Info: wykres3.png used on input line 626.
 (pdftex.def)             Requested size: 341.43306pt x 126.28036pt.
- [20 <./wykres3.png>] [21] <dissipation.png, id=522, 373.395pt x 232.87pt>
+ [20 <./wykres3.png>] [21] <dissipation.png, id=456, 373.395pt x 232.87pt>
 File: dissipation.png Graphic file (type png)
  <use dissipation.png>
-Package pdftex.def Info: dissipation.png used on input line 705.
+Package pdftex.def Info: dissipation.png used on input line 691.
 (pdftex.def)             Requested size: 227.62204pt x 141.9581pt.
- [22 <./dissipation.png>] [23] [24] [25]
-Overfull \hbox (4.48065pt too wide) in paragraph at lines 838--839
+ [22 <./dissipation.png>]
+./Non-equilibrium systems and growth of complexity-formatted.tex:706: Misplaced alignment tab character &.
+l.706 ...ally trapped colloids (Carberry, Baker, &
+                                                   Wang, 2007), shearing sys...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:706: Misplaced alignment tab character &.
+l.706 ... 2007), shearing systems (Evans, Cohen, &
+                                                   Morriss, 1993), pendulums...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:706: Misplaced alignment tab character &.
+l.706 ...ss, 1993), pendulums (Joubaud, Garnier, &
+                                                   Ciliberto, 2007), molecul...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:709: Misplaced alignment tab character &.
+l.709 ...deterministic(Evans et al., 2016; Evans &
+                                                   Rondoni, 2002) or stochas...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[23]
+./Non-equilibrium systems and growth of complexity-formatted.tex:727: Misplaced alignment tab character &.
+l.727 ...equilibrium steady states(Hoover, Ladd, &
+                                                   Moran, 1982).
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[24] [25]
+Overfull \hbox (4.48065pt too wide) in paragraph at lines 824--825
 []\T1/cmr/m/n/12 This equa-tion can be seen as an ap-pli-ca-tion of equiv-a-lence of Heisen-berg and Schrödinger
  []
 
-[26] [27] [28] [29]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 1058.
- [30] [31] [32] [33]
-Overfull \hbox (10.35284pt too wide) in paragraph at lines 1223--1224
+[26]
+Overfull \hbox (73.03091pt too wide) in paragraph at lines 877--879
+\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 (3\OML/cmm/m/it/12 N[] \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 4)\OML/cmm/m/it/12 $\T1/cmr/m/n/12 . [] 
+ []
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:908: Misplaced alignment tab character &.
+l.908 ...ed in 2000 by Searles and Evans(Searles &
+                                                   Evans, 2000).
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[27]
+./Non-equilibrium systems and growth of complexity-formatted.tex:951: Misplaced alignment tab character &.
+l.951 ...ng(2002)(Wang, Sevick, Mittag, Searles, &
+                                                   Evans, 2002), Carberry(20...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[28]
+./Non-equilibrium systems and growth of complexity-formatted.tex:982: Misplaced alignment tab character &.
+l.982 ...ms by Yamada and Kawasaki (1967)(Yamada &
+                                                   Kawasaki, 1967) and is st...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[29]
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 1044.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1045: Misplaced alignment tab character &.
+l.1045 ...ndent field was presented in (Williams &
+                                                   Evans, 2008).
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[30] [31] [32] [33]
+Overfull \hbox (10.35284pt too wide) in paragraph at lines 1209--1210
 []\T1/cmr/m/n/12 The Gen-er-al-ized Crooks Fluc-tu-a-tion The-o-rem (GCFT) con-sid-ers prob-a-bil-ity $\OML/cmm/m/it/12 p[]\OT1/cmr/m/n/12 (^^A\OML/cmm/m/it/12 X[] \OT1/cmr/m/n/12 =
  []
 
 [34]
-Overfull \hbox (6.16971pt too wide) in paragraph at lines 1241--1243
-\T1/cmr/m/n/12 Now us-ing the def-i-ni-tion of gen-er-al-ized work, equa-tion ([]101[]), two times first get $\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OT1/cmr/bx/n/12 ^^@\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 d\OT1/cmr/bx/n/12 ^^@ \OT1/cmr/m/n/12 =
+Overfull \hbox (0.29614pt too wide) in paragraph at lines 1227--1229
+\T1/cmr/m/n/12 Now us-ing the def-i-ni-tion of gen-er-al-ized work, equa-tion ([]98[]), two times first get $\OML/cmm/m/it/12 f[]\OT1/cmr/m/n/12 (\OT1/cmr/bx/n/12 ^^@\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 d\OT1/cmr/bx/n/12 ^^@ \OT1/cmr/m/n/12 =
  []
 
-[35] [36] [37] [38] [39]
-Overfull \hbox (12.53847pt too wide) in paragraph at lines 1461--1462
+[35] [36] [37]
+./Non-equilibrium systems and growth of complexity-formatted.tex:1345: Misplaced alignment tab character &.
+l.1345 ...ions(England, 2013; Perunov, Marsland, &
+                                                   England, 2016). The main ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[38] [39]
+Overfull \hbox (12.53847pt too wide) in paragraph at lines 1447--1448
 \T1/cmr/m/n/12 Let's now con-sider a case of driven ther-mostat-ted sys-tem with two pos-si-ble tar-get macrostates
  []
 
-[40] [41] [42] [43] [44] [45] [46] [47] [48] [49] (/Users/masteranza/Projects/MasterThesis/Work/Draft3/.texpadtmp/Non-equilibrium systems and growth of complexity.bbl [50] [51] [52] [53]) [54]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1753.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1753.
- (/Users/masteranza/Projects/MasterThesis/Work/Draft3/.texpadtmp/Non-equilibrium systems and growth of complexity.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1753.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1753.
-Package rerunfilecheck Info: File `"Non-equilibrium systems and growth of complexity".out' has not changed.
+[40]
+./Non-equilibrium systems and growth of complexity-formatted.tex:1509: Misplaced alignment tab character &.
+l.1509 ...eady states (Dewar, Lineweaver, Niven, &
+                                                   Regenauer-Lieb, 2014).
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[41]
+./Non-equilibrium systems and growth of complexity-formatted.tex:1523: Misplaced alignment tab character &.
+l.1523 ...anetary climates (Paltridge, Farquhar, &
+                                                   Cuntz, 2007), fluid turbu...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1526: Misplaced alignment tab character &.
+l.1526 ... flow in plasma/fluid system (Kawazura &
+                                                   Yoshida, 2010), where max...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[42]
+./Non-equilibrium systems and growth of complexity-formatted.tex:1536: Misplaced alignment tab character &.
+l.1536 ...including Williams and Evans (Williams &
+                                                   Evans, 2008), concluding ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1542: Misplaced alignment tab character &.
+l.1542 In fact it was shown in (Brookes, Reid, &
+                                                 Evans, 2011) through numeri...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[43]
+./Non-equilibrium systems and growth of complexity-formatted.tex:1546: Misplaced alignment tab character &.
+l.1546 ...investigated by Zhang(Zhang, Isbister, &
+                                                   Evans, 2001) who consider...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1548: Misplaced alignment tab character &.
+l.1548 ... 2D  numerical simulations like (Maeda &
+                                                   Munakata, 1995).
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[44]
+Overfull \hbox (13.30785pt too wide) in paragraph at lines 1560--1561
+\T1/cmr/m/n/12 Perhaps the most promis-ing in-ter-pre-ta-tion of MaxEP prin-ci-ple, put for-ward by De-war(Dewar,
+ []
+
+[45] [46] [47] [48] [49] [50]
+./Non-equilibrium systems and growth of complexity-formatted.tex:1736: Misplaced alignment tab character &.
+l.1736 Barbour, J., Koslowski, T., &
+                                     Mercati, F. (2014). Identification of a...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1739: Misplaced alignment tab character &.
+l.1739 Brookes, S. J., Reid, J. C., &
+                                      Evans, D. J. (2011). The fluctuation t...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1740: Misplaced alignment tab character &.
+l.1740 Carberry, D. M., Baker, M., &
+                                     Wang, G. M. (2007). An optical trap exp...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1742: Misplaced alignment tab character &.
+l.1742 ...rzynski, C., Smith, S. B., Tinoco, I., &
+                                                   Bustamante, C. (2005, Dec...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1743: Misplaced alignment tab character &.
+l.1743 Courbage, M., &
+                       Prigogine, I. (1983). Intrinsic randomness and intrin...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1745: Misplaced alignment tab character &.
+l.1745 De Groot, S. R., &
+                          Mazur, P. (2013). Non-equilibrium thermodynamics.
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1749: Misplaced alignment tab character &.
+l.1749 .... C., Lineweaver, C. H., Niven, R. K., &
+                                                   Regenauer-Lieb, K. (2014)...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1749: Missing $ inserted.
+<inserted text> 
+                $
+l.1749 ...ttp://doi.org/10.1007/978-3-642-40154-1_
+                                                  1
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 1750.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1753.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1754.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1755: Misplaced alignment tab character &.
+l.1755 Evans, D. J., &
+                       Rondoni, L. (2002). Comments on the Entropy of Nonequ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1755.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1756: Misplaced alignment tab character &.
+l.1756 Evans, D. J., Cohen, E. G. D., &
+                                        Morriss, G. P. (1993). Probability o...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1756.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1757: Misplaced alignment tab character &.
+l.1757 Evans, D. J., Searles, D. J., &
+                                       Williams, S. R. (2016). Fundamentals ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1757: Misplaced alignment tab character &.
+l.1757 ...uctuation theorems. Berlin: John Wiley &
+                                                   Sons.
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1758.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1762: Misplaced alignment tab character &.
+l.1762 Hoover, W. G., Ladd, A. J. C., &
+                                        Moran, B. (1982). High-Strain-Rate P...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1762.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1763.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1764.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1765.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1766: Misplaced alignment tab character &.
+l.1766 Joubaud, S., Garnier, N. B., &
+                                      Ciliberto, S. (2007). Fluctuation theo...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1766.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1767: Misplaced alignment tab character &.
+l.1767 Kawazura, Y., &
+                       Yoshida, Z. (2010). Entropy production rate in a flux...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+LaTeX Warning: Command \textquotedblleft invalid in math mode on input line 1768.
+
+
+LaTeX Warning: Command \textquotedblright invalid in math mode on input line 1768.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1768.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1769.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1772.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1773.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1777: Misplaced alignment tab character &.
+l.1777 Maeda, A., &
+                    Munakata, T. (1995). Lattice thermal conductivity via ho...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1777.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1778.
+
+
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 1779.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1780.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1781: Misplaced alignment tab character &.
+l.1781 Nicolis, G., &
+                      Prigogine, I. (1979). Irreversible processes at nonequ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1781.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1782.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1783.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1784: Misplaced alignment tab character &.
+l.1784 Paltridge, G. W., Farquhar, G. D., &
+                                            Cuntz, M. (2007). Maximum entrop...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+LaTeX Warning: Command \textellipsis invalid in math mode on input line 1784.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1785: Misplaced alignment tab character &.
+l.1785 Perunov, N., Marsland, R. A., &
+                                       England, J. (2016). Statistical Physi...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1787.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1788.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1791: Misplaced alignment tab character &.
+l.1791 Searles, D. J., &
+                         Evans, D. J. (2000). The fluctuation theorem and Gr...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1791.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1791.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1792.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1793.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1794: Misplaced alignment tab character &.
+l.1794 ...ck, E. M., Mittag, E., Searles, D. J., &
+                                                   Evans, D. J. (2002). Expe...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1794.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1795: Misplaced alignment tab character &.
+l.1795 Williams, S. R., &
+                          Evans, D. J. (2008). Time-dependent response theor...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1795.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1797: Misplaced alignment tab character &.
+l.1797 Yamada, T., &
+                     Kawasaki, K. (1967). Nonlinear effects in the shear vis...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1798: Misplaced alignment tab character &.
+l.1798 Zhang, F., Isbister, D. J., &
+                                     Evans, D. J. (2001). Multiple nonequili...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+LaTeX Warning: Command \textendash invalid in math mode on input line 1798.
+
+./Non-equilibrium systems and growth of complexity-formatted.tex:1799: Missing $ inserted.
+<inserted text> 
+                $
+l.1799 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (64.74818pt too wide) in paragraph at lines 1736--1799
+\T1/cmr/m/n/12 of Time. Phys-i-cal Re-view Let-ters, 113(18), 181101^^U5. http://doi.org/10.1103/PhysRevLett.113.181101
+ []
+
+
+Overfull \hbox (24.99947pt too wide) in paragraph at lines 1736--1799
+\T1/cmr/m/n/12 ity. Re-views of Mod-ern Physics, 17(2-3), 343^^U350. http://doi.org/10.1103/RevModPhys.17.343
+ []
+
+
+Overfull \hbox (84.27449pt too wide) in paragraph at lines 1736--1799
+\T1/cmr/m/n/12 Pro-ceed-ings of the Na-tional Academy of Sci-ences, 80(8), 2412^^U2416. http://doi.org/10.1073/pnas.80.8.2412
+ []
+
+
+Overfull \hbox (95.79185pt too wide) in paragraph at lines 1736--1799
+\T1/cmr/m/n/12 1$[]\OML/cmm/m/it/12 Dorfman; J:R:\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 n:d:\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 :AnIntroductiontoChaosinNonequilibriumStatisticalMechanics; \OT1/cmr/m/n/12 1999\OML/cmm/m/it/12 :Cambridge \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (289.67856pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 CambridgeUniversity::::Doyle; R:O:\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 n:d:\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 :TheOriginofIrreversibility:InformationPhilosopher:England; J:\OT1/cmr/m/n/12 (2013)\OML/cmm/m/it/12 :Statisticalphysicsofself \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (110.919pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 replication; \OT1/cmr/m/n/12 139(12)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 121923^^U9\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1063\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 4818538\OML/cmm/m/it/12 Evans; D:J:\OT1/cmr/m/n/12 (1985)\OML/cmm/m/it/12 :Responsetheoryasafree \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (797.48799pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 energyextremum:PhysicalReviewA; \OT1/cmr/m/n/12 32(5)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2923^^U2925\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1103\OML/cmm/m/it/12 =PhysRevA:\OT1/cmr/m/n/12 32\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 2923\OML/cmm/m/it/12 Evans; D:J:; Rondoni; L:\OT1/cmr/m/n/12 (2002)\OML/cmm/m/it/12 :CommentsontheEntropyofNonequilibriumSteadyStates:JournalofStatisticalPhysics; \OT1/cmr/m/n/12 109(3\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 4)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 895^^U920\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (549.53305pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1023\OML/cmm/m/it/12 =A \OT1/cmr/m/n/12 : 1020435219996\OML/cmm/m/it/12 Evans; D:J:; Cohen; E:G:D:; Morriss; G:P:\OT1/cmr/m/n/12 (1993)\OML/cmm/m/it/12 :Probabilityofsecondlawviolationsinshearingsteadystates:PhysicalReviewLetters; \OT1/cmr/m/n/12 71(15)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2401^^U2404\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (291.42148pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1103\OML/cmm/m/it/12 =PhysRevLett:\OT1/cmr/m/n/12 71\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 2401\OML/cmm/m/it/12 Evans; D:J:; Searles; D:J:; Williams; S:R:\OT1/cmr/m/n/12 (2016)\OML/cmm/m/it/12 :Fundamentalsofclassicalstatisticalthermodynamics \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (453.31252pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 dissipation; relaxation; andfluctuationtheorems:Berlin \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 JohnWileySons:Fox; J:G:\OT1/cmr/m/n/12 (1965)\OML/cmm/m/it/12 :EvidenceAgainstEmmisionTheories:AmericanJournalofPhysics; \OT1/cmr/m/n/12 33(1)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1^^U17\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (37.1319pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1119\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1971219\OML/cmm/m/it/12 Gibbs; J:W:\OT1/cmr/m/n/12 (1928)\OML/cmm/m/it/12 :ThecollectedworksofJ:WillardGibbs:NewYork \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (43.08043pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 Longmans:Grandy; W:T:\OT1/cmr/m/n/12 (2008)\OML/cmm/m/it/12 :EntropyandtheTimeEvolutionofMacroscopicSystems:Oxford \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (560.2083pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 OxfordUniv:Press:Hoover; W:G:; Ladd; A:J:C:; Moran; B:\OT1/cmr/m/n/12 (1982)\OML/cmm/m/it/12 :High \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 Strain \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 RatePlasticFlowStudiedviaNonequilibriumMolecularDynamics:PhysicalReviewLetters; \OT1/cmr/m/n/12 48(26)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1818^^U1820\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (1050.46349pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1103\OML/cmm/m/it/12 =PhysRevLett:\OT1/cmr/m/n/12 48\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1818\OML/cmm/m/it/12 Jarzynski; C:\OT1/cmr/m/n/12 (1997)\OML/cmm/m/it/12 :NonequilibriumEqualityforFreeEnergyDifferences:PhysicalReviewLetters; \OT1/cmr/m/n/12 78(14)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2690^^U2693\OML/cmm/m/it/12 :Jarzynski; C:\OT1/cmr/m/n/12 (2006)\OML/cmm/m/it/12 :Rareeventsandtheconvergenceofexponentiallyaveragedworkvalues:PhysicalReviewE; \OT1/cmr/m/n/12 73(4)\OML/cmm/m/it/12 ; P\OT1/cmr/m/n/12 09005^^U10\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (270.43628pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1103\OML/cmm/m/it/12 =PhysRevE:\OT1/cmr/m/n/12 73\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 046105\OML/cmm/m/it/12 Jaynes; E:T:\OT1/cmr/m/n/12 (1965)\OML/cmm/m/it/12 :GibbsvsBoltzmannEntropies:AmericanJournalofPhysics; \OT1/cmr/m/n/12 33(5)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 391^^U398\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (347.63548pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1119\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1971557\OML/cmm/m/it/12 Joubaud; S:; Garnier; N:B:; Ciliberto; S:\OT1/cmr/m/n/12 (2007)\OML/cmm/m/it/12 :Fluctuationtheoremsforharmonicoscillators:JournalofStatisticalMechanics \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (428.52057pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 TheoryandExperiment; \OT1/cmr/m/n/12 2007(09)\OML/cmm/m/it/12 ; P\OT1/cmr/m/n/12 09018^^U\OML/cmm/m/it/12 P\OT1/cmr/m/n/12 09018\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1088\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 1742 \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 5468\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2007\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 09\OML/cmm/m/it/12 =P\OT1/cmr/m/n/12 09018\OML/cmm/m/it/12 Kawazura; Y:; Yoshida; Z:\OT1/cmr/m/n/12 (2010)\OML/cmm/m/it/12 :Entropyproductionrateinaflux \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (535.94212pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 drivenself \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 organizingsystem:PhysicalReviewE; \OT1/cmr/m/n/12 82(6)\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1103\OML/cmm/m/it/12 =physreve:\OT1/cmr/m/n/12 82\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 066403\OML/cmm/m/it/12 Kerswell; R:\OT1/cmr/m/n/12 (2002)\OML/cmm/m/it/12 :Upperboundsongeneraldissipationfunctionalsinturbulentshearflows \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (1055.73396pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 revisitingthe\OT1/cmr/m/n/12 ^^P\OML/cmm/m/it/12 efficiency\OT1/cmr/m/n/12 ^^Q\OML/cmm/m/it/12 functional:JournalofFluidMechanics; \OT1/cmr/m/n/12 461\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1^^U37\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1017\OML/cmm/m/it/12 =S\OT1/cmr/m/n/12 0022112002008303\OML/cmm/m/it/12 Kiefer; C:\OT1/cmr/m/n/12 (2005)\OML/cmm/m/it/12 :Quantumcosmologyandthearrowoftime:BrazilianJournalofPhysics; \OT1/cmr/m/n/12 35\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 296^^U299\OML/cmm/m/it/12 :Kittel; C:\OT1/cmr/m/n/12 (2005)\OML/cmm/m/it/12 :IntroductiontoSolidStatePhysics\OT1/cmr/m/n/12 ; 8\OML/cmm/m/it/12 thed:Hoboken; NJ \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (148.95683pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 Wiley:Kondepudi; D:\OT1/cmr/m/n/12 (2008)\OML/cmm/m/it/12 :Introductiontomodernthermodynamics:Chichester \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 Wiley:Kubo; R:\OT1/cmr/m/n/12 (1957)\OML/cmm/m/it/12 :Statistical \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (494.4702pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 MechanicalTheoryofIrreversibleProcesses:I:GeneralTheoryandSimpleApplicationstoMagneticandConductionProblems:JournalofthePhysicalSocietyofJapan; \OT1/cmr/m/n/12 12(6)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 570^^U586\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (147.34904pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1143\OML/cmm/m/it/12 =JPSJ:\OT1/cmr/m/n/12 12\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 570\OML/cmm/m/it/12 Kurchan; J:\OT1/cmr/m/n/12 (1998)\OML/cmm/m/it/12 :Fluctuationtheoremforstochasticdynamics:JournalofPhysicsa \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (929.1366pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 MathematicalandGeneral; \OT1/cmr/m/n/12 31(16)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3719^^U3729\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1088\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 0305 \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 4470\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 31\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 16\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 003\OML/cmm/m/it/12 Kurchan; J:\OT1/cmr/m/n/12 (2009\OML/cmm/m/it/12 ; January\OT1/cmr/m/n/12 9)\OML/cmm/m/it/12 :Sixoutofequilibriumlectures:arXiv:org:Layzer; D:\OT1/cmr/m/n/12 (1970)\OML/cmm/m/it/12 :Cosmicevolutionandthermodynamicirreversibility:PureandAppliedChemistry; \OT1/cmr/m/n/12 22(3 \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (705.75937pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 entropyproductionbylatitudinalheattransport:Onlinelibrary:Wiley:com:Maeda; A:; Munakata; T:\OT1/cmr/m/n/12 (1995)\OML/cmm/m/it/12 :Latticethermalconductivityviahomogeneousnonequilibriummoleculardynamics:PhysicalReviewE; \OT1/cmr/m/n/12 52(1)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 234^^U239\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (352.14252pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1103\OML/cmm/m/it/12 =PhysRevE:\OT1/cmr/m/n/12 52\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 234\OML/cmm/m/it/12 MALKUS; W:V:R:\OT1/cmr/m/n/12 (2003)\OML/cmm/m/it/12 :Bordersofdisorder \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 inturbulentchannelflow:JournalofFluidMechanics; \OT1/cmr/m/n/12 489\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 185^^U198\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (1179.94246pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1017\OML/cmm/m/it/12 =S\OT1/cmr/m/n/12 0022112003004907\OML/cmm/m/it/12 Maxwell; J:C:\OT1/cmr/m/n/12 (1866)\OML/cmm/m/it/12 :OntheDynamicalTheoryofGases:PresentedattheProceedingsoftheRoyalSocietyof::::Monnai; T:\OT1/cmr/m/n/12 (2005)\OML/cmm/m/it/12 :UnifiedtreatmentofthequantumfluctuationtheoremandtheJarzynskiequalityintermsofmicroscopicreversibility:PhysicalReviewE; \OT1/cmr/m/n/12 72(2)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 19^^U4\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (694.36407pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1103\OML/cmm/m/it/12 =PhysRevE:\OT1/cmr/m/n/12 72\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 027102\OML/cmm/m/it/12 Nicolis; G:; Prigogine; I:\OT1/cmr/m/n/12 (1979)\OML/cmm/m/it/12 :IrreversibleprocessesatnonequilibriumsteadystatesandLyapounovfunctions:ProceedingsoftheNationalAcademyofSciences; \OT1/cmr/m/n/12 76(12)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 6060^^U6061\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (252.21767pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1073\OML/cmm/m/it/12 =pnas:\OT1/cmr/m/n/12 76\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 12\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 6060\OML/cmm/m/it/12 Onsager; L:\OT1/cmr/m/n/12 (1931)\OML/cmm/m/it/12 :Reciprocalrelationsinirreversibleprocesses:I:PhysicalReview; \OT1/cmr/m/n/12 37(4)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 405^^U426\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (133.21814pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1103\OML/cmm/m/it/12 =physrev:\OT1/cmr/m/n/12 37\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 405\OML/cmm/m/it/12 Ozawa; H:\OT1/cmr/m/n/12 (2003)\OML/cmm/m/it/12 :Thesecondlawofthermodynamicsandtheglobalclimatesystem \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (41.91302pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 Areviewofthemaximumentropyproductionprinciple:ReviewsofGeophysics; \OT1/cmr/m/n/12 41(4)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1018^^U24\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (542.35783pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1029\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2002\OML/cmm/m/it/12 RG\OT1/cmr/m/n/12 000113\OML/cmm/m/it/12 Paltridge; G:W:; Farquhar; G:D:; Cuntz; M:\OT1/cmr/m/n/12 (2007)\OML/cmm/m/it/12 :Maximumentropyproduction; cloudfeedback; andclimatechange:GeophysicalResearch:::; \OT1/cmr/m/n/12 34(14)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3445\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (295.11417pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1029\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 2007\OML/cmm/m/it/12 GL\OT1/cmr/m/n/12 029925\OML/cmm/m/it/12 Perunov; N:; Marsland; R:A:; England; J:\OT1/cmr/m/n/12 (2016)\OML/cmm/m/it/12 :StatisticalPhysicsofAdaptation:PhysicalReviewX; \OT1/cmr/m/n/12 6(2)\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (187.443pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1103\OML/cmm/m/it/12 =physrevx:\OT1/cmr/m/n/12 6\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 021036\OML/cmm/m/it/12 Prigogine; I:\OT1/cmr/m/n/12 (1993)\OML/cmm/m/it/12 :Time; structureandfluctuations:NobelLecturesinChemistry\OT1/cmr/m/n/12 1971 \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (313.58293pt too wide) in paragraph at lines 1736--1799
+\OT1/cmr/m/n/12 1980\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1126\OML/cmm/m/it/12 =science:\OT1/cmr/m/n/12 201\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 4358\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 777\OML/cmm/m/it/12 Rayleigh; L:\OT1/cmr/m/n/12 (1878)\OML/cmm/m/it/12 :OnTheInstabilityOfJets:ProceedingsoftheLondonMathematicalSociety; s\OT1/cmr/m/n/12 1 \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (726.52184pt too wide) in paragraph at lines 1736--1799
+\OT1/cmr/m/n/12 10(1)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 4^^U13\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1112\OML/cmm/m/it/12 =plms=s\OT1/cmr/m/n/12 1 \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 4\OML/cmm/m/it/12 Rayleigh; L:\OT1/cmr/m/n/12 (1916)\OML/cmm/m/it/12 :LIX:Onconvectioncurrentsinahorizontallayeroffluid; whenthehighertemperatureisontheunderside:PhilosophicalMagazineSeries\OT1/cmr/m/n/12 6\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 32(192)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 529^^U546\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (330.52293pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1080\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 14786441608635602\OML/cmm/m/it/12 Rovelli; C:\OT1/cmr/m/n/12 (2015\OML/cmm/m/it/12 ; May\OT1/cmr/m/n/12 4)\OML/cmm/m/it/12 :IsTime[]sArrowPerspectival\OT1/cmr/m/n/12 ?\OML/cmm/m/it/12 arXiv:org:Schwabl; F:\OT1/cmr/m/n/12 (2002)\OML/cmm/m/it/12 :Statisticalmechanics:Berlin \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (571.01591pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 Springer:http \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1007\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 978 \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 3 \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 662 \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 04702 \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 6\OML/cmm/m/it/12 Searles; D:J:; Evans; D:J:\OT1/cmr/m/n/12 (2000)\OML/cmm/m/it/12 :ThefluctuationtheoremandGreen\OT1/cmr/m/n/12 ^^U\OML/cmm/m/it/12 Kuborelations:TheJournalofChemicalPhysics; \OT1/cmr/m/n/12 112(22)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 9727^^U9735\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (310.8059pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1063\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 481610\OML/cmm/m/it/12 Seifert; U:\OT1/cmr/m/n/12 (2005)\OML/cmm/m/it/12 :Fluctuationtheoremforasingleenzymormolecularmotor:EPL\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 EurophysicsLetters\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 70(1)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 36^^U41\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (1445.08377pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1209\OML/cmm/m/it/12 =epl=i\OT1/cmr/m/n/12 2005 \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 10003 \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 9\OML/cmm/m/it/12 Shannon; C:E:\OT1/cmr/m/n/12 (1948)\OML/cmm/m/it/12 :Amathematicaltheoryofcommunication:BellSys:Tech:J:; \OT1/cmr/m/n/12 27\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 623^^U656\OML/cmm/m/it/12 :Wang; G:M:; Sevick; E:M:; Mittag; E:; Searles; D:J:; Evans; D:J:\OT1/cmr/m/n/12 (2002)\OML/cmm/m/it/12 :ExperimentalDemonstrationofViolationsoftheSecondLawofThermodynamicsforSmallSystemsandShortTimeScales:PhysicalReviewLetters; \OT1/cmr/m/n/12 89(5)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 128^^U4\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 :
+ []
+
+
+Overfull \hbox (249.85097pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1103\OML/cmm/m/it/12 =PhysRevLett:\OT1/cmr/m/n/12 89\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 050601\OML/cmm/m/it/12 Williams; S:R:; Evans; D:J:\OT1/cmr/m/n/12 (2008)\OML/cmm/m/it/12 :Time \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 dependentresponsetheoryandnonequilibriumfree \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (310.66661pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 energyrelations:PhysicalReviewE; \OT1/cmr/m/n/12 78(2)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 021119^^U7\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1103\OML/cmm/m/it/12 =PhysRevE:\OT1/cmr/m/n/12 78\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 021119\OML/cmm/m/it/12 Wolfram; S:\OT1/cmr/m/n/12 (2002)\OML/cmm/m/it/12 :Anewkindofscience:Urbana \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (832.70029pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 Champaign; IL \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 WolframMedia:Yamada; T:; Kawasaki; K:\OT1/cmr/m/n/12 (1967)\OML/cmm/m/it/12 :Nonlineareffectsintheshearviscosityofcriticalmixtures:ProgressofTheoreticalPhysics:Zhang; F:; Isbister; D:J:; Evans; D:J:\OT1/cmr/m/n/12 (2001)\OML/cmm/m/it/12 :Multiplenonequilibriumsteadystatesforone \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (69.84985pt too wide) in paragraph at lines 1736--1799
+\OML/cmm/m/it/12 dimensionalheatflow:PhysicalReviewE; \OT1/cmr/m/n/12 64(2)\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 1645^^U5\OML/cmm/m/it/12 :http \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 ==doi:org=\OT1/cmr/m/n/12 10\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 1103\OML/cmm/m/it/12 =PhysRevE:\OT1/cmr/m/n/12 64\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 021102$ 
+ []
+
+[51] [52]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1801.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1801.
+ (/Users/masteranza/Projects/MasterThesis/Work/Draft3/.texpadtmp/Non-equilibrium systems and growth of complexity-formatted.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1801.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1801.
+Package rerunfilecheck Info: File `"Non-equilibrium systems and growth of complexity-formatted".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-
-
-LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1753.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1801.
  ) 
 Here is how much of TeX's memory you used:
- 24961 strings out of 493089
- 469724 string characters out of 6134843
- 518333 words of memory out of 5000000
- 27703 multiletter control sequences out of 15000+600000
+ 24827 strings out of 493089
+ 467406 string characters out of 6134843
+ 540106 words of memory out of 5000000
+ 27639 multiletter control sequences out of 15000+600000
  31733 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,11n,76p,10463b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,11n,76p,10473b,703s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2015/te
 xmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on "/Users/masteranza/Projects/MasterThesis/Work/Draft3/.texpadtmp/Non-equilibrium systems and growth of complexity.pdf" (54 pages, 686014 bytes).
+Output written on "/Users/masteranza/Projects/MasterThesis/Work/Draft3/.texpadtmp/Non-equilibrium systems and growth of complexity-formatted.pdf" (52 pages, 676670 bytes).
 PDF statistics:
- 1104 PDF objects out of 1200 (max. 8388607)
- 996 compressed objects within 10 object streams
- 346 named destinations out of 1000 (max. 500000)
+ 927 PDF objects out of 1000 (max. 8388607)
+ 822 compressed objects within 9 object streams
+ 279 named destinations out of 1000 (max. 500000)
  420 words of extra memory for PDF output out of 10000 (max. 10000000)
 
