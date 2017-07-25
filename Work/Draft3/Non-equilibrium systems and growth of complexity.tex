@@ -64,6 +64,22 @@ Instytut Fizyki, Uniwersytet Jagielloński, \\ul. Łojasiewicza
 \newpage
 
 \section{Introduction}
+
+The inspiration for writing this work and thus, for inquiry of the subject of non-equilibrium statistical mechanics has been the ineffable complexity of the world which slowly begin too become within reach of physics. 
+In particular, recent developments in non-equilibrium statistical physics have convinced me that times are ripe for a review of the vast subject concerning the small and the big, the fluctuation theorems on scales of single DNA strand and MaxEP on the planetary scales.
+
+The investigations here presented start from a historical review of the subject (sections 2,3) which presents sometimes some less known points of view and helps in understanding, not only the chronological development of ideas, but also the various paradoxes and misconceptions that arose on the way of intense research. 
+
+Indeed, the topic of far from equilibrium statistical mechanics developed mostly in the last 30-40 years, therefore a short review of linear response near-equilibrium statistical mechanics of Onsager, Kubo and Prigogine is in place and is presented in section \ref{NearEquilibrium}. This is then followed in section \ref{simple-model} by a crude and simple model illustrating the mechanism of entropy lowering during non-equilibrium conditions, thus allowing for formation of complexity.
+
+In section \ref{IrreversibilityMeasure} I pedagogically present sort of a macroscopic "big-brother" of the fluctuation theorems and its distributions of entropy. Building on introduced there measure of irreversibility we transition naturally to section \ref{FluctuationTheorems} and the topic of fluctuation theorems in one of their deterministic versions, leading to derivation of Crooks fluctuation theorem and Jarzynski inequality.
+
+Some worth innovative applications of the latter to self-replicators and traversals energy landscapes are then reviewed in section \ref{CrooksApplications}. In fact the topic is so rich and developing so fast that the author regrets not focusing on it exclusively. 
+
+In the final section \ref{UnifyingPrinciple} a review of a attention-catching, but incomplete topic of extrema principles for non-equilibrium physics is performed. Subsequently, the most promising result, extending on MaxEnt approach is presented with an example application to planetary climates.
+
+Finally, the topic of quantum mechanics and von Neumann entropy is only briefly scratched in section 3, leaving place for further work.
+
 %TODO: Dodaj wstęp podobny do Umberto Marini Bettolo Marconi
 %Fluctuation-Dissipation: Response Theory in Statistical Physics
 
@@ -96,12 +112,12 @@ It was argued that if a single particle visits every possible piece of the phase
 Gibbs also introduced another definition of entropy, which, as noted by him \cite{Gibbs:1928tw} would only increase in a closed system if it was measured in a "coarse-grained" way in which nearby states were not distinguished. In literature one can sometimes find statements \cite{Evans:2241458} that this property of Gibbs entropy is problematic, but in fact the resolution of this paradox in very similar to the resolution of the Loschmidt paradox.
 
 During the beginning of the XX century, just before 
-the development of quantum theory which largely overshadowed the development of thermodynamics, Albert Einstein published his paper on Brownian motion\cite{Einstein:eEYNf903}(on par with Marian Smoluchowski). It connected the viscous friction coefficient with the diffusion constant and started a very successful line of investigations, followed by Langevin and the use of stochastic methods.
+the development of quantum theory which largely overshadowed the development of thermodynamics, Albert Einstein published his paper on Brownian motion\cite{Einstein:eEYNf903}(on par with Marian Smoluchowski). This was the first work, where the idea of relating the amplitude of the dissipation to that of the fluctuations was employed, which and started a very successful line of investigations, followed by Langevin and the use of stochastic methods.
 
 Then during 1930s Lars Onsager published very influential papers\cite{Onsager:zgWBDrcO, Onsager:sJs1Kffm}, which may be considered as the first our-reach towards non-equilibrium phenomena.
-Besides refining the understanding of transport coefficients and their cross relations it hinted on the validity of the so-called Onsager hypothesis or "chaos hypothesis", a non-equilibrium parallel to the Boltzmann ergodic hypothesis.
+Besides refining the understanding of transport coefficients and their cross relations it hinted on the validity of the so-called Onsager hypothesis or "chaos hypothesis", a non-equilibrium parallel to the Boltzmann ergodic hypothesis. In it's weaker form known as regression hypothesis it states that the relaxation of a macroscopic non-equilibrium perturbation follows the same laws which govern the dynamics of fluctuations in equilibrium systems.
 
-In the 1950s the theory was further extended by Melville Green and Ryogo Kubo in what is now known as Green-Kubo relations\cite{Kubo:1957cl}, a family of surprising relations connecting transport coefficients to the correlation functions of observables - those will be presented in further sections. 
+In the 1950s the theory guided by this principle was further extended by  Herbert Callen's and Theodore Welton's fluctuation-dissipation theorem (not presented here) and by Melville Green and Ryogo Kubo in what is now known as Green-Kubo relations\cite{Kubo:1957cl}, a family of surprising relations connecting transport coefficients to the correlation functions of observables - those will be presented in further sections. 
 
 Meanwhile, thanks to the development of numerical methods and early computers the properties of various mechanical models were investigated.
 This ultimately led to the discovery of chaos (chaotic behaviour of systems) and development of information theory.
@@ -197,7 +213,11 @@ with respect to $p_i$ (new a posteriori distribution). $H(p||q)$ can be interpre
 
 
 After Shannon and Jaynes established the links between information theory, statistical mechanics and thermodynamics, there was a growing need to include the concept of computation as well. Following some preliminary statements by John von Neumann, it was thought that any computational process must necessarily increase entropy.
-However in 1970s, Charles Bennett pointed out that it is not the case\cite{Bennett:1973ko}, laying some early groundwork for relating computational and thermodynamic ideas. This interesting topic however will not be developed in this work. Instead we will focus on a more recent line of work, considering non-equilibrium systems with reversible Nosé-Hoover thermostats; initiated by Giovanni Gallavotti and Ezechiel Cohen \cite{Gallavotti:1995gy} leading to the works of Gavin Crooks\cite{Crooks:2008ta}, Denis Evans and the development of fluctuation theorems and it's applications.
+However in 1970s, Charles Bennett pointed out that it is not the case\cite{Bennett:1973ko}, laying some early groundwork for relating computational and thermodynamic ideas. This interesting topic however will not be developed in this work. Instead we will focus on a more recent line of work driven by a renewed interest toward the theory of fluctuations, considering non-equilibrium systems with reversible Nosé-Hoover thermostats.
+
+In the early 1990s Evans, Cohen and Morriss considered the fluctuations of the entropy production rate in a shearing fluid, and proposed the so called Fluctuation Relation (FR), which represents a general result concerning systems arbitrarily far from equilibrium which, in the near equilibrium,  stays consistent with the Green-Kubo and Onsager relations. 
+
+Starting with the developments of the FR proposed by Evans and Searles\cite{Evans:2002cu} and, in different conditions, by Giovanni Gallavotti and Ezechiel Cohen \cite{Gallavotti:1995gy}, leading to the works of Gavin Crooks\cite{Crooks:2008ta} and Jarzynski\cite{Jarzynski:1997uj}, the last 20 years have produced a whole new theoretical framework which encompasses the previous linear response theory and goes beyond that, including the far from equilibrium phenomena and the behaviour in between micro and macro scale. The last 5 years of this continued research paved the way for Jeremy England and coworkers\cite{England:2015hl, England:2010fb} which began description of objects living in that scale e.g. proteins and DNA molecules, implementing what could be named, Schrödinger's plan. 
 
 \section{Treatments of entropy in the standard contexts}
 
@@ -302,6 +322,7 @@ then in general the following identities are satisfied
 The interpretation of the first inequality is that the full information about the states of the subsystems $A$ and $B$ will in general not be sufficient to give full information about the state of the total system $A+B$. Or in other words, when there are correlations between the two subsystems, these are not seen in the description of $A$ and $B$ separately. 
 
 \section{Near-equilibrium thermodynamics}
+\label{NearEquilibrium}
 \subsection{Local equilibrium and entropy production}
 
 The term local equilibrium describes the situation in which the thermodynamic quantities of the system such as density, temperature, pressure, etc. can vary spatially and with time, but in each volume element the thermodynamic relations between the values which apply locally there are obeyed. 
@@ -729,7 +750,7 @@ A remarkable feature of this results is that the obtained distributions are not 
 Despite its generality one has to remember that this result holds for macroscopic systems with multiplicity of macrostates. Have we had just one initial or just on final macrostate the analysis would collapsed to a time-reversable case. As we will see shortly, this is exactly the case covered by the Fluctuation Theorems.
 
 \section{Fluctuation theorems}
-
+\label{FluctuationTheorems}
 In the previous section we have seen how irreversibility arrises in macroscopic systems, now we wish to extend it to small systems living on the boundary between micro- and macroscopic descriptions. The crucial element of this extension is the same, natural measure of irreversibility introduced before, however now we will be taking into the account the possible microscopic trajectories of the systems. 
 An early indicator that this line of attack might indeed be needed was given in case of the mentioned in \ref{Gibbs entropy}, Hahn spin echoes experiment.
 
@@ -755,7 +776,7 @@ In the following considerations we will assume that classical mechanics gives an
 
 \subsubsection{Thermostated, but time reversible systems}
 
-The first time-reversible, deterministic thermostats and ergostats (homogeneous thermostats) were invented in the early 1980s by Hoover, Ladd and Moran. Prior to this development there was no satisfactory mathematical way of modelling thermostatted non-equilibrium steady states\cite{Hoover:1982dp}.
+The first time-reversible, deterministic thermostats and ergostats (homogeneous thermostats) were invented in the early 1980s by Hoover, Ladd and Moran\cite{Hoover:1982dp}. Prior to this development there was no satisfactory mathematical way of modelling thermostatted non-equilibrium steady states.
 
 The construction of thermostated time reversible systems is usually done inserting some time-reversible, but non-Hamiltonian terms into part of the equations of motion defined as the surroundings. Surroundings in first approximation are assumed to stay far from the system of interest and should not affect the system under consideration.
 The work done on a system, should be on average, converted into heat, which is conducted through the system of interest and eventually removed by the non-Hamiltonian terms residing in the remote boundaries.
@@ -1316,29 +1337,27 @@ Now using the definition of generalized work, equation (\ref{GeneralizedWorkDef}
 \end{aligned}
 \end{equation}
 
-\todo{Not sure if that would hold for $\tau \neq 0$}
-Rewriting this again in full notion
+%TODO: Not sure if that would hold for $\tau \neq 0$
+
+Rewriting this again in full notion:
 \begin{equation}
 \label{GCFR}
 \frac{p_{eq,1}(\Delta X_{\tau,f}=B\pm dB)}{p_{eq,2}(\Delta X_{\tau,r}=-B\mp dB)}= \exp[B] \frac{Z(\lambda_2)}{Z(\lambda_1)}
 \end{equation}
 we obtain the generalized Crooks fluctuation relation (GCFR).
 
-In order to use GCFT we specialize it to an actual statistical mechanical ensemble and system of dynamics, obtaining the canonical forms of CFT between initial and final equilibrium states with the same values of temperature, volume and number of particles (T,V,N). We will consider T-mixing, Nosé-Hoover isothermal systems in which the Hamiltonian is subject to a parametric transformation. Equilibrium distribution function $f(\bm{\Gamma};0)$ and the related free energy $F(\lambda)$ and partition function $Z_c$ are given by
+In order to use GCFT we specialize the obtained result to an actual statistical mechanical ensemble and system of dynamics, obtaining the canonical forms of CFT between initial and final equilibrium states with the same values of temperature, volume and number of particles (T,V,N). 
+
+Referring to equation (\ref{ThermostattedEq}), the equilibrium distribution function $f(\bm{\Gamma};0)$, the related free energy $F(\lambda)$ and partition function $Z$ are given by
 
 \begin{equation}
 \begin{aligned}
-  f(\bm{\Gamma};0)=Z_c^-1 \exp[-\beta H_0(\bm{\Gamma})]\\
-  F(\lambda)\equiv - k_B T \ln Z_c(\lambda) = -k_B T \ln[\int d\bm{\Gamma} \exp[-\beta H_0(\bm{\Gamma},\lambda)]]
+  f(\bm{\Gamma};0)=Z^{-1} \exp[-\beta H(\bm{\Gamma},0)],\\
+  F(\lambda)\equiv - k_B T \ln Z(\lambda) = -k_B T \ln[\int d\bm{\Gamma} \exp[-\beta H(\bm{\Gamma},\lambda)]].
 \end{aligned}
 \end{equation}
 
-The Hamiltonian given by
-\begin{equation}
-  H_0(\bm{\Gamma},\lambda(t)) = \sum_{i=1}^N \frac{p_i^2}{2m} + \Phi(\bm{q}, \lambda{t})
-\end{equation}
-
-is varied parametrically from $\lambda_1 =\lambda(0)$ to the final, unique equilibrium state $\lambda_2 = \lambda(\tau)$ (to which it will relax thanks to the property of T-mixing). In systems coupled to additional degrees of freedom, the phase space volume changes and so the work with the Hamiltonian $H_E$ for the extended system becomes
+The Hamiltonian is varied parametrically from $\lambda_1 =\lambda(0)$ to the final, unique equilibrium state\footnote{To which it will relax thanks to the property of T-mixing} $\lambda_2 = \lambda(\tau)$. In coupled system of equation (\ref{ThermostattedEq} ), the phase space volume changes and so the work with the Hamiltonian $H_E$ for the extended system becomes:
 
 \begin{equation}
 \begin{aligned}
@@ -1349,14 +1368,13 @@ is varied parametrically from $\lambda_1 =\lambda(0)$ to the final, unique equil
 \end{aligned}
 \end{equation}
 
-The generalized dimensionless "work" became identifiable as $\beta$ times the work performed over a period of time $\tau$
-\todo{Discussion of the extended Hamiltonian + the isothermal result}
+The generalized dimensionless "work" became identifiable as $\beta$ times the work performed over a period of time $\tau$:
 
 \begin{equation}
 \label{CFT}
-  \frac{p_1(\Delta W_\tau =W)}{p_2(\Delta W_\tau = -W)} = exp[\beta (W - \Delta F)]
+  \frac{p_1(\Delta W_\tau =W)}{p_2(\Delta W_\tau = -W)} = exp[\beta (W - \Delta F)],
 \end{equation}
-
+thus obtaining the standard Crooks fluctuation theorem.
 
 %TODO: Improvement of GCFR?
 %TODO: More discussion needed - page 168
@@ -1420,7 +1438,7 @@ i.e. the ensemble average of the cyclic integral of the generalized work is nonn
 Although it's appearance is similar to Clausius inequality, for the heat we have to complete many cycles until the system settles into a periodic response to the cyclic protocol before we can apply the cyclic integral of the heat. Not all systems do settle into a cyclic response. The reason for this disrepancy is that after the cycle is complete no more work is being done, but the long relaxation process of course includes heat exchange. 
 
 \section{Application to self-replication and adaptation}
-
+\label{CrooksApplications}
 Now we wish to zoom out a bit from our theoretical considerations about the foundations of fluctuation theorems and just take them as a fact in some recent and interesting applications\cite{Perunov:2016hl}\cite{England:2013ed}. The main new truth obtained from them is that we can partially follow, what we consider "microscopic trajectories", but those are not the real microscopic trajectories of fundamental particles, thus dissipation of heat occurs along the way.
 
 We proceed by switching to a stochastic description in which the equation (\ref{CFT}) takes the form
@@ -1573,14 +1591,14 @@ Now we might try to interprate each of those terms, the intuitive meaning of the
   -\ln \langle \exp(-\beta W_d)\rangle= \beta \langle W_d \rangle - \Phi
 \end{equation}
 
-where $\Phi$ holds all higher order terms of the cumulant expansion. From the convexity of the exponential function and Jensen's inequality one might check\footnote{$e^{-\Psi + \Phi}=\langle \exp(-\beta W_d) \rangle \geq \exp(-\beta \langle W_d \rangle)= e^{-\Psi}$} that we must have $\Phi \geq 0$. Thus, $\Phi$ can be thought of as a correction due to the dispersion of the dissipated work distribution about the average $\beta \langle W_d \rangle $ that gives the heaviest weight to the leftward tail of the work distribution.\cite{Jarzynski:2006cq}
+where $\Phi$ holds all higher order terms of the cumulant expansion. From the convexity of the exponential function and Jensen's inequality one might check\footnote{$e^{-\Psi + \Phi}=\langle \exp(-\beta W_d) \rangle \geq \exp(-\beta \langle W_d \rangle)= e^{-\Psi}$} that we must have $\Phi \geq 0$. Thus, $\Phi$ can be thought of as a correction due to the dispersion of the dissipated work distribution about the average $\beta \langle W_d \rangle $ that gives the heaviest weight to the leftward tail of the work distribution\cite{Jarzynski:2006cq}.
 
-One might now argue that $\langle W_d \rangle $ can be connected with particle drift through oscillatory energy barriers (details depending on the model), this in fact recently demonstrated by Nikolay Perunov et al\cite{Perunov:2016hl}.
+One might now argue that averaged dissipated heat $\langle W_d \rangle $ can be connected with particle drift through oscillatory energy barriers (details depending on the model), this was in fact recently demonstrated by Nikolay Perunov et al\cite{Perunov:2016hl}.
 
 We have now seen how recent progress in microscale non-equilibrium statistical physics has allowed us to make plausible predictions about inanimate matter. Indeed the fruitfulness of this approach were noticed by other groups who seek to further generalize it - this will be the topic of next paragraph.
 
 \section{Search for a unifying principle}
-
+\label{UnifyingPrinciple}
 The search for variational or extremization principles in physics has a long history of success. In classical mechanics, one finds the equations of motion from Lagrangian formalisms with the principle of least action. In thermodynamics and statistical physics of equilibrium state the principle of maximum entropy yields the true equilibrium states of a given system. 
 
 In 1912, Ehrenfest was the first who asked whether such a principle for a yet unknown function could exist for non-equilibrium steady states \cite{Dewar:2014ek}.
@@ -1795,16 +1813,21 @@ Using the equation (\ref{SymmetricIrreversible}) one gets
 
 \begin{equation}
 \begin{aligned}
-  I(\bm{F})=2 \bm{\lambda}(\bm{F})\bm{F} \propto - \sum_i F_i \Delta(\frac{1}{T_i})= \sum_i (\frac{\Delta F_i}{T_i})
+  I(\bm{F})=2 \bm{\lambda}(\bm{F})\bm{F} \propto - \sum_i F_i \Delta\bigg(\frac{1}{T_i}\bigg)= \sum_i \bigg(\frac{\Delta F_i}{T_i}\bigg)
 \end{aligned}
 \end{equation}
 
 which has the form of entropy production function used by \cite{Paltridge:2007jf}\cite{Lorenz:J80tzZkl}.
   
-\newpage
 \section{Summary}
 
+After over 100 years, the arguments of Boltzmann and others on the Loschmidt paradox have become more tangible and very refined through the description sub-macroscopic description provided by the fluctuation theorem.
+The research on fluctuation theorems has been immensely productive, providing us with better understanding of thermostatted systems, steady states, dissipation and relaxation processes and is slowly moving to quantum realm\cite{Kurchan:2000uh}.
 
+Its applications are already giving us knew methods of calculating free energy of large molecules and some early understanding of self replicators and adaptation. The full understanding will almost surely, demand the inclusion of Information theory into the picture.
+
+This work presented some of recent developments in a pedagogical manner, bridging the gaps between the old and the new. For small scales the transition occurred from Onsager and Kubo relations to dissipation theorem and from irreversibility measure protoplast to fluctuation theorems.
+On large scales the transition took place from MaxEnt to MaxEP, which although may not hold exactly, certainly revives the unifying spirit of physics of the early days.    
 %One gets non-gausian distribution!
 
 \newpage

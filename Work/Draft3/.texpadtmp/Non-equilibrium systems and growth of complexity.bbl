@@ -86,6 +86,10 @@ J.~Barbour, T.~Koslowski, and F.~Mercati, ``{Identification of a Gravitational
 C.~H. Bennett, ``{Logical reversibility of computation},'' {\em IBM journal of
   research and development}, vol.~17, no.~6, pp.~525--532, 1973.
 
+\bibitem{Evans:2002cu}
+D.~J. Evans and D.~J. Searles, ``{The fluctuation theorem},'' {\em Advances in
+  Physics}, 2002.
+
 \bibitem{Gallavotti:1995gy}
 G.~Gallavotti and E.~G.~D. Cohen, ``{Dynamical Ensembles in Nonequilibrium
   Statistical Mechanics},'' {\em Physical Review Letters}, vol.~74,
@@ -94,6 +98,19 @@ G.~Gallavotti and E.~G.~D. Cohen, ``{Dynamical Ensembles in Nonequilibrium
 \bibitem{Crooks:2008ta}
 G.~Crooks, ``{Entropy production fluctuation theorem and the nonequilibrium
   work relation for free energy differences},'' pp.~1--7, Feb. 2008.
+
+\bibitem{Jarzynski:1997uj}
+C.~Jarzynski, ``{Nonequilibrium Equality for Free Energy Differences},'' {\em
+  Physical Review Letters}, vol.~78, pp.~2690--2693, Apr. 1997.
+
+\bibitem{England:2015hl}
+J.~England, ``{Dissipative adaptation in driven self-assembly},'' vol.~10,
+  pp.~919--923, Nov. 2015.
+
+\bibitem{England:2010fb}
+J.~England and G.~Haran, ``{To fold or expand--a charged question.},'' {\em
+  Proceedings of the National Academy of Sciences of the United States of
+  America}, vol.~107, pp.~14519--14520, Aug. 2010.
 
 \bibitem{Jaynes:1965gg}
 E.~T. Jaynes, ``{Gibbs vs Boltzmann Entropies},'' {\em American Journal of
@@ -203,10 +220,6 @@ S.~R. Williams and D.~J. Evans, ``{Time-dependent response theory and
   nonequilibrium free-energy relations},'' {\em Physical Review E}, vol.~78,
   pp.~021119--7, Aug. 2008.
 
-\bibitem{Jarzynski:1997uj}
-C.~Jarzynski, ``{Nonequilibrium Equality for Free Energy Differences},'' {\em
-  Physical Review Letters}, vol.~78, pp.~2690--2693, Apr. 1997.
-
 \bibitem{Perunov:2016hl}
 N.~Perunov, R.~A. Marsland, and J.~England, ``{Statistical Physics of
   Adaptation},'' {\em Physical Review X}, vol.~6, no.~2, 2016.
@@ -299,5 +312,8 @@ R.~C. Dewar, ``{Maximum entropy production and the fluctuation theorem},'' {\em
 \bibitem{Lorenz:J80tzZkl}
 R.~D. Lorenz, ``{Titan, Mars and Earth: entropy production by latitudinal heat
   transport.},'' {\em onlinelibrary.wiley.com}.
+
+\bibitem{Kurchan:2000uh}
+J.~Kurchan, ``{A Quantum Fluctuation Theorem},'' {\em arXiv.org}, July 2000.
 
 \end{thebibliography}
