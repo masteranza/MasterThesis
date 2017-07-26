@@ -257,15 +257,22 @@ Due, to the generality of Gibbs entropy we may therefore drop the $G$, and from 
 In closed Hamiltonian systems Gibbs entropy stays constant.
 This feature of entropy was first noted by Gibbs himself and was solved by a coarse-graining procedure \cite{Gibbs:1928tw}. The alleged arbitrariness of this procedure was subject to critique \cite{Evans:2241458}. %TODO: more on coarse-graining
 
-However, staying for a moment with non-coarse-grained entropy one can propose a thought experiment, leading to paradox and immediately resolving it to see the case more clearly. Consider a case of an simple gas closed in an isolated box container of size $L$ which molecules are localized in an imaginary box-like area of size $L/2$ at time $t_0$ (Figure 1a). %TODO: pics   
-It is obvious that the gas will expand, but according to the constancy of Gibbs entropy for an isolated system the entropy will not change. Of course the answer to this apparent paradox is very simple - if we had the ability to wait the time necessary for particles to localize in the volume $L/2$, we would probably not need the Second Law of thermodynamics. In every imaginable case, we  would need to place the particles in the initial state by hand, that is close them in an actual box of size $L/2$ and then release. 
+However, staying for a moment with non-coarse-grained entropy one can propose a thought experiment, leading to paradox and immediately resolving it to understand the case more clearly. 
+
+Let's consider a case of a simple gas (e.g. ideal) closed in an isolated box container of size $L$ which molecules are localized in an imaginary box-like area of size $L/2$ at time $t_0$ (Figure \ref{Figure1}a).
+It is obvious that the gas will expand, but according to the constancy of Gibbs entropy for an isolated system the entropy will not change. Of course the answer to this apparent paradox is very simple - if we had the ability to wait the time necessary for particles to spontaneously localize in the volume $L/2$, we would probably never need the Second Law of thermodynamics. In every imaginable case, we  would need to place the particles in the initial state by hand, that is, close them in an actual box of size $L/2$ and then release (Figure \ref{Figure1}b). 
 In this scenerio, the final phase space is of course larger than the initial one and Gibbs entropy increases, as expected.
 
-The means of practical use of still non-coarse-grained entropy in closed systems subject to adiabatic change was explained by MaxEnt approach of Jaynes\cite{Jaynes:1965gg}. If we knew that on the beginning, at time $t_0$ the system is in \textit{complete} thermodynamic equilibrium having entropy $S$, then we know that at the later time; after the external adiabatic ceased the new "test" or experimental distribution function will have entropy $S_e \geq S$. By saying that we demand \textit{complete} thermodynamic equilibrium at the beginning, we say that the systems history has to be followed by the experimenter to become confident of the obtained equilibrium, as some otherwise unexplainable exceptions exist, such as the Hahn experiment. %TODO Cite Hahn
+\begin{figure}[ht!]
+\centering \includegraphics[width=12cm]{Figure1} \caption{Gas enclosed in part of a container}
+\label{Figure1} 
+\end{figure}
+
+The means of practical use of still non-coarse-grained entropy in closed systems subject to an adiabatic change was explained with the use of MaxEnt approach by Jaynes \cite{Jaynes:1965gg}. If we knew that on the beginning, at time $t_0$ the system is in \textit{complete} thermodynamic equilibrium having entropy $S$, then we know that at the later time; after the external adiabatic influence ceased the new "test" or experimental distribution function will have entropy $S_e \geq S$. By saying that we demand \textit{complete} thermodynamic equilibrium at the beginning, we say that the \textit{systems history} has to be followed by the experimenter in order to become confident of the obtained equilibrium, as some otherwise unexplainable exceptions exist, such as the Hahn experiment. %TODO Cite Hahn
 
 It is perhaps worth underlying, that the increase of entropy is linked to our knowledge about the system, rather than anything it is doing internally. This should not come up as particularly surprising as our division between work and heat is somewhat arbitrary.
 
-Moreover, even the exact parameters of entropy depend on the situation, so does their number. We can increase their number as far as we wish and in doing so, we move toward classical deterministic description and the notion of entropy collapses (this is not the case for von Neumann entropy).
+Moreover, even the exact parameters of entropy depend on the situation, so does their number. We can increase their number as far as we wish and in doing so, we move toward classical deterministic description and the notion of entropy collapses\footnote{This is not the case for von Neumann entropy}.
 
 \subsection{von Neumann entropy during measurement process}
 
@@ -280,16 +287,16 @@ The von Neumann entropy is defined as
 For which the general form of the density matrix operator is
 
 \begin{equation}
-	\hat{\rho}=\sum_k p_k \ket{\psi_k}\bra{\psi_k} 
+	\hat{\rho}=\sum_k p_k \ket{\psi_k}\bra{\psi_k} .
 \end{equation}
 
-in case of pure state $\ket{\psi}$ the density matrix is simply
+For the case of pure state $\ket{\psi}$ the density matrix is simply
 \begin{equation}
-  \hat{\rho} = \ket{\psi}\bra{\psi}
+  \hat{\rho} = \ket{\psi}\bra{\psi}.
 \end{equation}
 
 and it is easy to verify that the entropy of a pure state is equal to zero. The entropy of mixed state is always greater than zero.
-If the system is in a pure state, it will continue to be in a pure state as long as it stays isolated. For a mixed state, the degree of non-purity measured by the entropy will stay constant as long as it is isolated. This follows from the fact that the time evolution is unitary and the eigenvalues of the density operator therefore do not change with time.
+If the system is in a pure state, it will continue to be in a pure state as long as it stays isolated. For a mixed state, the degree of non-purity measured by the entropy will stay constant as long as it is isolated. This follows from the fact that the time evolution is unitary and the eigenvalues of the density operator do not change in time under such conditions.
 
 An interesting question one might ask (and not really discussed in textbooks) is how the entropy changes after a measurement of a particle in many-body system which, initially, was in pure state.
 
@@ -298,34 +305,34 @@ In the scenario of two particles of identical momentum we can write the initial 
 \begin{equation}
   \ket{2,0,0,...}
 \end{equation}
-which entropy is of course zero.  
-In second quantization formalism the measurement of a particle is realized by the field operator $ \hat{\Psi}(x) =\sum_k \phi_k(x)\hat{a}_n$ which annihilates a single particle at position $x$.
+which has, of course, zero entropy. Now we would like to perform a measurement on that state. 
+In the second quantization formalism the measurement of a particle is realized by the field operator $ \hat{\Psi}(x) =\sum_k \phi_k(x)\hat{a}_n$, which annihilates a single particle at position $x$.
 Therefore after the measurement of particle at some position $x$, one particle is "virtually" removed from the system under consideration, but the system stays in pure state
 \begin{equation}
   \hat{\Psi}(x)\ket{2,0,0,...}=\phi_1(x)\ket{1,0,0,...},
 \end{equation}
-which entropy is zero. It is important to notice though that our system lost a particle and therefore the systems before and after measurement are not equivalent! Of course, in reality the particle doesn't disappear. After determination of it's position by experiment ($\Delta x \to 0$), the uncertainty of it's momentum approaches infinity ($\Delta p \to \infty$), which means that we can reconstruct the state using a linear combination of states with \textit{any} value of momentum:
+with zero entropy. It is important to notice though, that a particle is lost from our considerations and therefore the entropies before and after the measurement describe two different systems. Of course, in reality the particle doesn't disappear. After determination of it's position by experiment ($\Delta x \to 0$), the uncertainty of it's momentum approaches infinity ($\Delta p \to \infty$), which means that we can reconstruct the real state using a linear combination of states with \textit{any} value of momentum:
 
 \begin{equation}
   c_1\ \ket{2,,0,...}+c_2\ \ket{1,1,0,...}+  c_3\ \ket{1,0,1,...}+...
 \end{equation}
 where the  squared modulus of the coefficients has to sum up to one ($ \sum_i \left| c_i \right|^2 = 1 $).
 
-Now depending on the precision of the measurement we can recalculate entropy of course getting a value greater than zero. If we would perform the same analysis for a pure state of two particles in different states i.e. $ket{1,1,...}$ then we would obtain an increase of entropy even without accounting for the lost particle.
+Now depending on the precision of the measurement we can recalculate our entropy, now getting a value greater than zero. If we would perform the same analysis for a pure state of two particles in different states i.e. $\ket{1,1,0,...}$ then we would obtain an increase of entropy even without accounting for the lost particle.
 %TODO Correct also for correlated systems?
-This crude example gives a clear illustration of the fact that after \textbf{any} measurement the von Neumann entropy has to increase. However it's change is ultimately related to lost information about the system in the act of the measurement.
+This crude example gives a clear illustration of the fact that after \textbf{any} measurement the von Neumann entropy has to increase and that it's change is ultimately related to lost information about the system in the act of the measurement.
 
 There's another interesting feature of quantum entropy, namely inequalities that it fullfills.
 If we bipartite the system into subsystems $A$ and $B$ each containing it's own set of commuting observables, then in order to calculate the entropy $S_A$ of a subsystem $A$ we need to calculate the entropy with respect to density matrix traced over the other subsystem, namely
 \begin{equation}
-  \hat{\rho}^A = \Tr_B \hat{\rho} 
+  \hat{\rho}^A = \Tr_B \hat{\rho},
 \end{equation}
 then in general the following identities are satisfied
 
 \begin{equation}
 \begin{aligned}
 	S(\rho) &\leq S_A + S_B	\\
-	S(\rho) &\geq \left| S_A - S_B \right|
+	S(\rho) &\geq \left| S_A - S_B \right|.
 \end{aligned}
 \end{equation}
 
