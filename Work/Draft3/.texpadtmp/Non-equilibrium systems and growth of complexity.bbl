@@ -100,6 +100,16 @@ R.~Landauer, ``{Irreversibility and heat generation in the computing
 C.~H. Bennett, ``{Logical reversibility of computation},'' {\em IBM journal of
   research and development}, vol.~17, no.~6, pp.~525--532, 1973.
 
+\bibitem{Hoover:1982dp}
+W.~G. Hoover, A.~J.~C. Ladd, and B.~Moran, ``{High-Strain-Rate Plastic Flow
+  Studied via Nonequilibrium Molecular Dynamics},'' {\em Physical Review
+  Letters}, vol.~48, pp.~1818--1820, June 1982.
+
+\bibitem{Evans:1993bl}
+D.~J. Evans, E.~G.~D. Cohen, and G.~P. Morriss, ``{Probability of second law
+  violations in shearing steady states},'' {\em Physical Review Letters},
+  vol.~71, pp.~2401--2404, Oct. 1993.
+
 \bibitem{Evans:2002cu}
 D.~J. Evans and D.~J. Searles, ``{The fluctuation theorem},'' {\em Advances in
   Physics}, 2002.
@@ -178,11 +188,6 @@ D.~M. Carberry, M.~Baker, and G.~M. Wang, ``{An optical trap experiment to
   demonstrate fluctuation theorems in viscoelastic media},'' {\em Journal of
   Optics A: {\ldots}}, vol.~9, no.~8, pp.~S204--S214, 2007.
 
-\bibitem{Evans:1993bl}
-D.~J. Evans, E.~G.~D. Cohen, and G.~P. Morriss, ``{Probability of second law
-  violations in shearing steady states},'' {\em Physical Review Letters},
-  vol.~71, pp.~2401--2404, Oct. 1993.
-
 \bibitem{Ciliberto:2010jg}
 S.~Joubaud, N.~B. Garnier, and S.~Ciliberto, ``{Fluctuation theorems for
   harmonic oscillators},'' {\em Journal of Statistical Mechanics: Theory and
@@ -206,13 +211,12 @@ D.~J. Evans and L.~Rondoni, ``{Comments on the Entropy of Nonequilibrium Steady
 J.~Kurchan, ``{Fluctuation theorem for stochastic dynamics},'' {\em Journal of
   Physics A: Mathematical and General}, vol.~31, pp.~3719--3729, Apr. 1998.
 
+\bibitem{Searles:1999fz}
+D.~J. Searles and D.~J. Evans, ``{Fluctuation theorem for stochastic
+  systems},'' {\em Physical Review E}, vol.~60, pp.~159--164, July 1999.
+
 \bibitem{Kurchan:2009ub}
 J.~Kurchan, ``{Six out of equilibrium lectures},'' {\em arXiv.org}, Jan. 2009.
-
-\bibitem{Hoover:1982dp}
-W.~G. Hoover, A.~J.~C. Ladd, and B.~Moran, ``{High-Strain-Rate Plastic Flow
-  Studied via Nonequilibrium Molecular Dynamics},'' {\em Physical Review
-  Letters}, vol.~48, pp.~1818--1820, June 1982.
 
 \bibitem{Searles:2000ig}
 D.~J. Searles and D.~J. Evans, ``{The fluctuation theorem and

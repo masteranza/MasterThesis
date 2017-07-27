@@ -117,9 +117,9 @@ He argued that if a single particle visits every possible piece of the phase spa
 Gibbs also introduced another definition of entropy, which, as noted by him \cite{Gibbs:1928tw} would only increase in a closed system if it was measured in a "coarse-grained" way in which nearby states were not distinguished to perfect accuracy. In literature one can sometimes find statements \cite{Evans:2241458} that this property of Gibbs entropy is problematic, but in fact the resolution of this paradox in very similar to the resolution of the Loschmidt paradox.
 
 During the beginning of the XX century, just before 
-the development of quantum theory, which largely overshadowed the development of thermodynamics, Albert Einstein, on par with Marian Smoluchowski, published his paper on Brownian motion\cite{Einstein:eEYNf903}. This was the first work, where the idea of relating the amplitude of dissipation to that of the fluctuations was employed, which started a very successful line of investigations, followed by Paul Langevin and the use of stochastic methods.
+the development of quantum theory, which largely overshadowed the development of thermodynamics, Albert Einstein, on par with Marian Smoluchowski, published his paper on Brownian motion \cite{Einstein:eEYNf903}. This was the first work, where the idea of relating the amplitude of dissipation to that of the fluctuations was employed, which started a very successful line of investigations, followed by Paul Langevin and the use of stochastic methods.
 
-Then during 1930s Lars Onsager published two very influential papers\cite{Onsager:zgWBDrcO, Onsager:sJs1Kffm}, which may be considered as the first out-reach towards non-equilibrium phenomena.
+Then during 1930s Lars Onsager published two very influential papers \cite{Onsager:zgWBDrcO, Onsager:sJs1Kffm}, which may be considered as the first out-reach towards non-equilibrium phenomena.
 Besides refining the understanding of transport coefficients and their cross relations it hinted on the validity of the so-called Onsager hypothesis or regression hypothesis, a non-equilibrium parallel to the Boltzmann ergodic hypothesis. It stated that the relaxation of a macroscopic non-equilibrium perturbation follows the same laws which govern the dynamics of fluctuations in equilibrium systems, it's controversy stimulated a lot of new developments.
 
 In the 1950s the theory guided by this principle was further extended by  Herbert Callen's and Theodore Welton's fluctuation-dissipation theorem, followed by the work of Melville Green and Ryogo Kubo in what is now known as Green-Kubo relations \cite{Kubo:1957cl} - a family of surprising relations connecting transport coefficients to the correlation functions of observables - those will be presented in further sections. 
@@ -198,11 +198,9 @@ Statistical mechanics then becomes, in a strict sense, a form of statistical inf
 
 As an illustration, let's consider a situation with $n$ potential outcomes and $m<n$ constraints in the form of known values $F_k$ of some functions $f_k$ ($1 \leq k \leq m$).
 One then searches for a probability distribution that maximizes Shannon Entropy,
-
 \begin{equation}
   S=-\sum_{i=1}^n p_i \log p_i
 \end{equation}
-
 subject to the constraints:
 
 \begin{equation}
@@ -224,8 +222,10 @@ with respect to $p_i$ (new a posteriori distribution). $H(p||q)$ can be interpre
 
 After Shannon and Jaynes established the links between information theory, statistical mechanics and thermodynamics, there was a growing need to include the concept of computation as well. Following some preliminary statements by John von Neumann, it was thought that any computational process must necessarily increase entropy.
 However in 1960s Rolf Landauer and later in 1970s Charles Bennett pointed out that it is not the case \cite{Landauer:2002wc, Bennett:1973ko}, instead, entropy is raised during the process of erasure of information. This interesting topic however will not be developed in this work. Instead we will focus on a more recent line of work driven by a renewed interest toward the theory of fluctuations, considering non-equilibrium systems with reversible Nosé-Hoover thermostats.
+\subsection{The discovery of fluctuation theorems}
+The first time-reversible, deterministic thermostats and ergostats (homogeneous thermostats) were invented in the early 1980s by Hoover, Ladd and Moran\cite{Hoover:1982dp}. Prior to this development there was no satisfactory mathematical way of modelling thermostatted non-equilibrium steady states.
 
-In the early 1990s Evans, Cohen and Morriss considered the fluctuations of the entropy production rate in a shearing fluid, and proposed the so-called Fluctuation Relation (FR), which represents a general result concerning systems arbitrarily far from equilibrium, which, in the near equilibrium,  stays consistent with the Green-Kubo and Onsager relations. 
+In the early 1990s Evans, Cohen and Morriss \cite{Evans:1993bl} considered the fluctuations of the entropy production rate in a shearing fluid, and proposed the so-called Fluctuation Relation (FR), which represents a general result concerning systems arbitrarily far from equilibrium, which, in the near equilibrium,  stays consistent with the Green-Kubo and Onsager relations. 
 
 Starting with the developments of the FR proposed by Evans and Searles \cite{Evans:2002cu} and, in different conditions, by Giovanni Gallavotti and Ezechiel Cohen \cite{Gallavotti:1995gy}, leading to the works of Gavin Crooks \cite{Crooks:2008ta} and Jarzynski \cite{Jarzynski:1997uj}, the last 20 years have produced a whole new theoretical framework which encompasses the previous linear response theory and goes beyond that, including the far from equilibrium phenomena and the behaviour in between micro and macro scales. The last 5 years of this continued research paved the way for Jeremy England and coworkers \cite{England:2015hl, England:2010fb} who began description of objects living in that scale e.g. proteins and DNA molecules, implementing what could be named, Schrödinger's plan. 
 
@@ -237,21 +237,18 @@ The Gibbs Entropy is defined with the use of the $N$ particle probability distri
 \begin{equation}
   S_G = k_B \int \rho \log{\rho},
 \end{equation}
-
 and generalizes both results of Boltzmann:
 Boltzmann $H$, which is useful only for description of systems of non-interacting molecules \cite{Jaynes:1965gg} and the Boltzmann entropy $S_B = k_B \log{W}$ where $W$ represents the number of possible microscopic configuration of a macrostate (phase volume). 
 From this second fact we see that $\log{k_B^{-1} S_G}$ is a measure of the phase volume of microstates or measure of our degree of ignorance as to the true unknown microstate.
 
 Moreover, it can also be demonstrated \cite{Jaynes:1965gg} that the change of Gibbs entropy over a reversible path is equal to Clausius entropy:
-
 \begin{equation}
 \begin{aligned}
   \Delta S_G &= \int_1^2 \frac{d\langle K+ B \rangle+ \langle P \rangle d\Omega}{T}
-  &= \frac{dQ}{T}.
+  &= \frac{dQ}{T},
 \end{aligned}
 \end{equation}
-
-Here $K$ is the total kinetic energy, $V$ is the interparticle potential and $P$, $T$ are pressure and temperature. 
+where $K$ is the total kinetic energy, $V$ is the interparticle potential and $P$, $T$ are pressure and temperature. 
 Due, to the generality of Gibbs entropy we may therefore drop the $G$, and from now on speak of entropy $S$ and it's properties.
 
 In closed Hamiltonian systems Gibbs entropy stays constant.
@@ -279,28 +276,23 @@ Moreover, even the exact parameters of entropy depend on the situation, so does 
 Although this work is meant to stay within the classical limit, it might be worth while to clear out the notion of entropy in quantum context.
 
 The von Neumann entropy is defined as 
-
 \begin{equation}
   S_{vN}= -\Tr(\hat{\rho} \log{\hat{\rho}}).
 \end{equation}
-
 For which the general form of the density matrix operator is
-
 \begin{equation}
 	\hat{\rho}=\sum_k p_k \ket{\psi_k}\bra{\psi_k} .
 \end{equation}
-
 For the case of pure state $\ket{\psi}$ the density matrix is simply
 \begin{equation}
   \hat{\rho} = \ket{\psi}\bra{\psi}.
 \end{equation}
-
 and it is easy to verify that the entropy of a pure state is equal to zero. The entropy of mixed state is always greater than zero.
 If the system is in a pure state, it will continue to be in a pure state as long as it stays isolated. For a mixed state, the degree of non-purity measured by the entropy will stay constant as long as it is isolated. This follows from the fact that the time evolution is unitary and the eigenvalues of the density operator do not change in time under such conditions.
 
 An interesting question one might ask (and not really discussed in textbooks) is how the entropy changes after a measurement of a particle in many-body system which, initially, was in pure state.
 
-Without loss of generalization let's consider an isolated system of two identical particles described solely by their momentum states.
+Without loss of generality, let's consider an isolated system of two identical particles described solely by their momentum states.
 In the scenario of two particles of identical momentum we can write the initial pure state as 
 \begin{equation}
   \ket{2,0,0,...}
@@ -347,36 +339,27 @@ Such conditions are possible through the assumption of efficient dissipation of 
 Under this assumptions, extension of equilibrium thermodynamics is possible\cite{Anonymous:NJxQY1gt}.
 
 An approached pioneered by Onsager, describing entropy in case of open systems, is an extension of Clausius entropy for isolated systems. It states that the variation of system's entropy $dS$ is the sum of two contributions: 
-
 \begin{equation}
 \label{OpenSystemEntropy}
   	dS=dS_i+dS_e,
 \end{equation}
-
 the entropy produced within the system $dS_i$ (for example by change of microscopic configuration) and the entropy transferred into (or out of) the system through it's boundaries $dS_e$.
 
-The Second Law then states that internal entropy production $dS_i$ must be zero for reversible (equilibrium) transformations and positive for non-equilibrium transformations of the system\cite{DeGroot:2013ue}:
-
+The Second Law then states that internal entropy production $dS_i$ must be zero for reversible (equilibrium) transformations and positive for non-equilibrium transformations of the system \cite{DeGroot:2013ue}:
 \begin{equation}
   dS_i \geq 0,
 \end{equation}
-
 or per unit time:
-
 \begin{equation}
   	\frac{dS_i}{dt}=\int \sigma dV \geq 0
 \end{equation}
-
-where $\sigma$ is the entropy production source per unit volume and $dV$ denotes infinitezimal volume element.
+where $\sigma$ is the entropy production source per unit volume and $dV$ denotes infinitesimal volume element.
 
 The entropy supplied, $dS_e$, on the other hand may be positive, zero or negative, depending on the interaction of the system with it's surroundings and may be written in terms of entropy flows through the boundaries of the system:
-
 \begin{equation}
   	\frac{dS_e}{dt}=\int J d\Omega \geq 0
 \end{equation}
-
-where $J$ denotes the flux and $d\Omega$ the infinitezimal element of the boundary of the system. For a closed system we have the Clausius relation in terms of exchanged heat:
-
+where $J$ denotes the flux and $d\Omega$ the infinitesimal element of the boundary of the system. For a closed system we have the Clausius relation in terms of exchanged heat:
 \begin{equation}
   dS_e=\frac{dQ}{T}.
 \end{equation}
@@ -424,11 +407,9 @@ In fact in the long time limit we expect to obtain the equilibrium values of obs
 
 Some further properties useful for further discussion can also be noted.
 On the microscopic level of enumerated, time dependent observables $X_i$, the equations of motion are time reversible and time translation invariant \cite{Anonymous:vN0-ttAB}, thus leading to\footnote{Some of the variables $X_i$ can in fact be odd under time reversal, thus for those $\langle X_i(t+\tau) X_j(t) \rangle = \langle -X_i(t) X_j(t+\tau) \rangle$.}:
-
 \begin{equation}
   \langle X_i(t+\tau) X_j(t) \rangle =   \langle X_i(t-\tau) X_j(t) \rangle =  \langle X_i(t) X_j(t+\tau) \rangle.
 \end{equation}
-
 Dividing by $\tau$ and going with it to the limit $\tau \to 0$ we obtain: 
 
 \begin{equation}
@@ -436,44 +417,33 @@ Dividing by $\tau$ and going with it to the limit $\tau \to 0$ we obtain:
   \langle \dot{X}_i(t) X_j(t) \rangle = \langle X_i(t) \dot{X}_j(t) \rangle.
 \end{equation}
 
-Now one might perform an analysis from the macroscopic view.
+Now, one might perform an analysis from the macroscopic view.
 Assume that some system is described by a set of macroscopic variables $\{\bar{X}_i\}$ for $i=1,...,N$ of zero mean $E(\bar{X}_i)=0$, such that a non-zero value of $\bar{X}_i$ corresponds to an average deviation from the equilibrium value due to an applied external force $f$. Again we'll assume the case in which the force ceases to exist for $t>0$. From experience one then postulates a set of phenomenological coupled equations bringing the system back to equilibrium state: 
 \begin{equation}
 \label{LinearResponseEq}
   \dot{\bar{X}}_i=-\sum_j \lambda_{ij} \bar{X}_j.
 \end{equation}
-
-Such coupling between between macroscopic variables is the source of many old relations, such as thermoelectric Peltier and Seeback effects.
-
-The probability of such deviations is then proportional to the phase volume given by exponential of entropy change (see \ref{Gibbs entropy}):
+Such coupling between between macroscopic variables is the source of many old relations, such as thermoelectric Peltier and Seeback effects. The probability of such deviations is then proportional to the phase volume given by exponential of entropy change (see \ref{Gibbs entropy}):
 
 \begin{equation}
   P \propto \exp(\frac{S(\bar{X}_1,...,\bar{X}_N)-S_0}{k_B}),
 \end{equation}
 
 where $S_0$ is the equilibrium value of entropy. Since we consider near-equilibrium, the linear term in the expansion disappears and we're left with
-
 \begin{equation}
   S-S_0 = - \sum_{ij} S_{ij}\bar{X}_i \bar{X}_j,
 \end{equation}
-
 where $S_{ij}= -\frac{1}{2}\frac{\partial^2{S}}{\partial{\bar{X}_i}\partial{\bar{X}_j}}$ is a positive definite, symmetric matrix. %Check on this later
 
 One then defines so-called \textbf{generalized thermodynamic forces} as
-
 \begin{equation}
   F_i= -\frac{\partial{S}}{\partial{\bar{X}_i}}= \sum_j S_{ij}\bar{X}_j.
 \end{equation}
-
 From which, by matrix inversion one can obtain again the macroscopic variables $\bar{X}_i$:
-
 \begin{equation}
   \bar{X}_j = \sum_i (S^{-1})_{ji} F_i.
 \end{equation}
-
-
 Inserting those back to equation (\ref{LinearResponseEq}) one gets
-
 \begin{equation}
 \label{FluxesOnMacroscopic}
   \dot{\bar{X}}_i=-\sum_j \lambda_{ij} \sum_k (S^{-1})_{jk} F_k = \sum_k \gamma_{ik} F_k.
@@ -497,20 +467,16 @@ Let's now consider the expression for $\bar{X}$ for time $t < 0$:
 \begin{equation}
   \bar{X}(0)=\frac{\Tr\{ X(0) e^{-\beta (H-f X)} \}}{\Tr\{ e^{-\beta (H-f X)} \}} \approx \beta f \langle X(0)X(0) \rangle= \beta f C(0)
 \end{equation}
-
 where in approximation each exponential was Taylor expanded to first order.
 For time $t>0$:
 
 \begin{equation}
   \bar{X}(t)=\frac{\langle X(t) e^{-\beta (H-f X)} \rangle}{\langle e^{-\beta (H-f X)} \rangle} \approx \beta f \langle X(t)X(0) \rangle= \beta f C(t).
 \end{equation}
-
-Onsager hypothesis can now be seen as simply
-
+Onsager hypothesis can now be seen as simply:
 \begin{equation}
   \frac{\bar{X}(t)}{\bar{X}(0)}=\frac{C(t)}{C(0)}.
 \end{equation}
-
 As a practical note on application of Onsager relations, we quote Charles Kittel \cite{Kittel:817295}:
 \begin{displayquote}
 "It is rarely a trivial problem to find the correct choice of (generalized) forces and fluxes applicable to the Onsager relation."
@@ -519,34 +485,26 @@ As a practical note on application of Onsager relations, we quote Charles Kittel
 \subsection{Green-Kubo relations}
 
 The Green-Kubo formulae relate the macroscopic, linear transport coefficients of a system to its microscopic equilibrium fluctuations.
-
 A foretaste of the Green-Kubo formalism was already given in the previous section where we considered a small perturbation term $H'=-f X$ to the Hamiltonian $H$. However to keep the presentation simple we will now turn our attention to isothermal case and static force $f$.
-
 The term for small macroscopic deviations of $Y$ due to field $f$ is given by
 \begin{equation}
 \bar{Y}=\frac{\Tr\{ Y e^{-\beta (H-f X)} \}}{\Tr\{ e^{-\beta (H-f X)} \}} = \Tr\{ Y e^{-\beta (H - F -f X )} \}
 \end{equation}
 where $F$ denotes the free energy coming from the partition function. The linear response approximation defines the static isothermal ($T$) susceptibility $\chi_{BA}^T$ by\footnote{Note, that here again $Y$ is assumed to have mean zero.}:
-
 \begin{equation}
   \bar{Y} =\chi_{YX}^T f.
 \end{equation}
-
 With the use of the following identity \cite{Kubo:1957cl}:
-
 \begin{equation}
   e^{\beta (a+b) }=e^{\beta a} (1+\int_0^{\beta} d\lambda\ e^{-\lambda a} b e^{\lambda (a+b)}),
 \end{equation}
-
 with $a=H-F$ and $b=-f X$. One can notice that the integral part corresponds to the change in density function under which the ensemble average takes part, thus
-
 \begin{equation}
 \begin{aligned}
   \bar{Y} &= \int_0^{\beta} d\lambda\ \Tr\{ Y e^{-\lambda (H - F)} X e^{\lambda (H-F-f X)} \} f \approx  \int_0^{\beta} d\lambda\ \Tr\{ Y e^{-\lambda (H - F)} X e^{\lambda (H-F)} \} f \\
   &= \langle Y X \rangle f
 \end{aligned}
 \end{equation}
-
 where by approximating $f X$ to be small we obtained a special case of Green-Kubo relations defining the cross term susceptibility between observables $X$ and $Y$ in terms of correlation functions in the static force, isothermal conditions:
 
 \begin{equation}
@@ -557,14 +515,12 @@ As a note, let's mention a famous objection to the Kubo relations poised by van 
 \subsection{Steady states and the definition of temperature}
 
 The steady state is loosely defined as an emergent state of a system subject to some constant\footnote{Constant in the sense of some finite-time $\tau$ average.} driving force $F_e$ or constant fluxes vector $\bm{f}$, for which values of some observables denoted as $A_i$ stabilize after a sufficiently long time, i.e.
-
 \begin{equation}
 \begin{aligned}
   \lim_{t \to \infty} \langle A_i(t) \rangle_0 = const,\\
   \frac{1}{\tau} \int_0^{\tau} F_e(t) dt =const,
 \end{aligned}
 \end{equation}
-
 where "const", in the first case, denotes some different (for each $i$) constant values and the ensemble average here is taken with respect to initial probability distribution function.
 
 In some cases, one can impose a condition of vanishing expectation value of $\partial \rho / \partial t$ over the probability density function $p(\rho)$ and non-vanishing expectation value of fluxes vector $\bm{f}$ over the probability density function $p(\bm{f})$ \cite{Dewar:2014ek}, i.e.
@@ -575,7 +531,6 @@ In some cases, one can impose a condition of vanishing expectation value of $\pa
   \langle \bm{f} \rangle_{p(\bm{f})} &\neq 0.
 \end{aligned}
 \end{equation}
-
 The first definition (constancy of the density function) cannot however strictly hold. Indeed, in cases far from equilibrium considered in section \ref{DissipationTheoremSection} it is shown to be false. This case is used as approximation in the MaxEP approach of section \ref{MaxEPInferenceSection}.
 
 When discussing steady states one often uses Clausius entropy to describe entropy changes related to heat transfer, however the temperature used in it's definition is not always well defined. In cases of near-equilibrium that one may call local equilibrium, the definition of temperature differences are "smooth" enough, i.e. locally there is a reasonable definition of temperature and the temperature gradient determines the heat flux. 
@@ -587,11 +542,10 @@ On the other hand, in far from equilibrium conditions there might be several def
 
 The most well known contribution of Ilya Prigogine to statistical physics, often called the Minimum Entropy Production (MinEP) principle, sprouts from the analysis of second order excess entropy around a steady state $ (\delta^2 S)_{ss} $. 
 
-If we perturb the system around it's equilibrium state we obtain
+If we perturb the system around it's equilibrium state we obtain:
 \begin{equation}
   S=S_0 + \delta S + \frac{1}{2}\delta^2 S.
 \end{equation}
-
 This quantity is than used as a Lyapunov function and has certain benefits over other (not necessarily all) Lyapunov functions one could define. 
 Its macroscopic meaning is conserved independently of microscopic details of the system under consideration and is also independent of the nature of particular (possibly inhomogeneous) fluctuations.
 It is important however, that this result holds only for steady states as compared with transient states near-equilibrium. It is only near-equilibrium that the quantity $ (\delta^2 S)_{ss} $ generates probability of fluctuations, as Prigogine himself, insisted in response to criticism \cite{Nicolis:1979cv}. 
@@ -606,22 +560,19 @@ An often given example of instabilities leading to formation of structures are t
 
 The Second Law of course holds for isolated systems as a whole and one can therefore imagine (on the basis of additivity of entropy) that out of equilibrium some subsystems may maintain lower entropy.
 
-Let's consider a simple model consisting of three elements: the cooler $C$, the heater $H$ and a system under consideration $S$, staying out of equilibrium.
+Let's therefore consider a simple model consisting of three elements: the cooler $C$, the heater $H$ and a system under consideration $S$, staying out of equilibrium.
 We assume, that the temperatures of the cooler and the heater stay constant, and that heat $Q_H$ flows into the system $S$ and heat $Q_C$ flows out. The situation is illustrated by the figure \ref{Fig2}.
 \begin{figure}[ht!]
 \centering \includegraphics[width=6cm]{system} \caption{System (S) under the conditions of continuous heat transfer.}
 \label{Fig2} 
 \end{figure}
-
 Treating the heater and the cooler as the environment, we can think of our system $S$ as an open (but without particle transfer).
 Further on we will analyze the system $S$ from the perspective of internal $(i)$ entropy production and external $(e)$ entropy flux, flowing \emph{to} the system $S$. 
 The change in entropy, as in equation (\ref{OpenSystemEntropy}), will be the sum of those two contributions:
-
 \begin{equation}
 dS_S=dS_i+dS_e.
 \label{entrosum}
 \end{equation}
-
 In the current analysis let's consider a steady state situation in which the same amount of heat flows in as flows out, that is $dQ_C=-dQ_H$. Using this relation we get the following term for the change of entropy:
 \begin{equation}
 dS_e=\frac{dQ_H}{T_H}+\frac{dQ_C}{T_C}=dQ_H\left(\frac{1}{T_H}-\frac{1}{T_C}\right)
@@ -633,18 +584,12 @@ For the purpose of further discussion we introduce the concept of rate of entrop
 \begin{equation}
 j_e \equiv  \frac{dS_e}{dt}. 
 \end{equation}
-In the considered scenerio, the $j_e$ is held constant (steady-state) and we suspect a continuous fall in system's entropy.
-
-Yet, moving away from the equilibrium state we suspect, that the a balancing role will be played by $dS_i$ moving the system back to equilibrium state. Similarly, as before we define the rate of internal entropy production:
-
+In the considered scenerio, the $j_e$ is held constant (steady-state) and we suspect a continuous fall in system's entropy. Yet, moving away from the equilibrium state we suspect, that the a balancing role will be played by $dS_i$ moving the system back to equilibrium state. Similarly, as before we define the rate of internal entropy production:
 \begin{equation}
 j_i \equiv \frac{dS_i}{dt}.   
 \end{equation} 
-
 When $T_H=T_C$, i.e. the system is in equilibrium with constant entropy $S_{EQ}$, therefore it follows that $j_i=0$.
-We assume that the rate of internal entropy production $j_i$ should be a function  of system's entropy $S_S$, i.e. $j_i = j_i(S_S)$ with the boundary condition $j_i(S_S=S_{EQ})=0$. 
-
-Around the equilibrium state $S_S=S_{EQ}$, we can Taylor expand the function $j_i(S_S)$ to it's linear term
+We assume that the rate of internal entropy production $j_i$ should be a function  of system's entropy $S_S$, i.e. $j_i = j_i(S_S)$ with the boundary condition $j_i(S_S=S_{EQ})=0$. Around the equilibrium state $S_S=S_{EQ}$, we can Taylor expand the function $j_i(S_S)$ to it's linear term
 \begin{equation}
 j_i(S_S)=j_i\left(S_{EQ}\right)+\left(S_S-S_{EQ}\right)C_1+\mathcal{O}\left(S_S^2\right),
 \end{equation} 
@@ -654,7 +599,6 @@ $j_e=0$ should simply be equal to $S_{EQ}$, therefore we set $C_1 = -\frac{1}{\t
 \label{stab}
 \frac{dS_S}{dt}=j_i\left(S_S\right)=\left(S_S-S_{EQ}\right)C_1.
 \end{equation} 
-
 The solution of the differential equation (\ref{stab}) is given by:
 \begin{equation}
 S_S(t) =S_{EQ}+(S_0-S_{EQ})e^{-t/\tau}, 
@@ -665,7 +609,6 @@ In this case the equation (\ref{entrosum}) results in the following differential
 \frac{dS_S}{dt}=j_e + j_i\left(S_S\right)=j_e +\frac{S_{EQ}-S_S}{\tau}.
 \label{dSSdt}
 \end{equation} 
-
 Given the boundary condition $S_S(0) =S_{EQ}$ it's solution is given by:
 \begin{equation}
 S_S(t)=S_{EQ}+j_e\tau \left(1-e^{-t/\tau }\right),
@@ -684,52 +627,41 @@ S_{min}=S(t\rightarrow \infty) =S_{EQ}+j_e \tau < S_{EQ}.
 
 This is of course consistent with the second law of thermodynamics as we are describing an open system.
 It is easy to notice that the total entropy change is equal to $dS=dS_i \geq 0$ (for simplicity it was assumed that the heater and cooler don't act as producers of entropy).
-
 We see that if the relaxation constant $\tau = 0$, then the system would stay in equilibrium the whole time, of course, $\tau > 0$ for most materials (if not all). The most important part due to which this low entropy state was obtained is of course the entropy out-flow $j_e$, without which the non-equilibrium condition would not form.
 
 \section{Measure of irreversibility and the Second Law}
 \label{IrreversibilityMeasureSection}
-In the following section a general protoplast of the Fluctuation Theorem is presented. It is derived using nothing else than simple probability calculus and the hypothesis of equal apriori probabilities.
+In the following section a general protoplast of the Fluctuation Theorem is presented. It is derived using nothing else than simple probability calculus and the hypothesis of equal a priori probabilities.
 The result that one obtains is an exact form of the entropy produced in terms of microscopic transition probabilities for macroscopic objects.
 
 Let's consider a generic statistical mechanical system at two times, at initial time $t_0$ and at final time $t_1$, each described by a complete set of possible macrostates $\{A_i\}$ for $ i=1,...,N_A $ and $\{B_j\}$ for $ j=1,...,N_B $  respectively. Each initial macrostate consists of some number of corresponding microstates denoted by $M_i$, and similarly, each final macrostate consists of some number of final microstates denoted by $N_j$. The deterministic, microscopic equations of motion then evolve a certain number of the microstates $K_{ij}$ from an initial macrostate $A_i$ to some final macrostate $B_j$, as illustrated on figure \ref{Fig4}.
-
 \begin{figure}[ht!]
 \centering \includegraphics[width=15cm]{figure4} 
 \caption{Transitions between macrostates ${A_i}$ and macrostate ${B_i}$ dictated by the 'transition' matrix $K_{ij}$.}
 \label{Fig4} 
 \end{figure}
-
 The probability of the forward transition $P(B_j|A_i)$ is then equal to
 \begin{equation}
   P(B_j|A_i)= \frac{K_{ij}}{M_i}.
 \end{equation}
-
 Now for the time reversed case, that is to obtain $P(A_i|B_j)$, we use the Bayes theorem
-
 \begin{equation}
   P(A_i|B_j)=\frac{P(B_j|A_i)P(A_i)}{P(B_j)},
 \end{equation}
-
 but on the way of doing so, we note that $A_i$ is still our "hypothesis" and $B_j$ is our evidence. Now, since we have no a priori knowledge about the initial macrostates, each of them is equally probable $P(A_i)= 1/N_A$.
-
 $P(B_j)$ is then the marginal probability of evidence in all contradicting hypotheses or in other words a normalization factor obtained using the relation:
-
 \begin{equation}
   \sum_i P(A_i|B_j) = 1,
 \end{equation}
 which leads to $P(B_j) = \sum_i P(B_j|A_i)P(A_i)$. Using this we obtain the following expression for the post-diction, sometimes called the \textit{extended Bayes theorem}:
-
 \begin{equation}
 \begin{aligned}
   P(A_i|B_j) &= \frac{K_{ij}}{M_i} P(A_i) \left( \sum_k \frac{K_{kj}}{M_k}P(A_k) \right)^{-1}\\
   &= \frac{K_{ij}}{M_i} \left( \sum_{k,m} \frac{K_{kj}}{K_{km}} \right)^{-1},
 \end{aligned}
 \end{equation}
-
 where in the last equation we made use of the fact that $\sum_m K_{km}=M_k $.
 This form is especially useful, because the matrix elements can be normalized and effectively we obtain a form of "stochastic" description.
-
 It is important to emphasize that the conditional probabilities $P(B_j|A_i)$ and $P(A_i|B_j)$ are entirely different in nature - the first represents a prediction, but the second is a post-diction. There is no symmetry between assumptions and assertions in conditional probability calculus.
 
 Now, comparing the probability of forward macroscopic evolution to backward evolution probability one obtains: 
@@ -738,20 +670,15 @@ Now, comparing the probability of forward macroscopic evolution to backward evol
 \label{MacrostatesPRatio}
   \frac{P(B_j|A_i)}{P(A_i|B_j)}= e^{\ln{\sum_{k,m} \frac{K_{kj}}{K_{km}}}}.
 \end{equation}
-
 %TODO: Show that it's positive for all cases!
-
 The interpretation of the term in the exponent, can be done by noticing that there's only one known macroscopic quantity\footnote{Up to a numerical factor of $k_B^{-1}$.} that is strictly positive and can change signs after reversing the left side, namely the standard measure of irreversibility - change in entropy or so-called produced entropy\footnote{Later we will see that in the case of fluctuation theorems this quantity can be also negative. Then our association to Shannon entropy breaks down and in this case a secondary notion of \textit{dissipation} is sometimes introduced.}.
-
 We have thus described the entropy produced by a macroscopic system solely in terms of microscopic transition probabilities between two macroscopic states, without any assumptions about the dynamics and external forces influencing the system. Moreover, this is perhaps the most straight-forward argument against Loschmidt, which has the benefit of being easily visualizable.
 
-With the use real, positive random matrices, satisfying the conditions $\sum_j K_{kj} = 1$ for any $k$, one can obtain the probability distributions for the possible values of $\Delta S = \ln{\sum_{k,m} \frac{K_{kj}}{K_{km}}} $, entropy produced in the transitions. The results are presented on figure \ref{Fig5}.
-
+With the use of real, positive random matrices, satisfying the conditions $\sum_j K_{kj} = 1$ for any $k$, one can obtain the probability distributions for the possible values of $\Delta S = \ln{\sum_{k,m} \frac{K_{kj}}{K_{km}}} $, entropy produced in the transitions. The results are presented on figure \ref{Fig5}.
 \begin{figure}[ht!]
 \centering \includegraphics[width=14cm]{Figure5} \caption{Probability distributions of entropy produced in transitions between $N_A$ initial and $N_B$ final macrostates, calculations performed for $N=10000$ random matrices.}
 \label{Fig5} 
 \end{figure}
-
 A remarkable feature of this results is that the obtained distributions are not gaussian and the most likely value is proportional to the number of macrostates. Note, that the steep beginning of the first graph is not an artefact.
 
 %TODO: Check how. Maybe $\sqrt{N_A N_B} $?
@@ -761,131 +688,117 @@ Despite its generality one has to remember that this result holds for macroscopi
 \section{Fluctuation theorems}
 \label{FluctuationTheorems}
 In the previous section we have seen how irreversibility arrises in macroscopic systems, now we wish to extend it to small systems living on the boundary between micro- and macroscopic descriptions. The crucial element of this extension is the same, natural measure of irreversibility introduced before, however now we will be taking into the account the possible microscopic trajectories of the systems. 
-An early indicator that this line of attack might indeed be needed was given in case of the mentioned in \ref{Gibbs entropy}, Hahn spin echoes experiment.
+An early indicator that this direction of extension might indeed be needed was given in case of the mentioned in \ref{Gibbs entropy}, Hahn spin echoes experiment.
 
 The fluctuation theorems and their derivatives including Jarzynski equality have been demonstrated for a wide range of systems and in a number of experiments including DNA stretching \cite{Collin:2005fx}, optically trapped colloids \cite{Carberry:2007be}, shearing systems \cite{Evans:1993bl}, pendulums \cite{Ciliberto:2010jg}, molecular motors \cite{Seifert:2005it} and various quantum mechanical systems \cite{Monnai:2005ke}.
 %TODO: Extract references from evans_chapter_rev.pdf
 
-Historically, the first fluctuation theorem was developed in 1995 by Gallavotti and Cohen\cite{Gallavotti:1995gy}, since then many the conditions of applicability were heavily researched and in result there exist many approaches for deriving fluctuation theorems. 
-Those can be roughly described as deterministic \cite{Evans:2002gg}\cite{Evans:2241458} or stochastic \cite{Kurchan:1998}.
+Since the development of the first fluctuation theorem of Evans, Cohen and Morriss the conditions of applicability were heavily researched and in the result there exist many approaches for deriving fluctuation theorems. 
+Those can be roughly described as deterministic \cite{Evans:2002gg, Evans:2241458} or stochastic \cite{Kurchan:1998, Searles:1999fz}.
 
-In the deterministic framework of Evans, irreversibility finds its origins in non-linear terms which provide a contraction of phase space, in contrast to the more direct irreversibility of the equations of motion found in stochastic descriptions which also has the merit of fewer technical difficulties \cite{Crooks:2008ta}. 
+In the deterministic framework of Evans, irreversibility finds its origins in non-linear terms which provide the contraction of phase space, this is in contrast to the stochastic descriptions in which irreversibility is given a priori - it can be perceived as merit, for one finds fewer technical difficulties \cite{Crooks:2008ta}. 
+In fact, the Gallavotti-Cohen theorem, which is a stationary fluctuation theorem for systems in contact with a deterministic Gaussian thermostat, breaks down in some systems and in most cases when the forcing is very strong.  
+Those technical difficulties have their source in ergodicity. The Fluctuation Relation in the deterministic case holds only if the system has certain ‘ergodic’ properties \cite{Kurchan:2009ub}. Putting it simply, if the aim of ergodic theory is to understand how randomness arises from deterministic constituents, once stochasticity is added "by hand" the question is artificially bypassed. 
 
-Those technical difficulties have their source in ergodicity. If the aim of ergodic theory is to understand how randomness arises from deterministic constituents, once stochasticity is added "by hand" the question is artificially bypassed.
-In fact the Gallavotti-Cohen theorem, which is a stationary fluctuation theorem for systems in contact with a deterministic Gaussian thermostat, breaks down in some systems and in most cases when the forcing is very strong. The Fluctuation Relation in the deterministic case holds only if the system has certain ‘ergodic’ properties\cite{Kurchan:2009ub}. 
 However, the assumption that stochastic processes retains it's stochastic character at arbitrary small temporal and spatial scales leads to a conclusion that the rate of production of entropy is infinite at the limit of infinite resolution \cite{Dorfman:ozm67-zD}.
 
-Despite this difficulties the deterministic approach of Searles and Evans will be described for reasons of generality, aesthetics and also because it distances itself from the notion of entropy.
+Despite of the acknowledged difficulties, the deterministic approach of Searles and Evans will be described for reasons of generality, aesthetics and also because it distances itself from the notion of entropy.
 
 \subsection{The deterministic approach}
 
-The main objective of this section will be the derivation of the dissipation function and Evans-Searles fluctuation relation (theorem) while introducing the bare minimum amount of necessary concepts. On basis of this results the Crooks fluctuation theorem and Jarzyński equality will then be derived.  
 
-In the following considerations we will assume that classical mechanics gives an adequate description of the dynamics. We will also assume that quantum and relativistic effects can be safely ignored.
+The main objective of this section will be the derivation of the dissipation function and Evans-Searles fluctuation relation (theorem), while introducing the bare minimum amount of necessary concepts. On basis of this results the Crooks fluctuation theorem and Jarzyński equality will then be derived. In the following considerations we will assume that classical mechanics gives an adequate description of the dynamics. We will also assume that quantum and relativistic effects can be safely ignored.
 
 \subsubsection{Thermostated, but time reversible systems}
 
-The first time-reversible, deterministic thermostats and ergostats (homogeneous thermostats) were invented in the early 1980s by Hoover, Ladd and Moran\cite{Hoover:1982dp}. Prior to this development there was no satisfactory mathematical way of modelling thermostatted non-equilibrium steady states.
+The construction of thermostated time reversible systems is usually done inserting some time-reversible, but non-Hamiltonian terms into the equations of motion defined as the surroundings. Surroundings in first approximation are assumed to stay far from the system of interest and should not affect the system under consideration.
+The work done on a system, should be on average, converted into heat, which is conducted through the system of interest and eventually removed by the non-Hamiltonian terms residing usually, in the remote boundaries.
 
-The construction of thermostated time reversible systems is usually done inserting some time-reversible, but non-Hamiltonian terms into part of the equations of motion defined as the surroundings. Surroundings in first approximation are assumed to stay far from the system of interest and should not affect the system under consideration.
-The work done on a system, should be on average, converted into heat, which is conducted through the system of interest and eventually removed by the non-Hamiltonian terms residing in the remote boundaries.
+For Gaussian isokinetic thermostat the mentioned time-reversible term is usually of the form $- S_i \alpha p_i $ where $\alpha$ is determined by the thermostatting condition\footnote{By such construction, the system will relax to an equilibrium state $f_{eq}(\bm{\Gamma})=Z^{-1} e^{-\beta H}\delta(\bm{p}\cdot \bm{S}\cdot \bm{p}-2m K)$ where $K$ denotes the kinetic energy of the system and $Z$ the partition function.}
+%\footnote{In the case of Nosé Hoover thermostat, $\alpha$ becomes an extra degree of freedom\cite{Evans:2241458}.}
+ and $\textbf{S}$ is a diagonal matrix. The term serves as a mean by which we can add or remove heat from the particles in the reservoir region ($S_i =1$ for reservoir region and $S_i = 0$ outside this region).
 
-For Gaussian isokinetic thermostat the mentioned time-reversible term is usually of the form $- S_i \alpha p_i $ where $\alpha$ is determined by the thermostatting condition\footnote{By such construction, the system will relax to an equilibrium state $f_{eq}(\bm{\Gamma})=Z^{-1} e^{-\beta H}\delta(\bm{p}\cdot \bm{S}\cdot \bm{p}-2m K$ where $K$ denotes the kinetic energy of the system and $Z$ the partition function.} and $\textbf{S}$ is a diagonal matrix. The term serves as a mean by which we can add or remove heat from the particles in the reservoir region ($S_i =1$ for reservoir region and $S_i = 0$ outside this region)\footnote{In the case of Nosé Hoover thermostat, $\alpha$ becomes an extra degree of freedom\cite{Evans:2241458}.}.
-
-In case of isolated hyperbolic systems interacting with a thermostat the phase space is usually contracted to an attractor (the sum of Lyapunov exponents is less then zero).
-This stays in contrast with time-reversibility of the thermostatted equations of motion. The solution to this apparent paradox is related to the fractal nature of the attractor.
+In case of isolated hyperbolic systems, interacting with a thermostat the phase space is usually contracted to an attractor and the sum of Lyapunov exponents is less then zero.
+This is in contrast with time-reversibility of the thermostatted equations of motion. The solution to this apparent paradox is related to the fractal nature of the attractor.
 The attractor can be described by a smooth measure in the unstable directions and a fractal measure in the stable directions.
-This kind of measures are known as SRB (Sinai-Ruelle-Bowen) measures\cite{Dorfman:ozm67-zD}. 
+This kind of measures are known as SRB (Sinai-Ruelle-Bowen) measures \cite{Dorfman:ozm67-zD}.
 
 \subsubsection{Time reversible setup}
 Let's consider a closed and adiabatic Hamiltonian system of interacting particles which can exchange energy with its environment in the form of work. For example, it might be desirable to change the mean internal energy, $U=\langle H \rangle$ of the system, by externally manipulating some parameter $\lambda(s)$ (in general dependent on time $s$) in the potential energy function. 
-When an (different) external agent does work on a system without changing the underlying equilibrium state of mean energy $U$, we refer to that field as a purely \textit{dissipative field}, denoting it generally by $\bm{F}_e$.
-
 For an externally driven adiabatic system, the rate of increase of $H$ must be identically equal to the rate of work $\dot{W}$ done on the system by the environment, thus
-
 \begin{equation}
 \label{AdiabaticWork}
-  \dot{W} = \dot{H}^{ad} = \dot{\lambda} \frac{\partial{H}}{\partial{\lambda}} +\dot{\bm{q}}\frac{\partial{H}}{\partial{\bm{q}}} +\dot{\bm{p}}\frac{\partial{H}}{\partial{\bm{p}}}
+  \dot{W} = \dot{H}^{ad} = \dot{\lambda} \frac{\partial{H}}{\partial{\lambda}} +\dot{\bm{q}}\frac{\partial{H}}{\partial{\bm{q}}} +\dot{\bm{p}}\frac{\partial{H}}{\partial{\bm{p}}},
 \end{equation}
-
 where the superscript \textit{ad} emphasises adiabatic conditions. 
 
-In the microscopic picture, the systems phase space $\{\bm{q_1},...,\bm{q_N},\bm{p_1},...,\bm{p_N} \} \equiv (\bm{q},\bm{p})\equiv \bm{\Gamma} $ (where $\bm{q_i}, \bm{p_i} $ are denoting position and conjugate momenta of the particle $i$) evolves according to Hamiltonian equations of motion with additional terms connected with the dissipative field $F_e$ and the thermostat:
+When an external agent (not described by the potential) does work on a system without changing the underlying equilibrium state of mean energy $U$, we refer to that field as a purely \textit{dissipative field}, denoting it generally by vector $\bm{F}_e$.
+
+In the microscopic picture, the systems phase space $\{\bm{q_1},...,\bm{q_N},\bm{p_1},...,\bm{p_N} \} \equiv (\bm{q},\bm{p})\equiv \bm{\Gamma} $ (where $\bm{q_i}, \bm{p_i} $ are denoting position and conjugate momenta of the particle $i$) evolves according to Hamiltonian equations of motion with additional terms connected with the dissipative field $\bm{F}_e$ and the time-reversible thermostat:
 
 \begin{equation}
 \begin{aligned}
 \label{ThermostattedEq}
-  \dot{\bm{q}} &=\frac{\partial H(\bm{\Gamma},s)}{\partial{\bm{p}}}+\bm{C}(\bm{F})\cdot\bm{F}_e(s) \\
-  \dot{\bm{p}} &=- \frac{\partial H(\bm{\Gamma},s)}{\partial{\bm{q}}}+\bm{D}(\bm{F})\cdot\bm{F}_e(s) - \alpha(\bm{\Gamma})\bm{S}\cdot\bm{p}
+  \dot{\bm{q}} &=\frac{\partial H(\bm{\Gamma},s)}{\partial{\bm{p}}}+\bm{C}(\bm{F})\cdot\bm{F}_e(s), \\
+  \dot{\bm{p}} &=- \frac{\partial H(\bm{\Gamma},s)}{\partial{\bm{q}}}+\bm{D}(\bm{F})\cdot\bm{F}_e(s) - \alpha(\bm{\Gamma})\bm{S}\cdot\bm{p}.
 \end{aligned}
 \end{equation}
 
-Note that the thermostatting term ($- \alpha(\bm{\Gamma})\bm{S}\cdot\bm{p}$) was added to our otherwise adiabatic system in an ad-hoc manner and the adiabatic work relation of equation (\ref{AdiabaticWork}) reduces to
-
+Note that the thermostatting term ($- \alpha(\bm{\Gamma})\bm{S}\cdot\bm{p}$) was added to our otherwise adiabatic system in an ad-hoc manner and should not influence the  adiabatic work relation of equation (\ref{AdiabaticWork}), which after the addition of the dissipative field $\bm{F}_e$ reduces to:
 \begin{equation}
   \dot{W}(\bm{\Gamma},s) = \dot{\lambda} \frac{\partial{H(\bm{\Gamma}},s)}{\partial{\lambda}} - V \bm{J}(\bm{\Gamma})\cdot \bm{F}_e(s)
 \end{equation}
-
-where $V$ is the volume of the system, and $\bm{J}(\bm{\Gamma})$ is the dissipative flux due to field $\bm{F}_e(\lambda)$, which one (ignoring the thermostat term) can easily obtain to be:
+where $V$ is the volume of the system, and $\bm{J}(\bm{\Gamma})$ is the dissipative flux due to field $\bm{F}_e(\lambda)$, which one (ignoring the thermostat term) can easily obtain:
 
 \begin{equation}
   V \bm{J}(\bm{\Gamma}) = -\Big(\frac{\partial{H}}{\partial{\bm{q}}}\cdot \bm{C}+\frac{\partial{H}}{\partial{\bm{p}}}\cdot \bm{D}\Big).
 \end{equation}
 
 Of course, the First Law of Thermodynamics has to be conserved, so that the rate of heat exchange with the thermostat follows from $\dot{Q}=\dot{H}-\dot{W}$ and is given by
-
 \begin{equation}
   \dot{Q}(\bm{\Gamma},s)= -\alpha(\bm{\Gamma})\frac{\partial{H}}{\partial{\bm{p}}}\cdot \bm{S}\cdot \bm{p}.
 \end{equation}
-
 The total work done and heat added to the system then depends only on the initial phase space point $\bm{\Gamma}_0$ and time duration $t$. That is, $W(\bm{\Gamma}_0,t)=\int_0^t \dot{W} dt$ and $Q(\bm{\Gamma}_0,t)=-\int_0^t \dot{Q} ds$.
 
-We now wish to define a time reversal mapping $M^T$ (written for short as superscript star) to be an operator acting on phase space (the brackets indicate that the operator acts here on the phase exclusively) 
-
+We now wish to define a time reversal mapping $M^T$ (written for short as superscript star) to be an operator acting on phase space (the brackets indicate that the operator acts here on the phase exclusively): 
 \begin{equation}
   \bm{\Gamma}^*=M^T[\bm{\Gamma}] \equiv (\bm{q},-\bm{p})
 \end{equation}
-
 and a p-Liouvillean operator $iL$ defined by the solution of differential equation 
-
 \begin{equation}
- \dot{\bm{\Gamma}} \equiv iL(\bm{\Gamma})\bm{\Gamma}
+ \dot{\bm{\Gamma}} \equiv iL(\bm{\Gamma})\bm{\Gamma},
 \end{equation}
-
 which is given by
-
 \begin{equation}
   \bm{\Gamma}_t = S^t \bm{\Gamma} \equiv \exp[iL(\bm{\Gamma})t]\bm{\Gamma}.
 \end{equation}
-
-where the $\bm{\Gamma}_t$ denotes phase evolved to time $t$ nad the $ exp[iL(\bm{\Gamma})t] $ is known as the p-propagator or the phase space propagator.
-An easy to check property useful in later part of this work is
+where the $\bm{\Gamma}_t$ denotes phase evolved to time $t$ and the $ exp[iL(\bm{\Gamma})t] $ is known as the p-propagator or the phase space propagator.
+A property useful in later part of this work is:
 
 \begin{equation}
 \label{PhaseTimeDer}
-  \frac{d}{dt}(S^t \bm{\Gamma})=iL(\bm{\Gamma})\exp[iL(\bm{\Gamma})t]\bm{\Gamma}=S^t \dot{\bm{\Gamma}}
+  \frac{d}{dt}(S^t \bm{\Gamma})=iL(\bm{\Gamma})\exp[iL(\bm{\Gamma})t]\bm{\Gamma}=S^t \dot{\bm{\Gamma}}.
 \end{equation}
 %TODO: It doesn't seem perfectly ok...
-
 %left out how M^T acts on iL (page 18)
-
 %\equiv  \dot{\bm{\Gamma}}\cdot \frac{\patial}{\partial{\bm{\Gamma}}}
-
-The time reversal dynamics satisfies an easy to check equation
-
+The time reversal dynamics satisfies an easy to check equation:
 \begin{equation}
   M^T S^t M^T S^t\ \bm{\Gamma} = \bm{\Gamma},
 \end{equation}
+where the action of operators $M^T$ and $S^t$ is evaluated from the right side to the left side. 
 
-where the action of operators $M^T$ and $S^t$ is evaluated from the right side to the left side. It is related to an the existence of time reversed trajectories (anti-trajectories), i.e. if we generate a trajectory starting at $\bm{\Gamma}_0$ and terminating at $\bm{\Gamma}_t$, then under the same dynamics, we start at $\bm{\Gamma}_t^*$ and arrive back to $\bm{\Gamma}_0^*$.
-In most cases presented here though, we will be interested in \textit{bundles} of trajectories $d\bm{\Gamma}$ and anti-trajectories $d\bm{\Gamma}^*$ passing through a volume element centered around the point $\bm{\Gamma}$.
+The introduced equations indicate to an the existence of time reversed trajectories (anti-trajectories), i.e. if we generate a trajectory starting at $\bm{\Gamma}_0$ and terminating at $\bm{\Gamma}_t$, then under the same dynamics, we start at $\bm{\Gamma}_t^*$ and arrive back to $\bm{\Gamma}_0^*$.
+In most cases presented here though, we will be interested in \textit{bundles} of trajectories $d\bm{\Gamma}$ and \textit{bundles} of anti-trajectories $d\bm{\Gamma}^*$ passing through a volume element centered around the point $\bm{\Gamma}$.
+
+We now proceed to introduce a handful of important concepts.
 
 \paragraph{Phase space distribution function:}
 
 The phase space distribution function $f(\bm{\Gamma};t)$ gives the probability per unit phase space volume of finding phase members near the phase vector $\bm{\Gamma}$ at time $t$.
 
 \paragraph{Probabilities of phase space trajectories: }
-The probability $p(d V_{\bm{\Gamma}_t},t)$, that a phase $\bm{\Gamma}$, will be observed within an infinitesimal phase space volume of size $d V_{\bm{\Gamma}_t}$ about $\bm{\Gamma}_t$ at time $t$, is given by,
+The probability $p(d V_{\bm{\Gamma}_t},t)$, that a phase $\bm{\Gamma}_t$, will be observed within an infinitesimal phase space volume of size $d V_{\bm{\Gamma}_t}$ about $\bm{\Gamma}_t$ at time $t$, is given by,
 
 \begin{equation}
   p(d V_{\bm{\Gamma}_t},t) = f(\bm{\Gamma}_t;t)d V_{\bm{\Gamma}_t}.
@@ -895,24 +808,20 @@ The probability $p(d V_{\bm{\Gamma}_t},t)$, that a phase $\bm{\Gamma}$, will be 
 \paragraph{Ensemble averages:}
 
 Value of any phase function $A(\bm{\Gamma})$ can be obtained with the use of ensemble averages by taking $N_{\bm{\Gamma}} $ time evolved initial phases $\bm{\Gamma}$ consistent with macroscopic constraints
-
 \begin{equation}
   \langle A(t) \rangle = \lim_{N_{\bm{\Gamma}}
- \to \infty} \sum_{j=1}^{N_{\bm{\Gamma}}} A(S^t \bm{\Gamma}_j)/N_{\bm{\Gamma}}
+ \to \infty} \sum_{j=1}^{N_{\bm{\Gamma}}} A(S^t \bm{\Gamma}_j)/N_{\bm{\Gamma}},
 \end{equation}
-
-or in the continuous limit by specifying the initial phase space probability density $f(\bm{\Gamma};0)$ and time-dependent evolution of this density $f(\bm{\Gamma};t)$
+or in the continuous limit by specifying the initial phase space probability density $f(\bm{\Gamma};0)$ or time-dependent evolution of this density $f(\bm{\Gamma};t)$:
 
 \begin{equation}
-  \langle A(t) \rangle = \int d\bm{\Gamma} A(\bm{\Gamma}) f(\bm{\Gamma};t) = \int d\bm{\Gamma} A(S^t\bm{\Gamma})f(\bm{\Gamma};0)
+  \langle A(t) \rangle = \int d\bm{\Gamma} A(\bm{\Gamma}) f(\bm{\Gamma};t) = \int d\bm{\Gamma} A(S^t\bm{\Gamma})f(\bm{\Gamma};0).
 \end{equation}
-
 This equation can be seen as an application of equivalence of Heisenberg and Schrödinger representations - either the observable or the state is evolved.
-
 Time stationarity of an ensemble average is then defined simply by
 \begin{equation}
 \label{StationaryStateDef}
-    \langle A(t) \rangle =   \langle A(t+\Delta) \rangle
+    \langle A(t) \rangle =   \langle A(t+\Delta) \rangle,
 \end{equation}
 for any time $\Delta > 0$.
 
@@ -926,7 +835,7 @@ Stationary system is said to be physically ergodic if the time average of the ph
 \end{equation}
 %TODO: Page 22, another definition on page 74
 
-One may also talk about, so called \textit{ergodic consistency condition} in many context, the reason for this requirement stems from the requirement of existence of distributions sitting in the denominator of various theorems for example in the definition (in later introduced) dissipation function.
+One may also talk about, so-called \textit{ergodic consistency condition} in many context, the reason for this requirement stems from the requirement of existence of distributions sitting in the denominator of various theorems for example in the definition of (later introduced) dissipation function.
 
 \subsubsection{Phase Continuity equation}
 
@@ -934,21 +843,17 @@ One may also talk about, so called \textit{ergodic consistency condition} in man
 
 %TODO: Construction of the termostat left for later, start at page 24
 
-The motion of the phase space distribution function is governed by a Lagrangian form of the phase continuity equation (also known as \textit{streaming})
-
+The motion of the phase space distribution function is governed by a Lagrangian form of the phase continuity equation (also known as \textit{streaming}):
 \begin{equation}
 \label{LagrangianLiouville}
   \frac{df(\bm{\Gamma};t)}{dt}=-f(\bm{\Gamma};t)\frac{\partial}{\partial \bm{\Gamma}} \cdot \dot{\bm{\Gamma}}(\bm{\Gamma}) = -f(\bm{\Gamma};t)\Lambda(\bm{\Gamma})
 \end{equation}
-
 this equation follows directly from a well known form of Liouville equation
-
 \begin{equation}
     \frac{\partial f(\bm{\Gamma};t) }{\partial t}
     = -\frac{\partial}{\partial \bm{\Gamma}} \cdot [\dot{\bm{\Gamma}}(\bm{\Gamma}) f(\bm{\Gamma};t)]
      = -(\frac{\partial}{\partial \bm{\Gamma}} \cdot \dot{\bm{\Gamma}} + \dot{\bm{\Gamma}} \cdot \frac{\partial}{\partial \bm{\Gamma}}) f(\bm{\Gamma};t)
 \end{equation}
-
 where by moving the last term to the left side we get back equation (\ref{LagrangianLiouville}).
 
 %\noindent\makebox[\linewidth]{\rule{\textwidth}{1pt}} 
@@ -958,13 +863,11 @@ We say that a system fulfills the \textit{adiabatic incompressibility of phase s
 \begin{equation}
   \Lambda \equiv (\partial / \partial\bm{\Gamma}) \cdot \dot{\bm{\Gamma}}=0
 \end{equation}
-
-This condition gives a restriction on coupling tensors $\textbf{C}$ and $\textbf{D}$ of equation (\ref{ThermostattedEq})
-
+This condition gives a restriction for equation (\ref{ThermostattedEq})
+on the coupling tensors $\textbf{C}$ and $\textbf{D}$ 
 \begin{equation}
-  \frac{\partial}{\partial{\bm{q}}}\cdot\bm{C}\cdot\bm{F}_e=  \frac{\partial}{\partial{\bm{p}}}\cdot\bm{D}\cdot\bm{F}_e =0
+  \frac{\partial}{\partial{\bm{q}}}\cdot\bm{C}\cdot\bm{F}_e=  \frac{\partial}{\partial{\bm{p}}}\cdot\bm{D}\cdot\bm{F}_e =0.
 \end{equation}
-
 For thermostatted systems in a driven steady state, a contraction of phase space occurs continually, as the initial phase volume shrinks to a fractal attractor of lower dimension.
 It can be shown\cite{Evans:2241458} that for isokinetic or isoenergetic systems with fixed total momentum and satisfying $AI\bm{\Gamma}$, the phase space expansion factor is exactly $\Lambda = - (3N_{th} -4) \bm{\alpha} $, where $N_{th}$ denotes the number of thermostated particles.
 
@@ -973,45 +876,37 @@ Moreover, for appropriate selection of thermostats (including Gaussian isokineti
 \begin{equation}
   \dot{Q}(\bm{\Gamma})=k_B T \Lambda(\bm{\Gamma}).
 \end{equation}
-
 %\noindent\makebox[\linewidth]{\rule{\textwidth}{1pt}} 
-
 If we make the following substitution $\bm{\Gamma} \to S^t\bm{\Gamma}$ in equation (\ref{LagrangianLiouville}) this first-order ordinary differential equation is solved by
-
 \begin{equation}
 \label{distributionStreaming}
   f(\bm{\Gamma}_t;t)=\exp[-\int_0^t ds\ \Lambda(\bm{\Gamma}_s)]f(\bm{\Gamma};0).
 \end{equation}
-
 The measure of an infinitesimal phase space volume $dV_{\bm{\Gamma}_s}$ centered on the streamed position $S^s\bm{\Gamma} : 0 \leq s \leq t $ along the phase space trajectory also changes, but in the opposite direction (in order to keep the probability constant):
 
 \begin{equation}
 \label{PhaseVolumeExpansion}
   dV_{\bm{\Gamma}_s} =\exp[\int_0^t ds\ \Lambda(\bm{\Gamma}_s)]dV_{\bm{\Gamma}_0}.
 \end{equation}
- 
-In a lot of cases the phase space volume goes to zero, while the density approaches infinity\cite{Evans:2241458}.
+In a lot of cases the phase space volume goes to zero, while the density approaches infinity \cite{Evans:2241458}.
 
 %TODO: Remark about Hermicity of Liouville page 35
 
 \subsubsection{Dissipation and the macroscopic irreversibility}
 
-The dissipation function serves as mathematical replacement for the entropy production. When entropy production can be defined, it is equal, on average, to the dissipation function. The main advantage though is that, unlike the entropy production, the dissipation function can, for ergodically consistent systems be always well defined \cite{Evans:2241458}.
-
-Another justification for introducing can a new quantity is that in some cases dissipation can be negative, but strictly speaking entropy interpreted in the light of information theory, should be positive. This should not come up as a surprise since we're getting closed to scales at which the notion of thermodynamic entropy emerge. 
+The dissipation function serves as mathematical replacement for entropy production. When entropy production can be defined, it is equal, on average, to the dissipation function. The main advantage though, is that, unlike the entropy production, the dissipation function can, for ergodically consistent systems be always well defined \cite{Evans:2241458}. Another justification for introducing a new quantity is that in some cases dissipation can be negative, but strictly speaking entropy, as interpreted in the light of information theory, should be positive. This should not come up as a surprise since we're getting close to scales at which the notion of thermodynamic entropy emerges. 
 
 %If external fields are applied to the system of particles and the external field does work on the system and if that work can be turned completely into heat that can diffuse out of the system, the external field is termed a \textbf{dissipative field}. If the work can be completely stored in the system in the form of potential energy, the external field is termed non-dissipative.
 %
 %A simple example of a system that turns from non-dissipative into a dissipative system is sodium chloride. In solid state it's an insulator (internal energy increases through polarization), but when heated to around 1100K, melts and becomes a conductor.
 
-The dissipation function was first properly (not implicitly) defined in 2000 by Searles and Evans\cite{Searles:2000ig}. It is similar to the entropy production, and although it's not a state function it provides description of non-equilibrium systems through various fluctuation theorems.
-
+The dissipation function was first properly (not implicitly) defined in 2000 by Searles and Evans \cite{Searles:2000ig}. It is similar to the entropy production, and although it's not a state function, it provides description of non-equilibrium systems through various fluctuation theorems.
 The most straight forward definition of the dissipation function is derived from the ratio of the probabilities $p$ at time zero, of observing sets of phase space trajectories originating inside infinitesimal volumes of phase space $dV_{\bm{\Gamma}_0}$ and $dV_{\bm{\Gamma}_t^*}\equiv d V(M^T S^t \bm{\Gamma}_0)$:
 
 \begin{equation}
 \label{ReversibilityEvans}
   \frac{p(d V_{\bm{\Gamma}_0}, 0)}{p(d V_{\bm{\Gamma}_t^*},0)}= 
-  \frac{f(\bm{\Gamma}_0;0)d V_{\bm{\Gamma}}}{f(\bm{\Gamma}_t^*;0)d V_{\bm{\Gamma}_t^*}}
+  \frac{f(\bm{\Gamma}_0;0)d V_{\bm{\Gamma}_0}}{f(\bm{\Gamma}_t^*;0)d V_{\bm{\Gamma}_t^*}}
 \end{equation}
 now by noting that the Jacobian for the time reversal map is unity, $ d V_{\bm{\Gamma}^*}/ d V_{\bm{\Gamma}} =1 $, together with equation (\ref{PhaseVolumeExpansion}) we get
 
@@ -1022,60 +917,47 @@ now by noting that the Jacobian for the time reversal map is unity, $ d V_{\bm{\
   \exp[-\int_0^t ds \ \Lambda(\bm{\Gamma}_s)]
 \end{equation}
 The logarithm of this equation will now be used as the definition of the time integral of dissipation $\Omega$:
-
 \begin{equation}
   \label{Dissipation}
   \int_0^t ds\ \Omega(\bm{\Gamma}_s)\equiv \ln(\frac{f(\bm{\Gamma}_0;0)}{f(\bm{\Gamma}_t^*;0)}) -\int_0^t ds \ \Lambda(\bm{\Gamma}_s) \equiv \Omega_t(\bm{\Gamma}_0)
 \end{equation}
-
-
 The dissipation function $\Omega_t$ is completely determined for a deterministic trajectory by the initial coordinate, $\bm{\Gamma}_0$, and the duration of the trajectory, $t$. Moreover, the time-reversibility of the dynamics dictates that conjugate pairs of trajectories have the same value of dissipation $\Omega_t$ but with opposite sign:
 
 \begin{equation}
   \Omega_t(\bm{\Gamma}_t^*)=-\Omega_t(\bm{\Gamma}_0).
 \end{equation}
-
-
-One should perhaps underline that this is the place in which we postulate that some time-asymmetry takes place, otherwise the equation \label{ReversibilityEvans} would be equal to one.
+One should perhaps underline that this is the place in which we postulate that some time-asymmetry takes place, otherwise the equation (\ref{ReversibilityEvans}) would be equal to one.
 A possible interpretation of this equation states that dissipation function is a measure of the temporal asymmetry inherent in sets of trajectories originating from an initial distribution of states.
-
-Usually one defines an auxiliary quantity $\bar{\Omega}_t$ called \textit{time-averaged dissipation} defined through relation $\Omega_t(\bm{\Gamma}) \equiv \bar{\Omega}_t(\bm{\Gamma})t$.
+To underline the extensive (in time) property of dissipation, an auxiliary quantity $\bar{\Omega}_t$ called \textit{time-averaged dissipation} is sometimes defined through the relation $\Omega_t(\bm{\Gamma}) \equiv \bar{\Omega}_t(\bm{\Gamma})t$.
 
 \subsubsection{Evans-Searles Fluctuation Theorem}
 
-If we now choose our initial volume elements $\bm{\Gamma}_0$ in such a way that all the trajectories originating at time zero have the time averaged dissipation function $\bar{\Omega}_t(\bm{\Gamma})=(A \pm \delta A)$, then the probability that time average dissipation takes the value $A$ between $A\pm \delta A$ is given by 
-
+If we now choose our initial volume elements $\bm{\Gamma}_0$ in such a way that all the trajectories originating at time zero have the time-averaged dissipation function $\bar{\Omega}_t(\bm{\Gamma})=(A \pm \delta A)$, then the probability that time-average dissipation takes the value $A$ between $A\pm \delta A$ is given by 
 \begin{equation}
   p(\bar{\Omega}_t =A)=\int d\bm{\Gamma}_0\ \delta[\bar{\Omega}_t(\bm{\Gamma}_0)-A]f(\bm{\Gamma}_0,0).
 \end{equation}
-
 Similarly, by changing the dummy variable of integration $\bm{\Gamma}_0$, the probability of time average dissipation holding the value $-A$ between $-A\pm \delta A$ is equal to:
-
 \begin{equation}
   p(\bar{\Omega}_t =-A)=\int d\bm{\Gamma}_t^*\ \delta[\bar{\Omega}_t(\bm{\Gamma}_t^*)+A]f(\bm{\Gamma}_t^*,0).
 \end{equation}
-
 Combining those two equations with equation (\ref{Dissipation}), we get the Evans-Searles Fluctuation Theorem (ESFT):
-
 \begin{equation}
 \label{ESFT}
   \frac{p(\bar{\Omega}_t=A)}{p(\bar{\Omega}_t=-A)}=\exp[A\ t].
 \end{equation}
 %TODO: Add assumptions - page 52
 %TODO: Connection to Kullback-Leibler divergence
-
 This fluctuation relation is valid for arbitrary system size (the thermodynamic limit was not required) and can be applied to small systems observed for short periods of time. The conditions of \textit{ergodic consistency} and microsopic time reversibility are all that is required.
-The relation has been verified experimentally by Wang(2002)\cite{Wang:2002hw}, Carberry(2007)\cite{Carberry:2007be}.
+The relation has been verified experimentally by Wang(2002) \cite{Wang:2002hw}, Carberry(2007) \cite{Carberry:2007be}.
 %TODO: Add more references - page 53
 
-One should note that this approach considers probabilities of infinitesimal sets of trajectories fulfilling given requirements instead of individual trajectories and only at equilibrium all individual trajectories cancel out.
-The underlying cause of irreversibility in this case is not exactly obvious, one can however argue\cite{Evans:2241458} that \textit{causality} is the source of irreversibility, as we have started our considerations with the assumptions of known initial distribution function, which is further under the influence of the field $F_e$ and variation of $\lambda$. If we have instead assumed that the end state is the known state we would get an opposite and the ensemble-averaged dissipation $\langle \Omega_t \rangle$ (presented below) would be negative.
+One should note that this approach considers probabilities of infinitesimal sets of trajectories fulfilling given requirements, instead of individual trajectories and only at equilibrium all individual trajectories cancel out.
+The underlying cause of irreversibility in this case is not exactly obvious, one can however argue \cite{Evans:2241458} that \textit{causality} is the source of irreversibility, as we have started our considerations with the assumptions of known initial distribution function, which then undergoes the influence of the dissipative field $F_e$ and adiabatic variation of $\lambda$. If we have instead assumed that the end state is the known state we would get an opposite and the ensemble-averaged dissipation $\langle \Omega_t \rangle$ (presented below) would be negative.
 
-The Second Law of thermodynamics can be derived from ESFT in a trivial manner, by showing that time averages of the ensemble-averaged dissipation are non negative.
+The Second Law of thermodynamics can be derived from ESFT in a trivial manner, by showing that time averages of the ensemble-averaged dissipation are non negative, i.e.
 \begin{equation}
   \langle\Omega_t\rangle\geq 0,\  \forall t > 0.
 \end{equation}
-
  The proof follows from simple integration of equation (\ref{ESFT}):
 \begin{equation}
 \begin{aligned}
@@ -1085,23 +967,18 @@ The Second Law of thermodynamics can be derived from ESFT in a trivial manner, b
   &= \int_0^{\infty} dB\ p(\Omega_t=B)B(1-\exp[-B]) \geq 0 
 \end{aligned}
 \end{equation} 
-
 At this point it's useful to define equilibrium system as the system for which, over the phase space domain $D$, the time-integrated dissipation function is identically zero:
-
 \begin{equation}
   \bar{\Omega}_{eq,t}(\bm{\Gamma})=0, \forall\bm{\Gamma}\in  D, \forall t >0 \\
   \Rightarrow \langle \Omega_t \rangle = 0, \forall t > 0.
 \end{equation}
 
-
-Kawasaki identity also known as Non-equilibrium Partition Identity (NPI) was first implied for Hamiltonian systems by Yamada and Kawasaki (1967)\cite{Yamada:1967uo} and is stated as:
+Another quantity derivable from ESFT is the \textit{Kawasaki identity} also known as \textit{Non-equilibrium Partition Identity} (NPI) which was first implied for Hamiltonian systems by Yamada and Kawasaki (1967) \cite{Yamada:1967uo} who stated:
 
 \begin{equation}
   \langle \exp[-\bar{\Omega}_t t] \rangle =1.
 \end{equation}
-
-This result can also be derived from ESFT given by equation (\ref{ESFT}):
-
+One derives this result from ESFT given by equation (\ref{ESFT}) as follows:
 \begin{equation}
 \begin{aligned}
   \langle \exp[-\bar{\Omega}_t t] \rangle &= \int_{-\infty}^{\infty} dA\ p(\bar{\Omega}_t=A)\exp[-A t]\\
@@ -1115,9 +992,7 @@ This result can also be derived from ESFT given by equation (\ref{ESFT}):
 \subsubsection{Instantaneous dissipation function}
 
 The dissipation function is a functional of both the dynamical equations that evolve the phase $S^t \bm{\Gamma} = \exp[iL(\bm{\Gamma})t]\bm{\Gamma}$ and also the initial distribution $f(\bm{\Gamma};0)$ and their initial time has to be the same.
-
 One could get an equation independent of this initial time by differentiation of equation (\ref{Dissipation}):
-
 \begin{equation}
 \begin{aligned}
   \frac{\partial}{\partial t}\int_0^t ds\ \Omega(\bm{\Gamma}_s) &= \Omega(\bm{\Gamma}_t)\\
@@ -1130,7 +1005,6 @@ One could get an equation independent of this initial time by differentiation of
 \frac{\partial f(\bm{\Gamma}_t;0)}{\partial(S^t \bm{\Gamma})}-\Lambda( \bm{\Gamma}_t)
 \end{aligned}
 \end{equation}
-
 where the last line was obtained using equation (\ref{PhaseTimeDer}). 
 If we now set $t=0$ we obtain the expression for the \textit{instantaneous dissipation function}:
 
@@ -1142,7 +1016,6 @@ If we now set $t=0$ we obtain the expression for the \textit{instantaneous dissi
 \label{DissipationTheoremSection}
 As we have seen the dissipation function takes a central role in the fluctuation theorem and the second law inequality. However dissipation is also important in quantifying a range of non-equilibrium behaviours, including nonlinear response and relaxation towards equilibrium.
 Starting from the solution of the Lagrangian form of the Liouville equation (\ref{distributionStreaming}) we can use dissipation function equation (\ref{Dissipation}) to derive
-
 \begin{equation}
 \begin{aligned}
   f(S^t\bm{\Gamma};t) &= \exp[-\int_0^t ds\ \Lambda(S^s\bm{\Gamma})]f(\bm{\Gamma};0)\\
@@ -1150,28 +1023,24 @@ Starting from the solution of the Lagrangian form of the Liouville equation (\re
   &=f(S^t \bm{\Gamma};0) \exp[\int_0^t ds\ \bm{\Omega}(S^s \bm{\Gamma})],
 \end{aligned}
 \end{equation}
-
 after substitution $\bm{\Gamma} \to S^{-t}\bm{\Gamma}$ and change of variables we get 
 
 \begin{equation}
 \label{distributionPropagator}
     f(\bm{\Gamma};t)=f(\bm{\Gamma};0)\exp[\int_0^t ds\ \bm{\Omega}(S^{-s} \bm{\Gamma})],
 \end{equation}
-
 which states that the forward in time propagator for the N-particle distribution function is given by the exponential (backward) time integral of the dissipative function. 
 An immediate conclusion one can draw from this is that for all non-equilibrium deterministic systems the N-particle distribution function has explicit time dependence and cannot be written in a closed, time-stationary form.
-As with ESFT, this result can be applied to any initial ensemble and time-reversible dynamics satisfying $AI\bm{\Gamma}$, more detailed analysis of the time-dependant case can be found in \cite{Williams:2008ft}.
+As with ESFT, this result can be applied to any initial ensemble and time-reversible dynamics satisfying $AI\bm{\Gamma}$, a more detailed analysis of the time-dependant case can be found in \cite{Williams:2008ft}.
 
 
 From equation (\ref{distributionPropagator}) one can calculate non-equilibrium ensemble averages of any physical phase function $B(t)$:
-
 \begin{equation}
 \begin{aligned}
 	  \langle B(t) \rangle &= \int_D d\bm{\Gamma}\ B(\bm{\Gamma})\exp[\int_0^{t} ds\ \Omega(S^{-s}\bm{\Gamma})]f(\bm{\Gamma};0)\\
 	  &= \langle B(0) \exp[\int_0^{t} ds\ \Omega(S^{-s}\bm{\Gamma})] \rangle_{f(\bm{\Gamma};0)}.
 \end{aligned}
 \end{equation}
-
 Differentiating the last equation with respect to time we get:
 \begin{equation}
 \begin{aligned}
@@ -1181,14 +1050,11 @@ Differentiating the last equation with respect to time we get:
 &= \langle B(t)\Omega(0) \rangle_{f(\bm{\Gamma};0)}.
 \end{aligned}
 \end{equation}
-
 If we now integrate it by time, we can write the averages of physical phase functions as:
-
 \begin{equation}
 \label{DissipationTheorem}
 \langle B(t)\rangle_{f(\bm{\Gamma};0)} =\langle B(0) \rangle_{f(\bm{\Gamma};0)} +\int_0^t ds \langle B(s) \Omega(0) \rangle_{f(\bm{\Gamma};0)}, 
 \end{equation}
-
 getting the Dissipation Theorem which states that the nonlinear response of an arbitrary phase variable can be calculated from the time integral of the non-equilibrium transient time correlation function (TTCF) of the phase variable with the dissipation function.
 
 
