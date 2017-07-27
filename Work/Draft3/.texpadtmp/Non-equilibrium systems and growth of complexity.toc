@@ -14,29 +14,29 @@
 \contentsline {subsection}{\numberline {4.3}Onsager relations and hypothesis}{16}{subsection.4.3}
 \contentsline {subsection}{\numberline {4.4}Green-Kubo relations}{17}{subsection.4.4}
 \contentsline {subsection}{\numberline {4.5}Steady states and the definition of temperature}{18}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}MinEP}{19}{subsection.4.6}
-\contentsline {section}{\numberline {5}Thermodynamic lowering of entropy in non-equilibrium conditions}{20}{section.5}
+\contentsline {subsection}{\numberline {4.6}MinEP principle}{19}{subsection.4.6}
+\contentsline {section}{\numberline {5}Thermodynamic lowering of entropy in non-equilibrium conditions}{19}{section.5}
 \contentsline {section}{\numberline {6}Measure of irreversibility and the Second Law}{22}{section.6}
 \contentsline {section}{\numberline {7}Fluctuation theorems}{24}{section.7}
 \contentsline {subsection}{\numberline {7.1}The deterministic approach}{25}{subsection.7.1}
 \contentsline {subsubsection}{\numberline {7.1.1}Thermostated, but time reversible systems}{25}{subsubsection.7.1.1}
 \contentsline {subsubsection}{\numberline {7.1.2}Time reversible setup}{26}{subsubsection.7.1.2}
-\contentsline {paragraph}{Phase space distribution function:}{27}{section*.2}
+\contentsline {paragraph}{Phase space distribution function:}{28}{section*.2}
 \contentsline {paragraph}{Probabilities of phase space trajectories: }{28}{section*.3}
 \contentsline {paragraph}{Ensemble averages:}{28}{section*.4}
-\contentsline {paragraph}{Ergodicity:}{28}{section*.5}
-\contentsline {subsubsection}{\numberline {7.1.3}Phase Continuity equation}{28}{subsubsection.7.1.3}
+\contentsline {paragraph}{Ergodicity:}{29}{section*.5}
+\contentsline {subsubsection}{\numberline {7.1.3}Phase Continuity equation}{29}{subsubsection.7.1.3}
 \contentsline {subsubsection}{\numberline {7.1.4}Dissipation and the macroscopic irreversibility}{30}{subsubsection.7.1.4}
 \contentsline {subsubsection}{\numberline {7.1.5}Evans-Searles Fluctuation Theorem}{31}{subsubsection.7.1.5}
-\contentsline {subsubsection}{\numberline {7.1.6}Instantaneous dissipation function}{32}{subsubsection.7.1.6}
+\contentsline {subsubsection}{\numberline {7.1.6}Instantaneous dissipation function}{33}{subsubsection.7.1.6}
 \contentsline {subsubsection}{\numberline {7.1.7}Dissipation Theorem}{33}{subsubsection.7.1.7}
 \contentsline {subsubsection}{\numberline {7.1.8}Mixing properties and their relations}{34}{subsubsection.7.1.8}
 \contentsline {paragraph}{Mixing}{34}{section*.6}
-\contentsline {paragraph}{Weak T-mixing}{34}{section*.7}
+\contentsline {paragraph}{Weak T-mixing}{35}{section*.7}
 \contentsline {paragraph}{T-mixing}{35}{section*.8}
 \contentsline {paragraph}{$\bm {\Omega T}$-mixing}{35}{section*.9}
 \contentsline {subsubsection}{\numberline {7.1.9}Relaxation}{35}{subsubsection.7.1.9}
-\contentsline {subsubsection}{\numberline {7.1.10}Relaxation Theorem}{35}{subsubsection.7.1.10}
+\contentsline {subsubsection}{\numberline {7.1.10}Relaxation Theorem}{36}{subsubsection.7.1.10}
 \contentsline {subsubsection}{\numberline {7.1.11}Driven systems}{36}{subsubsection.7.1.11}
 \contentsline {subsubsection}{\numberline {7.1.12}Non-equilibrium Steady States}{37}{subsubsection.7.1.12}
 \contentsline {subsection}{\numberline {7.2}Generalized Crooks fluctuation theorem}{37}{subsection.7.2}
@@ -44,13 +44,13 @@
 \contentsline {section}{\numberline {8}Application to self-replication and adaptation}{41}{section.8}
 \contentsline {subsection}{\numberline {8.1}Self-replication}{42}{subsection.8.1}
 \contentsline {subsection}{\numberline {8.2}Traversal of energy landscape }{43}{subsection.8.2}
-\contentsline {section}{\numberline {9}Search for a unifying principle}{44}{section.9}
+\contentsline {section}{\numberline {9}Search for a unifying principle}{45}{section.9}
 \contentsline {subsection}{\numberline {9.1}Rayleigh's insight}{45}{subsection.9.1}
 \contentsline {subsection}{\numberline {9.2}MaxEP principle}{45}{subsection.9.2}
 \contentsline {subsubsection}{\numberline {9.2.1}Relation to MinEP}{46}{subsubsection.9.2.1}
 \contentsline {subsubsection}{\numberline {9.2.2}Extrema of the Dissipation Function and MaxEP}{46}{subsubsection.9.2.2}
 \contentsline {subsubsection}{\numberline {9.2.3}MaxEnt based formulations of MaxEP}{48}{subsubsection.9.2.3}
-\contentsline {subsection}{\numberline {9.3}MaxEP principle as an inference principle}{48}{subsection.9.3}
+\contentsline {subsection}{\numberline {9.3}MaxEP principle as an inference principle}{49}{subsection.9.3}
 \contentsline {subsubsection}{\numberline {9.3.1}Relation to fluctuation theorem}{51}{subsubsection.9.3.1}
 \contentsline {subsubsection}{\numberline {9.3.2}Example application for planetary atmospheres}{51}{subsubsection.9.3.2}
 \contentsline {section}{\numberline {10}Summary}{52}{section.10}

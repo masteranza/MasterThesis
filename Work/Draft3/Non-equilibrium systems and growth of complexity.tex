@@ -158,7 +158,7 @@ Indeed, Boltzmann himself didn't notice that the way in which he derived the H-T
 
 One can also see this most clearly in a generic example, reviewing the procedure in which we compute some future macroscopic state from an initial macrostate. The final state is obtained by taking the \textit{sum} of the probabilities over the indistinguishable microstates, while on the other hand the initial state is obtained by taking the \textit{avarage} over the initial microstates.
 
-However, if we would consider a scenerio where we either know the initial configuration exactly or have the ability to study all degrees of freedom until the final state, the arrow of time would indeed disappear, as in the case with microscopic structureless objects\footnote{There is a slight subtlety on the road towards the microscopic description connected with non-monotonic behaviour of entropy which will be discussed later}.
+However, if we would consider a scenerio where we either know the initial configuration exactly or have the ability to study all degrees of freedom until the final state, the arrow of time would indeed disappear, as in the case with microscopic structureless objects\footnote{There is a slight subtlety on the road towards the microscopic description connected with non-monotonic behaviour of entropy which will be discussed later.}.
 
 \subsection{Different approaches towards irreversibility and non-equilibrium}
 
@@ -259,20 +259,20 @@ This feature of entropy was first noted by Gibbs himself and was solved by a coa
 
 However, staying for a moment with non-coarse-grained entropy one can propose a thought experiment, leading to paradox and immediately resolving it to understand the case more clearly. 
 
-Let's consider a case of a simple gas (e.g. ideal) closed in an isolated box container of size $L$ which molecules are localized in an imaginary box-like area of size $L/2$ at time $t_0$ (Figure \ref{Figure1}a).
-It is obvious that the gas will expand, but according to the constancy of Gibbs entropy for an isolated system the entropy will not change. Of course the answer to this apparent paradox is very simple - if we had the ability to wait the time necessary for particles to spontaneously localize in the volume $L/2$, we would probably never need the Second Law of thermodynamics. In every imaginable case, we  would need to place the particles in the initial state by hand, that is, close them in an actual box of size $L/2$ and then release (Figure \ref{Figure1}b). 
+Let's consider a case of a simple gas (e.g. ideal) closed in an isolated box container of size $L$ which molecules are localized in an imaginary box-like area of size $L/2$ at time $t_0$ (Figure \ref{Fig1}a).
+It is obvious that the gas will expand, but according to the constancy of Gibbs entropy for an isolated system the entropy will not change. Of course the answer to this apparent paradox is very simple - if we had the ability to wait the time necessary for particles to spontaneously localize in the volume $L/2$, we would probably never need the Second Law of thermodynamics. In every imaginable case, we  would need to place the particles in the initial state by hand, that is, close them in an actual box of size $L/2$ and then release (Figure \ref{Fig1}b). 
 In this scenerio, the final phase space is of course larger than the initial one and Gibbs entropy increases, as expected.
 
 \begin{figure}[ht!]
 \centering \includegraphics[width=12cm]{Figure1} \caption{Gas enclosed in part of a container}
-\label{Figure1} 
+\label{Fig1} 
 \end{figure}
 
 The means of practical use of still non-coarse-grained entropy in closed systems subject to an adiabatic change was explained with the use of MaxEnt approach by Jaynes \cite{Jaynes:1965gg}. If we knew that on the beginning, at time $t_0$ the system is in \textit{complete} thermodynamic equilibrium having entropy $S$, then we know that at the later time; after the external adiabatic influence ceased the new "test" or experimental distribution function will have entropy $S_e \geq S$. By saying that we demand \textit{complete} thermodynamic equilibrium at the beginning, we say that the \textit{systems history} has to be followed by the experimenter in order to become confident of the obtained equilibrium, as some otherwise unexplainable exceptions exist, such as the Hahn experiment. %TODO Cite Hahn
 
 It is perhaps worth underlying, that the increase of entropy is linked to our knowledge about the system, rather than anything it is doing internally. This should not come up as particularly surprising as our division between work and heat is somewhat arbitrary.
 
-Moreover, even the exact parameters of entropy depend on the situation, so does their number. We can increase their number as far as we wish and in doing so, we move toward classical deterministic description and the notion of entropy collapses\footnote{This is not the case for von Neumann entropy}.
+Moreover, even the exact parameters of entropy depend on the situation, so does their number. We can increase their number as far as we wish and in doing so, we move toward classical deterministic description and the notion of entropy collapses\footnote{This is not the case for von Neumann entropy.}.
 
 \subsection{von Neumann entropy during measurement process}
 
@@ -342,19 +342,20 @@ The interpretation of the first inequality is that the full information about th
 \label{NearEquilibrium}
 \subsection{Local equilibrium and entropy production}
 
-The term local equilibrium describes the situation in which the thermodynamic quantities of the system such as density, temperature, pressure, etc. can vary spatially and with time, but in each volume element the thermodynamic relations between the values which apply locally there are obeyed. 
+The term local equilibrium describes the situation in which the thermodynamic quantities of the system such as density, temperature, pressure, etc. can vary spatially and with time, but in each volume element the thermodynamic relations between the values which apply locally are obeyed. 
 Such conditions are possible through the assumption of efficient dissipation of effects imposed by gradients and chemical affinities through molecular collisions. We therefore expect that this to hold for fluids, moderately dense gases and many solids.
 Under this assumptions, extension of equilibrium thermodynamics is possible\cite{Anonymous:NJxQY1gt}.
 
-An approached pioneered by Onsager for the entropy for open systems, is an extension of Clausius entropy for isolated systems, which states the variation of entropy $dS$ is the sum of two contributions: 
+An approached pioneered by Onsager, describing entropy in case of open systems, is an extension of Clausius entropy for isolated systems. It states that the variation of system's entropy $dS$ is the sum of two contributions: 
 
 \begin{equation}
+\label{OpenSystemEntropy}
   	dS=dS_i+dS_e,
 \end{equation}
 
-where $dS_i$ is the entropy produced within the system (for example by change of microscopic configuration) and $dS_e$ the entropy transferred into or out of the system through it's boundaries.
+the entropy produced within the system $dS_i$ (for example by change of microscopic configuration) and the entropy transferred into (or out of) the system through it's boundaries $dS_e$.
 
-The Second Law then states that $dS_i$ must be zero for reversible (equilibrium) transformations and positive for non-equilibrium transformations of the system\cite{DeGroot:2013ue}:
+The Second Law then states that internal entropy production $dS_i$ must be zero for reversible (equilibrium) transformations and positive for non-equilibrium transformations of the system\cite{DeGroot:2013ue}:
 
 \begin{equation}
   dS_i \geq 0,
@@ -366,24 +367,22 @@ or per unit time:
   	\frac{dS_i}{dt}=\int \sigma dV \geq 0
 \end{equation}
 
-where $\sigma$ is entropy production source per unit volume and $dV$ denotes infinitezimal volume element.
+where $\sigma$ is the entropy production source per unit volume and $dV$ denotes infinitezimal volume element.
 
-The entropy supplied, $dS_e$ on the other hand may be positive, zero or negative, depending on the interaction of the system with it's surroundings and may be written in terms of entropy flows through the boundaries of the system:
+The entropy supplied, $dS_e$, on the other hand may be positive, zero or negative, depending on the interaction of the system with it's surroundings and may be written in terms of entropy flows through the boundaries of the system:
 
 \begin{equation}
   	\frac{dS_e}{dt}=\int J d\Omega \geq 0
 \end{equation}
 
-where $J$ denotes the flux and $\Omega$ the boundaries of the system.
-
-For a closed system we have the Clausius relation in terms of exchanged heat:
+where $J$ denotes the flux and $d\Omega$ the infinitezimal element of the boundary of the system. For a closed system we have the Clausius relation in terms of exchanged heat:
 
 \begin{equation}
   dS_e=\frac{dQ}{T}.
 \end{equation}
 
 
-The standard formalism of linear irreversible dynamics develops a more explicit expression for entropy production per unit time, assuming that even outside equilibrium (but near) entropy depends only on the same variables as at equilibrium, expanding it as follows: 
+The standard formalism of linear irreversible dynamics develops then a more explicit expression for entropy production per unit time, assuming that even outside equilibrium (but near) entropy depends only on the same variables as at equilibrium, expanding it as follows: 
 
 \begin{equation}
   \sigma(x,t) = \sum_i J_i(x,t) X_i(x,t) \geq 0.
@@ -392,8 +391,8 @@ The standard formalism of linear irreversible dynamics develops a more explicit 
 
 The sources of entropy production from the point of view of coarse-grained Gibbs entropy have been intensely studied in non-equilibrium systems. A notable result \cite{Gilbert:1999ff, Goldstein:1998ip} states that entropy production itself is independent of the level of coarse-graining applied to Gibbs entropy.
 
-There are exist however some problems with the assumption of non-negative entropy sources.
-For example in an electric circuit close to equilibrium, entropy production is equal to the product of the electric current times the voltage divided by the ambient temperature. If the circuit has a complex impedance, there will necessarily be a phase lag between the applied voltage and the current. Therefore there will exist an interval in which entropy production will be negative\cite{Evans:2241458}. 
+There exist however some conceptual problems with the assumption of non-negative entropy sources \cite{Evans:2241458}.
+For example in an electric circuit close to equilibrium, entropy production is equal to the product of the electric current times the voltage divided by the ambient temperature. If the circuit has a complex impedance, there will necessarily be a phase lag between the applied voltage and the current. Therefore there will exist an interval in which entropy production will be negative. 
 This problem is resolved in the context of fluctuation theorems and \textit{dissipation function}.
 
 \subsection{Linear response, regression and fluctuations}
@@ -413,10 +412,10 @@ Linear response of a system driven from equilibrium can be described in terms of
 % Change Tr to integrals?
 where $\rho_{eq}$ is the equilibrium density function.
 
-With correlation functions, we now study the effect of relaxation towards equilibrium, assuming that the external influence ceased at time $t=0$.
+With the use of correlation functions, we now study the effect of relaxation towards equilibrium, assuming that the external influence ceased at time $t=0$.
 Then a general property of such auto-correlation function for times $t\geq 0$ is called \textit{regression} and follows directly from the Schwarz inequality and $X^2(t)<X^2(0)$ - the assumption of fading disturbance:
 \begin{equation}
- | C(t) | \leq C(0)
+ | C(t) | \leq C(0).
 \end{equation}
 In fact in the long time limit we expect to obtain the equilibrium values of observables and
 \begin{equation}
@@ -424,41 +423,38 @@ In fact in the long time limit we expect to obtain the equilibrium values of obs
 \end{equation}
 
 Some further properties useful for further discussion can also be noted.
-On the microscopic level of enumerated, time dependent observables $X_i$, the equations of motion are time reversible and time translation invariant\cite{Anonymous:vN0-ttAB}, thus leading to
-\footnote{Some of the variables $X_i$ can in fact be odd under time reversal, thus for those $\langle X_i(t+\tau) X_j(t) \rangle = \langle -X_i(t) X_j(t+\tau) \rangle$}:
+On the microscopic level of enumerated, time dependent observables $X_i$, the equations of motion are time reversible and time translation invariant \cite{Anonymous:vN0-ttAB}, thus leading to\footnote{Some of the variables $X_i$ can in fact be odd under time reversal, thus for those $\langle X_i(t+\tau) X_j(t) \rangle = \langle -X_i(t) X_j(t+\tau) \rangle$.}:
 
 \begin{equation}
-  \langle X_i(t+\tau) X_j(t) \rangle =   \langle X_i(t-\tau) X_j(t) \rangle =  \langle X_i(t) X_j(t+\tau) \rangle
+  \langle X_i(t+\tau) X_j(t) \rangle =   \langle X_i(t-\tau) X_j(t) \rangle =  \langle X_i(t) X_j(t+\tau) \rangle.
 \end{equation}
 
-Then dividing $\tau$ and going with it to the limit $\tau \to 0$ we obtain 
+Dividing by $\tau$ and going with it to the limit $\tau \to 0$ we obtain: 
 
 \begin{equation}
 \label{CorrelationTimeDerivative}
-  \langle \dot{X}_i(t) X_j(t) \rangle = \langle X_i(t) \dot{X}_j(t) \rangle
+  \langle \dot{X}_i(t) X_j(t) \rangle = \langle X_i(t) \dot{X}_j(t) \rangle.
 \end{equation}
 
-Now one might perform an analysis from macroscopic view.
-Assume that some system is described by a set of macroscopic variables $\{\bar{X}_i\}$ for $i=1,...,N$ of zero mean $E(\bar{X}_i)=0$, such that a non-zero value of $\bar{X}_i$ corresponds to an average deviation from the equilibrium value due to an applied external force $f$, again we'll assume the case in which the force ceases to exist i.e. $t>0$. 
-
-From experience one then postulates a set of phenomenological coupled equations bringing the system back to equilibrium state: 
+Now one might perform an analysis from the macroscopic view.
+Assume that some system is described by a set of macroscopic variables $\{\bar{X}_i\}$ for $i=1,...,N$ of zero mean $E(\bar{X}_i)=0$, such that a non-zero value of $\bar{X}_i$ corresponds to an average deviation from the equilibrium value due to an applied external force $f$. Again we'll assume the case in which the force ceases to exist for $t>0$. From experience one then postulates a set of phenomenological coupled equations bringing the system back to equilibrium state: 
 \begin{equation}
 \label{LinearResponseEq}
-  \dot{\bar{X}}_i=-\sum_j \lambda_{ij} \bar{X}_j
+  \dot{\bar{X}}_i=-\sum_j \lambda_{ij} \bar{X}_j.
 \end{equation}
 
 Such coupling between between macroscopic variables is the source of many old relations, such as thermoelectric Peltier and Seeback effects.
 
-The probability of such deviations is then proportional to the phase volume given by exponential of entropy (see \ref{Gibbs entropy}):
+The probability of such deviations is then proportional to the phase volume given by exponential of entropy change (see \ref{Gibbs entropy}):
 
 \begin{equation}
-  P \propto \exp(\frac{S(\bar{X}_1,...,\bar{X}_N)-S_0}{k_B})
+  P \propto \exp(\frac{S(\bar{X}_1,...,\bar{X}_N)-S_0}{k_B}),
 \end{equation}
 
-where $S_0$ is the equilibrium value of entropy. Since, we consider near-equilibrium the linear term in the expansion disappears and we're left with
+where $S_0$ is the equilibrium value of entropy. Since we consider near-equilibrium, the linear term in the expansion disappears and we're left with
 
 \begin{equation}
-  S-S_0 = - \sum_{ij} S_{ij}\bar{X}_i \bar{X}_j
+  S-S_0 = - \sum_{ij} S_{ij}\bar{X}_i \bar{X}_j,
 \end{equation}
 
 where $S_{ij}= -\frac{1}{2}\frac{\partial^2{S}}{\partial{\bar{X}_i}\partial{\bar{X}_j}}$ is a positive definite, symmetric matrix. %Check on this later
@@ -466,7 +462,7 @@ where $S_{ij}= -\frac{1}{2}\frac{\partial^2{S}}{\partial{\bar{X}_i}\partial{\bar
 One then defines so-called \textbf{generalized thermodynamic forces} as
 
 \begin{equation}
-  F_i= -\frac{\partial{S}}{\partial{\bar{X}_i}}= \sum_j S_{ij}\bar{X}_j
+  F_i= -\frac{\partial{S}}{\partial{\bar{X}_i}}= \sum_j S_{ij}\bar{X}_j.
 \end{equation}
 
 From which, by matrix inversion one can obtain again the macroscopic variables $\bar{X}_i$:
@@ -486,11 +482,10 @@ Inserting those back to equation (\ref{LinearResponseEq}) one gets
 \subsection{Onsager relations and hypothesis}
 \label{OnsagerRelationsSection}
 
-Lars Onsager\cite{Onsager:zgWBDrcO} shown that $\gamma_{ik}$ from the previous paragraph is in fact symmetric.
-
-We can now do just that by combining equation (\ref{CorrelationTimeDerivative}) with equation (\ref{FluxesOnMacroscopic}), thus obtaining Onsager relations
+Lars Onsager \cite{Onsager:zgWBDrcO} shown that $\gamma_{ik}$ from the previous paragraph is in fact symmetric. We can now repeat his derivation just that by combining the equation (\ref{CorrelationTimeDerivative}) with equation (\ref{FluxesOnMacroscopic}), thus obtaining Onsager relations:
 
 \begin{equation}
+\label{OnsagerRelations}
   \gamma_{ij}=\gamma_{ji}.
 \end{equation}
 
@@ -504,22 +499,22 @@ Let's now consider the expression for $\bar{X}$ for time $t < 0$:
 \end{equation}
 
 where in approximation each exponential was Taylor expanded to first order.
-For time $t>0$
+For time $t>0$:
 
 \begin{equation}
-  \bar{X}(t)=\frac{\langle X(t) e^{-\beta (H-f X)} \rangle}{\langle e^{-\beta (H-f X)} \rangle} \approx \beta f \langle X(t)X(0) \rangle= \beta f C(t)
+  \bar{X}(t)=\frac{\langle X(t) e^{-\beta (H-f X)} \rangle}{\langle e^{-\beta (H-f X)} \rangle} \approx \beta f \langle X(t)X(0) \rangle= \beta f C(t).
 \end{equation}
 
 Onsager hypothesis can now be seen as simply
 
 \begin{equation}
-  \frac{\bar{X}(t)}{\bar{X}(0)}=\frac{C(t)}{C(0)}
+  \frac{\bar{X}(t)}{\bar{X}(0)}=\frac{C(t)}{C(0)}.
 \end{equation}
 
 As a practical note on application of Onsager relations, we quote Charles Kittel \cite{Kittel:817295}:
-
+\begin{displayquote}
 "It is rarely a trivial problem to find the correct choice of (generalized) forces and fluxes applicable to the Onsager relation."
-
+\end{displayquote}
 
 \subsection{Green-Kubo relations}
 
@@ -531,19 +526,19 @@ The term for small macroscopic deviations of $Y$ due to field $f$ is given by
 \begin{equation}
 \bar{Y}=\frac{\Tr\{ Y e^{-\beta (H-f X)} \}}{\Tr\{ e^{-\beta (H-f X)} \}} = \Tr\{ Y e^{-\beta (H - F -f X )} \}
 \end{equation}
-where $F$ denotes the free energy coming from the partition function. This linear response defines the static isothermal susceptibility $\chi_{BA}^T$ by\footnote{Note, that here again $Y$ is assumed to have mean zero}:
+where $F$ denotes the free energy coming from the partition function. The linear response approximation defines the static isothermal ($T$) susceptibility $\chi_{BA}^T$ by\footnote{Note, that here again $Y$ is assumed to have mean zero.}:
 
 \begin{equation}
-  \bar{Y} =\chi_{YX}^T f
+  \bar{Y} =\chi_{YX}^T f.
 \end{equation}
 
-One then uses the following identity\cite{Kubo:1957cl}:
+With the use of the following identity \cite{Kubo:1957cl}:
 
 \begin{equation}
   e^{\beta (a+b) }=e^{\beta a} (1+\int_0^{\beta} d\lambda\ e^{-\lambda a} b e^{\lambda (a+b)}),
 \end{equation}
 
-with $a=H-F$ and $b=-f X$. One notices that the integral part corresponds to the change in density function under which the ensemble average takes part, thus
+with $a=H-F$ and $b=-f X$. One can notice that the integral part corresponds to the change in density function under which the ensemble average takes part, thus
 
 \begin{equation}
 \begin{aligned}
@@ -552,27 +547,27 @@ with $a=H-F$ and $b=-f X$. One notices that the integral part corresponds to the
 \end{aligned}
 \end{equation}
 
-where by approximating $f X$ to be small we obtained a special case of Green-Kubo relations defining the cross term susceptibility between observables $X$ and $Y$ in terms of correlation functions in the static force, isothermal case:
+where by approximating $f X$ to be small we obtained a special case of Green-Kubo relations defining the cross term susceptibility between observables $X$ and $Y$ in terms of correlation functions in the static force, isothermal conditions:
 
 \begin{equation}
   \chi_{YX}^T = \langle Y X \rangle.
 \end{equation}
 
-As a note, let's mention a famous objection to the Kubo relations poised by van Kampen about the plausibility of taking the linear terms first and then the ensemble average (in general one should do the opposite), however one should remember that the microscopic trajectories of particles affected by the perturbing fields experience a large number of collisions in exceedingly small times ($\approx 10^{-9}s$ for low density gases) which makes the approximation possible\cite{Dorfman:ozm67-zD}.
+As a note, let's mention a famous objection to the Kubo relations poised by van Kampen. The argument of van Kampen concerned the plausibility of taking the linear terms first and then the ensemble average (in general one should do the opposite). An answer to this objection is that the microscopic trajectories of particles affected by the perturbing fields experience a large number of collisions in exceedingly small times ($\approx 10^{-9}s$ for low density gases) which makes the approximation possible \cite{Dorfman:ozm67-zD}.
 \subsection{Steady states and the definition of temperature}
 
-The steady state is loosely defined as an emergent state of a system subject to some constant\footnote{Constant in the sense of some finite-time $\tau$ average} driving force $F_e$ or constant fluxes vector $\bm{f}$, for which values of some observables denoted as $A_i$ stabilize after a sufficiently long time, i.e.
+The steady state is loosely defined as an emergent state of a system subject to some constant\footnote{Constant in the sense of some finite-time $\tau$ average.} driving force $F_e$ or constant fluxes vector $\bm{f}$, for which values of some observables denoted as $A_i$ stabilize after a sufficiently long time, i.e.
 
 \begin{equation}
 \begin{aligned}
-  \lim_{t \to \infty} \langle A_i(t) \rangle_0 = const\\
-  \frac{1}{\tau} \int_0^{\tau} F_e(t) dt =const
+  \lim_{t \to \infty} \langle A_i(t) \rangle_0 = const,\\
+  \frac{1}{\tau} \int_0^{\tau} F_e(t) dt =const,
 \end{aligned}
 \end{equation}
 
-where "const" denotes some different (for each $i$) constant values. The ensemble average here is taken with respect to initial probability distribution function.
+where "const", in the first case, denotes some different (for each $i$) constant values and the ensemble average here is taken with respect to initial probability distribution function.
 
-Sometimes one can impose a condition of vanishing expectation value of $\partial \rho / \partial t$ over the probability density function $p(\rho)$ and non-vanishing expectation value of fluxes vector $\bm{f}$ over the probability density function $p(\bm{f})$\cite{Dewar:2014ek}, i.e.
+In some cases, one can impose a condition of vanishing expectation value of $\partial \rho / \partial t$ over the probability density function $p(\rho)$ and non-vanishing expectation value of fluxes vector $\bm{f}$ over the probability density function $p(\bm{f})$ \cite{Dewar:2014ek}, i.e.
 \begin{equation}
 \begin{aligned}
 \label{SteadyStates}
@@ -581,55 +576,53 @@ Sometimes one can impose a condition of vanishing expectation value of $\partial
 \end{aligned}
 \end{equation}
 
-The first definition (constancy of the density function) cannot however strictly hold true, indeed in cases far from equilibrium considered in section \ref{DissipationTheoremSection} it is shown to be false. This case is used as approximation in the MaxEP (described in later sections) approach.
+The first definition (constancy of the density function) cannot however strictly hold. Indeed, in cases far from equilibrium considered in section \ref{DissipationTheoremSection} it is shown to be false. This case is used as approximation in the MaxEP approach of section \ref{MaxEPInferenceSection}.
 
-When discussing steady states one often uses Clausius entropy to describe entropy changes related to heat transfer, however the temperature used in it's definition is not always well defined. 
+When discussing steady states one often uses Clausius entropy to describe entropy changes related to heat transfer, however the temperature used in it's definition is not always well defined. In cases of near-equilibrium that one may call local equilibrium, the definition of temperature differences are "smooth" enough, i.e. locally there is a reasonable definition of temperature and the temperature gradient determines the heat flux. 
+In the opposite case, it is the molecular kinetics which determines the energy transfer. In most cases under consideration it happens much faster and is considered a transient state after which local equilibrium gets established.
 
-In cases of near-equilibrium that one may call local equilibrium the definition of temperature differences are "smooth" enough, i.e., locally there is a reasonable definition of temperature and the temperature gradient determines the heat flux. 
-In the opposite case, it is the molecular kinetics which determines the energy transfer. In most cases it happens much faster and local equilibrium gets established afterwards.
+On the other hand, in far from equilibrium conditions there might be several definitions of temperature. One of the solutions provided by Evans et al. \cite{Evans:2241458} is to define temperature of non-equilibrium state by the temperature of the underlying equilibrium state to which the system would otherwise relax. This definition gives consistent results.
 
-On the other hand, in far from equilibrium conditions there might be several definitions of temperature. One of the solutions provided by Evans et al.\cite{Evans:2241458} is to define temperature of non-equilibrium state by the temperature of the underlying equilibrium state to which the system would otherwise relax. This definition gives consistent results.
-
-\subsection{MinEP}
+\subsection{MinEP principle}
 
 The most well known contribution of Ilya Prigogine to statistical physics, often called the Minimum Entropy Production (MinEP) principle, sprouts from the analysis of second order excess entropy around a steady state $ (\delta^2 S)_{ss} $. 
 
 If we perturb the system around it's equilibrium state we obtain
 \begin{equation}
-  S=S_0 + \delta S + \frac{1}{2}\delta^2 S
+  S=S_0 + \delta S + \frac{1}{2}\delta^2 S.
 \end{equation}
 
-This quantity is than used as a Lyapunov function and has benefits over other (not necessarily all) Lyapunov functions one could define. 
+This quantity is than used as a Lyapunov function and has certain benefits over other (not necessarily all) Lyapunov functions one could define. 
 Its macroscopic meaning is conserved independently of microscopic details of the system under consideration and is also independent of the nature of particular (possibly inhomogeneous) fluctuations.
-It is important however, that this result holds only for steady states near-equilibrium. It is only near-equilibrium that the quantity $ (\delta^2 S)_{ss} $ generates probability of fluctuations, as Prigogine insisted in response to criticism \cite{Nicolis:1979cv}. 
+It is important however, that this result holds only for steady states as compared with transient states near-equilibrium. It is only near-equilibrium that the quantity $ (\delta^2 S)_{ss} $ generates probability of fluctuations, as Prigogine himself, insisted in response to criticism \cite{Nicolis:1979cv}. 
 
 The term "dissipative structures" was also coined by Prigogine.
-In Prigogine's view the fluctuations are the trigger for the instabilities (or rather bifurcations in the equations of motion), which in turn give rise to spacetime structures, called poetically "dissipative structures". 
+In Prigogine's view the fluctuations are the trigger for the instabilities (or rather bifurcations in the equations of motion), which in turn give rise to spacetime dissipative structures. 
 
-An often given example of instabilities leading to formation of structures are the Rayleigh-Bénard convection cells, which simplified non-equilibrium (not MinEP) treatment we describe in the next section.
+An often given example of instabilities leading to formation of structures are the Rayleigh-Bénard convection cells, which simplified non-equilibrium (not near-equilibrium nor MinEP) treatment we describe in the next section.
 
 \section{Thermodynamic lowering of entropy in non-equilibrium conditions}
 \label{simple-model}
 
 The Second Law of course holds for isolated systems as a whole and one can therefore imagine (on the basis of additivity of entropy) that out of equilibrium some subsystems may maintain lower entropy.
 
-Let's consider a simple model consisting of three elements: the cooler $C$, the heater $H$ and the system under consideration $S$, staying out of equilibrium.
-We assume, that the temperatures of the cooler and the heater stay constant, and that heat $Q_H$ flows into the system $S$ and heat $Q_C$ flows out. The situation is illustrated by the picture \ref{Fig2}.
+Let's consider a simple model consisting of three elements: the cooler $C$, the heater $H$ and a system under consideration $S$, staying out of equilibrium.
+We assume, that the temperatures of the cooler and the heater stay constant, and that heat $Q_H$ flows into the system $S$ and heat $Q_C$ flows out. The situation is illustrated by the figure \ref{Fig2}.
 \begin{figure}[ht!]
-\centering \includegraphics[width=6cm]{system} \caption{System (S) model}
+\centering \includegraphics[width=6cm]{system} \caption{System (S) under the conditions of continuous heat transfer.}
 \label{Fig2} 
 \end{figure}
 
-Treating the heater and the cooler as the environment, we can think of our system $S$ as an open.
-Further on we'll analyze the system $S$ from the perspective of internal $(i)$ entropy production
-and external $(e)$ entropy flux, flowing \emph{to} the system $S$. 
-Of course the change in entropy will be the sum of those two contributions:
+Treating the heater and the cooler as the environment, we can think of our system $S$ as an open (but without particle transfer).
+Further on we will analyze the system $S$ from the perspective of internal $(i)$ entropy production and external $(e)$ entropy flux, flowing \emph{to} the system $S$. 
+The change in entropy, as in equation (\ref{OpenSystemEntropy}), will be the sum of those two contributions:
+
 \begin{equation}
 dS_S=dS_i+dS_e.
 \label{entrosum}
 \end{equation}
 
-In the current analysis let's consider a situation in which the same amount of heat flows in as flows out, that is $dQ_C=-dQ_H$. Using this relation we get the following term for the change of entropy:
+In the current analysis let's consider a steady state situation in which the same amount of heat flows in as flows out, that is $dQ_C=-dQ_H$. Using this relation we get the following term for the change of entropy:
 \begin{equation}
 dS_e=\frac{dQ_H}{T_H}+\frac{dQ_C}{T_C}=dQ_H\left(\frac{1}{T_H}-\frac{1}{T_C}\right)
 =dQ_H\left(\frac{T_C-T_H}{T_HT_C}\right)<0.
@@ -648,70 +641,68 @@ Yet, moving away from the equilibrium state we suspect, that the a balancing rol
 j_i \equiv \frac{dS_i}{dt}.   
 \end{equation} 
 
-When $T_H=T_C$, i.e. the system is in equilibrium with constant entropy $S_{EQ}$ then it follows that $j_i=0$.
-Therefore the rate of internal entropy production $j_i$ should be a function  of system's entropy $S_S$, i.e. $j_i = j_i(S_S)$ with the boundary condition $j_i(S_S=S_{EQ})=0$. 
+When $T_H=T_C$, i.e. the system is in equilibrium with constant entropy $S_{EQ}$, therefore it follows that $j_i=0$.
+We assume that the rate of internal entropy production $j_i$ should be a function  of system's entropy $S_S$, i.e. $j_i = j_i(S_S)$ with the boundary condition $j_i(S_S=S_{EQ})=0$. 
 
-Near the equilibrium state $S_S=S_{EQ}$, we can Taylor expand the function $j_i(S_S)$ to it's linear term
+Around the equilibrium state $S_S=S_{EQ}$, we can Taylor expand the function $j_i(S_S)$ to it's linear term
 \begin{equation}
 j_i(S_S)=j_i\left(S_{EQ}\right)+\left(S_S-S_{EQ}\right)C_1+\mathcal{O}\left(S_S^2\right),
 \end{equation} 
-fulfilling $j_i\left(S_{EQ}\right)=0$. 
-
-The dimensional and stability analysis tells us that $C_1$ has the dimension of inverse time and in the case of 
-$j_e=0$ should simply be equal to $S_{EQ}$, therefore we set $C_1 = -\frac{1}{\tau}$, where $\tau$ is a positive defined relaxation constant.
-
-Using the equation (\ref{entrosum}) we get
+fulfilling $j_i\left(S_{EQ}\right)=0$. The dimensional and stability analysis tells us that $C_1$ has the dimension of inverse time and in the case of 
+$j_e=0$ should simply be equal to $S_{EQ}$, therefore we set $C_1 = -\frac{1}{\tau}$, where $\tau$ is a positive defined relaxation constant. Using the equation (\ref{entrosum}) we get
 \begin{equation}
-\frac{dS_S}{dt}=j_i\left(S_S\right)=\left(S_S-S_{EQ}\right)C_1, 
 \label{stab}
+\frac{dS_S}{dt}=j_i\left(S_S\right)=\left(S_S-S_{EQ}\right)C_1.
 \end{equation} 
 
-The solution of the equation (\ref{stab}) is then
+The solution of the differential equation (\ref{stab}) is given by:
 \begin{equation}
 S_S(t) =S_{EQ}+(S_0-S_{EQ})e^{-t/\tau}, 
 \end{equation}
-where the initial condition was set $S_S(0)=S_0$.
-
-
-Now we include the term $j_e$ into our considerations.
-In this case the equation (\ref{entrosum}) results in the following 
+where the initial condition was set $S_S(0)=S_0$. Now we include the term $j_e$ into our considerations.
+In this case the equation (\ref{entrosum}) results in the following differential equation:
 \begin{equation}
 \frac{dS_S}{dt}=j_e + j_i\left(S_S\right)=j_e +\frac{S_{EQ}-S_S}{\tau}.
 \label{dSSdt}
 \end{equation} 
 
- 
-Given a boundary condition $S_S(0) =S_{EQ}$ it has a solution
+Given the boundary condition $S_S(0) =S_{EQ}$ it's solution is given by:
 \begin{equation}
 S_S(t)=S_{EQ}+j_e\tau \left(1-e^{-t/\tau }\right),
 \end{equation} 
-where $j_e$ is a negative constant (graph of this function is presented on \ref{Fig4}). 
-In the limit $t\rightarrow \infty$ the entropy of the system falls to the minimal value
+where $j_e$ is a negative constant. The graph of this function is presented on figure \ref{Fig3}. 
+One can see that in the limit $t\rightarrow \infty$ the entropy of the system falls to it's minimal value:
 \begin{equation}
 S_{min}=S(t\rightarrow \infty) =S_{EQ}+j_e \tau < S_{EQ}.
 \end{equation}
 
 \begin{figure}[ht!]
 \centering \includegraphics[width=12cm]{wykres3} 
-\caption{Inducing lower entropy with heat flow.}
-\label{Fig4} 
+\caption{Lowering of entropy induced by heat flow as a function of time.}
+\label{Fig3} 
 \end{figure}
 
 This is of course consistent with the second law of thermodynamics as we are describing an open system.
 It is easy to notice that the total entropy change is equal to $dS=dS_i \geq 0$ (for simplicity it was assumed that the heater and cooler don't act as producers of entropy).
 
-We see that if the relaxation constant $\tau = 0$ then the system would stay in equilibrium the whole time, of course, $\tau > 0$ for most materials (if not all). The most important part due to which this low entropy state was obtained is of course the entropy out-flow $j_e$ without which the non-equilibrium condition would not form.
+We see that if the relaxation constant $\tau = 0$, then the system would stay in equilibrium the whole time, of course, $\tau > 0$ for most materials (if not all). The most important part due to which this low entropy state was obtained is of course the entropy out-flow $j_e$, without which the non-equilibrium condition would not form.
 
 \section{Measure of irreversibility and the Second Law}
 \label{IrreversibilityMeasureSection}
-In the following section we present a general protoplast of the Fluctuation Theorem. It is derived using nothing else than simple probability calculus and the hypothesis of equal apriori probabilities.
-In fact, one can obtain from it the exact form of the entropy produced in terms of microscopic transition probabilities for macroscopic objects.
+In the following section a general protoplast of the Fluctuation Theorem is presented. It is derived using nothing else than simple probability calculus and the hypothesis of equal apriori probabilities.
+The result that one obtains is an exact form of the entropy produced in terms of microscopic transition probabilities for macroscopic objects.
 
-Let's consider a generic system statistical mechanical system a two times, an initial time $t_0$ and a final time $t_1$, each described by a complete set of possible macrostates $\{A_i\}$ for $ i=1,...,N_A $ and $\{B_j\}$ for $ j=1,...,N_B $  respectively. Each macrostate consists of some number of corresponding microstates denoted by $M_i$ for the initial macrostates and $N_j$ for the final macrostates. The deterministic, microscopic equations of motion then evolve a certain number of the microstates $K_{ij}$ from an initial macrostate $A_i$ to some final macrostate $B_j$.
+Let's consider a generic statistical mechanical system at two times, at initial time $t_0$ and at final time $t_1$, each described by a complete set of possible macrostates $\{A_i\}$ for $ i=1,...,N_A $ and $\{B_j\}$ for $ j=1,...,N_B $  respectively. Each initial macrostate consists of some number of corresponding microstates denoted by $M_i$, and similarly, each final macrostate consists of some number of final microstates denoted by $N_j$. The deterministic, microscopic equations of motion then evolve a certain number of the microstates $K_{ij}$ from an initial macrostate $A_i$ to some final macrostate $B_j$, as illustrated on figure \ref{Fig4}.
+
+\begin{figure}[ht!]
+\centering \includegraphics[width=15cm]{figure4} 
+\caption{Transitions between macrostates ${A_i}$ and macrostate ${B_i}$ dictated by the 'transition' matrix $K_{ij}$.}
+\label{Fig4} 
+\end{figure}
 
 The probability of the forward transition $P(B_j|A_i)$ is then equal to
 \begin{equation}
-  P(B_j|A_i)= \frac{K_{ij}}{M_i}
+  P(B_j|A_i)= \frac{K_{ij}}{M_i}.
 \end{equation}
 
 Now for the time reversed case, that is to obtain $P(A_i|B_j)$, we use the Bayes theorem
@@ -722,22 +713,22 @@ Now for the time reversed case, that is to obtain $P(A_i|B_j)$, we use the Bayes
 
 but on the way of doing so, we note that $A_i$ is still our "hypothesis" and $B_j$ is our evidence. Now, since we have no a priori knowledge about the initial macrostates, each of them is equally probable $P(A_i)= 1/N_A$.
 
-$P(B_j)$ is then the marginal probability of evidence in all contradicting hypotheses or in other words a normalization factor obtained using the relation 
+$P(B_j)$ is then the marginal probability of evidence in all contradicting hypotheses or in other words a normalization factor obtained using the relation:
 
 \begin{equation}
-  \sum_i P(A_i|B_j) = 1
+  \sum_i P(A_i|B_j) = 1,
 \end{equation}
-which leads to $P(B_j) = \sum_i P(B_j|A_i)P(A_i)$. Using this we obtain the following expression for the post-diction, sometimes called the \textit{extended Bayes theorem}.
+which leads to $P(B_j) = \sum_i P(B_j|A_i)P(A_i)$. Using this we obtain the following expression for the post-diction, sometimes called the \textit{extended Bayes theorem}:
 
 \begin{equation}
 \begin{aligned}
   P(A_i|B_j) &= \frac{K_{ij}}{M_i} P(A_i) \left( \sum_k \frac{K_{kj}}{M_k}P(A_k) \right)^{-1}\\
-  &= \frac{K_{ij}}{M_i} \left( \sum_{k,m} \frac{K_{kj}}{K_{km}} \right)^{-1}
+  &= \frac{K_{ij}}{M_i} \left( \sum_{k,m} \frac{K_{kj}}{K_{km}} \right)^{-1},
 \end{aligned}
 \end{equation}
 
 where in the last equation we made use of the fact that $\sum_m K_{km}=M_k $.
-This form is especially useful, because the matrix elements can be normalized and effectively we obtain a stochasticly-statistical description.
+This form is especially useful, because the matrix elements can be normalized and effectively we obtain a form of "stochastic" description.
 
 It is important to emphasize that the conditional probabilities $P(B_j|A_i)$ and $P(A_i|B_j)$ are entirely different in nature - the first represents a prediction, but the second is a post-diction. There is no symmetry between assumptions and assertions in conditional probability calculus.
 
@@ -750,22 +741,22 @@ Now, comparing the probability of forward macroscopic evolution to backward evol
 
 %TODO: Show that it's positive for all cases!
 
-The interpretation of the term in the exponent, can be done by noticing that there's only one known macroscopic quantity\footnote{Up to a numerical factor - $k_B^{-1}$} that is strictly positive and can change signs after reversing the left side, namely the standard measure of irreversibility - entropy\footnote{Later we will see that in the case of fluctuation theorems this quantity can be also negative. Then our association to Shannon entropy breaks down and in this case a secondary notion of \textit{dissipation} is sometimes introduced.}.
+The interpretation of the term in the exponent, can be done by noticing that there's only one known macroscopic quantity\footnote{Up to a numerical factor of $k_B^{-1}$.} that is strictly positive and can change signs after reversing the left side, namely the standard measure of irreversibility - change in entropy or so-called produced entropy\footnote{Later we will see that in the case of fluctuation theorems this quantity can be also negative. Then our association to Shannon entropy breaks down and in this case a secondary notion of \textit{dissipation} is sometimes introduced.}.
 
-We have thus, described entropy produced by a macroscopic system solely in terms of microscopic transition probabilities between two macroscopic states, without any assumptions about the dynamics and external forces influencing the system. Also this is perhaps the most straight-forward argument against Loschmidt.
+We have thus described the entropy produced by a macroscopic system solely in terms of microscopic transition probabilities between two macroscopic states, without any assumptions about the dynamics and external forces influencing the system. Moreover, this is perhaps the most straight-forward argument against Loschmidt, which has the benefit of being easily visualizable.
 
-With the use real, positive random matrices, satisfying the conditions $\sum_j K_{kj} = 1$ for any $k$, to obtain the distributions for the possible values of entropy produced in the transition $ S = \ln{\sum_{k,m} \frac{K_{kj}}{K_{km}}} $. The results, for $N=10000$ random matrices are presented on figure \ref{Fig4}.
+With the use real, positive random matrices, satisfying the conditions $\sum_j K_{kj} = 1$ for any $k$, one can obtain the probability distributions for the possible values of $\Delta S = \ln{\sum_{k,m} \frac{K_{kj}}{K_{km}}} $, entropy produced in the transitions. The results are presented on figure \ref{Fig5}.
 
 \begin{figure}[ht!]
-\centering \includegraphics[width=8cm]{dissipation} \caption{Distribution of entropy produced for $N_A = 2$ and $N_B=2$}
-\label{Fig4} 
+\centering \includegraphics[width=14cm]{Figure5} \caption{Probability distributions of entropy produced in transitions between $N_A$ initial and $N_B$ final macrostates, calculations performed for $N=10000$ random matrices.}
+\label{Fig5} 
 \end{figure}
 
-A remarkable feature of this results is that the obtained distributions are not gaussian and that most likely value is proportional to the number of states. 
-%TODO: More pictures
+A remarkable feature of this results is that the obtained distributions are not gaussian and the most likely value is proportional to the number of macrostates. Note, that the steep beginning of the first graph is not an artefact.
+
 %TODO: Check how. Maybe $\sqrt{N_A N_B} $?
 
-Despite its generality one has to remember that this result holds for macroscopic systems with multiplicity of macrostates. Have we had just one initial or just on final macrostate the analysis would collapsed to a time-reversable case. As we will see shortly, this is exactly the case covered by the Fluctuation Theorems.
+Despite its generality one has to remember that this result holds for macroscopic systems with multiplicity of macrostates. Have we had just one initial or just one final macrostate the analysis would collapsed to a time-reversable case. A tempting question one could ask is, what would happen if we had an ability to partially follow the micro-trajectories? As we will see shortly, this is exactly the case covered by the Fluctuation Theorems.
 
 \section{Fluctuation theorems}
 \label{FluctuationTheorems}
@@ -1687,7 +1678,7 @@ The final step consists of reinterpretation of $I$ as thermodynamic entropy prod
 In the proceeding section the procedure (which is Dewar's third iteration of the principle) is presented in detail.
 
 \subsection{MaxEP principle as an inference principle}
-
+\label{MaxEPInferenceSection}
 We will consider a general open system (volume $V$, bondary $\Omega$) which exchanges both matter and energy with it's surroundings. The system may consist of several components.
 
 The presence of fluxes, both within the system, and between the system and its environment is the primary characteristics of the non-equilibrium stationary states. We'll denote the instantaneous value of those fluxes, by the vector $\bm{f}$, which may in principle be infinite. The flux vector $\bm{f}$ may be related to some local density $\rho$ with the use of the continuity equation $\partial \rho / \partial t =  - \nabla \cdot \bm{f} + h$, where $h$ denotes a local source; alternatively (for example in case of Navier-Stokes equations), the components of $\bm{f}$ might themselves be identified with local densities. Macroscopic state of the system is then described by $\bm{f}$ (or $\rho$) with the stationarity condition given by equation (\ref{SteadyStates})
