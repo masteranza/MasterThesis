@@ -110,22 +110,18 @@ D.~J. Evans, E.~G.~D. Cohen, and G.~P. Morriss, ``{Probability of second law
   violations in shearing steady states},'' {\em Physical Review Letters},
   vol.~71, pp.~2401--2404, Oct. 1993.
 
-\bibitem{Evans:2002cu}
-D.~J. Evans and D.~J. Searles, ``{The fluctuation theorem},'' {\em Advances in
-  Physics}, 2002.
-
 \bibitem{Gallavotti:1995gy}
 G.~Gallavotti and E.~G.~D. Cohen, ``{Dynamical Ensembles in Nonequilibrium
   Statistical Mechanics},'' {\em Physical Review Letters}, vol.~74,
   pp.~2694--2697, Apr. 1995.
 
-\bibitem{Crooks:2008ta}
-G.~Crooks, ``{Entropy production fluctuation theorem and the nonequilibrium
-  work relation for free energy differences},'' pp.~1--7, Feb. 2008.
-
 \bibitem{Jarzynski:1997uj}
 C.~Jarzynski, ``{Nonequilibrium Equality for Free Energy Differences},'' {\em
   Physical Review Letters}, vol.~78, pp.~2690--2693, Apr. 1997.
+
+\bibitem{Crooks:2008ta}
+G.~Crooks, ``{Entropy production fluctuation theorem and the nonequilibrium
+  work relation for free energy differences},'' pp.~1--7, Feb. 2008.
 
 \bibitem{England:2015hl}
 J.~England, ``{Dissipative adaptation in driven self-assembly},'' vol.~10,
@@ -250,15 +246,6 @@ J.~England, ``{Statistical physics of self-replication},'' vol.~139, no.~12,
 C.~Jarzynski, ``{Rare events and the convergence of exponentially averaged work
   values},'' {\em Physical Review E}, vol.~73, pp.~P09005--10, Apr. 2006.
 
-\bibitem{Kondepudi:1141550}
-D.~Kondepudi, {\em {Introduction to modern thermodynamics}}.
-\newblock Chichester: Wiley, 2008.
-
-\bibitem{Grandy:1135724}
-W.~T. Grandy, {\em {Entropy and the Time Evolution of Macroscopic Systems}}.
-\newblock International series of monographs on physics, Oxford: Oxford Univ.
-  Press, 2008.
-
 \bibitem{Rayleigh:1878hb}
 L.~Rayleigh, ``{On The Instability Of Jets},'' {\em Proceedings of the London
   Mathematical Society}, vol.~s1-10, pp.~4--13, Nov. 1878.
@@ -267,6 +254,15 @@ L.~Rayleigh, ``{On The Instability Of Jets},'' {\em Proceedings of the London
 L.~Rayleigh, ``{LIX.On convection currents in a horizontal layer of fluid, when
   the higher temperature is on the under side},'' {\em Philosophical Magazine
   Series 6}, vol.~32, no.~192, pp.~529--546, 1916.
+
+\bibitem{Kondepudi:1141550}
+D.~Kondepudi, {\em {Introduction to modern thermodynamics}}.
+\newblock Chichester: Wiley, 2008.
+
+\bibitem{Grandy:1135724}
+W.~T. Grandy, {\em {Entropy and the Time Evolution of Macroscopic Systems}}.
+\newblock International series of monographs on physics, Oxford: Oxford Univ.
+  Press, 2008.
 
 \bibitem{Paltridge:2007jf}
 G.~W. Paltridge, G.~D. Farquhar, and M.~Cuntz, ``{Maximum entropy production,

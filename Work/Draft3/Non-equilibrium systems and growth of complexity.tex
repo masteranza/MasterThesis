@@ -223,11 +223,15 @@ with respect to $p_i$ (new a posteriori distribution). $H(p||q)$ can be interpre
 After Shannon and Jaynes established the links between information theory, statistical mechanics and thermodynamics, there was a growing need to include the concept of computation as well. Following some preliminary statements by John von Neumann, it was thought that any computational process must necessarily increase entropy.
 However in 1960s Rolf Landauer and later in 1970s Charles Bennett pointed out that it is not the case \cite{Landauer:2002wc, Bennett:1973ko}, instead, entropy is raised during the process of erasure of information. This interesting topic however will not be developed in this work. Instead we will focus on a more recent line of work driven by a renewed interest toward the theory of fluctuations, considering non-equilibrium systems with reversible Nosé-Hoover thermostats.
 \subsection{The discovery of fluctuation theorems}
-The first time-reversible, deterministic thermostats and ergostats (homogeneous thermostats) were invented in the early 1980s by Hoover, Ladd and Moran\cite{Hoover:1982dp}. Prior to this development there was no satisfactory mathematical way of modelling thermostatted non-equilibrium steady states.
+The first time-reversible, deterministic thermostats and ergostats (homogeneous thermostats) were invented in the early 1980s by Hoover, Ladd and Moran\cite{Hoover:1982dp}. Prior to this development there was no satisfactory mathematical way of modelling thermostated non-equilibrium steady states.
 
-In the early 1990s Evans, Cohen and Morriss \cite{Evans:1993bl} considered the fluctuations of the entropy production rate in a shearing fluid, and proposed the so-called Fluctuation Relation (FR), which represents a general result concerning systems arbitrarily far from equilibrium, which, in the near equilibrium,  stays consistent with the Green-Kubo and Onsager relations. 
+In the early 1990s Evans, Cohen and Morriss \cite{Evans:1993bl} considered the fluctuations of the entropy production rate in a shearing fluid, and proposed the so-called Fluctuation Relation (FR), which represents a general result concerning systems arbitrarily far from equilibrium, which, in the near equilibrium,  stays consistent with the Green-Kubo and Onsager relations. Nevertheless, its significance was not immediately clear.
+A few years later, in different conditions, Giovanni Gallavotti and Ezechiel Cohen \cite{Gallavotti:1995gy} derived a similar relation. However, the work that drew the widest attention was the equality derived just two years later by Christopher Jarzynski \cite{Jarzynski:1997uj}. 
+His simple and very practical relation allowed one to obtain equilibrium free energy differences between two configuration of a system in terms of the average\footnote{To be precise, ensemble finite-time measurements of the work performed.} work performed during parametric switching in between those two configurations.
+It took a few years, to see a more general picture, in which, the Jarzynski inequality was just a special case of the Fluctuation Theorems. Theorems which, by the works of Gavin Crooks \cite{Crooks:2008ta} also became more practical. 
 
-Starting with the developments of the FR proposed by Evans and Searles \cite{Evans:2002cu} and, in different conditions, by Giovanni Gallavotti and Ezechiel Cohen \cite{Gallavotti:1995gy}, leading to the works of Gavin Crooks \cite{Crooks:2008ta} and Jarzynski \cite{Jarzynski:1997uj}, the last 20 years have produced a whole new theoretical framework which encompasses the previous linear response theory and goes beyond that, including the far from equilibrium phenomena and the behaviour in between micro and macro scales. The last 5 years of this continued research paved the way for Jeremy England and coworkers \cite{England:2015hl, England:2010fb} who began description of objects living in that scale e.g. proteins and DNA molecules, implementing what could be named, Schrödinger's plan. 
+Those 20+ years have produced a whole new theoretical framework which encompasses the previous linear response theory and goes beyond that, including the far from equilibrium phenomena and the behaviour in between micro and macro scales. 
+The last 5 years of this continued research paved the way for Jeremy England and coworkers \cite{England:2015hl, England:2010fb} who began description of objects living in that scale e.g. proteins and DNA molecules, implementing what could be named, Schrödinger's plan. 
 
 \section{Treatments of entropy in the standard contexts}
 
@@ -719,7 +723,7 @@ For Gaussian isokinetic thermostat the mentioned time-reversible term is usually
  and $\textbf{S}$ is a diagonal matrix. The term serves as a mean by which we can add or remove heat from the particles in the reservoir region ($S_i =1$ for reservoir region and $S_i = 0$ outside this region).
 
 In case of isolated hyperbolic systems, interacting with a thermostat the phase space is usually contracted to an attractor and the sum of Lyapunov exponents is less then zero.
-This is in contrast with time-reversibility of the thermostatted equations of motion. The solution to this apparent paradox is related to the fractal nature of the attractor.
+This is in contrast with time-reversibility of the thermostated equations of motion. The solution to this apparent paradox is related to the fractal nature of the attractor.
 The attractor can be described by a smooth measure in the unstable directions and a fractal measure in the stable directions.
 This kind of measures are known as SRB (Sinai-Ruelle-Bowen) measures \cite{Dorfman:ozm67-zD}.
 
@@ -728,7 +732,7 @@ Let's consider a closed and adiabatic Hamiltonian system of interacting particle
 For an externally driven adiabatic system, the rate of increase of $H$ must be identically equal to the rate of work $\dot{W}$ done on the system by the environment, thus
 \begin{equation}
 \label{AdiabaticWork}
-  \dot{W} = \dot{H}^{ad} = \dot{\lambda} \frac{\partial{H}}{\partial{\lambda}} +\dot{\bm{q}}\frac{\partial{H}}{\partial{\bm{q}}} +\dot{\bm{p}}\frac{\partial{H}}{\partial{\bm{p}}},
+  \dot{W}^{ad} = \dot{H}^{ad} = \dot{\lambda} \frac{\partial{H}}{\partial{\lambda}} +\dot{\bm{q}}\frac{\partial{H}}{\partial{\bm{q}}} +\dot{\bm{p}}\frac{\partial{H}}{\partial{\bm{p}}},
 \end{equation}
 where the superscript \textit{ad} emphasises adiabatic conditions. 
 
@@ -746,21 +750,20 @@ In the microscopic picture, the systems phase space $\{\bm{q_1},...,\bm{q_N},\bm
 
 Note that the thermostatting term ($- \alpha(\bm{\Gamma})\bm{S}\cdot\bm{p}$) was added to our otherwise adiabatic system in an ad-hoc manner and should not influence the  adiabatic work relation of equation (\ref{AdiabaticWork}), which after the addition of the dissipative field $\bm{F}_e$ reduces to:
 \begin{equation}
-  \dot{W}(\bm{\Gamma},s) = \dot{\lambda} \frac{\partial{H(\bm{\Gamma}},s)}{\partial{\lambda}} - V \bm{J}(\bm{\Gamma})\cdot \bm{F}_e(s)
+  \dot{W}^{ad}(\bm{\Gamma},s) = \dot{\lambda} \frac{\partial{H(\bm{\Gamma}},s)}{\partial{\lambda}} - V \bm{J}(\bm{\Gamma})\cdot \bm{F}_e(s)
 \end{equation}
 where $V$ is the volume of the system, and $\bm{J}(\bm{\Gamma})$ is the dissipative flux due to field $\bm{F}_e(\lambda)$, which one (ignoring the thermostat term) can easily obtain:
-
 \begin{equation}
   V \bm{J}(\bm{\Gamma}) = -\Big(\frac{\partial{H}}{\partial{\bm{q}}}\cdot \bm{C}+\frac{\partial{H}}{\partial{\bm{p}}}\cdot \bm{D}\Big).
 \end{equation}
-
-Of course, the First Law of Thermodynamics has to be conserved, so that the rate of heat exchange with the thermostat follows from $\dot{Q}=\dot{H}-\dot{W}$ and is given by
+Now, using the First Law of Thermodynamics we can include the thermostat into our considerations, concluding that the rate of heat exchange with the thermostat follows from $\dot{Q}=\dot{H}-\dot{W}$ and is therefore given by
 \begin{equation}
   \dot{Q}(\bm{\Gamma},s)= -\alpha(\bm{\Gamma})\frac{\partial{H}}{\partial{\bm{p}}}\cdot \bm{S}\cdot \bm{p}.
 \end{equation}
 The total work done and heat added to the system then depends only on the initial phase space point $\bm{\Gamma}_0$ and time duration $t$. That is, $W(\bm{\Gamma}_0,t)=\int_0^t \dot{W} dt$ and $Q(\bm{\Gamma}_0,t)=-\int_0^t \dot{Q} ds$.
 
-We now wish to define a time reversal mapping $M^T$ (written for short as superscript star) to be an operator acting on phase space (the brackets indicate that the operator acts here on the phase exclusively): 
+Introducing the basics of thermostats, we now wish to move back to some more general considerations. 
+We define a time reversal mapping $M^T$ (written for short as superscript star) to be an operator acting on phase space (the brackets indicate that the operator acts here on the phase exclusively): 
 \begin{equation}
   \bm{\Gamma}^*=M^T[\bm{\Gamma}] \equiv (\bm{q},-\bm{p})
 \end{equation}
@@ -868,7 +871,7 @@ on the coupling tensors $\textbf{C}$ and $\textbf{D}$
 \begin{equation}
   \frac{\partial}{\partial{\bm{q}}}\cdot\bm{C}\cdot\bm{F}_e=  \frac{\partial}{\partial{\bm{p}}}\cdot\bm{D}\cdot\bm{F}_e =0.
 \end{equation}
-For thermostatted systems in a driven steady state, a contraction of phase space occurs continually, as the initial phase volume shrinks to a fractal attractor of lower dimension.
+For thermostated systems in a driven steady state, a contraction of phase space occurs continually, as the initial phase volume shrinks to a fractal attractor of lower dimension.
 It can be shown\cite{Evans:2241458} that for isokinetic or isoenergetic systems with fixed total momentum and satisfying $AI\bm{\Gamma}$, the phase space expansion factor is exactly $\Lambda = - (3N_{th} -4) \bm{\alpha} $, where $N_{th}$ denotes the number of thermostated particles.
 
 Moreover, for appropriate selection of thermostats (including Gaussian isokinetic and Nosé-Hoover thermostat) the phase-space contraction factor is proportional to the rate of heat exchange with the thermostat:
@@ -906,22 +909,22 @@ The most straight forward definition of the dissipation function is derived from
 \begin{equation}
 \label{ReversibilityEvans}
   \frac{p(d V_{\bm{\Gamma}_0}, 0)}{p(d V_{\bm{\Gamma}_t^*},0)}= 
-  \frac{f(\bm{\Gamma}_0;0)d V_{\bm{\Gamma}_0}}{f(\bm{\Gamma}_t^*;0)d V_{\bm{\Gamma}_t^*}}
+  \frac{f(\bm{\Gamma}_0;0)d V_{\bm{\Gamma}_0}}{f(\bm{\Gamma}_t^*;0)d V_{\bm{\Gamma}_t^*}}.
 \end{equation}
-now by noting that the Jacobian for the time reversal map is unity, $ d V_{\bm{\Gamma}^*}/ d V_{\bm{\Gamma}} =1 $, together with equation (\ref{PhaseVolumeExpansion}) we get
+Now by noting that the Jacobian for the time reversal map is unity, $ d V_{\bm{\Gamma}^*}/ d V_{\bm{\Gamma}} =1 $, together with equation (\ref{PhaseVolumeExpansion}) we get
 
 
 \begin{equation}
   \frac{p(d V_{\bm{\Gamma}_0}, 0)}{p(d V_{\bm{\Gamma}_t^*},0)}=
   \frac{f(\bm{\Gamma}_0;0)}{f(\bm{\Gamma}_t^*;0)} 
-  \exp[-\int_0^t ds \ \Lambda(\bm{\Gamma}_s)]
+  \exp[-\int_0^t ds \ \Lambda(\bm{\Gamma}_s)].
 \end{equation}
 The logarithm of this equation will now be used as the definition of the time integral of dissipation $\Omega$:
 \begin{equation}
   \label{Dissipation}
-  \int_0^t ds\ \Omega(\bm{\Gamma}_s)\equiv \ln(\frac{f(\bm{\Gamma}_0;0)}{f(\bm{\Gamma}_t^*;0)}) -\int_0^t ds \ \Lambda(\bm{\Gamma}_s) \equiv \Omega_t(\bm{\Gamma}_0)
+  \int_0^t ds\ \Omega(\bm{\Gamma}_s)\equiv \ln(\frac{f(\bm{\Gamma}_0;0)}{f(\bm{\Gamma}_t^*;0)}) -\int_0^t ds \ \Lambda(\bm{\Gamma}_s) \equiv \Omega_t(\bm{\Gamma}_0).
 \end{equation}
-The dissipation function $\Omega_t$ is completely determined for a deterministic trajectory by the initial coordinate, $\bm{\Gamma}_0$, and the duration of the trajectory, $t$. Moreover, the time-reversibility of the dynamics dictates that conjugate pairs of trajectories have the same value of dissipation $\Omega_t$ but with opposite sign:
+The dissipation function $\Omega_t$ is completely determined for a deterministic trajectory by the initial coordinate, $\bm{\Gamma}_0$, and the duration of the trajectory, $t$. Moreover, the time-reversibility of the dynamics dictates that conjugate pairs of trajectories have the same value of dissipation $\Omega_t$, but with opposite sign:
 
 \begin{equation}
   \Omega_t(\bm{\Gamma}_t^*)=-\Omega_t(\bm{\Gamma}_0).
@@ -991,8 +994,8 @@ One derives this result from ESFT given by equation (\ref{ESFT}) as follows:
 
 \subsubsection{Instantaneous dissipation function}
 
-The dissipation function is a functional of both the dynamical equations that evolve the phase $S^t \bm{\Gamma} = \exp[iL(\bm{\Gamma})t]\bm{\Gamma}$ and also the initial distribution $f(\bm{\Gamma};0)$ and their initial time has to be the same.
-One could get an equation independent of this initial time by differentiation of equation (\ref{Dissipation}):
+The dissipation function is a functional of both the dynamical equations that evolve the phase $S^t \bm{\Gamma} = \exp[iL(\bm{\Gamma})t]\bm{\Gamma}$ and also the initial distribution $f(\bm{\Gamma};0)$.
+One could get an equation independent of duration of evolution $t$, by differentiation of equation (\ref{Dissipation}):
 \begin{equation}
 \begin{aligned}
   \frac{\partial}{\partial t}\int_0^t ds\ \Omega(\bm{\Gamma}_s) &= \Omega(\bm{\Gamma}_t)\\
@@ -1009,9 +1012,12 @@ where the last line was obtained using equation (\ref{PhaseTimeDer}).
 If we now set $t=0$ we obtain the expression for the \textit{instantaneous dissipation function}:
 
 \begin{equation}
-  \Omega(\bm{\Gamma})=-\frac{1}{f(\bm{\Gamma};0)}\dot{\bm{\Gamma}}(\bm{\Gamma})\frac{\partial{f(\bm{\Gamma};0)}}{\partial{\bm{\Gamma}}}-\Lambda(\bm{\Gamma})
+  \Omega(\bm{\Gamma})=-\frac{1}{f(\bm{\Gamma};0)}\dot{\bm{\Gamma}}(\bm{\Gamma})\frac{\partial{f(\bm{\Gamma};0)}}{\partial{\bm{\Gamma}}}-\Lambda(\bm{\Gamma}).
 \end{equation}
 
+We can immediately read off this equation that dissipation is lessen by the phase space expansion. 
+
+%TODO: Analyze the first term!
 \subsubsection{Dissipation Theorem}
 \label{DissipationTheoremSection}
 As we have seen the dissipation function takes a central role in the fluctuation theorem and the second law inequality. However dissipation is also important in quantifying a range of non-equilibrium behaviours, including nonlinear response and relaxation towards equilibrium.
@@ -1031,34 +1037,32 @@ after substitution $\bm{\Gamma} \to S^{-t}\bm{\Gamma}$ and change of variables w
 \end{equation}
 which states that the forward in time propagator for the N-particle distribution function is given by the exponential (backward) time integral of the dissipative function. 
 An immediate conclusion one can draw from this is that for all non-equilibrium deterministic systems the N-particle distribution function has explicit time dependence and cannot be written in a closed, time-stationary form.
-As with ESFT, this result can be applied to any initial ensemble and time-reversible dynamics satisfying $AI\bm{\Gamma}$, a more detailed analysis of the time-dependant case can be found in \cite{Williams:2008ft}.
+As with ESFT, this result can be applied to any initial ensemble and time-reversible dynamics satisfying the $AI\bm{\Gamma}$ condition, a more detailed analysis of the time-dependant case can be found in \cite{Williams:2008ft}.
 
 
-From equation (\ref{distributionPropagator}) one can calculate non-equilibrium ensemble averages of any physical phase function $B(t)$:
+From equation (\ref{distributionPropagator}) one can calculate non-equilibrium ensemble averages of any physical phase function $B(t)$ using the Schrödinger representation:
 \begin{equation}
 \begin{aligned}
 	  \langle B(t) \rangle &= \int_D d\bm{\Gamma}\ B(\bm{\Gamma})\exp[\int_0^{t} ds\ \Omega(S^{-s}\bm{\Gamma})]f(\bm{\Gamma};0)\\
-	  &= \langle B(0) \exp[\int_0^{t} ds\ \Omega(S^{-s}\bm{\Gamma})] \rangle_{f(\bm{\Gamma};0)}.
+	  &= \langle B(0) \exp[\int_0^{t} ds\ \Omega(S^{-s}\bm{\Gamma})] \rangle_{f(\bm{\Gamma};0),\bm{F}_e}.
 \end{aligned}
 \end{equation}
-Differentiating the last equation with respect to time we get:
+By differentiating the last equation with respect to time and switching to the Heisenberg representation we get:
 \begin{equation}
 \begin{aligned}
  \frac{d\langle B(t) \rangle}{dt}
  &= \int_D d\bm{\Gamma}\ B(\bm{\Gamma}) \Omega(S^{-t}\bm{\Gamma}) f(\bm{\Gamma};t)\\
-&= \int_D d\bm{\Gamma}\ B(S^t \bm{\Gamma}) \Omega(\bm{\Gamma})f(\bm{\Gamma};t)\\
-&= \langle B(t)\Omega(0) \rangle_{f(\bm{\Gamma};0)}.
+&= \int_D d\bm{\Gamma}\ B(S^t \bm{\Gamma}) \Omega(\bm{\Gamma})f(\bm{\Gamma};0)\\
+&= \langle B(t)\Omega(0) \rangle_{f(\bm{\Gamma};0),\bm{F}_e}.
 \end{aligned}
 \end{equation}
-If we now integrate it by time, we can write the averages of physical phase functions as:
+If we now integrate it in time, we can write the averages of physical phase functions as:
 \begin{equation}
 \label{DissipationTheorem}
-\langle B(t)\rangle_{f(\bm{\Gamma};0)} =\langle B(0) \rangle_{f(\bm{\Gamma};0)} +\int_0^t ds \langle B(s) \Omega(0) \rangle_{f(\bm{\Gamma};0)}, 
+\langle B(t)\rangle_{f(\bm{\Gamma};0)} =\langle B(0) \rangle_{f(\bm{\Gamma};0)} +\int_0^t ds \langle B(s) \Omega(0) \rangle_{f(\bm{\Gamma};0),\bm{F}_e}, 
 \end{equation}
-getting the Dissipation Theorem which states that the nonlinear response of an arbitrary phase variable can be calculated from the time integral of the non-equilibrium transient time correlation function (TTCF) of the phase variable with the dissipation function.
-
-
-Two simple limits of this theorem can be read of immediately are the  equilibrium case - in which we have no dissipation, so the ensemble averages stay constant and the case in which the external field drives the system out of equilibrium in a linear manner (weak field), equation (\ref{DissipationTheorem}) reduces then to Green-Kubo linear response relation.
+getting the Dissipation Theorem, which states that the nonlinear response of an arbitrary phase variable can be calculated from the time integral of the non-equilibrium transient time correlation function (TTCF) of the phase variable with the dissipation function.
+Two simple limits of this theorem can be read of immediately, first one being the equilibrium case - in which we have no dissipation, so the ensemble averages stay constant. Second is the case in which the external field drives the system out of equilibrium in a linear manner (weak field), equation (\ref{DissipationTheorem}) reduces then to the Green-Kubo linear response relation.
 
 \subsubsection{Mixing properties and their relations}
 
@@ -1074,15 +1078,14 @@ A system is said to be mixing if for integrable, reasonably smooth physical phas
 \paragraph{Weak T-mixing}
 
 Weak T-mixing is a direct generalization of mixing for transient rather stationary distributions. Mixing is for correlation functions in systems that have stationary averages of physical phase functions such as equilibrium or steady-state distributions.
-
-If in a system either $\langle A(0) \rangle $ or $ \langle B(t) \rangle = 0, \forall t $, then such a system is called weakly T-mixing if
+If in a system either $\langle A(0) \rangle $ or $ \langle B(t) \rangle = 0, \forall t $, then such a system is called weakly T-mixing if:
 
 \begin{equation}
   \lim_{t \to \infty} \langle A(0) B(t) \rangle = 0
 \end{equation}
 
 \paragraph{T-mixing}
-If a system is weakly T-mixing and the decay of transient correlation takes place at a rate faster than $1/t$ then we say that the system is T-mixing and will be stationary at long times. In other words it's TTCFs must converge to finite values:
+If a system is weakly T-mixing and the decay of transient correlation takes place at a rate faster than $1/t$ then we say that the system is T-mixing and will be stationary at long times. In other words its TTCFs must converge to finite values:
 
 \begin{equation}
   \left| \int_0^{\infty} ds \langle A(0) B(s) \rangle \right| = const < \infty 
@@ -1095,14 +1098,12 @@ We say that a system possesses the property of $\Omega T$ mixing if the integral
     \left| \int_0^{\infty} ds \langle B(s) \Omega(0) \rangle \right| = const < \infty
 \end{equation}
 is bounded from above. This requirement let's us predict that the system will relax either to a non-equilibrium steady state or toward an equilibrium. In other words, it is a \textit{necessary} condition for ensemble averages to be time-independent or stationary at long times.
-
 T-mixing systems are $\Omega T$-mixing, but not all $\Omega T$-mixing are T-mixing. All T-mixing systems must relax to time stationary states in the long time limit.
-
 
 \subsubsection{Relaxation}
 
 Non-equilibrium system can relax to equilibrium in two ways: conformally and non-conformally.
-A conformal system relaxes such that the non-equilibrium distribution is of the form
+A conformal system relaxes in such manner that the non-equilibrium distribution is of the form
 \begin{equation}
   f(\bm{\Gamma};t)=\exp[-\beta H(\bm{\Gamma})+\lambda(t) g(\bm{\Gamma})] Z^{-1}
 \end{equation}
@@ -1114,7 +1115,6 @@ The Relaxation Theorem states that if an arbitrary initial ensemble of ergodic H
 \begin{displaymath}
   \lim_{t\to \infty } \Omega (\bm{\Gamma} ;f(\bm{\Gamma} ,t))=0, \forall\ \Gamma
 \end{displaymath}
-
 This result is exact arbitrarily far from equilibrium and independent of system size, derviation can be found in \cite{Evans:2241458}.
 \subsubsection{Driven systems}
 
@@ -1126,81 +1126,73 @@ For such systems systems the dissipation function has the form:
   \Omega(\bm{\Gamma})\equiv - \beta V \bm{J}(\bm{\Gamma})\cdot \bm{F}_e(s)
 \end{equation}
 where $V$ is the volume of the system and $\bm{J}$ is the previously defined dissipative flux\footnote{Even though in this definition dissipation is a linear functional of the field, we can always hide higher order dependence under $F_e$}.
-
 If the system that is driven was initially at equilibrium, then equation (\ref{DissipationTheorem}) can be rewritten as:
 
 \begin{equation}
-  \langle B(t) \rangle_{f(\bm{\Gamma};0)}=\langle B(0) \rangle_{f(\bm{\Gamma};0)} - V \int_0^t ds\ \langle \beta \bm{J}(0)B(s)\rangle_{f(\bm{\Gamma};0)} \cdot \bm{F}_e
+  \langle B(t) \rangle_{f(\bm{\Gamma};0)}=\langle B(0) \rangle_{f(\bm{\Gamma};0)} - V \int_0^t ds\ \langle \beta \bm{J}(0)B(s)\rangle_{f(\bm{\Gamma};0),\bm{F}_e} \cdot \bm{F}_e
 \end{equation}
-
-and at zero field reduces to Green-Kubo expression for the linear response.
+and at the approximation of zero field in the correlation function it reduces to Green-Kubo expression for the linear response.
 
 %TODO: More on usage page 71
 
-If we consider a simple (fields and dissipation flux taken as scalars), nonequilibrium, thermostatted system of volume, V consisting of charged particles driven by an external field $F_e$ and consider a time-average of the current density along a trajectory as $J_{c,t}= \frac{1}{t}\int_0^t J_c(s)\ ds$, the fluctuation relation of equation (\ref{ESFT}) can then be stated:
+If we consider a simple (fields and dissipation flux taken as scalars), nonequilibrium, thermostated system of volume V, consisting of charged particles driven by an external field $F_e$ and time-average of the current density along a trajectory taken as $J_{c,t}= \frac{1}{t}\int_0^t J_c(s)\ ds$, then the fluctuation relation of equation (\ref{ESFT}) can be stated as:
 
 \begin{equation}
   \frac{p(J_{c,t}=A\pm dA)}{p(J_{c,t}=-A\pm dA)}= \exp[A \beta F_e V t]
 \end{equation}
 
-From this equation, one can see that as the system size or time of observation is increased, the relative probability of observing positive to negative current density increases exponentially so the current density has a definite sign and the second law of thermodynamics is retrieved. In obtaining there results, nothing is assumed about the form of the distribution of current density (it deos not have to be Gaussian). Moreover, in the weak field limit, the rate of entropy production, $\dot{S}$, is given by linear irreversible thermodynamics as $\dot{S} \equiv \sum \langle J_i \rangle V X_i/T$ where the sum is over the product of all conjugate thermodynamic fluxes, $J_i$ and thermodynamics forces, $X_i$, divided by the temperature of the system, $T$. The relation stands out simply as:
+From this equation, one can see that as the system size or time of observation is increased, the relative probability of observing positive to negative current density increases exponentially so the current density has a definite sign and the second law of thermodynamics is retrieved. In obtaining there results, nothing was assumed about the form of the distribution of current density (it does not have to be Gaussian). Moreover, in the weak field limit, the rate of entropy production, $\dot{S}$, is given by linear irreversible thermodynamics: $\dot{S} \equiv \sum \langle J_i \rangle V X_i/T$, where the sum is over the product of all conjugate thermodynamic fluxes, $J_i$, and thermodynamics forces, $X_i$, divided by the temperature of the system, $T$. From those considerations the relation between dissipation function and entropy production stands out simply as:
 \begin{equation}
   \lim_{F_e \to 0} \dot{S}(t) = k_B \langle \Omega(t) \rangle.
 \end{equation}
-The difference at high fields is because the temperature that appears in the dissipation function is that which the system would relax to if the fields were removed rather than any non-equilibrium system temperature observed with the field on\cite{Evans:2241458}. The change in entropy for a process will be similarly related to the time integral of the dissipation
+The difference at high fields is because the temperature that appears in the dissipation function is that which the system would relax to if the fields were removed, rather than any non-equilibrium system temperature observed with the field on \cite{Evans:2241458}. The change in entropy for a process will be similarly related to the time integral of the dissipation
 \begin{equation}
   \lim_{F_e \to 0} \Delta S= k_B \langle \Omega_t \rangle.
 \end{equation}
 
 \subsubsection{Non-equilibrium Steady States}
 
-From equation (\ref{StationaryStateDef}) we see that stationarity of a system implies that it's physical properties do not vary in time. This can be understood in the sense of all times or sufficiently late times, however stationarity does not imply that the distribution function is stationary.
-%TODO: need to add reference
-The time independent values of physical properties, can however, be dependent on the initial phase $\bm{\Gamma}$, if they are not; we call it peNESS (physically ergodic non-equilibrium steady state):
+From equation (\ref{StationaryStateDef}) we see that stationarity of a system implies that its physical properties do not vary in time. This can be understood in the sense of all times or sufficiently late times, however stationarity does not imply that the distribution function is stationary, as was already shown by equation (\ref{distributionPropagator}).
+The time independent values of physical properties, on the other hand, can be dependent on the initial phase $\bm{\Gamma}$, if they are not; we call it a \textit{physically ergodic non-equilibrium steady state} (peNESS):
 
 \begin{equation}
       \lim_{t \to \infty} \langle A(t) \rangle_0 = \lim_{t \to \infty} \frac{1}{t} \int_0^t ds\ A(S^s \bm{\Gamma})
 \end{equation}
- where $\langle ... \rangle_0$ denotes an ensemble over the initial time $t=0$ and ensemble $f(\bm{\Gamma};0)$.
-Contrary to intuition, not all NESSs are physically ergodic. An example is the Rayleigh-Benard instability which occurs in a system with fixed boundary conditions and fixed geometry where a system might develop to a fixed number of rolls (two, four etc.) and persist in it indefinitely\cite{Evans:2241458}.
+ where $\langle ... \rangle_0$ denotes an ensemble over the initial time $t=0$ and probability distribution $f(\bm{\Gamma};0)$.
+Contrary to intuition, not all NESSs are physically ergodic. An example is the Rayleigh-Bénard instability which occurs in a system with fixed boundary conditions and fixed geometry where a system might develop to a fixed number of rolls (two, four etc.) and persist in it indefinitely \cite{Evans:2241458}.
 \subsection{Generalized Crooks fluctuation theorem}
 
 Crooks fluctuation theorem together with Jarzynski equality were originally developed for determining the difference in free energy of canonical equilibrium states from experimental information taken from non-equilibrium paths that connects two equilibrium states. 
-
 %TODO: Intro to GCFT page 156
-In order to establish a connection with Crooks fluctuation theorem, we'll need another definition of so called \textit{generalized dimensionless "work"} $\Delta X_{\tau}(\bm{\Gamma})$ for a trajectory of duration $\tau$ originating from the phase point $\bm{\Gamma}$ as
+In order to establish a connection with Crooks fluctuation theorem, we will need another definition of so-called \textit{generalized dimensionless "work"} $\Delta X_{\tau}(\bm{\Gamma})$ for a trajectory of duration $\tau$ originating from the phase point $\bm{\Gamma}$ as
 
 \begin{equation}
 \begin{aligned}
 \label{GeneralizedWorkDef}
   \exp[\Delta X_{\tau}(\bm{\Gamma})] &\equiv \lim_{d V_{\bm{\Gamma}} \to 0} \frac{p_{eq,1} (d V_{\bm{\Gamma}};0)Z(\lambda_1)}{p_{eq,2} (d V_{\bm{\Gamma}_{\tau}};0)Z(\lambda_2)} \\
-  &= \frac{f_{eq,1}(\bm{\Gamma}) d\bm{\Gamma} Z(\lambda_1)}{f_{eq,2}(\bm{\Gamma}_{\tau}) d(\bm{\Gamma}_{\tau}) Z(\lambda_2)}
+  &= \frac{f_{eq,1}(\bm{\Gamma}) d\bm{\Gamma} Z(\lambda_1)}{f_{eq,2}(\bm{\Gamma}_{\tau}) d\bm{\Gamma}_{\tau} Z(\lambda_2)}
 \end{aligned}
 \end{equation}
-
-where $Z(\lambda_i)$ is the partition function for the system and is just a normalization factor for the equilibrium function $f_{eq}(\bm{\Gamma}) =\exp[F(\bm{\Gamma})]/Z$, where$F(\bm{\Gamma})$ is some single-valued phase function. After time $\tau$ the system ends it's parametric change in $\lambda$, however the system is \textit{not} in equilibrium. That is $f(\bm{\Gamma};0)=f_{eq,1}(\bm{\Gamma})$ but $f(\bm{\Gamma};\tau)\neq f_{eq,2}(\bm{\Gamma})$ in general, since relaxation to complete thermal equilibrium cannot take place in finite time.
+where $Z(\lambda_i)$, the partition function for the system is just a normalization factor for the equilibrium function $f_{eq}(\bm{\Gamma}) =\exp[F(\bm{\Gamma})]/Z$, where $F(\bm{\Gamma})$ is some single-valued phase function. After time $\tau$ the system ends its parametric change in $\lambda$, however the system is \textit{not} in equilibrium. That is $f(\bm{\Gamma};0)=f_{eq,1}(\bm{\Gamma})$, but $f(\bm{\Gamma};\tau)\neq f_{eq,2}(\bm{\Gamma})$ in general, since relaxation to complete thermal equilibrium cannot take place in finite time.
 It can be shown that generalized work defined this way is in fact a state-function when evaluated along quasi-static paths.
 
-The Generalized Crooks Fluctuation Theorem (GCFT) considers probability $p_{eq,f}(\Delta X_t = B \pm dB)$ of observing values of $\Delta X_t$ in the range $B\pm dB$ for forward trajectories starting from the initial equilibrium distribution 1, $f_1(\bm{\Gamma};0)=f_{eq,1}(\bm{\Gamma})$, and the probability $p_{eq,r}(\Delta X_t = -B \mp dB)$ of observing $\Delta X_t$ in the range $ -B\mp dB$ for reverse trajectories byt starting from the equilibrium distribution given by $f_{eq,2}(\bm{\Gamma})$ of system 2.
-
+The Generalized Crooks Fluctuation Theorem (GCFT) considers probability $p_{eq,f}(\Delta X_t = B \pm dB)$ of observing values of $\Delta X_t$ in the range $B\pm dB$ for forward trajectories starting from the initial equilibrium distribution 1, $f_1(\bm{\Gamma};0)=f_{eq,1}(\bm{\Gamma})$, and the probability $p_{eq,r}(\Delta X_t = -B \mp dB)$ of observing $\Delta X_t$ in the range $ -B\mp dB$ for reverse trajectories by starting from the equilibrium distribution given by $f_{eq,2}(\bm{\Gamma})$ of state 2.
 The probability that the phase variable $\Delta X_{\tau}$ takes the value $B$ for a forward evolved trajectories is given by
 \begin{equation}
-  p_{eq,1}(\Delta X_{\tau,f}=B\pm dB) = \int_{\Delta X_{\tau,f}=B\pm dB} d\bm{\Gamma} f_{eq,1}(\bm{\Gamma})
+  p_{eq,1}(\Delta X_{\tau,f}=B\pm dB) = \int_{\Delta X_{\tau,f}=B\pm dB} d\bm{\Gamma} f_{eq,1}(\bm{\Gamma}).
 \end{equation}
-
 Analogously, the probability of particular values for backward evolved trajectories starting from $f_{eq,2}(\bm{\Gamma})$ is given by
-
 \begin{equation}
-  p_{eq,2}(\Delta X_{\tau,r}=-B\mp dB) = \int_{\Delta X_{\tau,r}=-B\mp dB} d\bm{\Gamma} f_{eq,2}(\bm{\Gamma})
+  p_{eq,2}(\Delta X_{\tau,r}=-B\mp dB) = \int_{\Delta X_{\tau,r}=-B\mp dB} d\bm{\Gamma} f_{eq,2}(\bm{\Gamma}).
 \end{equation}
-Now looking at the ratio of those probabilities we get (to simplify the notion we will suppress $\pm B$ and instead use $+$/$-$ in the superscript of $\Delta X$)
+Looking at the ratio of those probabilities we get (to simplify the notion we will suppress $\pm B$ and instead use $+$/$-$ in the superscript of $\Delta X$):
 \begin{equation}
 \begin{aligned}
   \frac{p_{eq,1}(\Delta X_{\tau,f}^+)}{p_{eq,2}(\Delta X_{\tau,r}^-)}
-= \frac{\int_{\Delta X_{\tau,f}^+(\bm{\Gamma})} d\bm{\Gamma} f_{eq,1}(\bm{\Gamma})}{\int_{\Delta X_{\tau,r}^-(\bm{\Gamma})} d\bm{\Gamma} f_{eq,2}(\bm{\Gamma})}
+= \frac{\int_{\Delta X_{\tau,f}^+(\bm{\Gamma})} d\bm{\Gamma} f_{eq,1}(\bm{\Gamma})}{\int_{\Delta X_{\tau,r}^-(\bm{\Gamma})} d\bm{\Gamma} f_{eq,2}(\bm{\Gamma})}.
 \end{aligned}
 \end{equation}
-Now using the definition of generalized work, equation (\ref{GeneralizedWorkDef}), two times first get $f_{eq,2}(\bm{\Gamma})d\bm{\Gamma}= \exp[\Delta X_{r,\tau}(\bm{\Gamma})] f_{eq,1}(S^T \bm{\Gamma}) d(S^T \bm{\Gamma}) Z(\lambda_1)/Z(\lambda_2) $ and also, by inserting $\bm{\Gamma} \to M^T S^{\tau} \bm{\Gamma}$, we see that $\Delta X_{\tau,r}(\bm{\Gamma}) = -\Delta X_{\tau,f}(M^T S^{\tau} \bm{\Gamma}) $ or $\Delta X_{\tau,r}^-(\bm{\Gamma}) = \Delta X_{\tau,f}^+(M^T S^{\tau} \bm{\Gamma}) $ in the simplified notion. Using those two results we perform the transformations:
+Now, using the definition of generalized work, equation (\ref{GeneralizedWorkDef}), two times first get $f_{eq,2}(\bm{\Gamma})d\bm{\Gamma}= \exp[\Delta X_{r,\tau}(\bm{\Gamma})] f_{eq,1}(S^T \bm{\Gamma}) d(S^T \bm{\Gamma}) Z(\lambda_1)/Z(\lambda_2) $, then by inserting $\bm{\Gamma} \to M^T S^{\tau} \bm{\Gamma}$, we see that $\Delta X_{\tau,r}(\bm{\Gamma}) = -\Delta X_{\tau,f}(M^T S^{\tau} \bm{\Gamma}) $ or $\Delta X_{\tau,r}^-(\bm{\Gamma}) = \Delta X_{\tau,f}^+(M^T S^{\tau} \bm{\Gamma}) $ in the simplified notion. Using those two results we perform the transformations:
 
 \begin{equation}
 \begin{aligned}
@@ -1208,41 +1200,34 @@ Now using the definition of generalized work, equation (\ref{GeneralizedWorkDef}
 &=\frac{\int_{\Delta X_{\tau,f}^+(\bm{\Gamma})} d\bm{\Gamma} f_{eq,1}(\bm{\Gamma})}{\int_{\Delta X_{\tau,r}^-(\bm{\Gamma})} d\bm{\Gamma} f_{eq,2}(\bm{\Gamma})} \\
 &= \frac{\int_{\Delta X_{\tau,f}^+(\bm{\Gamma})} d\bm{\Gamma} f_{eq,1}(\bm{\Gamma})Z(\lambda_2)/Z(\lambda_1)}{\int_{\Delta X_{\tau,f}^+(M^T S^{\tau}\bm{\Gamma})} \exp[-\Delta X_{\tau,f}^+(M^T S^{\tau}\bm{\Gamma})] d(M^T S^{\tau}\bm{\Gamma}) f_{eq,1}(M^T S^{\tau}\bm{\Gamma})} \\
 &=\frac{\int_{\Delta X_{\tau,f}^+(\bm{\Gamma})} d\bm{\Gamma} f_{eq,1}(\bm{\Gamma}) Z(\lambda_2)/Z(\lambda_1)}{\int_{\Delta X_{\tau,f}^+(\bm{\Gamma}')} d\bm{\Gamma}' \exp[-\Delta X_{\tau,f}^+(\bm{\Gamma}')] f_{eq,1}(\bm{\Gamma}')} \\
-&= \exp[B] \frac{Z(\lambda_2)}{Z(\lambda_1)}
+&= \exp[B] \frac{Z(\lambda_2)}{Z(\lambda_1)}.
 \end{aligned}
 \end{equation}
-
 %TODO: Not sure if that would hold for $\tau \neq 0$
-
 Rewriting this again in full notion:
 \begin{equation}
 \label{GCFR}
 \frac{p_{eq,1}(\Delta X_{\tau,f}=B\pm dB)}{p_{eq,2}(\Delta X_{\tau,r}=-B\mp dB)}= \exp[B] \frac{Z(\lambda_2)}{Z(\lambda_1)}
 \end{equation}
-we obtain the generalized Crooks fluctuation relation (GCFR).
+we obtained the generalized Crooks fluctuation relation (GCFR).
 
-In order to use GCFT we specialize the obtained result to an actual statistical mechanical ensemble and system of dynamics, obtaining the canonical forms of CFT between initial and final equilibrium states with the same values of temperature, volume and number of particles (T,V,N). 
-
-Referring to equation (\ref{ThermostattedEq}), the equilibrium distribution function $f(\bm{\Gamma};0)$, the related free energy $F(\lambda)$ and partition function $Z$ are given by
-
+In order to use GCFT we specialize the obtained result to an actual statistical mechanical ensemble and system of dynamics, obtaining the canonical form of CFT between initial and final equilibrium states with the same values of temperature, volume and number of particles $(T,V,N)$. 
+Referring to equation (\ref{ThermostattedEq}), the equilibrium distribution function $f(\bm{\Gamma};0)_{eq}$, the related free energy $F(\lambda)$ and partition function $Z$ are given by
 \begin{equation}
 \begin{aligned}
-  f(\bm{\Gamma};0)=Z^{-1} \exp[-\beta H(\bm{\Gamma},0)],\\
+  f(\bm{\Gamma};0)_{eq}=Z^{-1} \exp[-\beta H(\bm{\Gamma},0)],\\
   F(\lambda)\equiv - k_B T \ln Z(\lambda) = -k_B T \ln[\int d\bm{\Gamma} \exp[-\beta H(\bm{\Gamma},\lambda)]].
 \end{aligned}
 \end{equation}
-
-The Hamiltonian is varied parametrically from $\lambda_1 =\lambda(0)$ to the final, unique equilibrium state\footnote{To which it will relax thanks to the property of T-mixing} $\lambda_2 = \lambda(\tau)$. In coupled system of equation (\ref{ThermostattedEq} ), the phase space volume changes and so the work with the Hamiltonian $H_E$ for the extended system becomes:
-
+The Hamiltonian is varied parametrically from $\lambda_1 =\lambda(0)$ to the final, unique equilibrium state\footnote{To which it will relax thanks to the property of T-mixing} $\lambda_2 = \lambda(\tau)$. In coupled system of equations (\ref{ThermostattedEq}), the phase space volume changes together with the Hamiltonian:
 \begin{equation}
 \begin{aligned}
-  \Delta X_\tau &= \beta ( H_E(S^\tau \bm{\Gamma}, \lambda(\tau))-H_E(\bm{\Gamma},\lambda(0))) + \ln\left[\frac{d\bm{\Gamma}}{d(S^\tau \bm{\Gamma})}\right]\\
-  &=\beta ( H_E(S^\tau \bm{\Gamma}, \lambda(\tau))-H_E(\bm{\Gamma},\lambda(0))) + \int_0^\tau ds\ \Lambda(S^s\bm{\Gamma})\\
-  &=\beta ( H_E(S^\tau \bm{\Gamma}, \lambda(\tau))-H_E(\bm{\Gamma},\lambda(0)) +\Delta Q_\tau) \\
+  \Delta X_\tau &= \beta [ H(S^\tau \bm{\Gamma}, \lambda(\tau))-H(\bm{\Gamma},\lambda(0))] + \ln\left[\frac{d\bm{\Gamma}}{d(S^\tau \bm{\Gamma})}\right]\\
+  &=\beta [ H(S^\tau \bm{\Gamma}, \lambda(\tau))-H(\bm{\Gamma},\lambda(0))] + \int_0^\tau ds\ \Lambda(S^s\bm{\Gamma})\\
+  &=\beta [ H(S^\tau \bm{\Gamma}, \lambda(\tau))-H(\bm{\Gamma},\lambda(0)) +\Delta Q_\tau] \\
   &=\beta \Delta W_\tau
 \end{aligned}
 \end{equation}
-
 The generalized dimensionless "work" became identifiable as $\beta$ times the work performed over a period of time $\tau$:
 
 \begin{equation}
@@ -1255,32 +1240,24 @@ thus obtaining the standard Crooks fluctuation theorem.
 %TODO: More discussion needed - page 168
 \subsection{Jarzynski Equality}
 
-In ordinary statistical physics when transitions between two equilibrium states are performed infinitely slowly along some path between the initial point $A$ and the final point $B$, then the total work $W$ performed on such a system is equal to the Helmholtz free energy difference $\Delta F$ between the initial and final configurations. However, this is not the case when non-equilibrium transitions are considered. In fact, on average the work performed on the system will exceed Helmholtz free energy $ \langle  W \rangle \geq \Delta F $ and the difference will be equal to the dissipated energy, associated with increase of entropy during an irreversible process.
-
-In 1996, Christopher Jarzynski\cite{Jarzynski:1997uj} derived a very useful equality for the equilibrium free energy differences between two configuration of a system in terms of an ensemble finite-time measurements of the work performed during parametric switching in between those two configurations.
-
+In ordinary statistical physics when transitions between two equilibrium states, say $A$ and $B$, are performed infinitely slowly along some path then the total work $W$ performed on such a system is equal to the Helmholtz free energy difference $\Delta F$ between the initial and final configurations. However, this is not the case when non-equilibrium transitions are considered. In fact, on average the work performed on the system will exceed Helmholtz free energy $ \langle  W \rangle \geq \Delta F $ and the difference will be equal to the dissipated energy, associated with increase of entropy during an irreversible process. The exact relation stating
 \begin{equation}
 \label{JarzynskiInequality}
-  \langle \exp(-\beta W) \rangle = \exp(-\beta  \Delta F)
+  \langle \exp(-\beta W) \rangle = \exp(-\beta  \Delta F),
 \end{equation}
-
-
+was found by Jarzynski \cite{Jarzynski:1997uj}.
 Having already derived GCFR we will will use it to derive Jarzynski Equality also in it's generalized form, which expresses the free energy difference between two equilibrium states in terms of an average over irreversible paths.
-In fact a generalized Jarzynski equality (GJE) follows from:
-
+Subsequently, the generalized Jarzynski equality (GJE) follows from:
 \begin{equation}
 \begin{aligned}
   \langle \exp[-\Delta X_{\tau}(\bm{\Gamma})] \rangle_{eq,1} 
   &= \int_{-\infty}^{\infty} dB\ p_f(\Delta X_\tau =B)\exp[-B]\\
  &= \int_{-\infty}^{\infty} dB\ p_r(\Delta X_\tau =-B)\frac{Z(\lambda_2)}{Z(\lambda_1)}\\
- &=\frac{Z(\lambda_2)}{Z(\lambda_1)}
+ &=\frac{Z(\lambda_2)}{Z(\lambda_1)},
 \end{aligned}
 \end{equation}
-
 where the brackets $\langle ... \rangle_{eq,1}$ denote an equilibrium ensemble average over the initial equilibrium distribution.
-
-The usual practice is is use the inequality $e^x \geq 1+x $ to rewrite it in a form of an inequality:
-
+The usual practice is to use the inequality $e^x \geq 1+x $ to rewrite it in a form of an inequality:
 \begin{equation}
 \begin{aligned}
   \frac{Z(\lambda_2)}{Z(\lambda_1)} &=\langle \exp[-\Delta X_\tau ]\rangle_1 \\
@@ -1289,202 +1266,170 @@ The usual practice is is use the inequality $e^x \geq 1+x $ to rewrite it in a f
   &=exp[-\langle\Delta X_\tau \rangle_1]
 \end{aligned}
 \end{equation}
-
-or taking the logarithm
-
+or by taking the logarithm:
 \begin{equation}
-  \langle \Delta X_\tau \rangle \geq \ln\left[\frac{Z(\lambda_1)}{Z(\lambda_2)}\right]=\beta \Delta F_{21}
+\label{GJE}
+  \langle \Delta X_\tau \rangle \geq \ln\left[\frac{Z(\lambda_1)}{Z(\lambda_2)}\right]=\beta \Delta F_{21},
 \end{equation}
-
-here the right side is the free energy difference. Now it's time to specialize our generalized work with a specific definition:
+where the right side is the free energy difference. Now, it's time to specialize our generalized work with a specific definition:
 \begin{equation}
-  \Delta X = \beta \int_0^\tau ds\ W(s)
+  \Delta X = \beta \int_0^\tau ds\ W(s),
 \end{equation}
-where $W$ denotes the work. This inequality implies $\Delta W_{21} \geq \Delta F_{21} $, so the minimum work is expended if the path is reversible or quasi-static, in which case the work is, in fact, the difference in the free energies.% divided by $k_B T$.
+where $W$ denotes the work. The inequality (\ref{GJE}) implies $\Delta W_{21} \geq \Delta F_{21} $, so the minimum work is expended if the path is reversible or quasi-static, then the work is, in fact, the difference between the free energies.% divided by $k_B T$.
 
-If we choose the second equilibrium to be in fact our first equilibrium ($Z_1/Z_2=1$), therefore inducing a closed cycle, then the inequality implies
-
+We can also use the derived generalized relations directly to get another interesting result. 
+If we choose the second equilibrium to be in fact our first equilibrium ($Z_1/Z_2=1$), therefore inducing a closed cycle, then the inequality (\ref{GJE}) implies:
 \begin{equation}
 \label{CyclicInequalityForGeneralizedWork}
-  \oint ds \langle X(s) \rangle = \oint \langle dS \rangle \geq 0
+  \oint ds \langle X(s) \rangle \geq 0,
 \end{equation}
-
 i.e. the ensemble average of the cyclic integral of the generalized work is nonnegative.
-Although it's appearance is similar to Clausius inequality, for the heat we have to complete many cycles until the system settles into a periodic response to the cyclic protocol before we can apply the cyclic integral of the heat. Not all systems do settle into a cyclic response. The reason for this disrepancy is that after the cycle is complete no more work is being done, but the long relaxation process of course includes heat exchange. 
+Although it's appearance is similar to Clausius inequality for the heat the derivation of the Clausius inequality is more demanding, but presented in \cite{Evans:2241458}.
+The reason for this state of affairs is that, we have to complete many cycles until the system settles into a periodic response of the cyclic protocol before we can apply the cyclic integral for the heat. Moreover, not all systems do settle into a cyclic response.
 
 \section{Application to self-replication and adaptation}
 \label{CrooksApplications}
-Now we wish to zoom out a bit from our theoretical considerations about the foundations of fluctuation theorems and just take them as a fact in some recent and interesting applications\cite{Perunov:2016hl}\cite{England:2013ed}. The main new truth obtained from them is that we can partially follow, what we consider "microscopic trajectories", but those are not the real microscopic trajectories of fundamental particles, thus dissipation of heat occurs along the way.
 
-We proceed by switching to a stochastic description in which the equation (\ref{CFT}) takes the form
+The main "new truth" obtained from fluctuation theorems is that, we can partially follow what we consider "microscopic trajectories", but those are not the real microscopic trajectories of fundamental particles, thus dissipation of heat occurs along the way.
+
+Now we wish to "zoom out" from our theoretical considerations about the foundations of fluctuation theorems and take them for granted in order to explore some recent and interesting applications \cite{Perunov:2016hl, England:2013ed}. 
+Since we are no longer interested in the details, we proceed by switching to a stochastic description in which the Crooks equation (\ref{CFT}) takes the form
 %Check why ensemble average
 \begin{equation}
 \label{MicroscopicIrreversibility}
 \frac{\pi (j\to i;\tau )}{\pi (i\to j;\tau )}= \langle \exp[-\beta  \Delta Q_{i\to j}^{\tau}] \rangle_{i \to j},
 \end{equation}
-
 where $\pi$'s are the probability distributions of transitions over trajectories, during time $\tau$ either from $ j\to i$ or $ i \to j $ and $Q$ is the dissipated heat.
-
-Now let's define two macroscopic states denoted by I and II.
-We can then define the probabilities of transitions from macrostate I to macrostate II with the use of conditional probabilities\footnote{Note that we can do that, because we take into account what happens at the microscopic level}:
+Let's define two macroscopic states denoted by $I$ and $II$.
+We can then define the probabilities of transitions from macrostate $I$ to macrostate $II$ with the use of conditional probabilities\footnote{Note that we can do that, because we take into account what happens at the microscopic level}:
 
 \begin{equation}
   \pi (I\to II)=\int_{II} d j \int_I d i\ \pi(i\to j)p(i|I)
 \end{equation}
-and
+and similarly,
 \begin{equation}
-  \pi (II\to I)=\int_{I} d i \int_{II} d j\ \pi(j\to i)p(j|II)
+  \pi (II\to I)=\int_{I} d i \int_{II} d j\ \pi(j\to i)p(j|II).
 \end{equation}
-
-Now let's investigate the ratio
-
+Their ratio is then given by:
 \begin{equation}
 \begin{aligned}
 \label{MacrostatesPRatio2}
   \frac{\pi(II \to I)}{\pi(I \to II)} &= \frac{\int_{I} d i \int_{II} d j\ \pi(j\to i)\frac{p(j|II)}{p(i|I)}p(i|I)}{\int_{II} d j \int_I d i\ \pi(i\to j)p(i|I)}\\
   &= \frac{\int_{I} d i \int_{II} d j\ \pi(i\to j) \langle \exp[- \beta \Delta Q_{i\to j}^{\tau}] \rangle_{i \to j}  \frac{p(j|II)}{p(i|I)}p(i|I)}{\int_{II} d j \int_I d i\ \pi(i\to j) p(i|I)}\\
-  &=\langle \langle e^{- \beta \Delta Q_{i\to j}^{\tau}} \rangle_{i \to j} e^{\ln[\frac{p(j|II)}{p(i|I)}]} \rangle_{I \to II}
+  &=\langle \langle e^{- \beta \Delta Q_{i\to j}^{\tau}} \rangle_{i \to j} e^{\ln[\frac{p(j|II)}{p(i|I)}]} \rangle_{I \to II},
 \end{aligned}
 \end{equation}
-
-where in the last step we made use of equation (\ref{MicroscopicIrreversibility}) and  $\langle ... \rangle_{I \to II}$ denotes an average over all paths from some microstatei in the initial ensemble I to some microstate j in the final ensembleII, with each path weighted by its likelihood.
-
-One can rewrite the equation (\ref{MacrostatesPRatio2}) as 
-
+where in the last step we made use of equation (\ref{MicroscopicIrreversibility}) and  $\langle ... \rangle_{I \to II}$ denotes an average over all paths from some microstate$i$ in the initial ensemble $I$ to some microstate $j$ in the final ensemble $II$, with each path weighted by its likelihood.
+For clarity we rewrite the equation (\ref{MacrostatesPRatio2}) as 
 \begin{equation}
 \label{MacrostatesPRatio2b}
   \frac{\pi(II \to I)}{\pi(I \to II)} 
-  =\langle e^{- \beta \Delta Q_{i\to j}^{\tau} + \ln[\frac{p(j|II)}{p(i|I)}]} \rangle_{I \to II}
+  =\langle e^{- \beta \Delta Q_{i\to j}^{\tau} + \ln[\frac{p(j|II)}{p(i|I)}]} \rangle_{I \to II},
 \end{equation}
-
-remembering that $\Delta Q_{i \to j}$ contains a path ensemble average,
-and compare it with equation (\ref{MacrostatesPRatio}) to see the essential difference between those two equations, namely the partial knowledge about microscopic trajectories and their dissipated heat.
-
-Now moving the left side of (\ref{MacrostatesPRatio2b}) to the right side and under the ensemble one gets
-
+remembering that $\Delta Q_{i \to j}$ contains a path ensemble average. One can now compare it with the equation (\ref{MacrostatesPRatio}) to see the essential difference between those two equations, namely the partial knowledge about microscopic trajectories and their dissipated heat.
+Proceeding, by moving the left side of (\ref{MacrostatesPRatio2b}) to the right side and under the ensemble average one gets
 \begin{equation}
-\langle  e^{- \beta \Delta Q_{i\to j}^{\tau}} e^{\ln[\frac{p(j|II)}{p(i|I)}]} e^{-\ln[\frac{\pi(II \to I)}{\pi(I \to II)}]} \rangle_{I \to II}
+\langle  e^{- \beta \Delta Q_{i\to j}^{\tau}} e^{\ln[\frac{p(j|II)}{p(i|I)}]} e^{-\ln[\frac{\pi(II \to I)}{\pi(I \to II)}]} \rangle_{I \to II}=1,
 \end{equation}
-
-which by making use of $e^x \geq 1+x$ reduces to
-
+which by making use of inequality $e^x \geq 1+x$ reduces to:
 \begin{equation}
   \beta \langle\Delta Q_{i\to j}^{\tau} \rangle_{I \to II}+\langle \ln[\frac{p(i|I)}{p(j|II)}]  \rangle_{I \to II}+ \ln{\frac{\pi(II \to I)}{\pi(I \to II)}} \geq 0.
 \end{equation}
-
-The second term can now be identified with Shannon entropy between two macroscopic states $\Delta S_{int} = S_{II}- S_{I}$ obtaining
-
-
+The second term can now be identified with Shannon entropy between two macroscopic states $\Delta S_{int} = S_{II}- S_{I}$, obtaining:
 \begin{equation}
 \label{SecondLawII}
   \beta \langle\Delta Q_{i\to j}^{\tau} \rangle_{I \to II} + \ln{\frac{\pi(II \to I)}{\pi(I \to II)}} +\Delta S_{int}  \geq 0.
 \end{equation}
-
-This is a very general result holds for wide range of transitions between the coarse-grained starting and ending states and has relevance to the known Landauer bound for heat generated by the erasure of a bit of information \cite{England:2013ed}.
+This general result holds for wide range of transitions between the coarse-grained starting and ending states and has relevance to the known Landauer bound for heat generated by the erasure of a bit of information \cite{England:2013ed}. Here, however, we will proceed in applying it to a simple model of self replication.
 
 \subsection{Self-replication}
-The obtained result can be applied to a simple model of self-replicators. Let's suppose we have a master equation for $n \gg 1$ governing the population
 
+Let's suppose we have a master equation for $n \gg 1$ governing the population
 \begin{equation}
-  \dot{p}_n(t)=g\ n\left(p_{n-1}(t)-p_n(t)\right)-\delta\ n\left(p_n(t)-p_{n+1}(t)\right)
+  \dot{p}_n(t)=g\ n\left(p_{n-1}(t)-p_n(t)\right)-\delta\ n\left(p_n(t)-p_{n+1}(t)\right).
 \end{equation}
-
 where $p_n(t)$ is the probability of having a population of $n$ at time $t$ with grow rate $g$ and decay rate $\delta $.
-If we now connect the state of living with macrostate II and the state dead state with macrostate I, then naturally we assign $\pi (I \to II) = g\ \Delta t$ and $\pi (II \to I) = \delta\ \Delta t$ for some time $\Delta t$.
-
-The equation then (\ref{SecondLawII}) dictates
+If we now connect the state of 'living' with macrostate $II$ and the state 'death' with macrostate $I$, then naturally we can assign $\pi (I \to II) = g\ \Delta t$ and $\pi (II \to I) = \delta\ \Delta t$ for some time $\Delta t$.
+The equation (\ref{SecondLawII}) then dictates
 
 \begin{equation}
   \Delta S_{int} + \beta \langle \Delta Q_{i\to j}^{\tau}  \rangle_{I \to II} \geq \ln{\frac{g}{\delta}}.
 \end{equation}
-
 which can interpreted as a general bound on self replication.
-An important thing to notice here is that the $\Delta S_{int}$ is expected to be negative, because the self-replicator exists in non-equilibrium, living state.
-
-If one fixes all the terms other than the growth rate, than one can get a bound on the growth rate, by simple algebraic manipulation
-
+An important thing to notice here is that $\Delta S_{int}$ is expected to be negative, because the self-replicator exists in non-equilibrium, 'living' state.
+By fixing all the terms other than the growth rate, one can gets the bound on the growth rate:
 \begin{equation}
   g \leq g_{max}=\delta \exp[ \Delta S_{int} + \beta \langle \Delta Q_{i\to j}^{\tau}  \rangle_{I \to II}].
 \end{equation}
+The most general observation that can be made from this equation, is that in order for the growth rate $g$ to exceed the die rate $\delta $ the negative internal entropy change must be paid by the (strictly larger) dissipated heat. This dissipated energy, in case of a self-replicator, can have two sources: it is either stored in the reactants out of which the replicator gets built or comes from the work done on the system by some external driving field e.g. through the absorption of light.
 
-Most general observation that can be made from this equation is that  in order for the growth rate $g$ to exceed the die rate $\delta $ the negative internal entropy change must be paid by the (strictly larger) dissipated heat. This dissipated energy in case of a self-replicator can have two sources: it is either stored in the reactants out of which the replicator gets built or from work done on the system by some external driving field, such as through the absorption of light.
-
-Another comment can be made considering two self-replicators with the same entropy change $\Delta S_{int}$ and die rate $\delta$, in this scenario we see, that the one with larger heat dissipation will replicate faster.
-On the other hand an alternative route is also available by increasing the rate at which the self-replicator degrades $\delta $ and keeping the complexity inner complexity ($\Delta S_{int}$) low.
+Another comment can be made by considering two self-replicators with the same entropy change $\Delta S_{int}$ and die rate $\delta$. In this scenario we see, that the one with larger heat dissipation will replicate faster.
+On the other hand an alternative route is also available by increasing the rate at which the self-replicator degrades $\delta $ and keeping the inner complexity, $\Delta S_{int}$, low\footnote{Close to zero from the left side of the number axis.}.
 
 \subsection{Traversal of energy landscape }
 
-Let's now consider a case of driven thermostatted system with two possible target macrostates $II$, $III$ and we are now interested in the propability ratio between those two. From equation (\ref{MacrostatesPRatio2b}) we  get
-
+Let's consider a case of a driven thermostated system with two possible target macrostates $II$, $III$. We will be now interested in the probability ratio of transitions from state $I$ to those two states. From equation (\ref{MacrostatesPRatio2b}) we get
 \begin{equation}
-  \ln \frac{\pi(I \to II)}{\pi(I \to III)} = \ln \frac{\pi(II \to I)}{\pi(III \to I)}- ln \frac{ \langle e^{-\beta \Delta Q_{i \to j} + \ln \frac{p_f^{II}}{p_i^{I}}} \rangle_{I \to II}}{ \langle e^{-\beta \Delta Q_{i \to k} + \ln \frac{p_f^{III}}{p_i^{I}}} \rangle_{I \to III}}
+  \ln \frac{\pi(I \to II)}{\pi(I \to III)} = \ln \frac{\pi(II \to I)}{\pi(III \to I)}- ln \frac{ \langle \exp[-\beta \Delta Q_{i \to j} + \ln \frac{p_f^{II}}{p_i^{I}}] \rangle_{I \to II}}{ \langle \exp[-\beta \Delta Q_{i \to k} + \ln \frac{p_f^{III}}{p_i^{I}}] \rangle_{I \to III}},
 \end{equation}
-
-where the initial and final microstates where noted by $p_s$ and $p_f$.
-Because the system is driven and energy conserved, the work done on the system must go either to the heat or the systems hamiltonian:
+where the initial and final microstates where denoted by $p_s$ and $p_f$.
+Because the system is driven and energy conserved, the work done on the system must go either to the heat or the systems Hamiltonian:
 \begin{equation}
-  W_{i \to j}=  \Delta Q_{i \to j} + H_*- H_I
+  W_{i \to j}=  \Delta Q_{i \to j} + H_*- H_I,
 \end{equation}
-
-where the $*$ is the final state indicator, here either $II$ or $III$.
+where the $*$ denotes a slot for the final state, here either $II$ or $III$.
 If we now assume that the system is driven for a long time, we might neglect the correlations between the initial and final states and the work, giving us:
-
 \begin{equation}
-  \ln \frac{\pi(I \to II)}{\pi(I \to III)} = \ln \frac{\pi(II \to I)}{\pi(III \to I)}- ln \frac{ \langle e^{\beta (H_{II}-H_I) + \ln \frac{p_f^{II}}{p_i^{I}}} \rangle_{I \to II}}{ \langle e^{\beta (H_{III}-H_I) + \ln \frac{p_f^{III}}{p_i^{I}}} \rangle_{I \to III}}-ln \frac{\langle e^{ - \beta W} \rangle_{I \to II}}{\langle e^{ - \beta W} \rangle_{I \to III}}
+  \ln \frac{\pi(I \to II)}{\pi(I \to III)} = \ln \frac{\pi(II \to I)}{\pi(III \to I)}- ln \frac{ \langle \exp[\beta (H_{II}-H_I) + \ln \frac{p_f^{II}}{p_i^{I}}] \rangle_{I \to II}}{ \langle \exp[\beta (H_{III}-H_I) + \ln \frac{p_f^{III}}{p_i^{I}}] \rangle_{I \to III}}-ln \frac{\langle e^{ - \beta W} \rangle_{I \to II}}{\langle e^{ - \beta W} \rangle_{I \to III}}.
 \end{equation}
-
-The Hamiltonian can be obtained from the underlying equilibrium distributions $p_{eq}= e^{-\beta H_*}/Z_{eq}^*$ by
-
+The Hamiltonians can be obtained from the underlying equilibrium distributions $p_{eq}= e^{-\beta H_*}/Z_{eq}^*$ as follows:
 \begin{equation}
-  H_*-H_I= -\beta^{-1}( \ln{p_{eq}^* Z_{eq}^*} -  \ln{p_{eq}^I Z_{eq}^I})= \beta^{-1}( \ln{\frac{p_{eq}^I}{p_{eq}^*}} + \ln{\frac{Z_{eq}^I}{Z_{eq}^*}})
+  H_*-H_I= -\beta^{-1}( \ln{p_{eq}^* Z_{eq}^*} -  \ln{p_{eq}^I Z_{eq}^I})= \beta^{-1}( \ln{\frac{p_{eq}^I}{p_{eq}^*}} + \ln{\frac{Z_{eq}^I}{Z_{eq}^*}}),
 \end{equation}
-
-which after assuming that the initial distribution was at equilibrium, leaves us with 
-
+which after assuming that the initial distribution was at equilibrium, leaves us with:
 \begin{equation}
   \ln \frac{\pi(I \to II)}{\pi(I \to III)} =
   \ln \frac{\pi(II \to I)}{\pi(III \to I)} - ln \frac{ \langle \frac{p_{f}^{II}}{p_{eq}^{II}}  \rangle_{II}}{ \langle \frac{p_{f}^{III}}{p_{eq}^{III}}  \rangle_{III} }
-  -ln \frac{\langle e^{ - \beta W} \rangle_{I \to II}}{\langle e^{ - \beta W} \rangle_{I \to III}} + \ln{\frac{Z_{eq}^{II}}{Z_{eq}^{III} }}
+  -ln \frac{\langle e^{ - \beta W} \rangle_{I \to II}}{\langle e^{ - \beta W} \rangle_{I \to III}} + \ln{\frac{Z_{eq}^{II}}{Z_{eq}^{III} }}.
 \end{equation}
-
-One can notice that the second term will be zero if the final distributions are equilibrium distributions. Since free energy is defined as $F^* = -\beta \ln Z_{eq}^*$, we can combine the last two introducing a term called dissipated work, defined by
-
+One can notice that the second term will be zero if the final distributions are equilibrium distributions. Since, the free energy is defined as $F^* = -\beta \ln Z_{eq}^*$, we can combine the last two terms, introducing a term called dissipated work, defined by:
 \begin{equation}
-  W_d =W - Z_{eq}^* + Z_{eq}^I
+  W_d =W - Z_{eq}^* + Z_{eq}^I,
 \end{equation}
-
-thus obtaining
-
+thus obtaining:
 \begin{equation}
   \ln \frac{\pi(I \to II)}{\pi(I \to III)} =
   \ln \frac{\pi(II \to I)}{\pi(III \to I)} - ln \frac{ \langle \frac{p_{f}^{II}}{p_{eq}^{II}}  \rangle_{II}}{ \langle \frac{p_{f}^{III}}{p_{eq}^{III}}  \rangle_{III} }
-  -ln \frac{\langle e^{ - \beta W_d} \rangle_{I \to II}}{\langle e^{ - \beta W_d} \rangle_{I \to III}} 
+  -ln \frac{\langle e^{ - \beta W_d} \rangle_{I \to II}}{\langle e^{ - \beta W_d} \rangle_{I \to III}}.
 \end{equation}
-
-Now we might try to interprate each of those terms, the intuitive meaning of the first one is the fact that more likely are the states from which one can come back. The last term on the other hand might be expanded with the use of cumulant expansion
+We might now try to interpret each of those terms. The intuitive meaning of the first one, is the fact that more likely are the states from which one can likely come back. The last term on the other hand, might be expanded with the use of cumulant expansion:
 \begin{equation}
-  -\ln \langle \exp(-\beta W_d)\rangle= \beta \langle W_d \rangle - \Phi
+  -\ln \langle \exp(-\beta W_d)\rangle= \beta \langle W_d \rangle - \Phi,
 \end{equation}
+where $\Phi$ holds all higher order terms of the cumulant expansion. From the convexity of the exponential function and Jensen's inequality one might check\footnote{$e^{-\Psi + \Phi}=\langle \exp(-\beta W_d) \rangle \geq \exp(-\beta \langle W_d \rangle)= e^{-\Psi}$} that we must have $\Phi \geq 0$. Thus, $\Phi$ can be thought of as a correction; due to the dispersion of the dissipated work distribution about the average $\beta \langle W_d \rangle $ that gives the heaviest weight to the leftward tail of the work distribution \cite{Jarzynski:2006cq}.
 
-where $\Phi$ holds all higher order terms of the cumulant expansion. From the convexity of the exponential function and Jensen's inequality one might check\footnote{$e^{-\Psi + \Phi}=\langle \exp(-\beta W_d) \rangle \geq \exp(-\beta \langle W_d \rangle)= e^{-\Psi}$} that we must have $\Phi \geq 0$. Thus, $\Phi$ can be thought of as a correction due to the dispersion of the dissipated work distribution about the average $\beta \langle W_d \rangle $ that gives the heaviest weight to the leftward tail of the work distribution\cite{Jarzynski:2006cq}.
+One might now argue that averaged dissipated heat $\langle W_d \rangle $ can be connected with particle drift through oscillatory energy barriers (details depending on the model), this was in fact recently demonstrated by Nikolay Perunov et al \cite{Perunov:2016hl}.
+\todo{SHOW THIS, on own example}
 
-One might now argue that averaged dissipated heat $\langle W_d \rangle $ can be connected with particle drift through oscillatory energy barriers (details depending on the model), this was in fact recently demonstrated by Nikolay Perunov et al\cite{Perunov:2016hl}.
-
-We have now seen how recent progress in microscale non-equilibrium statistical physics has allowed us to make plausible predictions about inanimate matter. Indeed the fruitfulness of this approach were noticed by other groups who seek to further generalize it - this will be the topic of next paragraph.
+We have now seen how recent progress in non-equilibrium statistical mechanics and especially the fluctuation theorem allowed us to make plausible predictions about evolution of inanimate and possibly animate matter.
+Taking into account the information processing/storing side of the latter, one can ask a natural question - could there be a deeper relation behind the fluctuation theorem, perhaps involving information theory? Could fluctuation theorem be derived from it?
+The pursuit for the answer to this questions will be the topic of next paragraph.
 
 \section{Search for a unifying principle}
 \label{UnifyingPrinciple}
 The search for variational or extremization principles in physics has a long history of success. In classical mechanics, one finds the equations of motion from Lagrangian formalisms with the principle of least action. In thermodynamics and statistical physics of equilibrium state the principle of maximum entropy yields the true equilibrium states of a given system. 
-
 In 1912, Ehrenfest was the first who asked whether such a principle for a yet unknown function could exist for non-equilibrium steady states \cite{Dewar:2014ek}.
+Lord Rayleigh began the search before him (without posing the question). During the study of jets of water from a nozzle, Rayleigh \cite{Rayleigh:1878hb} noticed that a jet can settle into a conditionally stable state, however it is likely to suffer a fluctuation passing to another, less unstable, but still, conditionally stable state. 
+Similar reasonings was used by him in a study of Bénard convection \cite{Rayleigh:1916fa}. 
+\todo{DOPISZ INNE PROPOZYCJE}
+
+The physically lucid considerations of Rayleigh seem to contain the heart of the distinction between the principles of minimum and maximum rates of dissipation of energy and entropy production, which have been developed in the course of physical investigations on so-called MaxEP principle by later authors.
+
 
 This approach has also gained a lot of criticism.
 According to Kondepudi \cite{Kondepudi:1141550}, and to Grandy\cite{Grandy:1135724}, there is no general rule that provides an extremum principle that governs the evolution of a far-from-equilibrium system to a steady state. 
 
-There seems to be a theoretical relationship between maximum irreversibility and dynamic stability, a link suggested here by the fact that MaxEnt/MaxEP predicts the same dissipation functional as Malkus's instability criterion in shear turbulence\cite{Dewar:2014ek}.
-
-\subsection{Rayleigh's insight}
-Studying jets of water from a nozzle, Rayleigh \cite{Rayleigh:1878hb} noted that when a jet is in a state of conditionally stable dynamical structure, the mode of fluctuation most likely to grow to its full extent and lead to another state of conditionally stable dynamical structure is the one with the fastest growth rate. In other words, a jet can settle into a conditionally stable state, but it is likely to suffer fluctuation so as to pass to another, less unstable, conditionally stable state. He used like reasoning in a study of Benard convection\cite{Rayleigh:1916fa}. These physically lucid considerations of Rayleigh seem to contain the heart of the distinction between the principles of minimum and maximum rates of dissipation of energy and entropy production, which have been developed in the course of physical investigations on so-called MaxEP principle by later authors.
+There seems to be a theoretical relationship between maximum irreversibility and dynamic stability, a link suggested here by the fact that MaxEnt/MaxEP predicts the same dissipation functional as Malkus's instability criterion in shear turbulence \cite{Dewar:2014ek}.
 
 \subsection{MaxEP principle}
 
@@ -1698,7 +1643,7 @@ which has the form of entropy production function used by \cite{Paltridge:2007jf
 \section{Summary}
 
 After over 100 years, the arguments of Boltzmann and others on the Loschmidt paradox have become more tangible and very refined through the description sub-macroscopic description provided by the fluctuation theorem.
-The research on fluctuation theorems has been immensely productive, providing us with better understanding of thermostatted systems, steady states, dissipation and relaxation processes, keeping the correspondence with linear response theory. Currently, the work in this area is slowly shifting to the desirable quantum realm\cite{Kurchan:2000uh}.
+The research on fluctuation theorems has been immensely productive, providing us with better understanding of thermostated systems, steady states, dissipation and relaxation processes, keeping the correspondence with linear response theory. Currently, the work in this area is slowly shifting to the desirable quantum realm\cite{Kurchan:2000uh}.
 
 Applications of fluctuation theorem are already giving us knew methods of calculating free energy of large molecules and some early understanding of self replicators and adaptation. The full understanding will almost surely, demand the inclusion of Information theory into the picture. However the current approach of MaxEP, pioneered by Dewar doesn't look as the correct answer as it gives less general results than the fluctuation theorem.  
 
