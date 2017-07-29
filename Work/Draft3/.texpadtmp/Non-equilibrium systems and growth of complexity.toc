@@ -47,10 +47,10 @@
 \contentsline {subsection}{\numberline {8.2}Traversal of energy landscape }{43}{subsection.8.2}
 \contentsline {section}{\numberline {9}Search for a unifying principle}{44}{section.9}
 \contentsline {subsection}{\numberline {9.1}MaxEP principle}{45}{subsection.9.1}
-\contentsline {subsubsection}{\numberline {9.1.1}Relation to MinEP}{45}{subsubsection.9.1.1}
-\contentsline {subsubsection}{\numberline {9.1.2}Extrema of the Dissipation Function and MaxEP}{45}{subsubsection.9.1.2}
-\contentsline {subsubsection}{\numberline {9.1.3}MaxEnt based formulations of MaxEP}{46}{subsubsection.9.1.3}
-\contentsline {subsection}{\numberline {9.2}MaxEP principle as an inference principle}{47}{subsection.9.2}
-\contentsline {subsubsection}{\numberline {9.2.1}Relation to fluctuation theorem}{49}{subsubsection.9.2.1}
+\contentsline {subsubsection}{\numberline {9.1.1}Relation to MinEP}{46}{subsubsection.9.1.1}
+\contentsline {subsubsection}{\numberline {9.1.2}Extrema of the Dissipation Function and MaxEP}{46}{subsubsection.9.1.2}
+\contentsline {subsubsection}{\numberline {9.1.3}MaxEnt based formulations of MaxEP}{47}{subsubsection.9.1.3}
+\contentsline {subsection}{\numberline {9.2}MaxEP principle as an inference principle}{48}{subsection.9.2}
+\contentsline {subsubsection}{\numberline {9.2.1}Relation to fluctuation theorem}{50}{subsubsection.9.2.1}
 \contentsline {subsubsection}{\numberline {9.2.2}Example application for planetary atmospheres}{50}{subsubsection.9.2.2}
 \contentsline {section}{\numberline {10}Summary}{50}{section.10}
