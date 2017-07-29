@@ -136,6 +136,10 @@ J.~England and G.~Haran, ``{To fold or expand--a charged question.},'' {\em
 E.~T. Jaynes, ``{Gibbs vs Boltzmann Entropies},'' {\em American Journal of
   Physics}, vol.~33, no.~5, pp.~391--398, 1965.
 
+\bibitem{Jaynes:1957zz}
+E.~T. Jaynes, ``{Information Theory and Statistical Mechanics. II},'' {\em
+  Phys. Rev.}, vol.~108, no.~2, pp.~171--190, 1957.
+
 \bibitem{Anonymous:NJxQY1gt}
 P.~Glansdorff, I.~Prigogine, and R.~N. Hill, {\em {Thermodynamic theory of
   structure, stability and fluctuations}}, vol.~41.
@@ -154,6 +158,10 @@ T.~Gilbert and J.~R. Dorfman, ``{Entropy Production: From Open
 S.~Goldstein, J.~L. Lebowitz, and Y.~Sinai, ``{Remark on the (Non)convergence
   of Ensemble Densities in Dynamical Systems},'' {\em arXiv.org}, pp.~393--395,
   Apr. 1998.
+
+\bibitem{Landauer:pJ4RYJRG}
+R.~Landauer, ``{Stability and entropy production in electrical circuits},''
+  {\em Journal of Statistical Physics}, vol.~13, no.~1, pp.~1--16, 1975.
 
 \bibitem{Anonymous:vN0-ttAB}
 H.~B.~G. Casimir, ``{On Onsager's Principle of Microscopic Reversibility},''
@@ -246,28 +254,24 @@ J.~England, ``{Statistical physics of self-replication},'' vol.~139, no.~12,
 C.~Jarzynski, ``{Rare events and the convergence of exponentially averaged work
   values},'' {\em Physical Review E}, vol.~73, pp.~P09005--10, Apr. 2006.
 
-\bibitem{Rayleigh:1878hb}
-L.~Rayleigh, ``{On The Instability Of Jets},'' {\em Proceedings of the London
-  Mathematical Society}, vol.~s1-10, pp.~4--13, Nov. 1878.
+\bibitem{Onsager:3UFhYpWV}
+S.~Machlup and L.~Onsager, ``{Fluctuations and Irreversible Process. II.
+  Systems with Kinetic Energy},'' {\em Phys. Rev.}, vol.~91, pp.~1512--1515,
+  Sept. 1953.
 
-\bibitem{Rayleigh:1916fa}
-L.~Rayleigh, ``{LIX.On convection currents in a horizontal layer of fluid, when
-  the higher temperature is on the under side},'' {\em Philosophical Magazine
-  Series 6}, vol.~32, no.~192, pp.~529--546, 1916.
-
-\bibitem{Kondepudi:1141550}
-D.~Kondepudi, {\em {Introduction to modern thermodynamics}}.
-\newblock Chichester: Wiley, 2008.
-
-\bibitem{Grandy:1135724}
-W.~T. Grandy, {\em {Entropy and the Time Evolution of Macroscopic Systems}}.
-\newblock International series of monographs on physics, Oxford: Oxford Univ.
-  Press, 2008.
+\bibitem{Lorenz:J80tzZkl}
+R.~D. Lorenz, ``{Titan, Mars and Earth: entropy production by latitudinal heat
+  transport.},'' {\em onlinelibrary.wiley.com}.
 
 \bibitem{Paltridge:2007jf}
 G.~W. Paltridge, G.~D. Farquhar, and M.~Cuntz, ``{Maximum entropy production,
   cloud feedback, and climate change},'' {\em Geophysical Research {\ldots}},
   vol.~34, p.~3445, July 2007.
+
+\bibitem{Kleidon:1339033}
+A.~Kleidon and R.~D. Lorenz, {\em {Non-equilibrium Thermodynamics and the
+  Production of Entropy: Life, Earth, and Beyond}}.
+\newblock Understanding Complex Systems, Berlin: Springer, 2005.
 
 \bibitem{Ozawa:2003jt}
 H.~Ozawa, ``{The second law of thermodynamics and the global climate system: A
@@ -278,28 +282,47 @@ H.~Ozawa, ``{The second law of thermodynamics and the global climate system: A
 W.~V.~R. MALKUS, ``{Borders of disorder: in turbulent channel flow},'' {\em
   Journal of Fluid Mechanics}, vol.~489, pp.~185--198, July 2003.
 
+\bibitem{Martyushev:2006ge}
+L.~M. Martyushev and S.~V. Serebrennikov, ``{Morphological stability of a
+  crystal with respect to arbitrary boundary perturbations},'' {\em Technical
+  Physics Letters}, vol.~32, pp.~614--617, July 2006.
+
+\bibitem{Goody:2007cv}
+R.~Goody, ``{Maximum Entropy Production in Climate Theory},'' {\em Journal of
+  the Atmospheric Sciences}, vol.~64, pp.~2735--2739, July 2007.
+
+\bibitem{Virgo:2010it}
+N.~Virgo, ``{From Maximum Entropy to Maximum Entropy Production: A New
+  Approach},'' {\em Entropy}, vol.~12, pp.~107--126, Jan. 2010.
+
+\bibitem{Zupanovic:2010ea}
+P.~{\v Z}upanovi{\'c}, D.~Kui{\'c}, {\v Z}.~B. Lo{\v s}i{\'c}, D.~Petrov,
+  D.~Jureti{\'c}, and M.~Brumen, ``{The Maximum Entropy Production Principle
+  and Linear Irreversible Processes},'' {\em Entropy}, vol.~12, pp.~996--1005,
+  May 2010.
+
 \bibitem{Kawazura:2010dy}
 Y.~Kawazura and Z.~Yoshida, ``{Entropy production rate in a flux-driven
   self-organizing system},'' {\em Physical Review E}, vol.~82, no.~6, 2010.
+
+\bibitem{Dewar:2005da}
+R.~C. Dewar, ``{4 Maximum Entropy Production and Non-equilibrium Statistical
+  Mechanics},'' in {\em Non-equilibrium Thermodynamics and the Production of
+  Entropy}, pp.~41--55, Berlin/Heidelberg: Springer, Berlin, Heidelberg, 2005.
+
+\bibitem{Bruers:2006us}
+S.~Bruers, ``{Classification and discussion of macroscopic entropy production
+  principles},'' {\em arXiv.org}, Apr. 2006.
+
+\bibitem{Zupanovic:2010bv}
+P.~{\v Z}upanovi{\'c}, D.~Kui{\'c}, D.~Jureti{\'c}, and A.~Dobovi{\v s}ek,
+  ``{On the Problem of Formulating Principles in Nonequilibrium
+  Thermodynamics},'' {\em Entropy}, vol.~12, pp.~926--931, Apr. 2010.
 
 \bibitem{Brookes:2011hu}
 S.~J. Brookes, J.~C. Reid, and D.~J. Evans, ``{The fluctuation theorem and
   dissipation theorem for Poiseuille flow},'' {\em Journal of Physics:
   {\ldots}}, vol.~297, p.~012017, 2011.
-
-\bibitem{Zhang:2001jc}
-F.~Zhang, D.~J. Isbister, and D.~J. Evans, ``{Multiple nonequilibrium steady
-  states for one-dimensional heat flow},'' {\em Physical Review E}, vol.~64,
-  pp.~1645--5, July 2001.
-
-\bibitem{Maeda:1995bj}
-A.~Maeda and T.~Munakata, ``{Lattice thermal conductivity via homogeneous
-  nonequilibrium molecular dynamics},'' {\em Physical Review E}, vol.~52,
-  pp.~234--239, July 1995.
-
-\bibitem{Evans:1985br}
-D.~J. Evans, ``{Response theory as a free-energy extremum},'' {\em Physical
-  Review A}, vol.~32, pp.~2923--2925, Nov. 1985.
 
 \bibitem{Kerswell:2002bw}
 R.~Kerswell, ``{Upper bounds on general dissipation functionals in turbulent
@@ -322,10 +345,6 @@ R.~C. Dewar, ``{Maximum Entropy Production as an Inference Algorithm that
 R.~C. Dewar, ``{Maximum entropy production and the fluctuation theorem},'' {\em
   Journal of Physics A: Mathematical and General}, vol.~38, pp.~L371--L381, May
   2005.
-
-\bibitem{Lorenz:J80tzZkl}
-R.~D. Lorenz, ``{Titan, Mars and Earth: entropy production by latitudinal heat
-  transport.},'' {\em onlinelibrary.wiley.com}.
 
 \bibitem{Kurchan:2000uh}
 J.~Kurchan, ``{A Quantum Fluctuation Theorem},'' {\em arXiv.org}, July 2000.

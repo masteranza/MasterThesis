@@ -73,9 +73,9 @@ The investigations here presented start from a historical review of the subject 
 
 Indeed, the topic of far from equilibrium statistical mechanics developed mostly in the last 30-40 years, therefore a short review of the older, linear response near-equilibrium statistical mechanics of Onsager, Kubo and Prigogine is in place and presented in section \ref{NearEquilibrium}. This is then followed in section \ref{simple-model}, by a crude and simple model illustrating the mechanism of entropy lowering during non-equilibrium conditions, thus allowing for formation of complexity.
 
-In section \ref{IrreversibilityMeasureSection},  a macroscopic "big-brother" of the fluctuation theorems and its distributions of entropy are presented. Building on introduced there measure of irreversibility we transition naturally to section \ref{FluctuationTheorems} and the topic of fluctuation theorems in one of their deterministic formulations, leading to derivation of Crooks fluctuation theorem and Jarzynski inequality.
+In section \ref{IrreversibilityMeasureSection},  a macroscopic "big-brother" of the fluctuation theorems and its distributions of entropy are presented. Building on introduced there measure of irreversibility we transition naturally to section \ref{FluctuationTheorems}, where we develop the topic of fluctuation theorems in one of their deterministic formulations, leading to derivation of Crooks fluctuation theorem and Jarzynski (in)equality.
 
-Some interesting and innovative applications of the former, to self-replicators and traversals of energy landscapes are then reviewed in section \ref{CrooksApplications}. In fact the topic is so rich and developing so fast that one could focus on it exclusively. 
+Some interesting and innovative applications of the former, to self-replicators and traversals of energy landscapes are then reviewed in section \ref{CrooksApplications}. In fact the topic of applications is so rich and developing so fast that one could focus on it exclusively.
 
 In the final section \ref{UnifyingPrinciple}, a review of a attention-catching, but incomplete topic of extrema principles for non-equilibrium physics is performed. Subsequently, the most promising result, extending the MaxEnt approach is presented with an example application to planetary climates.
 
@@ -271,9 +271,8 @@ In this scenerio, the final phase space is of course larger than the initial one
 
 The means of practical use of still non-coarse-grained entropy in closed systems subject to an adiabatic change was explained with the use of MaxEnt approach by Jaynes \cite{Jaynes:1965gg}. If we knew that on the beginning, at time $t_0$ the system is in \textit{complete} thermodynamic equilibrium having entropy $S$, then we know that at the later time; after the external adiabatic influence ceased the new "test" or experimental distribution function will have entropy $S_e \geq S$. By saying that we demand \textit{complete} thermodynamic equilibrium at the beginning, we say that the \textit{systems history} has to be followed by the experimenter in order to become confident of the obtained equilibrium, as some otherwise unexplainable exceptions exist, such as the Hahn experiment. %TODO Cite Hahn
 
-It is perhaps worth underlying, that the increase of entropy is linked to our knowledge about the system, rather than anything it is doing internally. This should not come up as particularly surprising as our division between work and heat is somewhat arbitrary.
-
-Moreover, even the exact parameters of entropy depend on the situation, so does their number. We can increase their number as far as we wish and in doing so, we move toward classical deterministic description and the notion of entropy collapses\footnote{This is not the case for von Neumann entropy.}.
+It is perhaps worth underlying, that the increase of entropy is linked to our knowledge about the system, rather than anything it is doing internally. This should not come up as particularly surprising as our division between work and heat is somewhat arbitrary. In fact, as just seen, Jaynes advocated an interpretation of entropy as a measure of reproducibility, rather than disorder \cite{Jaynes:1957zz}.
+Furthermore, even the exact parameters of entropy depend on the situation, so does their number. One can increase their number arbitrarily moving toward classical deterministic description where the notion of entropy collapses\footnote{This is not the case for von Neumann entropy.}.
 
 \subsection{von Neumann entropy during measurement process}
 
@@ -378,9 +377,9 @@ The standard formalism of linear irreversible dynamics develops then a more expl
 
 The sources of entropy production from the point of view of coarse-grained Gibbs entropy have been intensely studied in non-equilibrium systems. A notable result \cite{Gilbert:1999ff, Goldstein:1998ip} states that entropy production itself is independent of the level of coarse-graining applied to Gibbs entropy.
 
-There exist however some conceptual problems with the assumption of non-negative entropy sources \cite{Evans:2241458}.
-For example in an electric circuit close to equilibrium, entropy production is equal to the product of the electric current times the voltage divided by the ambient temperature. If the circuit has a complex impedance, there will necessarily be a phase lag between the applied voltage and the current. Therefore there will exist an interval in which entropy production will be negative. 
-This problem is resolved in the context of fluctuation theorems and \textit{dissipation function}.
+There exist however some conceptual problems with the assumption of non-negative entropy sources.
+For example in an electric circuit close to equilibrium, entropy production is equal to the product of the electric current times the voltage divided by the ambient temperature. If the circuit has a complex impedance, there will necessarily be a phase lag between the applied voltage and the current. Therefore there will exist an interval in which entropy production will be negative.
+This fact was noted by Landauer in his analysis \cite{Landauer:pJ4RYJRG} of Glansdorff's and Prigogine's book \cite{Anonymous:NJxQY1gt}. The modern far from equilibrium approach, involving fluctuation theorems and \textit{dissipation function} solves this problem \cite{Evans:2241458}.
 
 \subsection{Linear response, regression and fluctuations}
 
@@ -548,11 +547,11 @@ The most well known contribution of Ilya Prigogine to statistical physics, often
 
 If we perturb the system around it's equilibrium state we obtain:
 \begin{equation}
-  S=S_0 + \delta S + \frac{1}{2}\delta^2 S.
+  S=S_0 + \delta S + \frac{1}{2}\delta^2 S,
 \end{equation}
-This quantity is than used as a Lyapunov function and has certain benefits over other (not necessarily all) Lyapunov functions one could define. 
+the linear term, $\delta S$, vanishes near equilibrium, the latter is a quantity later used as a Lyapunov function and has certain benefits over other (not necessarily all) Lyapunov functions one could define. 
 Its macroscopic meaning is conserved independently of microscopic details of the system under consideration and is also independent of the nature of particular (possibly inhomogeneous) fluctuations.
-It is important however, that this result holds only for steady states as compared with transient states near-equilibrium. It is only near-equilibrium that the quantity $ (\delta^2 S)_{ss} $ generates probability of fluctuations, as Prigogine himself, insisted in response to criticism \cite{Nicolis:1979cv}. 
+It is important however, that this result holds only for near-equilibrium steady-states. Only then the quantity $ (\delta^2 S)_{ss} $ generates probability of fluctuations, as Prigogine himself, insisted in response to criticism \cite{Nicolis:1979cv}. 
 
 The term "dissipative structures" was also coined by Prigogine.
 In Prigogine's view the fluctuations are the trigger for the instabilities (or rather bifurcations in the equations of motion), which in turn give rise to spacetime dissipative structures. 
@@ -1418,64 +1417,63 @@ The pursuit for the answer to this questions will be the topic of next paragraph
 \section{Search for a unifying principle}
 \label{UnifyingPrinciple}
 The search for variational or extremization principles in physics has a long history of success. In classical mechanics, one finds the equations of motion from Lagrangian formalisms with the principle of least action. In thermodynamics and statistical physics of equilibrium state the principle of maximum entropy yields the true equilibrium states of a given system. 
+
 In 1912, Ehrenfest was the first who asked whether such a principle for a yet unknown function could exist for non-equilibrium steady states \cite{Dewar:2014ek}.
-Lord Rayleigh began the search before him (without posing the question). During the study of jets of water from a nozzle, Rayleigh \cite{Rayleigh:1878hb} noticed that a jet can settle into a conditionally stable state, however it is likely to suffer a fluctuation passing to another, less unstable, but still, conditionally stable state. 
-Similar reasonings was used by him in a study of Bénard convection \cite{Rayleigh:1916fa}. 
-\todo{DOPISZ INNE PROPOZYCJE}
-
-The physically lucid considerations of Rayleigh seem to contain the heart of the distinction between the principles of minimum and maximum rates of dissipation of energy and entropy production, which have been developed in the course of physical investigations on so-called MaxEP principle by later authors.
-
-
-This approach has also gained a lot of criticism.
-According to Kondepudi \cite{Kondepudi:1141550}, and to Grandy\cite{Grandy:1135724}, there is no general rule that provides an extremum principle that governs the evolution of a far-from-equilibrium system to a steady state. 
-
-There seems to be a theoretical relationship between maximum irreversibility and dynamic stability, a link suggested here by the fact that MaxEnt/MaxEP predicts the same dissipation functional as Malkus's instability criterion in shear turbulence \cite{Dewar:2014ek}.
+The search, however, could be dated to the works of Kirchoff and Rayleigh and their least dissipation theorems, which development ceased immediately after the establishment of equilibrium statistical mechanics.
+Interest in least dissipation principles was reborn in the 1950s due to joint paper of Onsager and Machlup \cite{Onsager:3UFhYpWV} which modeled small microscopic fluctuations (away from criticality) around exponential relaxation to equilibrium and which provided a "microscopic" basis for the least dissipation principle. The validity of the least dissipation principles, including Prigogine's MinEP, is however restricted to near equilibrium states. In fact, in an example presented by Landauer \cite{Landauer:pJ4RYJRG}, the steady state was generating the maximum amount of entropy.
 
 \subsection{MaxEP principle}
+\label{MaxEPSection}
+The example presented by Landauer, was however, not, the origin of the so-called maximum entropy production (MaxEP, sometimes called MEP) principle. The conjecture of MaxEP originated from some promising (but controversial) successes in studies of planetary climates \cite{Lorenz:J80tzZkl, Paltridge:2007jf, Kleidon:1339033} and since then was applied in a loose manner to other fields, such as fluid turbulence \cite{Ozawa:2003jt, MALKUS:2003ix} and crystal growth morphology \cite{Martyushev:2006ge}.
+%In the case of Malkus's turbulence, it also allegedly hinted to some theoretical relationship between maximum irreversibility and dynamic stability, by the fact that MaxEP predicts the same dissipation functional as instability criterion in shear turbulence \cite{Dewar:2014ek}.
 
-Recently, a common working formulation of the maximum entropy production (MaxEP, sometimes called MEP) principle surfaced stating roughly that \textit{for systems admitting a spectrum of possible steady states, MaxEP says that the system is most likely to be found in steady state  with the greatest entropy production}
+The main reasons that drove controversies, e.g. \cite{Goody:2007cv}, around those successes were the accuracy of the results and the \textit{ad hoc} and unsystematic manner in which MaxEP was applied.
+For example, the earliest successes of MaxEP applied to Earth's climate were based on a 2-zone model where the energy balance and temperatures were obtained through maximization of entropy production (EP) associated with meridional heat transport in the atmosphere and the oceans, completely ignoring the dominant part of the total EP coming from radiative EP.
 
-The conjecture of MaxEP has shown some promising (but controversial) success in studies of planetary climates \cite{Paltridge:2007jf}, fluid turbulence \cite{Ozawa:2003jt} \cite{MALKUS:2003ix}, crystal growth morphology, biological adaptation as well as earthquake dynamics. %TODO: Fill the references from chapter 3, Beyond the Second Law
-The main reason that drove controversies around those successes has been an \textit{ad hoc} and unsystematic manner in which MaxEP was applied.
+There are also different formulations of MaxEP \cite{Virgo:2010it, Zupanovic:2010ea, Kawazura:2010dy, Dewar:2005da}, many not really formalised, which were subjects to a pletora of readily available reviews, e.g. \cite{Bruers:2006us, Zupanovic:2010bv, Dewar:2014ek}. To author's best knowledge, all versions were predicting, a time independent probability distribution function, therefore, a detailed review of individual differences will not be undertaken in this work.
+Instead, we will comment on the most common formulation from the point of view of dissipation function and then present what seems to be, the most promising idea.
 
-For example, the earliest successes of MaxEP applied to Earth's climate were based on a 2-zone model where the energy balance and temperatures were obtained through maximization of entropy production (EP) associated with meridional heat transport in the atmosphere and the oceans, completely ignoring the dominant part of the total EP coming from radiative EP. At the same time general circulation models (GCM), found no extremum in EP. MaxEP was also not found in phenomenological models of heat flow in plasma/fluid system \cite{Kawazura:2010dy}, where maximum as well as minimum was observed depending on how the system is driven. Nevertheless, possible adjustments to MaxEP principle are still being researched.
+The usual working formulation of MaxEP  principle states that \textit{for systems admitting a spectrum of possible steady states, MaxEP says that the system is most likely to be found in steady state  with the greatest entropy production}. Directly from this statement the relation between MaxEP and Prigogine's MinEP becomes clear.
 
 \subsubsection{Relation to MinEP}
-For linear, near-equilibrium systems that only admit a single steady state, MinEP says that all of the system's transient states have a higher entropy production than the steady state. A transient state is a temporary state that is not a steady state. MinEP compares steady states with non-steady states.
 
-For some yet-to-be-determined class of non-linear, far-from-equilibrium systems that admit a continuum of possible steady states, MaxEP says that the system is most likely to be found in the steady state with the greatest entropy production. MaxEP compares steady states to other steady states, but says nothing about transient states.
+For linear, near equilibrium systems that only admit a single steady state, MinEP states that system's steady state produces less entropy than any possible transient state.
+MinEP compares steady states with transient states.
 
-%TODO: Cite Nathaniel
+For some not yet determined class of nonlinear, far from equilibrium systems that admit multiple steady states, MaxEP states that the system settles in the steady state with the greatest entropy production. MaxEP compares steady states to other steady states, staying silent on transient states.
 
 \subsubsection{Extrema of the Dissipation Function and MaxEP}
-The dissipation function is similar to the entropy production, and although it is not directly connected to a state function, the various fluctuation theorems provide exact, non-equilibrium relations. Given this similarity it is interesting to consider whether there exists a principle akin to MaxEnt (maximum entropy) for equilibrium systems, and MaxEP (maximum entropy production rate) for non-equilibrium systems. There were several papers on the topic, including Williams and Evans \cite{Williams:2008ft}, concluding that MaxEP cannot be applied rigorously to non-equilibrium systems in general, as the distribution function at any time (including steady state) is not just a function of the dissipation at that time. However it might provide a good approximation in some cases.
+The dissipation function is similar to the entropy production, and although it is not directly connected to a state function, the various fluctuation theorems provide exact, non-equilibrium relations. Given this similarity, it is interesting to see how consistent with it might be the MaxEP principle. 
 
-Considering a system that is driven from an initially equilibrium state to a steady-state, one finds that the ensemble average of the instantaneous dissipation function stays positive, and that the average of the total dissipation function will approach infinity at long times. Considering equation (\ref{DissipationTheorem}) with $B=\Omega$, one can see \textit{then if} the autocorrelation function $\langle \Omega(\bm{\Gamma}(0))\Omega(\bm{\Gamma}(t))\rangle$ decays monotonically with time, then the value of the ensemble average of the instantaneous dissipation funciton, $\langle \Omega(t) \rangle$ will be higher when it reaches its steady state than for any other state it passes through. Therefore the system would find itself in a steady-state that maximises the dissipation function (rate of entropy production).
+If we consider a special case of equation (\ref{distributionPropagator}) when the system is driven i.e. dissipation is given by equation (\ref{primaryDissipationFunction}), then we obtain:
+\begin{equation}
+  f(\bm{\Gamma};t)=f(\bm{\Gamma};0)\exp[-\beta \int_0^t ds\ V\bm{J}(\bm{\Gamma}_{-s})\cdot \bm{F}_e(t-s)]
+\end{equation}
+from which it is clear that the probability of observing the phase $\bm{\Gamma}$ at time $t$ is increased if the integrated dissipation terminating at phase $\bm{\Gamma}$ and time $t$ is large and positive. Furthermore, we suspect that the dissipation term will, at long times, dominate over the initial probability distribution, thus justifying MaxEP as a good approximation.
 
-However this is a special case, under the assumption of a monotonous autocorrelation function of the dissipation. Some numerical studies has been performed to study the behaviour of the instantaneous dissipation function more generally; examining whether it is a maximum in the steady state or if a transient state has a higher average instantaneous dissipation value.
+Moreover, considering equation (\ref{DissipationTheorem}) with $B=\Omega$, one can see, that if, the autocorrelation function $\langle \Omega(\bm{\Gamma})\Omega(\bm{\Gamma}_t)\rangle$ decays monotonically with time, then the value of the ensemble average of the instantaneous dissipation function, $\langle \Omega(t) \rangle$ will be have a higher value when it reaches its steady state than for any other state it passes through. The system should therefore expose itself to a steady-state of maximium dissipation.
+The assumption of monotonicity of the autocorrelation function of course doesn't hold in all cases. Through numerical simulations done in \cite{Brookes:2011hu} it was shown that the dissipation average sometimes peaks to a higher number before reaching a stable steady state value. 
+One should note here, that in the light of formulation of MaxEP from section \ref{MaxEPSection}, this result doesn't prove or disprove the MaxEP principle as MaxEP compares steady states to steady states.
+It's simply the instantaneous dissipation that is not necessarily maximized at all times.
 
-In fact it was shown in \cite{Brookes:2011hu} through numerical simulations, that the dissipation average peaks before dropping to a steady state for most field values. Therefore it is clear that the instantaneous dissipation is not a maximum in the steady state - the system evolves through unstable (transient) maximum. For stronger fields, the steady state reaches a higher instantaneous dissipation which is also maximum.
+%In order to provide further information on the behaviour of the dissipation function, one should consider a system where multiple steady state solutions are known to exist. One such model was investigated by Zhang \cite{Zhang:2001jc} who considered heat flow in a one-dimensional lattice. In such model, two possible steady states exist - a soliton or a diffusive heat flow - and depend on the initial conditions and the field strength.
+%For a given field strength, there is a certain set of trajectories from which a soliton emerges spontaneously. There's also a critical value of the field strength after which the probability of forming a soliton is equal to unity. This chaos-soliton transition becomes sharper as the size of the system (number of particles) is increased. 
+%One might think that it may very well be that after increased simulation time the transition becomes sharper as well, but it turns out, that even for zero-field there exists a set of initial conditions (of zero measure) that also form a soliton. This peculiar points of the phase space form a basin of attraction which grows after the external field is increased. This non-uniqueness of the steady state stands in contrast to other 1D and 2D numerical simulations like \cite{Maeda:1995bj}.
 
-One should note here that in the light of formulation of MaxEP from the previous paragraph this result doesn't prove or disprove the MaxEP principle as it compares steady states to transient states, instead of steady states to steady states. One might conclude however that the supposed theorem of maximum instantaneous dissipation for steady states does not generally apply.
+%Those examples might suggest that the strong conjecture of MaxEP might not hold for all steady state or that the field strength should also be considered a constrain of the system.
+%Perhaps, MaxEP requires the external forcing to be sufficiently large that low entropy states are unstable. It is clear that the results will depend on the constraints imposed, and therefore the problem could be reformulated as a problem in identification of the appropriate constraints.
 
-In order to provide further information on the behaviour of the dissipation, one should consider a system where multiple steady state solutions are known to exist. One such model was investigated by Zhang\cite{Zhang:2001jc} who considered heat flow in a one-dimensional lattice. The two possible steady states exist - a soliton or a diffusive heat flow - and depend on the initial conditions and the field strength.
-For a given field strength, there is a certain set of trajectories from which a soliton emerge spontaneously. There's also a critical value of the field strength after which the probability of forming a soliton is equal to unity. This chaos-soliton transition becomes sharper as the size of the system (number of particles) is increased. 
-One might think that it may very well be that after increased simulation time the transition becomes sharper as well, but it turns out for zero-field there exists a set of initial conditions (of zero measure) that also forms a soliton. This peculiar points of the phase space form a basin of attraction which grows after the external field is increased. This non-uniqness of the steady state stands in contrast to other 1D and 2D  numerical simulations like \cite{Maeda:1995bj}.
-
-Those examples might suggest that the strong conjecture of MaxEP might not hold for all steady state or that the field strength should also be considered a constrain of the system.
-Perhaps, MaxEP requires the external forcing to be sufficiently large that low entropy states are unstable. It is clear that the results will depend on the constraints imposed, and therefore the problem could be reformulated as a problem in identification of the appropriate constraints.
-
-It is difficult to study MaxEP numerically at the microscopic level, the main reason for that is because systems that generate multiple steady states, such as convection and turbulent flow, are computationally very expensive. One would then obtain MaxEP as an objective way of finding the appropriate constrains.
-
-One should perhaps mention, before committing to such enterprise, that there exist discouraging examples. First is seen in the derivation of the dissipation theorem for driven system from an extremum principle \cite{Evans:1985br}. In that case the number of constraints (chaining constrains of the dissipative flux for each time step) required in order to obtain the exact answer turned out to be infinite. 
-Second is the analysis of family of dissipation functionals of the form $f= D(D_v/D_m)^n$ and $f= D_m(D_v/D_m)^n$ for $n\geq 0$, involving the total dissipation $D$, dissipation in the mean flow $D_m$, and dissipation in the fluctuating flow $D_v$. Within this family Kerswell \cite{Kerswell:2002bw} was unable to identify a universal dissipation functional that applies to all flow problems.
-
+The (mostly) negative statements with regards to MaxEP, one finds in the works of Evans \cite{Evans:2241458}, seem to be referring to a universal MaxEP principle valid at all times, rather than to some approximation.
+There are of course valid reasons for scepticism about MaxEP as a general law. In an extensive analysis analysis of family of dissipation functionals of the form $f= D(D_v/D_m)^n$ and $f= D_m(D_v/D_m)^n$ for $n\geq 0$, involving the total dissipation $D$, dissipation in the mean flow $D_m$, and dissipation in the fluctuating flow $D_v$, Kerswell \cite{Kerswell:2002bw} was unable to identify a universal dissipation functional that applied to all flow problems.
+Finally, the study of generic MaxEP hypotheses through numerical simulations at the microscopic level is rather hard, because systems that generate multiple steady states, such as convection and turbulent flow, are computationally very expensive.
+ 
 \subsubsection{MaxEnt based formulations of MaxEP}
 
-Perhaps the most promising interpretation of MaxEP principle, put forward by Dewar\cite{Dewar:775452, Dewar:2009fg, Dewar:2005eo}, assumes that MaxEP is not a physical principle at all. Instead, by analogy to Jaynes MaxEnt it is to be interpreted as an inference method i.e. a method for deducing the most unbiased predictions from an incomplete set of statistical data. 
+Perhaps the most promising interpretation of MaxEP principle, put forward by Dewar\cite{Dewar:775452, Dewar:2009fg, Dewar:2005eo}, assumes that MaxEP is not a physical principle at all. Instead, by analogy to Jaynes MaxEnt it is an inference method i.e. a method for deducing the most unbiased predictions from an incomplete set of statistical data. In the light of this interpretation, problems with finding maximum entropy production in a given model, may be related to \textit{the way} the principle was applied, i.e. finding the right constraints and not to the principle itself.
+Instances of apparent failure were noted in phenomenological models of heat flow in plasma/fluid system \cite{Kawazura:2010dy}, where maximum as well as minimum was observed depending on how the system was driven, and also in the climate general circulation models (GCM), where no extremum of EP was not found \cite{Dewar:2014ek}.
+Whether those failures can indeed be justified by unlucky selection of constraints remains to be shown. Nevertheless, a precocious procedure was proposed by Dewar which involves three steps.
 
-First step is done by narrowing the scope of validity. We notice that systems that are weakly driven have (neglecting the set of measure zero) only one steady state available.\footnote{Of course, in principle, there is always only one stationary state when our knowledge about the system is full, however, by assumption, in case of strongly driven systems our ignorance is much greater and there is more room for an inference principle.} Therefore there's no room for MaxEP to operate and we instead focus on systems driven strongly in far for equilibrium regime.
-
+The first step is done by narrowing the scope of validity. We notice that systems that are weakly driven have (neglecting the set of measure zero) only one steady state available.\footnote{Of course, in principle, there is always only one stationary state when our knowledge about the system is full, however, by assumption, in case of strongly driven systems our ignorance is much greater and there is more room for an inference principle.} Therefore there is no room for MaxEP to operate and we instead focus on systems driven strongly in far for equilibrium regime.
 Two classic examples of far from equilibrium systems involve \textit{shear turbulence} with Reynolds numbers greater than the critical value necessary for the onset of turbulence and \textit{Rayleigh-Bénard} cell with Rayleigh numbers greater than the critical value necessary for the onset of convection.
 In those scenarios both examples exhibit many flow solutions allowed when we apply only a restricted set of stationary conditions rather than the full dynamics.
 %TODO: Place for work of Ozawa
@@ -1484,27 +1482,20 @@ Secondly, Dewar introduces information theoretical measure of the distance from 
 The first demand (dynamical instability) is then reformulated as a strong inequality constraint $I>I_{min}$. 
 Then using procedures known from MaxEnt it is shown that $I$ adopts it's maximum possible value under the stationarity constraints.
 
-The final step consists of reinterpretation of $I$ as thermodynamic entropy production. In this derivation of MaxEP, entropy production depends of applied constraints.
+The final step consists of reinterpretation of $I$ as thermodynamic entropy production. In this derivation of MaxEP, entropy production depends on the applied constraints.
 
-In the proceeding section the procedure (which is Dewar's third iteration of the principle) is presented in detail.
+The just outlined procedure (which is Dewar's third iteration of the principle) is presented in the proceeding section in detail.
 
 \subsection{MaxEP principle as an inference principle}
 \label{MaxEPInferenceSection}
 We will consider a general open system (volume $V$, bondary $\Omega$) which exchanges both matter and energy with it's surroundings. The system may consist of several components.
-
-The presence of fluxes, both within the system, and between the system and its environment is the primary characteristics of the non-equilibrium stationary states. We'll denote the instantaneous value of those fluxes, by the vector $\bm{f}$, which may in principle be infinite. The flux vector $\bm{f}$ may be related to some local density $\rho$ with the use of the continuity equation $\partial \rho / \partial t =  - \nabla \cdot \bm{f} + h$, where $h$ denotes a local source; alternatively (for example in case of Navier-Stokes equations), the components of $\bm{f}$ might themselves be identified with local densities. Macroscopic state of the system is then described by $\bm{f}$ (or $\rho$) with the stationarity condition given by equation (\ref{SteadyStates})
-
+The presence of fluxes, both within the system, and between the system and its environment is the primary characteristics of the non-equilibrium stationary states. We'll denote the instantaneous value of those fluxes, by the vector $\bm{f}$. The flux vector $\bm{f}$ may be related to some local density $\rho$ with the use of the continuity equation $\partial \rho / \partial t =  - \nabla \cdot \bm{f} + h$, where $h$ denotes a local source; alternatively (for example in case of Navier-Stokes equations), the components of $\bm{f}$ might themselves be identified with local densities. Macroscopic state of the system is then described by $\bm{f}$ (or $\rho$) with the stationarity condition given by equation (\ref{SteadyStates}).
 Similarly to the MaxEnt we maximize the relative entropy
-
 \begin{equation}
-  H = - \int p(\bm{f})\ln \frac{p(\bm{f})}{q(\bm{f})} d\bm{f}
+  H = - \int p(\bm{f})\ln \frac{p(\bm{f})}{q(\bm{f})} d\bm{f},
 \end{equation}
-
-with respect to probability distribution function $p(\bm{f})$, subject to given dynamical constraints (assumed relevant dynamics, typically involving a restricted number of stationary conditions) $C$, where $q(\bm{f})$ is a prior p.d.f, with the symmetry $q(\bm{f}) =q(\bm{-f})$ which corresponds to zero flux state $\bm{F}= \int q(\bm{f}) \bm{f} d\bm{f}=0 $.
-
+with respect to probability distribution function $p(\bm{f})$, subject to given dynamical constraints $C$, where $q(\bm{f})$ is a prior probability distribution function, with the symmetry $q(\bm{f}) =q(\bm{-f})$ which corresponds to zero flux state $\bm{F}= \int q(\bm{f}) \bm{f} d\bm{f}=0 $.
 By Gibbs' inequality, $H \leq 0$ with equality if and only if $p(\bm{f})=q(\bm{f})$.
-
-
 The constraints represented by $C$ are written in the generic form of functionals of fluxes $\phi_m(\bm{f})$ and labeled by $m$:
 
 \begin{equation}
@@ -1513,142 +1504,102 @@ The constraints represented by $C$ are written in the generic form of functional
 \end{equation}
 which we can demand without loss of generality to be zero.
 We also have the normalization constraint
-
 \begin{equation}
 \label{Constrain2MEP}
   \int p(\bm{f})d\bm{f} = 1.
 \end{equation}
-
-In order to enforce the multiplicity of stationary states we introduce the \textit{irreversibility} defined by the Kullback-Leibler (KL) divergence of $p(\bm{f})$ and $p(-\bm{f})$:
-
+Now, in order to enforce the multiplicity of stationary states we introduce the \textit{irreversibility} defined by the Kullback-Leibler (KL) divergence of $p(\bm{f})$ and $p(-\bm{f})$:
 \begin{equation}
 \label{IrreversibilityMeasure}
   I= \int p(\bm{f}) \ln \frac{p(\bm{f})}{p(-\bm{f})} d\bm{f}.
 \end{equation}
-
-By Gibbs' inequality, $I \geq 0$ with equality if and only if $p(\bm{f})=p(-\bm{f})$, so that $I=0$ corresponds to the equilibrium state $\bm{F} = \bm{0} $. The irreversibility $I$ is thus a natural information-theoretic measure of the distance from equilibrium, or time-reversal symmetry breaking, since it measure the extent to which $p(\bm{f} ) $ differs from $p(\bm{-f} ) $.
-
-Now we make the first step from the previous paragraph, by demanding that there is a state characterized by minimal irreversibility, $I>I_{min}(C)>0$, the value of which depends on the stationarity conditions $C$ of equation (\ref{Constrain1MEP});.
-
-We assume that those conditions also determine the upper bound $I \leq I_{max}(C)$.
+By Gibbs' inequality, $I \geq 0$ with equality if and only if $p(\bm{f})=p(-\bm{f})$, so that $I=0$ corresponds to the equilibrium state $\bm{F} = \bm{0} $.
+Making the first step of the procedure, we demand that there is a state characterized by minimal irreversibility, $I>I_{min}(C)>0$, the value of which depends on the stationarity conditions $C$ of equation (\ref{Constrain1MEP}).
+Those conditions should also determine the upper bound $I \leq I_{max}(C)$ by assumption.
 
 Additionally we introduce a trial mean flux $\bm{F}$ (which is subsequently relaxed) via the auxiliary constraint
-
 \begin{equation}
 \label{Constrain3MEP}
   \int p(\bm{f})\bm{f} d\bm{f} = \bm{F}.
 \end{equation}
-
-The motivation for introducing $\bm{F}$ this way is that $\bm{F}$ represents a trial estimate of the actual fluxes, $\bm{F}(C)$ selected under C. Introducing $\bm{F}$ in this way allows one to establish an extremal principle whereby $\bm{F}(C)$ is determined by varying the trial solution $\bm{F}$.
-This approach is analogous to the way in which equilibrium variational principles (e.g. minimum free energy) can be derived from MaxEnt by enlarging the set of fixed macroscopic variables $X$ to include one or more free unconstrained variables $Y$, then maximizing $S=H_{max}(X,Y)$ with respect to $Y$ with $X$ held fixed.
-
+The motivation for introducing $\bm{F}$ is to allow one to establish an extremal principle whereby $\bm{F}(C)$ is determined by varying the trial solution $\bm{F}$\footnote{This approach is analogous to the way in which equilibrium variational principles (e.g. minimum free energy) can be derived from MaxEnt by enlarging the set of fixed macroscopic variables $X$ to include one or more free unconstrained variables $Y$, then maximizing $S=H_{max}(X,Y)$ with respect to $Y$ with $X$ held fixed.}.
 Under given constraints the MaxEnt solution for $p(\bm{f})$ is given by 
-
 \begin{equation}
 \label{MaxEntPDF1}
-  p(\bm{f})^* = q( \bm{f} ) Z^{-1} \exp[\bm{\lambda} \cdot \bm{f}+ \bm{\alpha} \cdot \bm{\phi} (\bm{f}) - \mu ( d(\bm{f}) - e^{-d(\bm{f}))}]
+  p(\bm{f})^* = q( \bm{f} ) Z^{-1} \exp[\bm{\lambda} \cdot \bm{f}+ \bm{\alpha} \cdot \bm{\phi} (\bm{f}) - \mu ( d(\bm{f}) - e^{-d(\bm{f}))}],
 \end{equation}
-
-where $d(\bm{f})= \ln{p(\bm{f})/p(-\bm{f})}$, $\phi(\bm{f})$ denotes the vector with components $\phi_m(\bm{f})$, $Z = Z(\lambda, \bm{\alpha},\mu)$ is a normalisation factor (partition function) and $\bm{\lambda}$, $\bm{\alpha}$ and $\mu$ are Lagrange multipliers for (\ref{Constrain3MEP}), (\ref{Constrain1MEP}) and the upper-bound inequality $I<I_{max}$ respectively. The maximized relative entropy is
-
+where $d(\bm{f})= \ln{p(\bm{f})/p(-\bm{f})}$, $\phi(\bm{f})$ denotes the vector with components $\phi_m(\bm{f})$, $Z = Z(\lambda, \bm{\alpha},\mu)$ is a normalisation factor (partition function) and $\bm{\lambda}$, $\bm{\alpha}$ and $\mu$ are Lagrange multipliers for (\ref{Constrain3MEP}), (\ref{Constrain1MEP}) and the upper-bound inequality $I<I_{max}$ respectively. The maximized relative entropy is given by:
 \begin{equation}
-  S(\bm{F}, I_0, C) \equiv H_{max} = \ln Z(\lambda, \bm{\alpha}, \mu) - \bm{\lambda} \cdot \bm{F} + \mu(I_0 -1)
+  S(\bm{F}, I_0, C) \equiv H_{max} = \ln Z(\lambda, \bm{\alpha}, \mu) - \bm{\lambda} \cdot \bm{F} + \mu(I_0 -1).
 \end{equation}
 
 The next step involves maximizing $S(\bm{F}, I_0, C)$ with respect to the trial flux solution $\bf{F}$ with $I_0$ held fixed.
-
-In the absence of the dynamic instability condition $I>I_{min}(C)$, MaxEnt predicts the basal state $I=I_{min}(C)$, i.e. minimal irreversibility, but when the basal state is excluded by the dynamical instability condition MaxEnt predicts a probability distribution function for which $I=I_{max}(C)$ i.e. maximal irreversibility which is characterized by $\mu =0$ and equation (\ref{MaxEntPDF1}) becomes
-
+In the absence of the dynamic instability condition $I>I_{min}(C)$, MaxEnt predicts the basal state $I=I_{min}(C)$, i.e. minimal irreversibility, but when the basal state is excluded by the dynamical instability condition MaxEnt predicts a probability distribution function for which $I=I_{max}(C)$ i.e. maximal irreversibility which is characterized by $\mu =0$ and equation (\ref{MaxEntPDF1}) becomes:
 \begin{equation}
 \label{MaxEntPDF2}
-  p(\bm{f})^* = q( \bm{f} ) Z^{-1} \exp[\bm{\lambda} \cdot \bm{f}+ \bm{\alpha} \cdot \bm{\phi} (\bm{f})]
+  p(\bm{f})^* = q( \bm{f} ) Z^{-1} \exp[\bm{\lambda} \cdot \bm{f}+ \bm{\alpha} \cdot \bm{\phi} (\bm{f})].
 \end{equation}
-
 The intermediate solutions not predicted by this procedure would then correspond to transient states, between equilibrium state and the non-equilibrium stationary state.
-
 The predicted irreversibility measure (equation \ref{IrreversibilityMeasure}) is then given by a functional of $\bf{F}$:
 \begin{equation}
-  I(\bm{F}) =2\ \lambda(\bm{F}) \bm{F} + 2\ \bm{\alpha(\bm{F})} \Phi^A(\bm{F})
+  I(\bm{F}) =2\ \lambda(\bm{F}) \bm{F} + 2\ \bm{\alpha(\bm{F})} \Phi^A(\bm{F}),
 \end{equation}
-
 where 
-
 \begin{equation}
-  \Phi^A(\bm{F}) \equiv \frac{1}{2} \int p(\bm{f})[\bm{\phi}(\bm{f})-\bm{\phi}(\bm{-f})]d\bm{f}
+  \Phi^A(\bm{F}) \equiv \frac{1}{2} \int p(\bm{f})[\bm{\phi}(\bm{f})-\bm{\phi}(\bm{-f})]d\bm{f},
 \end{equation}
-
-is the expectation value of the anti-symmetric part of $\bm{\phi}(\bm{f})$. One may now notice that if the vector $\bm{\phi}$ is anti-symmetric or symmetric then (after adding the condition \ref{Constrain1MEP}) the $\bm{\Phi}^A =0$, so that
-
+is the expectation value of the anti-symmetric part of $\bm{\phi}(\bm{f})$. One may now notice that if the vector $\bm{\phi}$ is anti-symmetric or symmetric then (after adding the condition given by equation (\ref{Constrain1MEP})) the $\bm{\Phi}^A =0$, and the irreversibility measure reduces to:
 \begin{equation}
 \label{SymmetricIrreversible}
   I(\bm{F})=2 \bm{\lambda}(\bm{F})\bm{F}.
 \end{equation}
-
-On the other hand when $\bm{\Phi}^A$ displays no pure symmetry then
-
-\begin{equation}
-\label{NonSymmetricIrreversible}
-  I(\bm{F}) = 2\ \bm{\alpha(\bm{F})} \Phi^A(\bm{F}).
-\end{equation}
-
-We conclude that there is no general expression for thermodynamic entropy independent of the constraints.
+%On the other hand when $\bm{\Phi}^A$ displays no pure symmetry then
+%\begin{equation}
+%\label{NonSymmetricIrreversible}
+%  I(\bm{F}) = 2\ \bm{\alpha(\bm{F})} \Phi^A(\bm{F}).
+%\end{equation}
+A result consistent with the conclusion that there are no general expressions for thermodynamic entropy independent of the constraints.
 
 \subsubsection{Relation to fluctuation theorem}
-In his first approaches, Dewar claimed to derive \cite{Dewar:775452, Dewar:2005eo} the fluctuation theorem from MaxEP. The claims in the more recent works are more modest\cite{Dewar:2014ek}- the MaxEP so described, is in fact an approximation to the fluctuation theorem, a conclusion, natural regarding the fact that the fluctuation theorem seems to describe the non-stationary states equally well.
-
-The irreversibility measure $I$ defined above is related to the dissipation function $\Omega_t$ of equation (\ref{Dissipation}). In fact $I=\langle \Omega_t \rangle$ if we interpret the flux vector $\bm{f}$ as a time-average over time $t$. 
+In his first approaches, Dewar claimed to derive \cite{Dewar:775452, Dewar:2005eo} the fluctuation theorem from MaxEP. The claims in the more recent works are more modest \cite{Dewar:2014ek}. MaxEP there (and here) described, is in fact an approximation to the fluctuation theorem. Conclusion immediately obvious, regarding the fact that the fluctuation theorem also describes the non-steady states.
+The irreversibility measure $I$ defined for MaxEP is related to the dissipation function $\Omega_t$ of equation (\ref{Dissipation}) through $I=\langle \Omega_t \rangle$, if we interpret the flux vector $\bm{f}$ as a time-average over time $t$. 
 
 \subsubsection{Example application for planetary atmospheres}
 
-In this section we'll describe an example application of MaxEP to planetary climates, therefore justifying ad-hoc hypotheses made in \cite{Paltridge:2007jf}\cite{Lorenz:J80tzZkl}.
-
+In this section we will describe an example application of MaxEP to planetary climates, therefore justifying ad-hoc hypotheses made in \cite{Paltridge:2007jf}\cite{Lorenz:J80tzZkl}.
 The constraints in this model 1D box model are given by a simple radiative balance between total incoming short-wave (SW) irradiance and the total outgoing long-wave (LW) irradiance:
-
 \begin{equation}
 \label{BalanceEq}
-  \sum_i F_{SW,i}= \sum_i F_{LW,i}
+  \sum_i F_{SW,i}= \sum_i F_{LW,i},
 \end{equation}
-  
-  where the sum goes over all latitudinal zones. The meridional heat fluxes are identified as $\bm{f}=\{f_i\}$ where $f_i$ is the flux from zone $i-1$ to zone $i$. 
-
+where the sum goes over all latitudinal zones. The meridional heat fluxes are identified as $\bm{f}=\{f_i\}$ where $f_i$ is the flux from zone $i-1$ to zone $i$. 
 The local (for each zone) equation has then the form
 \begin{equation}
-  F_{SW,i}- F_{LW,i} + \Delta F_i = 0
+  F_{SW,i}- F_{LW,i} + \Delta F_i = 0.
 \end{equation}
-
 where $\Delta F_i = F_i - F_{i+1}$ and $\int p(\bm{f})\bm{f} d\bm{f}=\bm{F}=\{F_i\}$. 
-
-The basal equilibrium state corresponds then to radiative equilibrium $F_{SW,i}= F_{LW,i}$ with $\bm{F}=\bm{0}$ and $I=I_{min}$.
-
-Now, the equation (\ref{BalanceEq}) can be written as a condition
-
+The basal equilibrium state corresponds then to radiative equilibrium $F_{SW,i}= F_{LW,i}$ with $\bm{F}=\bm{0}$ and $I=I_{min}$. Having understood the constraints we can now rewrite the equation (\ref{BalanceEq}) as a condition
 \begin{equation}
-  \int p(\bm{f})\phi_1(\bm{f})d\bm{f} =0
+  \int p(\bm{f})\phi_1(\bm{f})d\bm{f} =0,
 \end{equation}
-
 with antisymmetric functional $\phi_1(\bm{f})=\sum_i \Delta f_i$. 
-
-One can show that the Lagrange multiplier $\lambda = - \Delta (\frac{1}{T_i}) = \frac{1}{T_{i+1}}-\frac{1}{T_i}$ by considering a slight modification (non-steady state) of equation (\ref{MaxEntPDF2}) in which in zone $i$ energy $u(\tau)$ is stored for some finite time $\tau$\cite{Dewar:2014ek}. 
-
-Using the equation (\ref{SymmetricIrreversible}) one gets
-
+One can show that the Lagrange multiplier $\lambda = - \Delta (\frac{1}{T_i}) = \frac{1}{T_{i+1}}-\frac{1}{T_i}$ by considering a slight modification (non-steady state) of equation (\ref{MaxEntPDF2}) in which in zone $i$ energy $u(\tau)$ is stored for some finite time $\tau$ \cite{Dewar:2014ek}. 
+Using the equation (\ref{SymmetricIrreversible}) we get our final result:
 \begin{equation}
 \begin{aligned}
-  I(\bm{F})=2 \bm{\lambda}(\bm{F})\bm{F} \propto - \sum_i F_i \Delta\bigg(\frac{1}{T_i}\bigg)= \sum_i \bigg(\frac{\Delta F_i}{T_i}\bigg)
+  I(\bm{F})=2 \bm{\lambda}(\bm{F})\bm{F} \propto - \sum_i F_i \Delta\bigg(\frac{1}{T_i}\bigg)= \sum_i \bigg(\frac{\Delta F_i}{T_i}\bigg),
 \end{aligned}
 \end{equation}
-
-which has the form of entropy production function used by \cite{Paltridge:2007jf}\cite{Lorenz:J80tzZkl}.
-  
+which has the form of entropy production function used by \cite{Paltridge:2007jf, Lorenz:J80tzZkl}.
+Further examples can be found in \cite{Dewar:2014ek}.
 \section{Summary}
 
-After over 100 years, the arguments of Boltzmann and others on the Loschmidt paradox have become more tangible and very refined through the description sub-macroscopic description provided by the fluctuation theorem.
-The research on fluctuation theorems has been immensely productive, providing us with better understanding of thermostated systems, steady states, dissipation and relaxation processes, keeping the correspondence with linear response theory. Currently, the work in this area is slowly shifting to the desirable quantum realm\cite{Kurchan:2000uh}.
+After over 100 years, the arguments of Boltzmann and others on the Loschmidt paradox have become more tangible and very refined through the sub-macroscopic description provided by the fluctuation theorem and it's 'big-brother' 
+The research on fluctuation theorems has been immensely productive, providing us with better understanding of thermostated systems, steady states, dissipation and relaxation processes, while keeping the correspondence with linear response theory. 
+The applications of fluctuation theorem are already giving us new methods of calculating free energy of large molecules and some early understanding of self replicators and adaptation. The full understanding will almost surely, demand the inclusion of information theory into the picture and perhaps a shift to the quantum description \cite{Kurchan:2000uh}.
 
-Applications of fluctuation theorem are already giving us knew methods of calculating free energy of large molecules and some early understanding of self replicators and adaptation. The full understanding will almost surely, demand the inclusion of Information theory into the picture. However the current approach of MaxEP, pioneered by Dewar doesn't look as the correct answer as it gives less general results than the fluctuation theorem.  
-
-This work presented some of recent developments in a pedagogical manner, bridging the gaps between the old and the new. For small scales the transition occurred from Onsager and Kubo relations to dissipation theorem and from irreversibility measure protoplast to fluctuation theorems.
-On large scales the transition took place from MaxEnt to MaxEP, which although may not hold exactly, certainly revives the unifying spirit of physics of the early days.    
+We conclude, that the presented principle of MaxEP, pioneered by Dewar, stays in reasonable agreement with, the more general, fluctuation theorem, but the proof of it's validity remains a challenging task, given its non-physical nature and difficulties in finding the appropriate constraints.
+  
 %One gets non-gausian distribution!
 
 \newpage
