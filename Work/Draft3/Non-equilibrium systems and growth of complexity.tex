@@ -55,7 +55,7 @@
 \title{Non-equilibrium systems and growth of complexity}
 
 \author{Michał Mandrysz \\
-Instytut Fizyki, Uniwersytet Jagielloński, \\ul. Łojasiewicza
+Institute of Physics, Jagiellonian University, \\ul. Łojasiewicza
 11, 30-348 Kraków, Polska }
 
 \maketitle
@@ -1405,17 +1405,34 @@ thus obtaining:
 We might now try to interpret each of those terms. The intuitive meaning of the first one, is the fact, that more likely are the states from which one can likely come back. The last term on the other hand, might be expanded with the use of cumulant expansion:
 \begin{equation}
   -\ln \langle \exp(-\beta W^d_{i \to j})\rangle= \beta \langle W^d_{i \to j} \rangle - \Phi,
-\end{equation}
-where $\Phi$ holds all higher order terms of the cumulant expansion. From the convexity of the exponential function and Jensen's inequality one might check\footnote{$e^{-\Psi + \Phi}=\langle \exp(-\beta W_d) \rangle \geq \exp(-\beta \langle W_d \rangle)= e^{-\Psi}$} that we must have $\Phi \geq 0$. Thus, $\Phi$ can be thought of as a correction; due to the dispersion of the dissipated work distribution about the average $\beta \langle W^d_{i \to j} \rangle $ that gives the heaviest weight to the leftward tail of the work distribution \cite{Jarzynski:2006cq}.
+\end{equation} 
+where $\Phi$ holds all higher order terms of the cumulant expansion. From the convexity of the exponential function and Jensen's inequality one might check\footnote{$e^{-\Psi + \Phi}=\langle \exp(-\beta W^d_{i \to j}) \rangle \geq \exp(-\beta \langle W^d_{i \to j} \rangle)= e^{-\Psi}$} that we must have $\Phi \geq 0$. Thus, $\Phi$ can be thought of as a correction; due to the dispersion of the dissipated work distribution about the average $\beta \langle W^d_{i \to j} \rangle $ that gives the heaviest weight to the leftward tail of the work distribution \cite{Jarzynski:2006cq}.
 
-One might now argue that averaged dissipated heat $\langle W_d \rangle $ can be connected with the reliability of work absorption and subsequent dissipation, leading in example to particle drift through oscillatory energy barriers (details depending on the model). Once one chooses the external drive, different configurations will not be equally efficient at absorbing work from that drive.
- 
-This was in fact proposed rencetly by Nikolay Perunov et al \cite{Perunov:2016hl}.
-\todo{SHOW THIS, on own example}
+One might now argue, that averaged dissipated heat $\langle W^d_{i \to j} \rangle $ can be connected with the reliability of work absorption and subsequent dissipation, leading in example to particle drift through energy barriers that wouldn't be accessible through thermal fluctuations alone.
+Once a particular, external drive is chosen, different configurations will not be equally efficient at absorbing work from that drive. Subsequently, a more probable structure, well-matched with a particular driving environment will be the end product of antecedent structures that displayed atypically high work absorption and efficient dissipation.
+With the passage of time the number of this preferable irreversible transitions will accumulate, giving an impression of self-organization.
+This phenomena was given an apt name of \textit{dissipative adaptation}, a name that we will now adopt.
 
-We have now seen how recent progress in non-equilibrium statistical mechanics and especially the fluctuation theorem allowed us to make plausible predictions about evolution of inanimate and possibly animate matter.
-Taking into account the information processing/storing side of the latter, one can ask a natural question - could there be a deeper relation behind the fluctuation theorem, perhaps involving information theory? Could fluctuation theorem be derived from it?
-The pursuit for the answer to this questions will be the topic of next paragraph.
+It is important however, to recognize that this argument is thermodynamic and as such is very general in nature, but also has a probabilistic component.
+Thus, the reproducibility of a particular end state configuration of such many-body system, will be of course (given the microscopic scale), heavy influenced by thermal fluctuations, but one should expect to see certain common, emergent features unique to the driving conditions.
+Secondly, it is certainly not true that under any continuous driving the system will continually improve it's rate of dissipation. Indeed, we can expect this pathway to frequently fail and it is not clear under what exact circumstances it may hold.
+
+Somehow ironically, the clearest case pointing towards the phenomena of dissipative adaptation was described in a macroscopic system \cite{Kondepudi:2015bg}. The experimenters tracked the time evolution of the dissipation rate in a system composed of conducting beads immersed in oil and subject to external voltage drop. Their results indicated a general tendency of the beads to relax to a steady state characterized by more rapid dissipation that adapted to the boundary conditions of container.
+A possible (and even simpler) electrochemical equivalent of this system, proposed by the author of this work, is the solution of copper (II) sulphate subject to constant voltage (Figure \ref{Fig6}). Copper deposition occurring in such system effectively lowers the resistance, increasing dissipation in accordance with Ohm's law.
+
+\begin{figure}[ht!]
+\centering \includegraphics[width=14cm]{Figure6} \caption{Electrochemically deposited copper on a Petri dish in solution of $CuSO_4$ - experiment performed at Jagiellonian University, Institute of Physics}
+\label{Fig6} 
+\end{figure}
+
+
+In a different setup \cite{Ito:2013fh}, studying self-assembly of silver nanoparticles, subject to an externally applied laser light, the measured surface plasmon resonance spectrum shifted (after induced aggregation) towards the 1,064nm wavelength of the driving field. Giving a tentative support for the dissipative adaptation hypothesis.
+
+\cite{Carnall:2010ju}
+
+We have now seen how recent progress in non-equilibrium statistical mechanics and especially the fluctuation theorem allowed us to predict the phenomena of dissipation driven adaptation of microscopic many-body systems.
+Taking into account the information processing/storing capability of animate matter, one can ask a natural question - could there be a deeper relation behind the fluctuation theorem, perhaps involving information theory? Could fluctuation theorem be derived from it?
+The pursuit of the answer to this questions will be the topic of next paragraph.
 
 \section{Search for a unifying principle}
 \label{UnifyingPrinciple}
@@ -1597,8 +1614,11 @@ which has the form of entropy production function used by \cite{Paltridge:2007jf
 Further examples can be found in \cite{Dewar:2014ek}.
 \section{Summary}
 
-After over 100 years, the arguments of Boltzmann and others on the Loschmidt paradox have become more tangible and very refined through the sub-macroscopic description provided by the fluctuation theorem and it's 'big-brother' 
-The research on fluctuation theorems has been immensely productive, providing us with better understanding of thermostated systems, steady states, dissipation and relaxation processes, while keeping the correspondence with linear response theory. Nevertheless, the limits of its generality are still being researched, while the applications of fluctuation theorem are already giving us new methods of calculating free energy of large molecules and some early understanding of self replicators and adaptation. The full understanding will almost surely, demand the inclusion of information theory into the picture and perhaps a shift to the quantum description \cite{Kurchan:2000uh}.
+After over 100 years, the arguments of Boltzmann and others on the Loschmidt paradox have become more tangible and very refined through the sub-macroscopic description provided by the fluctuation theorem and it's macroscopic 'big-brother' theorem presented in section (\ref{IrreversibilityMeasureSection}).
+The research on fluctuation theorems has been immensely productive, providing us with better understanding of thermostated systems, steady states, dissipation and relaxation processes, while keeping the correspondence with linear response theory. Nevertheless, the limits of its generality are still being researched, while the applications of fluctuation theorem are already giving us new methods of calculating free energy of large molecules and some early understanding of self replicators and dissipation driven self-assembly. 
+%TODO: Expand this a little bit
+An interesting future perspective would be compare this line of work with the concept of maximum entropy random walks.
+The full understanding, nevertheless, will almost surely, demand the inclusion of information theory into the picture and perhaps a shift to the quantum description \cite{Kurchan:2000uh}.
 
 In the present work we conclude, that the presented principle of MaxEP, pioneered by Dewar, stays in reasonable agreement with, the more general, fluctuation theorem. The proof of its universal validity, however, remains a challenging task, given its non-physical nature and difficulties in finding the appropriate constraints.
   
