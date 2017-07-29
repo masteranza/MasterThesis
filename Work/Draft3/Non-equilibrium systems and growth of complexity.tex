@@ -67,7 +67,7 @@ Instytut Fizyki, Uniwersytet Jagielloński, \\ul. Łojasiewicza
 \section{Introduction}
 
 The inspiration for writing this work and thus, for inquiry of the subject of non-equilibrium statistical mechanics has been the ineffable complexity of the world which slowly begins too become within reach of physics. 
-In particular, recent developments in non-equilibrium statistical physics have convinced me that the time is ripe for a review of the vast subject concerning the small and the big, the fluctuation theorems on scales of single DNA strand and MaxEP on the planetary scales.
+In particular, recent developments in non-equilibrium statistical physics have convinced me that the time is ripe for a review of the vast subject concerning the small and the big, the fluctuation theorems on scales of single DNA strand and the maximum entropy production principles on the planetary scales.
 
 The investigations here presented start from a historical review of the subject (sections 2,3) which presents some less known points of view which aid in understanding; not only the chronological development of ideas, but also the various paradoxes and misconceptions (such as the source of irreversibility or the meaning of entropy) that arose on the way of intense research. 
 
@@ -1378,9 +1378,9 @@ Because the system is driven and energy conserved, the work done on the system m
   W_{i \to j}=  \Delta Q_{i \to j} + H_*- H_I,
 \end{equation}
 where the $*$ denotes a slot for the final state, here either $II$ or $III$.
-If we now assume that the system is driven for a long time, we might neglect the correlations between the initial and final states and the work, giving us:
+If we now assume that the system is driven for a long time, we might neglect the correlations between the initial and final states and the work, giving us\footnote{Remembering that $W_{i \to *}$ still holds the path ensemble average.}:
 \begin{equation}
-  \ln \frac{\pi(I \to II)}{\pi(I \to III)} = \ln \frac{\pi(II \to I)}{\pi(III \to I)}- ln \frac{ \langle \exp[\beta (H_{II}-H_I) + \ln \frac{p_f^{II}}{p_i^{I}}] \rangle_{I \to II}}{ \langle \exp[\beta (H_{III}-H_I) + \ln \frac{p_f^{III}}{p_i^{I}}] \rangle_{I \to III}}-ln \frac{\langle e^{ - \beta W} \rangle_{I \to II}}{\langle e^{ - \beta W} \rangle_{I \to III}}.
+  \ln \frac{\pi(I \to II)}{\pi(I \to III)} = \ln \frac{\pi(II \to I)}{\pi(III \to I)}- ln \frac{ \langle \exp[\beta (H_{II}-H_I) + \ln \frac{p_f^{II}}{p_i^{I}}] \rangle_{I \to II}}{ \langle \exp[\beta (H_{III}-H_I) + \ln \frac{p_f^{III}}{p_i^{I}}] \rangle_{I \to III}}-ln \frac{\langle e^{ - \beta W_{i \to j}} \rangle_{I \to II}}{\langle e^{ - \beta W_{i \to k}} \rangle_{I \to III}}.
 \end{equation}
 The Hamiltonians can be obtained from the underlying equilibrium distributions $p_{eq}= e^{-\beta H_*}/Z_{eq}^*$ as follows:
 \begin{equation}
@@ -1390,25 +1390,27 @@ which after assuming that the initial distribution was at equilibrium, leaves us
 \begin{equation}
   \ln \frac{\pi(I \to II)}{\pi(I \to III)} =
   \ln \frac{\pi(II \to I)}{\pi(III \to I)} - ln \frac{ \langle \frac{p_{f}^{II}}{p_{eq}^{II}}  \rangle_{II}}{ \langle \frac{p_{f}^{III}}{p_{eq}^{III}}  \rangle_{III} }
-  -ln \frac{\langle e^{ - \beta W} \rangle_{I \to II}}{\langle e^{ - \beta W} \rangle_{I \to III}} + \ln{\frac{Z_{eq}^{II}}{Z_{eq}^{III} }}.
+  -ln \frac{\langle e^{ - \beta W_{i \to j}} \rangle_{I \to II}}{\langle e^{ - \beta W_{i \to k}} \rangle_{I \to III}} + \ln{\frac{Z_{eq}^{II}}{Z_{eq}^{III} }}.
 \end{equation}
-One can notice that the second term will be zero if the final distributions are equilibrium distributions. Since, the free energy is defined as $F^* = -\beta \ln Z_{eq}^*$, we can combine the last two terms, introducing a term called dissipated work, defined by:
+One can notice that the second term will be zero if the final distributions are equilibrium distributions. Since, the free energy is defined as $F^* = -\beta \ln Z_{eq}^*$, we can combine the last two terms, introducing a \textit{dissipated work} on the path, defined by:
 \begin{equation}
-  W_d =W - Z_{eq}^* + Z_{eq}^I,
+  W_{i \to *}^d =W - Z_{eq}^* + Z_{eq}^I,
 \end{equation}
 thus obtaining:
 \begin{equation}
   \ln \frac{\pi(I \to II)}{\pi(I \to III)} =
   \ln \frac{\pi(II \to I)}{\pi(III \to I)} - ln \frac{ \langle \frac{p_{f}^{II}}{p_{eq}^{II}}  \rangle_{II}}{ \langle \frac{p_{f}^{III}}{p_{eq}^{III}}  \rangle_{III} }
-  -ln \frac{\langle e^{ - \beta W_d} \rangle_{I \to II}}{\langle e^{ - \beta W_d} \rangle_{I \to III}}.
+  -ln \frac{\langle e^{ - \beta W^d_{i \to j}} \rangle_{I \to II}}{\langle e^{ - \beta W^d_{i \to k}} \rangle_{I \to III}}.
 \end{equation}
-We might now try to interpret each of those terms. The intuitive meaning of the first one, is the fact that more likely are the states from which one can likely come back. The last term on the other hand, might be expanded with the use of cumulant expansion:
+We might now try to interpret each of those terms. The intuitive meaning of the first one, is the fact, that more likely are the states from which one can likely come back. The last term on the other hand, might be expanded with the use of cumulant expansion:
 \begin{equation}
-  -\ln \langle \exp(-\beta W_d)\rangle= \beta \langle W_d \rangle - \Phi,
+  -\ln \langle \exp(-\beta W^d_{i \to j})\rangle= \beta \langle W^d_{i \to j} \rangle - \Phi,
 \end{equation}
-where $\Phi$ holds all higher order terms of the cumulant expansion. From the convexity of the exponential function and Jensen's inequality one might check\footnote{$e^{-\Psi + \Phi}=\langle \exp(-\beta W_d) \rangle \geq \exp(-\beta \langle W_d \rangle)= e^{-\Psi}$} that we must have $\Phi \geq 0$. Thus, $\Phi$ can be thought of as a correction; due to the dispersion of the dissipated work distribution about the average $\beta \langle W_d \rangle $ that gives the heaviest weight to the leftward tail of the work distribution \cite{Jarzynski:2006cq}.
+where $\Phi$ holds all higher order terms of the cumulant expansion. From the convexity of the exponential function and Jensen's inequality one might check\footnote{$e^{-\Psi + \Phi}=\langle \exp(-\beta W_d) \rangle \geq \exp(-\beta \langle W_d \rangle)= e^{-\Psi}$} that we must have $\Phi \geq 0$. Thus, $\Phi$ can be thought of as a correction; due to the dispersion of the dissipated work distribution about the average $\beta \langle W^d_{i \to j} \rangle $ that gives the heaviest weight to the leftward tail of the work distribution \cite{Jarzynski:2006cq}.
 
-One might now argue that averaged dissipated heat $\langle W_d \rangle $ can be connected with particle drift through oscillatory energy barriers (details depending on the model), this was in fact recently demonstrated by Nikolay Perunov et al \cite{Perunov:2016hl}.
+One might now argue that averaged dissipated heat $\langle W_d \rangle $ can be connected with the reliability of work absorption and subsequent dissipation, leading in example to particle drift through oscillatory energy barriers (details depending on the model). Once one chooses the external drive, different configurations will not be equally efficient at absorbing work from that drive.
+ 
+This was in fact proposed rencetly by Nikolay Perunov et al \cite{Perunov:2016hl}.
 \todo{SHOW THIS, on own example}
 
 We have now seen how recent progress in non-equilibrium statistical mechanics and especially the fluctuation theorem allowed us to make plausible predictions about evolution of inanimate and possibly animate matter.
