@@ -556,7 +556,7 @@ The term "dissipative structures" was also coined by Prigogine, proposing that m
 An often given example of instabilities leading to formation of structures are the Rayleigh-Bénard convection cells, which simplified non-equilibrium (not near-equilibrium nor MinEP) treatment we describe in the next section.
 
 
-It is important however, that MinEP result holds only for near-equilibrium steady-states. Only then the quantity $ (\delta^2 S)_{ss} $ generates probability of fluctuations, as Prigogine himself, later insisted in response to criticism \cite{Nicolis:1979cv}.
+It is important however, that MinEP result holds only for near-equilibrium steady states. Only then the quantity $ (\delta^2 S)_{ss} $ generates probability of fluctuations, as Prigogine himself, later insisted in response to criticism \cite{Nicolis:1979cv}.
 
 
 \section{Thermodynamic lowering of entropy in non-equilibrium conditions}
@@ -588,7 +588,7 @@ For the purpose of further discussion we introduce the concept of rate of entrop
 \begin{equation}
 j_e \equiv  \frac{dS_e}{dt}. 
 \end{equation}
-In the considered scenerio, the $j_e$ is held constant (steady-state) and we suspect a continuous fall in system's entropy. Yet, moving away from the equilibrium state we suspect, that the a balancing role will be played by $dS_i$ moving the system back to equilibrium state. Similarly, as before we define the rate of internal entropy production:
+In the considered scenerio, the $j_e$ is held constant (steady state) and we suspect a continuous fall in system's entropy. Yet, moving away from the equilibrium state we suspect, that the a balancing role will be played by $dS_i$ moving the system back to equilibrium state. Similarly, as before we define the rate of internal entropy production:
 \begin{equation}
 j_i \equiv \frac{dS_i}{dt}.   
 \end{equation} 
@@ -1077,7 +1077,7 @@ A system is said to be mixing if for integrable, reasonably smooth physical phas
 
 \paragraph{Weak T-mixing}
 
-Weak T-mixing is a direct generalization of mixing for transient rather stationary distributions. Mixing is for correlation functions in systems that have stationary averages of physical phase functions such as equilibrium or steady-state distributions.
+Weak T-mixing is a direct generalization of mixing for transient rather stationary distributions. Mixing is for correlation functions in systems that have stationary averages of physical phase functions such as equilibrium or steady state distributions.
 If in a system either $\langle A(0) \rangle $ or $ \langle B(t) \rangle = 0, \forall t $, then such a system is called weakly T-mixing if:
 
 \begin{equation}
@@ -1364,12 +1364,13 @@ By fixing all the terms other than the growth rate, one can gets the bound on th
 The most general observation that can be made from this equation, is that in order for the growth rate $g$ to exceed the die rate $\delta $ the negative internal entropy change must be paid by the (strictly larger) dissipated heat. This dissipated energy, in case of a self-replicator, can have two sources: it is either stored in the reactants out of which the replicator gets built or comes from the work done on the system by some external driving field e.g. through the absorption of light.
 
 Another comment can be made by considering two self-replicators with the same entropy change $\Delta S_{int}$ and die rate $\delta$. In this scenario we see, that the one with larger heat dissipation will replicate faster.
-On the other hand an alternative route is also available by increasing the rate at which the self-replicator degrades $\delta $ and keeping the inner complexity, $\Delta S_{int}$, low\footnote{Close to zero from the left side of the number axis.}.
+On the other hand an alternative route is also available by increasing the rate at which the self-replicator degrades $\delta $ and keeping the inner complexity, $\Delta S_{int}$, low\footnote{Close to zero from the left side on the number axis.}.
 
-\subsection{Traversal of energy landscape }
-
+\subsection{Dissipation driven adaptation}
+\label{DissipationAdaptationSection}
 Let's consider a case of a driven thermostated system with two possible target macrostates $II$, $III$. We will be now interested in the probability ratio of transitions from state $I$ to those two states. From equation (\ref{MacrostatesPRatio2b}) we get
 \begin{equation}
+\label{DissipationDrivenEq}
   \ln \frac{\pi(I \to II)}{\pi(I \to III)} = \ln \frac{\pi(II \to I)}{\pi(III \to I)}- ln \frac{ \langle \exp[-\beta \Delta Q_{i \to j} + \ln \frac{p_f^{II}}{p_i^{I}}] \rangle_{I \to II}}{ \langle \exp[-\beta \Delta Q_{i \to k} + \ln \frac{p_f^{III}}{p_i^{I}}] \rangle_{I \to III}},
 \end{equation}
 where the initial and final microstates where denoted by $p_s$ and $p_f$.
@@ -1398,6 +1399,7 @@ One can notice that the second term will be zero if the final distributions are 
 \end{equation}
 thus obtaining:
 \begin{equation}
+\label{DissipationDrivenEq2}
   \ln \frac{\pi(I \to II)}{\pi(I \to III)} =
   \ln \frac{\pi(II \to I)}{\pi(III \to I)} - ln \frac{ \langle \frac{p_{f}^{II}}{p_{eq}^{II}}  \rangle_{II}}{ \langle \frac{p_{f}^{III}}{p_{eq}^{III}}  \rangle_{III} }
   -ln \frac{\langle e^{ - \beta W^d_{i \to j}} \rangle_{I \to II}}{\langle e^{ - \beta W^d_{i \to k}} \rangle_{I \to III}}.
@@ -1415,23 +1417,27 @@ This phenomena was given an apt name of \textit{dissipative adaptation}, a name 
 
 It is important however, to recognize that this argument is thermodynamic and as such is very general in nature, but also has a probabilistic component.
 Thus, the reproducibility of a particular end state configuration of such many-body system, will be of course (given the microscopic scale), heavy influenced by thermal fluctuations, but one should expect to see certain common, emergent features unique to the driving conditions.
-Secondly, it is certainly not true that under any continuous driving the system will continually improve it's rate of dissipation. Indeed, we can expect this pathway to frequently fail and it is not clear under what exact circumstances it may hold.
+Secondly, it is certainly not true that under any continuous driving the system will continually improve it's rate of dissipation. Indeed, we can expect this pathway to fail frequently when dispersion $\Phi$ increases, the limiting case being the non-equilibrium steady state for which $\Psi = \Phi$ and the dissipative adaptation ceases.
+
+%but it is not clear under what exact circumstances it may hold.
 
 Somehow ironically, the clearest case pointing towards the phenomena of dissipative adaptation was described in a macroscopic system \cite{Kondepudi:2015bg}. The experimenters tracked the time evolution of the dissipation rate in a system composed of conducting beads immersed in oil and subject to external voltage drop. Their results indicated a general tendency of the beads to relax to a steady state characterized by more rapid dissipation that adapted to the boundary conditions of container.
-A possible (and even simpler) electrochemical equivalent of this system, proposed by the author of this work, is the solution of copper (II) sulphate subject to constant voltage (Figure \ref{Fig6}). Copper deposition occurring in such system effectively lowers the resistance, increasing dissipation in accordance with Ohm's law.
+A possible (and even simpler) electrochemical equivalent of this system, proposed by the author of this work, is the solution of copper (II) sulphate subject to constant voltage (Figure \ref{Fig6}). Copper deposition occurring in such system effectively lowers the resistance, increasing dissipation in accordance with Ohm's law\footnote{Note the close resemblance to example given by Landauer \cite{Landauer:pJ4RYJRG}}.
 
 \begin{figure}[ht!]
-\centering \includegraphics[width=14cm]{Figure6} \caption{Electrochemically deposited copper on a Petri dish in solution of $CuSO_4$ - experiment performed at Jagiellonian University, Institute of Physics}
+\centering \includegraphics[width=14cm]{Figure6} \caption{Three subsequent frames of electrochemically deposited copper on a Petri dish in solution of $CuSO_4$ - experiment performed at Jagiellonian University, Institute of Physics}
 \label{Fig6} 
 \end{figure}
 
+At the microscale  level several observations were made.
+Studying the aggregation of silver nanoparticles, subject to an externally applied laser light, experimenters \cite{Ito:2013fh} measured a shift of the surface plasmon resonance spectrum towards the 1,064nm wavelength of the driving field.
+In another study \cite{Carnall:2010ju}, mechanical work was used to agitate amyloid fibres and led to exponential growth of fibres of finite length. The physical mechanism leading to dissipation in this case, was the snapping of fibrils longer than optimal length for the given driving conditions.
+The most intriguing, but yet open case of biological molecular machines, such as ATP- or GTPase, in multi-protein mixtures hold great promise for observation of dissipative adaptation. The conformational changes happen there, in discrete events of chemical dissipation through hydrolysis of triphosphates accompanied by interparticle interactions \cite{Schaller:2010cq}.
 
-In a different setup \cite{Ito:2013fh}, studying self-assembly of silver nanoparticles, subject to an externally applied laser light, the measured surface plasmon resonance spectrum shifted (after induced aggregation) towards the 1,064nm wavelength of the driving field. Giving a tentative support for the dissipative adaptation hypothesis.
+One can see that the presented possible realizations differ widely and it is probably fair to say, that the presented examples give more than preliminary support for the dissipative adaptation hypothesis for certain microscopic and also macroscopic many-body systems. 
+For the establishment of a general principle of dissipation more firm evidence will need to be gathered, together with a detailed analysis of the individual terms of equations (\ref{DissipationDrivenEq}) and (\ref{DissipationDrivenEq2}). All of this, of course, follows under the assumption of validity of the fluctuation theorems, therefore their further analysis is desired.
 
-\cite{Carnall:2010ju}
-
-We have now seen how recent progress in non-equilibrium statistical mechanics and especially the fluctuation theorem allowed us to predict the phenomena of dissipation driven adaptation of microscopic many-body systems.
-Taking into account the information processing/storing capability of animate matter, one can ask a natural question - could there be a deeper relation behind the fluctuation theorem, perhaps involving information theory? Could fluctuation theorem be derived from it?
+Finally, taking into account the information processing/storing capability of animate matter, one is led to a natural question - could there be a deeper relation behind the fluctuation theorem, perhaps involving information theory? Could fluctuation theorem be derived from it?
 The pursuit of the answer to this questions will be the topic of next paragraph.
 
 \section{Search for a unifying principle}
@@ -1471,7 +1477,7 @@ If we consider a special case of equation (\ref{distributionPropagator}) when th
 \end{equation}
 from which it is clear that the probability of observing the phase $\bm{\Gamma}$ at time $t$ is increased if the integrated dissipation terminating at phase $\bm{\Gamma}$ and time $t$ is large and positive. Furthermore, we suspect that the dissipation term will, at long times, dominate over the initial probability distribution, thus justifying MaxEP as a good approximation.
 
-Moreover, considering equation (\ref{DissipationTheorem}) with $B=\Omega$, one can see, that if, the autocorrelation function $\langle \Omega(\bm{\Gamma})\Omega(\bm{\Gamma}_t)\rangle$ decays monotonically with time, then the value of the ensemble average of the instantaneous dissipation function, $\langle \Omega(t) \rangle$ will be have a higher value when it reaches its steady state than for any other state it passes through. The system should therefore expose itself to a steady-state of maximium dissipation.
+Moreover, considering equation (\ref{DissipationTheorem}) with $B=\Omega$, one can see, that if, the autocorrelation function $\langle \Omega(\bm{\Gamma})\Omega(\bm{\Gamma}_t)\rangle$ decays monotonically with time, then the value of the ensemble average of the instantaneous dissipation function, $\langle \Omega(t) \rangle$ will be have a higher value when it reaches its steady state than for any other state it passes through. The system should therefore expose itself to a steady state of maximium dissipation.
 The assumption of monotonicity of the autocorrelation function of course doesn't hold in all cases. Through numerical simulations done in \cite{Brookes:2011hu} it was shown that the dissipation average sometimes peaks to a higher number before reaching a stable steady state value. 
 One should note here, that in the light of formulation of MaxEP from section \ref{MaxEPSection}, this result doesn't prove or disprove the MaxEP principle as MaxEP compares steady states to steady states.
 It's simply the instantaneous dissipation that is not necessarily maximized at all times.
@@ -1580,9 +1586,11 @@ is the expectation value of the anti-symmetric part of $\bm{\phi}(\bm{f})$. One 
 %\end{equation}
 A result consistent with the conclusion that there are no general expressions for thermodynamic entropy independent of the constraints.
 
-\subsubsection{Relation to fluctuation theorem}
+\subsubsection{Relation to fluctuation theorem and dissipative adaptation}
 In his first approaches, Dewar claimed to derive \cite{Dewar:775452, Dewar:2005eo} the fluctuation theorem from MaxEP. The claims in the more recent works are more modest \cite{Dewar:2014ek}. MaxEP there (and here) described, is in fact an approximation to the fluctuation theorem. Conclusion immediately obvious, regarding the fact that the fluctuation theorem also describes the non-steady states.
 The irreversibility measure $I$ defined for MaxEP is related to the dissipation function $\Omega_t$ of equation (\ref{Dissipation}) through $I=\langle \Omega_t \rangle$, if we interpret the flux vector $\bm{f}$ as a time-average over time $t$. 
+
+Furthermore, in the light of our discussion on dissipative adaptation given in section \ref{DissipationAdaptationSection}, it seems likely that MaxEP could give a reasonable approximation of a driven steady state in the long time limit. The usefulness of it's predictions, would however, be dependent on the range of applicability of dissipative adaptation hypothesis, which is currently unknown.
 
 \subsubsection{Example application for planetary atmospheres}
 
@@ -1618,9 +1626,9 @@ After over 100 years, the arguments of Boltzmann and others on the Loschmidt par
 The research on fluctuation theorems has been immensely productive, providing us with better understanding of thermostated systems, steady states, dissipation and relaxation processes, while keeping the correspondence with linear response theory. Nevertheless, the limits of its generality are still being researched, while the applications of fluctuation theorem are already giving us new methods of calculating free energy of large molecules and some early understanding of self replicators and dissipation driven self-assembly. 
 %TODO: Expand this a little bit
 An interesting future perspective would be compare this line of work with the concept of maximum entropy random walks.
-The full understanding, nevertheless, will almost surely, demand the inclusion of information theory into the picture and perhaps a shift to the quantum description \cite{Kurchan:2000uh}.
+The full understanding, nevertheless, will almost surely, demand the inclusion of information theory into the picture and perhaps, a shift to the quantum description \cite{Kurchan:2000uh}.
 
-In the present work we conclude, that the presented principle of MaxEP, pioneered by Dewar, stays in reasonable agreement with, the more general, fluctuation theorem. The proof of its universal validity, however, remains a challenging task, given its non-physical nature and difficulties in finding the appropriate constraints.
+In the present work we conclude, that the presented principle of MaxEP, pioneered by Dewar, stays in reasonable agreement with, the more general, fluctuation theorem and can be seen as a limiting case of dissipative adaptation. The proof of its universal validity, however, remains a challenging task, given its non-physical nature and difficulties in finding the appropriate constraints.
   
 %One gets non-gausian distribution!
 
