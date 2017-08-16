@@ -10,45 +10,45 @@ Warning--empty publisher in DeGroot:2013ue
 Warning--empty journal in England:2013ed
 Warning--empty year in Lorenz:J80tzZkl
 Warning--can't use both author and editor fields in Kleidon:1339033
-You've used 82 entries,
+You've used 85 entries,
             1876 wiz_defined-function locations,
-            1019 strings with 16053 characters,
-and the built_in function-call counts, 22913 in all, are:
-= -- 2505
-> -- 588
+            1036 strings with 16396 characters,
+and the built_in function-call counts, 23771 in all, are:
+= -- 2605
+> -- 600
 < -- 0
-+ -- 239
-- -- 157
-* -- 1575
-:= -- 3057
-add.period$ -- 89
-call.type$ -- 82
-change.case$ -- 74
++ -- 245
+- -- 160
+* -- 1634
+:= -- 3170
+add.period$ -- 92
+call.type$ -- 85
+change.case$ -- 77
 chr.to.int$ -- 0
-cite$ -- 89
-duplicate$ -- 1203
-empty$ -- 2126
-format.name$ -- 157
-if$ -- 5647
+cite$ -- 92
+duplicate$ -- 1249
+empty$ -- 2208
+format.name$ -- 160
+if$ -- 5861
 int.to.chr$ -- 0
-int.to.str$ -- 82
-missing$ -- 87
-newline$ -- 257
-num.names$ -- 82
-pop$ -- 176
+int.to.str$ -- 85
+missing$ -- 90
+newline$ -- 266
+num.names$ -- 85
+pop$ -- 179
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 978
+skip$ -- 1015
 stack$ -- 0
-substring$ -- 1927
-swap$ -- 591
+substring$ -- 2007
+swap$ -- 614
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 7
-while$ -- 255
-width$ -- 84
-write$ -- 798
+while$ -- 267
+width$ -- 87
+write$ -- 830
 (There were 7 warnings)

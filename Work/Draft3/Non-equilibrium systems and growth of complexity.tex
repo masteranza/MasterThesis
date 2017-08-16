@@ -66,18 +66,20 @@ Institute of Physics, Jagiellonian University, \\ul. Łojasiewicza
 
 \section{Introduction}
 
-The inspiration for writing this work and thus, for inquiry of the subject of non-equilibrium statistical mechanics has been the ineffable complexity of the world which slowly begins to become within reach of physics. 
-In particular, recent developments in non-equilibrium statistical physics have convinced me that the time is ripe for a review of the vast subject concerning the small and the big, the fluctuation theorems on scales of single DNA strand and the maximum entropy production principles on the planetary scales.
+The inspiration for writing this work and thus, for inquiry of the subject of non-equilibrium statistical mechanics has been the ineffable complexity of the real world which slowly begins to become within reach of physics. 
+In particular, recent developments in non-equilibrium statistical physics have convinced me that the time is ripe for a review with a proposed unifying perspective, of the vast subject concerning the small and the big, the fluctuation theorems on scales of single DNA strand and the maximum entropy production principles on the planetary scales. 
 
-The investigations here presented start from a historical review of the subject (sections 2,3) which presents some less known points of view which aid in understanding; not only the chronological development of ideas, but also the various paradoxes and misconceptions (such as the source of irreversibility or the meaning of entropy) that arose on the way of intense research. 
+The investigations here presented start from a historical review of the subject (sections 2,3) which presents some less known points of view which aid in understanding; not only the chronological development of ideas, but also the various paradoxes (especially the constancy of Gibbs entropy) and misconceptions (such as the source of irreversibility or the meaning of entropy) that arose on the way of intense research. 
 
-Indeed, the topic of far from equilibrium statistical mechanics developed mostly in the last 30-40 years, therefore a short review of the older, linear response near-equilibrium statistical mechanics of Onsager, Kubo and Prigogine is in place and presented in section \ref{NearEquilibrium}. This is then followed in section \ref{simple-model}, by a crude and simple model illustrating the mechanism of entropy lowering during non-equilibrium conditions, thus allowing for formation of complexity.
+Indeed, the topic of far from equilibrium statistical mechanics developed mostly in the last 30-40 years, therefore a short review of the older, linear response near-equilibrium statistical mechanics of Onsager, Kubo and Prigogine is in place and presented in section \ref{NearEquilibrium}. 
+In transition from near-equilibrium conditions follows the author's analysis of a simple model (section \ref{simple-model}) illustrating the mechanism of entropy lowering during non-equilibrium conditions; necessary for the emergence of complexity.
 
-In section \ref{IrreversibilityMeasureSection},  a macroscopic "big-brother" of the fluctuation theorems and it's distributions of entropy are presented. Building on introduced there measure of irreversibility we transition naturally to section \ref{FluctuationTheorems}, where we develop the topic of fluctuation theorems in one of their deterministic formulations, leading to derivation of Crooks fluctuation theorem and Jarzynski (in)equality.
+In section \ref{IrreversibilityMeasureSection}, a macroscopic "big-brother" of the fluctuation theorems is proposed by the author, together with its distributions of entropy, giving probably the most simple and direct evidence of the second law and its nature. Building on introduced in section \ref{IrreversibilityMeasureSection}, measure of irreversibility, the topic of fluctuation theorems is naturally presented in one of their deterministic formulations, leading to derivation of Crooks fluctuation theorem and Jarzynski (in)equality in section \ref{FluctuationTheorems}.
 
-Some interesting and innovative applications of the former, to self-replicators and to a mechanism of molecular adaptation are then reviewed in section \ref{CrooksApplications}. In fact the topic of applications is so rich and developing so fast that one could focus on it exclusively.
+Some reviewed, interesting and innovative applications of the former, lead to criteria for the population growth of self-replicators and to a hypothesised, general mechanism of molecular adaptation, discussed in section \ref{CrooksApplications}. Many examples, but not exhaustive the topic, are presented. In fact, the topic of applications of fluctuation theorems is so rich and developing so fast; that one could focus on their analysis exclusively.
 
 In the final section \ref{UnifyingPrinciple}, a review of a attention-catching, but incomplete topic of extrema principles for non-equilibrium physics is performed. Subsequently, the most promising result, extending the MaxEnt approach is presented with an example application to planetary climates.
+It is argued here, that this principle can be seen as an limiting case of the presented in section \ref{CrooksApplications}, mechanism of molecular adaptation extended to the macroscales.
 
 Finally, the topic of quantum mechanics and von Neumann entropy is only briefly scratched in section 3, leaving place for further work.
 
@@ -120,7 +122,7 @@ During the beginning of the XX century, just before
 the development of quantum theory, which largely overshadowed the development of thermodynamics, Albert Einstein, on par with Marian Smoluchowski, published his paper on Brownian motion \cite{Einstein:eEYNf903}. This was the first work, where the idea of relating the amplitude of dissipation to that of the fluctuations was employed, which started a very successful line of investigations, followed by Paul Langevin and the use of stochastic methods.
 
 Then during 1930s Lars Onsager published two very influential papers \cite{Onsager:zgWBDrcO, Onsager:sJs1Kffm}, which may be considered as the first out-reach towards non-equilibrium phenomena.
-Besides refining the understanding of transport coefficients and their cross relations it hinted on the validity of the so-called Onsager hypothesis or regression hypothesis, a non-equilibrium parallel to the Boltzmann ergodic hypothesis. It stated that the relaxation of a macroscopic non-equilibrium perturbation follows the same laws which govern the dynamics of fluctuations in equilibrium systems, it's controversy stimulated a lot of new developments.
+Besides refining the understanding of transport coefficients and their cross relations it hinted on the validity of the so-called Onsager hypothesis or regression hypothesis, a non-equilibrium parallel to the Boltzmann ergodic hypothesis. It stated that the relaxation of a macroscopic non-equilibrium perturbation follows the same laws which govern the dynamics of fluctuations in equilibrium systems, its controversy stimulated a lot of new developments.
 
 In the 1950s the theory guided by this principle was further extended by  Herbert Callen's and Theodore Welton's fluctuation-dissipation theorem, followed by the work of Melville Green and Ryogo Kubo in what is now known as Green-Kubo relations \cite{Kubo:1957cl} - a family of surprising relations connecting transport coefficients to the correlation functions of observables - those will be presented in further sections. 
 
@@ -128,6 +130,7 @@ Meanwhile, thanks to the development of numerical methods and early computers th
 This ultimately led to the discovery of chaos (chaotic behaviour of systems) and development of information theory.
 
 \subsection{The information era and Schrödinger's influence on physics}
+\label{SchrodingersInfluence}
 
 In the 1940s Claude Shannon introduced the notion of information quantity \cite{Shannon:429164} and during the 1950s, it was recognized that entropy is simply the negative of Shannon's quantity. This way a fundamental link between information theory and thermodynamics was established. This almost coincided with the groundbreaking discovery of the structure of DNA by James Watson and Francis Crick which sparked enthusiasm and inspired generations of physicists to answer the alluring (though not easy) question of the role of physics in biological processes.
 One of the founding fathers of quantum theory, Erwin Schrödinger, wrote an influential book on the subject, entitled "What is life?" \cite{Schrodinger:2005wk} which  posed some important questions intensifying the curiosity. Those ideas we will now briefly review.
@@ -138,7 +141,7 @@ One of the founding fathers of quantum theory, Erwin Schrödinger, wrote an infl
 First, their operation (living organisms) as a macroscopic system resembles approximately, a purely mechanical system rather than a thermodynamical system. 
 Even though their size is far from what is considered a thermodynamic limit, they tend to stay unaffected (in special environments) by random molecular motion and; at the same time, evade the decay towards equilibrium for an unusually long time. This can be seen as, essentially, the definition of a living organisms.
 
-Secondly, he notices that the way an organism accomplishes the above is through the exchange of energy and matter with it's environment, that leaves its own internal state in low entropy. He withdraws from considerations of free energy, although he acknowledges that the exact physical understanding should be accomplished through it rather than through entropy. However, perhaps worth mentioning is his hypothesis of "life intensity", the term which ought to relate to the rate at which the system produces entropy or dissipates heat.
+Secondly, he notices that the way an organism accomplishes the above is through the exchange of energy and matter with its environment, that leaves its own internal state in low entropy. He withdraws from considerations of free energy, although he acknowledges that the exact physical understanding should be accomplished through it rather than through entropy. However, perhaps worth mentioning is his hypothesis of "life intensity", the term which ought to relate to the rate at which the system produces entropy or dissipates heat.
 
 Thirdly, each cell depends on very small group of atoms, the genetic code, which determine its evolution, something unprecedented, beyond the description of ordinary statistical physics. He proposes, that perhaps, a partial explanation for this dynamical behaviour (rather than statistical) can be traced to rigidity and tightness of chemical bonds. However the very vital point Schrödinger tries to make is the hypothesis, that there must exist a yet unknown, new law of physics that would explain fully how order can be produced out of disorder. 
 
@@ -222,7 +225,7 @@ However in 1960s Rolf Landauer and later in 1970s Charles Bennett pointed out th
 \subsection{The discovery of fluctuation theorems}
 The first time-reversible, deterministic thermostats and ergostats (homogeneous thermostats) were invented in the early 1980s by Hoover, Ladd and Moran\cite{Hoover:1982dp}. Prior to this development there was no satisfactory mathematical way of modelling thermostated non-equilibrium steady states.
 
-In the early 1990s Evans, Cohen and Morriss \cite{Evans:1993bl} considered the fluctuations of the entropy production rate in a shearing fluid, and proposed the so-called Fluctuation Relation (FR), which represents a general result concerning systems arbitrarily far from equilibrium, which, in the near equilibrium,  stays consistent with the Green-Kubo and Onsager relations. Nevertheless, its significance was not immediately clear.
+In the early 1990s Evans, Cohen and Morriss \cite{Evans:1993bl} considered the fluctuations of the entropy production rate in a shearing fluid, and proposed the so-called Fluctuation Relation (FR), which represents a general result concerning systems arbitrarily far from equilibrium, which, in the near equilibrium, stays consistent with the Green-Kubo and Onsager relations. Nevertheless, its significance was not immediately clear.
 A few years later, in different conditions, Giovanni Gallavotti and Ezechiel Cohen \cite{Gallavotti:1995gy} derived a similar relation. However, the work that drew the widest attention was the equality derived just two years later by Christopher Jarzynski \cite{Jarzynski:1997uj}. 
 His simple and very practical relation allowed one to obtain equilibrium free energy differences between two configuration of a system in terms of the average\footnote{To be precise, ensemble finite-time measurements of the work performed.} work performed during parametric switching in between those two configurations.
 It took a few years, to see a more general picture, in which, the Jarzynski inequality was just a special case of the Fluctuation Theorems. Theorems which, by the works of Gavin Crooks \cite{Crooks:2008ta} also became more practical. 
@@ -250,7 +253,7 @@ Moreover, it can also be demonstrated \cite{Jaynes:1965gg} that the change of Gi
 \end{aligned}
 \end{equation}
 where $K$ is the total kinetic energy, $V$ is the interparticle potential, $P$, $T$ are pressure and temperature and $d\Omega$ represents an infinitesimal element of the configuration space.
-Due, to the generality of Gibbs entropy we may therefore drop the $G$, and from now on speak of entropy $S$ and it's properties.
+Due, to the generality of Gibbs entropy we may therefore drop the $G$, and from now on speak of entropy $S$ and its properties.
 
 In closed Hamiltonian systems Gibbs entropy stays constant.
 This feature of entropy was first noted by Gibbs himself and was solved by a coarse-graining procedure \cite{Gibbs:1928tw}. The alleged arbitrariness of this procedure was subject to critique \cite{Evans:2241458}. %TODO: more on coarse-graining
@@ -262,11 +265,11 @@ It is obvious that the gas will expand, but according to the constancy of Gibbs 
 In this scenerio, the final phase space is of course larger than the initial one and Gibbs entropy increases, as expected.
 
 \begin{figure}[ht!]
-\centering \includegraphics[width=12cm]{Figure1} \caption{Gas enclosed in part of a container}
+\centering \includegraphics[width=12cm]{Figure1} \caption{Gas enclosed in part of a container - two non-equivalent cases.}
 \label{Fig1} 
 \end{figure}
 
-The means of practical use of still non-coarse-grained entropy in closed systems subject to an adiabatic change was explained with the use of MaxEnt approach by Jaynes \cite{Jaynes:1965gg}. If we knew that on the beginning, at time $t_0$ the system is in \textit{complete} thermodynamic equilibrium having entropy $S$, then we know that at the later time; after the external adiabatic influence ceased the new "test" or experimental distribution function will have entropy $S_e \geq S$. By saying that we demand \textit{complete} thermodynamic equilibrium at the beginning, we say that the \textit{systems history} has to be followed by the experimenter in order to become confident of the obtained equilibrium, as some otherwise unexplainable exceptions exist, such as the Hahn experiment. %TODO Cite Hahn
+The means of practical use of still non-coarse-grained entropy in closed systems subject to an adiabatic change was explained with the use of MaxEnt approach by Jaynes \cite{Jaynes:1965gg}. If we knew that on the beginning, at time $t_0$ the system is in \textit{complete} thermodynamic equilibrium having entropy $S$, then we know that at the later time; after the external adiabatic influence ceased the new "test" or experimental distribution function will have entropy $S_e \geq S$. By saying that we demand \textit{complete} thermodynamic equilibrium at the beginning, we say that the \textit{systems history} has to be followed by the experimenter in order to become confident of the obtained equilibrium, as some otherwise unexplainable exceptions exist, such as the Hahn experiment \cite{Hahn:1950zz}.
 
 It is perhaps worth underlying, that the increase of entropy is linked to our knowledge about the system, rather than anything it is doing internally. This should not come up as particularly surprising as our division between work and heat is somewhat arbitrary. In fact, as just seen, Jaynes advocated an interpretation of entropy as a measure of reproducibility, rather than disorder \cite{Jaynes:1957zz}.
 Furthermore, even the exact parameters of entropy depend on the situation, so does their number. One can increase their number arbitrarily moving toward classical deterministic description where the notion of entropy collapses\footnote{This is not the case for von Neumann entropy.}.
@@ -303,7 +306,7 @@ Therefore after the measurement of particle at some position $x$, one particle i
 \begin{equation}
   \hat{\Psi}(x)\ket{2,0,0,...}=\phi_1(x)\ket{1,0,0,...},
 \end{equation}
-with zero entropy. It is important to notice though, that a particle is lost from our considerations and therefore the entropies before and after the measurement describe two different systems. Of course, in reality the particle doesn't disappear. After determination of it's position by experiment ($\Delta x \to 0$), the uncertainty of it's momentum approaches infinity ($\Delta p \to \infty$), which means that we can reconstruct the real state using a linear combination of states with \textit{any} value of momentum:
+with zero entropy. It is important to notice though, that a particle is lost from our considerations and therefore the entropies before and after the measurement describe two different systems. Of course, in reality the particle doesn't disappear. After determination of its position by experiment ($\Delta x \to 0$), the uncertainty of its momentum approaches infinity ($\Delta p \to \infty$), which means that we can reconstruct the real state using a linear combination of states with \textit{any} value of momentum:
 
 \begin{equation}
   c_1\ \ket{2,,0,...}+c_2\ \ket{1,1,0,...}+  c_3\ \ket{1,0,1,...}+...
@@ -312,10 +315,10 @@ where the  squared modulus of the coefficients has to sum up to one ($ \sum_i \l
 
 Now depending on the precision of the measurement we can recalculate our entropy, now getting a value greater than zero. If we would perform the same analysis for a pure state of two particles in different states i.e. $\ket{1,1,0,...}$ then we would obtain an increase of entropy even without accounting for the lost particle.
 %TODO Correct also for correlated systems?
-This crude example gives a clear illustration of the fact that after \textbf{any} measurement the von Neumann entropy has to increase and that it's change is ultimately related to lost information about the system in the act of the measurement.
+This crude example gives a clear illustration of the fact that after \textbf{any} measurement the von Neumann entropy has to increase and that its change is ultimately related to lost information about the system in the act of the measurement.
 
 There's another interesting feature of quantum entropy, namely inequalities that it fullfills.
-If we bipartite the system into subsystems $A$ and $B$ each containing it's own set of commuting observables, then in order to calculate the entropy $S_A$ of a subsystem $A$ we need to calculate the entropy with respect to density matrix traced over the other subsystem, namely
+If we bipartite the system into subsystems $A$ and $B$ each containing its own set of commuting observables, then in order to calculate the entropy $S_A$ of a subsystem $A$ we need to calculate the entropy with respect to density matrix traced over the other subsystem, namely
 \begin{equation}
   \hat{\rho}^A = \Tr_B \hat{\rho},
 \end{equation}
@@ -343,7 +346,7 @@ An approach pioneered by Onsager, describing entropy in case of open systems, is
 \label{OpenSystemEntropy}
   	dS=dS_i+dS_e,
 \end{equation}
-the entropy produced within the system $dS_i$ (for example by change of microscopic configuration) and the entropy transferred into (or out of) the system through it's boundaries $dS_e$.
+the entropy produced within the system $dS_i$ (for example by change of microscopic configuration) and the entropy transferred into (or out of) the system through its boundaries $dS_e$.
 
 The Second Law then states that internal entropy production $dS_i$ must be zero for reversible (equilibrium) transformations and positive for non-equilibrium transformations of the system \cite{DeGroot:2013ue}:
 \begin{equation}
@@ -355,7 +358,7 @@ or per unit time:
 \end{equation}
 where $\sigma$ is the entropy production source per unit volume and $dV$ denotes infinitesimal volume element.
 
-The entropy supplied, $dS_e$, on the other hand may be positive, zero or negative, depending on the interaction of the system with it's surroundings and may be written in terms of entropy flows through the boundaries of the system:
+The entropy supplied, $dS_e$, on the other hand may be positive, zero or negative, depending on the interaction of the system with its surroundings and may be written in terms of entropy flows through the boundaries of the system:
 \begin{equation}
   	\frac{dS_e}{dt}=\int J d\Omega,
 \end{equation}
@@ -533,7 +536,7 @@ In some cases, one can impose a condition of vanishing expectation value of $\pa
 \end{equation}
 The first definition (constancy of the density function) cannot however strictly hold. Indeed, in cases far from equilibrium considered in section \ref{DissipationTheoremSection} it is shown to be false. This case is used as approximation in the MaxEP approach of section \ref{MaxEPInferenceSection}.
 
-When discussing steady states one often uses Clausius entropy to describe entropy changes related to heat transfer, however the temperature used in it's definition is not always well defined. In cases of near-equilibrium that one may call local equilibrium, the definition of temperature differences are "smooth" enough, i.e. locally there is a reasonable definition of temperature and the temperature gradient determines the heat flux. 
+When discussing steady states one often uses Clausius entropy to describe entropy changes related to heat transfer, however the temperature used in its definition is not always well defined. In cases of near-equilibrium that one may call local equilibrium, the definition of temperature differences are "smooth" enough, i.e. locally there is a reasonable definition of temperature and the temperature gradient determines the heat flux. 
 In the opposite case, it is the molecular kinetics which determines the energy transfer. In most cases under consideration it happens much faster and is considered a transient state after which local equilibrium gets established.
 
 On the other hand, in far from equilibrium conditions there might be several definitions of temperature. One of the solutions provided by Evans et al. \cite{Evans:2241458} is to define temperature of non-equilibrium state by the temperature of the underlying equilibrium state to which the system would otherwise relax. This definition gives consistent results.
@@ -542,18 +545,18 @@ On the other hand, in far from equilibrium conditions there might be several def
 
 The most well known contribution of Ilya Prigogine to statistical physics, often called the Minimum Entropy Production (MinEP) principle, sprouts from the analysis of second order excess entropy around a steady state $ (\delta^2 S)_{ss} $. 
 
-If we perturb the system around it's equilibrium state we obtain:
+If we perturb the system around its equilibrium state we obtain:
 \begin{equation}
   S=S_0 + \delta S + \frac{1}{2}\delta^2 S,
 \end{equation}
 the linear term, $\delta S$, vanishes near equilibrium, the latter is a quantity later used as a Lyapunov function and has certain benefits over other (not necessarily all) Lyapunov functions one could define. 
 It's macroscopic meaning is conserved independently of microscopic details of the system under consideration and is also independent of the nature of particular (possibly inhomogeneous) fluctuations.
-The MinEP principle generated considerable excitement initially, for it enabled prediction of the long-time behaviour of a system by optimizing one collective thermodynamic property of the end state.
-The term "dissipative structures" was also coined by Prigogine, proposing that many properties of dissipative structures, referring to biological organization, could be explained by a general thermodynamic tendency to reduce the rate of entropy production. In Prigogine's view the fluctuations are the trigger for the instabilities (or rather bifurcations in the equations of motion), which in turn give rise to spacetime dissipative structures. 
-An often given example of instabilities leading to formation of structures are the Rayleigh-Bénard convection cells, which simplified non-equilibrium (not near-equilibrium nor MinEP) treatment we describe in the next section.
 
+The MinEP principle generated considerable excitement initially, for it enabled prediction of the long-time behaviour of the system by optimizing one collective thermodynamic property of the end state. Its validity, however, is restricted to near-equilibrium steady-states. It is not a general selection principle, neither does it imply nor is it a consequence of another principle that could lead to the emergence of complexity\footnote{In contrast to MaxEP described in section \ref{UnifyingPrinciple}.}. 
+Only near-equilibrium the quantity $ (\delta^2 S)_{ss} $ generates probability of fluctuations, as Prigogine himself, later insisted in response to criticism \cite{Nicolis:1979cv}.
 
-It is important however, that MinEP result holds only for near-equilibrium steady states. Only then the quantity $ (\delta^2 S)_{ss} $ generates probability of fluctuations, as Prigogine himself, later insisted in response to criticism \cite{Nicolis:1979cv}.
+This is in contrast to the term "dissipative structures" also coined by Prigogine, who initially proposed that many properties of dissipative structures, referring to biological organization, could be explained by a general thermodynamic tendency to reduce the rate of entropy production. In Prigogine's view the fluctuations are the trigger for the instabilities (or rather bifurcations in the equations of motion), which in turn give rise to spacetime dissipative structures. 
+An often given example of instabilities leading to formation of structures are the Rayleigh-Bénard convection cells, which simplified non-equilibrium (not near-equilibrium nor MinEP) treatment is described in the next section.
 
 
 \section{Thermodynamic lowering of entropy in non-equilibrium conditions}
@@ -590,7 +593,7 @@ In the considered scenerio, the $j_e$ is held constant (steady state) and we sus
 j_i \equiv \frac{dS_i}{dt}.   
 \end{equation} 
 When $T_H=T_C$, i.e. the system is in equilibrium with constant entropy $S_{EQ}$, therefore it follows that $j_i=0$.
-We assume that the rate of internal entropy production $j_i$ should be a function  of system's entropy $S_S$, i.e. $j_i = j_i(S_S)$ with the boundary condition $j_i(S_S=S_{EQ})=0$. Around the equilibrium state $S_S=S_{EQ}$, we can Taylor expand the function $j_i(S_S)$ to it's linear term
+We assume that the rate of internal entropy production $j_i$ should be a function  of system's entropy $S_S$, i.e. $j_i = j_i(S_S)$ with the boundary condition $j_i(S_S=S_{EQ})=0$. Around the equilibrium state $S_S=S_{EQ}$, we can Taylor expand the function $j_i(S_S)$ to its linear term
 \begin{equation}
 j_i(S_S)=j_i\left(S_{EQ}\right)+\left(S_S-S_{EQ}\right)C_1+\mathcal{O}\left(S_S^2\right),
 \end{equation} 
@@ -610,12 +613,12 @@ In this case the equation (\ref{entrosum}) results in the following differential
 \frac{dS_S}{dt}=j_e + j_i\left(S_S\right)=j_e +\frac{S_{EQ}-S_S}{\tau}.
 \label{dSSdt}
 \end{equation} 
-Given the boundary condition $S_S(0) =S_{EQ}$ it's solution is given by:
+Given the boundary condition $S_S(0) =S_{EQ}$ its solution is given by:
 \begin{equation}
 S_S(t)=S_{EQ}+j_e\tau \left(1-e^{-t/\tau }\right),
 \end{equation} 
 where $j_e$ is a negative constant. The graph of this function is presented on figure \ref{Fig3}. 
-One can see that in the limit $t\rightarrow \infty$ the entropy of the system falls to it's minimal value:
+One can see that in the limit $t\rightarrow \infty$ the entropy of the system falls to its minimal value:
 \begin{equation}
 S_{min}=S(t\rightarrow \infty) =S_{EQ}+j_e \tau < S_{EQ}.
 \end{equation}
@@ -628,7 +631,7 @@ S_{min}=S(t\rightarrow \infty) =S_{EQ}+j_e \tau < S_{EQ}.
 
 This is of course consistent with the second law of thermodynamics as we are describing an open system.
 It is easy to notice that the total entropy change is equal to $dS=dS_i \geq 0$ (for simplicity it was assumed that the heater and cooler don't act as producers of entropy).
-We see that if the relaxation constant $\tau = 0$, then the system would stay in equilibrium the whole time, of course, $\tau > 0$ for most materials (if not all). The most important part due to which this low entropy state was obtained is of course the entropy out-flow $j_e$, without which the non-equilibrium condition would not form.
+We see that if the relaxation constant $\tau = 0$, then the system would stay in equilibrium the whole time, of course, $\tau > 0$ for most materials (if not all). The most important part due to which this low entropy state was obtained is of course the entropy out-flow $j_e$, without which the non-equilibrium condition allowing for growth of complexity would not form.
 
 \section{Measure of irreversibility and the Second Law}
 \label{IrreversibilityMeasureSection}
@@ -671,13 +674,13 @@ Now, comparing the probability of forward macroscopic evolution to backward evol
 \label{MacrostatesPRatio}
   \frac{P(B_j|A_i)}{P(A_i|B_j)}= e^{\ln{\sum_{k,m} \frac{K_{kj}}{K_{km}}}}.
 \end{equation}
-%TODO: Show that it's positive for all cases!
+%TODO: Show that its positive for all cases!
 The interpretation of the term in the exponent, can be done by noticing that there's only one known macroscopic quantity\footnote{Up to a numerical factor of $k_B^{-1}$.} that is strictly positive and can change signs after reversing the left side, namely the standard measure of irreversibility - change in entropy or so-called produced entropy\footnote{Later we will see that in the case of fluctuation theorems this quantity can be also negative. Then our association to Shannon entropy breaks down and in this case a secondary notion of \textit{dissipation} is sometimes introduced.}.
 We have thus described the entropy produced by a macroscopic system solely in terms of microscopic transition probabilities between two macroscopic states, without any assumptions about the dynamics and external forces influencing the system. Moreover, this is perhaps the most straight-forward argument against Loschmidt, which has the benefit of being easily visualizable.
 
 With the use of real, positive random matrices, satisfying the conditions $\sum_j K_{kj} = 1$ for any $k$, one can obtain the probability distributions for the possible values of $\Delta S = \ln{\sum_{k,m} \frac{K_{kj}}{K_{km}}} $, entropy produced in the transitions. The results are presented on figure \ref{Fig5}.
 \begin{figure}[ht!]
-\centering \includegraphics[width=14cm]{Figure5} \caption{Probability distributions of entropy produced in transitions between $N_A$ initial and $N_B$ final macrostates, calculations performed for $N=10000$ random matrices.}
+\centering \includegraphics[width=15cm]{Figure5} \caption{Probability distributions of entropy produced in transitions between $N_A$ initial and $N_B$ final macrostates, calculations performed for $N=10000$ random matrices.}
 \label{Fig5} 
 \end{figure}
 A remarkable feature of this results is that the obtained distributions are not gaussian and the most likely value is proportional to the number of macrostates. Note, that the steep beginning of the first graph is not an artefact.
@@ -701,7 +704,7 @@ In the deterministic framework of Evans, irreversibility finds its origins in no
 In fact, the Gallavotti-Cohen theorem, which is a stationary fluctuation theorem for systems in contact with a deterministic Gaussian thermostat, breaks down in some systems and in most cases when the forcing is very strong.  
 Those technical difficulties have their source in ergodicity. The Fluctuation Relation in the deterministic case holds only if the system has certain ‘ergodic’ properties \cite{Kurchan:2009ub}. Putting it simply, if the aim of ergodic theory is to understand how randomness arises from deterministic constituents, once stochasticity is added "by hand" the question is artificially bypassed. 
 
-However, the assumption that stochastic processes retains it's stochastic character at arbitrary small temporal and spatial scales leads to a conclusion that the rate of production of entropy is infinite at the limit of infinite resolution \cite{Dorfman:ozm67-zD}.
+However, the assumption that stochastic processes retains its stochastic character at arbitrary small temporal and spatial scales leads to a conclusion that the rate of production of entropy is infinite at the limit of infinite resolution \cite{Dorfman:ozm67-zD}.
 
 Despite of the acknowledged difficulties, the deterministic approach of Searles and Evans will be described for reasons of generality, aesthetics and also because it distances itself from the notion of entropy.
 
@@ -967,7 +970,7 @@ The Second Law of thermodynamics can be derived from ESFT in a trivial manner, b
   &= \int_0^{\infty} dB\ p(\Omega_t=B)B(1-\exp[-B]) \geq 0.
 \end{aligned}
 \end{equation} 
-At this point it's useful to define equilibrium system as the system for which, over the phase space domain $D$, the time-integrated dissipation function is identically zero:
+At this point it is useful to define equilibrium system as the system for which, over the phase space domain $D$, the time-integrated dissipation function is identically zero:
 \begin{equation}
   \bar{\Omega}_{eq,t}(\bm{\Gamma})=0, \forall\bm{\Gamma}\in  D, \forall t >0 \\
   \Rightarrow \langle \Omega_t \rangle = 0, \forall t > 0.
@@ -1241,7 +1244,7 @@ In ordinary statistical physics when transitions between two equilibrium states,
   \langle \exp(-\beta W) \rangle = \exp(-\beta  \Delta F),
 \end{equation}
 was found by Jarzynski \cite{Jarzynski:1997uj}.
-Having already derived GCFR we will will use it to derive Jarzynski Equality also in it's generalized form, which expresses the free energy difference between two equilibrium states in terms of an average over irreversible paths.
+Having already derived GCFR we will will use it to derive Jarzynski Equality also in its generalized form, which expresses the free energy difference between two equilibrium states in terms of an average over irreversible paths.
 Subsequently, the generalized Jarzynski equality (GJE) follows from:
 \begin{equation}
 \begin{aligned}
@@ -1279,7 +1282,7 @@ If we choose the second equilibrium to be in fact our first equilibrium ($Z_1/Z_
   \oint ds \langle X(s) \rangle \geq 0,
 \end{equation}
 i.e. the ensemble average of the cyclic integral of the generalized work is nonnegative.
-Although it's appearance is similar to Clausius inequality for the heat the derivation of the Clausius inequality is more demanding, but presented in \cite{Evans:2241458}.
+Although its appearance is similar to Clausius inequality for the heat the derivation of the Clausius inequality is more demanding, but presented in \cite{Evans:2241458}.
 The reason for this state of affairs is that, we have to complete many cycles until the system settles into a periodic response of the cyclic protocol before we can apply the cyclic integral for the heat. Moreover, not all systems do settle into a cyclic response.
 
 \section{Application to self-replication and adaptation}
@@ -1412,12 +1415,15 @@ This phenomena was given an apt name of \textit{dissipative adaptation}, a name 
 
 It is important however, to recognize that this argument is thermodynamic and as such is very general in nature, but also has a probabilistic component.
 Thus, the reproducibility of a particular end state configuration of such many-body system, will be of course (given the microscopic scale), heavy influenced by thermal fluctuations, but one should expect to see certain common, emergent features unique to the driving conditions.
-Secondly, it is certainly not true that under any continuous driving the system will continually improve it's rate of dissipation. Indeed, we can expect this pathway to fail frequently when dispersion $\Phi$ increases, the limiting case being the non-equilibrium steady state for which $\Psi = \Phi$ and the dissipative adaptation ceases.
+Secondly, it is certainly not true that under any continuous driving the system will continually improve its rate of dissipation. Indeed, we can expect this pathway to fail frequently when dispersion $\Phi$ increases, the limiting case being the non-equilibrium steady state for which $\Psi = \Phi$ and the dissipative adaptation ceases.
 
 %but it is not clear under what exact circumstances it may hold.
 
-Somehow ironically, the clearest case pointing towards the phenomena of dissipative adaptation was described in a macroscopic system \cite{Kondepudi:2015bg}. The experimenters tracked the time evolution of the dissipation rate in a system composed of conducting beads immersed in oil and subject to external voltage drop. Their results indicated a general tendency of the beads to relax to a steady state characterized by more rapid dissipation that adapted to the boundary conditions of container.
-A possible (and even simpler) electrochemical equivalent of this system, proposed by the author of this work, is the solution of copper (II) sulphate subject to constant voltage (Figure \ref{Fig6}). Copper deposition occurring in such system effectively lowers the resistance, increasing dissipation in accordance with Ohm's law\footnote{Note the close resemblance to example given by Landauer \cite{Landauer:pJ4RYJRG}}.
+Somehow ironically, the clearest case pointing towards the phenomena of dissipative adaptation was described in a macroscopic system \cite{Kondepudi:2015bg}. The experimenters tracked the time evolution of the dissipation rate in a system composed of 40 conducting beads immersed in oil and subject to external voltage drop. Their results indicated a general tendency of the beads to spontaneously form branched structures in a steady state characterized by more rapid dissipation that adapted to the boundary conditions of container.
+
+Another instance of complexity growth, driven by dissipation and an electrochemical equivalent of the previous system is proposed by the author of this work. 
+In the solution of copper (II) sulphate (Figure \ref{Fig6}) complex patterns form in consequence of applied constant voltage.
+Copper deposition occurring in such system, reassembles fractal shapes and effectively lowers the resistance, increasing dissipation in accordance with Ohm's law\footnote{Note the close resemblance to example given by Landauer \cite{Landauer:pJ4RYJRG}}.
 
 \begin{figure}[ht!]
 \centering \includegraphics[width=14cm]{Figure6} \caption{Three subsequent frames of electrochemically deposited copper on a Petri dish in solution of $CuSO_4$ - experiment performed at Jagiellonian University, Institute of Physics}
@@ -1430,10 +1436,12 @@ In another study \cite{Carnall:2010ju}, mechanical work was used to agitate amyl
 The most intriguing, but yet open case of biological molecular machines, such as ATP- or GTPase, in multi-protein mixtures hold great promise for observation of dissipative adaptation. The conformational changes happen there, in discrete events of chemical dissipation through hydrolysis of triphosphates accompanied by interparticle interactions \cite{Schaller:2010cq}.
 
 One can see that the presented possible realizations differ widely and it is probably fair to say, that the presented examples give more than preliminary support for the dissipative adaptation hypothesis for certain microscopic and also macroscopic many-body systems. 
-For the establishment of a general principle of dissipation more firm evidence will need to be gathered, together with a detailed analysis of the individual terms of equations (\ref{DissipationDrivenEq}) and (\ref{DissipationDrivenEq2}). All of this, of course, follows under the assumption of validity of the fluctuation theorems, therefore their further analysis is desired.
+For the establishment of a general principle of dissipation or growth of complexity more firm evidence will need to be gathered, together with a detailed analysis of the individual terms of equations (\ref{DissipationDrivenEq}) and (\ref{DissipationDrivenEq2}). All of this, of course, follows under the assumption of validity of the fluctuation theorems, therefore their further analysis is also desired.
 
-Finally, taking into account the information processing/storing capability of animate matter, one is led to a natural question - could there be a deeper relation behind the fluctuation theorem, perhaps involving information theory? Could fluctuation theorem be derived from it?
-The pursuit of the answer to this questions will be the topic of next paragraph.
+%Finally, taking into account the information processing/storing capability of animate matter, one is led to a natural question - could there be a deeper relation behind the fluctuation theorem, perhaps involving information theory? Could fluctuation theorem be derived from it?
+
+Nevertheless, those advancements push us towards understanding the origin of biological complexity and it is likely that the next steps, with the help of information theory, could help us understand the emergence of agency. 
+In fact, purpose directed behaviour can be seen as a result of information processing and storage which itself relies on availability of free energy as shown by Landauer \cite{Landauer:2002wc}. Therefore, it is desired to somehow bridge the gap between physics and biology using a new principle, as proposed by Schrödinger (section \ref{SchrodingersInfluence}) - preferably including information theory. One of the paths one could choose for such an endeavour is the search of variational principles.
 
 \section{Search for a unifying principle}
 \label{UnifyingPrinciple}
@@ -1441,7 +1449,7 @@ The search for variational or extremization principles in physics has a long his
 
 In 1912, Ehrenfest was the first who asked whether such a principle for a yet unknown function could exist for non-equilibrium steady states \cite{Dewar:2014ek}.
 The search, however, could be dated to the works of Kirchoff and Rayleigh and their least dissipation theorems, which development ceased immediately after the establishment of equilibrium statistical mechanics.
-Interest in least dissipation principles was reborn in the 1950s due to joint paper of Onsager and Machlup \cite{Onsager:3UFhYpWV} which modeled small microscopic fluctuations (away from criticality) around exponential relaxation to equilibrium and which provided a "microscopic" basis for the least dissipation principle. The validity of the least dissipation principles, including Prigogine's MinEP, is however restricted to near equilibrium states. In fact, in an example presented by Landauer \cite{Landauer:pJ4RYJRG}, the steady state was generating the maximum amount of entropy.
+Interest in least dissipation principles was reborn in the 1950s due to joint paper of Onsager and Machlup \cite{Onsager:3UFhYpWV} which modeled small microscopic fluctuations (away from criticality) around exponential relaxation to equilibrium and which provided a "microscopic" basis for the least dissipation principle. The validity of the least dissipation principles, including Prigogine's MinEP, is however restricted to near-equilibrium states. In fact, in an example presented by Landauer \cite{Landauer:pJ4RYJRG}, the steady state was generating the maximum amount of entropy.
 
 \subsection{MaxEP principle}
 \label{MaxEPSection}
@@ -1458,7 +1466,7 @@ The usual working formulation of MaxEP  principle states that \textit{for system
 
 \subsubsection{Relation to MinEP}
 
-For linear, near equilibrium systems that only admit a single steady state, MinEP states that system's steady state produces less entropy than any possible transient state.
+For linear, near-equilibrium systems that only admit a single steady state, MinEP states that system's steady state produces less entropy than any possible transient state.
 MinEP compares steady states with transient states.
 
 For some not yet determined class of nonlinear, far from equilibrium systems that admit multiple steady states, MaxEP states that the system settles in the steady state with the greatest entropy production. MaxEP compares steady states to other steady states, staying silent on transient states.
@@ -1501,7 +1509,7 @@ In those scenarios both examples exhibit many flow solutions allowed when we app
 
 Secondly, Dewar introduces information theoretical measure of the distance from equilibrium, or \textit{irreversibility} $I$ (similar to the one defined in equation \ref{IrreversibilityMeasure}), defined in terms of the relative probabilities of forward and reverse fluxes. 
 The first demand (dynamical instability) is then reformulated as a strong inequality constraint $I>I_{min}$. 
-Then using procedures known from MaxEnt it is shown that $I$ adopts it's maximum possible value under the stationarity constraints.
+Then using procedures known from MaxEnt it is shown that $I$ adopts its maximum possible value under the stationarity constraints.
 
 The final step consists of reinterpretation of $I$ as thermodynamic entropy production. In this derivation of MaxEP, entropy production depends on the applied constraints.
 
@@ -1509,7 +1517,7 @@ The just outlined procedure (which is Dewar's third iteration of the principle) 
 
 \subsection{MaxEP principle as an inference principle}
 \label{MaxEPInferenceSection}
-We will consider a general open system (volume $V$, boundary $\Omega$) which exchanges both matter and energy with it's surroundings. The system may consist of several components.
+We will consider a general open system (volume $V$, boundary $\Omega$) which exchanges both matter and energy with its surroundings. The system may consist of several components.
 The presence of fluxes, both within the system, and between the system and its environment is the primary characteristics of the non-equilibrium stationary states. We'll denote the instantaneous value of those fluxes, by the vector $\bm{f}$. The flux vector $\bm{f}$ may be related to some local density $\rho$ with the use of the continuity equation $\partial \rho / \partial t =  - \nabla \cdot \bm{f} + h$, where $h$ denotes a local source; alternatively (for example in case of Navier-Stokes equations), the components of $\bm{f}$ might themselves be identified with local densities. Macroscopic state of the system is then described by $\bm{f}$ (or $\rho$) with the stationarity condition given by equation (\ref{SteadyStates}).
 Similarly to the MaxEnt we maximize the relative entropy
 \begin{equation}
@@ -1585,7 +1593,9 @@ A result consistent with the conclusion that there are no general expressions fo
 In his first approaches, Dewar claimed to derive \cite{Dewar:775452, Dewar:2005eo} the fluctuation theorem from MaxEP. The claims in the more recent works are more modest \cite{Dewar:2014ek}. MaxEP there (and here) described, is in fact an approximation to the fluctuation theorem. Conclusion immediately obvious, regarding the fact that the fluctuation theorem also describes the non-steady states.
 The irreversibility measure $I$ defined for MaxEP is related to the dissipation function $\Omega_t$ of equation (\ref{Dissipation}) through $I=\langle \Omega_t \rangle$, if we interpret the flux vector $\bm{f}$ as a time-average over time $t$. 
 
-Furthermore, in the light of our discussion on dissipative adaptation given in section \ref{DissipationAdaptationSection}, it seems likely that MaxEP could give a reasonable approximation of a driven steady state in the long time limit. The usefulness of it's predictions, would however, be dependent on the range of applicability of dissipative adaptation hypothesis, which is currently unknown.
+Furthermore, in the light of our discussion on dissipative adaptation given in section \ref{DissipationAdaptationSection}, it seems likely that MaxEP could give a reasonable approximation of a driven steady state in the long time limit. The usefulness of its predictions, would however, be dependent on the range of applicability of dissipative adaptation hypothesis, which is currently under investigations.
+In any case, contrary to our expectations from the ending of the section \ref{DissipationAdaptationSection}; the presented variational approach is not more fundamental and at most helps in understanding the more likely final states, rather than their emergence. Complexity \textit{growth} is therefore better addressed by the dissipative adaptation hypothesis than MaxEP.
+However, in order not to belittle the result of MaxEP, which practical implications could still be of great use, we would like to see how it applies to the phenomena of planetary climates.
 
 \subsubsection{Example application for planetary atmospheres}
 
@@ -1617,16 +1627,14 @@ which has the form of entropy production function used by \cite{Paltridge:2007jf
 Further examples can be found in \cite{Dewar:2014ek}.
 \section{Summary}
 
-After over 100 years, the arguments of Boltzmann and others on the Loschmidt paradox have become more tangible and very refined through the sub-macroscopic description provided by the fluctuation theorem and it's macroscopic 'big-brother' theorem presented in section (\ref{IrreversibilityMeasureSection}). The qualitative answer, however, did not change and the source of irreversibility can be pinned down to our ignorance, limited predictive abilities and causality.
+After over 100 years, the arguments of Boltzmann and others on the Loschmidt paradox have become more tangible and very refined through the sub-macroscopic description provided by the fluctuation theorem and its macroscopic 'big-brother' theorem, invented by the author and presented in section (\ref{IrreversibilityMeasureSection}). The qualitative answer, however, did not change and the source of irreversibility can be pinned down to our ignorance, limited predictive abilities and causality.
 
-The research on fluctuation theorems has been immensely productive, providing us with better understanding of thermostated systems, steady states, dissipation and relaxation processes, while keeping the correspondence with linear response theory. Nevertheless, the limits of its generality are still being researched, while the applications of fluctuation theorem are already giving us new methods of calculating free energy of large molecules and some early understanding of self replicators and dissipation driven self-assembly. 
-%TODO: Expand this a little bit
-An interesting future perspective would be compare this line of work with the concept of maximum entropy random walks.
-The full understanding, nevertheless, will almost surely, demand the inclusion of information theory into the picture and perhaps, a shift to the quantum description \cite{Kurchan:2000uh}.
+The research on fluctuation theorems has been immensely productive, providing us with better understanding of thermostated systems, steady states, dissipation and relaxation processes, while keeping the correspondence with linear response theory. Nevertheless, the limits of its generality are still being researched, while the applications of fluctuation theorem are already giving us new methods of calculating free energy of large molecules and some early understanding of self-replicators, dissipation driven self-assembly and the origin of complexity growth. As a final reflection on dissipative adaptation as the possible mechanism of complexity growth, we remark that it is consistent with the empirical observations of Eric Chaisson \cite{Chaisson:QaChIy8J, Chaisson:inPaa3oF} on free energy rate density metric of complexity.
 
-In the present work we conclude, that the principle of MaxEP, as formulated by Roderick Dewar, stays in reasonable agreement with, the more general, fluctuation theorem and can be seen as a limiting case of dissipative adaptation. The proof of its universal validity, however, remains a challenging task, given its non-physical nature and difficulties in finding the appropriate constraints.
+Furthermore, in the present work we conclude, that the principle of MaxEP, as formulated by Roderick Dewar, stays in agreement with, the more general, fluctuation theorem and can be seen as a final state of dissipative adaptation. An independent (from dissipative adaptation) proof of its validity, remains an elusive task given its non-physical nature and arbitrariness in finding the appropriate constraints. An interesting future perspective would be compare this line of work with the concept of maximum entropy random walks.
+
+The full understanding of agency, life-like forms and complexity growth in general, will almost surely, demand a more subtle inclusion of information theory and perhaps, a shift to the quantum description \cite{Kurchan:2000uh}.
   
-%One gets non-gausian distribution!
 
 \newpage
 
