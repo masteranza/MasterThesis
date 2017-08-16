@@ -1,0 +1,242 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      8038,        234]
+NotebookOptionsPosition[      5746,        163]
+NotebookOutlinePosition[      6099,        179]
+CellTagsIndexPosition[      6056,        176]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["Energy per second", "Text",
+ CellChangeTimes->{{3.7118051242310333`*^9, 3.71180512706222*^9}},
+ CellID->1205858448,ExpressionUUID->"91c7fb14-842c-4b67-b365-badbf23305fb"],
+
+Cell["Sun\[CloseCurlyQuote]s core", "Text",
+ CellChangeTimes->{{3.711806796154313*^9, 3.711806801934772*^9}},
+ CellID->515877421,ExpressionUUID->"6927f23c-5f05-4f2b-a26d-aec9fc689ae6"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Quantity", "[", 
+     RowBox[{"276.5", ",", "\"\<Watts/m^3\>\""}], "]"}], "/", 
+    RowBox[{"Quantity", "[", 
+     RowBox[{"150", ",", "\"\<g/cm^3\>\""}], "]"}]}], ",", "\"\<W/kg\>\""}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.71180488575389*^9, 3.711804927748419*^9}, {
+  3.71180517671056*^9, 3.711805204643736*^9}},
+ CellID->583868608,ExpressionUUID->"0cea648a-53b5-4653-b63e-c6a5a9041a22"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "0.0018433333333333335`",
+   RowBox[{"\"W\"", "\[InvisibleSpace]", "\"/\"", "\[InvisibleSpace]", 
+     "\"kg\""}],"watts per kilogram",FractionBox[
+   "\"Watts\"", "\"Kilograms\""]},
+  "Quantity"]], "Output",
+ CellChangeTimes->{{3.711804903851425*^9, 3.711804928677067*^9}, {
+  3.71180518903609*^9, 3.711805205258231*^9}},
+ CellID->406553166,ExpressionUUID->"11d6c74f-4ee8-4334-adfd-5c6be6010f6a"]
+}, Open  ]],
+
+Cell["Plants (0.1-50)", "Text",
+ CellChangeTimes->{{3.71180821583317*^9, 3.711808221870734*^9}, {
+  3.711808564274702*^9, 3.7118085752205687`*^9}, {3.711808752781798*^9, 
+  3.7118087686303*^9}},
+ CellID->2089691652,ExpressionUUID->"43c496ca-aa44-442d-a4f0-0c5028cdff65"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Quantity", "[", 
+  RowBox[{"1", ",", "\"\<W/kg\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.711808224557485*^9, 3.711808242322735*^9}},
+ CellID->1657567034,ExpressionUUID->"d4873f6d-75c0-45a7-9759-6acd7a5ccc80"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "1",RowBox[{
+    "\"W\"", "\[InvisibleSpace]", "\"/\"", "\[InvisibleSpace]", "\"kg\""}],
+   "watts per kilogram",FractionBox["\"Watts\"", "\"Kilograms\""]},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.71180824317137*^9},
+ CellID->1748202894,ExpressionUUID->"df2cc16b-bff7-4abd-b8ec-b59e2eb64d54"]
+}, Open  ]],
+
+Cell["Mouse", "Text",
+ CellChangeTimes->{{3.7118080027892733`*^9, 3.711808007405555*^9}},
+ CellID->886496233,ExpressionUUID->"e4f86153-103f-4c4a-8c35-44f3dd64b6a1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   RowBox[{"Quantity", "[", 
+    RowBox[{
+     RowBox[{"0.001", " ", "33.3"}], " ", ",", "\"\<W/g\>\""}], "]"}], ",", 
+   "\"\<W/kg\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.7118080088047857`*^9, 3.711808036173519*^9}},
+ CellID->165602646,ExpressionUUID->"a9a811cf-0f54-44f5-9f37-bd2d567ef679"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "33.3`",RowBox[{
+    "\"W\"", "\[InvisibleSpace]", "\"/\"", "\[InvisibleSpace]", "\"kg\""}],
+   "watts per kilogram",FractionBox["\"Watts\"", "\"Kilograms\""]},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.71180803694405*^9},
+ CellID->1576206371,ExpressionUUID->"b4cc7d05-9b86-433a-acf3-426c6be46137"]
+}, Open  ]],
+
+Cell["Female", "Text",
+ CellChangeTimes->{{3.711806792112764*^9, 3.711806793644742*^9}},
+ CellID->949587537,ExpressionUUID->"d071159c-1c6b-4f60-b961-04dc1a1187ec"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"N", "@", 
+  RowBox[{"UnitConvert", "[", 
+   RowBox[{
+    RowBox[{"Quantity", "[", 
+     RowBox[{"1272000", ",", "\"\<cal/kg/day\>\""}], "]"}], ",", 
+    "\"\<W/kg\>\""}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7118051572422028`*^9, 3.7118051726543293`*^9}, {
+  3.711805208421297*^9, 3.7118052796700163`*^9}},
+ CellID->1883320058,ExpressionUUID->"e030d95b-33cf-465c-bb79-f59645590c26"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "61.59777777777778`",
+   RowBox[{"\"W\"", "\[InvisibleSpace]", "\"/\"", "\[InvisibleSpace]", 
+     "\"kg\""}],"watts per kilogram",FractionBox[
+   "\"Watts\"", "\"Kilograms\""]},
+  "Quantity"]], "Output",
+ CellChangeTimes->{{3.711805215940454*^9, 3.711805280186524*^9}},
+ CellID->532742840,ExpressionUUID->"9ab0491b-8347-47cb-9c67-977d875a61e3"]
+}, Open  ]],
+
+Cell["Mobile phone", "Text",
+ CellChangeTimes->{{3.7118068096603394`*^9, 3.711806853011071*^9}},
+ CellID->453445489,ExpressionUUID->"5ae69b08-2cf7-45b1-9bb6-269ac85988fa"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"UnitConvert", "[", 
+  RowBox[{
+   RowBox[{"Quantity", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"5.45", "/", "130"}], "/", "12"}], ",", "\"\<W/g\>\""}], "]"}], 
+   ",", "\"\<W/kg\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.7118068728753023`*^9, 3.71180688909354*^9}, {
+  3.711806919177121*^9, 3.711806923271668*^9}, {3.7118069821389236`*^9, 
+  3.7118070097423964`*^9}, {3.711807225645286*^9, 3.711807250035074*^9}},
+ CellID->1698613967,ExpressionUUID->"bdb53a37-e5fd-43fb-96ca-9821f39916f4"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "3.4935897435897436`",
+   RowBox[{"\"W\"", "\[InvisibleSpace]", "\"/\"", "\[InvisibleSpace]", 
+     "\"kg\""}],"watts per kilogram",FractionBox[
+   "\"Watts\"", "\"Kilograms\""]},
+  "Quantity"]], "Output",
+ CellChangeTimes->{3.711807003779627*^9, 3.711807250802697*^9},
+ CellID->658340111,ExpressionUUID->"402c8ddf-50e3-4507-8dcc-75df8464a5d3"]
+}, Open  ]]
+},
+WindowSize->{718, 855},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+FrontEndVersion->"11.1 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 16, \
+2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 176, 2, 30, "Text", "ExpressionUUID" -> \
+"91c7fb14-842c-4b67-b365-badbf23305fb",
+ CellID->1205858448],
+Cell[737, 24, 184, 2, 30, "Text", "ExpressionUUID" -> \
+"6927f23c-5f05-4f2b-a26d-aec9fc689ae6",
+ CellID->515877421],
+Cell[CellGroupData[{
+Cell[946, 30, 474, 11, 54, "Input", "ExpressionUUID" -> \
+"0cea648a-53b5-4653-b63e-c6a5a9041a22",
+ CellID->583868608],
+Cell[1423, 43, 428, 9, 36, "Output", "ExpressionUUID" -> \
+"11d6c74f-4ee8-4334-adfd-5c6be6010f6a",
+ CellID->406553166]
+}, Open  ]],
+Cell[1866, 55, 270, 4, 30, "Text", "ExpressionUUID" -> \
+"43c496ca-aa44-442d-a4f0-0c5028cdff65",
+ CellID->2089691652],
+Cell[CellGroupData[{
+Cell[2161, 63, 237, 4, 32, "Input", "ExpressionUUID" -> \
+"d4873f6d-75c0-45a7-9759-6acd7a5ccc80",
+ CellID->1657567034],
+Cell[2401, 69, 330, 7, 36, "Output", "ExpressionUUID" -> \
+"df2cc16b-bff7-4abd-b8ec-b59e2eb64d54",
+ CellID->1748202894]
+}, Open  ]],
+Cell[2746, 79, 164, 2, 30, "Text", "ExpressionUUID" -> \
+"e4f86153-103f-4c4a-8c35-44f3dd64b6a1",
+ CellID->886496233],
+Cell[CellGroupData[{
+Cell[2935, 85, 354, 8, 32, "Input", "ExpressionUUID" -> \
+"a9a811cf-0f54-44f5-9f37-bd2d567ef679",
+ CellID->165602646],
+Cell[3292, 95, 334, 7, 36, "Output", "ExpressionUUID" -> \
+"b4cc7d05-9b86-433a-acf3-426c6be46137",
+ CellID->1576206371]
+}, Open  ]],
+Cell[3641, 105, 163, 2, 30, "Text", "ExpressionUUID" -> \
+"d071159c-1c6b-4f60-b961-04dc1a1187ec",
+ CellID->949587537],
+Cell[CellGroupData[{
+Cell[3829, 111, 410, 9, 32, "Input", "ExpressionUUID" -> \
+"e030d95b-33cf-465c-bb79-f59645590c26",
+ CellID->1883320058],
+Cell[4242, 122, 376, 8, 36, "Output", "ExpressionUUID" -> \
+"9ab0491b-8347-47cb-9c67-977d875a61e3",
+ CellID->532742840]
+}, Open  ]],
+Cell[4633, 133, 171, 2, 30, "Text", "ExpressionUUID" -> \
+"5ae69b08-2cf7-45b1-9bb6-269ac85988fa",
+ CellID->453445489],
+Cell[CellGroupData[{
+Cell[4829, 139, 523, 11, 32, "Input", "ExpressionUUID" -> \
+"bdb53a37-e5fd-43fb-96ca-9821f39916f4",
+ CellID->1698613967],
+Cell[5355, 152, 375, 8, 36, "Output", "ExpressionUUID" -> \
+"402c8ddf-50e3-4507-8dcc-75df8464a5d3",
+ CellID->658340111]
+}, Open  ]]
+}
+]
+*)
+
