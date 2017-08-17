@@ -1,0 +1,56 @@
+\contentsline {section}{\numberline {1}Introduction}{9}{section.1}
+\contentsline {section}{\numberline {2}Historical outline}{10}{section.2}
+\contentsline {subsection}{\numberline {2.1}The founding fathers of thermodynamics}{10}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}The information era and Schr\IeC {\"o}dinger's influence on physics}{12}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}The resolution of the Loschmidt paradox }{13}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Different approaches towards irreversibility and non-equilibrium}{13}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Jaynes formulation of statistical mechanics (MaxEnt)}{15}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}The discovery of fluctuation theorems}{16}{subsection.2.6}
+\contentsline {section}{\numberline {3}Treatments of entropy in the standard contexts}{16}{section.3}
+\contentsline {subsection}{\numberline {3.1}Gibbs entropy}{16}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}von Neumann entropy during measurement process}{18}{subsection.3.2}
+\contentsline {section}{\numberline {4}Near-equilibrium thermodynamics}{20}{section.4}
+\contentsline {subsection}{\numberline {4.1}Local equilibrium and entropy production}{20}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Linear response, regression and fluctuations}{21}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Onsager relations and hypothesis}{23}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Green-Kubo relations}{23}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Steady states and the definition of temperature}{24}{subsection.4.5}
+\contentsline {subsection}{\numberline {4.6}MinEP principle}{25}{subsection.4.6}
+\contentsline {section}{\numberline {5}Thermodynamic lowering of entropy in non-equilibrium conditions}{26}{section.5}
+\contentsline {section}{\numberline {6}Measure of irreversibility and the Second Law}{28}{section.6}
+\contentsline {section}{\numberline {7}Fluctuation theorems}{31}{section.7}
+\contentsline {subsection}{\numberline {7.1}The deterministic approach}{32}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}Thermostated, but time reversible systems}{32}{subsubsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.2}Time reversible setup}{32}{subsubsection.7.1.2}
+\contentsline {paragraph}{Phase space distribution function:}{34}{section*.2}
+\contentsline {paragraph}{Probabilities of phase space trajectories: }{34}{section*.3}
+\contentsline {paragraph}{Ensemble averages:}{34}{section*.4}
+\contentsline {paragraph}{Ergodicity:}{35}{section*.5}
+\contentsline {subsubsection}{\numberline {7.1.3}Phase Continuity equation}{35}{subsubsection.7.1.3}
+\contentsline {subsubsection}{\numberline {7.1.4}Dissipation and the macroscopic irreversibility}{36}{subsubsection.7.1.4}
+\contentsline {subsubsection}{\numberline {7.1.5}Evans-Searles fluctuation theorem}{37}{subsubsection.7.1.5}
+\contentsline {subsubsection}{\numberline {7.1.6}Instantaneous dissipation function}{39}{subsubsection.7.1.6}
+\contentsline {subsubsection}{\numberline {7.1.7}Dissipation Theorem}{39}{subsubsection.7.1.7}
+\contentsline {subsubsection}{\numberline {7.1.8}Mixing properties and their relations}{40}{subsubsection.7.1.8}
+\contentsline {paragraph}{Mixing}{40}{section*.6}
+\contentsline {paragraph}{Weak T-mixing}{41}{section*.7}
+\contentsline {paragraph}{T-mixing}{41}{section*.8}
+\contentsline {paragraph}{$\bm {\Omega T}$-mixing}{41}{section*.9}
+\contentsline {subsubsection}{\numberline {7.1.9}Relaxation}{41}{subsubsection.7.1.9}
+\contentsline {subsubsection}{\numberline {7.1.10}Relaxation Theorem}{41}{subsubsection.7.1.10}
+\contentsline {subsubsection}{\numberline {7.1.11}Driven systems}{42}{subsubsection.7.1.11}
+\contentsline {subsubsection}{\numberline {7.1.12}Non-equilibrium Steady States}{43}{subsubsection.7.1.12}
+\contentsline {subsection}{\numberline {7.2}Generalized Crooks fluctuation theorem}{43}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Jarzynski Equality}{45}{subsection.7.3}
+\contentsline {section}{\numberline {8}Application to self-replication and adaptation}{47}{section.8}
+\contentsline {subsection}{\numberline {8.1}Self-replication}{48}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Dissipation driven adaptation}{49}{subsection.8.2}
+\contentsline {section}{\numberline {9}Search for a unifying principle}{52}{section.9}
+\contentsline {subsection}{\numberline {9.1}MaxEP principle}{52}{subsection.9.1}
+\contentsline {subsubsection}{\numberline {9.1.1}Relation to MinEP}{53}{subsubsection.9.1.1}
+\contentsline {subsubsection}{\numberline {9.1.2}Extrema of the Dissipation Function and MaxEP}{53}{subsubsection.9.1.2}
+\contentsline {subsubsection}{\numberline {9.1.3}MaxEnt based formulations of MaxEP}{54}{subsubsection.9.1.3}
+\contentsline {subsection}{\numberline {9.2}MaxEP principle as an inference principle}{55}{subsection.9.2}
+\contentsline {subsubsection}{\numberline {9.2.1}Relation to fluctuation theorem and dissipative adaptation}{57}{subsubsection.9.2.1}
+\contentsline {subsubsection}{\numberline {9.2.2}Example application for planetary atmospheres}{57}{subsubsection.9.2.2}
+\contentsline {section}{\numberline {10}Summary}{58}{section.10}
