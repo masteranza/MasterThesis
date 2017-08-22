@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: /Users/masteranza/Projects/MasterThesis/Work/Final corrected/.texpadtmp/Non-equilibrium systems and growth of complexity.aux
+The style file: ieeetr.bst
+Database file #1: ../Refs.bib
+Warning--empty year in Doyle:wf
+Warning--empty journal in Crooks:2008ta
+Warning--empty journal in England:2015hl
+Warning--empty publisher in DeGroot:2013ue
+Warning--empty journal in England:2013ed
+Warning--empty year in Lorenz:J80tzZkl
+Warning--can't use both author and editor fields in Kleidon:1339033
+You've used 85 entries,
+            1876 wiz_defined-function locations,
+            1036 strings with 16414 characters,
+and the built_in function-call counts, 23771 in all, are:
+= -- 2605
+> -- 600
+< -- 0
++ -- 245
+- -- 160
+* -- 1634
+:= -- 3170
+add.period$ -- 92
+call.type$ -- 85
+change.case$ -- 77
+chr.to.int$ -- 0
+cite$ -- 92
+duplicate$ -- 1249
+empty$ -- 2208
+format.name$ -- 160
+if$ -- 5861
+int.to.chr$ -- 0
+int.to.str$ -- 85
+missing$ -- 90
+newline$ -- 266
+num.names$ -- 85
+pop$ -- 179
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1015
+stack$ -- 0
+substring$ -- 2007
+swap$ -- 614
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 7
+while$ -- 267
+width$ -- 87
+write$ -- 830
+(There were 7 warnings)
