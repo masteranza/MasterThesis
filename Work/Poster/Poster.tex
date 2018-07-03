@@ -44,17 +44,9 @@
 
 \setlength{\headheight}{0pt}
 \setlength{\headsep}{-10.0pt}
-\setlength{\topmargin}{-80.0pt}
+\setlength{\topmargin}{-100.0pt}
 \setlength{\oddsidemargin}{-80.0pt}
 
-
-%\rightlogo[1]{ujlogo}
-%\title{Lieb-Liniger model: emergence of dark solitons in the course of measurements of particle positions}
-%Título do projeto
-
-%\author{Andrzej Syrwid and Krzysztof Sacha}
-%nome dos autores
-%
 \institute 
 {Jagiellonian University in Kraków}
 %Nome e endereço da Instituição
@@ -128,7 +120,7 @@
 
 
 
-\vspace{1.0cm}
+%\vspace{1.0cm}
 
 %%% Begin of Multicols-Enviroment
 
@@ -149,30 +141,30 @@ Due to the close resemblance of our expression to the fluctuation theorems we di
 %====================================================================================================================================
 
 %%% Introduction
-\section{Bayesian model for a generic physical system}
+\section{Bayesian model for a generic isolated physical system}
 \normalsize
 \begin{flushleft}
-Consider a generic statistical mechanical system with a \textit{fixed} number of microstates, evolving under deterministic, microscopic equations of motion. 
+Consider a generic statistical mechanical system with a \textbf{fixed number of microstates}, evolving under deterministic, microscopic equations of motion. 
 \begin{itemize}
 	\item $t_0$, $t_1$ - initial and final times
 	\item $\{A_i\}, \{B_j\}$ - sets of initial and final macrostates
 	\item $N_A, N_B$ - numbers of initial and final macrostates
 	\item $M_i, N_j$ - numbers of microscopic realizations of $i$ initial and $j$ final macrostates.
-	\item $K_{ij}$ - number of initial microstates of macrostate $A_i$ flowing into the final macrostate $B_j$, as illustrated on figure \ref{Fig4}.
+	\item $K_{ij}$ - number of initial microstates of macrostate $A_i$ flowing into the final macrostate $B_j$, as illustrated on figure \ref{Fig1}.
 \end{itemize}
 
 \end{flushleft}
-
+\vspace{-0.5cm}
 \begin{minipage}[b]{20.0cm}
 \centering
 \begin{figure}[ht!]
 \includegraphics[width=20.0cm]{figure1.eps}
 \caption{Transitions between macrostates ${A_i}$ and macrostate ${B_i}$ dictated by the 'transition' matrix $K_{ij}$.}
-\label{Fig4} 
+\label{Fig1} 
 \end{figure}
 \end{minipage}
-
 \begin{flushleft}
+\vspace{-1.0cm}
 The probability of the forward transition:
 \begin{equation}
 \label{ForwardProb}
@@ -206,35 +198,45 @@ The ratio of prediction and postdiction:
 \end{tcolorbox}
 \vspace{0.5cm}
 
-Natural interpretation of the term in the exponent is configurational (internal) entropy: 
+Since, the number of microstates doesn't change (energy does not flow in or out) -- the natural interpretation of the term in the exponent is the configurational (internal) entropy change: 
+%\vspace{0.5cm}
+\begin{equation}
+\label{ConfEntropy}
+  \Delta S = \frac{\Delta E - \Delta F}{T} \implies -\frac{\Delta F}{T}
+\end{equation}
+\vspace{-0.5cm}
 \begin{tcolorbox}[colframe=green!500!white,colback=white!50!white,boxrule=3pt]
 \begin{equation}
 \Delta S_{conf} /k_B = \ln{\sum_{k} \frac{K_{kj}}{\sum_m K_{km}}} = - \beta \Delta F
 \end{equation}
 \end{tcolorbox}
-\vspace{0.5cm}
-
+\vspace{-0.5cm}
 In the limiting case of \textit{one} initial macrostate we recover the \textit{Boltzmann entropy}:
-
+\vspace{-0.5cm}
 \begin{equation}
-\Delta S_{conf} /k_B = \ln{\sum_{k} \frac{K_{kj}}{\sum_m K_{km}}} = \ln{\frac{N_j}{M_k}} =\Delta S_{B} /k_B
+\Delta S_{conf} /k_B = \ln{\sum_{k} \frac{K_{kj}}{\sum_m K_{km}}} \stackrel{\#k=1}{=} \ln{\frac{N_j}{M_k}} =\Delta S_{B} /k_B
 \end{equation}
-\vspace{0.5cm}
+\vspace{-0.5cm}
 
-With the increasing ratio of initial to final macrostates the probability of spontaneous return due to random heat fluctuations decreases indicating a generalization of the Second Law, quantifying the probability of reverse transitions. 
-\vspace{0.5cm}
+With the increasing ratio of initial to final macrostates the probability of spontaneous return due to random heat fluctuations decreases in accordance with the Second Law, but giving us a surplus information, quantifying the probability of reverse transitions. 
+\vspace{0.3cm}
 
-This feature is a general characteristics of the fluctuation theorems to which our result most likely belongs.
+This feature is a general characteristics of the fluctuation theorems to which our result most likely belongs --- this possibility is further explored in the next columns.
+\vspace{2.0cm}
+\begin{displaymath}
+\end{displaymath}
+\begin{displaymath}
+\end{displaymath}
 \end{flushleft}
 \columnbreak
 \begin{flushleft}
 \section{General properties of obtained results}
-Using random matrices filled with uniformly distributed integers from some interval $[0,Z], Z \in \mathbb{N}$, the following distributions were generated:
+Using random matrices filled with uniformly distributed integers from some interval $[0,Z], Z \in \mathbb{N}$, the following histograms were generated:
 
-\begin{minipage}[b]{22.0cm}
+\begin{minipage}[b]{23.0cm}
 \centering
 \begin{figure}[ht!]
-\includegraphics[width=22cm]{Figure2.eps} \caption{Probability distributions of change of entropy ($k_B =1$) in transitions between $N_A$ initial and $N_B$ final macrostates, calculations performed for $N=10^5$ random matrices.}
+\includegraphics[width=23cm]{Figure2.eps} \caption{Probability distributions of change of entropy ($k_B =1$) in transitions between $N_A$ initial and $N_B$ final macrostates, calculations performed for $N=10^5$ random matrices.}
 \label{Fig2} 
 \end{figure}
 \end{minipage}
@@ -244,9 +246,14 @@ Those results suggest that if our knowledge about the system stays in tact (no c
 
 \vspace{0.6cm} 
 \begin{tcolorbox}[colframe=green!500!white,colback=white!50!white,boxrule=3pt]
-The preferred direction (higher entropy change) correlates with the fall in number of macroscopic (discernible) states and with growth of their microscopic realizations. In other words: The spontaneous direction of change is associated with an increasing number of inaccessible degrees of freedom.
+\textbf{Observation \#1a}: The preferred direction (higher entropy change) correlates with the fall in number of macroscopic (discernible) states and with growth of their microscopic realizations. In other words: The spontaneous direction of change is associated with an increasing number of inaccessible degrees of freedom.
 \end{tcolorbox}
 
+
+\vspace{0.6cm} 
+\begin{tcolorbox}[colframe=green!500!white,colback=white!50!white,boxrule=3pt]
+\textbf{Observation \#1b}: The obtained distributions of change in configurational entropy are shifted only by the chosen numbers of initial and final macroscopic states and \textit{not} by the \textit{total} number of microstates.
+\end{tcolorbox}
 
 Comparison of the forward (spontaneous) to backward (non-spontaneous) distribution:
 
@@ -258,64 +265,113 @@ Comparison of the forward (spontaneous) to backward (non-spontaneous) distributi
 \end{figure}
 \end{minipage}
 %\vspace{-1.0cm} 
-\begin{minipage}[b]{22.0cm}
+\begin{minipage}[b]{23.0cm}
 \centering
 \begin{figure}[ht!]
-\includegraphics[width=22cm]{Figure4.eps} \caption{Probability distributions of change of entropy ($k_B =1$) in transitions between $N_A$ initial and $N_B$ final macrostates and the reverse scenarios.}
+\includegraphics[width=23cm]{Figure4.eps} \caption{Probability distributions of change of entropy in transitions between $N_A$ initial and $N_B$ final macrostates and the reverse scenarios.}
 \label{Fig4} 
 \end{figure}
 \end{minipage}
-\vspace{0.3cm} 
-
-A general property observed from this results indicate: 
 
 \vspace{0.3cm} 
 
 \begin{tcolorbox}[colframe=green!500!white,colback=white!50!white,boxrule=3pt]
-The nonspontaneous direction of change is associated with wider distributions of entropy change.
+\textbf{Observation \#2}: The non-spontaneous direction of change is associated with wider distributions of entropy change.
 \end{tcolorbox}
 
+\begin{minipage}[b]{23.0cm}
+\centering
+\begin{figure}[ht!]
+\includegraphics[width=23cm]{Figure5.eps} \caption{Comparison of uniform and gaussian distributions of 'transition' matrix $K_{ij}$ entries.}
+\label{Fig2} 
+\end{figure}
+\end{minipage}
+\vspace{-0.5cm} 
 
+\begin{tcolorbox}[colframe=green!500!white,colback=white!50!white,boxrule=3pt]
+\textbf{Observation \#3}: The change in distributions of entries does not change the universal character of forward versus backward transitions mentioned in Observation \#2.
+\end{tcolorbox}
+\vspace{2.8cm}
+\begin{displaymath}
+\end{displaymath}
 \end{flushleft}
-
 \columnbreak
 
-\section{Our hypothesis}
+\section{Relation to the Crooks Fluctuation Theorem}
+\vspace{-1.0cm} 
+\begin{minipage}[b]{22.0cm}
+\centering
+\begin{figure}[ht!]
+ \includegraphics[clip, trim=1.0cm 19.3cm 11.0cm 2.1cm, width=20cm]{verification.pdf}
+ \caption{Result obtained during experimental verification of Crooks Fluctuation theorem in the RNA folding/unfolding experiment \cite{Collin:2005fxa}}
+\end{figure}
+\end{minipage}
+%\begin{figure}[ht!]
+% \includegraphics[clip, trim=10.5cm 19.5cm 1.0cm 2.1cm, width=20cm]{verification.pdf}
+%\label{Fig5} 
+%\end{figure}
+\begin{flushleft}
+\vspace{-1.0cm} 
+The distributions from the experiment look very similar to the obtained here, except for the mirror reflection and the values on the x axis.
+%\vspace{0.5cm} 
+
+\begin{tcolorbox}[colframe=yellow!500!white,colback=white!50!white,boxrule=3pt]
+\textbf{Question}: Can we use this Bayesian relation to shed light on the distributions obtained in the experimental verifications of Crooks Fluctuation Theorem like \cite{Collin:2005fxa}? 
+\end{tcolorbox}
+\vspace{-0.5cm} 
+Indeed, we can. However, to answer this question precisely, we need to realize that in Crooks fluctuation theorem the number of available microscopic states changes during the experiment (energy is provided to the system). 
+\vspace{0.5cm} 
+
+Here, the other hand, the number of microscopic states stays constant for a given matrix size. We can however, choose a different (higher) number of macroscopic final states in the non-spontaneous direction to emulate the increase in number of microscopic states ($\Delta E > 0$ in equation (\ref{ConfEntropy})), obtaining:
+
+%\vspace{0.5cm}
+%\begin{equation}
+%  \Delta S = \frac{\Delta E - \Delta F}{T}
+%\end{equation}
 
 \begin{minipage}[b]{22.0cm}
 \centering
 \begin{figure}[ht!]
- \includegraphics[clip, trim=10.5cm 19.5cm 1.0cm 2.1cm, width=20cm]{verification.pdf}
- \caption{Result obtained during experimental verification of Crooks Fluctuation theorem \cite{Collin:2005fxa}}
-\label{Fig5} 
-
+\includegraphics[width=22cm]{Figure6.eps} 
+%\caption{Probability distributions of entropy produced ($k_B =1$) in transitions between $N_A$ initial and $N_B$ final macrostates, calculations performed for $N=10^5$ random matrices.}
+\end{figure}
+\end{minipage}
+%\vspace{-1.0cm} 
+\begin{minipage}[b]{23.0cm}
+\centering
+\begin{figure}[ht!]
+\includegraphics[width=23cm]{Figure7.eps} \caption{Probability distributions of change of entropy for spontaneous and non-spontaneous work aided transitions}
+\label{Fig4} 
 \end{figure}
 \end{minipage}
 \vspace{-1.0cm} 
+\begin{tcolorbox}[colframe=green!500!white,colback=white!50!white,boxrule=3pt]
+\textbf{Observation \#4}: The gap between the obtained distributions grows with the amount of work (energy) put into the system.
+\end{tcolorbox}
 
+Consistent with the results obtained in the experiment:
 
+\end{flushleft}
 
-%====================================================================================================================================
-%====================================================================================================================================
-%====================================================================================================================================
-%====================================================================================================================================
-\vspace{-0.5cm}
-
+\begin{minipage}[b]{22.0cm}
+\centering
+\begin{figure}[ht!]
+ \includegraphics[clip, trim=10.0cm 4.1cm 2.0cm 17.7cm, width=20cm]{verification2.pdf}
+ \caption{Result for different forces applied during the RNA folding/unfolding experiment \cite{Collin:2005fxa}}
+\end{figure}
+\end{minipage}
 %\bibliographystyle{plain}
 %\begin{thebibliography}{1}
 \begin{small}
-\vspace{-0.5cm}
-
+\vspace{-3.0cm}
 \bibliographystyle{ieeetr}
 \bibliography{Refs}
-%\bibitem{syr1}A. Syrwid, K. Sacha, Phys. Rev. A \textbf{92}, 032110 (2015).
-%
-%\bibitem{syr2}A. Syrwid, M. Brewczyk, M. Gajda, K. Sacha, Phys. Rev. A \textbf{94}, 023623 (2016).
-%
-%\bibitem{syr3}A. Syrwid, K. Sacha, arXiv:1705.09607 (2017).
-
+\begin{displaymath}
+.
+\end{displaymath}
 \end{small}
-
+\begin{displaymath}
+.
+\end{displaymath}
 \end{multicols}
-
 \end{document}
